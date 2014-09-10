@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="style/petcalc.css">
+		<script text="javascript">
+			//変数
+			var nomalColor="#FFF";
+			var errorColor="#F33";
+			var errorMsg="赤色の部分が頭おかしーよ！"
+			
+			//入力チェック関数
+			function checkInputValue(){
+				cleanForm4errorMsg();
+				var checkInt = 0;
+				
+				var wlfInput = document.getElementById("inputW");
+				if(isNaN(Number(wlfInput.value))){
+					checkInt += 1;
+					wlfInput.style.backgroundColor=errorColor;
+				}
+				for(var i=0;i<7;i++){
+					var temp = document.getElementById("input" + i);
+					var val = Number(temp.value);
+					if(isNaN(val)){
+						checkInt += 1;
+						temp.style.backgroundColor=errorColor;
+					}
+				}
+				for(var i=0;i<7;i++){
+					var temp = document.getElementById("data" + i);
+					var val = Number(temp.value);
+					if(isNaN(val)){
+						checkInt += 1;
+						temp.style.backgroundColor=errorColor;
+					}
+				}
+				if(checkInt>0){
+					var errMsgField = document.getElementById("errMsgField");
+					errMsgField.style.display="block";
+					errMsgField.innerHTML=errorMsg + checkInt + "コ";
+				}
+				
+			}
+			
+			//計算関数
+			function calc(){
+				checkInputValue();
+				var ans = 0;
+				var pena;
+				if(document.getElementById("bmw").checked){
+					pena=0.35;
+				} else {
+					pena=0.27;
+				}
+				var wlfLv =  eval(document.getElementById("inputW").value);
+				for(var i=0;i<7;i++){
+					var chaLv = eval(document.getElementById("input" + i).value);
+					var exVal = eval(document.getElementById("data" + i).value);
+					if((chaLv>0 && exVal>0) && wlfLv>0){
+						var Diff = wlfLv - chaLv;
+						if(Diff<-25){
+							Diff=-25;
+						}
+						if(Diff>30){
+							Diff=30;
+						}
+						if(Diff<=-6){
+							ans = exVal*pena*1/Math.pow(1.1,(-(Diff)-5));
+						} else if(-5<=Diff && Diff<=10){
+							ans = exVal*pena;
+						}else if(Diff>=11){
+							ans = exVal*pena*Math.pow(1.05,(Diff-10));
+						}
+						ans = ans * 100;
+						ans = Math.round(ans);
+						ans = ans / 100;
+						document.getElementById("ans" + i).innerHTML = ans;
+					}
+				}
+			}
+
+			//フォームの値クリア
+			function cleanFrom(){
+				cleanForm4errorMsg();
+				for(var i=0;i<7;i++){
+					document.getElementById("input" + i).value = "";
+					document.getElementById("data" + i).value = "";
+					document.getElementById("ans" + i).innerHTML = "";
+				}
+			}
+			
+			//フォームのエラー情報クリア
+			function cleanForm4errorMsg(){
+				var errMsgField = document.getElementById("errMsgField");
+				errMsgField.style.display="none";
+				errMsgField.innerHTML="";
+				for(var i=0;i<7;i++){
+					document.getElementById("input" + i).style.backgroundColor=nomalColor;
+					document.getElementById("data" + i).style.backgroundColor=nomalColor;
+				}
+			}
+
+			
+			//LOG
+			function log(logValue){
+				var nowLog = document.getElementById("log").innerHTML;
+				document.getElementById("log").innerHTML = nowLog + "<br />" + logValue;
+			}
+			
+			//説明書
+			function turnBoard2Sub(){
+				document.getElementById("petCalc").style.display="none";
+				document.getElementById("dummyBoard").style.display="block";
+			}
+			
+			function turnBoard2Main(){
+				document.getElementById("petCalc").style.display="block";
+				document.getElementById("dummyBoard").style.display="none";
+			}
+			
+			//人間EXP計算用
+			function calcPcExp(){
+				var pcLv = eval(document.getElementById("pcLv").value);
+				var upEx = eval(document.getElementById("UpExp").value);
+				
+				if(pcLv > 0 && upEx > 0){
+					var MaxExp = document.getElementById("pc_" + pcLv).innerHTML;
+					var ans = MaxExp*upEx*0.01;
+					ans = ans * 100;
+					ans = Math.round(ans);
+					ans = ans / 100;
+					document.getElementById("pcExpans").innerHTML = ans;
+				}
+				
+			
+			}
+			
+			//人間EXP計算結果をセット
+			function setValue2slot(){
+				var slot = document.getElementById("selectBox4slot").value;
+				var pcLv = document.getElementById("pcLv").value;
+				var Exp = document.getElementById("pcExpans").innerHTML;
+				
+				document.getElementById("input" + slot).value = pcLv;
+				document.getElementById("data" + slot).value = Exp;
+				
+			}
+			// Wlfbeforeアフター
+//			36 EXP 485,914
+//			37 EXP 527,436 108%
+//			38 EXP 570,223 108%
+//			39 EXP 616,380 108%
+//			40 EXP 663,742 107%
+//			41 EXP 714,820 107%
+//			42 EXP 768,542 107%
+//			43 EXP 823,221 107%
+//			44 EXP 880,367 106%
+//			45 EXP 942,391 106%
+//			46 EXP 1,004,406 106%
+//			47 EXP 1,071,835 106%
+//			48 EXP 1,139,564 106%
+//			49 EXP 1,212,975 106%
+//			50 EXP 1,932,000 159% 　＜----増加ポイント
+//			51 EXP 2,049,050 106%
+//			52 EXP 2,170,725 105%
+//			53 EXP 2,297,150 105%
+//			54 EXP 2,428,375 105%
+//			55 EXP 3,419,350 141% 　＜----増加ポイント
+//			56 EXP 3,607,525 105%
+//			57 EXP 3,802,475 105%
+//			58 EXP 4,004,325 105%
+//			59 EXP 4,213,175 105%
+//			60 EXP 6,643,800 157% 
+
+		</script>
+	</head>
+	<body>
+		<div id="errMsgField"></div>
+		<form>
+			<h3>ペット取得経験計算機</h3>
+			<div id="petCalc">
+				<h5 style="margin-bottom:0px;">※大きいわんこの場合はBMWをチェックしてね。</h5>
+				<table>
+					<tr>
+						<td colspan="2">ペットLv:<input type="text" size="2" class="textBox" id="inputW" OnKeyUp="checkInputValue()" /></td>
+						<td>
+							<input type="checkbox" id="bmw" /><label for="bmw">BMW</label>
+						</td>
+						<td>
+							<!--<input type="button" value="使い方" onClick="turnBoard2Sub()" />-->
+							<input type="button" value="計算" onClick="calc()" id="calcButton" />
+							<input type="button" value="くりあー" onClick="cleanFrom()" id="calcB" />
+						</td>
+					</tr>
+					<tr><th style="width:40px">SLOT</th><th style="width:100px">キャラクターLv</th><th>取得経験値</th><th>ペット取得経験値</th></tr>
+					<tr>
+						<td>1</td><td><input type="text" maxlength="2" size="2" class="textBox" id="input0" OnKeyUp="checkInputValue()" /></td><td><input type="text" size="10" class="textBox" id="data0" OnKeyUp="checkInputValue()" /></td><td><span id="ans0"></span></td>
+					</tr>
+					<tr>
+						<td>2</td><td><input type="text" maxlength="2" size="2" class="textBox" id="input1" OnKeyUp="checkInputValue()" /></td><td><input type="text" size="10" class="textBox" id="data1" OnKeyUp="checkInputValue()" /></td><td><span id="ans1"></span></td>
+					</tr>
+					<tr>
+						<td>3</td><td><input type="text" maxlength="2" size="2" class="textBox" id="input2" OnKeyUp="checkInputValue()" /></td><td><input type="text" size="10" class="textBox" id="data2" OnKeyUp="checkInputValue()" /></td><td><span id="ans2"></span></td>
+					</tr>
+					<tr>
+						<td>4</td><td><input type="text" maxlength="2" size="2" class="textBox" id="input3" OnKeyUp="checkInputValue()" /></td><td><input type="text" size="10" class="textBox" id="data3" OnKeyUp="checkInputValue()" /></td><td><span id="ans3"></span></td>
+					</tr>
+					<tr>
+						<td>5</td><td><input type="text" maxlength="2" size="2" class="textBox" id="input4" OnKeyUp="checkInputValue()" /></td><td><input type="text" size="10" class="textBox" id="data4" OnKeyUp="checkInputValue()" /></td><td><span id="ans4"></span></td>
+					</tr>
+					<tr>
+						<td>6</td><td><input type="text" maxlength="2" size="2" class="textBox" id="input5" OnKeyUp="checkInputValue()" /></td><td><input type="text" size="10" class="textBox" id="data5" OnKeyUp="checkInputValue()" /></td><td><span id="ans5"></span></td>
+					</tr>
+					<tr>
+						<td>7</td><td><input type="text" maxlength="2" size="2" class="textBox" id="input6" OnKeyUp="checkInputValue()" /></td><td><input type="text" size="10" class="textBox" id="data6" OnKeyUp="checkInputValue()" /></td><td><span id="ans6"></span></td>
+					</tr>
+				</table>
+			</div>
+			<div id="dummyBoard">
+				<h5>ペット取得経験計算機</h5>
+				<ol>
+					<li>ペットのレベルを入力。</li>
+					<li>飼い主のレベルを入力。</li>
+					<li>ソロ時取得経験値を入力。</li>
+					<li>計算をクリック</li>
+				</ol>
+				<p>
+					レベル差ペナルティを考慮した、<br />
+					ペットが取得する経験値を算出できます。
+				</p>
+				<span>※slotが７つありますが、これは最大７キャラを比較するために設けているだけです。</span><br />
+				<div style="text-align:center;"><input type="button" onClick="turnBoard2Main()" value="戻る" /></div>
+			</div>
+<!--
+経験％→値コンバータ
+
+1.キャラのレベルを入力
+
+2.上がった％を入力
+
+3.「計」をクリック
+
+4.「ペット取得経験計算機」のどのスロットに反映させるかを選択してクリック
+-->
+
+
+			</div>
+			<br />
+			<h3>経験（％→値）コンバータ</h3>
+			<table id="pcExpCalc">
+				<tr>
+					<th style="width:50px;">キャラクターLv</th><th style="width:80px;">取得経験値（％）</th><th style="width:100px;"></th>
+				</tr>
+				<tr>
+					<td><input type="text" maxlength="2" size="2" class="textBox" id="pcLv" OnKeyUp="checkInputValue()" /></td>
+					<td><input type="text" maxlength="6" size="6" class="textBox" id="UpExp" OnKeyUp="checkInputValue()" /> %</td>
+					<td><input type="button" value="計" onClick="calcPcExp()" /></td>
+				</tr>
+				<tr><th>値</th><td colspan="2"><span id="pcExpans"></span></td></tr>
+				<tr>
+					<td colspan="3">
+						SLOT
+						<select id="selectBox4slot">
+							<option value="0">1</option>
+							<option value="1">2</option>
+							<option value="2">3</option>
+							<option value="3">4</option>
+							<option value="4">5</option>
+							<option value="5">6</option>
+							<option value="6">7</option>
+						</select>
+						に
+						<input type="button" value="セットする" onClick="setValue2slot()" />
+						
+					</td>
+				</tr>
+			</table>
+		</form>
+		<div id="log"></div>
+		<div id="PcExp" style="display:none;">
+			<span id="pc_1">0</span>
+			<span id="pc_2">68</span>
+			<span id="pc_3">295</span>
+			<span id="pc_4">805</span>
+			<span id="pc_5">1716</span>
+			<span id="pc_6">3154</span>
+			<span id="pc_7">5249</span>
+			<span id="pc_8">8136</span>
+			<span id="pc_9">11955</span>
+			<span id="pc_10">16851</span>
+			<span id="pc_11">22973</span>
+			<span id="pc_12">30475</span>
+			<span id="pc_13">39516</span>
+			<span id="pc_14">50261</span>
+			<span id="pc_15">62876</span>
+			<span id="pc_16">77537</span>
+			<span id="pc_17">92421</span>
+			<span id="pc_18">113712</span>
+			<span id="pc_19">135596</span>
+			<span id="pc_20">160266</span>
+			<span id="pc_21">187922</span>
+			<span id="pc_22">218762</span>
+			<span id="pc_23">252997</span>
+			<span id="pc_24">290836</span>
+			<span id="pc_25">332494</span>
+			<span id="pc_26">378201</span>
+			<span id="pc_27">428173</span>
+			<span id="pc_28">482647</span>
+			<span id="pc_29">541857</span>
+			<span id="pc_30">606042</span>
+			<span id="pc_31">675450</span>
+			<span id="pc_32">750330</span>
+			<span id="pc_33">830937</span>
+			<span id="pc_34">917531</span>
+			<span id="pc_35">1010378</span>
+			<span id="pc_36">1109744</span>
+			<span id="pc_37">1215961</span>
+			<span id="pc_38">1329143</span>
+			<span id="pc_39">1449736</span>
+			<span id="pc_40">2196250</span>
+			<span id="pc_41">2323200</span>
+			<span id="pc_42">2451550</span>
+			<span id="pc_43">2580825</span>
+			<span id="pc_44">2710600</span>
+			<span id="pc_45">2840350</span>
+			<span id="pc_46">2969550</span>
+			<span id="pc_47">3097600</span>
+			<span id="pc_48">3223925</span>
+			<span id="pc_49">3347850</span>
+			<span id="pc_50">5370950</span>
+			<span id="pc_51">5737350</span>
+			<span id="pc_52">6121475</span>
+			<span id="pc_53">6523900</span>
+			<span id="pc_54">6945175</span>
+			<span id="pc_55">9847725</span>
+			<span id="pc_56">10461800</span>
+			<span id="pc_57">11103225</span>
+			<span id="pc_58">11772700</span>
+			<span id="pc_59">12471050</span>
+			<span id="pc_60">19798525</span>
+			<span id="pc_61">20936125</span>
+			<span id="pc_62">22120550</span>
+			<span id="pc_63">23353000</span>
+			<span id="pc_64">24634725</span>
+			<span id="pc_65">34622600</span>
+			<span id="pc_66">36467925</span>
+			<span id="pc_67">38383950</span>
+			<span id="pc_68">40372375</span>
+			<span id="pc_69">42434975</span>
+			<span id="pc_70">44573300</span>
+			<span id="pc_71">58487000</span>
+			<span id="pc_72">73627775</span>
+			<span id="pc_73">90058575</span>
+			<span id="pc_74">107843975</span>
+			<span id="pc_75">127050450</span>
+			<span id="pc_76">220000000</span>
+			<span id="pc_77">360000000</span>
+			<span id="pc_78">588000000</span>
+			<span id="pc_79">2100000000</span>
+			<span id="pc_80">2100000000</span>
+		</div>
+	</body>
+</html>

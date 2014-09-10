@@ -1,0 +1,12 @@
+.sIFR-flash {
+	VISIBILITY: visible! important; MARGIN: 0px
+}
+.sIFR-replaced {
+	VISIBILITY: visible! important
+}
+SPAN.sIFR-alternate {
+	DISPLAY: block; LEFT: 0px; OVERFLOW: hidden; WIDTH: 0px; POSITION: absolute; TOP: 0px; HEIGHT: 0px
+}
+.sIFR-hasFlash H5 {
+	FONT-SIZE: 50px; VISIBILITY: hidden; LETTER-SPACING: 5px
+}

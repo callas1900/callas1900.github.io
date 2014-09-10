@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Cintent-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAjUBLAd3uj-VHjeRvDiKVXBTmQlePUyzBvufSXEZDh1-RfJwosxRr3XutQR2CAicVE-d6SuUNmpRnQw" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="map" style="width: 700px; height: 500px"></div>
+    <script type="text/javascript">
+    //<![CDATA[
+    
+
+    GPoint_tky = function (a,b){
+        this.y = b - b * 0.00010695  + a * 0.000017464 + 0.0046017;
+        this.x = a - b * 0.000046038 - a * 0.000083043 + 0.010040;
+    }
+    
+    
+    //URLから座標を取得
+    //例 getlatlon4.htm?lat=139.74541783332825&lon=35.658725884775244
+    function getFromURL(){
+      var data = location.href.split('?')[1];
+      if(data){
+        var qs = data.split('&');
+        for(var i in  qs){
+          var q = qs[i].split('=');
+          if(q[0]=='lat')var lat = q[1]
+          if(q[0]=='lon')var lon = q[1]
+        }
+      } else {
+        return init();
+      }
+      if(!lat)return init();
+      if(!lon)return init();
+      return [lat,lon]
+    }
+    var latlon = getFromURL();
+
+    function init(){
+      return [139.74541783332825,35.658725884775244];
+    }
+
+    var map = new GMap(document.getElementById("map"));
+    map.centerAndZoom(new GPoint(latlon[0],latlon[1]), 1);
+    map.addControl(new GLargeMapControl());
+    map.addControl(new GMapTypeControl());
+    map.addControl(new GScaleControl());
+
+    //十字アイコン作成
+    var icon = new GIcon();
+    icon.image = "./maru.gif";
+    icon.iconSize = new GSize(100, 100);
+    icon.iconAnchor = new GPoint(50, 50);
+    var marker = new GMarker(map.getCenterLatLng(), icon);
+    map.addOverlay(marker);
+
+    //地図移動で十字アイコン追随と、座標を表示
+    GEvent.addListener(map, "move", function() { 
+       map.clearOverlays()
+       marker = new GMarker(map.getCenterLatLng(), icon);
+       map.addOverlay(marker);
+       showLatLon();
+    });
+    
+    //十字アイコンが示す座標を表示
+    showLatLon= function (){
+        var point = map.getCenterLatLng()
+        
+        //現在位置Wgs84
+        document.getElementById('datalatlon').innerHTML=point
+        document.f1.lat.value=point.x 
+        document.f1.lon.value=point.y 
+        
+        document.f1.url.value="http://jsgt.org/ajax/newmon/samples/chapter03/03-31/getlatlon4.htm?lat="+point.x+"&lon="+point.y
+        
+        //現在位置Tokyo
+        var tky = getTokyo()
+        document.getElementById('datalatlonTokyo').innerHTML='('+tky.x+','+tky.y+')'
+        document.f1.lat_tky.value=tky.x
+        document.f1.lon_tky.value=tky.y
+    };
+
+    function getTokyo(){
+     var point = map.getCenterLatLng()
+     var a=point.x
+     var b=point.y
+     var wk_x = +a-(a - b * 0.000046038 - a * 0.000083043 + 0.010040);
+     var wk_y = +b-(b - b * 0.00010695  + a * 0.000017464 + 0.0046017); 
+     this.x = +a+wk_x
+     this.y = +b+wk_y
+
+     return { x:this.x , y:this.y }
+   }
+
+    //移動
+    function moveMap(lat,lon){map.centerAndZoom(new GPoint(lat,lon),map.getZoomLevel());}
+    function moveMap_tky(lat,lon){map.centerAndZoom(new GPoint_tky(lat,lon),map.getZoomLevel());}
+    
+    window.onload = function(){ showLatLon(); }
+    
+    
+
+//----------
+
+function addSamplePageToSidebar(url,title){
+
+  if((typeof window.sidebar=='object') && (typeof window.sidebar.addPanel)=='function'){
+
+    window.sidebar.addPanel(title,url,'');
+
+  } else {
+
+    alert('あなたのブラウザはサイドバーをサポートしていません.');
+
+  }
+
+}
+
+    
+    //]]>
+    </script>
+
+
+
+    <br />
+    現在地：
+    <form name="f1">
+
+    世界測地系Wgs84 <div id="datalatlon" style="font-size:1.2em;">--</div>
+    URL:<input type="text" name="url" size="120" value=""><br />
+
+    <input type="button" value="このURLでリロード" onclick="location.href=this.form.url.value"> 
+
+    <input type="button" value="お気に入りに追加 for IE" 
+       onclick="javascript:window.external.AddFavorite(this.form.url.value, 'GoogleMapsポイントメモ')" 
+       style="border-style:solid; border-width:1px; border-color:#dddddd; background:#eeeeee;"> 
+    <input type="button" value="サイドバーに追加 for Firefox,Moz" 
+       onclick="javascript: addSamplePageToSidebar(this.form.url.value, 'GoogleMapsポイントメモ')" 
+       style="border-style:solid; border-width:1px; border-color:#dddddd; background:#eeeeee;">
+
+
+
+<br />
+    <br />
+    <input type="text" name="lat" value="">
+    <input type="text" name="lon" value="">
+    <input type="button" value="世界測地系で移動" onclick="moveMap(this.form.lat.value,this.form.lon.value)">
+    <br />
+    <font size="-2">*日本測地系 <div id="datalatlonTokyo" style="font-size:1.2em;">--</div>
+    
+    <input type="text" name="lat_tky" value="">
+    <input type="text" name="lon_tky" value="">
+    <input type="button" value="日本測地系で移動" onclick="moveMap_tky(this.form.lat_tky.value,this.form.lon_tky.value)">
+    </font>
+    </form>
+    <br />[ <a href='http://jsgt.org/mt/01/'>かも日記</a> ] [ <a href='http://jsgt.org/ajax/'>入門Ajax</a>  ] [ <a href='http://jsgt.org/ajax/newmon/GoogleMapsAPI.htm'>Google Maps API クラスリファレンス</a>  ]
+    <br />
+    <br />
+<font size="-1">
+【更新情報】2006.4.28 URLクエリで座標を渡せるようにして、スケールコントロールも追加しました。 <br />
+【更新情報】2006.1.4 日本測地系座標から地図を調べたいという場合もありますので、日本測地系での移動もできるようにしてみました。
+    </font>
+  </body>
+</html>

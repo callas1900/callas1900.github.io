@@ -1,0 +1,939 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Language" content="ja" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<title>荘園計算機</title>
+		<link rel="stylesheet" href="./fancybox/fancy.css" type="text/css" media="screen">
+		<style type="text/css">
+			<!--
+			body{
+				text-align:center;
+				background-color:#bbb;
+				height:100%;
+				padding:0px;
+				margin:0px;
+			}
+			div#container{
+				height:100%;
+				width:480px;
+				margin:0px;
+				margin-left:auto;
+				margin-right:auto;
+				text-align:center;
+				background-color:#fff;
+				border:1px solid #000;
+				padding:5px;
+			}
+			td#col1{ width:70px; }
+			td#col2{ width:140px;  }
+			td#col3{ width:10px;  }
+			td#col4{ width:120px; }
+			td#col5{ width:100px;}
+			
+			table#firstTable{
+				border-collapse:collapse;
+				margin-left:auto;
+				margin-right:auto;
+				text-align:left;
+			}
+			
+			.numberInput{
+				text-align:right;
+			}
+
+			table#firstTable tbody#firstTableBody tr td.blank{
+				border:0px solid;
+			}
+			
+			table#firstTable tbody#firstTableBody tr th{
+				padding-top:10px;
+				border:0px solid;
+			}
+			
+			table#firstTable tbody#firstTableBody tr td{
+				border:1px solid #000;
+				height:25px;
+				font-size:12px;
+			}
+			
+			
+			table#table4selectMaterial{
+				border-collapse:collapse;
+				width:350px;
+			}
+			
+			table#table4selectMaterial tbody tr td{
+				border:1px solid #000;
+				font-size:12px;
+			}
+			
+			table#table4selectMaterial tbody tr td a{
+				font-size:12px;
+			}
+			table#table4selectMaterial tbody tr td a:link,
+			table#table4selectMaterial tbody tr td a:visited{
+				color:#007;
+				text-decoration: none;
+			}
+			table#table4selectMaterial tbody tr td a:hover{
+				color:#00f;
+				text-decoration: underline;
+			}
+			
+			table#table4selectMaterial tbody tr th{
+				border:1px solid #000;
+				background-color:#789;
+			}
+			
+			input.numberInput{
+				width:110px;
+				height:17px;float:left;
+				border:1px solid #789;
+			}
+			
+			#materiButton{
+				width:10px;
+				height:18px;
+				maring-top:auto;
+				margin-button:auto;
+			}
+			
+			div#history{
+				border-style:inset;
+				overflow-y:scroll;
+				width:450px;
+				height:80px;
+				font-size:10px;
+				margin-left:auto;
+				margin-right:auto;
+				text-align:left;
+			}
+			
+			div#history pre{
+				padding : 5px 2px 0px 10px;
+				margin:0px;
+			}
+
+			#history span{
+				
+			}
+			table#firstTable tbody#firstTableBody tr th {
+				text-align:center;
+			}
+			table#firstTable tbody#firstTableBody tr th table.like_fancy_title ,
+			tbody#firstTableBody tr td#col2 a table.like_fancy_title,
+			tbody#firstTableBody tr td table.like_fancy_title
+			{
+				margin: 0 auto;
+				border:0px solid;
+			}
+			
+
+			
+			
+			table#firstTable tbody#firstTableBody tr th table.like_fancy_title td.like_fancy_title_left ,
+			tbody#firstTableBody tr td#col2 table.like_fancy_title td.like_fancy_title_left,
+			tbody#firstTableBody tr td.blank a#helper td.like_fancy_title_left
+			{
+				height: 32px;
+				width: 15px;
+				background: transparent url(./fancybox/fancy_title_left.png) repeat-x;
+				border:0px solid;
+			}
+			
+			table#firstTable tbody#firstTableBody tr th table.like_fancy_title td.like_fancy_title_main ,
+			tbody#firstTableBody tr td#col2 table.like_fancy_title td.like_fancy_title_main,
+			tbody#firstTableBody tr td.blank a#helper table.like_fancy_title td.like_fancy_title_main
+			{
+				height: 32px;
+				background: transparent url(./fancybox/fancy_title_main.png) repeat-x;
+				border:0px solid;
+			}
+			
+			table#firstTable tbody#firstTableBody tr th table.like_fancy_title td.like_fancy_title_main div ,
+			tbody#firstTableBody tr td#col2 table.like_fancy_title td.like_fancy_title_main div,
+			tbody#firstTableBody tr td a#helper table.like_fancy_title td.like_fancy_title_main div
+			{
+				color: #FFF;
+				font: bold 12px Arial;
+				padding-bottom: 2px;
+				border:0px solid;
+			}
+			
+			table#firstTable tbody#firstTableBody tr th table.like_fancy_title td.like_fancy_title_right ,
+			tbody#firstTableBody tr td#col2 table.like_fancy_title td.like_fancy_title_right,
+			tbody#firstTableBody tr td a#helper table.like_fancy_title td.like_fancy_title_right{
+				height: 32px;
+				width: 15px;
+				background: transparent url(./fancybox/fancy_title_right.png) repeat-x;
+				border:0px solid;
+			}
+			
+			tbody#firstTableBody tr td#col2 table.like_fancy_title td.like_fancy_title_main div a{color:#fff;text-decoration: none;}
+			tbody#firstTableBody tr td#col2 table.like_fancy_title td.like_fancy_title_main div a:link{color:#fff;text-decoration: none;}
+			tbody#firstTableBody tr td#col2 table.like_fancy_title td.like_fancy_title_main div a:visited{color:#fff;text-decoration: none;}
+			tbody#firstTableBody tr td#col2 table.like_fancy_title td.like_fancy_title_main div a:hover{color:#fff;text-decoration: none;}
+			
+			h5#history_title{
+				margin:0px;
+				margin-top:10px;
+			}
+			
+			a#helper{
+				float:right;
+			}
+			div#help_content{
+				text-align:center;
+				padding:5px;
+				font-size:10px;
+			}
+			div#help_content table{
+				text-align:left;
+				margin-left:auto;
+				margin-right:auto;
+				border-collapse:collapse;
+			}
+			div#help_content th{
+				margin:0px;
+				padding:0px;
+				font-size:12px;
+				padding-top:10px;
+			}
+			div#help_content td{
+				font-size:10px;
+				border-bottom:1px solid #aaa;
+				padding-top:5px;
+			}
+			
+			td#col2 a img{
+				border:0px solid;
+				margin-left:5px;
+			}
+			
+			
+			-->
+		</style>
+		<!-- required -->
+		<script type="text/javascript" src="./fancybox/jquery.js"></script>
+		<script type="text/javascript" src="./fancybox/jquery.fancybox.js"></script>
+		<!-- optional -->
+		<script type="text/javascript" src="./fancybox/jquery.pngFix.js"></script>
+		<script type="text/javascript" src="./fancybox/jquery.metadata.js"></script>
+		<script type="text/javascript">
+		<!--
+			var SEPARATOR = ",";
+			
+			function calcSoen(){
+				log("","");
+				var i = document.getElementById("baseValue").value;
+				var j = document.getElementById("sellValue").value;
+				var k = document.getElementById("sellNum").value;
+				var l = document.getElementById("vendorValue").value;
+				var m = document.getElementById("buyValue").value;
+				var n = document.getElementById("buyNum").value;
+				var o = document.getElementById("buyerSum").value;
+				var p = document.getElementById("buyerRemaining").value;
+
+				switch(eval(checkValue(i,j,k,l,m,n,o,p))){
+					case 0:
+						return;
+					case 1:
+						i  = displayData2Num(i);
+						j  = displayData2Num(j);
+						k  = displayData2Num(k);
+						o  = displayData2Num(o);
+						p  = displayData2Num(p);
+						
+						outputMaterialNum(i,j,k,o,p);
+						break;
+					case 2:
+						i  = displayData2Num(i);
+						j  = displayData2Num(j);
+						k  = displayData2Num(k);
+						l  = displayData2Num(l);
+						m  = displayData2Num(m);
+						n  = displayData2Num(n);
+						o  = displayData2Num(o);
+						p  = displayData2Num(p);
+						
+						outputMaterialNum(i,j,k,o,p);
+						outputTheOthers(l,m,n);
+						break;
+					default:
+						return;
+				}
+				
+			}
+			
+			//フォーム入力チェック
+			function checkValue(i,j,k,l,m,n,o,p){
+				calcOneFlg = false;
+				calcTwoFlg = false;
+				
+				calcOneFlg = i!="";
+				calcOneFlg = (calcOneFlg) ? j!="" : calcOneFlg;
+				calcOneFlg = (calcOneFlg) ? k!="" : calcOneFlg;
+				calcOneFlg = (calcOneFlg) ? o!="" : calcOneFlg;
+				calcOneFlg = (calcOneFlg) ? p!="" : calcOneFlg;
+				
+				calcTwoFlg = (calcTwoFlg) ? l!="" : calcTwoFlg;
+				calcTwoFlg = (calcTwoFlg) ? m!="" : calcTwoFlg;
+				calcTwoFlg = (calcTwoFlg) ? n!="" : calcTwoFlg;
+				
+				if(calcOneFlg){
+					if(calcTwoFlg){
+						return 2;
+					} else {
+						return 1;
+					}
+				} else {
+					return 0;
+				}
+			
+			return 0;
+				
+			}
+			
+			//素材数量,最適販売個数,他領地販売手数料を出力
+			function outputMaterialNum(baseValue,sellValue,sellNum,buyerSum,buyerRemaining){
+				
+				//素材数量
+				//var ans = Math.floor(sellValue * sellNum / baseValue); //切捨て
+				//var ans = Math.ceil(sellValue * sellNum / baseValue);  //切上げ
+				
+				//他ユーザー清算量
+				var othersNum = buyerSum - buyerRemaining;
+				log("他清算量",othersNum);
+				log("全清算量",othersNum + sellNum);
+				if(othersNum < 0){
+					return;
+				}
+				//残端数算出
+				var allAns = sellValue * othersNum / baseValue;
+				var fraction = allAns - Math.floor(allAns,0);
+				log("端数",fraction);
+								
+				//自己清算報酬素材個数
+				var ans = sellValue * sellNum / baseValue;
+				log("自己個数(中間）",ans);
+				
+				ans = Math.floor(ans + fraction);
+				log("自己個数",ans);
+				
+				document.getElementById("materialNum").innerHTML = num2displayData(ans,"ｺ");
+				
+				//最適販売個数
+				//var ans = Math.ceil(ans * baseValue / sellValue);              //素材数量切捨て時
+				//var ans = (Math.floor((ans - 1) * baseValue / sellValue))+1;   //素材数量切上げ時
+				if(ans > 0){
+					ans = Math.ceil((ans - fraction) * baseValue / sellValue);
+					document.getElementById("sellBestNum").innerHTML = num2displayData(ans,"ｺ");
+				} else {
+					document.getElementById("sellBestNum").innerHTML = num2displayData(0,"ｺ");
+				}
+				//他領地販売手数料
+				if(document.getElementById("anotherFlg").checked){
+					ans = sellValue * sellNum * 0.05;
+					document.getElementById("col5").innerHTML = num2displayData(ans,"A");
+				} else {
+					document.getElementById("col5").innerHTML = "0";
+				}
+			}
+			
+			//露天売上合計,買取合計,純利益,種単価利益,投資利率を出力
+			function outputTheOthers(vendorValue,buyValue,buyNum){
+				var buffVendor = 0;
+				var buffBuy    = 0;
+				var buffIncome = 0;
+				
+				//露天売上合計
+				var materialNum = document.getElementById("materialNum").innerHTML;
+				var ans = vendorValue * displayData2Num(materialNum);
+				document.getElementById("sumVendor").innerHTML = num2displayData(ans,"A");
+				buffVendor = ans;
+				
+				//買取合計
+				ans = buyValue * buyNum;
+				document.getElementById("sumBuy").innerHTML = num2displayData(ans,"A");
+				buffBuy = ans;
+				
+				//純利益
+				var anotherField = document.getElementById("col5").innerHTML;
+				ans = buffVendor - buffBuy - displayData2Num(anotherField);
+				document.getElementById("income").innerHTML = num2displayData(ans,"A");
+
+				buffIncome = ans;
+				
+				//種単価利益
+				ans = Math.round( buffIncome / buyNum );
+				document.getElementById("oneActionIncome").innerHTML = num2displayData(ans,"A");
+				
+				//投資利率
+				ans = Math.round( buffVendor / ( buffBuy + displayData2Num(anotherField)) * 100 * 100 ) / 100;
+				document.getElementById("seedRate").innerHTML = ans + " [%]";
+			}
+
+			
+			//表示用データコンバート
+			function combartDisplayData(ID){
+				var SEPARATOR = ",";
+				var charArray = new Array();
+				charArray = document.getElementById(ID).value.split(SEPARATOR);
+				var value = "";
+				var buff  = "";
+				var count = 0;
+				
+				for(var i=0; i < charArray.length; i++){
+					value += charArray[i];
+				}
+				
+				if(isNaN(value)){
+					document.getElementById(ID).value = "";
+					return;
+				} 
+				var strlen = value.length;
+				document.getElementById(ID).value = num2displayData(value,"");
+				document.getElementById(ID).style.backgroundColor = "#fff";
+			}
+			
+			//表示用データデコンバート
+			function decombartDisplayData(ID){
+				var charArray = new Array();
+				charArray = document.getElementById(ID).value.split(SEPARATOR);
+				var value = "";
+				
+				for(var i=0; i < charArray.length; i++){
+					value += charArray[i];
+				}
+				document.getElementById(ID).style.backgroundColor = "#fff37b";
+				document.getElementById(ID).value = value;
+			}
+			
+			//表示用データ→数字
+			function displayData2Num(data){
+				var buffDataList = new Array();
+				var dataList = new Array();
+				var buff = "";
+				
+				buffDataList = data.split(" ");
+				
+				dataList     = buffDataList[0].split(SEPARATOR);
+				
+				for(var i = 0;i < dataList.length; i++){
+					buff += dataList[i];
+				}
+				return eval(buff);
+			}
+			//数字→表示用データ
+			function num2displayData(Num,unit){
+				Num += "";
+				var strlen = Num.length;
+				var buff = "";
+				if(strlen > 3){
+					for(var i = 0; i < strlen; i++){
+						count = strlen - i-1;
+						buff = (count!=strlen-1 && (i)%3==0)
+							? Num.charAt(count) + SEPARATOR + buff
+						    : Num.charAt(count) + buff;
+					}
+				} else {
+					buff = Num;
+				}
+				
+				if(!(unit == "" || unit == undefined)){
+					buff += " [";
+					buff += unit;
+					buff += "]";
+				}
+				return buff;
+			}
+			
+			function selectMaterial(){
+			
+				Dialog.alert($("dialog4selectMaterial").innerHTML, {className: "alphacube",  width:300, id: "dialog"})
+
+			}
+			
+			//種検索
+			var castle = -1;
+			var lv = -1;
+			function searchSeed(castleValue,lvValue){
+				if(lvValue == -2){
+					castle = castleValue;
+				}
+				if(castleValue == -2){
+					lv = lvValue;
+				}
+
+				
+				var seedList = new Array();
+				switch(eval(castle)){
+					case 0:
+						seedList = [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+						break;
+					case 1:
+						seedList = [0,1,2,3,4,5,6,7,8,9,13,16,17,18,19,20];
+						break;
+					case 2:
+						seedList = [1,3,4,5,6,7,8,9,10,11,12,14,15];
+						break;
+					case 3:
+						seedList = [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22];
+						break;
+					case 4:
+						seedList = [0,1,2,3,4,8,9,10,11,12,14,15,16,17,18,22,23,24];
+						break;
+					case 5:
+						seedList = [8,9,10,11,12,14,15,21,22,23];
+						break;
+					case 6:
+						seedList = [13,18,19,20,21,22,23,24,25,26];
+						break;
+					case 7:
+						seedList = [19,20,21,22,23,24,25,26];
+						break;
+					case 8:
+						seedList = [0,1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18];
+						break;
+					case -1:
+						seedList = [];
+						break;				
+				}
+				var lvList = new Array();
+				switch(eval(lv)){
+					case 0:
+						lvList = [0,1];
+						break;
+					case 1:
+						lvList = [0,1,2,3,4];
+						break;
+					case 2:
+						lvList = [2,3,4,5,6,7,8];
+						break;
+					case 3:
+						lvList = [5,6,7,8,9,10,11];
+						break;
+					case 4:
+						lvList = [9,10,11,12,13,14,15,16];
+						break;
+					case 5:
+						lvList = [12,13,14,15,16,17,18,19];
+						break;
+					case 6:
+						lvList = [17,18,19,20,21,22];
+						break;
+					case 7:
+						lvList = [20,21,22,23,24,25,26];
+						break;
+					case 8:
+						lvList = [23,24,25,26];
+						break;
+					case -1:
+						lvList = [];
+						break;	
+				}
+
+				
+				//fancy boxを捕まえろ！
+				var objList = document.getElementById("fancy_div").childNodes;
+				var buffObjList = new Array();
+				for(var i = 0; i < objList.length; i++){
+					if(objList[i].id=="table4selectMaterial"){
+						buffObjList = objList[i].childNodes;
+						break;
+					}
+				}
+				objList = buffObjList;
+				for(var i = 0; i < objList.length; i++){
+					if(objList[i].id=="tbody4selectMaterial"){
+						buffObjList = objList[i].childNodes;
+						break;
+					}
+				}
+				objList = buffObjList;
+				
+				for(var i = 0; i < objList.length; i++){
+					var headerStr = "";
+					if(objList[i].id != "" && objList[i].id != undefined){
+						headerStr = objList[i].id.substring(0,4);
+					}
+					if(headerStr == "seed"){
+						objList[i].style.display = "none";
+					}
+				}
+		
+				if(seedList.length > 0 && lvList.length > 0){
+					var outputList = new Array();
+					for(var i = 0; i < seedList.length; i++){
+						for(var k = 0; k < lvList.length; k++){
+							if(seedList[i] == lvList[k]){
+								outputList[outputList.length] = seedList[i];
+							}
+						}
+					}
+					for(var i = 0; i < outputList.length; i++){
+						for(var k = 0; k < objList.length; k++){
+							if(objList[k].id == "seed[" + outputList[i] + "]"){
+								objList[k].style.display = "";
+							}
+						}
+					}
+				} else if ( seedList.length > 0 && lvList.length ==  0 ){
+					for(var i = 0; i < seedList.length; i++){
+						for(var k = 0; k < objList.length; k++){
+							if(objList[k].id == "seed[" + seedList[i] + "]"){
+								objList[k].style.display = "";
+							}
+						}
+					}
+				} else if ( seedList.length == 0 && lvList.length >  0 ){
+					for(var i = 0; i < lvList.length; i++){
+						for(var k = 0; k < objList.length; k++){
+							if(objList[k].id == "seed[" + lvList[i] + "]"){
+								objList[k].style.display = "";
+							}
+						}
+					}
+				}
+			}
+			
+			//基本価格セット
+			function setBaseValue(value){
+				document.getElementById("baseValue").value = num2displayData(value,"");
+				$.fn.fancybox.close();
+				calcSoen();
+			}
+			
+			//DebugLog関数
+			function log(value,log){
+				if(value == "" && log == ""){
+					document.getElementById("debugField").innerHTML = "";
+					return;
+				}
+				if(value != ""){
+					log = value + " = " + log;
+				}
+				var preLog = document.getElementById("debugField").innerHTML;
+				log = preLog + "<br />" + log;
+				document.getElementById("debugField").innerHTML = log;
+			}
+			
+			//読込み時処理
+			$(document).ready(
+				function() { 
+				
+					
+					$("td#col2 a").fancybox({
+						'hideOnContentClick': false,
+						'overlayShow' : true,
+						'zoomSpeedIn' : 120,
+						'zoomSpeedOut': 150,
+						'frameWidth'  : 350,
+						'frameHeight' : 400
+					});
+					
+					$("#helper").fancybox({
+						'hideOnContentClick': true,
+						'overlayShow' : true,
+						'zoomSpeedIn' : 120,
+						'zoomSpeedOut': 150,
+						'frameWidth'  : 350
+					});
+				}
+			);
+
+
+		-->
+		</script>
+	</head>
+	<body>
+		<div id="container">
+
+			<table id="firstTable">
+				<tbody id="firstTableBody">
+					<tr>
+						<td colspan="5" class="blank">
+							<a title="使い方" href="#help" id="helper">
+								<table border="0" cellpadding="0" cellspacing="0" class="like_fancy_title">
+									<tbody>
+										<tr>
+											<td class="like_fancy_title_left"></td>
+											<td class="like_fancy_title_main">
+												<div>?</div>
+											</td>
+											<td class="like_fancy_title_right"></td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</td>
+					</tr>
+					<!--最適個数計算-->
+					<tr>
+						<th colspan="5">
+							<!--<th colspan="5">最適個数</th>-->
+							<table border="0" cellpadding="0" cellspacing="0" class="like_fancy_title">
+								<tbody>
+									<tr>
+										<td class="like_fancy_title_left"></td>
+										<td class="like_fancy_title_main">
+											<div>最適種個数</div>
+										</td>
+										<td class="like_fancy_title_right"></td>
+									</tr>
+								</tbody>
+							</table>
+						</th>
+					</tr>
+					<tr>
+						<td id="col1">素材基本値</td>
+						<td id="col2">
+							<input type="text" class="numberInput" id="baseValue" onChange="combartDisplayData(this.id),calcSoen()" onBlur="combartDisplayData(this.id),calcSoen()" onFocus="decombartDisplayData(this.id)">
+							<!--<input type="button" id="materiButton" onClick="selectMaterial()" />-->
+							<a title="荘園種検索" href="#dialog4selectMaterial"><img src="http://callas1900.net/beta/img/syoen_button.jpg" /></a>
+						</td>
+						<td id="col3" class="blank"></td>
+						<td id="col4">他領地販売手数料</td>
+						<td id="col5" class="numberInput"></td>
+					</tr>
+					<!-- -->
+					<tr>
+						<td>買取量</td>
+						<td>
+							<input type="text"  class="numberInput" id="buyerSum" onChange="combartDisplayData(this.id),calcSoen()" onBlur="combartDisplayData(this.id),calcSoen()" onFocus="decombartDisplayData(this.id)">
+						</td>
+						<td class="blank"></td>
+						<td>報酬素材数量</td>
+						<td id="materialNum" class="numberInput"></td>
+					</tr>
+					<tr>
+						<td>買取残量</td>
+						<td>
+							<input type="text"  class="numberInput" id="buyerRemaining" onChange="combartDisplayData(this.id),calcSoen()" onBlur="combartDisplayData(this.id),calcSoen()" onFocus="decombartDisplayData(this.id)">
+						</td>
+						<td class="blank"></td>
+						<td>最適清算個数</td>
+						<td id="sellBestNum" class="numberInput"></td>
+					</tr>
+					<!-- -->
+					<tr>
+						<td>買取値</td>
+						<td>
+							<input type="text"  class="numberInput" id="sellValue" onChange="combartDisplayData(this.id),calcSoen()" onBlur="combartDisplayData(this.id),calcSoen()" onFocus="decombartDisplayData(this.id)">
+						</td>
+						<td class="blank"></td>
+						<td>端数利率</td>
+						<td id="" class="numberInput"></td>
+					</tr>
+					<tr>
+						<td>清算個数</td>
+						<td>
+							<input type="text"  class="numberInput" id="sellNum" onChange="combartDisplayData(this.id),calcSoen()" onBlur="combartDisplayData(this.id),calcSoen()" onFocus="decombartDisplayData(this.id)">
+						</td>
+						<td class="blank"></td>
+						<td class="blank"></td>
+						<td class="blank"></td>
+					</tr>
+					<tr>
+						<td>他領地販売</td>
+						<td align="center">
+							<input type="checkbox" id="anotherFlg" onClick="calcSoen()">
+						</td>
+						<td colspan="2" class="blank"></td>
+						<td class="blank"><!--<input type="button" value="calc" onclick="calcSoenNum()">--></td>
+					</tr>
+					<!--売上予想-->
+					<tr>
+						<!--<th colspan="5">売上予想</th>-->
+						<th colspan="5">
+							<table border="0" cellpadding="0" cellspacing="0" class="like_fancy_title">
+								<tbody>
+									<tr>
+										<td class="like_fancy_title_left"></td>
+										<td class="like_fancy_title_main">
+											<div>売上予想</div>
+										</td>
+										<td class="like_fancy_title_right"></td>
+									</tr>
+								</tbody>
+							</table>
+						</th>
+					</tr>
+					<tr>
+						<td>露天価格</td>
+						<td>
+							<input type="text" class="numberInput" id="vendorValue" onChange="combartDisplayData(this.id),calcSoen()" onBlur="combartDisplayData(this.id),calcSoen()" onFocus="decombartDisplayData(this.id)">
+						</td>
+						<td class="blank"></td>
+						<td>露天売上合計</td>
+						<td id="sumVendor" class="numberInput"></td>
+					</tr>
+					<tr>
+						<td>販売値</td>
+						<td>
+							<input type="text" class="numberInput" id="buyValue" onChange="combartDisplayData(this.id),calcSoen()" onBlur="combartDisplayData(this.id),calcSoen()" onFocus="decombartDisplayData(this.id)">
+						</td>
+						<td class="blank"></td>
+						<td>種価格合計</td>
+						<td id="sumBuy" class="numberInput"></td>
+					</tr>
+					<tr>
+						<td>買取種個数</td>
+						<td>
+							<input type="text" class="numberInput" id="buyNum" onChange="combartDisplayData(this.id),calcSoen()" onBlur="combartDisplayData(this.id),calcSoen()" onFocus="decombartDisplayData(this.id)">
+						</td>
+						<td class="blank"></td>
+						<td>粗利益</td>
+						<td id="income" class="numberInput"></td>
+					</tr>
+					<!--種評価-->
+					<tr>
+						<!--<th colspan="5">種評価</th>-->
+						<th colspan="5">
+							<table border="0" cellpadding="0" cellspacing="0" class="like_fancy_title">
+								<tbody>
+									<tr>
+										<td class="like_fancy_title_left"></td>
+										<td class="like_fancy_title_main">
+											<div>種評価</div>
+										</td>
+										<td class="like_fancy_title_right"></td>
+									</tr>
+								</tbody>
+							</table>
+						</th>
+						
+					</tr>
+					<tr>
+						<td colspan="3" class="blank"></td>
+						<td>種単価利益</td>
+						<td id="oneActionIncome"  class="numberInput"></td>
+					</tr>
+					<tr>
+						<td colspan="3" class="blank"></td>
+						<td>投資利率</td>
+						<td id="seedRate"  class="numberInput"></td>
+					</tr>
+				</tbody>
+			</table>
+		
+			<div id="dialog4selectMaterial" style="display:none;">
+				<table id="table4selectMaterial">
+					<tbody id="tbody4selectMaterial">
+						<tr>
+							<td colspan="4">
+								<span>Castle : </span>
+								<select id="castles" onChange="searchSeed(this.value,-2)">
+									<option value="-1">-------</option>
+									<option value="0">Aden</option>
+									<option value="1">Gludio</option>
+									<option value="2">Dion</option>
+									<option value="3">Giran</option>
+									<option value="4">Oren</option>
+									<option value="5">Innadril</option>
+									<option value="6">Rune</option>
+									<option value="7">Goddard</option>
+									<option value="8">Schuttgart</option>
+								</select>
+								<span>   Lv : </span>
+								<select id="clv" onChange="searchSeed(-2,this.value)">
+									<option value="-1">-------</option>
+									<option value="0">01～09</option>
+									<option value="1">10～19</option>
+									<option value="2">20～29</option>
+									<option value="3">30～39</option>
+									<option value="4">40～49</option>
+									<option value="5">50～59</option>
+									<option value="6">60～69</option>
+									<option value="7">70～79</option>
+									<option value="8">80～90</option>
+								</select>
+							</td>
+						</tr>
+						<tr><th rowspan="2">種の名前</th><th rowspan="2">適正Lv</th><th colspan="2">素材名</th></tr>
+						<tr><th>報酬タイプ1</th><th>報酬タイプ2</th></tr>
+						<tr id="seed[0]"  style="display:none;"><td>ダーク コーダ</td>    <td>05～15</td><td><a href="#" onclick="setBaseValue(100)" >幹</a></td>          <td><a href="#" onclick="setBaseValue(500)"  >Ｈストラップ</a></td></tr>
+						<tr id="seed[1]"  style="display:none;"><td>レッド コーダ</td>    <td>08～18</td><td><a href="#" onclick="setBaseValue(200)" >研磨剤</a></td>      <td><a href="#" onclick="setBaseValue(1200)" >コークス</a></td></tr>
+						<tr id="seed[2]"  style="display:none;"><td>チル コーダ</td>      <td>11～21</td><td><a href="#" onclick="setBaseValue(300)" >スウェード</a></td>  <td><a href="#" onclick="setBaseValue(3000)" >オリ石</a></td></tr>
+						<tr id="seed[3]"  style="display:none;"><td>ブルー コーダ</td>    <td>14～24</td><td><a href="#" onclick="setBaseValue(150)" >動物の皮</a></td>    <td><a href="#" onclick="setBaseValue(5700)" >Ｑレザー</a></td></tr>
+						<tr id="seed[4]"  style="display:none;"><td>ゴールデン コーダ</td><td>17～27</td><td><a href="#" onclick="setBaseValue(100)" >糸</a></td>          <td><a href="#" onclick="setBaseValue(1000)" >ミス石</a></td></tr>
+						<tr id="seed[5]"  style="display:none;"><td>リュート コーダ</td>  <td>20～30</td><td><a href="#" onclick="setBaseValue(200)" >鉄鉱石</a></td>      <td><a href="#" onclick="setBaseValue(700)"  >金属繊維</a></td></tr>
+						<tr id="seed[6]"  style="display:none;"><td>デザート コーダ</td>  <td>23～33</td><td><a href="#" onclick="setBaseValue(200)" >黒炭</a></td>        <td><a href="#" onclick="setBaseValue(5000)" >アダマンタイト</a></td></tr>
+						<tr id="seed[7]"  style="display:none;"><td>レッド コボル</td>    <td>26～36</td><td><a href="#" onclick="setBaseValue(200)" >炭</a></td>          <td><a href="#" onclick="setBaseValue(12000)">エンリア</a></td></tr>
+						<tr id="seed[8]"  style="display:none;"><td>チル コボル</td>      <td>29～39</td><td><a href="#" onclick="setBaseValue(150)" >動物の骨</a></td>    <td><a href="#" onclick="setBaseValue(2000)" >鋼鉄</a></td></tr>
+						<tr id="seed[9]"  style="display:none;"><td>ブルー コボル</td>    <td>32～42</td><td><a href="#" onclick="setBaseValue(500)" >シルバー</a></td>    <td><a href="#" onclick="setBaseValue(6000)" >ソンズ</a></td></tr>
+						<tr id="seed[10]" style="display:none;"><td>バー コボル</td>      <td>35～45</td><td><a href="#" onclick="setBaseValue(100)" >幹</a></td>          <td><a href="#" onclick="setBaseValue(2000)" >金属糸</a></td></tr>
+						<tr id="seed[11]" style="display:none;"><td>ゴールデン コボル</td><td>38～48</td><td><a href="#" onclick="setBaseValue(200)" >研磨剤</a></td>      <td><a href="#" onclick="setBaseValue(6000)" >型の接着剤</a></td></tr>
+						<tr id="seed[12]" style="display:none;"><td>グレート コボル</td>  <td>41～51</td><td><a href="#" onclick="setBaseValue(300)" >スウェード</a></td>  <td><a href="#" onclick="setBaseValue(2400)" >Ｑスウェード</a></td></tr>
+						<tr id="seed[13]" style="display:none;"><td>グレート コドラン</td><td>41～51</td><td><a href="#" onclick="setBaseValue(150)" >動物の骨</a></td>    <td><a href="#" onclick="setBaseValue(1500)" >骨粉</a></td></tr>
+						<tr id="seed[14]" style="display:none;"><td>レッド コドラン</td>  <td>44～54</td><td><a href="#" onclick="setBaseValue(150)" >動物の皮</a></td>    <td><a href="#" onclick="setBaseValue(6000)" >アソペ</a></td></tr>
+						<tr id="seed[15]" style="display:none;"><td>シー コドラン</td>    <td>45～55</td><td><a href="#" onclick="setBaseValue(100)" >糸</a></td>          <td><a href="#" onclick="setBaseValue(325)"  >強化糸</a></td></tr>
+						<tr id="seed[16]" style="display:none;"><td>チル コドラン</td>    <td>47～57</td><td><a href="#" onclick="setBaseValue(200)" >鉄鉱石</a></td>      <td><a href="#" onclick="setBaseValue(23000)">強化剤</a></td></tr>
+						<tr id="seed[17]" style="display:none;"><td>ブルー コドラン</td>  <td>50～60</td><td><a href="#" onclick="setBaseValue(200)" >黒炭</a></td>        <td><a href="#" onclick="setBaseValue(900)"  >レザー</a></td></tr>
+						<tr id="seed[18]" style="display:none;"><td>ツイン コドラン</td>  <td>53～63</td><td><a href="#" onclick="setBaseValue(200)" >炭</a></td>          <td><a href="#" onclick="setBaseValue(10000)">型の潤滑剤</a></td></tr>
+						<tr id="seed[19]" style="display:none;"><td>デザート コドラン</td><td>59～69</td><td><a href="#" onclick="setBaseValue(500)" >シルバー</a></td>    <td><a href="#" onclick="setBaseValue(15000)">補強板</a></td></tr>
+						<tr id="seed[20]" style="display:none;"><td>ブルー コバ</td>      <td>62～72</td><td><a href="#" onclick="setBaseValue(5700)">Ｑレザー</a></td>    <td><a href="#" onclick="setBaseValue(6000)" >型の接着剤</a></td></tr>
+						<tr id="seed[21]" style="display:none;"><td>レッド コバ</td>      <td>65～75</td><td><a href="#" onclick="setBaseValue(6600)">合成コークス</a></td><td><a href="#" onclick="setBaseValue(10000)">型の潤滑剤</a></td></tr>
+						<tr id="seed[22]" style="display:none;"><td>ゴールド コバ</td>    <td>68～78</td><td><a href="#" onclick="setBaseValue(8100)">純白の研磨剤</a></td><td><a href="#" onclick="setBaseValue(23000)">型の強化剤</a></td></tr>
+						<tr id="seed[23]" style="display:none;"><td>デザート コバ</td>    <td>71～81</td><td><a href="#" onclick="setBaseValue(6000)">アソペ</a></td>      <td><a href="#" onclick="setBaseValue(13100)">ミスリル合金</a></td></tr>
+						<tr id="seed[24]" style="display:none;"><td>シー コバ</td>        <td>74～84</td><td><a href="#" onclick="setBaseValue(6000)">ソンズ</a></td>      <td><a href="#" onclick="setBaseValue(12000)">エンリア</a></td></tr>
+						<tr id="seed[25]" style="display:none;"><td>ツイン コバ</td>      <td>77～87</td><td><a href="#" onclick="setBaseValue(2400)">Ｑスウェード</a></td><td><a href="#" onclick="setBaseValue(24600)">オリハルコン</a></td></tr>
+						<tr id="seed[26]" style="display:none;"><td>グレード コバ</td>    <td>80～90</td><td><a href="#" onclick="setBaseValue(2000)">金属糸</a></td>      <td><a href="#" onclick="setBaseValue(15000)">補強板</a></td></tr>
+					</tbody>
+				</table>
+			</div>
+			
+			
+			<div id="help" style="display:none;">
+				<div id="help_content">
+					<table>
+						<tbody>
+							<tr>
+								<th colspan="3">最適個数</th>
+							</tr>
+							<tr><td>基本価格</td>  <td>：</td><td>素材の基本価格。<br />「!」ボタンを押すことで城とレベルから検索可能</td></tr>
+							<tr><td>販売単価</td>  <td>：</td><td>領主の買取設定額</td></tr>
+							<tr><td>販売個数</td>  <td>：</td><td>領主に販売する個数</td></tr>
+							<tr><td>他領地販売</td><td>：</td><td>別領地の清算をするかのフラグ</td></tr>
+							<tr><td>他領地販売手数料</td><td>：</td><td>他の領地に販売する場合の手数料</td></tr>
+							<tr><td>素材数量</td><td>：</td><td>上記販売個数で貰える個数</td></tr>
+							<tr><td>最適販売個数</td><td>：</td><td>上記販売個数を貰える個数の中での最小値</td></tr>
+							<tr>
+								<th colspan="3">売上予想</th>
+							</tr>
+							<tr><td>露天価格</td><td>：</td><td>露天での販売価格</td></tr>
+							<tr><td>買取単価</td><td>：</td><td>領主の販売設定額</td></tr>
+							<tr><td>買取個数</td><td>：</td><td>領主から買取る個数</td></tr>
+							<tr><td>露天売上合計</td><td>：</td><td>上記素材個数を実売価格で売り切った時の合計値</td></tr>
+							<tr><td>買取合計</td><td>：</td><td>城主から買った種の総合計</td></tr>
+							<tr><td>純利益</td><td>：</td><td>露天売上合計から買取合計を引いたもの</td></tr>
+							<tr>
+								<th colspan="3">種評価</th>
+							</tr>
+							<tr><td>種単価利益</td><td>：</td><td>上記計算結果より、種一つを撒くごとに得られる期待値</td></tr>
+							<tr><td>投資利率</td><td>：</td><td>投資したアデナが何倍になるかの期待％</td></tr>
+					</table>
+				</div>
+			</div>
+			<div id="debugField" style="text-align:left;font-size:10px;margin-top:10px;">
+			</div>
+			<h5 id="history_title">history</h5>
+			<div id="history">
+<pre>
+2008.10.30 UPDATE : 文言を一部改変
+2008.10.30 BUGFIX : 販売個数の算出に買取量と買取残量のパラメタを追加
+2008.10.29 BUGFIX : 販売個数の算出方法を切上げに変更。
+2008.10.29 BUG    : 販売個数の算出方法に誤りを発見。
+2008.10.28 BUG    : IE7で見れることを確認。
+2008.10.28 BUG    : IE6じゃ綺麗に見れないことが判明。→無視
+2008.10.28 BUGFIX : ブルーコバとゴールドコバの情報の誤り修正
+2008.10.24 BUG    : ブルーコバとゴールドコバの情報に誤りあり（未修正）
+2008.10.24 UPDATE : 荘園種入力ダイアログ機能追加。（確認はFireFox3のみ）
+2008.10.17 UPDATE : とりあえず完成。（確認はFireFox3のみ）
+</pre>
+			</div>
+		</div>
+	</body>
+</html>

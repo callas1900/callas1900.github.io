@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script type="text/JavaScript">
+				var temp01,temp02,temp03,temp04;
+				var Mattack,Dam;
+				function j_math(temp02,temp03,temp04){
+							Mattack = Math.sqrt(temp03);
+							temp01 = 91;
+							Dam = temp01 * temp02 * Mattack / temp04;
+							result.innerHTML = "E = " + temp01 +"<br>skill = " + temp02 + "<br>Ma^2 = " + Mattack + "<br>Mr = " + temp04 + "<p>DAM = " + Dam + "</p>";
+							}
+		</script>
+	</head>
+	<body>
+		<form name="math">
+			<table rules="1">
+				<tr>
+					<th>Skill = </th>
+					<td>
+						<input type="text" id="input02" maxlength="100" size="10">
+					</td>
+				</tr>
+				<tr>
+					<th>Ma = </th>
+					<td>
+						<input type="text" id="input03" maxlength="100" size="10">
+					</td>
+				</tr>
+				<tr>
+					<th>Mr = </th>
+					<td>
+						<input type="text" id="input04" maxlength="100" size="10">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="button" onClick="j_math(input02.value,input03.value,input04.value)" value="math">
+					</td>
+				</tr>
+			</table>
+		</form>
+		<div id="result"></div>
+	</body>
+</html>
+

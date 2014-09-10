@@ -1,0 +1,5 @@
+﻿<Files ~ "^.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+Redirect permanent /blog/ http://blog.callas1900.net/

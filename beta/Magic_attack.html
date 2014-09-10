@@ -1,0 +1,414 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+	<TITLE>MagicCalc - LineageⅡ</TITLE>
+	<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+	<LINK media=screen href="style/sIFR-screen.css" type=text/css rel=stylesheet>
+	<LINK media=print href="style/sIFR-print.css" type=text/css rel=stylesheet>
+	<LINK media=screen href="style/style.css" type=text/css rel=stylesheet>
+	<script type="text/javascript" src="js/calc.js" language="javascript"></script>
+	<script type="text/javascript" src="js/ma.js" language="javascript"></script>
+	<script type="text/javascript" src="js/ms.js" language="javascript"></script>
+	<script type="text/javascript" src="js/mp.js" language="javascript"></script>
+	<script type="text/javascript" src="js/formAction.js" language="javascript"></script>
+	
+
+
+
+	
+	<style type="text/css">
+	<!--
+		dl{
+			font-size:9px;
+			}
+		#ma,.set{
+			font-size:9px;
+		}
+		hr{
+			margin-bottom:5px;
+			margin-top:5px;
+			color:#b0d747;
+		}
+		#result{
+			clear:right;
+			font-family:sans-serif;
+			font-size:11px;
+			color:#777;
+		}
+		
+		.ans{
+			color:#336699;
+			font-size:20px;
+			font-family:sans-serif;
+			text-align:right;
+		}
+		#ansField th{
+			font-family:sans-serif;
+			font-size:12px;
+			text-align:right;
+			height:24px;
+			border-bottom:2px solid #ccc;
+		}
+		#ansField td{
+			font-weight:bold;
+			width:150px;
+			font-family:sans-serif;
+			border-bottom:2px solid #ccc;
+		}
+		#some th{
+			text-align:left;
+			width:70px;
+			}
+		.wepOp{
+			text-align:right;
+			}
+	-->
+	</style>
+</HEAD>
+<BODY>
+<DIV id=toptop>
+<P><IMG height=100 alt="The Skinny" src="style/theskinnytop.gif" width=340 
+useMap=#Map border=0> <MAP id=Map name=Map><AREA shape=RECT alt=""   coords=282,-15,473,17 
+href="http://feeds.feedburner.com/TheSkinny"></MAP></P></DIV>
+<DIV id=bigwrapper>
+<DIV id=header></DIV>
+<DIV id=topbar onmouseover=scale.sizeup() onmouseout=scale.sizedown(30)>
+<SCRIPT type=text/javascript>var topbar = document.getElementById('topbar'); topbar.style.height = 30 + "px";</SCRIPT>
+<DIV id=redline>
+<P></P>
+<DIV id=rolltab></DIV>
+<P></P></DIV>
+<DIV id=topbarmenuwrapper>
+<DIV class=barmenuleft>
+<H3>Pages</H3>
+<UL>
+  <LI><A href="http://www.theskinny.anthonydeloso.com/">Home</A> 
+  <LI class=page_item><A title=About  href="http://www.theskinny.anthonydeloso.com/?page_id=2">About</A> 
+  <LI class=page_item><A title=Subscribe  href="http://www.theskinny.anthonydeloso.com/?page_id=4">Subscribe</A> 
+</LI></UL></DIV>
+<DIV class=barmenuright>
+<H3>Sections</H3>
+<UL>
+  <LI><A title="View all posts filed under The Skinny"   href="http://www.theskinny.anthonydeloso.com/?cat=1">The Skinny</A> 
+  <LI><A title="View all posts filed under Innovation"   href="http://www.theskinny.anthonydeloso.com/?cat=2">Innovation</A> 
+  <LI><A title="View all posts filed under Creativity"   href="http://www.theskinny.anthonydeloso.com/?cat=4">Creativity</A> 
+</LI></UL></DIV></DIV></DIV>
+<div class=post>
+	<div id=titlebar>
+		<h5 class=posth3></h5>
+	</div>
+		<dd>
+			<dt><h5 class=posth3>使う前の注意。</h5><dt>
+			<dl>　・レベルは必須入力項目です。</dl>
+			<dl>　・武器攻撃力が未入力の場合は素手とみなされます。</dl>
+			<dl>　・防具セットは攻撃力に関係あるもののみです、</dl>
+			<dl>　・詠唱速度系のセットを着ている場合はセット効果を選択しないでください。</dl>
+			<dl>　・１～２ぐらいのずれはあるかもしれません。</dl>
+			<dl>　・ウェッポンマスタリーそのレベルで取得出来る最高のものを<br>　取得済みとして計算しています。</dl>
+			<dl>　・まだ実験段階なので、<br>　デバッグコードが計算結果の下に出ますが<br>　気にしないでください。</dl>
+		</dd>
+<div><hr></div><br>
+	<DIV id=commentwrapper>
+	<p>
+			<form action="" name="maForm">
+			<table id="ma">
+				<tr>
+					<td colspan="2"><h2 class=posth2>base data</h2></td>
+				</tr>
+				<tr>
+					<td><span style="color:red;">※</span>種族</td>
+					<td>
+						<select name="job" onblur="contSome()">
+							<option value="HM">HumM</option>
+							<option value="DM">DeM</option>
+							<option value="EM">EM</option>
+							<option value="OM">OrcM</option>
+							<option value="HF">HumF</option>
+							<option value="DF">DeF</option>
+							<option value="EF">EF</option>
+							<option value="OF">OrcF</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="color:red;">※</span>キャラクターレベル</td>
+					<td>
+						<input type="text" size="3" name="lv"></input>
+					</td>
+				</tr>
+				<tr>
+					<td><span style="color:red;">※</span>武器魔法力</td>
+					<td>
+						<input type="text" size="3" name="wep" value=""></input>
+					</td>
+				</tr>
+				<tr onclick="opCheck()">
+					<td>オプション効果選択</td>
+					<td>
+						<input type="radio" name="op" checked>無し</input>
+					</td>
+				</tr>
+				<tr onclick="opCheck()">
+					<td class="wepOp">魔法力</td>
+					<td>
+						<input type="radio" name="op">マジックパワー</input><br />
+						<input type="radio" name="op">エンパワー</input>
+					</td>
+				</tr>
+				<tr id="opMp" style="display:none;">
+					<td colspan="2">
+						<select name="magicP" class="set">
+							<option value="1" selected></option>
+							<option value="ms">【C】ミステリー ソード</option>
+							<option value="ds">【C】デスブレス ソード</option>
+							<option value="soe">【C】ソード オブ エクリプス</option>
+							<option value="tow">【B】ティアーズ オブ ウィザード</option>
+							<option value="es">【A】エレメンタル ソード</option>
+							<option value="som">【A】ソード オブ ミラクル</option>
+						</select>
+					</td>
+				</tr>
+				<tr id="opEp" disabled style="display:none;">
+					<td colspan="2">
+						<select name="enP" class="set">
+							<option value="1" selected></option>
+							<option value="ds">【C】デスブレス ソード</option>
+							<option value="soe">【C】ソード オブ エクリプス</option>
+							<option value="es">【A】エレメンタルソード</option>
+							
+					</td>
+				</tr>
+				<tr onclick="opCheck()">
+					<td class="wepOp">詠唱速度</td>
+					<td>
+						<input type="radio" name="op">アキュメン</input>
+					</td>
+				</tr>
+				<tr onclick="opCheck()">
+					<td class="wepOp">MP量</td>
+					<td>
+						<input type="radio" name="op">マナアップ</input><br/>
+						<input type="radio" name="op">アップダウン</input>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr color="#b0d747"></td></tr>
+				<tr>
+					<td colspan="2"><h2 class=posth2>equip data</h2></td>
+				</tr>
+				<tr>
+					<td colspan="2">防具セット効果選択</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<select name="set" class="set">
+							<option value="1" selected></option>
+							<option value="D1">【D】ナレッジセット</option>
+							<option value="D2">【D】エルブンミスリルセット</option>
+							<option value="D3">【D】誓いのコートセット</option>
+							<option value="C3">【C】カルミセット</option>
+							<option value="C1">【C】デーモンセット</option>
+							<option value="C2">【C】ブレスドセット</option>
+							<option value="B4">【B】アバローブセット</option>
+							<option value="B1">【B】シルノエンローブセット</option>
+							<option value="B2">【B】ブルー ウルヴズローブセット</option>
+							<option value="B3">【B】ドゥームローブセット</option>
+							<option value="A4">【A】ダーククリスタルローブセット</option>
+							<option value="A1">【A】タラムローブセット</option>
+							<option value="A2">【A】ナイトメアローブセット</option>
+							<option value="A3">【A】マジェスティックローブセット</option>
+							<option value="S1">【S】メジャー アルカナ ローブ セット</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+					<table id="some">
+						<tr>
+							<th>INT染料</th><th>MEN染料</th><th>WIT染料</th>
+						</tr>
+						<tr>
+							<td>
+								<select name="intSome">
+									<option value="+5">+5</option>
+									<option value="+4">+4</option>
+									<option value="+3">+3</option>
+									<option value="+2">+2</option>
+									<option value="+1">+1</option>
+									<option value="0" selected>0</option>
+									<option value="-1">-1</option>
+									<option value="-2">-2</option>
+									<option value="-3">-3</option>
+									<option value="-4">-4</option>
+									<option value="-5">-5</option>
+									<option value="-6">-6</option>
+									<option value="-7">-7</option>
+									<option value="-8">-8</option>
+									<option value="-9">-9</option>
+									<option value="-10">-10</option>
+									<option value="-10">-11</option>
+									<option value="-10">-12</option>
+									<option value="-10">-13</option>
+								</select>
+							</td>
+							<td>
+								<select name="menSome">
+									<option value="+5">+5</option>
+									<option value="+4">+4</option>
+									<option value="+3">+3</option>
+									<option value="+2">+2</option>
+									<option value="+1">+1</option>
+									<option value="0" selected>0</option>
+									<option value="-1">-1</option>
+									<option value="-2">-2</option>
+									<option value="-3">-3</option>
+									<option value="-4">-4</option>
+									<option value="-5">-5</option>
+									<option value="-6">-6</option>
+									<option value="-7">-7</option>
+									<option value="-8">-8</option>
+									<option value="-9">-9</option>
+									<option value="-10">-10</option>
+									<option value="-10">-11</option>
+									<option value="-10">-12</option>
+									<option value="-10">-13</option>
+								</select>
+							</td>
+							<td>
+								<select name="witSome">
+									<option value="+5">+5</option>
+									<option value="+4">+4</option>
+									<option value="+3">+3</option>
+									<option value="+2">+2</option>
+									<option value="+1">+1</option>
+									<option value="0" selected>0</option>
+									<option value="-1">-1</option>
+									<option value="-2">-2</option>
+									<option value="-3">-3</option>
+									<option value="-4">-4</option>
+									<option value="-5">-5</option>
+									<option value="-6">-6</option>
+									<option value="-7">-7</option>
+									<option value="-8">-8</option>
+									<option value="-9">-9</option>
+									<option value="-10">-10</option>
+									<option value="-10">-11</option>
+									<option value="-10">-12</option>
+									<option value="-10">-13</option>
+								</select>
+							</td>
+					</table>
+					<div style="color:red;">注意：ヒーラー系列はINTを下げれません。</div>
+					<br /><input type="button" value="reset" onClick="resetSome()" />
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr color="#b0d747"></td></tr>
+				<tr>
+					<td colspan="2"><h2 class=posth2>enchant data</h2></td>
+				</tr>
+				<tr>
+					<td>エンパワー</td>
+					<td>
+						<select name="enpa">
+							<option value="0" selected></option>
+							<option value="1">Lv.1</option>
+							<option value="2">Lv.2</option>
+							<option value="3">Lv.3</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>バーサーカースピリット</td>
+					<td>
+						<select name="bs">
+							<option value="0" selected></option>
+							<option value="1">Lv.1</option>
+							<option value="2">Lv.2</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>ブレスザソウル</td>
+					<td>
+						<select name="bsoul">
+							<option value="0" selected></option>
+							<option value="1">Lv.1</option>
+							<option value="2">Lv.2</option>
+							<option value="3">Lv.3</option>
+							<option value="4">Lv.4</option>
+							<option value="5">Lv.5</option>
+							<option value="6">Lv.6</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>アキュメン</td>
+					<td>
+						<select name="ac">
+							<option value="0" selected></option>
+							<option value="1">Lv.1</option>
+							<option value="2">Lv.2</option>
+							<option value="3">Lv.3</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="reset" onClick="resetEnchant()" /></td><td></td>
+				</tr>
+			</table>
+			<hr>
+			<div align="right"><input type="button" value="submit" OnClick="calc()" /></div>
+			<table id="ansField" align="right">
+				<tr>
+					<th>魔法力 : </th><td id="ansMa" class="ans">　</td>
+				</tr>
+				<tr>
+					<th>MP量 : </th><td id="ansMp" class="ans">　</td>
+				</tr>
+				<tr>
+					<th>詠唱速度 : </th><td id="ansMs" class="ans">　</td>
+				</tr>
+			</table>
+
+			<div id="result"></div>
+		</form><!--formここまで-->
+		
+		<object id="intDatabase" classid="CLSID:333C7BC4-460F-11D0-BC04-0080C7055A83">
+			<param name="DataURL"   value="db.csv">
+			<param name="UseHeader" value="true">
+		</object>
+		<table datasrc="#intDatabase" id="intData" style="display:none">
+			<thead>
+				<tr><th>INT</th><th>INT係数</td></tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td ALIGN="right"><span datafld="Num"></span></td>
+					<td ALIGN="left"><span datafld="intNum"></span></td>
+				</tr>
+			</tbody>
+		</table>
+</p>	</DIV>
+
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+  document.write('<scr'+'ipt src="http://crazyegg.com/pages/scripts/21031.js?'+(new Date()).getTime()+'" type="text/javascript"></scr'+'ipt>');
+//]]>
+</SCRIPT>
+</DIV>
+<DIV id=footer>
+<P></P></DIV></DIV>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+/* Replacement calls. Please see documentation for more information. */
+
+if(typeof sIFR == "function"){
+
+	sIFR.replaceElement("h5", "EFFLORESce_basic.swf", "#160502", "#160502", "#B0D747", "#FFFFFF", 0, 0, 0, 0);
+
+};
+
+//]]>
+</SCRIPT>
+</BODY></HTML>

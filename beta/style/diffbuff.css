@@ -1,0 +1,41 @@
+
+table{
+	border-collapse:collapse;
+}
+
+td{
+	border:1px solid #000;
+	font-size:12px;
+	text-align:left;
+	padding:0px;
+}
+
+th{
+	border:1px solid #000;
+	background-color:#abc;
+}
+
+img{
+	margin:1px;
+	margin-top:1px;
+	margin-bottom:1px;
+	margin-right:5px;
+	padding:0px;
+	float:left;
+}
+
+p{
+	font-size:12px;
+}
+
+select{
+	margin:5px;
+}
+.check{
+	text-align:center;
+
+}
+
+.databox{
+	width:235px;
+}

@@ -1,0 +1,73 @@
+#errMsgField{
+	border:3px solid #FF0000;
+	display:none;
+	height:30px;
+	margin:10px;
+	padding:10px;
+	text-align:center;
+	padding-top:25px;
+	font-size:16px;
+	font-weight:bold;
+	background-color:#FF9999;
+}
+
+.textBox{
+	border:1px solid #7f9db9;
+	color:#147;
+	font-size:12px;
+	text-align:right;
+}
+
+table{
+	margin-right:auto;
+	margin-left:auto;
+	border-collapse:collapse;
+	border:1px solid #7f9db9;
+	height:230px;
+	width:372px;
+}
+
+tr{
+
+}
+th{
+	border:0px solid #7f9db9;
+	color:#fff;
+	background-color:#336699;
+	border-top:1px solid #336699;
+	border-bottom:1px solid #336699;
+	font-size:12px;
+	height:25px;
+}
+td{
+	border-top:1px solid #7f9db9;
+	border-bottom:1px solid #7f9db9;
+	color:#147;
+	font-size:12px;
+	height:25px;
+	text-align:center;
+	font-family:verdana;
+}
+form{
+	text-align:center;
+
+}
+
+table#pcExpCalc{
+	height:50px;
+	width:250px;
+}
+
+#dummyBoard{
+	background-color:#c8c6b7;
+	color:#000;
+	display:none;
+	height:230px;
+	margin-left:auto;
+	margin-right:auto;
+	width:362px;
+	font-size:12px;
+	text-align:left;
+	padding:5px;
+	border:1px solid #000;
+}

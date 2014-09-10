@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>Log4j::SQL 値入力順次置換するだけのもの</title>
+	</head>
+	<style>
+
+		#sql{
+			width:400px;
+			height:300px;
+			font-size:12px;
+
+			background-color: #C0E559
+		}
+		#argCsv{
+			width:400px;
+			margin:20px;
+		}
+		#ans{
+			font-size:12px;
+			background-color: #84C5C6;
+			width:400px;
+			height:300px;
+		}
+		
+		
+		div.msgFIeld{
+			height:40px;
+			text-align:center;
+			padding-top:20px;
+		}
+		div#err{
+			border : 3px solid #c11;
+			background-color:#FFE2DE;
+		}
+		div#info{
+			background-color:#ff0;
+		}
+
+		#mainButton{
+			height:60px;
+		}
+		.nomal{
+			font-size:12px;
+		}
+		
+		#argCsv{
+			margin:0px;
+		}
+	</style>
+	<!-- <link rel="stylesheet" type="text/css" href="hoge.css"> -->
+	<script text="javascript">
+		function main(){
+			var sSql = "";
+			var argCsv = "";
+			var sSqlArray = new Array();
+			var argArray = new Array();
+			var ret = "";
+			var k = 0;
+			
+			//値取得
+			sSql = document.getElementById("sql").value;
+			argCsv = document.getElementById("argCsv").value;
+			
+			//テクストエリアの改行コードをHTML改行に
+			//sSql = sSql.replace(/\n/g,"<br />"); 
+			
+			
+			sSqlArray = sSql.split("?");
+			argArray = argCsv.split(",");
+
+			document.getElementById("ans").value = "";
+
+			//フィールドチェック処理
+			if(!checkData(sSqlArray,argArray)) return;
+
+			//SQL作成
+			for(var i = 0;i < sSqlArray.length; i++){
+				ret += sSqlArray[i];
+				if( i != sSqlArray.length - 1 ){
+					var arg = argArray[i];
+					
+					//前方1byteスペース削除処理
+					if(document.getElementById("check2").checked && arg.substr(0,1)==" ") arg = arg.substr(1,arg.length-1);
+					//シングルコーテーション追加 or 追加なし
+					ret += (document.getElementById("check1").checked) ? "'" + arg + "'"
+				                                                       : arg;
+				}
+
+			}
+
+			document.getElementById("ans").value = ret;
+			
+			
+		}
+		function allClear(){
+			document.getElementById("sql").value = "";
+			document.getElementById("argCsv").value = "";		
+			document.getElementById("ans").value = "";
+			init();
+		}
+		function sub1(){
+			clipboardData.setData("Text", document.getElementById("ans").value);
+			//clipboardData.setData("Text", "hoge");
+		}
+
+		function init(){
+			document.getElementById("err").style.display = "none";
+			document.getElementById("info").style.display = "none";
+		}
+		
+		function checkData(argArray1,argArray2){
+
+			init();
+			
+			var msg = "";
+			var Field1 = document.getElementById("sql").value;
+			var Field2 = document.getElementById("argCsv").value;
+			
+			if(Field1.trim()==""){
+				
+				msg = "SQLが入力されていません。";
+
+			} else if (Field2.trim()=="") {
+
+				msg = "Parameters CSV が入力されていません。";
+
+			}
+			
+			if(msg == "" && !(argArray1.length - 1 == argArray2.length)){
+				msg = "SQLの入力引数とParameterの数が一致していません。";
+			}
+
+			if(msg != ""){
+
+				document.getElementById("err").innerHTML = msg;
+				document.getElementById("err").style.display = "";
+
+				return false;
+			}
+
+			return true;
+		}
+		
+		//Trim関数
+		String.prototype.trim = function() {
+			return this.replace(/^\s+|\s+$/g, "");
+		}
+
+	</script>
+
+	<body onload="init()">
+		<table>
+			<tr>
+				<td colspan="2">
+					<input value="All Clear" type="button" onClick=" allClear()"></input>
+				</td>
+				<td>
+					<input type="checkbox" id="check1"></input>
+					<label for="check1">
+						<span class="nomal">シングルコーテーションを付与する。</span><br />
+					</label>
+					<input type="checkbox" id="check2"></input>
+					<label for="check2">
+						<span class="nomal">Parametersの前方1byteスペースを削除する。</span><br />
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div id="err" class="msgFIeld"></div>
+					<div id="info" class="msgFIeld"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea id="sql"></textarea>
+				</td>
+				<td><input value="==>" type="button" onClick=" main()" id="mainButton"></input></td>
+				<td>
+					<textarea id="ans"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div style="text-align:right;">
+						<a href="#" onClick="sub1()" class="nomal">くりっぷぼーどにコピー(IE専用)</a><br />
+					</div>
+					Parameters : [　<input id="argCsv" type="text">　]
+
+				</td>
+			</tr>
+		</table>
+		
+		
+		
+		
+		
+		<!--<code><div id="ans"></div></code>-->
+
+		<form>
+		</form>
+	</body>
+</html>

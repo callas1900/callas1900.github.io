@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>Numbering</title>
+	</head>
+	<style>
+
+	</style>
+	<!-- <link rel="stylesheet" type="text/css" href="hoge.css"> -->
+	<script text="javascript">
+		function main(){
+			var type = eval(document.getElementById("radioSelect").value);
+			var maxNum = eval(document.getElementById("maxNum").value);
+			var minNum = 1;
+			
+			var numArr = new Array();
+			
+			if(type==1){
+				numArr = numberingZeroPadding(minNum,maxNum);
+			} else if (type==2){
+				//empty
+			}
+			
+			var frontChar = document.getElementById("front").value;
+			var resArr = new Array();
+			var strBuf = new Array(2);
+			for(var i=0;i<numArr.length;i++){
+				strBuf.push(frontChar);
+				strBuf.push(numArr[i]);
+				resArr.push(strBuf.join(""));
+				strBuf = new Array(2);
+			}
+			strBuf = new Array();
+			for(var i=0;i<resArr.length;i++){
+				strBuf.push(resArr[i]);
+				strBuf.push("\n");
+			}
+			document.getElementById("output").innerHTML = strBuf.join("");
+			
+		}
+		
+		function numberingZeroPadding(minNum,maxNum){
+			var retArr = new Array();
+			var strBuf = new Array(3);
+			for(var i=minNum;i<=maxNum;i++){
+				if(i<10){
+					strBuf.push("00");
+					strBuf.push(i);
+					strBuf.push(".jpg");
+					retArr.push(strBuf.join(""));
+					strBuf = new Array(2);
+				} else if(i<100){
+					strBuf.push("0");
+					strBuf.push(i);
+					strBuf.push(".jpg");
+					retArr.push(strBuf.join(""));
+					strBuf = new Array(2);
+				} else {
+					retArr.push(i+"");
+				}
+			}
+			
+			return retArr;
+		}
+	</script>
+	<body>
+		<h1>Numbering</h1>
+		<form>
+			<input id="front" type="text" style="width:300px;" /><br />
+			<input id="maxNum" type="text" style="width:50px;" />
+			<input type="radio" name="example" value="1" checked />type 1
+			<input type="radio" name="example" value="2" />type 2
+			<input type="hidden" id="radioSelect" value="1" />
+			<br />
+			<input type="button" value="button" onClick="main()" />
+		</form>
+		<textarea id="output" style="width:350px;height:400px"></textarea>
+	</body>
+</html>

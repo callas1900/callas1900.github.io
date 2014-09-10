@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>ColorCom</title>
+		<style>
+			#colorBox{
+				height:110px;
+				width:200px;
+				border:2px solid #ccc;
+				text-align:center;
+				padding-top:90px;
+				font-size:12px;
+			}
+			
+			body{
+				text-align:center;
+				background-color:#f6f6f6;
+				margin:0px;
+			}
+			#container{
+				margin-left:auto;
+				margin-right:auto;
+				width:400px;
+				height:500px;
+				background-color:#fff;
+				padding-top:100px;
+				border-left:1px solid #000;
+				border-right:1px solid #000;
+			}
+			#colorBox{
+				margin-left:auto;
+				margin-right:auto;
+			
+			}
+			#numberBox{
+				border:1px solid #333;
+			}
+		</style>
+		<script type="text/javascript">
+			function checkNumberBox(text){
+				var buff = new Array();
+				buff = text.split(',');
+				
+				document.getElementById("colorBox").style.background="#FFF";
+				document.getElementById("colorBox").style.color="#000";
+				document.getElementById("colorValue").innerHTML = "　";
+				
+				if(buff.length == 3){
+					for(var i = 0; i < buff.length; i++){
+						if(buff[i].length <= 0)    return;
+						if(isNaN(buff[i]) || eval(buff[i]) > 255) return;
+					}
+					forDecimalColor(eval(buff[0]),eval(buff[1]),eval(buff[2]));
+				} else if (text.indexOf("#") == 0
+							&& (text.length == 4 || text.length == 7 )){
+					var checkBuff = text.substr(1,text.length-1);
+					if(checkBuff.match(/[0-9a-fA-F]/g).length == checkBuff.length){
+						forHexColor(text);
+					}
+				}
+			}
+			
+			function forDecimalColor(r,g,b){
+				var OxR = r.toString(16);
+				var OxG = g.toString(16);
+				var OxB = b.toString(16);
+				OxR = (OxR.length == 1)?"0"+OxR:OxR;
+				OxG = (OxG.length == 1)?"0"+OxG:OxG;
+				OxB = (OxB.length == 1)?"0"+OxB:OxB;
+				var color = "#" + OxR + OxG + OxB;
+				
+				var reOxR = (255-eval(r)).toString(16);
+				var reOxG = (255-eval(g)).toString(16);
+				var reOxB = (255-eval(b)).toString(16);
+				reOxR = (reOxR.length == 1)?"0"+reOxR:reOxR;
+				reOxG = (reOxG.length == 1)?"0"+reOxG:reOxG;
+				reOxB = (reOxB.length == 1)?"0"+reOxB:reOxB;
+				var reColor = "#" + reOxR + reOxG + reOxB;
+				
+				document.getElementById("colorBox").style.background=color;
+				document.getElementById("colorBox").style.color=reColor;
+				document.getElementById("colorValue").innerHTML = color;
+			}
+			function forHexColor(color){
+				var r = "";
+				var g = "";
+				var b = "";
+				var cValue = "";
+				var reColor = "#000";
+				if(color.length == 4){
+					r = parseInt((color.charAt(1) + color.charAt(1)),16);
+					g = parseInt((color.charAt(2) + color.charAt(2)),16);
+					b = parseInt((color.charAt(3) + color.charAt(3)),16);
+					cValue = r + "," + g + "," + b;
+
+				}else{
+					r = parseInt((color.charAt(1) + color.charAt(2)),16);
+					g = parseInt((color.charAt(3) + color.charAt(4)),16);
+					b = parseInt((color.charAt(5) + color.charAt(6)),16);
+					cValue = r + "," + g + "," + b;
+					
+				}
+				reColor = "#" + (255-eval(r)).toString(16) + (255-eval(g)).toString(16) + (255-eval(b)).toString(16);
+				
+				document.getElementById("colorBox").style.background=color;
+				document.getElementById("colorBox").style.color=reColor;
+				
+				document.getElementById("colorValue").innerHTML = cValue;
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<input type="text" id="numberBox" onchange="checkNumberBox(this.value)" onKeyPress="checkNumberBox(this.value)" />
+
+				<div id="colorValue">　</div>
+				<div id="colorBox">
+					color
+				</div>
+
+		<div>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>葛飾区図書館用入力BookMarklet作成</title>
+	</head>
+	<style>
+
+	</style>
+	<!-- <link rel="stylesheet" type="text/css" href="hoge.css"> -->
+	<script text="javascript">
+		function main(){
+			var strArr = new Array(5);
+			strArr[0] = "javascript:(function(){document.getElementsByName('UID').item(0).value='";
+			strArr[1] = "';document.getElementsByName('PASS').item(0).value='";
+			strArr[2] = "';document.getElementsByName('CONTACT').item(0).value='";
+			strArr[3] = "';document.getElementsByName('LCOD').item(0).value='";
+			strArr[4] = "';})();";
+
+			var val = new Array(4);
+			val[0] = document.getElementById("uid").value;
+			val[1] = document.getElementById("pas").value;
+			val[2] = document.getElementsByName("CONTACT").item(0).value;
+			val[3] = document.getElementsByName("LCOD").item(0).value;
+
+			// フィールドリセット
+			var strVal = "";
+			document.getElementById("linkField").innerHTML=strVal;
+			
+			// 入力がなければエラーにする。
+			for(var i=0;i < 4;i++){
+				if(val[i].length==0){
+					return;
+				}
+			}
+			
+			// リンク作成
+			strVal += '<a href="'
+			for(var i=0;i < 4;i++){
+				strVal += strArr[i];
+				strVal += val[i];
+			}
+			strVal += strArr[4];
+			strVal += '">葛飾区図書館入力</a>';
+
+			document.getElementById("linkField").innerHTML=strVal;
+			
+		}
+	</script>
+	<body>
+		<h1>葛飾区図書館用入力BookMarklet作成</h1>
+		<form>
+			<table>
+				<tr>
+					<td>利用者ＩＤ</td>
+					<td><input type="text" id="uid" /></td>
+				</tr>
+				<tr>
+					<td>パスワード</td>
+					<td><input type="text" id="pas" /></td>
+				</tr>
+				<tr>
+					<td>連絡方法</td>
+					<td>
+						<SELECT NAME="CONTACT">
+							<OPTION VALUE=""></OPTION><OPTION VALUE="5">電子メール</OPTION><OPTION VALUE="3">不要</OPTION>
+						</SELECT>
+					</td>
+				</tr>
+				<tr>
+					<td>受取希望館 	</td>
+					<td>
+						<SELECT NAME="LCOD" >
+							<OPTION VALUE=""></OPTION><OPTION VALUE="001">葛飾区立中央図書館</OPTION><OPTION VALUE="102">葛飾区立立石図書館</OPTION><OPTION VALUE="103">葛飾区立お花茶屋図書館</OPTION><OPTION VALUE="104">葛飾区立上小松図書館</OPTION><OPTION VALUE="105">葛飾区立亀有図書館</OPTION><OPTION VALUE="106">葛飾区立水元図書館</OPTION><OPTION VALUE="107">葛飾区立鎌倉図書館</OPTION><OPTION VALUE="201">葛飾区立四つ木地区図書館</OPTION><OPTION VALUE="202">葛飾区立西水元地区図書館</OPTION><OPTION VALUE="203">葛飾区立青戸地区図書館</OPTION><OPTION VALUE="204">葛飾区立新宿図書センター</OPTION><OPTION VALUE="301">葛飾区立男女平等推進センター</OPTION>
+						</SELECT>
+					</td>
+				</tr>
+			</table>
+			<input type="button" value="BookMarklet作成" onClick="main()">
+		</form>
+		<div id="linkField" style="height:50px;margin:10px;padding:10px;"></div>
+		<p>
+			注意：入力が不足している時はリンクが作成されません。
+		</p>
+		<p>
+			使用方法：
+				<ol>
+					<li>葛飾区図書館と同じようにＩＤとパス等を入力し、ブックマークレット作成を押してください。</li>
+					<li>リンクが作成されるのでツールバーにドラッグするなりしてブックマーク登録してください。</li>
+					<li>出来たブックマークを葛飾区図書館のＩＤ入力の場面で押せば項目が入力されます。</li>
+				</ol>
+		</p>
+	</body>
+</html>
