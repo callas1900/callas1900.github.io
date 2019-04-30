@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>callas1900.net</title>
+    <link>/</link>
+    <description>Recent content on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Tue, 30 Apr 2019 09:32:47 +0900</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Links</title>
+      <link>/links/</link>
+      <pubDate>Tue, 30 Apr 2019 09:32:47 +0900</pubDate>
+      
+      <guid>/links/</guid>
+      <description> General  twitter blogger  Dev  dev.to github  Running  strava  Photograph  Unsplash Flickr  </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>とりあえずのページ
+This page is the webpage of mine. no meaning, no purpose, just putting on the web.</description>
+    </item>
+    
+    <item>
+      <title>Hello! Allo! こんにちは!!</title>
+      <link>/posts/hello/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hello/</guid>
+      <description>&lt;p&gt;Hello! Allo! こんにちは!!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
