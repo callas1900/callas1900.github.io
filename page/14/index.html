@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.61.0" />
+  
+    <title>callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="A simple page of mine"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="callas1900.net — A simple page of mine">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/" />
+<meta property="og:site_name" content="callas1900.net" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="posts">
+  
+  
+
+  
+  
+    
+  
+  
+
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/tswindows2008/">[TS][Windows2008]期限が切れたターミナルサービスの復旧方法</a></h1>
+    <div class="post-meta">
+      <span class="post-date">
+        2010-08-18
+      </span>
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/ts/">TS</a>&nbsp;
+      
+      #<a href="/tags/windows2008server/">Windows2008Server</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      ターミナルサービス（TS）の無料を使ってて、期限が切れた（切れそう）なので
+ライセンスを買って設定するなんてことありますよね。
+Windows 2008 Server でTSのライセンスが切れたので、設定方法を残しておきます。
+前提条件：TS License Serverのインストールを行うサーバーはDomain controllerであること。
+ライセンスサーバーのインストール   Server Managerを起動し、Rolesの中のTerminal Servicesを選択し、
+右クリックメニューよりAdd Role Servicesを選択します。
+TS Licensingにチェックを入れてNext
+Configure Discovery Scope for TS Licensing画面が出てくるので
+ターミナルサービスがライセンスサーバーを探す範囲を選択してNext
+(今回はThis Domain)
+Confirm Installation Selections画面で、Installをクリックして完了。
+ライセンスサーバーの設定   Start &gt; Administrative Tools &gt; Terminal Services &gt; TS Licensing Manager を起動します。
+対象とするサーバーの状態がNot Activated であることを確認する。
+サーバーを選択し、Action &gt; Activate Serverを選択。
+Activate Server Wizardが開始します。
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/tswindows2008/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/20106/">[読書メーター]2010年6月読書まとめ</a></h1>
+    <div class="post-meta">
+      <span class="post-date">
+        2010-07-21
+      </span>
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/20106/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/javascriptvbscriptvbscript-javascript_08/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その２</a></h1>
+    <div class="post-meta">
+      <span class="post-date">
+        2010-07-08
+      </span>
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/javascript/">JavaScript</a>&nbsp;
+      
+      #<a href="/tags/vbscript/">VBScript</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/javascriptvbscriptvbscript-javascript_08/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/javascriptvbscriptvbscript-javascript/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その１</a></h1>
+    <div class="post-meta">
+      <span class="post-date">
+        2010-07-08
+      </span>
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/javascript/">JavaScript</a>&nbsp;
+      
+      #<a href="/tags/vbscript/">VBScript</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      プロジェクトでIE6上で動く VBScript + JavaScript + HTML のツールを作ってみた。
+なんで今更？IE6？
+会社の中では未だに頑固にIE6が標準だーって会社は多いのさ。
+本当は HTML5 + JavaScript で作りたかったけど仕方ない。
+会社のみんなにChromeやFireFoxを強制的にインストールさせるのは面倒だからね。
+要件はある固定長インターフェースファイルを使ったテスト用に、
+テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。  この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
+ついでに皆標準的に入れてるブラウザはIE6。
+ファイル I/O　部位を VBScript に任し、
+他の挙動を JavaScript で制御するのが適当か？
+以下その場合の注意点
+VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)…】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。  これを画面の最下部に常に表記。
+で、まずはFile I/O部のVBScriptコード
+注意点は読み込んだ内容をJavaScriptに渡す場合、
+配列渡しはうまくいかなかったので、
+適当な区切り文字をはさんで渡し、JavaScript側でSpritしたことと、
+動的な配列が定義出来なかったのでReDimとPreserveを多様したこと
+書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&quot;Scripting.FileSystemObject&quot;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile.
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/javascriptvbscriptvbscript-javascript/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/5-13-5059-professional-computing-series/">[読書メーター]2010年 5月読書まとめ</a></h1>
+    <div class="post-meta">
+      <span class="post-date">
+        2010-06-16
+      </span>
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      ５月の冊数は１３冊。西尾維新　戯言シリーズ読破！良く読んだよほんと。
+後長らく読書中だったソフトウェア職人気質も読了。
+狼と香辛料も順調に読破中。
+西尾維新、次は化物語と零崎シリーズだな。
+5月の読書メーター
+読んだ本の数：13冊
+読んだページ数：5059ページ
+ソフトウェア職人気質―人を育て、システム開発を成功へと導くための重要キーワード (Professional Computing Series)
+アジャイル入門書な感じ。W/Fの何が悪いのか？どうしてW/Fだとうまくいかないのか？逆にどういうケースだとうまくいくのか？ソフトウェアに携わる人間がどうあるべきか？について言及されている。読み切って良かった。しばらく寝かしたら再読しよう。
+読了日：05月31日 著者：ピート マクブリーン
+ネコソギラジカル（下）　青色サヴァンと戯言遣い (講談社文庫)
+終わった終わった。きっちり終わった。ハッピーかアンハッピーかは内緒だけど、きっちりしっかり終わった。さぁ零崎シリーズ読もうか。
+読了日：05月28日 著者：西尾 維新
+ネコソギラジカル（中）　赤き征裁vs．橙なる種 (講談社文庫)
+読了日：05月27日 著者：西尾 維新
+ネコソギラジカル（上）　十三階段 (講談社文庫)
+この巻の感想は一言だけ「七年後が楽しみだ!!!!!」
+読了日：05月26日 著者：西尾 維新
+ゼロの使い魔 18 滅亡の精霊石 (MF文庫J)
+ファンタジーの箱庭を閉じ始めた感じがする。世界の広がりが無くなってしまうのが少しさびしい。でもきっと、いい作者なら良い感じに私の期待を裏切ってくれるに違いない。
+読了日：05月23日 著者：ヤマグチ ノボル
+狼と香辛料 13 (電撃文庫 は 8-13)
+ホロとロレンスの話は苦い商売の話の上にあってこそ、その甘さが心地よいもの、ガムシロップ一気飲みはちときつい、次の長編では程よい甘さを期待する。ノーラの短編は小気味いい感じの短編。
+読了日：05月21日 著者：支倉 凍砂
+(講談社文庫)&ldquo;ヒトクイマジカル&lt;殺戮奇術の匂宮兄妹&gt; (講談社文庫)
+今回の話はネタバレをせずに感想を書くのが難しいね。青いのちょっと面倒。赤いの相変わらず良い。黄色いの切ない。バイト先の人しゃべり方結構好きだったよ。まぁ読め。
+読了日：05月16日 著者：西尾 維新
+サイコロジカル 下 (講談社文庫 に 32-5 西尾維新文庫)
+哀川さん成分が少なかった。本当は多かったのかもしれないけど。
+読了日：05月14日 著者：西尾 維新
+サイコロジカル 上 (講談社文庫 に 32-4 西尾維新文庫)
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/5-13-5059-professional-computing-series/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="pagination">
+  <div class="pagination__buttons">
+    
+      <span class="button previous">
+        <a href="/page/13/">
+          <span class="button__icon">←</span>
+          <span class="button__text">Newer posts</span>
+        </a>
+      </span>
+    
+    
+      <span class="button next">
+        <a href="/page/15/">
+          <span class="button__text">Older posts</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

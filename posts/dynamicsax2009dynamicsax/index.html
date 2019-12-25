@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[DynamicsAX2009]DynamicsAXの用語整理 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Dynamics AXのお仕事の最初の頃の、
+皆がAXって何よ？って感じだったころ、
+打ち合わせの会話は適度にカオスっていた。
+「Axapterで作るんだよね？」
+「え？X&#43;&#43;で実装するんじゃないの？」
+「え？え？MorphXって名前じゃなかったっけ？」
+「AIFでやらなきゃいけないとか聞いたけど？」
+「ところでAXって何？」
+うーん、燃え上がる雰囲気が漂っていますね。
+楽しそう。
+で、以下整理整頓
+Dynamics AX 元の製品名はAxapter。
+Dynamics製品群はMicrosfot社が持っているERPとCRMの製品群のことで、
+Dynamics AXはその中にある4本のERPパッケージのうちのひとつ。
+ちなみに2バイト文字に対応しているのはDynamics AXとDynamics NAVだけ。
+Dynamics NAV 元の製品名はNavision。
+AXとNAVは両方ともERPパッケージであるが、差異は以下の通り。
+AX
+NAV
+対象企業
+50億〜500億円の企業
+（中堅規模以上）
+数十億〜200億円
+（中小・中堅企業）
+導入要件
+独自要件あり
+シンプルに
+NAVは日本でも導入が行われていたらしいが、
+AXに関してはほぼゼロ。
+ただ、欧州では活発に使われている製品らしいです。
+ちなみに今回のお仕事も海外への導入でした。
+Axapter 昔のAXの名前。
+Damgaard社が作成。
+この会社が2002年MSに買収され、
+製品名がAxapterからDynamics AXに変更された。
+MorphX AXにくっついてくる拡張機能実装用IDE
+X&#43;&#43; MorphXでコーディングをする際に使われる言語。
+C言語のようなC&#43;&#43;のような。
+C#のようなどっちつかずなインタプリタ言語。
+C言語の遺物マクロが跋扈しているので注意が必要。
+ガベコレありなので、慣れれば生産性はそこそこ。
+なんでX?ってのは、元々Axapter時代に使われていた拡張用言語がXALだったからとか
+（Dynamics AX 4.0 開発ガイドの前書きより）
+AIF Appication Integration Framework : アプリケーション統合フレームワーク
+Dynamics AXが他のアプリケーションとやりとりをするためのサービス群
+インターフェースにはXMLドキュメントを使用する。"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/dynamicsax2009dynamicsax/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[DynamicsAX2009]DynamicsAXの用語整理 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="Dynamics AXのお仕事の最初の頃の、
+皆がAXって何よ？って感じだったころ、
+打ち合わせの会話は適度にカオスっていた。
+「Axapterで作るんだよね？」
+「え？X&#43;&#43;で実装するんじゃないの？」
+「え？え？MorphXって名前じゃなかったっけ？」
+「AIFでやらなきゃいけないとか聞いたけど？」
+「ところでAXって何？」
+うーん、燃え上がる雰囲気が漂っていますね。
+楽しそう。
+で、以下整理整頓
+Dynamics AX 元の製品名はAxapter。
+Dynamics製品群はMicrosfot社が持っているERPとCRMの製品群のことで、
+Dynamics AXはその中にある4本のERPパッケージのうちのひとつ。
+ちなみに2バイト文字に対応しているのはDynamics AXとDynamics NAVだけ。
+Dynamics NAV 元の製品名はNavision。
+AXとNAVは両方ともERPパッケージであるが、差異は以下の通り。
+AX
+NAV
+対象企業
+50億〜500億円の企業
+（中堅規模以上）
+数十億〜200億円
+（中小・中堅企業）
+導入要件
+独自要件あり
+シンプルに
+NAVは日本でも導入が行われていたらしいが、
+AXに関してはほぼゼロ。
+ただ、欧州では活発に使われている製品らしいです。
+ちなみに今回のお仕事も海外への導入でした。
+Axapter 昔のAXの名前。
+Damgaard社が作成。
+この会社が2002年MSに買収され、
+製品名がAxapterからDynamics AXに変更された。
+MorphX AXにくっついてくる拡張機能実装用IDE
+X&#43;&#43; MorphXでコーディングをする際に使われる言語。
+C言語のようなC&#43;&#43;のような。
+C#のようなどっちつかずなインタプリタ言語。
+C言語の遺物マクロが跋扈しているので注意が必要。
+ガベコレありなので、慣れれば生産性はそこそこ。
+なんでX?ってのは、元々Axapter時代に使われていた拡張用言語がXALだったからとか
+（Dynamics AX 4.0 開発ガイドの前書きより）
+AIF Appication Integration Framework : アプリケーション統合フレームワーク
+Dynamics AXが他のアプリケーションとやりとりをするためのサービス群
+インターフェースにはXMLドキュメントを使用する。" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[DynamicsAX2009]DynamicsAXの用語整理 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="Dynamics AXのお仕事の最初の頃の、
+皆がAXって何よ？って感じだったころ、
+打ち合わせの会話は適度にカオスっていた。
+「Axapterで作るんだよね？」
+「え？X&#43;&#43;で実装するんじゃないの？」
+「え？え？MorphXって名前じゃなかったっけ？」
+「AIFでやらなきゃいけないとか聞いたけど？」
+「ところでAXって何？」
+うーん、燃え上がる雰囲気が漂っていますね。
+楽しそう。
+で、以下整理整頓
+Dynamics AX 元の製品名はAxapter。
+Dynamics製品群はMicrosfot社が持っているERPとCRMの製品群のことで、
+Dynamics AXはその中にある4本のERPパッケージのうちのひとつ。
+ちなみに2バイト文字に対応しているのはDynamics AXとDynamics NAVだけ。
+Dynamics NAV 元の製品名はNavision。
+AXとNAVは両方ともERPパッケージであるが、差異は以下の通り。
+AX
+NAV
+対象企業
+50億〜500億円の企業
+（中堅規模以上）
+数十億〜200億円
+（中小・中堅企業）
+導入要件
+独自要件あり
+シンプルに
+NAVは日本でも導入が行われていたらしいが、
+AXに関してはほぼゼロ。
+ただ、欧州では活発に使われている製品らしいです。
+ちなみに今回のお仕事も海外への導入でした。
+Axapter 昔のAXの名前。
+Damgaard社が作成。
+この会社が2002年MSに買収され、
+製品名がAxapterからDynamics AXに変更された。
+MorphX AXにくっついてくる拡張機能実装用IDE
+X&#43;&#43; MorphXでコーディングをする際に使われる言語。
+C言語のようなC&#43;&#43;のような。
+C#のようなどっちつかずなインタプリタ言語。
+C言語の遺物マクロが跋扈しているので注意が必要。
+ガベコレありなので、慣れれば生産性はそこそこ。
+なんでX?ってのは、元々Axapter時代に使われていた拡張用言語がXALだったからとか
+（Dynamics AX 4.0 開発ガイドの前書きより）
+AIF Appication Integration Framework : アプリケーション統合フレームワーク
+Dynamics AXが他のアプリケーションとやりとりをするためのサービス群
+インターフェースにはXMLドキュメントを使用する。" />
+<meta property="og:url" content="/posts/dynamicsax2009dynamicsax/" />
+<meta property="og:site_name" content="[DynamicsAX2009]DynamicsAXの用語整理" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2010-01-14 12:58:00.004 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/dynamicsax2009dynamicsax/">[DynamicsAX2009]DynamicsAXの用語整理</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2010-01-14
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/dynamicsax2009/">DynamicsAX2009</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>Dynamics AXのお仕事の最初の頃の、</p>
+<p>皆がAXって何よ？って感じだったころ、</p>
+<p>打ち合わせの会話は適度にカオスっていた。</p>
+<p>「<strong>Axapte</strong>rで作るんだよね？」</p>
+<p>「え？<strong>X++</strong>で実装するんじゃないの？」</p>
+<p>「え？え？<strong>MorphX</strong>って名前じゃなかったっけ？」</p>
+<p>「<strong>AIF</strong>でやらなきゃいけないとか聞いたけど？」</p>
+<p>「ところで<strong>AX</strong>って何？」</p>
+<p>うーん、燃え上がる雰囲気が漂っていますね。</p>
+<p>楽しそう。</p>
+<p>で、以下整理整頓</p>
+<h3 id="dynamics-ax">Dynamics AX</h3>
+<p>元の製品名はAxapter。</p>
+<p>Dynamics製品群はMicrosfot社が持っているERPとCRMの製品群のことで、</p>
+<p>Dynamics AXはその中にある4本のERPパッケージのうちのひとつ。</p>
+<p>ちなみに2バイト文字に対応しているのはDynamics AXとDynamics NAVだけ。</p>
+<h3 id="dynamics-nav">Dynamics NAV</h3>
+<p>元の製品名はNavision。</p>
+<p>AXとNAVは両方ともERPパッケージであるが、差異は以下の通り。</p>
+<p>AX</p>
+<p>NAV</p>
+<p>対象企業</p>
+<p>50億〜500億円の企業<br>
+（中堅規模以上）</p>
+<p>数十億〜200億円</p>
+<p>（中小・中堅企業）</p>
+<p>導入要件</p>
+<p>独自要件あり</p>
+<p>シンプルに</p>
+<p>NAVは日本でも導入が行われていたらしいが、</p>
+<p>AXに関してはほぼゼロ。</p>
+<p>ただ、欧州では活発に使われている製品らしいです。</p>
+<p>ちなみに今回のお仕事も海外への導入でした。</p>
+<h3 id="axapter">Axapter</h3>
+<p>昔のAXの名前。</p>
+<p>Damgaard社が作成。</p>
+<p>この会社が2002年MSに買収され、</p>
+<p>製品名がAxapterからDynamics AXに変更された。</p>
+<h3 id="morphx">MorphX</h3>
+<p>AXにくっついてくる拡張機能実装用IDE</p>
+<h3 id="x">X++</h3>
+<p>MorphXでコーディングをする際に使われる言語。</p>
+<p>C言語のようなC++のような。</p>
+<p>C#のようなどっちつかずなインタプリタ言語。</p>
+<p>C言語の遺物マクロが跋扈しているので注意が必要。</p>
+<p>ガベコレありなので、慣れれば生産性はそこそこ。</p>
+<p>なんでX?ってのは、元々Axapter時代に使われていた拡張用言語がXALだったからとか</p>
+<p>（Dynamics AX 4.0 開発ガイドの前書きより）</p>
+<h3 id="aif">AIF</h3>
+<p>Appication Integration Framework : アプリケーション統合フレームワーク</p>
+<p>Dynamics AXが他のアプリケーションとやりとりをするためのサービス群</p>
+<p>インターフェースにはXMLドキュメントを使用する。</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/dynamicsax2009x_16/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[DynamicsAX2009]X&#43;&#43;でよく使う型とそのスコープのまとめ</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/200912/">
+          <span class="button__text">[読書メーター]2009年12月読書まとめ</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

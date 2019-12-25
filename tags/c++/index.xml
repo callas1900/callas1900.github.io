@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on callas1900.net</title>
+    <link>/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 17 Sep 2008 00:30:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[C&#43;&#43;]C&#43;&#43;のバイブルとISBN。</title>
+      <link>/posts/cisbn/</link>
+      <pubDate>Wed, 17 Sep 2008 00:30:00 +0900</pubDate>
+      
+      <guid>/posts/cisbn/</guid>
+      <description>最近JavaからC++に移ったのだが、
+Javaに比べて美しく書けないし、
+CからC++に移った人のソースコードが読みにくい
+（JavaからC++に移った人のソースは読みやすい）
+これはJava書きとC書きの間に大きな隔たりがあるのじゃないだろうか？と考える。
+昔関わったプロジェクトでC書きが納品したプログラムの修正をしたことがあったが、
+読みづらく根を上げたことがあった。
+（プロジェクトでは「古文書」と呼ばれていた）
+あの時は、C書きの人のソースが汚いだけかと思っていたが、
+もしかしたらC書きの間ではメジャーな書き方なのかもしれない。
+やはりC++のバイブル的なものを一読しなかればいけないだろうと思い、
+少し調べてみると、
+Scott Meyersの「Effective C++」がバイブルだという話だ。
+(Gofのデザパタ本も読んだほうがいいんだろうが、まずはコーディングバイブル）
+さー買うぜ！って思い立ち本屋に直行。
+見つけたEffective C++ なんだか More Effective C++ と書いてある、
+気にせず購入しようとしたら、お金が足りない！
+その時は購入をあきらめ、家に帰ってからAmazonで注文しようとすると、
+どうもさっき本屋で見たものとは表紙が違う。
+よくよくAmazonのコメント欄を見ていくと、
+どうやらScotto MeyersのEffective C++は有名本でもあるらしく、
+数人の訳者が訳本を出しているようだ。
+中にはひどい訳本もあるらしく、私が買おうとしていたMore Effective C++は
+かなり評判が悪い。
+そういったコメントの中で吉川邦夫氏という名前が見つかる、
+彼が訳者の本は評判が良いようだ。
+検索し見比べてみると、Amazonの本に対する評価も彼の本だけ満点がついている。
+よし、吉川邦夫氏訳本を買うぞーとAmazonで注文しようとするも在庫切れ、
+う～ん、流石吉川邦夫（笑）
+近所の書店で注文するために、
+AmazonからISBNコードを抽出。
+そういえば、ISBNコードって書籍出版物に対するＩＤコードなんだろうけど、
+ISBN-10とISBN-13があるんだね。
+どう違うのだろう？両方ともメモって書店に渡さないと分からないのだろうか？
+気になって調べてみると
+ISBN-10は旧コード体系
+ISBN-13は新コード体系
+ということだそうだ
+どうやら旧コードの10桁ISBNでは足りなくなったので、
+13桁にしたようだ。
+よって13桁のほうを書店に持っていけば問題ない。
+以下本当にどうでもよい記述。
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;
+ちなみに吉川邦夫氏のEffective C++ ISBNは
+ISBN-10 : 4756118089
+ISBN-13 : 978-4756118080
+ISBN-10のコード体系は
+A BBBB CCCC D
+A = 言語コード（日本語だと４）</description>
+    </item>
+    
+  </channel>
+</rss>

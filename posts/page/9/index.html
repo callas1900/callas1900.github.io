@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Hello! Allo! こんにちは!! :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Hello! Allo! こんにちは!!
+"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Hello! Allo! こんにちは!! :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="Hello! Allo! こんにちは!!
+" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="/top.jpg">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Hello! Allo! こんにちは!! :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="Hello! Allo! こんにちは!!
+" />
+<meta property="og:url" content="/posts/" />
+<meta property="og:site_name" content="Hello! Allo! こんにちは!!" />
+<meta property="og:image" content="/top.jpg">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="posts">
+  
+  
+
+  
+  
+  false
+  
+  
+
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2012-11/">[読書メーター]2012年 11月読書まとめ読書メーター</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2012-11/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2012-9/">[読書メーター]2012年 9月読書まとめ読書メーター</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2012-9/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/android/">Androidで共通鍵暗号化でつまづいたので記録に残す</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/java/">Java</a>&nbsp;
+      
+      #<a href="/tags/security/">Security</a>&nbsp;
+      
+      #<a href="/tags/android/">Android</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      Androidで文字列をセキュアに保存したい場合、
+暗号化してsqliteに保存するのがよろしいと思われる。
+ここではAndroid自体のセキュリティがアレだとか、Rooted端末とapktoolがあればアレをこうしてアレ出来るだとかいう話はとりあえず置いとく。
+まず以下のようなソースを書いた。
+内容は、
+共通鍵の秘密鍵を生成している箇所のみ抽出。 DBに鍵が保存されていない初回はif文を迂回して生成ロジックで生成後DBに保存。 DB保存後はDBから復元する。  private final static String ARGOLISM = &quot;PBEWithSHA1And256BitAES-CBC-BC&quot;; private SecretKey getSecretKey() throws NoSuchAlgorithmException, InvalidKeySpecException, NameNotFoundException { // check saved secret key is exist. byte[] savedSecretKey = DBHelper.readByteData(context, &quot;hoge&quot;); if(savedSecretKey != null &amp;&amp; savedSecretKey.length &gt; 0){ return new SecretKeySpec(savedSecretKey, ARGOLISM); } // generate new secret key. char[] pw = generatePassword(); int iteratorCount = 1024; int keySize = 256; int saltLength = 8; byte[] salt = &quot;00000000&quot;.
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/android/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2012-8/">[読書メーター]2012年 8月読書まとめ読書メーター</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2012-8/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/jbicspermission/">JBとICSのPermission比較（メーカー署名関係）</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/jb/">JB</a>&nbsp;
+      
+      #<a href="/tags/signature/">signature</a>&nbsp;
+      
+      #<a href="/tags/ics/">ICS</a>&nbsp;
+      
+      #<a href="/tags/android/">Android</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
+注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
+またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
+まず プロテクションレベルの表記が変わっている。
+以前は signatureOrSystem と書かれていた箇所が signature|system に変更。
+また謎の development も追加（詳細がドキュメントされていないので後日調査予定）
+まず ICS と ＪＢ のプロテクションレベルの一覧比較
+ICS
+dangerous signatureOrSystem normal signature  JB
+dangerous signature|system normal signature signature|system|development signatureOrSystem  JB に signatureOrSystem が混じっているのは誤表記にあらず。
+一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。
+次それぞれのプロテクションレベル毎の比較
+JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。
+[signature]  赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
+android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST
+android.permission.NET_ADMIN
+android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS
+android.permission.ASEC_ACCESS
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/jbicspermission/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="pagination">
+  <div class="pagination__buttons">
+    
+      <span class="button previous">
+        <a href="/posts/page/8/">
+          <span class="button__icon">←</span>
+          <span class="button__text">Newer posts</span>
+        </a>
+      </span>
+    
+    
+      <span class="button next">
+        <a href="/posts/page/10/">
+          <span class="button__text">Older posts</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

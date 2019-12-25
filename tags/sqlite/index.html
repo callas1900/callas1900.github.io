@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>sqlite :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/tags/sqlite/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="sqlite :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="sqlite :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/tags/sqlite/" />
+<meta property="og:site_name" content="sqlite" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+  <link href="/tags/sqlite/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="posts">
+  
+  
+
+  
+  
+  false
+  
+  
+
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/laravel-phpunit-with-clean-database/">Laravel :: phpunit with clean database.</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/sqlite/">sqlite</a>&nbsp;
+      
+      #<a href="/tags/laravel/">laravel</a>&nbsp;
+      
+      #<a href="/tags/phpunit/">phpunit</a>&nbsp;
+      
+      #<a href="/tags/postgresql/">PostgreSQL</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      Laravel + postgresSQLを使ったサイトで unit test を書いてたが、既存のデータベースを使うと、テストが意図しない挙動になることがあったので、汚れていないDBを使いたくなったので、調べてやってみたら、意外と詰まってしまったという話。
+環境 sqlite in memory database を使う方法  config/database.php config/database.php phpunit.xml TestCase.php   Sqliteでエラーがでる場合の対処1  Driver not found ALTER TABLE SYNTAX ERROR   Sqliteでエラーがでる場合の対処2  環境  laravel 5.x PostgreSQL  sqlite in memory database を使う方法 config/database.php 環境変数で default 値を差し替えれるようにする
+&lsquo;default&rsquo; =&gt; env(&lsquo;DB_DEFAULT&rsquo;, &lsquo;pgsql&rsquo;), config/database.php memory database の定義を作る
+&lsquo;sqlite_testing&rsquo; =&gt; [ &lsquo;driver&rsquo; =&gt; &lsquo;sqlite&rsquo;, &lsquo;database&rsquo; =&gt; &lsquo;:memory:', &lsquo;prefix&rsquo; =&gt; &lsquo;', ], phpunit.xml 環境変数追加。環境変数を与える方法は別に何でも良い。
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/laravel-phpunit-with-clean-database/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

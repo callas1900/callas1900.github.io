@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ANT on callas1900.net</title>
+    <link>/tags/ant/</link>
+    <description>Recent content in ANT on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 30 Oct 2013 17:41:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/ant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mountain LionでOpenGrok メモ</title>
+      <link>/posts/mountain-lionopengrok/</link>
+      <pubDate>Wed, 30 Oct 2013 17:41:00 +0900</pubDate>
+      
+      <guid>/posts/mountain-lionopengrok/</guid>
+      <description>このページを参考にしてOpenGrokをセットアップしてたけど何点か詰まったので備忘録として。
+参考ページ：Mac OS X に OpenGrok で、今日からコードリーディング
+こちらの状況：java, antはセットアップ済み
+1. OpenGrokのビルドでJFlex.jarを読み込んでくれない 確証はないが、linuxで
+Bug#388371: jflex: JFlexTask cannot be found
+と報告されているので、antのlibパスにJFlex.jarを置き直したら動いた。
+2. tomcatが起動しない。 単純にCATALINA_HOMEを足すだけ、
+手順にないのでOpenGrokがうまいことやってくれるのか？と期待したがそんなことはなかった。
+以上、自分用備忘録でした。</description>
+    </item>
+    
+    <item>
+      <title>[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処</title>
+      <link>/posts/wlcompile/</link>
+      <pubDate>Tue, 23 Oct 2007 22:30:00 +0900</pubDate>
+      
+      <guid>/posts/wlcompile/</guid>
+      <description>仕事の備忘録メモ
+Weblogic92を使用し、
+JREにJRockitを使いIDEをEclipse3.2にした場合
+EclipseからANTを実行する場合のwlcompileタスクにおいて以下のエラーが起こった場合の対処
+ BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:
+The following error occurred while executing this line:C:\project\hogehoge\Src\foo\src\fooEar\build.xml:77:
+Could not create task or type of type: wlcompile.
+Ant could not find the task or a class this task relies upon.
+This is common and has a number of causes;
+the usual solutions are to read the manual pages then download andinstall needed JAR files, or fix the build file:
+- You have misspelt &amp;lsquo;wlcompile&amp;rsquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weblogic on callas1900.net</title>
+    <link>/tags/weblogic/</link>
+    <description>Recent content in Weblogic on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Tue, 23 Oct 2007 22:30:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/weblogic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処</title>
+      <link>/posts/wlcompile/</link>
+      <pubDate>Tue, 23 Oct 2007 22:30:00 +0900</pubDate>
+      
+      <guid>/posts/wlcompile/</guid>
+      <description>仕事の備忘録メモ
+Weblogic92を使用し、
+JREにJRockitを使いIDEをEclipse3.2にした場合
+EclipseからANTを実行する場合のwlcompileタスクにおいて以下のエラーが起こった場合の対処
+ BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:
+The following error occurred while executing this line:C:\project\hogehoge\Src\foo\src\fooEar\build.xml:77:
+Could not create task or type of type: wlcompile.
+Ant could not find the task or a class this task relies upon.
+This is common and has a number of causes;
+the usual solutions are to read the manual pages then download andinstall needed JAR files, or fix the build file:
+- You have misspelt &amp;lsquo;wlcompile&amp;rsquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

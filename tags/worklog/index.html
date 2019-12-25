@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>WorkLog :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/tags/worklog/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="WorkLog :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="WorkLog :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/tags/worklog/" />
+<meta property="og:site_name" content="WorkLog" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+  <link href="/tags/worklog/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="posts">
+  
+  
+
+  
+  
+  false
+  
+  
+
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/oracle-10g-express-edition-al32utf8/">Oracle 10g Express Edition でチト困った</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/oracle/">Oracle</a>&nbsp;
+      
+      #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      Oracle 10g Express Edition　は
+AL32UTF8 WE8MSWIN1252  のみのCHARACTER SETしか使用できない
+資料：
+Oracle® Database Express Edition
+10 Oracle Database XE Character and Language Configurations
+これで非常に困った。
+現在数社で連携をとってＷｅｂアプリを開発しているのだけど、
+他社が作った機能の検証用テストデータとしてINSERT文が書かれたSQLファイルを送付してもらった。
+いざINSERTしてみると、
+ORA-12899:
+列&quot;hoge”.“foo”.“bar&quot;の値が大きすぎます
+(実際: 60、最大: 40)
+とOracleに怒られ、データが入らない箇所がある。
+慌てて文字数をカウントしたが、データに間違いはない。
+これはなんだ？と思ったところで、
+思い当たったのが、DBモデルのバージョンが違うのではないか？ということ
+誤解を招く言い方かもしれないので補足を書くと、
+上記の違いとはDBのバージョンが違うという意味ではない、
+今回のプロジェクトでは（あってはならないことなんだけども）、
+客先要求の追加などで、テーブルの名前が変わったり、テーブル自体が消えてたりなどの数回のモデルチェンジが行われているのだ。
+そして何度かデータの最大文字数も変更されている。
+数社で連携をとって開発している中でのモデルチェンジだったので、
+もしかしたら各社でバージョンが違うのではないのか？
+そのバージョンでは文字数定義が違うのではないか？と思った。
+細かい敬意を省くために結果を述べると**「モデルのバージョンは同じ」**だった。
+原因は弊社と他社のDBの差にあったのだ。
+私の会社ではWindows版のOracle10gサーバーが見つからなかったので、
+他社検証用として急いでOracle10g Express Editionを導入した。
+無料で使える10gということでワクワクしながら環境構築していったのだが、
+構築過程でサービス名が一つしか設定できないことを知る。
+まぁこれは、今回プロジェクト限りで潰してもいいDBなので、問題はない。
+それから上記の問題の発生である。
+XEのインストールウィザードで文字コードの選択が出てこなかったので考えてなかったのだけど
+（浅薄だなぁ・・・）
+文字コードの差が問題だということが結果としてわかった。
+現在Oracle10g正式版は何種類かの文字コードをカバーしている。
+そしてデフォルトインストールすると、文字コードは**SHIFT_JIS（JA16SJIS）**になるのだが、
+10gXEは**UTF8（AL32UTF8）**がデフォルトだ、
+仕様書 を見ると、WE8MSWIN1252というコードも選択出来るそうなのだがこの文字コード自体初見である。
+じゃあ、何が困るのか？
+プログラマな人はとっくに原因なんて分かっていると思うけど、
+プログラマじゃない人も世の中にはいるわけで・・・説明を続けると、
+どうやら今回のプロジェクトにおいて10gを使用している所はすべてSHIFT_JISで設計されている。
+（日本国内のイントラネット的なＷｅｂシステムなのでこれはまぁ、いいんじゃないかな･･･怒る人もいるだろうけど）
+そうすると型VARCHAR2での日本語全角20文字MAX文字数の設計のは
+VARCHAR2 = 40[Byte]
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/oracle-10g-express-edition-al32utf8/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/blog-post_06/">ニアリーイコールと一般人</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      システムの外部設計書（お客さんに見せる設計書）を
+パートナー会社さん（別会社で一緒に同じプロジェクトをしているところ）
+に送付し、一仕事終えてぼけ～っとしてると、
+その会社のリーダーさんからお電話がきた。
+開口一番「おかしない？」
+「なにがです？」
+（ボーっと、してたので脳みその用意が出来てない）
+「この記号ここに使うもんじゃないやろ？ほら・・・の・・・の式に書いてある」
+「はいはい・・・少々お待ち頂けますか？」
+（慌てて資料を探す）
+「ああ・・・いや、えーっと何がおかしいのでしょうか？」
+リーダーの指摘箇所は
+今回システムを作成している会社の物流で
+納品数を算出する項目。
+[式] ：[Foo] / [Bar] = [hoge] (小数点以下切捨て）
+（※項目名を出すとマズいので適当な当て字で代用。）
+と私の設計書には書いてあった。
+要するに、ある項目と別の項目の数を除算して、
+その答えは整数値にしてくださいねーってだけの話。
+で、この数字が物流的に特別な意味合いを含んでいた重要な数字だったので、
+例として実際のデータを入れたケースを設計書に一緒に書いていたのだけど。
+その例として、
+[Foo] = 3000
+[Bar] = 990
+3000 / 990 = 3.03030･･･ ≒ 3
+以上より　[hoge] = 3
+という例式があった。
+この箇所にクレームがきたのだ。
+具体的に何かというと「≒」の使い方である。
+これをこういう使い方をするべきではないときたのだ。
+こっちの反応としては
+「なんで？」
+である、≒（ニアリーイコール）の使い方として
+無限小数を集約するものとして使用するのは間違いではない。
+どうも話を聞いていると、相手側の主張が
+「≒」は近似値をあらわすものだから、
+小数点以下切り上げに使用するべきじゃない。
+ふむ、小数点以下切り上げとしては確かに
+3000 / 990 = 3.03030･･･ ＝ 3 (小数点以下切捨て)
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/blog-post_06/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/oracle-oracle-10g-express-editionoracle/">Oracle 10g Express Editionのインストールメモ</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/oracle/">Oracle</a>&nbsp;
+      
+      #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/oracle-oracle-10g-express-editionoracle/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/blog-post_23-comments/">基本情報処理試験（一回目）</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%B3%87%E6%A0%BC/">資格</a>&nbsp;
+      
+      #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/blog-post_23-comments/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/blog-post_13/">会社に泊まりこみって楽しいの？</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/blog-post_13/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+      <span class="button next">
+        <a href="/tags/worklog/page/2/">
+          <span class="button__text">Older posts</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>BizTalk2009 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/tags/biztalk2009/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="BizTalk2009 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="BizTalk2009 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/tags/biztalk2009/" />
+<meta property="og:site_name" content="BizTalk2009" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+  <link href="/tags/biztalk2009/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="posts">
+  
+  
+
+  
+  
+  false
+  
+  
+
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/biztalk2009btstask/">[BizTalk2009]BtsTaskによるバッチ作成</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/biztalk2009/">BizTalk2009</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      btstaskはBizTalkアプリケーションのインストール等をコマンドライン上で行えるコマンドラインツールです。
+以下に自分の使用例を書いときます。
+バインド設定を省いたアプリケーションのmsiファイルを作成する方法
+バッチ例
+msiファイルとバインド設定ファイルをエクスポートする
+msiファイルからBizTalkアプリをインストールする
+バインド設定をインポートする
+msiファイルを使った対象BizTalkアプリを削除する
+バインド設定を省いたアプリケーションのmsiファイルを作成する方法   アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。
+btstask listapp -a:<em><strong>BizApp1</strong></em> -r:<em><strong>BizApp1_Resource.xml</strong></em>   <em>**BizApp1_Resource.xml **を修正する。
+タグ以下の
+&lt;Resource Type=&quot;System.BizTalk:BizTalkBinding”
+で始まるタグを削除する。
+_
+エクスポート実行
+btstask ExportApp -a:</em><strong>BizApp1</strong>_ -p:_**&lt;MsiFileName&gt;**_ -r:_**BizApp1_Resource.xml**_   バインドファイルもエクスポート実行
+btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_   バッチ例 msiファイルとバインド設定ファイルをエクスポートする @setlocal @echo off echo ################################## echo %DATE% %TIME% Running export.bat echo ################################## REM !
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/biztalk2009btstask/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/biztalk2009biztalk2009vss2005/">[BizTalk2009]BizTalk2009プロジェクト管理にVSS2005を使うとエラーポップアップ！</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/biztalk2009/">BizTalk2009</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/biztalk2009biztalk2009vss2005/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/biztalk2009visualstudio2008biztalk/">[BizTalk2009]VisualStudio2008でBizTalk新規プロジェクトが作れなくなる。</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/biztalk2009/">BizTalk2009</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/biztalk2009visualstudio2008biztalk/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

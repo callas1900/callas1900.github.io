@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PDM on callas1900.net</title>
+    <link>/tags/pdm/</link>
+    <description>Recent content in PDM on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Sat, 27 Jun 2009 01:29:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/pdm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[日記][PDM]DMS終了</title>
+      <link>/posts/pdmdms/</link>
+      <pubDate>Sat, 27 Jun 2009 01:29:00 +0900</pubDate>
+      
+      <guid>/posts/pdmdms/</guid>
+      <description>24日～26日にあった東京DMS（設計・製造ソリューション展）が終了しました。
+慣れない説明員、立ち仕事のせいで足が爆発しそうです。
+体力的にはきつかったのですが、
+様々なソリューションが一堂に会し、
+また主要な開発者たちも集まっているので、
+色々と深い話、楽しい話、楽しくない話が聞けて
+PDMの今後を考え、感じるにはまたとない機会でした。
+全体を通して感じたことは、
+外資系PDMと国産PDMの差が大きく開いているといったところでしょうか。
+どちらが良いと言う訳ではないのですが、
+好みとしては外資系の方が好きです。
+外資系PDM
+ 価格帯が500万～1000万 PLMを目指したPDMが多い。 GUIが綺麗。  国産PDM
+ 価格帯が2000万～ ファイル管理から発展したものが多い。 GUIがエクセルっぽい  あーだめですね、公平に比較できない。
+だって一部を除いて国産PDMは苦手。
+ちなみに外資系のPDMの価格帯が低いのは
+Windows SharePoint Servicesというものが関わっているらしいのですが、
+どう関わっているのかは、現在調査中です。
+土日でなんとか体力を回復させて、
+DMSのまとめをしたいですね。</description>
+    </item>
+    
+  </channel>
+</rss>

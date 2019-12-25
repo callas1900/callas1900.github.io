@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BizTalk2009 on callas1900.net</title>
+    <link>/tags/biztalk2009/</link>
+    <description>Recent content in BizTalk2009 on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Tue, 23 Mar 2010 22:56:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/biztalk2009/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[BizTalk2009]BtsTaskによるバッチ作成</title>
+      <link>/posts/biztalk2009btstask/</link>
+      <pubDate>Tue, 23 Mar 2010 22:56:00 +0900</pubDate>
+      
+      <guid>/posts/biztalk2009btstask/</guid>
+      <description>btstaskはBizTalkアプリケーションのインストール等をコマンドライン上で行えるコマンドラインツールです。
+以下に自分の使用例を書いときます。
+  バインド設定を省いたアプリケーションのmsiファイルを作成する方法
+  バッチ例
+  msiファイルとバインド設定ファイルをエクスポートする
+  msiファイルからBizTalkアプリをインストールする
+  バインド設定をインポートする
+  msiファイルを使った対象BizTalkアプリを削除する
+  バインド設定を省いたアプリケーションのmsiファイルを作成する方法   アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。
+btstask listapp -a:_**BizApp1**_ -r:_**BizApp1\_Resource.xml**_   _**BizApp1_Resource.xml **を修正する。
+タグ以下の
+&amp;lt;Resource Type=&amp;quot;System.BizTalk:BizTalkBinding&amp;rdquo;
+で始まるタグを削除する。
+_
+  エクスポート実行
+btstask ExportApp -a:_**BizApp1**_ -p:_**&amp;lt;MsiFileName&amp;gt;**_ -r:_**BizApp1\_Resource.xml**_   バインドファイルもエクスポート実行
+btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_   バッチ例 msiファイルとバインド設定ファイルをエクスポートする @setlocal @echo off echo ################################## echo %DATE% %TIME% Running export.bat echo ################################## REM !</description>
+    </item>
+    
+    <item>
+      <title>[BizTalk2009]BizTalk2009プロジェクト管理にVSS2005を使うとエラーポップアップ！</title>
+      <link>/posts/biztalk2009biztalk2009vss2005/</link>
+      <pubDate>Sun, 28 Feb 2010 14:50:00 +0900</pubDate>
+      
+      <guid>/posts/biztalk2009biztalk2009vss2005/</guid>
+      <description>VisualStudio2008でBizTalkServer2009のプロジェクトを作り、
+管理をVSS2005でしていたところ、
+開発メンバーからアップデート・チェックイン・チェックアウトが出来ないと苦情がきた。
+エラー表示ポップアップが出るそうだ。
+ Error: Not Implemented
+File: vsee\pkgs\vssprovider\csolutionnodebase.cpp
+Line number:2111
+ ネットのフォーラムを漁ったところ、以下の記事を発見。
+Error in Visual SourceSafe when checking in from Visual Studio 2008（＠Microsoft Connect)
+BizTalk Server 2009 プロジェクトを Visualk Studio 2008 で作成し、VSS2005でソース管理しようとした時に
+よく起きるバグらしい。（勘弁してくれー）
+回避策１：エラーポップアップを無視 エラーメッセージボックスのOKボタンを何度か押して消していると
+モーダルが解けて後ろのボタンを押せるようになる。
+押せば問題なく、チェックイン等のアクションが成功する。
+回避策２：ツリービューをフラットビューに変更する。 どうやらツリービューの描画でエラーがおきているようだ。
+とりあえずこうすることでポップアップが出る現象は回避できた。
+ツリービュー or フラットビューの状態は各アクションごとに記憶されるので、
+各アクション一度はフラットビューへの変更を行わないといけないが、
+この方法が一番ストレスなくその後の作業に従事できるためオススメ。
+しかし・・・
+ほんとにコレでいいのか！BizTalkServer2009！</description>
+    </item>
+    
+    <item>
+      <title>[BizTalk2009]VisualStudio2008でBizTalk新規プロジェクトが作れなくなる。</title>
+      <link>/posts/biztalk2009visualstudio2008biztalk/</link>
+      <pubDate>Fri, 19 Feb 2010 02:49:00 +0900</pubDate>
+      
+      <guid>/posts/biztalk2009visualstudio2008biztalk/</guid>
+      <description>BizTalk Server 2009 のプロジェクトをVisual Studio 2008 で作ってると
+ある日突然新規プロジェクトを作成しようとしても、
+ Creating project &amp;lsquo;project name&amp;rsquo;… project creation failed.
+ が返ってきて失敗してしまうようになる。
+これはVisual Studio 2008 のバグである。
+修正方法が以下のブログにあったので書き記しておく。
+Visual Studio 2008 fails to Create new BizTalk projects
+http://blogs.msdn.com/biztalkcrt/archive/2009/08/21/visual-studio-2008-fails-to-create-open-biztalk-projects.aspx
+修正するにはレジストリの編集が必要になる。
+レジストリはファイル名を指定して実行の欄で「regedit」と入力すれば編集出来る。
+Visual Studio 2008 32bit の場合 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Projects\{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}]
+の中の
+&amp;ldquo;PossibleProjectExtensions&amp;quot;=&amp;quot;csproj&amp;rdquo;　を
+&amp;ldquo;PossibleProjectExtensions&amp;quot;=&amp;quot;csproj**;btproj**&amp;rdquo; に変更する。
+Visual Studio 2008 64bit の場合 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\9.0\Projects\{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}]
+を上記32bitと同じように編集する。
+まとめ 上記のレジストリキーはデフォルトでは &amp;ldquo;csproj&amp;rdquo; であり、
+BizTalk2009のインストール時に &amp;ldquo;csproj;btproj&amp;rdquo; に変更されます。
+ただし、Visual Studio側に何らかの更新（Windows Update等）が入ったタイミングで、
+レジストリの値が元に戻されてしまうことがあります。
+つまり、何度でもこの事態は起きるので、プロジェクトの新規生成でこけたら
+とりあえずレジストリチェックを覗くようにしましょう。
+（覗きたくないですね！）</description>
+    </item>
+    
+  </channel>
+</rss>

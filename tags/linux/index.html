@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Linux :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/tags/linux/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Linux :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Linux :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/tags/linux/" />
+<meta property="og:site_name" content="Linux" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+  <link href="/tags/linux/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="posts">
+  
+  
+
+  
+  
+  false
+  
+  
+
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/varlibdocker/">/var/lib/docker の移動</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/linux/">Linux</a>&nbsp;
+      
+      #<a href="/tags/docker/">docker</a>&nbsp;
+      
+      #<a href="/tags/ubuntu16/">ubuntu16</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      docker のホストマシン容量不足対策。
+docker をインストール後稼働していると、ディスクが足りなくなることがあります。
+いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。
+外部ディスクマウント後の容量食う /var/lib/docker の移動の仕方に関して記します。
+docker 停止 /var/lib/docker を移す 設定ファイル変更  redhat系の場合 debian系の場合 ubuntu 16 の場合   docker 再起動 &amp; 確認  docker 停止 sudo service docker stop /var/lib/docker を移す ディスク容量に余裕がある場所に /var/lib/docker を移す。(ここでは例として /mnt/extra/docker とする)
+インストール直後ぐらいなら、mv で、
+安全にやりたいなら
+mkdir /mnt/extra/docker sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/ 設定ファイル変更 redhat系の場合 設定ファイル: /etc/sysconfig/docker
+(あれば追加で、なければ作成)
+echo other_args=&quot;-g /mnt/extra/docker&quot; &gt; /etc/sysconfig/docker debian系の場合 設定ファイル: /etc/default/docker</p>
+<h1 id="docker-optsquot-dns-8888--dns-8844quot-docker-optsquot-dns-8888--dns-8">DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4&quot; DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.</h1>
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/varlibdocker/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/lmde2nvidia-driver/">LMDE2のNVIDIA Driverを更新する</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/linux/">Linux</a>&nbsp;
+      
+      #<a href="/tags/gpu/">GPU</a>&nbsp;
+      
+      #<a href="/tags/lmde2/">LMDE2</a>&nbsp;
+      
+      #<a href="/tags/%E6%8A%80%E8%A1%93/">技術</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      LMDE2 に NVIDIA のグラフィックドライバを入れます。
+Inspect your graphic board Download a driver Installer Prepare Installation Installation  Inspect your graphic board terminalで
+lspci -vnn | grep VGA -A 12 Download a driver Installer NVIDIAの公式サイトからLinux X64用のDriver Installerを手に入れます。
+私の場合は以下から
+<a href="http://www.nvidia.com/download/driverResults.aspx/77525/en-us">http://www.nvidia.com/download/driverResults.aspx/77525/en-us</a>
+NVIDIA-Linux-x86_64-340.32.run というシェルファイルを手に入れました。
+Prepare Installation reboot し grub で recovery mode を選択し、
+ログイン画面で、Ctrl + Alt + F1 を押してCUIモードになります。
+ユーザーログイン後、
+sudo update-initramfs -u を実行します。
+これはNVIDIAシェルがカーネルモジュールを追加するため必要になります。
+これが実行されない場合
+Nouveau kernel driver を止めてくれとのエラーメッセージが表示されます。
+Installation 再度再起動し、recovery modeになり、CUIモードにログインします。
+X serviceを止めます。
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/lmde2nvidia-driver/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

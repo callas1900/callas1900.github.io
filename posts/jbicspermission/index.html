@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>JBとICSのPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
+ 注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
+ またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
+まず プロテクションレベルの表記が変わっている。
+以前は signatureOrSystem と書かれていた箇所が signature|system に変更。
+また謎の development も追加（詳細がドキュメントされていないので後日調査予定）
+まず ICS と ＪＢ のプロテクションレベルの一覧比較
+ICS
+ dangerous signatureOrSystem normal signature  JB
+ dangerous signature|system normal signature signature|system|development signatureOrSystem  JB に signatureOrSystem が混じっているのは誤表記にあらず。
+一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。
+次それぞれのプロテクションレベル毎の比較
+JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。
+[signature]  赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
+ android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST
+android.permission.NET_ADMIN
+android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS
+android.permission.ASEC_ACCESS"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/jbicspermission/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="JBとICSのPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
+ 注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
+ またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
+まず プロテクションレベルの表記が変わっている。
+以前は signatureOrSystem と書かれていた箇所が signature|system に変更。
+また謎の development も追加（詳細がドキュメントされていないので後日調査予定）
+まず ICS と ＪＢ のプロテクションレベルの一覧比較
+ICS
+ dangerous signatureOrSystem normal signature  JB
+ dangerous signature|system normal signature signature|system|development signatureOrSystem  JB に signatureOrSystem が混じっているのは誤表記にあらず。
+一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。
+次それぞれのプロテクションレベル毎の比較
+JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。
+[signature]  赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
+ android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST
+android.permission.NET_ADMIN
+android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS
+android.permission.ASEC_ACCESS" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="JBとICSのPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
+ 注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
+ またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
+まず プロテクションレベルの表記が変わっている。
+以前は signatureOrSystem と書かれていた箇所が signature|system に変更。
+また謎の development も追加（詳細がドキュメントされていないので後日調査予定）
+まず ICS と ＪＢ のプロテクションレベルの一覧比較
+ICS
+ dangerous signatureOrSystem normal signature  JB
+ dangerous signature|system normal signature signature|system|development signatureOrSystem  JB に signatureOrSystem が混じっているのは誤表記にあらず。
+一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。
+次それぞれのプロテクションレベル毎の比較
+JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。
+[signature]  赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
+ android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST
+android.permission.NET_ADMIN
+android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS
+android.permission.ASEC_ACCESS" />
+<meta property="og:url" content="/posts/jbicspermission/" />
+<meta property="og:site_name" content="JBとICSのPermission比較（メーカー署名関係）" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2012-08-13 09:00:00 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/jbicspermission/">JBとICSのPermission比較（メーカー署名関係）</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2012-08-13
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/jb/">JB</a>&nbsp;
+    
+    #<a href="/tags/signature/">signature</a>&nbsp;
+    
+    #<a href="/tags/ics/">ICS</a>&nbsp;
+    
+    #<a href="/tags/android/">Android</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>以前書いた、<a href="http://blog.callas1900.net/2011/11/icsgingerbreadpermission.html">ICSとGingerbreadのPermission比較</a>（メーカー署名関係）の続編。</p>
+<blockquote>
+<p>注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。</p>
+</blockquote>
+<p>またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。<br>
+まず プロテクションレベルの表記が変わっている。<br>
+以前は signatureOrSystem と書かれていた箇所が signature|system に変更。<br>
+また謎の development も追加（詳細がドキュメントされていないので後日調査予定）</p>
+<p>まず ICS と ＪＢ のプロテクションレベルの一覧比較</p>
+<p><strong>ICS</strong></p>
+<ul>
+<li>dangerous</li>
+<li>signatureOrSystem</li>
+<li>normal</li>
+<li>signature</li>
+</ul>
+<p><strong>JB</strong></p>
+<ul>
+<li>dangerous</li>
+<li>signature|system</li>
+<li>normal</li>
+<li>signature</li>
+<li>signature|system|development</li>
+<li><strong>signatureOrSystem</strong></li>
+</ul>
+<p>JB に signatureOrSystem が混じっているのは誤表記にあらず。<br>
+一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。</p>
+<p>次それぞれのプロテクションレベル毎の比較<br>
+JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。</p>
+<h2 id="signature"><strong>[signature]</strong></h2>
+<blockquote>
+<p>赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし</p>
+</blockquote>
+<p>android.permission.ACCOUNT_MANAGER<br>
+android.permission.HARDWARE_TEST<br>
+android.permission.NET_ADMIN<br>
+<strong>android.permission.REMOTE_AUDIO_PLAYBACK</strong><br>
+<strong>android.permission.GET_DETAILED_TASKS</strong><br>
+android.permission.REMOVE_TASKS<br>
+<strong>android.permission.START_ANY_ACTIVITY</strong><br>
+<strong>android.permission.SET_SCREEN_COMPATIBILITY</strong><br>
+android.permission.FORCE_STOP_PACKAGES<br>
+android.permission.SET_PREFERRED_APPLICATIONS<br>
+android.permission.ASEC_ACCESS<br>
+android.permission.ASEC_CREATE<br>
+android.permission.ASEC_DESTROY<br>
+android.permission.ASEC_MOUNT_UNMOUNT<br>
+android.permission.ASEC_RENAME<br>
+android.permission.DIAGNOSTIC<br>
+android.permission.STATUS_BAR_SERVICE<br>
+android.permission.FORCE_BACK<br>
+android.permission.INTERNAL_SYSTEM_WINDOW<br>
+android.permission.MANAGE_APP_TOKENS<br>
+android.permission.INJECT_EVENTS<br>
+android.permission.SET_ACTIVITY_WATCHER<br>
+android.permission.READ_INPUT_STATE<br>
+android.permission.BIND_INPUT_METHOD<br>
+<strong>android.permission.BIND_ACCESSIBILITY_SERVICE</strong><br>
+android.permission.BIND_TEXT_SERVICE<br>
+android.permission.BIND_VPN_SERVICE<br>
+android.permission.BIND_DEVICE_ADMIN<br>
+android.permission.SET_ORIENTATION<br>
+android.permission.SET_POINTER_SPEED<br>
+<strong>android.permission.SET_KEYBOARD_LAYOUT</strong><br>
+android.permission.CLEAR_APP_USER_DATA<br>
+<strong>android.permission.GRANT_REVOKE_PERMISSIONS</strong><br>
+android.permission.ACCESS_SURFACE_FLINGER<br>
+android.permission.BRICK<br>
+android.permission.DEVICE_POWER<br>
+android.permission.FACTORY_TEST<br>
+android.permission.BROADCAST_PACKAGE_REMOVED<br>
+android.permission.BROADCAST_SMS<br>
+android.permission.BROADCAST_WAP_PUSH<br>
+android.permission.CONFIRM_FULL_BACKUP<br>
+android.permission.CHANGE_BACKGROUND_DATA_SETTING<br>
+android.permission.GLOBAL_SEARCH_CONTROL<br>
+android.permission.COPY_PROTECTED_DATA<br>
+android.permission.MANAGE_NETWORK_POLICY<br>
+android.intent.category.MASTER_CLEAR.permission.C2D_MESSAGE<br>
+android.permission.BIND_PACKAGE_VERIFIER<br>
+<strong>android.permission.ACCESS_CONTENT_PROVIDERS_EXTERNALLY</strong></p>
+<h2 id="signatureorsystem">[signatureOrSystem]</h2>
+<blockquote>
+<p>赤字新規追加、青字は削除。<br>
+ただし[signature|system|development]への移動だから除外というのは当てはまらないかも。</p>
+</blockquote>
+<p>android.permission.SEND_SMS_NO_CONFIRMATION</p>
+<p>android.permission.RECEIVE_EMERGENCY_BROADCAST<br>
+android.permission.INSTALL_LOCATION_PROVIDER<br>
+android.permission.CONNECTIVITY_INTERNAL<br>
+android.permission.MANAGE_USB<br>
+android.permission.ACCESS_MTP<br>
+android.permission.MODIFY_PHONE_STATE<br>
+android.permission.READ_PRIVILEGED_PHONE_STATE<br>
+android.permission.WRITE_MEDIA_STORAGE<br>
+<strong>android.permission.WRITE_SECURE_SETTINGS</strong><br>
+android.permission.WRITE_GSERVICES<br>
+<strong>android.permission.DUMP</strong><br>
+android.permission.RETRIEVE_WINDOW_CONTENT<br>
+android.permission.SET_TIME<br>
+android.permission.WRITE_APN_SETTINGS<br>
+android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK<br>
+android.permission.STATUS_BAR<br>
+android.permission.UPDATE_DEVICE_STATS<br>
+android.permission.SHUTDOWN<br>
+android.permission.STOP_APP_SWITCHES<br>
+android.permission.BIND_WALLPAPER<br>
+android.permission.INSTALL_PACKAGES<br>
+android.permission.DELETE_CACHE_FILES<br>
+android.permission.DELETE_PACKAGES<br>
+android.permission.MOVE_PACKAGE<br>
+android.permission.CHANGE_COMPONENT_ENABLED_STATE<br>
+android.permission.READ_FRAME_BUFFER<br>
+android.permission.REBOOT<br>
+android.permission.MASTER_CLEAR<br>
+android.permission.CALL_PRIVILEGED<br>
+android.permission.PERFORM_CDMA_PROVISIONING<br>
+android.permission.CONTROL_LOCATION_UPDATES<br>
+android.permission.ACCESS_CHECKIN_PROPERTIES<br>
+android.permission.PACKAGE_USAGE_STATS<br>
+android.permission.BACKUP<br>
+android.permission.BIND_REMOTEVIEWS<br>
+android.permission.BIND_APPWIDGET<br>
+<strong>android.permission.MODIFY_APPWIDGET_BIND_PERMISSIONS</strong><br>
+android.permission.GLOBAL_SEARCH<br>
+android.permission.SET_WALLPAPER_COMPONENT<br>
+android.permission.ACCESS_CACHE_FILESYSTEM<br>
+android.permission.CRYPT_KEEPER<br>
+android.permission.READ_NETWORK_USAGE_HISTORY<br>
+android.permission.MODIFY_NETWORK_ACCOUNTING<br>
+android.permission.PACKAGE_VERIFICATION_AGENT<br>
+android.permission.WRITE_SECURE_SETTINGS<br>
+android.permission.DUMP</p>
+<h2 id="heading">その他</h2>
+<p>今回新規追加のプロテクションレベル signature|system|development と 仲間はずれの signatureOrSystem</p>
+<h3 id="signaturesystemdevelopment">[signature|system|development]</h3>
+<blockquote>
+<p>青字の二つは signatureOrSystem からそれ以外は dangerous からの格上げ、これのおかげで開発補助系のアプリに影響が出まくる。</p>
+</blockquote>
+<p>android.permission.SET_ANIMATION_SCALE</p>
+<p><strong>android.permission.WRITE_SECURE_SETTINGS</strong></p>
+<p><strong>android.permission.DUMP</strong></p>
+<p>android.permission.READ_LOGS</p>
+<p>android.permission.SET_DEBUG_APP</p>
+<p>android.permission.SET_PROCESS_LIMIT</p>
+<p>android.permission.SET_ALWAYS_FINISH</p>
+<h3 id="signatureorsystem-1">[signatureOrSystem]</h3>
+<blockquote>
+<p>一個だけぽつんとあるミスっぽいやつ。変換ミスかと思ったが以前は無かったものなのでその線は薄いか？内容的に Nexus 7 作った ASUS で足したものかもしれない。</p>
+</blockquote>
+<p>android.permission.UPDATE_LOCK</p>
+<p>今回は以上</p>
+<p>情報追加次第、色々手出して調べてみます。</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2012-8/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[読書メーター]2012年 8月読書まとめ読書メーター</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2012-6/">
+          <span class="button__text">[読書メーター]2012年 6月読書まとめ読書メーター</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

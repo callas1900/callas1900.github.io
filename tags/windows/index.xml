@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on callas1900.net</title>
+    <link>/tags/windows/</link>
+    <description>Recent content in Windows on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Mon, 22 Feb 2010 23:57:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Windows][続報]2月 Windows Update で XP がブルースクリーンになる現象について</title>
+      <link>/posts/windows2-windows-update-xp/</link>
+      <pubDate>Mon, 22 Feb 2010 23:57:00 +0900</pubDate>
+      
+      <guid>/posts/windows2-windows-update-xp/</guid>
+      <description>[Windows]2月 Windows Update で XP がブルースクリーンになる現象について
+の続報
+結局MS10-015が悪いの？ どうやらMS10-015が悪い訳ではなく。
+ブルースクリーンが発生するのは、Alureon ルートキットなるマルウェアの感染が原因。
+（Alureon ルートキットが Windows カーネルのバイナリを変更することが原因で、
+システムが不安定になるためにブルースクリーン等が発生していた模様）
+後、Alureonは64bitシステムには影響しないため、
+64bit環境ではMS10-015を適用しても問題ないそうです。
+(うちの仕事先の環境はWindows Server 2008 64bitだからよかったよかった。）
+現在マイクロソフトではAlureonを発見・駆除するためのソフトを開発中だそうです。
+（数週間かかるそうです）
+参考資料：
+Alureonに関する情報
+http://www.casupport.jp/virusinfo/2006/win32_alureon_family.htm
+MS日本セキュリティチームのブログ
+http://blogs.technet.com/jpsecurity/archive/2010/02/18/3313624.aspx</description>
+    </item>
+    
+    <item>
+      <title>[Windows]2月 Windows Update で XP がブルースクリーンになる現象について</title>
+      <link>/posts/windows2windowsupdatexp/</link>
+      <pubDate>Tue, 16 Feb 2010 00:46:00 +0900</pubDate>
+      
+      <guid>/posts/windows2windowsupdatexp/</guid>
+      <description>２月のWindowsUpdate適用後に
+WindowsXPがブルースクリーンになる現象が起きているそうです。
+多くは日本語環境以外でおきてるそうですが、油断はできません。
+現象：
+2 月MS10-015適用後に Windows Update を実行するとブルースクリーンになる。
+対象環境：
+WindowXP 32bit、WindowsVista
+対処方法：
+MS10-015 Windows カーネルのセキュリティ更新プログラム (977165) をアンインストールする。
+現在WindowsのAutoUpdateでは、MS10-015の配信は停止していますが、
+手動でUpdateのチェックを行うとMS10-015のインストールが行われます。
+（止めんかい）
+この件に関して、日本のMSのセキュリティチームのブログにエントリがあります。
+MS10-015で再起動やブルースクリーンが発生する件について
+http://blogs.technet.com/jpsecurity/archive/2010/02/12/3312344.aspx
+うーん、この前会社の開発用サーバ（Windows Server 2008 SP2)に
+MS10-015を適用してねーってMSから言われたばかりで手のひら返し
+流石MS !
+結局MSは悪くなかったってことがわかったので手のひら返しました。
+後、続報を書きました。
+→[Windows][続報]2月 Windows Update で XP がブルースクリーンになる現象について</description>
+    </item>
+    
+    <item>
+      <title>selectWindowsVista.security</title>
+      <link>/posts/selectwindowsvistasecurity/</link>
+      <pubDate>Mon, 21 Aug 2006 09:57:00 +0900</pubDate>
+      
+      <guid>/posts/selectwindowsvistasecurity/</guid>
+      <description>こんな記事を見つけた
+Vista の登場をセキュリティベンダが喜ばない理由
+http://japan.internet.com/busnews/20060818/6.html
+掻い摘んで言うと、Vistaはファイヤーウォールとかウィルス対策ソフトとか要らなくなるかもよー
+だから、セキュリティベンダ（セキュリティソフトを開発している会社）は
+Vistaを喜ばないかもね。
+って話。
+内容を見てみると、色々自分が勉強不足だった事を改めて思い知る。
+XPの脆弱性は知っていたが（脆弱だからこそSP2等での強化があったのだ）
+特にユーザー認証の下りだけど
+ 現在、あなたはコンピュータ管理者として Windows XP を起動し、Internet Explorer 6 を利用していることだろう。コンピュータ管理者として、スパイウェアとマルウェアのシステムへの侵入を許していることになる。IE 6 は保護されておらず、管理者としてコンピュータを起動しているため、スパイウェアとマルウェアがシステムファイルに書き込むためのアクセスを自動的に提供しているのだ。
+ 確かに管理者権限でのログインでインターネットに繋ぐっていうのは、
+業務システムの観点から見るとありえない話だ。
+（※管理者権限：そのプログラムに対して何でも出来る権限を持つユーザー、システム自体を改造する事も可能だし、他のユーザーを消去などのアクションをとる事も出来る。使い方を間違えればシステム事態を破綻させる事も可）
+端的に言うと、大企業の注文管理システムの中枢コンピュータに管理者権限でログインし、エロサイト巡回をしてるようなもんなんだ。
+Vistaは様々な保護機能の他に管理者ユーザー以外でのログインしてからのインターネットブラウジングを容易にし、
+（これによって、例えウィルス等が入ってきてもPC自体の中枢機能がやられる可能性はぐんと減る。汚染されてもそのユーザーを切り捨てるだけで済むからだ）
+さらにIE7はOSからブラウジング機能を分けて起動する、保護モードでの軌道が可能になった。
+色々セキュリティ界にとって来春に発売されるVistaは波紋を呼びそうではある。
+もちろん良い噂だけじゃなく、悪い噂もたくっさんありますけどね。
+例えば、IE7では全てのJavaScript機能に対して許可を求めてくるとか・・・
+これは現在のサイト構築の手法を考えると致命的！（HTML＋JavaScript+CSS)ってのが理想的（サーバーサイドプログラムは除いてね）
+現在新しいノートPCの購入を考えているけど、Vistaが搭載されたモデルにしようか迷い中。</description>
+    </item>
+    
+  </channel>
+</rss>

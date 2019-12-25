@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>baby on callas1900.net</title>
+    <link>/tags/baby/</link>
+    <description>Recent content in baby on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Sat, 14 Feb 2009 00:11:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/baby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[baby]誕生</title>
+      <link>/posts/baby/</link>
+      <pubDate>Sat, 14 Feb 2009 00:11:00 +0900</pubDate>
+      
+      <guid>/posts/baby/</guid>
+      <description>調度一週間前に息子が生まれました。
+いやはや・・・怒涛の一週間でした。
+早朝突然の陣痛、
+そして入院、深夜3時の出産。
+出産に立会いましたが、
+正直人間の体ってあそこまで「変形」出来るのかと、
+凄いものを見てしまった気分です。
+ちなみに落ち着いてから妻に
+「&amp;ldquo;鼻からスイカ&amp;quot;だった？」と聞くと。
+(私の周りではよく出産の痛みを「鼻からスイカが出るようだ」と表現する。）
+「いや、お尻からラグビーボールだね」
+と語っていました。
+産後も健康だったため6日で順調に退院。
+（退院時支払う入院代が48万!!!!）
+妻が入院していた6日間は
+悠々自適な独身生活を過ごせたのですが、
+退院してからは夜鳴きとの戦いの日々が始まりました。
+凄い勢いで飛び散るうんことしっこ。
+深夜2時だろうが3時だろうが泣く叫ぶ。
+沐浴中も叫ぶ飛び散るうんこ。</description>
+    </item>
+    
+    <item>
+      <title>[baby]カウントダウン 3,2,1,0...</title>
+      <link>/posts/3210/</link>
+      <pubDate>Tue, 27 Jan 2009 09:50:00 +0900</pubDate>
+      
+      <guid>/posts/3210/</guid>
+      <description>土曜日～月曜日まで風邪でぶっ倒れていました。
+病欠したのは一年半ぶりぐらい。
+風邪でぶっ倒れたというより医者にもらった薬の効き目が強すぎて
+くらっくらしてる感じ。
+とりあえず今日が出産予定日。
+しかしながら、まだ誕生の兆しは見えず。
+普通に一週間ぐらい予定日がズレてしまうなんてことは
+良くあることみたいなので、のんびり待ってます。
+とりあえず今は完全復調を目指します。</description>
+    </item>
+    
+    <item>
+      <title>[baby][Google]カウントダウン　後６日とGoogle Chromeインストール</title>
+      <link>/posts/babygooglegoogle-chrome/</link>
+      <pubDate>Wed, 21 Jan 2009 13:48:00 +0900</pubDate>
+      
+      <guid>/posts/babygooglegoogle-chrome/</guid>
+      <description>出産カウントダウン　後6日
+社会保険の加入に何がいるのか会社に聞いたら、
+特に何もいらないそうだ。
+出産届けの用紙は産婦人科が出産後発行してくれるそうな。
+後、私たち夫婦がお世話になっている産婦人科は
+個室の入院室があり、
+そこで産後フランス料理のフルコースを振舞ってくれるそうだが・・・
+入院費払うの怖いな（笑）
+もう書くことがなくなったので、
+Google Chrome TIPS
+職場にGoogle Chromeがインストールできない人用
+条件
+  Google　Chromeインストーラーが吐き出すエラーコードが「0x80072EFD」
+  IEではインターネットが閲覧出来る。
+  IEではプロキシーの設定をするよう職場から言われている。
+  上記に該当する人はコマンドプロンプトを立ち上げ
+ proxycfg 
+（WinHTTPプロキシ設定を出力）
+ と打ち込んで下さい。
+そこに何もプロキシ設定がない人は次へ、
+プロキシ設定がされている人は
+この記事じゃGoogleChromeがインストール出来ない問題を解決できない可能性が高い。
+プロキシ設定が書いてなかった人は
+ proxycfg -u
+（WinHTTPプロキシ設定をIEからインポートする）
+ これでWinHTTPプロキシにプロキシ設定が入りました。
+GoogleChromeインストーラーを再度立ち上げてみてください。
+インストールが出来るはずです。</description>
+    </item>
+    
+    <item>
+      <title>[baby]出産までカウントダウン開始</title>
+      <link>/posts/untitled/</link>
+      <pubDate>Tue, 20 Jan 2009 17:17:00 +0900</pubDate>
+      
+      <guid>/posts/untitled/</guid>
+      <description>ついに出産予定日まで一週間となりました。
+カウントダウン開始。
+正直緊張しますねコレは・・・
+気を紛らわすためにゲームしたり勉強したり・・・
+そうだ、出産後に必要な書類のリストアップをしとこう
+やらなければいけないこと
+場所
+手続き
+必要物
+区役所
+出生届
+出生届
+母子健康手帳
+印鑑
+届出人の本人確認
+住民登録
+母子健康手帳
+印鑑
+届出人の本人確認
+子供医療費助成児童手当
+印鑑
+健康保険証
+年金手帳
+請求者名義の普通預金通帳
+母子健康手帳
+課税証明書
+会社
+社会保険加入手続き
+何がいるのか問い合わせ中
+必要物まとめ
+  出生届
+  母子健康手帳
+  届出人の本人確認出来るもの（免許証）
+  年金手帳
+  印鑑
+  健康保険証
+  普通預金通帳
+  課税証明書
+  うお、課税証明書とってない・・・</description>
+    </item>
+    
+    <item>
+      <title>嫁さん御懐妊</title>
+      <link>/posts/blog-post_10-comments/</link>
+      <pubDate>Tue, 10 Jun 2008 09:40:00 +0900</pubDate>
+      
+      <guid>/posts/blog-post_10-comments/</guid>
+      <description>心からお祝いしますよ！ おめでとうございますー！ 道行マリル - Jun 2, 2008心からお祝いしますよ！
+おめでとうございますー！</description>
+    </item>
+    
+  </channel>
+</rss>

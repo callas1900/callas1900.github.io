@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on callas1900.net</title>
+    <link>/tags/java/</link>
+    <description>Recent content in Java on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Mon, 01 Oct 2012 09:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Androidで共通鍵暗号化でつまづいたので記録に残す</title>
+      <link>/posts/android/</link>
+      <pubDate>Mon, 01 Oct 2012 09:00:00 +0900</pubDate>
+      
+      <guid>/posts/android/</guid>
+      <description>Androidで文字列をセキュアに保存したい場合、
+暗号化してsqliteに保存するのがよろしいと思われる。
+ここではAndroid自体のセキュリティがアレだとか、Rooted端末とapktoolがあればアレをこうしてアレ出来るだとかいう話はとりあえず置いとく。
+まず以下のようなソースを書いた。
+内容は、
+ 共通鍵の秘密鍵を生成している箇所のみ抽出。 DBに鍵が保存されていない初回はif文を迂回して生成ロジックで生成後DBに保存。 DB保存後はDBから復元する。  private final static String ARGOLISM = &amp;quot;PBEWithSHA1And256BitAES-CBC-BC&amp;quot;; private SecretKey getSecretKey() throws NoSuchAlgorithmException, InvalidKeySpecException, NameNotFoundException { // check saved secret key is exist. byte\[\] savedSecretKey = DBHelper.readByteData(context, &amp;quot;hoge&amp;quot;); if(savedSecretKey != null &amp;amp;&amp;amp; savedSecretKey.length &amp;gt; 0){ return new SecretKeySpec(savedSecretKey, ARGOLISM); } // generate new secret key. char\[\] pw = generatePassword(); int iteratorCount = 1024; int keySize = 256; int saltLength = 8; byte\[\] salt = &amp;quot;00000000&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>[Java]JavaFXとJavaAppletとSwing</title>
+      <link>/posts/javafxjavaappletswing/</link>
+      <pubDate>Thu, 19 Jun 2008 18:00:00 +0900</pubDate>
+      
+      <guid>/posts/javafxjavaappletswing/</guid>
+      <description>以下JavaFXを過大に期待していたものの叫びです。
+お目汚しを失礼します。
+2007年のJavaOneにてJavaFXが出ていた。
+当時はFlahsのような外見にワクワクしたもんだ。
+そんでもってJavaFXの時代がくるのだろうなぁ・・・
+と思っていた。
+時はたち2008年またしてもJavaOneでJavaFXを打ち出している。
+オオ、そんなにJavaFXは凄いのかと思えてくる。
+ちょっと業務も大人しくなってきたしいっちょJavaFX触ってみようか。
+うーん、Swingよりは大分楽になった・・・
+でもこれ、ただの新しいScript表記言語じゃないか。
+JavaFXは何がしたいのだ？
+Objectに対するActionListnerのAddをしなくてよくなったのは評価するが・・・
+今サーバーサイドのフロント部分でウケル物は何か？
+と質問されたらこう答える。
+ 「プログラマが簡単にかっちょいいGUI設計が出来るもの」 「デザイナが自由にGUI設計出来るもの」  のどちらかだと思う。
+プログラマはデザイン考えるのが面倒臭い。
+よって作れば勝手にかっこいいデザインになるようなGUI設計ツールがほしい。
+デザイナは自分の頭の中にあるカックイイものを表現出来るツールが欲しい。
+既存のツール（イラレやAdobe系列のツールなど）と連携がとれる、
+もしくはデータが流用できるなら尚宜しい。
+プログラマの要求を満たすのは今現在で言えばFlexだろう。
+JSPの感覚でタグを組んでいけば自然とカックイイGUIが出来上がる。
+デザイナの要求を満たすのはActionScriptだろう。
+これはプログラミングで、デザイナのお仕事では本来ないはずなんだが、
+パイオニアの利点か、過去のノウハウが出来てるし
+デザイナがActionScriptに挑戦するといった視点でのHPや本が腐るほど出ているし
+そういう先輩もいっぱい会社にいるだろう。
+嗚呼なんてことだ両方ともAdobeに牛耳られているじゃないか。
+さてJavaFXだ！
+かっこいいGUI用ライブラリは用意されているらしい・・・ほうほう
+細かいデザインも出来るらしい・・・ほうほう
+だが新規のJavaモドキScript言語なぞで組むというのがおかしい。
+簡略化したいというならSwingプログラムのActionListnerあたりの挙動だけJavaScriptもどきに変えてやればいいだけのハズなんだ。
+全部簡略化してどうする！
+過去つちかったプログラマのJava経験が生かせないじゃないか！
+覚えるのが難しいわけじゃない、Java以外に覚える必要があるのがうざったいのだ。
+難しい挙動やデザインをしたいのならばJavaになる？
+それは一番プログラマがしたくない仕事の一つじゃないか。
+そしてデザイナが使うには簡単なコトしか出来ない！
+難しいJavaの挙動を覚えれば自由にデザイン出来る？
+ならば過去からのノウハウがたんまりつまったFlash!
+ActionScriptを使うだろう！
+なんだこのJavaFXは！RIAを用意したかったダケだろうGosling!
+嗚呼！だからこそjavaFXを使ってやるさ、勉強してやるさ！
+世界のSunだもの、もしかしたらはやる可能性があるかもだもの。
+そしたらパイオニアとは言わないけれど、
+からActionScriptを勉強するよりは先頭集団の中に食い込めるもの。</description>
+    </item>
+    
+  </channel>
+</rss>

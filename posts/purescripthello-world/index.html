@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>PureScriptでHello world :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="関数型言語系の本山（と思ってる）Haskell を勉強したいけど、
+折角勉強しても使い道を思いつかなかった時に PureScript を知る。
+PureScript は Haskell -&amp;gt; Javascript のコンパイラ。
+正しくは Haskell &amp;ldquo;風&amp;quot;らしいが、最終系は Haskell になるのだろ。
+Mac 上で Hello world してみる。
+まず Cabal をインストールする（ Cabal は Haskell のパッケージシステム）。
+ついでに実行環境用に node もインストール
+brew install ghc cabal-install node 次に PureScript のインストール
+psc --main=Main hello.purs &amp;gt; hello.js もし psc と打ち込んでもTerminalが反応しなかったら以下のようにパスを通す。
+export PATH=&amp;quot;$HOME/.cabal/bin:$PATH&amp;quot; Hello world を書く。ファイル名は hello.purs とする。
+module Main where import Debug.Trace main = trace &amp;quot;Hello, PureScript!&amp;quot; コンパイル
+cabal update cabal install purescript 実行"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/purescripthello-world/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="PureScriptでHello world :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="関数型言語系の本山（と思ってる）Haskell を勉強したいけど、
+折角勉強しても使い道を思いつかなかった時に PureScript を知る。
+PureScript は Haskell -&amp;gt; Javascript のコンパイラ。
+正しくは Haskell &amp;ldquo;風&amp;quot;らしいが、最終系は Haskell になるのだろ。
+Mac 上で Hello world してみる。
+まず Cabal をインストールする（ Cabal は Haskell のパッケージシステム）。
+ついでに実行環境用に node もインストール
+brew install ghc cabal-install node 次に PureScript のインストール
+psc --main=Main hello.purs &amp;gt; hello.js もし psc と打ち込んでもTerminalが反応しなかったら以下のようにパスを通す。
+export PATH=&amp;quot;$HOME/.cabal/bin:$PATH&amp;quot; Hello world を書く。ファイル名は hello.purs とする。
+module Main where import Debug.Trace main = trace &amp;quot;Hello, PureScript!&amp;quot; コンパイル
+cabal update cabal install purescript 実行" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="PureScriptでHello world :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="関数型言語系の本山（と思ってる）Haskell を勉強したいけど、
+折角勉強しても使い道を思いつかなかった時に PureScript を知る。
+PureScript は Haskell -&amp;gt; Javascript のコンパイラ。
+正しくは Haskell &amp;ldquo;風&amp;quot;らしいが、最終系は Haskell になるのだろ。
+Mac 上で Hello world してみる。
+まず Cabal をインストールする（ Cabal は Haskell のパッケージシステム）。
+ついでに実行環境用に node もインストール
+brew install ghc cabal-install node 次に PureScript のインストール
+psc --main=Main hello.purs &amp;gt; hello.js もし psc と打ち込んでもTerminalが反応しなかったら以下のようにパスを通す。
+export PATH=&amp;quot;$HOME/.cabal/bin:$PATH&amp;quot; Hello world を書く。ファイル名は hello.purs とする。
+module Main where import Debug.Trace main = trace &amp;quot;Hello, PureScript!&amp;quot; コンパイル
+cabal update cabal install purescript 実行" />
+<meta property="og:url" content="/posts/purescripthello-world/" />
+<meta property="og:site_name" content="PureScriptでHello world" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2014-10-14 12:44:00.001 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/purescripthello-world/">PureScriptでHello world</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2014-10-14
+    </span>
+    
+    
+  </div>
+
+  
+
+  
+
+  <div class="post-content">
+    <p>関数型言語系の本山（と思ってる）Haskell を勉強したいけど、<br>
+折角勉強しても使い道を思いつかなかった時に PureScript を知る。</p>
+<p>PureScript は Haskell -&gt; Javascript のコンパイラ。<br>
+正しくは Haskell &ldquo;風&quot;らしいが、最終系は Haskell になるのだろ。</p>
+<p>Mac 上で Hello world してみる。<br>
+まず Cabal をインストールする（ Cabal は Haskell のパッケージシステム）。<br>
+ついでに実行環境用に node もインストール</p>
+<pre><code>brew install ghc cabal-install node
+</code></pre><p>次に PureScript のインストール</p>
+<pre><code>psc --main=Main hello.purs &gt; hello.js
+</code></pre><p>もし psc と打ち込んでもTerminalが反応しなかったら以下のようにパスを通す。</p>
+<pre><code>export PATH=&quot;$HOME/.cabal/bin:$PATH&quot;
+</code></pre><p>Hello world を書く。ファイル名は hello.purs とする。</p>
+<pre><code>module Main where  
+import Debug.Trace  
+main = trace &quot;Hello, PureScript!&quot;
+</code></pre><p>コンパイル</p>
+<pre><code>cabal update  
+cabal install purescript
+</code></pre><p>実行</p>
+<pre><code>node hello.js  
+  
+&gt; Hello, PureScript!
+</code></pre><p>参考：<br>
+PureScript::Getting Started<br>
+<a href="http://purescript.readthedocs.org/en/latest/start.html">http://purescript.readthedocs.org/en/latest/start.html</a></p>
+<p>PureScript::Hello, PureScript!<br>
+<a href="http://purescript.readthedocs.org/en/latest/intro.html#hello-purescript">http://purescript.readthedocs.org/en/latest/intro.html#hello-purescript</a></p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2014/">
+          <span class="button__icon">←</span>
+          <span class="button__text">2014年 大晦日</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/microsoft-azure-ubuntu-ssh/">
+          <span class="button__text">Microsoft Azure で ubuntu サーバー立てて sshで繋いでみる</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

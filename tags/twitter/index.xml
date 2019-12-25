@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Twitter on callas1900.net</title>
+    <link>/tags/twitter/</link>
+    <description>Recent content in Twitter on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Sun, 23 Aug 2009 22:35:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[日記][Twitter]近況報告とTwitter</title>
+      <link>/posts/twittertwitter/</link>
+      <pubDate>Sun, 23 Aug 2009 22:35:00 +0900</pubDate>
+      
+      <guid>/posts/twittertwitter/</guid>
+      <description>全然投稿してなかったので、生存確認をかねた近況報告です。
+お手伝いでデスマってるプロジェクトにお手伝いに放り込まれました。
+Javaでうひうひ楽しく実装し、
+1k行単位のSQLに頭を抱える日々です。
+さて、そんな日々なので投稿が出来ないでいるかというと
+さにあらず、原因はTwitterです。
+Twitterを今更解説するのもあれなんですけど、
+140文字のつぶやきを延々と投稿するサイト
+で他人のつぶやきのリスナーになったりならなかったり。
+Twitterのいいところは楽なところ。
+つぶやきなので、誰に対して発信するわけでもないので、
+肩肘張らず適当にかける。
+無責任な王様の耳はロバの耳の井戸だと思って使ってる。
+元々、ある程度の言いたいことがたまり、
+一定のテーマとして固まったものから投稿していたのだが、
+Twitterで早々に吐き出してしまうため、
+言いたいことが溜まらない。
+ん。ん・・・これはこれで困った自体だな。
+とりあえずそのうちBloggerのサイドバーにでもTwitter出すか？
+一応私のTwitterのURLをペタっとしとく。
+http://twitter.com/callas1900</description>
+    </item>
+    
+  </channel>
+</rss>

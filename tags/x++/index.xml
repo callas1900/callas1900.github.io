@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>X&#43;&#43; on callas1900.net</title>
+    <link>/tags/x&#43;&#43;/</link>
+    <description>Recent content in X&#43;&#43; on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Thu, 11 Feb 2010 14:02:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/x++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[DynamicsAX2009][X&#43;&#43;]安全なクラスキャストとシステム日付</title>
+      <link>/posts/dynamicsax2009x/</link>
+      <pubDate>Thu, 11 Feb 2010 14:02:00 +0900</pubDate>
+      
+      <guid>/posts/dynamicsax2009x/</guid>
+      <description>X++の小技を自分メモ用に紹介。
+X++に対してgoogle-code-prettifyがうまく動作するか不安だがやってみる。
+ 安全なクラスキャスト システム日付  [](http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016)安全なクラスキャスト static pulic void main(Args \_args) { binaryIO b; textIO t; ; b = SysDictClass::as(t,classIdGet(b)); } ちなみにObjectを使用して安全でないクラスキャストもできる。
+static pulic void main(Args \_args) { binaryIO b; textIO t; Object o; ; o = t; b = o; } [](http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016)システム日付 utcDateTime型とDate型で取得
+void method1() { utcDateTime utc; Date d; ; utc = DateTimeUtil::applyTimeZoneOffset( DateTimeUtil::getSystemDateTime(), DateTimeUtil::getUserPreferredTimeZone() ); d = DateTimeUtil::date(utc); print utc; print d; } 実行結果
+ 2010/12/12 12:12:12</description>
+    </item>
+    
+  </channel>
+</rss>

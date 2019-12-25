@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TS on callas1900.net</title>
+    <link>/tags/ts/</link>
+    <description>Recent content in TS on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 18 Aug 2010 18:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/ts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[TS][Windows2008]期限が切れたターミナルサービスの復旧方法</title>
+      <link>/posts/tswindows2008/</link>
+      <pubDate>Wed, 18 Aug 2010 18:00:00 +0900</pubDate>
+      
+      <guid>/posts/tswindows2008/</guid>
+      <description>ターミナルサービス（TS）の無料を使ってて、期限が切れた（切れそう）なので
+ライセンスを買って設定するなんてことありますよね。
+Windows 2008 Server でTSのライセンスが切れたので、設定方法を残しておきます。
+前提条件：TS License Serverのインストールを行うサーバーはDomain controllerであること。
+ライセンスサーバーのインストール   Server Managerを起動し、Rolesの中のTerminal Servicesを選択し、
+右クリックメニューよりAdd Role Servicesを選択します。
+  TS Licensingにチェックを入れてNext
+  Configure Discovery Scope for TS Licensing画面が出てくるので
+ターミナルサービスがライセンスサーバーを探す範囲を選択してNext
+(今回はThis Domain)
+  Confirm Installation Selections画面で、Installをクリックして完了。
+  ライセンスサーバーの設定   Start &amp;gt; Administrative Tools &amp;gt; Terminal Services &amp;gt; TS Licensing Manager を起動します。
+  対象とするサーバーの状態がNot Activated であることを確認する。
+  サーバーを選択し、Action &amp;gt; Activate Serverを選択。
+Activate Server Wizardが開始します。</description>
+    </item>
+    
+  </channel>
+</rss>

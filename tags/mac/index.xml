@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on callas1900.net</title>
+    <link>/tags/mac/</link>
+    <description>Recent content in Mac on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 30 Oct 2013 17:41:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mountain LionでOpenGrok メモ</title>
+      <link>/posts/mountain-lionopengrok/</link>
+      <pubDate>Wed, 30 Oct 2013 17:41:00 +0900</pubDate>
+      
+      <guid>/posts/mountain-lionopengrok/</guid>
+      <description>このページを参考にしてOpenGrokをセットアップしてたけど何点か詰まったので備忘録として。
+参考ページ：Mac OS X に OpenGrok で、今日からコードリーディング
+こちらの状況：java, antはセットアップ済み
+1. OpenGrokのビルドでJFlex.jarを読み込んでくれない 確証はないが、linuxで
+Bug#388371: jflex: JFlexTask cannot be found
+と報告されているので、antのlibパスにJFlex.jarを置き直したら動いた。
+2. tomcatが起動しない。 単純にCATALINA_HOMEを足すだけ、
+手順にないのでOpenGrokがうまいことやってくれるのか？と期待したがそんなことはなかった。
+以上、自分用備忘録でした。</description>
+    </item>
+    
+    <item>
+      <title>[Mac]BootCamp終焉の日</title>
+      <link>/posts/bootcamp-comments/</link>
+      <pubDate>Tue, 20 May 2008 01:20:00 +0900</pubDate>
+      
+      <guid>/posts/bootcamp-comments/</guid>
+      <description>全ての領域をOS Xにするだけでしたら、インストールCDからのディスクユーティリティでパーティション&amp;hellip; Linsi - Jun 3, 2008全ての領域をOS Xにするだけでしたら、インストールCDからのディスクユーティリティでパーティションを再設定出来ます。
+必然的にOS再インストールになりますから、OS Xのデータも初期化されるのでご注意下さい。
+Blogの中では書きそびれていたのですが、Windowsで&amp;hellip; callas - Jun 4, 2008情報ありがとうございます。
+Blogの中では書きそびれていたのですが、Windowsで使用していたファイルバックアップをOSX側でとっていたんです。
+諸事情によりOSX側にそのバックアップを置いといたままBootCampの領域を更地にしたかったんです＾＾；
+Apple「OSX入れなお&amp;hellip; callas - Jun 4, 2008自己レス。
+それがAppleからの回答になるのかなぁ
+Apple「OSX入れなおしてこい！」
+ま、仕方ないか（笑）</description>
+    </item>
+    
+    <item>
+      <title>[Mac]BootCamp終焉の日</title>
+      <link>/posts/bootcamp/</link>
+      <pubDate>Tue, 20 May 2008 01:20:00 +0900</pubDate>
+      
+      <guid>/posts/bootcamp/</guid>
+      <description>去年の秋あたりから私のMacBook（OSX10.4 Tiger）は
+BootCampによるWindowsXPのみの起動だけになっていた。
+起動ディスクもWindowsにしていたので、
+私のMacBookの扱いはWin機といってもいい。
+最近XPの調子が悪いのでパーティションを一度つぶして、XPを入れ直そうと思った。
+久しぶりにOSXから起動すると、何故だかBootCampが動かない、
+Windows用に区切ったパーティションを潰すためにはBootCampを起動して潰す必要がある。
+BootCampの起動は必須だ。
+おいおい・・・どうすりゃいいんだ・・・
+とりあえずネットで調べてみると
+ TigerでのBootCampは元々Leopardに乗せる機能用のBeta版 OSX10.5 Leopardの登場でBootCampは2.0（正式版）に移行したため
+Tigerでの起動は出来なくなるとのこと。 Tigerで起動できる最終期日は２００７年１２月３１日 ２００８年１月１日からはBootCampの起動は出来ないが
+インストールしたWindowsの使用は出来るとのこと、
+ただしドライバなどの更新やサポートは行われない。  以上のことがわかった。
+とりあえず今は２００８年の５月だ、当然起動できない。
+まぁ、BootCampがBeta版だから使えなくなるってのは、理解する。
+しかしながら、区切ってしまったパーティションを元に戻せないのは非常に困る。
+ほぼWin機として使っていた、私のパーティションは
+OSX用に３０G、Win用に９０Gといった状態だ。
+９０Gの領域がまったく使えない状態というのは痛すぎる。
+なんとか方法はないものかと調べてみたが、
+調べ方が悪いのか、全然情報にHITしない。
+万策尽きたかと思ってるとこで、ふとある考えがひらめいた。
+Windowsでよく期限付きShareWareの期限が切れた時にやる手だ、
+まさかMacでは出来ないよなぁ？と思いつつ
+MacBookの日付を２００７年１２月３０日に変更。
+ああ・・・BootCamp起動できたし、使用出来た。
+サポート関係ないのなら、
+Windowsをインストールする時にのみ日付をいじれば
+問題無くBootCampを使用していけそうだ。
+ただ、なんとなく私はWindowsを再インストールする気にはなれなかった。
+サポートが無い状態でOSを入れるのは勇気がいる。
+ゲーム用PCとかならいざしらず、勉強や仕事に使うPCだ。
+環境が出来たところで、OSが動かなくなるとか考えただけで恐ろしい。
+今後私に用意された選択肢は二つ。
+ Leopardを買い、BootCampの正式版を利用する。 Parallels Desktopを購入して仮想OSでWindowsを利用する。  今のところ後者の使い方のほうがしっくりくるように思っている。
+以前に評価版を使用はしてみたことがあるが、結構私の中では好感触だったからだ。
+（その時は、MacBookでWindowsゲームがしたかったので、フルにメモリが使用できるBootCampを好んだ）
+後はソフトの値段だけ、Parallels高いよぉ〜</description>
+    </item>
+    
+    <item>
+      <title>NeoOffice!</title>
+      <link>/posts/neooffice-ie-office-office-macoffice/</link>
+      <pubDate>Tue, 07 Aug 2007 23:49:00 +0900</pubDate>
+      
+      <guid>/posts/neooffice-ie-office-office-macoffice/</guid>
+      <description>NeoOffice!
+現在元気にぷりぷり稼働中のマイマック。
+現在のところ不満といえばIEでしか動かないサイトがみれないことと、
+Office関係。
+他は特には今のところは不満はない。
+今回はそのOffice関係の不満が解消出来たので報告いれとく。
+macにももちろんOfficeが存在するのだが、いかんせんこれが２万近くするのだ。
+高い高い。
+インストールしてから一ヶ月は無料で使えるのだけど、
+とてもじゃないが、２万という金額は高すぎる
+（しかもBootcampでインストールしたXPの中にOfficeがインストールされているのだ）
+なんとか無料でないものかと探していたところ。
+OpenOffice というものを見つけた。
+無料でMicrosoftOfficeと同じものを実現しようとしうオープンソースプロジェクトだそーだ。
+OSX版があったので早速ダウンロードして使ってみる。
+ん〜・・・今一！
+使いにくい！
+ワード機能はまぁいいとしても、スプレッドシートに関してはだめだめ。
+（正直ださい）
+ま〜無料ソフトだし文句いってもしかたないかなぁと思っていたところ。
+NeoOffice を見つけた。これは上記のOpenOfficeのUIをOSXライクに改造してあり、
+さらにGPLライセンスというすばらしいものだ。
+早速インストールしてみた。
+うむ！使いやすい！これなら、mac版のMicrosoftOfficeは買う必要ないなぁ。</description>
+    </item>
+    
+    <item>
+      <title>注文していたMacBookが届いてキャホウォウ</title>
+      <link>/posts/macbook-macbookosx-osx/</link>
+      <pubDate>Wed, 25 Jul 2007 18:49:00 +0900</pubDate>
+      
+      <guid>/posts/macbook-macbookosx-osx/</guid>
+      <description>注文していたMacBookが届いてキャホウォウ
+としていたらトラブルが立て続けに発生。
+まずMacBookのOSXに関してはまったく問題なし、
+すっごく安定してます。
+（てかOSX使いやす～）
+ただゲームや一部ネット上のコンテンツを楽しみたいのならば
+（後Office関係ね、確かにMacでも出来るといえばできるがVBAこみで考えるとやはりWindows環境がベター）
+さて、OSXにはBootCampといわれるBeta版ソフトがあります。
+Windowsのデュアルブートをサポートしてくれるソフトなんですが、
+やってくれることは
+ Mac機器→Windows機に対応するドライバDVDの作成 Windows用パーティション分割 WindowsインストールCD要求からインストール開始  以上をやってくれます。
+なのでこちらが用意するのは、windows XP SP2
+（注意：XPに最初からSP2が入っている場合でないと無理、
+後からアップデートでSP2にするとかCDアップデートとかムリ）
+細かいインストール内容なんて、“bootcamp xp”でググればいくらでも出て来るので割愛。
+さてトラブルの内容を話しましょう。
+まずWindowsを入れてからやることといえば、
+ ウィルス対策ソフトのインストール Winsows Update  この二つを平行してやることですねぃ
+これが終わってから改めて環境構築なんぞに行けばいいわけです。
+で、ここでトラブルが起きました。
+まず私が使っているウィルス対策ソフトは
+AOL社のAVS(Active Virus Shield) というソフトなのですが、
+これをインストールしたり、Windows Updateをかけたりしていると、
+突如あらゆるドライバが消失します。
+どちらが原因なのかまったく分かりません。
+ネットでbootcampのトラブルで検索してみたけど、まったくHitしないのです。
+そして、AVSがmail-anti云々といったエラーを出します。
+その後AVSをアンインストールしようが何をしようがもう元に戻りません。
+現象まとめ
+ マイコンピュータを開いてドライブを探そうとすると探索モードのまま帰ってこない
+（懐中電灯で探し回るアイコンのまま終わらない） AVSからMail-Antiうんたらといかいうエラーが出続ける。 ポート（COM と LPT）etc がデバイスマネージャから消える。 ネットワーク関係全死亡 ドライバを直接インストールすることにより、BlueToothは復活  なんだこれ・・・
+とりあえずネットが出来ないのは痛い。
+（それ目的でWindowsを入れているのに！）
+今は原因が分からないけど、
+ネットを探してもWindows + Bootcampのトラブルはインストール時の操作ミスによるトラブル以外のってない。
+さらにAVS + windowsの組み合わせは、
+過去に2台のwindows機に入れて今も現役で使っている実績があるので、
+この組み合わせに問題があるとは思えない。
+とゆ～ことはWindows + Bootcamp + AVS の組み合わせが悪いのか！？</description>
+    </item>
+    
+    <item>
+      <title>黒Macがくる</title>
+      <link>/posts/pcwin95-windows95-cd-640mb-hd-500mbhd/</link>
+      <pubDate>Tue, 17 Jul 2007 19:25:00 +0900</pubDate>
+      
+      <guid>/posts/pcwin95-windows95-cd-640mb-hd-500mbhd/</guid>
+      <description>今日の日記は懐古臭く、また駄文で他人が読むに値しない文章です。
+暇つぶしに読む人は止めません、悪しからず。
+初代自宅PCはWIN95ブームにあやかり
+中学３年の時に父が買ったwindows95機だった。
+細かいスペックは全然覚えてないが
+（スペックという言葉も知らない時代だ）。
+覚えているのは当時好きだった漫画の壁紙とかスクリーンセーバー等が詰まったCDの要領が
+640MBでフルインストールしようとしたらHDの容量をオーバーしたぐらいか
+（当時500MBクラスのHDだったと思う）
+PCを触れるのは多少嬉しかったが、
+やれる事が少なくすぐに飽きてしまった。
+次に新しいPCが来たのは予備校生の時だ、
+大学浪人してしまった時に勉強のためにと
+親にねだって買ってもらったのがはじめての個人PCだった。
+SofmapオリジナルノートPCで、容量は驚きの１Gバイト以上、
+CDゲームをまるままインストールしても大丈夫な容量だった。
+ただインストールしたゲームを毎回抜かないといけないのが難点だったが、
+今まで不可能だったゲームが出来るとあって喜んだものだ。
+結局趣味ソフトを数点とオフィスを入れたら容量が結構カツカツで、
+ファイルは主に3.5ｲﾝﾁﾌﾛｯﾋﾟｰに保存していた。
+CD-ROMはついていたが、書き込む機械なんてまだまだ高かった。
+CD-R機を持っている友達の家に遊びに行くついでに、
+たまったファイルをCDに落としてもらったりした。
+当時は1倍速～8倍速だったが、
+倍速が早いほど書き込みが失敗するというので、
+高かったCD-Rを無駄にせぬよう1倍速で書き込みをしたものだ、
+これは書き込みに1時間以上かかってしまうものだった。
+その次のPCは大学2年の終わりぐらいだったか、
+2003年の阪神が優勝した年だったと覚えている
+（確か電気屋の虎セールで買ったのだ）
+前のノートが動かなくなり、泣く泣く新PCに移行したことを覚えている。
+新PCはサクサク動き、やはり当時の私を魅了した。
+CD-Rも書き込めるとあり、
+主要記憶メディアがFDからCDへと変わったのもこの時だ。
+それが今現在、私の手元にあるノートPCになる。
+HDは余裕の40G、OSインストールしても余裕がありすぎる。
+DVD一本ぐらい入れてもわけはない。
+CPUだって良いとは口が裂けても言えないが、
+通常の作業をする分に関しては申し分ない。
+さて、そんな現行ノートも使いがってが悪くなってきた。。
+1代目のPCから2代目のPCへの移行動機は、不可能を可能へ
+2代目のPCから3代目のPCへの移行動機は、不動を可動へ
+そう考えると今回の動機は多少不純なようにも感じる。
+今のノートで出来ないことはないのだ、
+ただA4大判のノートであるため、持ち運びに不便であること。
+自宅にデスクトップPCを設置したため、
+デスクトップ代替として購入したノートのアドバンテージが減ったこと。
+つまりはモバイル機が欲しかった。
+そして今週MacBookが家に届く。
+OSとしてMacを選ぶのも初めての経験なので、それもあって緊張する。
+楽しい週末になりそうだ。（各種ソフトインストール地獄）</description>
+    </item>
+    
+    <item>
+      <title>macBook is Awesome and Cool</title>
+      <link>/posts/macbook-is-awesome-and-cool-comments/</link>
+      <pubDate>Thu, 19 Oct 2006 19:09:00 +0900</pubDate>
+      
+      <guid>/posts/macbook-is-awesome-and-cool-comments/</guid>
+      <description>お？ワクワクですね～ loopa - Oct 1, 2006お？ワクワクですね～</description>
+    </item>
+    
+    <item>
+      <title>macBook is Awesome and Cool</title>
+      <link>/posts/macbook-is-awesome-and-cool/</link>
+      <pubDate>Thu, 19 Oct 2006 19:09:00 +0900</pubDate>
+      
+      <guid>/posts/macbook-is-awesome-and-cool/</guid>
+      <description>前の仕事でMacBookを触る機会があったのですが・・・
+その時以来、MacBookがほしくてしかたないというお話。
+昔からmacはｲｲとは聞かされていましたがね・・・ここまでいいもんだとは思いませんでしたよ。
+なんてーか、例えばSafari（macのﾌﾞﾗｳｻﾞ）を立ち上げて、
+ちょっとネットで検索する。
+そのちょっとした作業が楽しい・・・
+同じくmac初心者の仕事仲間と、ウィンドウの最小化だけで歓声を上げていました。
+It&#39;s very very cool PC!
+彼女がﾏｯｸを使える人なのですが、mac使いがmacを好きになる理由が見えました。
+そして親父が昔いってた言葉の意味も
+「macは本当にいい！だがな、やっぱり今のスタンダードはWINなんだ。一番いいのはmacだと知ってるんだけどな、みんなWIN使うしかないんだよ」
+（親父もＰＣ好きです）
+しみじみと思いました。
+嗚呼・・・確かにmac最高だよ・・でも・・・仕事で使えないんじゃなぁ・・・
+（ちなみに私の会社では、ノートＰＣを仕事用として購入する場合、半額購入費用を持ってくれます。変なシール貼られるけどね・・・）
+家に帰り未練たらしく、Appleのサイトを覗いていると・・・
+Boot Camp　の文字が・・・
+なんとWIN XP をブートできるのか！
+そういえば・・・昔・・・line2（私がしてるMMORPGgame）の中でIntelMacで起動中　って人がいたよな。
+動くんだ！
+もう、そこからは悶々とした日々が続いています・・・
+久々に恋しちゃった感じ。
+だって、私がしたいことは
+ 彼女の家でノートPCでゲーム 仕事で使うという名目で会社に半金ださせる。 macを触りたいがWinは捨てきれない  全てオールクリアじゃないか！！！
+よーし、Boot Camp が正式稼動するOS X Leopard 出たら買うぞー
+その前に買ってるかもしれないけどなー</description>
+    </item>
+    
+  </channel>
+</rss>

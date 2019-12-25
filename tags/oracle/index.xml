@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oracle on callas1900.net</title>
+    <link>/tags/oracle/</link>
+    <description>Recent content in Oracle on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Thu, 06 Dec 2007 11:22:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oracle 10g Express Edition でチト困った</title>
+      <link>/posts/oracle-10g-express-edition-al32utf8/</link>
+      <pubDate>Thu, 06 Dec 2007 11:22:00 +0900</pubDate>
+      
+      <guid>/posts/oracle-10g-express-edition-al32utf8/</guid>
+      <description>Oracle 10g Express Edition　は
+ AL32UTF8 WE8MSWIN1252  のみのCHARACTER SETしか使用できない
+資料：
+Oracle® Database Express Edition
+10 Oracle Database XE Character and Language Configurations
+これで非常に困った。
+現在数社で連携をとってＷｅｂアプリを開発しているのだけど、
+他社が作った機能の検証用テストデータとしてINSERT文が書かれたSQLファイルを送付してもらった。
+いざINSERTしてみると、
+ORA-12899:
+列&amp;quot;hoge&amp;rdquo;.&amp;ldquo;foo&amp;rdquo;.&amp;ldquo;bar&amp;quot;の値が大きすぎます
+(実際: 60、最大: 40)
+とOracleに怒られ、データが入らない箇所がある。
+慌てて文字数をカウントしたが、データに間違いはない。
+これはなんだ？と思ったところで、
+思い当たったのが、DBモデルのバージョンが違うのではないか？ということ
+誤解を招く言い方かもしれないので補足を書くと、
+上記の違いとはDBのバージョンが違うという意味ではない、
+今回のプロジェクトでは（あってはならないことなんだけども）、
+客先要求の追加などで、テーブルの名前が変わったり、テーブル自体が消えてたりなどの数回のモデルチェンジが行われているのだ。
+そして何度かデータの最大文字数も変更されている。
+数社で連携をとって開発している中でのモデルチェンジだったので、
+もしかしたら各社でバージョンが違うのではないのか？
+そのバージョンでは文字数定義が違うのではないか？と思った。
+細かい敬意を省くために結果を述べると**「モデルのバージョンは同じ」**だった。
+原因は弊社と他社のDBの差にあったのだ。
+私の会社ではWindows版のOracle10gサーバーが見つからなかったので、
+他社検証用として急いでOracle10g Express Editionを導入した。
+無料で使える10gということでワクワクしながら環境構築していったのだが、
+構築過程でサービス名が一つしか設定できないことを知る。
+まぁこれは、今回プロジェクト限りで潰してもいいDBなので、問題はない。
+それから上記の問題の発生である。
+XEのインストールウィザードで文字コードの選択が出てこなかったので考えてなかったのだけど
+（浅薄だなぁ・・・）
+文字コードの差が問題だということが結果としてわかった。
+現在Oracle10g正式版は何種類かの文字コードをカバーしている。
+そしてデフォルトインストールすると、文字コードは**SHIFT_JIS（JA16SJIS）**になるのだが、
+10gXEは**UTF8（AL32UTF8）**がデフォルトだ、
+仕様書 を見ると、WE8MSWIN1252というコードも選択出来るそうなのだがこの文字コード自体初見である。
+じゃあ、何が困るのか？
+プログラマな人はとっくに原因なんて分かっていると思うけど、
+プログラマじゃない人も世の中にはいるわけで・・・説明を続けると、
+どうやら今回のプロジェクトにおいて10gを使用している所はすべてSHIFT_JISで設計されている。
+（日本国内のイントラネット的なＷｅｂシステムなのでこれはまぁ、いいんじゃないかな･･･怒る人もいるだろうけど）
+そうすると型VARCHAR2での日本語全角20文字MAX文字数の設計のは
+VARCHAR2 = 40[Byte]</description>
+    </item>
+    
+    <item>
+      <title>Oracle 10g Express Editionのインストールメモ</title>
+      <link>/posts/oracle-oracle-10g-express-editionoracle/</link>
+      <pubDate>Mon, 29 Oct 2007 16:13:00 +0900</pubDate>
+      
+      <guid>/posts/oracle-oracle-10g-express-editionoracle/</guid>
+      <description>Oracle備忘録
+仕事のテスト環境用にOracle 10g Express Edition（Oracle 10gの無料版）を使用する機会があったのでそのインストールメモ
+Oracle : Oracle 10g Express Edition
+OS : WindowsXP
+とりあえずExeファイルを実行してインストール
+サクっと終了
+インストール中にはSYSTEMのパスワードだけ設定。
+とりあえずSYSTEMでログイン
+後、新規ユーザー作成
+ここではFOOとしておく。
+これでとりあえずはスキーマ作成完了。
+次に他PCよりOracleに接続を試みる。
+ まずはIPを固定 ついでにOracle Clientをインストール 次に
+「すべてのプログラム」→「Oracle - OraClient10g_home1」
+→「コンフィグレーションおよび移行ツール」
+→「Net Configuration Assistant」を選択  後は以下のとおり
+ローカルネットワークサービス名構成を選択。
+追加を選択
+EXpressEditionはサービス名がデフォルトで定められており、
+複数設定することはできない様子。
+デフォルト名は「XE」
+TCPを選択
+Oracle 10g Express EditionをインストールしたPCのローカルIPを入力
+後は接続設定をして開発者と猫の名前を除去して。
+自分が作ったスキーマ名とそのパスを入力してテスト成功すればOK!
+注意点
+Oracle DataBase を入れているPCのファイヤーウォールの1521ポートをあけておくこと</description>
+    </item>
+    
+    <item>
+      <title>銀への道</title>
+      <link>/posts/oraclehp-oracle-silver-oracle-silver/</link>
+      <pubDate>Wed, 07 Feb 2007 17:34:00 +0900</pubDate>
+      
+      <guid>/posts/oraclehp-oracle-silver-oracle-silver/</guid>
+      <description>昨日からヘルシア緑茶一日一本のみはじめました。
+これは特定保健用食品なので、飲み続ければ効果があるはず！
+（それより運動したほうがいいけどね！）
+くそまずいお茶に顔をしかめつつOracleのHPを調べました。
+Oracle Silverに関して調べた結果
+Oracle Silverを取得するためには
+ Oracle Bronze DBA 10g Oracle Bronze SQL基礎Ⅰ Oracle Silver DBA 10g  の３つを順不同で取得した場合、Silverの認可が下りるみたいだ。
+む～ん・・３月末には取得したいと思っていたSilverだがちょっと無理そうだ。
+なので、Bronzeからきっちりたたき上げてとっていく計画を立てよう。
+ざっくり計画
+Bronze SQL基礎Ⅰ：
+２週間
+Bronze DBA 10g ：
+２週間
+Silver DBA 10g ：
+一ヶ月
+とゆーわけで、順調にいけば
+３月１２日にBronze
+４月１５日にSilverをゲット！
+とりあえず、業務で使用しているBronze SQLをまず目標にして取得しよう。
+話はそれからだ！</description>
+    </item>
+    
+  </channel>
+</rss>

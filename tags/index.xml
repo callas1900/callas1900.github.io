@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on callas1900.net</title>
@@ -7,9 +7,793 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 25 Jan 2017 01:20:00 +0900</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>docker</title>
+      <link>/tags/docker/</link>
+      <pubDate>Wed, 25 Jan 2017 01:20:00 +0900</pubDate>
+      
+      <guid>/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Wed, 25 Jan 2017 01:20:00 +0900</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu16</title>
+      <link>/tags/ubuntu16/</link>
+      <pubDate>Wed, 25 Jan 2017 01:20:00 +0900</pubDate>
+      
+      <guid>/tags/ubuntu16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>大晦日</title>
+      <link>/tags/%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
+      <pubDate>Sat, 31 Dec 2016 10:05:00 +0900</pubDate>
+      
+      <guid>/tags/%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>日記</title>
+      <link>/tags/%E6%97%A5%E8%A8%98/</link>
+      <pubDate>Sat, 31 Dec 2016 10:05:00 +0900</pubDate>
+      
+      <guid>/tags/%E6%97%A5%E8%A8%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>/tags/android/</link>
+      <pubDate>Thu, 10 Nov 2016 02:06:00 +0900</pubDate>
+      
+      <guid>/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>laravel</title>
+      <link>/tags/laravel/</link>
+      <pubDate>Thu, 21 Jul 2016 17:50:00 +0900</pubDate>
+      
+      <guid>/tags/laravel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>phpunit</title>
+      <link>/tags/phpunit/</link>
+      <pubDate>Thu, 21 Jul 2016 17:50:00 +0900</pubDate>
+      
+      <guid>/tags/phpunit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL</title>
+      <link>/tags/postgresql/</link>
+      <pubDate>Thu, 21 Jul 2016 17:50:00 +0900</pubDate>
+      
+      <guid>/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sqlite</title>
+      <link>/tags/sqlite/</link>
+      <pubDate>Thu, 21 Jul 2016 17:50:00 +0900</pubDate>
+      
+      <guid>/tags/sqlite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>読書メーター</title>
+      <link>/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
+      <pubDate>Sat, 02 Jul 2016 01:42:00 +0900</pubDate>
+      
+      <guid>/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>/tags/bash/</link>
+      <pubDate>Mon, 04 Apr 2016 12:38:00 +0900</pubDate>
+      
+      <guid>/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker registry</title>
+      <link>/tags/docker-registry/</link>
+      <pubDate>Mon, 04 Apr 2016 12:38:00 +0900</pubDate>
+      
+      <guid>/tags/docker-registry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>技術</title>
+      <link>/tags/%E6%8A%80%E8%A1%93/</link>
+      <pubDate>Mon, 04 Apr 2016 12:38:00 +0900</pubDate>
+      
+      <guid>/tags/%E6%8A%80%E8%A1%93/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LMDE2</title>
+      <link>/tags/lmde2/</link>
+      <pubDate>Thu, 18 Feb 2016 01:57:00 +0900</pubDate>
+      
+      <guid>/tags/lmde2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows 10</title>
+      <link>/tags/windows-10/</link>
+      <pubDate>Thu, 18 Feb 2016 01:57:00 +0900</pubDate>
+      
+      <guid>/tags/windows-10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows 7</title>
+      <link>/tags/windows-7/</link>
+      <pubDate>Thu, 18 Feb 2016 01:57:00 +0900</pubDate>
+      
+      <guid>/tags/windows-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BLE</title>
+      <link>/tags/ble/</link>
+      <pubDate>Wed, 03 Feb 2016 22:48:00 +0900</pubDate>
+      
+      <guid>/tags/ble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bluetooth</title>
+      <link>/tags/bluetooth/</link>
+      <pubDate>Wed, 03 Feb 2016 22:48:00 +0900</pubDate>
+      
+      <guid>/tags/bluetooth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>event</title>
+      <link>/tags/event/</link>
+      <pubDate>Fri, 22 Jan 2016 15:29:00 +0900</pubDate>
+      
+      <guid>/tags/event/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RSGT2016</title>
+      <link>/tags/rsgt2016/</link>
+      <pubDate>Fri, 22 Jan 2016 15:29:00 +0900</pubDate>
+      
+      <guid>/tags/rsgt2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scrum Gathering</title>
+      <link>/tags/scrum-gathering/</link>
+      <pubDate>Fri, 22 Jan 2016 15:29:00 +0900</pubDate>
+      
+      <guid>/tags/scrum-gathering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>勉強会</title>
+      <link>/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/</link>
+      <pubDate>Fri, 22 Jan 2016 15:29:00 +0900</pubDate>
+      
+      <guid>/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU</title>
+      <link>/tags/gpu/</link>
+      <pubDate>Thu, 14 Jan 2016 00:28:00 +0900</pubDate>
+      
+      <guid>/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>/tags/ansible/</link>
+      <pubDate>Tue, 12 Jan 2016 01:06:00 +0900</pubDate>
+      
+      <guid>/tags/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>serverside</title>
+      <link>/tags/serverside/</link>
+      <pubDate>Tue, 12 Jan 2016 01:06:00 +0900</pubDate>
+      
+      <guid>/tags/serverside/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A77</title>
+      <link>/tags/a77/</link>
+      <pubDate>Tue, 17 Feb 2015 14:52:00 +0900</pubDate>
+      
+      <guid>/tags/a77/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camera</title>
+      <link>/tags/camera/</link>
+      <pubDate>Tue, 17 Feb 2015 14:52:00 +0900</pubDate>
+      
+      <guid>/tags/camera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cp&#43;</title>
+      <link>/tags/cp&#43;/</link>
+      <pubDate>Tue, 17 Feb 2015 14:52:00 +0900</pubDate>
+      
+      <guid>/tags/cp&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure</title>
+      <link>/tags/azure/</link>
+      <pubDate>Mon, 25 Aug 2014 19:00:00 +0900</pubDate>
+      
+      <guid>/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>/tags/ssh/</link>
+      <pubDate>Mon, 25 Aug 2014 19:00:00 +0900</pubDate>
+      
+      <guid>/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>/tags/ubuntu/</link>
+      <pubDate>Mon, 25 Aug 2014 19:00:00 +0900</pubDate>
+      
+      <guid>/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4.3</title>
+      <link>/tags/4.3/</link>
+      <pubDate>Fri, 01 Nov 2013 14:59:00 +0900</pubDate>
+      
+      <guid>/tags/4.3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4.4</title>
+      <link>/tags/4.4/</link>
+      <pubDate>Fri, 01 Nov 2013 14:59:00 +0900</pubDate>
+      
+      <guid>/tags/4.4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JB_MR2</title>
+      <link>/tags/jb_mr2/</link>
+      <pubDate>Fri, 01 Nov 2013 14:59:00 +0900</pubDate>
+      
+      <guid>/tags/jb_mr2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>KitKat</title>
+      <link>/tags/kitkat/</link>
+      <pubDate>Fri, 01 Nov 2013 14:59:00 +0900</pubDate>
+      
+      <guid>/tags/kitkat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>signature</title>
+      <link>/tags/signature/</link>
+      <pubDate>Fri, 01 Nov 2013 14:59:00 +0900</pubDate>
+      
+      <guid>/tags/signature/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4.2</title>
+      <link>/tags/4.2/</link>
+      <pubDate>Fri, 01 Nov 2013 12:40:00 +0900</pubDate>
+      
+      <guid>/tags/4.2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JB_MR1</title>
+      <link>/tags/jb_mr1/</link>
+      <pubDate>Fri, 01 Nov 2013 12:40:00 +0900</pubDate>
+      
+      <guid>/tags/jb_mr1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ANT</title>
+      <link>/tags/ant/</link>
+      <pubDate>Wed, 30 Oct 2013 17:41:00 +0900</pubDate>
+      
+      <guid>/tags/ant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>/tags/mac/</link>
+      <pubDate>Wed, 30 Oct 2013 17:41:00 +0900</pubDate>
+      
+      <guid>/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenGrok</title>
+      <link>/tags/opengrok/</link>
+      <pubDate>Wed, 30 Oct 2013 17:41:00 +0900</pubDate>
+      
+      <guid>/tags/opengrok/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tomcat</title>
+      <link>/tags/tomcat/</link>
+      <pubDate>Wed, 30 Oct 2013 17:41:00 +0900</pubDate>
+      
+      <guid>/tags/tomcat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FactoryReset</title>
+      <link>/tags/factoryreset/</link>
+      <pubDate>Wed, 04 Sep 2013 18:56:00 +0900</pubDate>
+      
+      <guid>/tags/factoryreset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4.1</title>
+      <link>/tags/4.1/</link>
+      <pubDate>Wed, 12 Dec 2012 00:30:00 +0900</pubDate>
+      
+      <guid>/tags/4.1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JB</title>
+      <link>/tags/jb/</link>
+      <pubDate>Wed, 12 Dec 2012 00:30:00 +0900</pubDate>
+      
+      <guid>/tags/jb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WTCC</title>
+      <link>/tags/wtcc/</link>
+      <pubDate>Mon, 03 Dec 2012 02:29:00 +0900</pubDate>
+      
+      <guid>/tags/wtcc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>スーパー耐久</title>
+      <link>/tags/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E8%80%90%E4%B9%85/</link>
+      <pubDate>Mon, 03 Dec 2012 02:29:00 +0900</pubDate>
+      
+      <guid>/tags/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E8%80%90%E4%B9%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>一眼レフ</title>
+      <link>/tags/%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95/</link>
+      <pubDate>Mon, 03 Dec 2012 02:29:00 +0900</pubDate>
+      
+      <guid>/tags/%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>写真</title>
+      <link>/tags/%E5%86%99%E7%9C%9F/</link>
+      <pubDate>Mon, 03 Dec 2012 02:29:00 +0900</pubDate>
+      
+      <guid>/tags/%E5%86%99%E7%9C%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>/tags/java/</link>
+      <pubDate>Mon, 01 Oct 2012 09:00:00 +0900</pubDate>
+      
+      <guid>/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>/tags/security/</link>
+      <pubDate>Mon, 01 Oct 2012 09:00:00 +0900</pubDate>
+      
+      <guid>/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ICS</title>
+      <link>/tags/ics/</link>
+      <pubDate>Mon, 13 Aug 2012 09:00:00 +0900</pubDate>
+      
+      <guid>/tags/ics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Galaxy</title>
+      <link>/tags/galaxy/</link>
+      <pubDate>Fri, 18 May 2012 22:19:00 +0900</pubDate>
+      
+      <guid>/tags/galaxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>smartphone</title>
+      <link>/tags/smartphone/</link>
+      <pubDate>Fri, 18 May 2012 22:19:00 +0900</pubDate>
+      
+      <guid>/tags/smartphone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gingerbread</title>
+      <link>/tags/gingerbread/</link>
+      <pubDate>Mon, 28 Nov 2011 13:45:00 +0900</pubDate>
+      
+      <guid>/tags/gingerbread/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flickr</title>
+      <link>/tags/flickr/</link>
+      <pubDate>Mon, 20 Dec 2010 01:37:00 +0900</pubDate>
+      
+      <guid>/tags/flickr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TS</title>
+      <link>/tags/ts/</link>
+      <pubDate>Wed, 18 Aug 2010 18:00:00 +0900</pubDate>
+      
+      <guid>/tags/ts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows2008Server</title>
+      <link>/tags/windows2008server/</link>
+      <pubDate>Wed, 18 Aug 2010 18:00:00 +0900</pubDate>
+      
+      <guid>/tags/windows2008server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>/tags/javascript/</link>
+      <pubDate>Thu, 08 Jul 2010 13:55:00 +0900</pubDate>
+      
+      <guid>/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VBScript</title>
+      <link>/tags/vbscript/</link>
+      <pubDate>Thu, 08 Jul 2010 13:55:00 +0900</pubDate>
+      
+      <guid>/tags/vbscript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DynamicsAX2009</title>
+      <link>/tags/dynamicsax2009/</link>
+      <pubDate>Thu, 13 May 2010 21:58:00 +0900</pubDate>
+      
+      <guid>/tags/dynamicsax2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BizTalk2009</title>
+      <link>/tags/biztalk2009/</link>
+      <pubDate>Tue, 23 Mar 2010 22:56:00 +0900</pubDate>
+      
+      <guid>/tags/biztalk2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>/tags/windows/</link>
+      <pubDate>Mon, 22 Feb 2010 23:57:00 +0900</pubDate>
+      
+      <guid>/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X&#43;&#43;</title>
+      <link>/tags/x&#43;&#43;/</link>
+      <pubDate>Thu, 11 Feb 2010 14:02:00 +0900</pubDate>
+      
+      <guid>/tags/x&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>/tags/web/</link>
+      <pubDate>Mon, 21 Dec 2009 23:59:00 +0900</pubDate>
+      
+      <guid>/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogger</title>
+      <link>/tags/blogger/</link>
+      <pubDate>Wed, 21 Oct 2009 00:10:00 +0900</pubDate>
+      
+      <guid>/tags/blogger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>/tags/twitter/</link>
+      <pubDate>Sun, 23 Aug 2009 22:35:00 +0900</pubDate>
+      
+      <guid>/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VB6</title>
+      <link>/tags/vb6/</link>
+      <pubDate>Thu, 30 Jul 2009 18:37:00 +0900</pubDate>
+      
+      <guid>/tags/vb6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PDM</title>
+      <link>/tags/pdm/</link>
+      <pubDate>Sat, 27 Jun 2009 01:29:00 +0900</pubDate>
+      
+      <guid>/tags/pdm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>/tags/google/</link>
+      <pubDate>Tue, 16 Jun 2009 15:22:00 +0900</pubDate>
+      
+      <guid>/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>baby</title>
+      <link>/tags/baby/</link>
+      <pubDate>Sat, 14 Feb 2009 00:11:00 +0900</pubDate>
+      
+      <guid>/tags/baby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VB.NET</title>
+      <link>/tags/vb.net/</link>
+      <pubDate>Wed, 24 Dec 2008 11:29:00 +0900</pubDate>
+      
+      <guid>/tags/vb.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon</title>
+      <link>/tags/amazon/</link>
+      <pubDate>Thu, 11 Dec 2008 12:11:00 +0900</pubDate>
+      
+      <guid>/tags/amazon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>/tags/c&#43;&#43;/</link>
+      <pubDate>Wed, 17 Sep 2008 00:30:00 +0900</pubDate>
+      
+      <guid>/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FireFox</title>
+      <link>/tags/firefox/</link>
+      <pubDate>Mon, 23 Jun 2008 14:13:00 +0900</pubDate>
+      
+      <guid>/tags/firefox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oracle</title>
+      <link>/tags/oracle/</link>
+      <pubDate>Thu, 06 Dec 2007 11:22:00 +0900</pubDate>
+      
+      <guid>/tags/oracle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WorkLog</title>
+      <link>/tags/worklog/</link>
+      <pubDate>Thu, 06 Dec 2007 11:22:00 +0900</pubDate>
+      
+      <guid>/tags/worklog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>/tags/tool/</link>
+      <pubDate>Wed, 05 Dec 2007 20:32:00 +0900</pubDate>
+      
+      <guid>/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flash</title>
+      <link>/tags/flash/</link>
+      <pubDate>Wed, 07 Nov 2007 21:10:00 +0900</pubDate>
+      
+      <guid>/tags/flash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eclipse</title>
+      <link>/tags/eclipse/</link>
+      <pubDate>Tue, 23 Oct 2007 22:30:00 +0900</pubDate>
+      
+      <guid>/tags/eclipse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weblogic</title>
+      <link>/tags/weblogic/</link>
+      <pubDate>Tue, 23 Oct 2007 22:30:00 +0900</pubDate>
+      
+      <guid>/tags/weblogic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>資格</title>
+      <link>/tags/%E8%B3%87%E6%A0%BC/</link>
+      <pubDate>Tue, 23 Oct 2007 17:29:00 +0900</pubDate>
+      
+      <guid>/tags/%E8%B3%87%E6%A0%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wikka</title>
+      <link>/tags/wikka/</link>
+      <pubDate>Thu, 26 Apr 2007 22:24:00 +0900</pubDate>
+      
+      <guid>/tags/wikka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>/tags/game/</link>
+      <pubDate>Wed, 28 Mar 2007 17:56:00 +0900</pubDate>
+      
+      <guid>/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>misstake</title>
+      <link>/tags/misstake/</link>
+      <pubDate>Fri, 09 Mar 2007 15:18:00 +0900</pubDate>
+      
+      <guid>/tags/misstake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>essay</title>
+      <link>/tags/essay/</link>
+      <pubDate>Thu, 18 Jan 2007 10:09:00 +0900</pubDate>
+      
+      <guid>/tags/essay/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

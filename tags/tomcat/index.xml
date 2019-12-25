@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tomcat on callas1900.net</title>
+    <link>/tags/tomcat/</link>
+    <description>Recent content in tomcat on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 30 Oct 2013 17:41:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/tomcat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mountain LionでOpenGrok メモ</title>
+      <link>/posts/mountain-lionopengrok/</link>
+      <pubDate>Wed, 30 Oct 2013 17:41:00 +0900</pubDate>
+      
+      <guid>/posts/mountain-lionopengrok/</guid>
+      <description>このページを参考にしてOpenGrokをセットアップしてたけど何点か詰まったので備忘録として。
+参考ページ：Mac OS X に OpenGrok で、今日からコードリーディング
+こちらの状況：java, antはセットアップ済み
+1. OpenGrokのビルドでJFlex.jarを読み込んでくれない 確証はないが、linuxで
+Bug#388371: jflex: JFlexTask cannot be found
+と報告されているので、antのlibパスにJFlex.jarを置き直したら動いた。
+2. tomcatが起動しない。 単純にCATALINA_HOMEを足すだけ、
+手順にないのでOpenGrokがうまいことやってくれるのか？と期待したがそんなことはなかった。
+以上、自分用備忘録でした。</description>
+    </item>
+    
+  </channel>
+</rss>

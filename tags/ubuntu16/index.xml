@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu16 on callas1900.net</title>
+    <link>/tags/ubuntu16/</link>
+    <description>Recent content in ubuntu16 on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 25 Jan 2017 01:20:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/ubuntu16/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>/var/lib/docker の移動</title>
+      <link>/posts/varlibdocker/</link>
+      <pubDate>Wed, 25 Jan 2017 01:20:00 +0900</pubDate>
+      
+      <guid>/posts/varlibdocker/</guid>
+      <description>docker のホストマシン容量不足対策。
+docker をインストール後稼働していると、ディスクが足りなくなることがあります。
+いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。
+外部ディスクマウント後の容量食う /var/lib/docker の移動の仕方に関して記します。
+ docker 停止 /var/lib/docker を移す 設定ファイル変更  redhat系の場合 debian系の場合 ubuntu 16 の場合   docker 再起動 &amp;amp; 確認  docker 停止 sudo service docker stop /var/lib/docker を移す ディスク容量に余裕がある場所に /var/lib/docker を移す。(ここでは例として /mnt/extra/docker とする)
+インストール直後ぐらいなら、mv で、
+安全にやりたいなら
+mkdir /mnt/extra/docker sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/ 設定ファイル変更 redhat系の場合 設定ファイル: /etc/sysconfig/docker
+(あれば追加で、なければ作成)
+echo other_args=&amp;quot;-g /mnt/extra/docker&amp;quot; &amp;gt; /etc/sysconfig/docker debian系の場合 設定ファイル: /etc/default/docker
+# DOCKER_OPTS=&amp;quot;-dns 8.8.8.8 -dns 8.8.4.4&amp;quot; DOCKER_OPTS=&amp;quot;-dns 8.8.8.8 -dns 8.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-04-30T09:32:47+09:00</lastmod>
+  </url>
   
   <url>
     <loc>/links/</loc>
@@ -8,9 +13,13 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2019-04-30T09:32:47+09:00</lastmod>
-    <priority>0</priority>
+    <loc>/posts/</loc>
+    <lastmod>2019-04-29T20:53:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20190419/</loc>
+    <lastmod>2019-04-29T20:53:00+09:00</lastmod>
   </url>
   
   <url>
@@ -19,22 +28,1636 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
+    <loc>/posts/2018/</loc>
+    <lastmod>2018-12-31T23:53:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/hello/</loc>
+    <loc>/posts/2017/</loc>
+    <lastmod>2017-12-31T22:37:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/</loc>
-    <priority>0</priority>
+    <loc>/posts/varlibdocker/</loc>
+    <lastmod>2017-01-25T01:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/docker/</loc>
+    <lastmod>2017-01-25T01:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/linux/</loc>
+    <lastmod>2017-01-25T01:20:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <priority>0</priority>
+    <lastmod>2017-01-25T01:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ubuntu16/</loc>
+    <lastmod>2017-01-25T01:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016/</loc>
+    <lastmod>2016-12-31T10:05:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%A4%A7%E6%99%A6%E6%97%A5/</loc>
+    <lastmod>2016-12-31T10:05:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%97%A5%E8%A8%98/</loc>
+    <lastmod>2016-12-31T10:05:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/android/</loc>
+    <lastmod>2016-11-10T02:06:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/smaller-apks-android-apk/</loc>
+    <lastmod>2016-11-10T02:06:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/laravel/</loc>
+    <lastmod>2016-07-21T17:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/laravel-phpunit-with-clean-database/</loc>
+    <lastmod>2016-07-21T17:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/phpunit/</loc>
+    <lastmod>2016-07-21T17:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/postgresql/</loc>
+    <lastmod>2016-07-21T17:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sqlite/</loc>
+    <lastmod>2016-07-21T17:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20166/</loc>
+    <lastmod>2016-07-02T01:42:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</loc>
+    <lastmod>2016-07-02T01:42:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20165/</loc>
+    <lastmod>2016-06-05T23:46:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20164/</loc>
+    <lastmod>2016-05-11T16:26:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20163/</loc>
+    <lastmod>2016-04-12T16:14:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bash/</loc>
+    <lastmod>2016-04-04T12:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/docker-registry/</loc>
+    <lastmod>2016-04-04T12:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/docker-registry-image/</loc>
+    <lastmod>2016-04-04T12:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%8A%80%E8%A1%93/</loc>
+    <lastmod>2016-04-04T12:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20162/</loc>
+    <lastmod>2016-03-05T00:07:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/lmde2/</loc>
+    <lastmod>2016-02-18T01:57:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/lmde2windows-7-10/</loc>
+    <lastmod>2016-02-18T01:57:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows-10/</loc>
+    <lastmod>2016-02-18T01:57:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows-7/</loc>
+    <lastmod>2016-02-18T01:57:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/android-502-ble/</loc>
+    <lastmod>2016-02-03T22:48:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ble/</loc>
+    <lastmod>2016-02-03T22:48:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bluetooth/</loc>
+    <lastmod>2016-02-03T22:48:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-1/</loc>
+    <lastmod>2016-02-03T22:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/event/</loc>
+    <lastmod>2016-01-22T15:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rsgt2016/</loc>
+    <lastmod>2016-01-22T15:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/scrum-gathering/</loc>
+    <lastmod>2016-01-22T15:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/scrum-gathering-tokyo-2016/</loc>
+    <lastmod>2016-01-22T15:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/</loc>
+    <lastmod>2016-01-22T15:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gpu/</loc>
+    <lastmod>2016-01-14T00:28:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/lmde2nvidia-driver/</loc>
+    <lastmod>2016-01-14T00:28:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2015-12/</loc>
+    <lastmod>2016-01-12T01:34:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ansible/</loc>
+    <lastmod>2016-01-12T01:06:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/serverside/</loc>
+    <lastmod>2016-01-12T01:06:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/ansible_5/</loc>
+    <lastmod>2016-01-12T01:06:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2015/</loc>
+    <lastmod>2015-12-31T23:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/a77/</loc>
+    <lastmod>2015-02-17T14:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/camera/</loc>
+    <lastmod>2015-02-17T14:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cp&#43;/</loc>
+    <lastmod>2015-02-17T14:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/cp-2015/</loc>
+    <lastmod>2015-02-17T14:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014/</loc>
+    <lastmod>2014-12-31T22:48:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/purescripthello-world/</loc>
+    <lastmod>2014-10-14T12:44:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/azure/</loc>
+    <lastmod>2014-08-25T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/microsoft-azure-ubuntu-ssh/</loc>
+    <lastmod>2014-08-25T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ssh/</loc>
+    <lastmod>2014-08-25T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ubuntu/</loc>
+    <lastmod>2014-08-25T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013-12/</loc>
+    <lastmod>2014-01-31T14:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013/</loc>
+    <lastmod>2013-12-31T23:18:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013-11/</loc>
+    <lastmod>2013-12-31T22:19:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/4.3/</loc>
+    <lastmod>2013-11-01T14:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/4.4/</loc>
+    <lastmod>2013-11-01T14:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/jb_mr2/</loc>
+    <lastmod>2013-11-01T14:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/jbmr243kitkat44permission/</loc>
+    <lastmod>2013-11-01T14:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/kitkat/</loc>
+    <lastmod>2013-11-01T14:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/signature/</loc>
+    <lastmod>2013-11-01T14:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/4.2/</loc>
+    <lastmod>2013-11-01T12:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/jb_mr1/</loc>
+    <lastmod>2013-11-01T12:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/jbmr142jbmr243permission/</loc>
+    <lastmod>2013-11-01T12:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ant/</loc>
+    <lastmod>2013-10-30T17:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mac/</loc>
+    <lastmod>2013-10-30T17:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/mountain-lionopengrok/</loc>
+    <lastmod>2013-10-30T17:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/opengrok/</loc>
+    <lastmod>2013-10-30T17:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tomcat/</loc>
+    <lastmod>2013-10-30T17:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013-8/</loc>
+    <lastmod>2013-09-30T23:42:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/factoryreset/</loc>
+    <lastmod>2013-09-04T18:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/xperia-z-tablet-no-companion-comments/</loc>
+    <lastmod>2013-09-04T18:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/xperia-z-tablet-no-companion/</loc>
+    <lastmod>2013-09-04T18:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013-6/</loc>
+    <lastmod>2013-08-01T02:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013-4/</loc>
+    <lastmod>2013-05-31T11:58:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013-3/</loc>
+    <lastmod>2013-05-01T00:47:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/4.1/</loc>
+    <lastmod>2012-12-12T00:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/jb/</loc>
+    <lastmod>2012-12-12T00:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/jb41jbmr142permission-comments/</loc>
+    <lastmod>2012-12-12T00:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/jb41jbmr142permission/</loc>
+    <lastmod>2012-12-12T00:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wtcc/</loc>
+    <lastmod>2012-12-03T02:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E8%80%90%E4%B9%85/</loc>
+    <lastmod>2012-12-03T02:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95/</loc>
+    <lastmod>2012-12-03T02:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%86%99%E7%9C%9F/</loc>
+    <lastmod>2012-12-03T02:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wtcc-2012/</loc>
+    <lastmod>2012-12-03T02:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2012-11/</loc>
+    <lastmod>2012-12-03T00:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2012-9/</loc>
+    <lastmod>2012-12-03T00:15:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/android/</loc>
+    <lastmod>2012-10-01T09:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/java/</loc>
+    <lastmod>2012-10-01T09:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/security/</loc>
+    <lastmod>2012-10-01T09:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2012-8/</loc>
+    <lastmod>2012-09-30T22:01:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ics/</loc>
+    <lastmod>2012-08-13T09:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/jbicspermission/</loc>
+    <lastmod>2012-08-13T09:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2012-6/</loc>
+    <lastmod>2012-07-31T23:43:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/galaxy/</loc>
+    <lastmod>2012-05-18T22:19:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/smartphone/</loc>
+    <lastmod>2012-05-18T22:19:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/galaxysiii-galaxysiii/</loc>
+    <lastmod>2012-05-18T22:19:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-12/</loc>
+    <lastmod>2012-01-30T01:35:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/iso100/</loc>
+    <lastmod>2012-01-04T02:33:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011/</loc>
+    <lastmod>2011-12-31T23:55:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-11/</loc>
+    <lastmod>2011-12-31T23:42:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-10/</loc>
+    <lastmod>2011-11-29T13:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gingerbread/</loc>
+    <lastmod>2011-11-28T13:45:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/icsgingerbreadpermission/</loc>
+    <lastmod>2011-11-28T13:45:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wtcc/</loc>
+    <lastmod>2011-10-23T00:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-6/</loc>
+    <lastmod>2011-07-07T10:31:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-4/</loc>
+    <lastmod>2011-05-25T01:31:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2/</loc>
+    <lastmod>2011-03-23T22:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-1/</loc>
+    <lastmod>2011-02-07T22:19:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-12/</loc>
+    <lastmod>2011-01-22T02:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010/</loc>
+    <lastmod>2010-12-31T23:25:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-11/</loc>
+    <lastmod>2010-12-31T17:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/flickr/</loc>
+    <lastmod>2010-12-20T01:37:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/flickr_20/</loc>
+    <lastmod>2010-12-20T01:37:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-9/</loc>
+    <lastmod>2010-10-25T00:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/exteml-2010-7/</loc>
+    <lastmod>2010-08-19T22:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tswindows2008/</loc>
+    <lastmod>2010-08-18T18:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ts/</loc>
+    <lastmod>2010-08-18T18:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows2008server/</loc>
+    <lastmod>2010-08-18T18:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20106/</loc>
+    <lastmod>2010-07-21T02:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/javascriptvbscriptvbscript-javascript_08/</loc>
+    <lastmod>2010-07-08T13:55:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript/</loc>
+    <lastmod>2010-07-08T13:55:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vbscript/</loc>
+    <lastmod>2010-07-08T13:55:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/javascriptvbscriptvbscript-javascript/</loc>
+    <lastmod>2010-07-08T13:44:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/5-13-5059-professional-computing-series/</loc>
+    <lastmod>2010-06-16T22:23:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/qpstudy/</loc>
+    <lastmod>2010-06-11T15:14:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dynamicsax2009admin/</loc>
+    <lastmod>2010-05-13T21:58:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dynamicsax2009/</loc>
+    <lastmod>2010-05-13T21:58:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-4/</loc>
+    <lastmod>2010-05-10T18:12:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dynamicsax2009aif/</loc>
+    <lastmod>2010-05-07T18:07:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/agile-japan-2010/</loc>
+    <lastmod>2010-04-14T01:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-3/</loc>
+    <lastmod>2010-04-05T23:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/biztalk2009btstask/</loc>
+    <lastmod>2010-03-23T22:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/biztalk2009/</loc>
+    <lastmod>2010-03-23T22:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dynamicsax2009documentserviceclass/</loc>
+    <lastmod>2010-03-19T02:33:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dynamicsax2009axtabledb6/</loc>
+    <lastmod>2010-03-08T00:23:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20102_05/</loc>
+    <lastmod>2010-03-05T00:55:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/biztalk2009biztalk2009vss2005/</loc>
+    <lastmod>2010-02-28T14:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/windows2-windows-update-xp/</loc>
+    <lastmod>2010-02-22T23:57:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows/</loc>
+    <lastmod>2010-02-22T23:57:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/biztalk2009visualstudio2008biztalk/</loc>
+    <lastmod>2010-02-19T02:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/windows2windowsupdatexp/</loc>
+    <lastmod>2010-02-16T00:46:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dynamicsax2009x/</loc>
+    <lastmod>2010-02-11T14:02:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/x&#43;&#43;/</loc>
+    <lastmod>2010-02-11T14:02:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20101/</loc>
+    <lastmod>2010-02-02T00:55:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/javascriptbookmarklet/</loc>
+    <lastmod>2010-01-30T00:48:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dynamicsax2009aif_1262/</loc>
+    <lastmod>2010-01-21T00:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dynamicsax2009x_16/</loc>
+    <lastmod>2010-01-16T16:45:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dynamicsax2009dynamicsax/</loc>
+    <lastmod>2010-01-14T12:58:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/200912/</loc>
+    <lastmod>2010-01-02T23:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009/</loc>
+    <lastmod>2009-12-31T22:51:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/web/</loc>
+    <lastmod>2009-12-21T23:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/web/</loc>
+    <lastmod>2009-12-21T23:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bloggerftp/</loc>
+    <lastmod>2009-10-21T00:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/blogger/</loc>
+    <lastmod>2009-10-21T00:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/twittertwitter/</loc>
+    <lastmod>2009-08-23T22:35:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/twitter/</loc>
+    <lastmod>2009-08-23T22:35:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/vb6vb6/</loc>
+    <lastmod>2009-07-30T18:37:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vb6/</loc>
+    <lastmod>2009-07-30T18:37:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/28/</loc>
+    <lastmod>2009-07-01T20:31:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/pdmdms/</loc>
+    <lastmod>2009-06-27T01:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pdm/</loc>
+    <lastmod>2009-06-27T01:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/googlegooglegoogle-tasks/</loc>
+    <lastmod>2009-06-16T15:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google/</loc>
+    <lastmod>2009-06-16T15:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_04/</loc>
+    <lastmod>2009-05-04T20:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_8755/</loc>
+    <lastmod>2009-04-22T11:18:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/n7001day/</loc>
+    <lastmod>2009-03-17T10:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/hotspot-in-n700/</loc>
+    <lastmod>2009-03-09T23:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/javascripttbodyinnerhtml/</loc>
+    <lastmod>2009-02-25T23:02:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/baby/</loc>
+    <lastmod>2009-02-14T00:11:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/baby/</loc>
+    <lastmod>2009-02-14T00:11:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/skype/</loc>
+    <lastmod>2009-02-03T10:48:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/3210/</loc>
+    <lastmod>2009-01-27T09:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/babygooglegoogle-chrome/</loc>
+    <lastmod>2009-01-21T13:48:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/untitled/</loc>
+    <lastmod>2009-01-20T17:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/google-notebook/</loc>
+    <lastmod>2009-01-19T15:31:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008/</loc>
+    <lastmod>2008-12-31T23:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/k-20/</loc>
+    <lastmod>2008-12-31T18:15:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_27/</loc>
+    <lastmod>2008-12-27T02:36:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/vbnet-comments/</loc>
+    <lastmod>2008-12-24T11:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/vbnet/</loc>
+    <lastmod>2008-12-24T11:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vb.net/</loc>
+    <lastmod>2008-12-24T11:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/amazon/</loc>
+    <lastmod>2008-12-11T12:11:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/amazon/</loc>
+    <lastmod>2008-12-11T12:11:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/cisbn/</loc>
+    <lastmod>2008-09-17T00:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/c&#43;&#43;/</loc>
+    <lastmod>2008-09-17T00:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/google-chromev8/</loc>
+    <lastmod>2008-09-03T17:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dlfirefox3-beta-firefox3dl-firefox3/</loc>
+    <lastmod>2008-06-23T14:13:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/firefox/</loc>
+    <lastmod>2008-06-23T14:13:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/javafxjavaappletswing/</loc>
+    <lastmod>2008-06-19T18:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_10-comments/</loc>
+    <lastmod>2008-06-10T09:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_05/</loc>
+    <lastmod>2008-06-05T00:33:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bootcamp-comments/</loc>
+    <lastmod>2008-05-20T01:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bootcamp/</loc>
+    <lastmod>2008-05-20T01:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/oracle/</loc>
+    <lastmod>2007-12-06T11:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/oracle-10g-express-edition-al32utf8/</loc>
+    <lastmod>2007-12-06T11:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/worklog/</loc>
+    <lastmod>2007-12-06T11:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/windowsxp-cvscvs-for-ntver2/</loc>
+    <lastmod>2007-12-05T20:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tool/</loc>
+    <lastmod>2007-12-05T20:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/fameflashoutasdtmtasceclipse-flash-fame/</loc>
+    <lastmod>2007-11-07T21:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/flash/</loc>
+    <lastmod>2007-11-07T21:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blogger-comments/</loc>
+    <lastmod>2007-11-07T13:12:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blogger/</loc>
+    <lastmod>2007-11-07T13:12:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_06/</loc>
+    <lastmod>2007-11-06T19:04:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/oracle-oracle-10g-express-editionoracle/</loc>
+    <lastmod>2007-10-29T16:13:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wlcompile/</loc>
+    <lastmod>2007-10-23T22:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/eclipse/</loc>
+    <lastmod>2007-10-23T22:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/weblogic/</loc>
+    <lastmod>2007-10-23T22:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_23-comments/</loc>
+    <lastmod>2007-10-23T17:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%B3%87%E6%A0%BC/</loc>
+    <lastmod>2007-10-23T17:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/de/</loc>
+    <lastmod>2007-10-16T18:13:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/sac/</loc>
+    <lastmod>2007-10-15T19:18:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_13/</loc>
+    <lastmod>2007-10-13T03:06:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/neooffice-ie-office-office-macoffice/</loc>
+    <lastmod>2007-08-07T23:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/db-delflg-flgdel-fdel-delf-deleteflg/</loc>
+    <lastmod>2007-08-03T20:27:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/abbc-abbc-ac-ac/</loc>
+    <lastmod>2007-08-01T21:16:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/youtube-macbook-bootcampwindowsxp/</loc>
+    <lastmod>2007-07-30T18:33:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/macbook-macbookosx-osx/</loc>
+    <lastmod>2007-07-25T18:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/pcwin95-windows95-cd-640mb-hd-500mbhd/</loc>
+    <lastmod>2007-07-17T19:25:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/pc-lenovo-thinkpad-x60-apple-macbook/</loc>
+    <lastmod>2007-07-10T10:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/nikkei-bpnet/</loc>
+    <lastmod>2007-06-20T12:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2-2-841mm-1169mm-22-fuck-copy-machine/</loc>
+    <lastmod>2007-06-12T20:51:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/googlemap-google-google-wow-google/</loc>
+    <lastmod>2007-05-31T17:13:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/23-it-ibmweb-ibm-blackboxibm/</loc>
+    <lastmod>2007-05-18T18:03:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/linebuzz-httplinebuzz/</loc>
+    <lastmod>2007-05-17T20:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/awesome-firefoxgoogletoolbar/</loc>
+    <lastmod>2007-05-15T16:57:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/gigagine-ttpgigazine/</loc>
+    <lastmod>2007-05-09T19:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/1/</loc>
+    <lastmod>2007-05-01T10:18:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wikka-httpwww/</loc>
+    <lastmod>2007-04-26T22:24:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wikka/</loc>
+    <lastmod>2007-04-26T22:24:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/y-y/</loc>
+    <lastmod>2007-04-19T18:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/aspectj-notepc-cpu-doqwn-blog-java-0/</loc>
+    <lastmod>2007-04-17T15:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/fpsfps-pca-aa-wan-p2p-fps-eo-127/</loc>
+    <lastmod>2007-03-28T17:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/game/</loc>
+    <lastmod>2007-03-28T17:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/se-pgse-se-se-pg-se-pgse-se-pgse-pg/</loc>
+    <lastmod>2007-03-27T13:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/25/</loc>
+    <lastmod>2007-03-20T11:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/pg-se-oracle-flash-flash-flash-flash/</loc>
+    <lastmod>2007-03-19T17:42:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/flashflash7-flash8-flashplayer7-7-7/</loc>
+    <lastmod>2007-03-15T18:33:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/xxxxaaaabbbb-0-xxxx-100-100-0-zero/</loc>
+    <lastmod>2007-03-15T18:26:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/fameactionscript-xml-macromediafalsh/</loc>
+    <lastmod>2007-03-14T18:21:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/actionscript-fps-pcpc-162-pc/</loc>
+    <lastmod>2007-03-13T09:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/4-i-fucked-up/</loc>
+    <lastmod>2007-03-09T15:18:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/misstake/</loc>
+    <lastmod>2007-03-09T15:18:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/fame-google-google-pcpcgooglecallas/</loc>
+    <lastmod>2007-03-01T17:36:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/flashfame-fame-flash-fame-fame-f/</loc>
+    <lastmod>2007-02-23T19:15:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/json-exewin-javascript-javascript-ajax/</loc>
+    <lastmod>2007-02-20T17:55:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/ps3-hd-dvdblu-ray-sony-hnarnezami/</loc>
+    <lastmod>2007-02-15T18:18:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/oracle-sql-bronze-sql-updatedml-flash/</loc>
+    <lastmod>2007-02-14T17:26:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/oraclehp-oracle-silver-oracle-silver/</loc>
+    <lastmod>2007-02-07T17:34:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2-flash-5-2-flash-actionscript-java/</loc>
+    <lastmod>2007-02-06T10:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/4-telnet-tomcat-telnettomcat-10-21/</loc>
+    <lastmod>2007-02-01T14:46:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wii-ds-pc/</loc>
+    <lastmod>2007-01-29T15:23:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/jsonweb-13days-blog/</loc>
+    <lastmod>2007-01-23T17:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2ch2ch-2ch-2ch-aa-23-2ch-nullpointer-aa/</loc>
+    <lastmod>2007-01-18T10:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/essay/</loc>
+    <lastmod>2007-01-18T10:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bloggertips-google-googleweb-blog-com/</loc>
+    <lastmod>2007-01-15T10:12:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/struts/</loc>
+    <lastmod>2007-01-12T00:37:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-110-12-13-pitapa-14-15-1-16-13-17/</loc>
+    <lastmod>2007-01-10T16:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/302007-6/</loc>
+    <lastmod>2006-12-31T23:37:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/s-s/</loc>
+    <lastmod>2006-12-31T23:21:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/23-174-24-4-ipod-nano-i-pod-max-16-4/</loc>
+    <lastmod>2006-12-26T18:11:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/firefoxgoogletoolbarbeta-ie6-ie-firefo/</loc>
+    <lastmod>2006-12-21T16:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/hp-hp-msn-orz-skype-skype-me-skype/</loc>
+    <lastmod>2006-12-20T16:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/google-more-search-google-google-ok/</loc>
+    <lastmod>2006-12-19T16:58:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/sleepy-hollow/</loc>
+    <lastmod>2006-12-18T09:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_14/</loc>
+    <lastmod>2006-12-14T18:21:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/html-javascript-c-flash-html-css-xhtml/</loc>
+    <lastmod>2006-12-12T17:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/java-35-30-54-itmedia-bizidgtd-life/</loc>
+    <lastmod>2006-12-11T10:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/gatsby-gatsby-gatsby-gytsby-java-struts/</loc>
+    <lastmod>2006-11-28T23:07:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/mixi/</loc>
+    <lastmod>2006-11-26T18:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/1-jsgflsfoxq-20061109-002125-id0/</loc>
+    <lastmod>2006-11-22T13:19:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/gdgd-blog/</loc>
+    <lastmod>2006-11-18T17:53:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bloggerbetablogger-ftp-google/</loc>
+    <lastmod>2006-11-17T19:12:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/5w1h/</loc>
+    <lastmod>2006-11-14T19:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/i-pod-jazz/</loc>
+    <lastmod>2006-11-09T09:46:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/ie6-ie6-ie6-css2/</loc>
+    <lastmod>2006-11-02T18:56:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/81-pg/</loc>
+    <lastmod>2006-11-01T17:58:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/pgweb-blog-3d-phpjavascriptajax-blog/</loc>
+    <lastmod>2006-10-31T15:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-blog-hp-wiki-hp-hp-blog-wiki-hp/</loc>
+    <lastmod>2006-10-26T16:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/was-java-jspwar-jsp-hpjavawas/</loc>
+    <lastmod>2006-10-25T16:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/second-life/</loc>
+    <lastmod>2006-10-23T15:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/macbook-is-awesome-and-cool-comments/</loc>
+    <lastmod>2006-10-19T19:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/macbook-is-awesome-and-cool/</loc>
+    <lastmod>2006-10-19T19:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_18/</loc>
+    <lastmod>2006-10-18T13:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/eclipse311-memo/</loc>
+    <lastmod>2006-10-13T10:53:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/selectwindowsvistasecurity/</loc>
+    <lastmod>2006-08-21T09:57:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_17/</loc>
+    <lastmod>2006-08-17T13:29:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/not/</loc>
+    <lastmod>2006-07-20T02:36:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_28/</loc>
+    <lastmod>2006-06-28T13:33:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_26/</loc>
+    <lastmod>2006-05-26T12:50:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/url/</loc>
+    <lastmod>2006-05-23T20:34:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog/</loc>
+    <lastmod>2006-05-18T22:25:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wiki/</loc>
+    <lastmod>2006-05-16T12:36:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_15/</loc>
+    <lastmod>2006-05-15T15:55:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_114638731251208204/</loc>
+    <lastmod>2006-04-30T17:04:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_30/</loc>
+    <lastmod>2006-04-30T14:44:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/googleie-comments/</loc>
+    <lastmod>2006-04-26T21:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/googleie/</loc>
+    <lastmod>2006-04-26T21:09:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_25-comments/</loc>
+    <lastmod>2006-04-25T13:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_25/</loc>
+    <lastmod>2006-04-25T13:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_23/</loc>
+    <lastmod>2006-04-23T22:31:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bloggerhptips/</loc>
+    <lastmod>2006-04-16T18:12:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_11/</loc>
+    <lastmod>2006-04-11T13:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_31/</loc>
+    <lastmod>2006-03-31T21:08:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_22/</loc>
+    <lastmod>2006-03-22T10:46:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/ww/</loc>
+    <lastmod>2006-03-14T11:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/3/</loc>
+    <lastmod>2006-03-13T13:27:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_07/</loc>
+    <lastmod>2006-03-07T09:40:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/google/</loc>
+    <lastmod>2006-02-09T16:14:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/xhtml/</loc>
+    <lastmod>2006-02-01T03:54:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/google_18/</loc>
+    <lastmod>2006-01-18T12:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/googleediter/</loc>
+    <lastmod>2006-01-17T18:11:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_16/</loc>
+    <lastmod>2006-01-16T18:05:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post_10/</loc>
+    <lastmod>2006-01-10T11:06:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post-comments/</loc>
+    <lastmod>2006-01-01T14:21:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2005-comments/</loc>
+    <lastmod>2005-12-31T23:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2005/</loc>
+    <lastmod>2005-12-31T23:41:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/blog-post/</loc>
+    <lastmod>2005-12-31T18:08:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bloggerrss/</loc>
+    <lastmod>2005-12-28T12:10:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/y/</loc>
+    <lastmod>2005-12-27T18:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20191224/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
   </url>
   
 </urlset>

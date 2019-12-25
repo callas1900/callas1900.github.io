@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Azure :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/tags/azure/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Azure :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Azure :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/tags/azure/" />
+<meta property="og:site_name" content="Azure" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+  <link href="/tags/azure/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="posts">
+  
+  
+
+  
+  
+  false
+  
+  
+
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/microsoft-azure-ubuntu-ssh/">Microsoft Azure で ubuntu サーバー立てて sshで繋いでみる</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/ssh/">ssh</a>&nbsp;
+      
+      #<a href="/tags/ubuntu/">ubuntu</a>&nbsp;
+      
+      #<a href="/tags/azure/">Azure</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      AWSに関しては散々方々で語られているのでAzureに手を出してみた。
+Windowsしか作れないと思ってたらちゃんとubuntuも用意されているし、最近追加された新ビューだとMySQLも作れるようになっている。
+Windows上にsshを入れる（読み飛ばし可） ubuntuに繋げるためにsshが必要、鍵作成にopensslもいるので
+msygitをインストール。
+今後の事を考え、CUIベースのパッケージ管理ソフトが欲しい。
+chocolateyが流行っぽいのでchocolatey経由でmsygitをインストールする。
+chocolatey installation
+<a href="https://github.com/chocolatey/chocolatey/wiki/Installation">https://github.com/chocolatey/chocolatey/wiki/Installation</a>
+作業はPowerShellでやった。成功するとcinstコマンドが認識される。
+msysgitをインストールする
+cinst msysgit でmsysgitをインストールこれでsshもopensslも使える。
+それぞれのコマンドを打てば認識されているのがわかる。
+もし認識されていないようだったらパスが通っていない可能性があるので通す。
+SSHの鍵作成 適当に鍵を作ると、サーバー作成時に以下のエラーが出てサーバー作成に失敗する。
+The certificate is in an invalid format. X.509 standard format in a .cer or .pem file is supported.。
+回避するには以下リンク先の手順通りに鍵を作成する必要がある。
+How to Use SSH with Linux on Azure
+<a href="http://azure.microsoft.com/ja-jp/documentation/articles/virtual-machines-linux-use-ssh-key/">http://azure.microsoft.com/ja-jp/documentation/articles/virtual-machines-linux-use-ssh-key/</a>
+Get OpenSSL on Windowsのセクションに
+msysgitインストールからの手順が書かれている。
+鍵が出来たら、chocolateyのルートディレクトリに.sshがあるので（無ければ作る）
+そこに突っ込んでおく。
+Ubuntuサーバー作成 Azureにubuntuを立てる方法は
+Newメニューを開いてUbuntuを選択し作るだけ（デフォルトでは12系と14系が選べる）、
+UIの画面込みで説明したいけど、すぐUI構成変わりそうなので割愛。
+どこに作ればいいのかは料金表と睨めっこして決める
+料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/microsoft-azure-ubuntu-ssh/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

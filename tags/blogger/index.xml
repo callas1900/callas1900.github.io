@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogger on callas1900.net</title>
+    <link>/tags/blogger/</link>
+    <description>Recent content in Blogger on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 21 Oct 2009 00:10:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/blogger/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[日記][Blogger]BloggerのFTP機能を使うのをやめようか？</title>
+      <link>/posts/bloggerftp/</link>
+      <pubDate>Wed, 21 Oct 2009 00:10:00 +0900</pubDate>
+      
+      <guid>/posts/bloggerftp/</guid>
+      <description>Bloggerには自分の持っているHPスペースに
+Blogを公開するFTPアップロード機能がある。
+この機能を使うのをやめて、
+普通に独自ドメインでの公開にしようかを迷っている。
+迷う理由は？というかソモソモなんでそんな聞きなれない機能を使っているの？
+4年前&amp;mdash;
+このBlogを始めたころWeb屋だった私は「SEO」って言葉が
+呪いのように付きまとっていた。
+独自ドメインにすればSEO的によい！
+静的HTMLはSEO的によい！
+そんな言葉が散見されていた2005年、
+Google信望者でもあった私にとって
+BloggerのFTP公開機能は、「流石ぐーぐる」といった
+快哉とともに迎え入れられた。
+当時は、独自ドメインで公開出来るBlogサービスがまだ少なく
+MovableType や WordPress等の設置型Blogを使うには、
+ちょっとサーバースペース確保が面倒だった時期である。
+ついでに追記しておくと、2005年のBloggerはよく落ちたし、
+よくエラーを起こしていた。
+Bloggerで公開しても、繋がらない事が多かった。
+さて、月日がたち、SEOという呪いも抜け落ちて、
+Bloggerも安定してきた。
+私は惰性でFTP公開機能を使っていた。
+やめようとは思わなかった、
+少しアーカイブが出来るのが遅かったり、
+不満はちょこちょこあったが、
+目くじらを立てる程ではなかった。
+むしろ、FTP公開機能しているBlogが少ない事を知って
+マイノリティ好きな私は誇らしく思っていたぐらいだ。
+FTP公開機能なんてレア機能使ってるんだぞっと。（バカですね）
+さて、さらに月日がたち、
+Bloggerが安定どころか、
+種々の機能を強化してきた。
+しかしながら、種々の機能を支えるテクノロジーは
+サーバーサイドスクリプト。
+ただのHTMLファイルを作成し、
+FTP経由でせこせこ運ばれてくる私のブログでは
+それらに対応するために、
+クライアントサイドJavaScriptでがんばるのだった。
+正直面倒がMAXになり、
+新しい新規機能がでても無視するようになってきた。
+そんなわけでFTPやめて独自ドメインで公開するだけにしようかなと思う昨今。
+今までためてきたGoogleのアーカイブデータへのGoogleインデックスが
+どうなってしまうのかだけが気になるところです。</description>
+    </item>
+    
+    <item>
+      <title>なんだかBloggerの調子がおかしい？</title>
+      <link>/posts/blogger-comments/</link>
+      <pubDate>Wed, 07 Nov 2007 13:12:00 +0900</pubDate>
+      
+      <guid>/posts/blogger-comments/</guid>
+      <description>FTP 経由の投稿公開に Kuribo - Nov 6, 2007FTP 経由の投稿公開に問題があったようですね。
+&amp;gt;FTP 経由の投稿&amp;hellip; callas - Nov 1, 2007Blogger Tipsいつも参考にさせてもらっています。
+&amp;gt;FTP 経由の投稿公開に問題があったようですね。
+その通りです。
+エントリーを登録しようとすると、登録されなかったり、されたはずがしばらくすると消えたりとしていました。
+GoogleDocsの「公開機能」を使用して投稿すると何故か安定しました。。。
+（しかしGoogleDocsから投稿するとタグ登録と題名登録が一発で反映されないという罠が）</description>
+    </item>
+    
+    <item>
+      <title>なんだかBloggerの調子がおかしい？</title>
+      <link>/posts/blogger/</link>
+      <pubDate>Wed, 07 Nov 2007 13:12:00 +0900</pubDate>
+      
+      <guid>/posts/blogger/</guid>
+      <description>なんか投稿したやつが反映されてなかったり、反映したのに消えたりとちょっと調子がおかしいかも？</description>
+    </item>
+    
+    <item>
+      <title>Blogger壊れる？</title>
+      <link>/posts/bloggertips-google-googleweb-blog-com/</link>
+      <pubDate>Mon, 15 Jan 2007 10:12:00 +0900</pubDate>
+      
+      <guid>/posts/bloggertips-google-googleweb-blog-com/</guid>
+      <description>一週間ほど前に、自分のブログを開いたら大変なことになっていた。
+しばらく、色々設定を変えたりしたが、何も起こらなく・・・
+ま、こういう時って何をしても無駄だと思い
+放置する事に決めたら、いつの間にか直ってた
+はてなんだったのだろうと忘れかけてたころに、
+こんな記事を「クリボウのBloggerTips [](http://www.kuribo.info/ &amp;ldquo;クリボウのBloggerTips&amp;rdquo;)」さんで見つけた。
+カスタムドメインで Google 乗っ取り!?
+これが原因だったのかなぁ・・・とちょっと考える。
+比較的安定しているGoogleのWebサービスだが、
+人間だもの、こういうミスもあるよね。
+ちなみに、当日の私のBlogの状況。
+ちなみにサーバーにホスティングを要求すると
+com.google.blogger.api.UserNotAuthorizedException
+とやらが帰ってくる。
+おいおい、確実にサーバーサイドエラーだよね、これ。
+てかオレのサイトは中国にハッキングされるまでになったのかぁ・・・と思いつつ
+スクリーンショットを撮る暇があったのは、Googleを信頼してるからなのかな？
+（きっと治してくれるって）
+他のサービスだったら、きょどりまくってる気がします（笑）</description>
+    </item>
+    
+    <item>
+      <title>BloggerBeta移行</title>
+      <link>/posts/bloggerbetablogger-ftp-google/</link>
+      <pubDate>Fri, 17 Nov 2006 19:12:00 +0900</pubDate>
+      
+      <guid>/posts/bloggerbetablogger-ftp-google/</guid>
+      <description>BloggerBeta（Bloggerの次のバージョン）が出来てから久しいのですが、
+ずっと英語版しかなく、さらにFTP機能もついていなかったので無視っていましたが・・・
+ある日更新した後の画面を見てると。
+ん・・・？
+んんん・・・・？？？？
+・・・・あるし。
+ちょっと色々手こずりましたが、無事移行完了。
+ついでにGoogleアカウントに統一。
+そんでもって、デザインも変更。
+新しいバージョンだけあって、色々出来るみたいですね。
+楽しみです。</description>
+    </item>
+    
+    <item>
+      <title>Blogスタイル変更</title>
+      <link>/posts/blog/</link>
+      <pubDate>Thu, 18 May 2006 22:25:00 +0900</pubDate>
+      
+      <guid>/posts/blog/</guid>
+      <description>ちょっとblogのスタイルを変更してみる。
+さらにTOPページもいじりってみる。
+まだまだ満足できる出来ではないので、後日サイドバーあたりをいじろうかと思っています。
+どうでもいいけど、雨ひどすぎね？</description>
+    </item>
+    
+    <item>
+      <title>Bloggerで自分のHP上にブログを公開する時のTIPS</title>
+      <link>/posts/bloggerhptips/</link>
+      <pubDate>Sun, 16 Apr 2006 18:12:00 +0900</pubDate>
+      
+      <guid>/posts/bloggerhptips/</guid>
+      <description>BloggerにはFTP情報を登録して、
+自分のサイト上にHTMLファイルを吐き出させ表示すると言うことが出来る。
+実際、
+http://www.callas1900.net/blog/
+にて効果しているわけだけど、以前は
+http://callas1900.blogspot.com/
+でbloggerのブログホストを利用してホスティングしていました。
+で・・・今回独自ドメインをとったので、自分のＨＰスペース上で公開してみたんだけど、
+大抵の友達が前のブログにブックマークしてたので、
+前のＵＲＬからこちらのＵＲＬへとリダイレクトさせる方法を書いておきます。
+まず、blogspotの方でテンプレートの編集よりHTMLをいじり
+を追加する
+（※bloggerはXHTMLなのでタグの末尾に～/&amp;gt;で終わる事と全部小文字で書くという事を忘れずに）
+後は、最後の記事を書き一度ホスティングする。
+そして、ＦＴＰ情報を書き込み自分のＨＰスペースにブログを公開する。
+きちんと公開できた事を確かめたら、
+上記メタタグをテンプレートの中から消去する。
+以上の結果が下記ＵＲＬとなる
+http://callas1900.blogspot.com/</description>
+    </item>
+    
+    <item>
+      <title>bloggerのrss情報を拾ってみる。</title>
+      <link>/posts/bloggerrss/</link>
+      <pubDate>Wed, 28 Dec 2005 12:10:00 +0900</pubDate>
+      
+      <guid>/posts/bloggerrss/</guid>
+      <description>試しにこのブログのrssを拾ってみる
+さてさて上記ハイパーリンクを開いてみる。
+あれ・・・いつもならxmlのソースちっくなものが出てくるのにきっちり整形されてるなぁ
+cssの定義をきっちりしているのか？
+とりあえずソースソースっと・・・あら？
+xmlはダメーって中身見せてくれねーな。xmlが外部プラグインだからそんなもんなんか・・・
+んじゃURIの前にime.nu/ってつけてDLっとふむふむ・・・
+なんじゃこりゃ・・・・ああ・・とりあえず予想通り
+でスタイルシートは定義されてるなうーん・・・わからんのは
+の二列で読み込まれてるrel要素の&amp;quot;service.post&amp;quot;と&amp;quot;service.feed&amp;rdquo;
+だな・・・なーんじゃこりゃ・・・
+後、FC2のRSSなんかはCDATAで文章が定義されていたのに・・・
+なんぞいやこりゃ・・・
+んーあー（ﾟДﾟ)y─┛~~
+もしかして
+の部分でxml情報からxhtmlに変更してるのか・・・？
+そうすれば、ブログの情報を綺麗に流せるなぁ・・・（Bloggerはxhtml1.0で書かれていた)
+なるほどなるほど、そうすればxhtmlの利用価値も高まるよなぁ（ﾟДﾟ ）
+後気になるのは、元々のblogのソースの方で
+やはりのrel要素でservice.postが書かれている点
+(httpsでsslを通してるのも気になるし、あ、ちなみにブログのIDとPASSで中に入れました。中身はブログの発行されてたXMLと同じです。)
+EditURIなんてのもある・・・
+今日はここらでお手上げー∩(ﾟ∀ﾟ∩)</description>
+    </item>
+    
+  </channel>
+</rss>

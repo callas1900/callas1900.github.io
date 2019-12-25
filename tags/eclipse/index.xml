@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eclipse on callas1900.net</title>
+    <link>/tags/eclipse/</link>
+    <description>Recent content in Eclipse on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Tue, 23 Oct 2007 22:30:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/eclipse/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処</title>
+      <link>/posts/wlcompile/</link>
+      <pubDate>Tue, 23 Oct 2007 22:30:00 +0900</pubDate>
+      
+      <guid>/posts/wlcompile/</guid>
+      <description>仕事の備忘録メモ
+Weblogic92を使用し、
+JREにJRockitを使いIDEをEclipse3.2にした場合
+EclipseからANTを実行する場合のwlcompileタスクにおいて以下のエラーが起こった場合の対処
+ BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:
+The following error occurred while executing this line:C:\project\hogehoge\Src\foo\src\fooEar\build.xml:77:
+Could not create task or type of type: wlcompile.
+Ant could not find the task or a class this task relies upon.
+This is common and has a number of causes;
+the usual solutions are to read the manual pages then download andinstall needed JAR files, or fix the build file:
+- You have misspelt &amp;lsquo;wlcompile&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>[Eclipse][Flash]フリーなFLASH　FAME!</title>
+      <link>/posts/flashfame-fame-flash-fame-fame-f/</link>
+      <pubDate>Fri, 23 Feb 2007 19:15:00 +0900</pubDate>
+      
+      <guid>/posts/flashfame-fame-flash-fame-fame-f/</guid>
+      <description>フリーなFLASH　FAME!
+前の記事でFAMEというフリーのFlash開発環境を見つけたと書きました。
+FAMEの環境が整ったので、それについて書こうと思うます。
+そもそもFAMEとは何か。
+これはFlashout＋ASDT＋MTASC＋Eclipseの頭文字をとったものです。
+Flashout ：
+ActionScript、ログ吐き
+ASDT ：
+ActionScript Development Tool
+MTASC ：
+ActionScriptのコンパイラ
+Eclipse ：
+java系PGには欠かせないフリー開発環境ツール
+Eclipseをコアとし、
+残り３つのツールを組み合わせることで
+フリーのFlash作成ツールFAMEとなります。
+実際の環境構築において参考にしたサイト
+ [技術系のシバチョがコラムを書く](http://d.hatena.ne.jp/shibacho/20051009 &amp;ldquo;技術系のシバチョがコラムを書く - &amp;ldquo;Getting Started With MTASC for Flash Development&amp;quot;の日本語訳&amp;rdquo;) 神原日記 - FAMEを始める  上記二記事を参考にやると、得に躓くことなく環境構築できました。
+FAMEを触ってみる
+実際動かしてみた感想として、
+javaやEclipseでの開発に慣れた人なら使いやすいが、
+今までMacromedia Flash で
+Flash作成してきた人は正直きついんじゃないか？と思います。
+（一部のActionScriptでガリガリ書いてる人は除く、そういう人にはむしろFAMEお勧め）
+ピュアActionScriptというのか・・・
+FAMEで全て作ろうとすると全部スクリプトでflashを作成しなければなりません。
+（これはこれで最軽量なFlashが作れるので魅力的なのですが・・・）
+図形描画など、かなり肩が凝る作業になってしまいます
+やはりグラフィカルな作業はMacromedia Flashのほうが楽楽です。
+FAMEは使えるか？
+物理モデルを映像化したり（惑星の動き、自由落下など）
+数式ありきな自然現象をFlashで表現したい場合は超お勧め。
+（後はフラクタルなども）
+それ以外としては、
+グラフィカルな編集をMacromedia Flashで
+ロジカルな編集をFAMEで、
+といったツールを使い分けるのもいいかも。
+そうなると今までの、
+デザイナーはscriptが苦手、 プログラマはグラフィックが苦手、 でも編集するのは同じflaファイル
+な状況から脱却し、
+それぞれをその道に特化した人が担当する事により
+素晴らしい作品が出来るかもしれません。</description>
+    </item>
+    
+    <item>
+      <title>Eclipse3.1.1 memo</title>
+      <link>/posts/eclipse311-memo/</link>
+      <pubDate>Fri, 13 Oct 2006 10:53:00 +0900</pubDate>
+      
+      <guid>/posts/eclipse311-memo/</guid>
+      <description>Eclipse3.1.1 memo
+現在使用JSPプラグイン
+EclipseHtmlEditor Ver2.0.2
+ インストール方法
+  必要ファイルのDL
+AmaterasProjecより
+tk.eclipse.plugin.htmleditor_2.0.2.zip
+AmaterasUML_1.2.1.zip
+GEFより
+GEF-runtime-3.1.1.zip
+をDL(上記バージョンでの動作は保障するが、バージョンが高ければいいといものではないことに注意。）
+  ファイルの解凍とセット
+出てきたファイルの下層フォルダにあるものの中で
+plugins → 中身をeclipseのpluginsフォルダの下にコピー
+futures → 中身をeclipseのfuturesフォルダの下にコピー
+  以上でインストール完了。
+関連付けは各々ですること。
+後、個人的感想だが、初期の色合いはちょっと派手すぎてEclipseに会わないと思う。
+自分で設定を変えたほうがいいと思う。
+ </description>
+    </item>
+    
+  </channel>
+</rss>

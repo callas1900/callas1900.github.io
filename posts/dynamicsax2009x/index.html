@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[DynamicsAX2009][X&#43;&#43;]安全なクラスキャストとシステム日付 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="X&#43;&#43;の小技を自分メモ用に紹介。
+X&#43;&#43;に対してgoogle-code-prettifyがうまく動作するか不安だがやってみる。
+ 安全なクラスキャスト システム日付  [](http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016)安全なクラスキャスト static pulic void main(Args \_args) { binaryIO b; textIO t; ; b = SysDictClass::as(t,classIdGet(b)); } ちなみにObjectを使用して安全でないクラスキャストもできる。
+static pulic void main(Args \_args) { binaryIO b; textIO t; Object o; ; o = t; b = o; } [](http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016)システム日付 utcDateTime型とDate型で取得
+void method1() { utcDateTime utc; Date d; ; utc = DateTimeUtil::applyTimeZoneOffset( DateTimeUtil::getSystemDateTime(), DateTimeUtil::getUserPreferredTimeZone() ); d = DateTimeUtil::date(utc); print utc; print d; } 実行結果
+ 2010/12/12 12:12:12"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/dynamicsax2009x/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[DynamicsAX2009][X&#43;&#43;]安全なクラスキャストとシステム日付 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="X&#43;&#43;の小技を自分メモ用に紹介。
+X&#43;&#43;に対してgoogle-code-prettifyがうまく動作するか不安だがやってみる。
+ 安全なクラスキャスト システム日付  [](http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016)安全なクラスキャスト static pulic void main(Args \_args) { binaryIO b; textIO t; ; b = SysDictClass::as(t,classIdGet(b)); } ちなみにObjectを使用して安全でないクラスキャストもできる。
+static pulic void main(Args \_args) { binaryIO b; textIO t; Object o; ; o = t; b = o; } [](http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016)システム日付 utcDateTime型とDate型で取得
+void method1() { utcDateTime utc; Date d; ; utc = DateTimeUtil::applyTimeZoneOffset( DateTimeUtil::getSystemDateTime(), DateTimeUtil::getUserPreferredTimeZone() ); d = DateTimeUtil::date(utc); print utc; print d; } 実行結果
+ 2010/12/12 12:12:12" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[DynamicsAX2009][X&#43;&#43;]安全なクラスキャストとシステム日付 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="X&#43;&#43;の小技を自分メモ用に紹介。
+X&#43;&#43;に対してgoogle-code-prettifyがうまく動作するか不安だがやってみる。
+ 安全なクラスキャスト システム日付  [](http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016)安全なクラスキャスト static pulic void main(Args \_args) { binaryIO b; textIO t; ; b = SysDictClass::as(t,classIdGet(b)); } ちなみにObjectを使用して安全でないクラスキャストもできる。
+static pulic void main(Args \_args) { binaryIO b; textIO t; Object o; ; o = t; b = o; } [](http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016)システム日付 utcDateTime型とDate型で取得
+void method1() { utcDateTime utc; Date d; ; utc = DateTimeUtil::applyTimeZoneOffset( DateTimeUtil::getSystemDateTime(), DateTimeUtil::getUserPreferredTimeZone() ); d = DateTimeUtil::date(utc); print utc; print d; } 実行結果
+ 2010/12/12 12:12:12" />
+<meta property="og:url" content="/posts/dynamicsax2009x/" />
+<meta property="og:site_name" content="[DynamicsAX2009][X&#43;&#43;]安全なクラスキャストとシステム日付" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2010-02-11 14:02:00.002 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/dynamicsax2009x/">[DynamicsAX2009][X++]安全なクラスキャストとシステム日付</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2010-02-11
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/x&#43;&#43;/">X&#43;&#43;</a>&nbsp;
+    
+    #<a href="/tags/dynamicsax2009/">DynamicsAX2009</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>X++の小技を自分メモ用に紹介。<br>
+X++に対してgoogle-code-prettifyがうまく動作するか不安だがやってみる。</p>
+<ol>
+<li><a href="#_">安全なクラスキャスト</a></li>
+<li><a href="#__28003452723446687">システム日付</a></li>
+</ol>
+<h2 id="httpwwwbloggercompost-editgblogid20219551postid5928169760714323016">[](<a href="http://www.blogger.com/post-edit.g?blogID=20219551&amp;postID=5928169760714323016">http://www.blogger.com/post-edit.g?blogID=20219551&amp;postID=5928169760714323016</a>)安全なクラスキャスト</h2>
+<pre><code>static pulic void main(Args \_args)  
+{  
+    binaryIO b;  
+    textIO t;  
+    ;  
+    b = SysDictClass::as(t,classIdGet(b));  
+}  
+
+</code></pre><p>ちなみにObjectを使用して安全でないクラスキャストもできる。</p>
+<pre><code>static pulic void main(Args \_args)  
+{  
+    binaryIO b;  
+    textIO t;  
+    Object o;  
+    ;  
+    o = t;  
+    b = o;  
+}  
+
+</code></pre><h2 id="httpwwwbloggercompost-editgblogid20219551postid5928169760714323016-1">[](<a href="http://www.blogger.com/post-edit.g?blogID=20219551&amp;postID=5928169760714323016">http://www.blogger.com/post-edit.g?blogID=20219551&amp;postID=5928169760714323016</a>)システム日付</h2>
+<p>utcDateTime型とDate型で取得</p>
+<pre><code>void method1()  
+    {  
+        utcDateTime utc;  
+        Date d;  
+        ;  
+        utc = DateTimeUtil::applyTimeZoneOffset(  
+                    DateTimeUtil::getSystemDateTime(),   
+                    DateTimeUtil::getUserPreferredTimeZone()  
+                    );  
+  
+        d = DateTimeUtil::date(utc);  
+  
+        print utc;  
+        print d;  
+    }  
+
+</code></pre><p>実行結果</p>
+<blockquote>
+<p>2010/12/12 12:12:12<br>
+2010/12/12</p>
+</blockquote>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/windows2windowsupdatexp/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[Windows]2月 Windows Update で XP がブルースクリーンになる現象について</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/20101/">
+          <span class="button__text">[読書メーター]2010年1月読書まとめ</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

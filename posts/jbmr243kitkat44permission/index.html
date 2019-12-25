@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
+前回までのPermission比較は
+ ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
+何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
+これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
+メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
+通常出来ません。
+よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
+Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
+JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
+ dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
+ dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
+Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
+ android.permission.BLUETOOTH_STACK
+android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST
+android.permission.NET_ADMIN
+android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.INTERACT_ACROSS_USERS_FULL
+android.permission.GET_DETAILED_TASKS"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/jbmr243kitkat44permission/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
+前回までのPermission比較は
+ ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
+何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
+これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
+メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
+通常出来ません。
+よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
+Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
+JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
+ dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
+ dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
+Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
+ android.permission.BLUETOOTH_STACK
+android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST
+android.permission.NET_ADMIN
+android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.INTERACT_ACROSS_USERS_FULL
+android.permission.GET_DETAILED_TASKS" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
+前回までのPermission比較は
+ ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
+何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
+これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
+メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
+通常出来ません。
+よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
+Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
+JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
+ dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
+ dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
+Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
+ android.permission.BLUETOOTH_STACK
+android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST
+android.permission.NET_ADMIN
+android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.INTERACT_ACROSS_USERS_FULL
+android.permission.GET_DETAILED_TASKS" />
+<meta property="og:url" content="/posts/jbmr243kitkat44permission/" />
+<meta property="og:site_name" content="JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係）" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2013-11-01 14:59:00.001 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/jbmr243kitkat44permission/">JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係）</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2013-11-01
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/4.4/">4.4</a>&nbsp;
+    
+    #<a href="/tags/signature/">signature</a>&nbsp;
+    
+    #<a href="/tags/4.3/">4.3</a>&nbsp;
+    
+    #<a href="/tags/kitkat/">KitKat</a>&nbsp;
+    
+    #<a href="/tags/android/">Android</a>&nbsp;
+    
+    #<a href="/tags/jb_mr2/">JB_MR2</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。<br>
+前回までのPermission比較は</p>
+<ul>
+<li><a href="http://blog.callas1900.net/2011/11/icsgingerbreadpermission.html">ICSとGingerbreadのPermission比較（メーカー署名関係）</a></li>
+<li><a href="http://blog.callas1900.net/2012/08/jbicspermission.html">JBとICSのPermission比較（メーカー署名関係）</a></li>
+<li><a href="http://blog.callas1900.net/2012/12/jb41jbmr142permission.html">JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）</a></li>
+<li><a href="http://blog.callas1900.net/2012/12/jb41jbmr142permission.html">JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）</a></li>
+</ul>
+<p>にあります。</p>
+<h2 id="heading">何調べてるの？</h2>
+<p>本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。<br>
+これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。</p>
+<p>メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、</p>
+<p>通常出来ません。<br>
+よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。<br>
+Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。</p>
+<h2 id="jb-mr2--kitkat">JB MR2 と KitKatのプロテクションレベルの一覧比較</h2>
+<p><strong>JB MR2</strong></p>
+<ul>
+<li>dangerous</li>
+<li>signature|system</li>
+<li>normal</li>
+<li>signature</li>
+<li>signature|system|development</li>
+<li>system|signature</li>
+<li>signatureOrSystem</li>
+</ul>
+<p><strong>KitKat</strong></p>
+<ul>
+<li>dangerous</li>
+<li>signature|system</li>
+<li>normal</li>
+<li>signature</li>
+<li>signature|system|development</li>
+<li>system|signature</li>
+<li>signatureOrSystem</li>
+</ul>
+<p>特に変更なし</p>
+<h2 id="permissionjb-mr142--jb-mr243">Permission増減調査(JB MR1(4.2) &gt; JB MR2(4.3))</h2>
+<h3 id="signature">[signature]</h3>
+<blockquote>
+<p>これはメーカー署名がないと使用出来ないもの</p>
+</blockquote>
+<p>android.permission.BLUETOOTH_STACK<br>
+android.permission.ACCOUNT_MANAGER<br>
+android.permission.HARDWARE_TEST<br>
+android.permission.NET_ADMIN<br>
+android.permission.REMOTE_AUDIO_PLAYBACK<br>
+android.permission.INTERACT_ACROSS_USERS_FULL<br>
+android.permission.GET_DETAILED_TASKS<br>
+android.permission.REMOVE_TASKS<br>
++ android.permission.MANAGE_ACTIVITY_STACKS<br>
+android.permission.START_ANY_ACTIVITY<br>
+android.permission.SET_SCREEN_COMPATIBILITY<br>
+android.permission.ACCESS_ALL_EXTERNAL_STORAGE<br>
+android.permission.FORCE_STOP_PACKAGES<br>
+android.permission.SET_PREFERRED_APPLICATIONS<br>
+android.permission.ASEC_ACCESS<br>
+android.permission.ASEC_CREATE<br>
+android.permission.ASEC_DESTROY<br>
+android.permission.ASEC_MOUNT_UNMOUNT<br>
+android.permission.ASEC_RENAME<br>
+android.permission.DIAGNOSTIC<br>
+android.permission.STATUS_BAR_SERVICE<br>
+android.permission.FORCE_BACK<br>
+android.permission.INTERNAL_SYSTEM_WINDOW<br>
+android.permission.MANAGE_APP_TOKENS<br>
+android.permission.FREEZE_SCREEN<br>
+android.permission.INJECT_EVENTS<br>
+android.permission.FILTER_EVENTS<br>
+android.permission.RETRIEVE_WINDOW_INFO<br>
+android.permission.TEMPORARY_ENABLE_ACCESSIBILITY<br>
+android.permission.MAGNIFY_DISPLAY<br>
+android.permission.SET_ACTIVITY_WATCHER<br>
+android.permission.GET_TOP_ACTIVITY_INFO<br>
+android.permission.READ_INPUT_STATE<br>
+android.permission.BIND_INPUT_METHOD<br>
+android.permission.BIND_ACCESSIBILITY_SERVICE<br>
++ android.permission.BIND_PRINT_SERVICE<br>
++ android.permission.BIND_NFC_SERVICE<br>
++ android.permission.BIND_PRINT_SPOOLER_SERVICE<br>
+android.permission.BIND_TEXT_SERVICE<br>
+android.permission.BIND_VPN_SERVICE<br>
+android.permission.BIND_DEVICE_ADMIN<br>
+android.permission.SET_ORIENTATION<br>
+android.permission.SET_POINTER_SPEED<br>
+android.permission.SET_KEYBOARD_LAYOUT<br>
+android.permission.CLEAR_APP_USER_DATA<br>
+android.permission.GRANT_REVOKE_PERMISSIONS<br>
+android.permission.ACCESS_SURFACE_FLINGER<br>
+android.permission.CONFIGURE_WIFI_DISPLAY<br>
+android.permission.CONTROL_WIFI_DISPLAY<br>
+android.permission.BRICK<br>
+android.permission.DEVICE_POWER<br>
+android.permission.NET_TUNNELING<br>
+android.permission.FACTORY_TEST<br>
+android.permission.BROADCAST_PACKAGE_REMOVED<br>
+android.permission.BROADCAST_SMS<br>
+android.permission.BROADCAST_WAP_PUSH<br>
+android.permission.CONFIRM_FULL_BACKUP<br>
+android.permission.CHANGE_BACKGROUND_DATA_SETTING<br>
+android.permission.GLOBAL_SEARCH_CONTROL<br>
+android.permission.READ_DREAM_STATE<br>
+android.permission.WRITE_DREAM_STATE<br>
+android.permission.COPY_PROTECTED_DATA<br>
+android.permission.MANAGE_NETWORK_POLICY<br>
+android.intent.category.MASTER_CLEAR.permission.C2D_MESSAGE<br>
+android.permission.BIND_PACKAGE_VERIFIER<br>
+android.permission.ACCESS_CONTENT_PROVIDERS_EXTERNALLY<br>
++ android.permission.ACCESS_KEYGUARD_SECURE_STORAGE<br>
++ android.permission.CONTROL_KEYGUARD<br>
+android.permission.BIND_NOTIFICATION_LISTENER_SERVICE</p>
+<p>全権限新規追加</p>
+<h3 id="signaturesystem">[signature|system]</h3>
+<blockquote>
+<p>メーカー署名があるか、プリインストールのシステムアプリでしか使用出来ないもの</p>
+</blockquote>
+<p>android.permission.SEND_RESPOND_VIA_MESSAGE<br>
+android.permission.RECEIVE_EMERGENCY_BROADCAST<br>
+android.permission.BIND_DIRECTORY_SEARCH<br>
+android.permission.INSTALL_LOCATION_PROVIDER<br>
+android.permission.LOCATION_HARDWARE<br>
+android.permission.CONNECTIVITY_INTERNAL<br>
+android.permission.RECEIVE_DATA_ACTIVITY_CHANGE<br>
+android.permission.LOOP_RADIO<br>
+android.permission.MANAGE_USB<br>
+android.permission.ACCESS_MTP<br>
+android.permission.CAMERA_DISABLE_TRANSMIT_LED<br>
+android.permission.MODIFY_PHONE_STATE<br>
+android.permission.READ_PRIVILEGED_PHONE_STATE<br>
+android.permission.WRITE_MEDIA_STORAGE<br>
++ android.permission.MANAGE_DOCUMENTS<br>
+android.permission.MANAGE_USERS<br>
+android.permission.SET_TIME<br>
+android.permission.WRITE_GSERVICES<br>
+android.permission.RETRIEVE_WINDOW_CONTENT<br>
+android.permission.WRITE_APN_SETTINGS<br>
+android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK<br>
++ android.permission.MANAGE_CA_CERTIFICATES<br>
+android.permission.STATUS_BAR<br>
+android.permission.UPDATE_DEVICE_STATS<br>
+android.permission.UPDATE_APP_OPS_STATS<br>
+android.permission.SHUTDOWN<br>
+android.permission.STOP_APP_SWITCHES<br>
+android.permission.BIND_WALLPAPER<br>
++ android.permission.MANAGE_DEVICE_ADMINS<br>
+android.permission.INSTALL_PACKAGES<br>
+android.permission.DELETE_CACHE_FILES<br>
+android.permission.DELETE_PACKAGES<br>
+android.permission.MOVE_PACKAGE<br>
+android.permission.CHANGE_COMPONENT_ENABLED_STATE<br>
+android.permission.READ_FRAME_BUFFER<br>
++ android.permission.CAPTURE_AUDIO_OUTPUT<br>
++ android.permission.CAPTURE_AUDIO_HOTWORD<br>
++ android.permission.CAPTURE_VIDEO_OUTPUT<br>
++ android.permission.CAPTURE_SECURE_VIDEO_OUTPUT<br>
++ android.permission.MEDIA_CONTENT_CONTROL<br>
+android.permission.REBOOT<br>
+android.permission.MASTER_CLEAR<br>
+android.permission.CALL_PRIVILEGED<br>
+android.permission.PERFORM_CDMA_PROVISIONING<br>
+android.permission.CONTROL_LOCATION_UPDATES<br>
+android.permission.ACCESS_CHECKIN_PROPERTIES<br>
+android.permission.PACKAGE_USAGE_STATS<br>
+<strong>+ android.permission.BATTERY_STATS</strong><br>
+android.permission.BACKUP<br>
+android.permission.BIND_REMOTEVIEWS<br>
+android.permission.BIND_APPWIDGET<br>
+android.permission.BIND_KEYGUARD_APPWIDGET<br>
+android.permission.MODIFY_APPWIDGET_BIND_PERMISSIONS<br>
+android.permission.GLOBAL_SEARCH<br>
+android.permission.SET_WALLPAPER_COMPONENT<br>
+android.permission.ACCESS_CACHE_FILESYSTEM<br>
+android.permission.CRYPT_KEEPER<br>
+android.permission.READ_NETWORK_USAGE_HISTORY<br>
+android.permission.MODIFY_NETWORK_ACCOUNTING<br>
++ android.permission.MARK_NETWORK_SOCKET<br>
+android.permission.PACKAGE_VERIFICATION_AGENT<br>
+android.permission.SERIAL_PORT<br>
+android.permission.ACCESS_NOTIFICATIONS<br>
++ android.permission.INVOKE_CARRIER_SETUP<br>
++ android.permission.ACCESS_NETWORK_CONDITIONS</p>
+<p>android.permission.BATTERY_STATS がdangerous(誰でも実行可能）より移動してきた。これによりなんらかの機能に影響が出る可能性がある。その他は全て新規追加。<br>
+MANAGE_CA_CERTIFICATESとか気になるものが増えてる。</p>
+<h3 id="systemsignature">[system|signature]</h3>
+<blockquote>
+<p>[signature|system]と同じ</p>
+</blockquote>
+<p>+ android.permission.BLUETOOTH_PRIVILEGED<br>
++ android.permission.BIND_CALL_SERVICE<br>
+android.permission.MOUNT_UNMOUNT_FILESYSTEMS<br>
+android.permission.MOUNT_FORMAT_FILESYSTEMS</p>
+<p>追加は両方とも新規。signature|systemとマージしない内部事情でもあるのだろうか？</p>
+<h3 id="signaturesystemdevelopment"> [signature|system|development]</h3>
+<blockquote>
+<p>メーカー署名、システムアプリ、もしくは開発中に使用出来るもの</p>
+</blockquote>
+<p>android.permission.INTERACT_ACROSS_USERS<br>
+android.permission.CHANGE_CONFIGURATION<br>
+android.permission.SET_ANIMATION_SCALE<br>
+android.permission.WRITE_SECURE_SETTINGS<br>
+android.permission.DUMP<br>
+android.permission.READ_LOGS<br>
+android.permission.SET_DEBUG_APP<br>
+android.permission.SET_PROCESS_LIMIT<br>
+android.permission.SET_ALWAYS_FINISH<br>
+android.permission.SIGNAL_PERSISTENT_PROCESSES<br>
+android.permission.GET_APP_OPS_STATS</p>
+<p>変更無し</p>
+<h3 id="signatureorsystem">[signatureOrSystem]</h3>
+<blockquote>
+<p>[signature|system]と同じ</p>
+</blockquote>
+<p>android.permission.UPDATE_LOCK</p>
+<p>変更無し</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2013-11/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[読書メーター]2013年 11月読書まとめ読書メーター</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/jbmr142jbmr243permission/">
+          <span class="button__text">JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

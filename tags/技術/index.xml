@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技術 on callas1900.net</title>
+    <link>/tags/%E6%8A%80%E8%A1%93/</link>
+    <description>Recent content in 技術 on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Mon, 04 Apr 2016 12:38:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker registry を構築した後のimage整理</title>
+      <link>/posts/docker-registry-image/</link>
+      <pubDate>Mon, 04 Apr 2016 12:38:00 +0900</pubDate>
+      
+      <guid>/posts/docker-registry-image/</guid>
+      <description>Docker registry を作って、別チームに任せて放置する Docker registry で image 管理をすると段々とゴミが溜まってきます。API(https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository)で削除できるのはTAGがついているimageだけなので、
+TAGが外れているimagesがどんどん残っていきます。
+エラーが起きる ずーっと管理せずに放置していると、ある日こんなエラーと出会います。
+HTTP code 500 while uploading metadata: &amp;quot;invalid character &#39;&amp;lt;&#39; looking for beginning of value&amp;quot; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
+不要なimageを削除する。 以下スクリプとが非常に有用です。
+jqのインストールが必須になります。
+kwk/remove-orphan-images.sh
+https://gist.github.com/kwk/c5443f2a1abcf0eb1eaa
+追記:実行時のエラー 私の場合、実行時に下記エラーが出ました。
+parse error: Invalid numeric literal at line 144, column 114 これは直前に表示されたrepository名のindexファイルが破損していたため、起きた現象でした。手修正でindexファイルを修正したところ、うまく動きました。</description>
+    </item>
+    
+    <item>
+      <title>LMDE2とデュアルブートしているwindows 7 を 10 にアップグレードする</title>
+      <link>/posts/lmde2windows-7-10/</link>
+      <pubDate>Thu, 18 Feb 2016 01:57:00 +0900</pubDate>
+      
+      <guid>/posts/lmde2windows-7-10/</guid>
+      <description>結論から言うと、特に何も問題なく、あっさりアップグレードできました。
+参考にしたのは以下のページ
+How to Upgrade a Linux Dual-Boot System to Windows 10
+http://www.howtogeek.com/226295/how-to-upgrade-a-linux-dual-boot-system-to-windows-10/
+環境 まず私の環境を再度確認。
+Windows 7 SP1 と LMDE2 とのデュアルブート環境。
+Windows の Cドライブが入っている物理ストレージに LMDE2 を同居かつ、GRUB2が入っています。
+Windows10 アップグレード 上記記事の内容だと、Windows 10 アップグレード後に、GRUB2に影響が出て、Windows は起動できるが、Linuxは起動できない状態になるとありましたが、アップグレード後特に問題なく起動出来ました。
+注意点としては、Windows 10 アップグレード時に３〜４回ぐらい（忘れました）再起動しますが、その時はGRUB2から Windows を選択してやる必要があるため、基本的にパソコン前に張り付いておく必要があります。
+Windows 10 アップグレード後、GRUB2 への影響 何もありません。
+何もないので、引き続き GRUB2 には Windows 7と表記されいます。
+上記リンク先に、 ubuntu での GRUB2 の表記を Windows 10 に更新する方法が書かれていたので、それをヒントに LMDE2 でもできるかもしれませんが、特に困った事はなかったので私 7 の表記のまま使っています。
+〆 私はアップグレード時に、特に問題は起きませんでしたが、
+他の環境ではどうなるか分からないので、ファイルはバックアップをしっかりとってから実行して下さい。</description>
+    </item>
+    
+    <item>
+      <title>Android 5.0.2 以上でBLEが動かない</title>
+      <link>/posts/android-502-ble/</link>
+      <pubDate>Wed, 03 Feb 2016 22:48:00 +0900</pubDate>
+      
+      <guid>/posts/android-502-ble/</guid>
+      <description>Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
+エラー内容は以下のようになっている。
+java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
+Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
+Android 5.0.2 onwards don’t allow HID access through Bluetooth LE</description>
+    </item>
+    
+    <item>
+      <title>LMDE2のNVIDIA Driverを更新する</title>
+      <link>/posts/lmde2nvidia-driver/</link>
+      <pubDate>Thu, 14 Jan 2016 00:28:00 +0900</pubDate>
+      
+      <guid>/posts/lmde2nvidia-driver/</guid>
+      <description>LMDE2 に NVIDIA のグラフィックドライバを入れます。
+ Inspect your graphic board Download a driver Installer Prepare Installation Installation  Inspect your graphic board terminalで
+lspci -vnn | grep VGA -A 12 Download a driver Installer NVIDIAの公式サイトからLinux X64用のDriver Installerを手に入れます。
+私の場合は以下から
+http://www.nvidia.com/download/driverResults.aspx/77525/en-us
+NVIDIA-Linux-x86_64-340.32.run というシェルファイルを手に入れました。
+Prepare Installation reboot し grub で recovery mode を選択し、
+ログイン画面で、Ctrl + Alt + F1 を押してCUIモードになります。
+ユーザーログイン後、
+sudo update-initramfs -u を実行します。
+これはNVIDIAシェルがカーネルモジュールを追加するため必要になります。
+これが実行されない場合
+Nouveau kernel driver を止めてくれとのエラーメッセージが表示されます。
+Installation 再度再起動し、recovery modeになり、CUIモードにログインします。
+X serviceを止めます。</description>
+    </item>
+    
+    <item>
+      <title>臆病者のための Ansible</title>
+      <link>/posts/ansible_5/</link>
+      <pubDate>Tue, 12 Jan 2016 01:06:00 +0900</pubDate>
+      
+      <guid>/posts/ansible_5/</guid>
+      <description>Target Links 臆病者のための確認コマンド  基本 確認 hosts 制限 hosts 確認 tasks 確認 最終   〆  Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
+全て手順書のように書いていればいいのだが、多数のRoleを使い高度に書かれたAnsible playbookを引き継ぎ、メンテまたは代わりに実行するのはとても怖い。
+playbook実行する前に何がどうなるのか確認しまくりたい。
+そんな自分のための初心者ガイド
+Links 実行の仕方など基礎的な事は公式ドキュメント参照
+Hello world
+http://docs.ansible.com/ansible/intro_getting_started.html
+どうやって使うかのオススメ、ディレクトリ配置など
+http://docs.ansible.com/ansible/playbooks_best_practices.html
+確認コマンド playbook は実行前に色々確認したいですよね。
+基本 ansible-playbook playbook.yml これで playbook が実行されます、設定がしっかりしてる環境であれば、外部サーバに実際に変更を行ったり、時には取り返しのつかない変更が実行されたりします。何も考えずに実行するのは危険
+確認 hosts ansible-playbook playbook.yml --list-hosts playbook は実行されません。
+playbookが実行される相手先をリストアップするだけです。
+host は hosts ファイルなどで定義された ansible のためのサーバー接続先設定のことです。
+制限 hosts ansible-playbook playbook.yml -l hoge --list-hosts -l の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 --list-hosts と組み合わせると捗ります。</description>
+    </item>
+    
+  </channel>
+</rss>

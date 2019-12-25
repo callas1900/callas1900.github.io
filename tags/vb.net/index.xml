@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VB.NET on callas1900.net</title>
+    <link>/tags/vb.net/</link>
+    <description>Recent content in VB.NET on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 24 Dec 2008 11:29:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/vb.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[VB.NET]文字列型列挙体の実装</title>
+      <link>/posts/vbnet-comments/</link>
+      <pubDate>Wed, 24 Dec 2008 11:29:00 +0900</pubDate>
+      
+      <guid>/posts/vbnet-comments/</guid>
+      <description>列挙体のメリットの一つに、 Dim a As 列挙体 と書いて、列挙体のメンバを指定することを明示で&amp;hellip; 匿名 - Apr 1, 2013列挙体のメリットの一つに、
+Dim a As 列挙体
+と書いて、列挙体のメンバを指定することを明示できる点もありますよね。
+そういった使い方もできるようにするには、どうしたらいいんだろう。
+コメントありがとうございます。
+これを書いたのは大分前なので、現在はVB.NETにネイティブなENUM使えるみたいなのでそちらを使う事をお勧めします。
+http://msdn.microsoft.com/en-us/library/8h84wky1(v=vs.80).aspx
+Dim a As 列挙体も出来ます。</description>
+    </item>
+    
+    <item>
+      <title>[VB.NET]文字列型列挙体の実装</title>
+      <link>/posts/vbnet/</link>
+      <pubDate>Wed, 24 Dec 2008 11:29:00 +0900</pubDate>
+      
+      <guid>/posts/vbnet/</guid>
+      <description>enumとか使っていると、文字列型列挙体が欲しくなってきます。
+VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。
+以下コードと解説
+コード
+ `Public Structure sampleStructure
+Public Const hoge As String = &amp;ldquo;hogehoge&amp;rdquo;
+Public Const fuga As String = &amp;ldquo;fugafuga&amp;rdquo;
+Public Const foo As String = &amp;ldquo;foofoo&amp;rdquo;
+Public Const bar As String = &amp;ldquo;barbar&amp;rdquo;
+ &amp;lsquo;構造体用インスタンスメンバをダミー実装
+Private dummy As String
+ &amp;lsquo;構造体のReferenceEqualsを参照出来なくする。
+Private Shadows Function ReferenceEquals() As Object
+Return New Object
+End Function
+ &amp;lsquo;構造体のEqualsを参照出来なくする。
+Private Shadows Function equals() As Object
+Return New Object
+End Function
+End Structure</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VB6 on callas1900.net</title>
+    <link>/tags/vb6/</link>
+    <description>Recent content in VB6 on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Thu, 30 Jul 2009 18:37:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/vb6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[VB6]久し振りのVB6</title>
+      <link>/posts/vb6vb6/</link>
+      <pubDate>Thu, 30 Jul 2009 18:37:00 +0900</pubDate>
+      
+      <guid>/posts/vb6vb6/</guid>
+      <description>ちょっとしたヘルプでVB6を書いてきました。
+久し振りの実装だったのでVB6でも文句も言わずウキウキやるぞー！
+と思っても実装開始後文句がいっぱい！
+それでも久し振りの実装だから笑顔で文句だけどね。
+VB6への文句集  VB6への文句集 ホイールでころころさせろ！ Collectionは爆発しろ！ StringBuilderなりStringBufferなり実装しろ！ TrueDBGridも爆発しろ！  レイアウトファイルが新規生成出来ないんだけど？ チェックボックスがうまく動かないんだけど？    ホイールでころころさせろ！ IDE開いて既存ソースを見てて違和感。
+あん？マウスで画面がスクロールしないぞ！？
+マウスの調子がおかしいわけでもないし・・？
+Google先生に聞いてみると、VB6のIDEじゃ
+ホイールロールイベントが使えないらしい！！！
+なんてことだ！
+結局本家MSのサイトでマウスロールに対応させる
+KBが置いてたので導入
+VB6でマウスころころKB
+どうでもいいけどKBってknowledge-Baseの略だったんだね。
+ Collectionは爆発しろ！ ほのかに覚えているVB6の実装の記憶じゃ
+CollectionとrecodeSetを使って、
+DBから取得してイテレータ的なことをしていた記憶がある。
+Keyを使って登録できるということでHashMap的に使えるのかと思ったら。
+だまされた！
+Key一覧を吐き出せないじゃないか！
+Indexでしかアクセス出来ないならKeyで登録する意味が分からない！
+さらに意味がわからないのはそのIndexが1から始まることだ。
+PCでIndexを振る場合は0からと相場が決まってるだろぉ！
+何度Indexエラーを起こしてしまったことか！
+（私が悪いんですけどね、はい）
+従来のFor文だと
+For i = 0 To Dictionary.Count - 1
+なんか処理
+Next i
+となっちゃうのが
+For i = 1 To Collection.Count
+なんか処理
+Next i
+になるから - 1 書かなくていいからスマート！
+とかでも考えたんだろうか？
+なんてことだ！
+結局、参照設定にMicrosoft Scripting Runtimeを追加して</description>
+    </item>
+    
+  </channel>
+</rss>

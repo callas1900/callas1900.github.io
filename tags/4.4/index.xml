@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.4 on callas1900.net</title>
+    <link>/tags/4.4/</link>
+    <description>Recent content in 4.4 on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Fri, 01 Nov 2013 14:59:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/4.4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係）</title>
+      <link>/posts/jbmr243kitkat44permission/</link>
+      <pubDate>Fri, 01 Nov 2013 14:59:00 +0900</pubDate>
+      
+      <guid>/posts/jbmr243kitkat44permission/</guid>
+      <description>Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
+前回までのPermission比較は
+ ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
+何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
+これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
+メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
+通常出来ません。
+よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
+Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
+JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
+ dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
+ dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
+Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
+ android.permission.BLUETOOTH_STACK
+android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST
+android.permission.NET_ADMIN
+android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.INTERACT_ACROSS_USERS_FULL
+android.permission.GET_DETAILED_TASKS</description>
+    </item>
+    
+  </channel>
+</rss>

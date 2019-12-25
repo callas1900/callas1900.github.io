@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flash on callas1900.net</title>
+    <link>/tags/flash/</link>
+    <description>Recent content in Flash on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 07 Nov 2007 21:10:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/flash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Flash]Laszloよ、納品後の暇な時間を返せ。</title>
+      <link>/posts/fameflashoutasdtmtasceclipse-flash-fame/</link>
+      <pubDate>Wed, 07 Nov 2007 21:10:00 +0900</pubDate>
+      
+      <guid>/posts/fameflashoutasdtmtasceclipse-flash-fame/</guid>
+      <description>昨日納品が一端終わって今日は暇だ。
+といっても納品先から何をいってくるかわからないので待機状態なんだけどね。
+ついでに言うと、明日からまた忙しくなる。
+そんなわけでプロジェクトの仕様書なぞを読みつつ。
+今年の初めにちょっと触ったFAME(Flashout＋ASDT＋MTASC＋Eclipse)
+でも再度触ってみようかと思いぐーぐるで検索する。
+最近またFlashに興味が出てきたのだ。
+FAMEは中々に面白い考え方だったので、
+FAMEに関するBlogの新規エントリーが増え
+FAMEコミュニティが活性化しているかと思いきや、
+あらら、全然エントリーがない、一番最近のエントリーでも2005年だよ
+どうやらFAMEははやらなかったようだ。
+（Swifmillとの組み合わせでFAMESとかいうものもあったのになぁ）
+じゃあ、EclipseでFlashを作成するような環境って今他のものはあるのだろうか？
+一番今はやっているものは何かないかなぁ？
+と
+またまたぐーぐるにて「Flash eclipse」で検索をかける。
+こんな記事を見つけた。
+Ajax，Flash，Java&amp;mdash;オープンソースで実現するリッチクライアント 第4回
+さらに、そこからこんなものを見つけた。
+Open Laszlo （オープン・ラズロと読むらしい）
+どうやらCPLライセンスのオープンソフトみたいだ。
+CPLライセンスとは・・・麻原○晃にドッペルゲンガーである。。。
+って書いたら信者から殺されそうなので、
+とりあえず、未来永劫無料、商用利用にあたっても
+ラズロのソースコードの公開だけでいいという素晴らしいライセンスてことでOK。
+さて、オープンソースであることは非常に気にいたのだけど
+（ついでに名前の響きも面白い）
+調べてみるとこんなものがった。
+EclipseプラグインでOpenLaszlo IDEを構築する
+まさに探していたものじゃーないか！
+早速Open Laszoloをインストールする。
+これは驚くほどさっくりといけた。
+→Open Laszlo DL場所
+次にIDE4ECLIPSEをインストールしようと
+Open Laszlo用のEclipseプラグインを公開している
+alphaWorksのサイトにいってみる→ここ
+ここにあると書いてたけど・・・？あれ？無い！おいてない！
+ってことでネットの海の中血眼になって探すと
+LaszloJapanのフォーラムに情報があった
+→これ
+IDE4LASZLOのDL場所
+ふぅ、これでDLできる
+やっとこさIde4laszloをインストールできると思ったら。
+org.eclipse.emf.ecore.resource が無いとかいって怒られた。
+emf.ecoreをダウンロードしてインストール
+さて次こそインストール！
+ 必須:フィーチャー&amp;quot;org.eclipse.emf.ocl(1.0.0)&amp;quot;、または互換。
+ とまた怒られた。
+要するに、emf.olcのバージョン1.0.0が足りてねーっていうことだ
+エラーワードでググってみると、あるブログに以下プラグインを全部インストールすると解決したとあったのでぶちこむ。
+ org.eclipse.emf.ocl org.eclipse.emf.query org.eclipse.emf.validation org.eclipse.emf.transaction  さーインストールだ。</description>
+    </item>
+    
+    <item>
+      <title>[Flash]FAMEでFlashのバージョン取得</title>
+      <link>/posts/flashflash7-flash8-flashplayer7-7-7/</link>
+      <pubDate>Thu, 15 Mar 2007 18:33:00 +0900</pubDate>
+      
+      <guid>/posts/flashflash7-flash8-flashplayer7-7-7/</guid>
+      <description>会社で作ったFlashがFlash7で動かないとのこと、
+そりゃそうだ、Flash8で作ってるんだから。
+会社曰く、現在インスコされているFlashPlayerの初期は7だからそれに合わせろ。
+ふーん・・・7がデフォでインスコされているとは知らなかった。
+で、パブリッシュの書き出しで7にすれば対応できますよっとメールを送ったところ。
+対応できたが、一部ドロップシャドウが消失
+ナンデスト？
+どうやらドロップシャドウではなくシャドウ部位に使用していたグラデがFlash7だと存在しないようだ。
+（それぐらい事前に調べとけってか？ハイ、その通りですスイマセン）
+で、出来上がったものを見たが、
+やはりグラデが全部消えてるとちょっと嫌な感じだ。
+う～ん・・・そういや昔javaScriptにhttpヘッダの中読んで
+ブラウザのバージョンをGETする方法とかを見た気がする。
+ActionScriptで、FlashPlayerのバージョンをGETできないものだろうか？ さらにそのバージョン毎に違うswfファイルを見せること出来ないか？
+つまりFlashPlayer8以上を使用している人には8以上のバブリッシュ設定のものを
+7を使用している人には7用のswfをそれぞれ提供できないか？
+（今回最低バージョンは7としている、理由はActionScript2.0が提供されるのは7以降なので）
+調べた結果
+System.capabilities.version;
+を使用すれば望みのものを得ることが出来るようだ。
+以下実際のコードを書いてみる。
+(FAME環境で作ったため、Macromediaと違うところがあります）
+versionManager.as  class versionManager {
+function versionManager (path){
+trace(Flashout.DEBUG + &amp;ldquo;trace()&amp;quot;);
+// _rootのDepth=1にMovieClipのインスタンスseedを作成
+path.createEmptyMovieClip(&amp;ldquo;seed&amp;rdquo;,1);
+//インスタンスseedをmcとする
+var mc :MovieClip = path.seed;
+//バージョン情報を取得
+var ver :String= System.capabilities.version;
+var major_ver = ver.split(&amp;rdquo; &amp;ldquo;)[1].split(&amp;quot;,&amp;quot;)[0];
+trace (&amp;ldquo;ver = &amp;quot; + ver);
+trace (&amp;ldquo;major_ver = &amp;quot; + major_ver);
+//今回パブリッシュ設定を７と８で分けたいので
+if (major_ver &amp;gt; 7) {</description>
+    </item>
+    
+    <item>
+      <title>[Flash]FAME環境でXML読み込み</title>
+      <link>/posts/fameactionscript-xml-macromediafalsh/</link>
+      <pubDate>Wed, 14 Mar 2007 18:21:00 +0900</pubDate>
+      
+      <guid>/posts/fameactionscript-xml-macromediafalsh/</guid>
+      <description>FAMEでActionScriptを書こうとすると色々と不便なことがある。
+（まだまだ開発されたての環境なので致し方ないが）
+さて先日ある案件でXMLデータを読みこんで処理したいといった内容があったのだが、
+いかんせん、MacromediaFalshのように簡易的に書くとコンパイルエラーで落ちてしまう。
+また、XMLでの検索は面度なのでActionScript用のJSONクラスを用意しても
+JSONクラスで落ちてしまう。
+結局手書きでやることにした。
+作業の流れとしては
+ XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload  XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
+さて実際に以下に書いてみましょう。
+XMLデータ内容   ActionScript内容  //XMLインスタンス作成
+var my_xml :XML = new XML();
+// 改行などを無視
+my_xml.ignoreWhite = true;
+//onLoadのイベントハンドラにfunctionを設定
+my_xml.onLoad =
+function(success) {
+if (success) {
+my_xml = this;
+// XMLエレメントの取得
+var my_xmlnode :XMLNode = my_xml.firstChild;
+var name :String = &amp;ldquo;&amp;quot;;
+var url :String = &amp;ldquo;&amp;quot;;
+var i :Number = 0;
+while ( my_xmlnode.</description>
+    </item>
+    
+    <item>
+      <title>ActionScriptと高等言語</title>
+      <link>/posts/actionscript-fps-pcpc-162-pc/</link>
+      <pubDate>Tue, 13 Mar 2007 09:50:00 +0900</pubDate>
+      
+      <guid>/posts/actionscript-fps-pcpc-162-pc/</guid>
+      <description>ActionScriptと高等言語
+月曜日の朝、日曜日に生まれて初めてFPSというものを経験し、疲れ目の莫迦です。
+さてちょっと思ったことを書き込み
+人間には人間の、
+PCにはPCの言葉がある。
+プログラムの世界において、人間語とは基本的に英語のことを指す。
+プログラムの言葉は16進数や2進数で表されるような機械語を意味する。
+この機械語だが、非常にロジカル過ぎて、
+正直人間には理解しがたいものだ、
+同じく、ファージー過ぎて人間語を理解できる機械は少ない。
+いや、機械が直接理解できるということは無い。
+そこでPCに仕事をさせたい時には翻訳機を使う。
+それがプログラミング言語である。
+プログラミング言語は種々様々であり、その中でも人間語（英語）に比較的近い文法を持つものが高等言語とされる。
+さらにここからオブジェクト指向言語やらなんやらと細分化されていく。
+また、簡易化したり、複雑化したり時と使用目的ごとに高等言語は増えていく。
+しかしながら、その根幹は機械語であり、それを英語で分かりやすく表記するという考え自体に変更はない。
+なので、一つの高等言語をある程度理解すると
+「プログラム的な思考回路」が脳内に出来上がる。
+そして、他のプログラム言語を見た時にもそれを
+「一般の人よりは理解しやすい」脳になっている。
+それを繰り返していくごとに、プログラムのしたいことが見え、初見のプログラムでもある程度動かせてしまう。
+それが一般的なプログラマーに求められる経験値である。
+さて、今現在出向先の仕事でJavaと社内の仕事でActionScriptをしている。
+双方初めての言語であった。
+ただ、私にはJavaScriptという言語への知識とVB.NEtに関する知識が事前にあった。
+JavaScriptは突き詰めれば完全にプログラムと言ってもいいのだが、
+深い段階までいかないとただのお遊び言語である。
+（JavaScriptは今一番負のポテンシャルを期待されて注目されている言語でもある。）
+VB.NETは完全にオブジェクト指向言語である。
+JavaScriptはJavaをベースに簡易化されたものであり、
+ActionScriptはJavaScriptを基盤としてFlash用に作成された言語である。
+派生されていく言語は親子兄弟のような関係といってもよい、
+そういう親類縁者から攻めていくと使える言語の幅は急激に広まる。
+なので・・・先輩頼むから勉強してください！
+気になった記事
+最近の大学生は携帯メールでレポートを書くらしい
+オレにはムリ
+アップルのMacBookが爆発炎上
+あらぁ・・・リンゴ爆発・・・
+悪意のJavaScriptで情報が漏えい
+XSSの脆弱性ってこんだけ警告されてるのに消えないなぁ
+番外編第2回 赤坂さん、Flashを攻める！
+ほのぼのとアプリなんかの脆弱性を照会するシリーズ
+ほのぼのしてるけど、やってることは超コエー
+しかし・・・Httpヘッダーってなんだ・・・
+いや、よく聞くけど実際なんのことだか知らないーー；
+よく聞くってことは「常識」ってことだよね。
+調べよ・・
+追記：
+HTTPヘッダーとは
+→リンク先参照
+中身を参照したければ
+→リンク先参照（Proxomitron-J）</description>
+    </item>
+    
+    <item>
+      <title>[Eclipse][Flash]フリーなFLASH　FAME!</title>
+      <link>/posts/flashfame-fame-flash-fame-fame-f/</link>
+      <pubDate>Fri, 23 Feb 2007 19:15:00 +0900</pubDate>
+      
+      <guid>/posts/flashfame-fame-flash-fame-fame-f/</guid>
+      <description>フリーなFLASH　FAME!
+前の記事でFAMEというフリーのFlash開発環境を見つけたと書きました。
+FAMEの環境が整ったので、それについて書こうと思うます。
+そもそもFAMEとは何か。
+これはFlashout＋ASDT＋MTASC＋Eclipseの頭文字をとったものです。
+Flashout ：
+ActionScript、ログ吐き
+ASDT ：
+ActionScript Development Tool
+MTASC ：
+ActionScriptのコンパイラ
+Eclipse ：
+java系PGには欠かせないフリー開発環境ツール
+Eclipseをコアとし、
+残り３つのツールを組み合わせることで
+フリーのFlash作成ツールFAMEとなります。
+実際の環境構築において参考にしたサイト
+ [技術系のシバチョがコラムを書く](http://d.hatena.ne.jp/shibacho/20051009 &amp;ldquo;技術系のシバチョがコラムを書く - &amp;ldquo;Getting Started With MTASC for Flash Development&amp;quot;の日本語訳&amp;rdquo;) 神原日記 - FAMEを始める  上記二記事を参考にやると、得に躓くことなく環境構築できました。
+FAMEを触ってみる
+実際動かしてみた感想として、
+javaやEclipseでの開発に慣れた人なら使いやすいが、
+今までMacromedia Flash で
+Flash作成してきた人は正直きついんじゃないか？と思います。
+（一部のActionScriptでガリガリ書いてる人は除く、そういう人にはむしろFAMEお勧め）
+ピュアActionScriptというのか・・・
+FAMEで全て作ろうとすると全部スクリプトでflashを作成しなければなりません。
+（これはこれで最軽量なFlashが作れるので魅力的なのですが・・・）
+図形描画など、かなり肩が凝る作業になってしまいます
+やはりグラフィカルな作業はMacromedia Flashのほうが楽楽です。
+FAMEは使えるか？
+物理モデルを映像化したり（惑星の動き、自由落下など）
+数式ありきな自然現象をFlashで表現したい場合は超お勧め。
+（後はフラクタルなども）
+それ以外としては、
+グラフィカルな編集をMacromedia Flashで
+ロジカルな編集をFAMEで、
+といったツールを使い分けるのもいいかも。
+そうなると今までの、
+デザイナーはscriptが苦手、 プログラマはグラフィックが苦手、 でも編集するのは同じflaファイル
+な状況から脱却し、
+それぞれをその道に特化した人が担当する事により
+素晴らしい作品が出来るかもしれません。</description>
+    </item>
+    
+  </channel>
+</rss>

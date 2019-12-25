@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>JavaScript :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/tags/javascript/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="JavaScript :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="JavaScript :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/tags/javascript/" />
+<meta property="og:site_name" content="JavaScript" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+  <link href="/tags/javascript/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="posts">
+  
+  
+
+  
+  
+  false
+  
+  
+
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/javascriptvbscriptvbscript-javascript_08/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その２</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/javascript/">JavaScript</a>&nbsp;
+      
+      #<a href="/tags/vbscript/">VBScript</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/javascriptvbscriptvbscript-javascript_08/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/javascriptvbscriptvbscript-javascript/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その１</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/javascript/">JavaScript</a>&nbsp;
+      
+      #<a href="/tags/vbscript/">VBScript</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      プロジェクトでIE6上で動く VBScript + JavaScript + HTML のツールを作ってみた。
+なんで今更？IE6？
+会社の中では未だに頑固にIE6が標準だーって会社は多いのさ。
+本当は HTML5 + JavaScript で作りたかったけど仕方ない。
+会社のみんなにChromeやFireFoxを強制的にインストールさせるのは面倒だからね。
+要件はある固定長インターフェースファイルを使ったテスト用に、
+テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。  この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
+ついでに皆標準的に入れてるブラウザはIE6。
+ファイル I/O　部位を VBScript に任し、
+他の挙動を JavaScript で制御するのが適当か？
+以下その場合の注意点
+VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)…】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。  これを画面の最下部に常に表記。
+で、まずはFile I/O部のVBScriptコード
+注意点は読み込んだ内容をJavaScriptに渡す場合、
+配列渡しはうまくいかなかったので、
+適当な区切り文字をはさんで渡し、JavaScript側でSpritしたことと、
+動的な配列が定義出来なかったのでReDimとPreserveを多様したこと
+書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&quot;Scripting.FileSystemObject&quot;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile.
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/javascriptvbscriptvbscript-javascript/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/javascriptbookmarklet/">[JavaScript]BookMarklet覚書</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/javascript/">JavaScript</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/javascriptbookmarklet/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/javascripttbodyinnerhtml/">[JavaScript]tbodyのinnerHTML</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/javascript/">JavaScript</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      ちょちょいとした計算ツールを使用するのにJavaScriptは便利だ。
+だが問題がある、IEとFirefoxでは同一のスクリプトが動いたり動かなかったりすることがある。
+今回はtbodyタグに関する話。
+計算結果を表形式で表したい時にHTMLのtableタグを使用する。
+得にtbodyタグの中身を可変編集することはよくするテクニックの一つだ。
+以下のコードを見てもらいたい。
+-–HTML
+-–javaScript
+function main(){
+//HTML上のtbodyを取得
+var tb = document.getElementById(“tableBody”);
+//書き込む内容を作成
+var tbHTML = ‘1hoge’
+ + ‘2hogehoge’;
+tb.innerHTML = tbHTML;
+}
+上記コードはFireFoxやChromeだと動くのだが、
+IEでは動かない。
+ﾅﾝﾃﾞｴｴｴと思って調べてみると。
+**Internet Explorer で **
+PRB エラー設定 table.innerHTML
+<a href="http://support.microsoft.com/kb/239832/ja">http://support.microsoft.com/kb/239832/ja</a>
+tbodyのinnerHTMLは読取り専用だと！
+なのでこう書かないといけない。
+-–javaScript
+function main(){
+//HTML上のtbodyを取得
+var tb = document.getElementById(“tableBody”);
+//DOMオブジェクトを作成
+var tr = document.createElement(‘tr’);
+ var td1 = document.createElement(‘td’);
+ var td2 = document.createElement(‘td’);
+ //作成したオブジェクトを組み合わせてtbodyの中を作成
+ for(var i = 1; i &lt; 3; i++){
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/javascripttbodyinnerhtml/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

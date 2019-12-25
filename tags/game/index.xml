@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>game on callas1900.net</title>
+    <link>/tags/game/</link>
+    <description>Recent content in game on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Wed, 28 Mar 2007 17:56:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FPSとポート開放</title>
+      <link>/posts/fpsfps-pca-aa-wan-p2p-fps-eo-127/</link>
+      <pubDate>Wed, 28 Mar 2007 17:56:00 +0900</pubDate>
+      
+      <guid>/posts/fpsfps-pca-aa-wan-p2p-fps-eo-127/</guid>
+      <description>最近FPSにはまっているのだが、FPSなどのアクションゲームをやる場合一番の敵となるのがラグである。
+例えば私のPCクライアントから銃弾をAという敵に撃った場合
+ 私のクライアントで弾をある座標に向かって撃つというデータが送信される →サーバがその情報を受け取る →Aのキャラクタの位置をAのクライアントからゲットし弾道計算 →私とAのクライアントに結果を返却 →結果に見合った画面表示がなされる。  大まかにはこんな感じだろうか？
+これをWAN内で行うのだから当然通信ラグが発生する。
+Aを撃ったと思ったら明後日の方向に急に現れたなんてこともあるだろう。
+それを解消するためには、「ポートの開放」といったものが必要になってくる。
+このポートの開放だが、昔いけないP2Pソフトなどを起動する際も使用していたのだが、
+実は意味があまりよくわかっていなかった。
+さらに無知を加速させるのに、ポートの開放を自動で行ってくれるフリーソフトまで出回り始めたのだ。
+そこで私はポートの開放に関して考えることをやめた。
+時はたち、オンライン系のプログラムを組むにあたって多少のポートに関する知識が見えてきた。
+だがまだ良く分かっていない。
+頭の中で「ぽ～とのかぃほぅ」が「ポートのカイホウ」になった程度の理解度だ。
+さて、今回FPSで遊ぼうとすると任意のポートを開く必要が出てきた。
+しかもどうやら自動ツールでは私の家の環境。
+（光ファイバーを２階まで無線で飛ばしている）
+だと無理なようだ。
+予想だが、eoから支給されたルーターにさらに無線を飛ばす用のバファローのルーターを入れてるので
+二重ルーターになっていることが原因・・・か？
+そこでいい機会なので色々調べることにした。
+以下はメモ書きみたいなものなので、
+本当の知識ではないことに注意
+ループバックアドレス
+　自分自身のこと127.0.0.1:110
+PID
+　Process ID
+UDP
+　User Datagram Protocol
+TCP
+　Transmission Control Protocol
+※インターネットでは、トランスポート層のプロトコルとしてTCPも使われるが、 UDPは転送速度は高いが信頼性が低く、 TCPは信頼性は高いが転送速度が低い。
+二重ルーターに関して調べてみたらドンピシャなページを発見
+二重ルータ モデム バッファロー PC
+今週は土曜日まで家に帰れないから、週末帰ってから設定だな。
+気になる記事 ハードディスクの物理障害、果たして本当に復旧できるのか？
+～前編～
+[](http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/ &amp;ldquo;http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/&amp;quot;)
+ハードディスクの物理障害、果たして本当に復旧できるのか？
+～後編～
+ハードディスクは消耗品、わかっちゃいるけど忘れてしまう。
+Mozilla，次期ブラウザ「Firefox 3」のアルファ3版を公開，Animated PNG対応など
+http://itpro.nikkeibp.co.jp/article/NEWS/20070328/266587/
+システム開発者向けのリリース開始、
+今年の１１月末には３が正式バージョンでリリースされる予定だそうです。
+（めちゃめちゃはやくないか？）</description>
+    </item>
+    
+    <item>
+      <title>我が家にアレがやってきた</title>
+      <link>/posts/wii-ds-pc/</link>
+      <pubDate>Mon, 29 Jan 2007 15:23:00 +0900</pubDate>
+      
+      <guid>/posts/wii-ds-pc/</guid>
+      <description>我が家にアレがやってきた
+土曜日疲れて実家に帰ると、母親が暴れていました。
+妹も暴れていました。
+父親は不在でした。
+部屋の家具は壁際まで押されて積み上げられ、
+鈍器持つ片手で母親が他の家具を壊そうとしています。
+妹も凶器を持ち、奇声を上げ暴れ回っています。
+その横で私はのんきに晩御飯を電子レンジにつっこみ、
+冷茶を湯のみに入れ、温かいご飯を食べます。
+母親曰く、父親は新しいほうが好きで遠くにいったとのこと
+「お前も暴れてみないか？」と誘われますが、
+暴れている姿は非常に阿呆みたいで、
+はしゃぐ気になれません。
+ご飯を食べ終え、一息つくまでの時間がたっても双方暴れることをやめません。
+そんなに暴れるのが楽しいのか？と
+汗まみれになっている母親から鈍器を取り上げます。
+妹暴れる横で、私も一緒に暴れてみました。
+楽しい。
+暴れることは意外と楽しい。
+無我夢中で暴れ、日ごろの鬱憤を晴らします。
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;(訳
+Wiiを母親がゲットし、
+家に帰ってからずっと食事中横でプレイ
+（居間のテレビが一番大きいので）
+目障りこの上なし、でもやってみると私もはまりましたよ
+そんでもって、今日は筋肉痛ですよっと。
+(後、父親は念願のDSライトをゲットして土曜出張でした、なんだこの家族）
+筋肉痛とPCの排熱で頭がボヘーとしてねみいいいい</description>
+    </item>
+    
+  </channel>
+</rss>
