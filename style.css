@@ -1,0 +1,12 @@
+.post-content h1 {
+    border-style: none none dotted solid;
+    border-color: var(--accent);
+    border-left-width: 5px;
+    border-bottom-width: 3px;
+    padding-left: 10px;
+}
+.post-content h2 {
+    --border: 5px solid var(--accent);
+    border-left: var(--border);
+    padding-left: 10px;
+}

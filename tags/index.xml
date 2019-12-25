@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Wed, 25 Jan 2017 01:20:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blogger</title>
+      <link>/tags/blogger/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blogger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>/tags/git/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>docker</title>
@@ -603,15 +630,6 @@
       <pubDate>Mon, 21 Dec 2009 23:59:00 +0900</pubDate>
       
       <guid>/tags/web/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blogger</title>
-      <link>/tags/blogger/</link>
-      <pubDate>Wed, 21 Oct 2009 00:10:00 +0900</pubDate>
-      
-      <guid>/tags/blogger/</guid>
       <description></description>
     </item>
     

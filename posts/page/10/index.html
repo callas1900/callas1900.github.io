@@ -19,7 +19,7 @@
 
 
 
-
+<link rel="stylesheet" href="/style.css">
 
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
@@ -53,6 +53,7 @@
 
 
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
 
 
 
@@ -132,10 +133,72 @@
 
   
   
-  false
   
   
 
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/jbicspermission/">JBとICSのPermission比較（メーカー署名関係）</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/jb/">JB</a>&nbsp;
+      
+      #<a href="/tags/signature/">signature</a>&nbsp;
+      
+      #<a href="/tags/ics/">ICS</a>&nbsp;
+      
+      #<a href="/tags/android/">Android</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
+注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
+またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
+まず プロテクションレベルの表記が変わっている。
+以前は signatureOrSystem と書かれていた箇所が signature|system に変更。
+また謎の development も追加（詳細がドキュメントされていないので後日調査予定）
+まず ICS と ＪＢ のプロテクションレベルの一覧比較
+ICS
+dangerous signatureOrSystem normal signature  JB
+dangerous signature|system normal signature signature|system|development signatureOrSystem  JB に signatureOrSystem が混じっているのは誤表記にあらず。
+一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。
+次それぞれのプロテクションレベル毎の比較
+JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。
+[signature]  赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
+android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST
+android.permission.NET_ADMIN
+android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS
+android.permission.ASEC_ACCESS
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/jbicspermission/">Read more →</a>
+    </div>
+    
+  </div>
   
   <div class="post on-list">
     <h1 class="post-title">
@@ -261,37 +324,6 @@
     <div>
       <a class="read-more button"
         href="/posts/iso100/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2011/">2011年終了</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/%E5%A4%A7%E6%99%A6%E6%97%A5/">大晦日</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2011/">Read more →</a>
     </div>
     
   </div>

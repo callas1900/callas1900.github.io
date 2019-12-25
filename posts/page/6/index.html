@@ -19,7 +19,7 @@
 
 
 
-
+<link rel="stylesheet" href="/style.css">
 
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
@@ -53,6 +53,7 @@
 
 
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
 
 
 
@@ -132,10 +133,72 @@
 
   
   
-  false
   
   
 
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/microsoft-azure-ubuntu-ssh/">Microsoft Azure で ubuntu サーバー立てて sshで繋いでみる</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/ssh/">ssh</a>&nbsp;
+      
+      #<a href="/tags/ubuntu/">ubuntu</a>&nbsp;
+      
+      #<a href="/tags/azure/">Azure</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      AWSに関しては散々方々で語られているのでAzureに手を出してみた。
+Windowsしか作れないと思ってたらちゃんとubuntuも用意されているし、最近追加された新ビューだとMySQLも作れるようになっている。
+Windows上にsshを入れる（読み飛ばし可） ubuntuに繋げるためにsshが必要、鍵作成にopensslもいるので
+msygitをインストール。
+今後の事を考え、CUIベースのパッケージ管理ソフトが欲しい。
+chocolateyが流行っぽいのでchocolatey経由でmsygitをインストールする。
+chocolatey installation
+<a href="https://github.com/chocolatey/chocolatey/wiki/Installation">https://github.com/chocolatey/chocolatey/wiki/Installation</a>
+作業はPowerShellでやった。成功するとcinstコマンドが認識される。
+msysgitをインストールする
+cinst msysgit でmsysgitをインストールこれでsshもopensslも使える。
+それぞれのコマンドを打てば認識されているのがわかる。
+もし認識されていないようだったらパスが通っていない可能性があるので通す。
+SSHの鍵作成 適当に鍵を作ると、サーバー作成時に以下のエラーが出てサーバー作成に失敗する。
+The certificate is in an invalid format. X.509 standard format in a .cer or .pem file is supported.。
+回避するには以下リンク先の手順通りに鍵を作成する必要がある。
+How to Use SSH with Linux on Azure
+<a href="http://azure.microsoft.com/ja-jp/documentation/articles/virtual-machines-linux-use-ssh-key/">http://azure.microsoft.com/ja-jp/documentation/articles/virtual-machines-linux-use-ssh-key/</a>
+Get OpenSSL on Windowsのセクションに
+msysgitインストールからの手順が書かれている。
+鍵が出来たら、chocolateyのルートディレクトリに.sshがあるので（無ければ作る）
+そこに突っ込んでおく。
+Ubuntuサーバー作成 Azureにubuntuを立てる方法は
+Newメニューを開いてUbuntuを選択し作るだけ（デフォルトでは12系と14系が選べる）、
+UIの画面込みで説明したいけど、すぐUI構成変わりそうなので割愛。
+どこに作ればいいのかは料金表と睨めっこして決める
+料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/microsoft-azure-ubuntu-ssh/">Read more →</a>
+    </div>
+    
+  </div>
   
   <div class="post on-list">
     <h1 class="post-title">
@@ -288,66 +351,6 @@ android.permission.GET_DETAILED_TASKS
     <div>
       <a class="read-more button"
         href="/posts/jbmr243kitkat44permission/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/jbmr142jbmr243permission/">JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/signature/">signature</a>&nbsp;
-      
-      #<a href="/tags/jb_mr1/">JB_MR1</a>&nbsp;
-      
-      #<a href="/tags/4.3/">4.3</a>&nbsp;
-      
-      #<a href="/tags/4.2/">4.2</a>&nbsp;
-      
-      #<a href="/tags/android/">Android</a>&nbsp;
-      
-      #<a href="/tags/jb_mr2/">JB_MR2</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
-前回までのPermission比較は
-ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）  にあります。
-何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
-これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
-メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
-通常出来ません。
-よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
-Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
-JB MR1 と JB MR2 のプロテクションレベルの一覧比較 JB MR1
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  JB MR2
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更はありませんね。
-Permission増減調査(JB MR1(4.2) &gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
-android.permission.BLUETOOTH_STACK
-android.permission.ACCOUNT_MANAGER
-android.permission.HARDWARE_TEST
-android.permission.NET_ADMIN
-android.permission.REMOTE_AUDIO_PLAYBACK
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/jbmr142jbmr243permission/">Read more →</a>
     </div>
     
   </div>

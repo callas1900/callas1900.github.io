@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Tue, 30 Apr 2019 09:32:47 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>お引っ越し</title>
+      <link>/posts/20191225/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/20191225/</guid>
+      <description>ずっとBloggerでmarkdownで書きたいなーとか、Bloggerなんか更新して書きやすくならないかなーとか、思ってた。 思ってもう５年ぐらい経ったけど全然更新されないし、そもそもTwitterとかfacebookやdev.toに大体の事書いてるから別に情報発信の場を考えてないし、というわけでBloggerはおしまいおしまい。長らくありがとうございました。 移行先は色々考えたけど、この具にもつかない日記を未来永劫保管できるところはないよなと考えて、自分のWebページを今年のはじめにHugoで作り変えたことを思い出して、そこでいいじゃないかと。
+移行 とりあえず、一ページごとにこぴーあんどぺーすとなんてやってられないので、BloggerでMarkdownの吐き出しがないかを確認、ない。 次にツールで何か無いかと思ったらドンピシャなものを発見。
+https://github.com/palaniraja/blog2md
+BloggerやWordpressのエクポートをHugo用に変えてくれるnodeのツール。 嫌素晴らしい。多分同じ気持ちだった人だろう。 というわけで、Bloggerからエクスポートして、出てきたxmlをツールに食わせて、終わり終わり。 Tagsとかまできちんと出来てる。
+_index.mdを表示する！ _index.mdとは -&amp;gt; https://bwaycer.github.io/hugo_tutorial.hugo/content/using-index-md/
+hugo って大体メインページが無い感じでした。 大体、ページあけるとブログみたいにずらっと記事一覧が出てくる感じ。 なので、私はブログとかあげず。一枚だけ記事を書きそれをメインページにしてました。 でも、ブログをこっちに移行するからには、一枚ペラのメインページがあって、リンクでPostsを押したら次に記事一覧が出るようにしたい。
+Hugo version up to v0.61.0 前からindexページの話は知ってたのですが、うまく動かなかった。 ところが、Hugoのバージョンアップし上記バージョンまで上げたところ、動くじゃないですか！ きちんと _index.mdを認識して、最初のページを出し、Postsを押すと記事一覧が表示される、いいね！
+terminal theme version up&amp;hellip; ついでにとthemeの方も結構バージョンアップしてたので、あげようかと思ったら、folkしてなんか自作のコード入れてたことを思い出す。 最新のものと見比べると、私が足したコードが追加されていた。 じゃ、もう自作のrepositoryいらないよね。と考え、差し替えてみたところ。 indexページが動かなくなった！なんで！ theme切り戻すと、indexページが復活する。 これは困った。
+investigation#1 meld とりあえず、meldを使って２つのthemeを見比べるが、変更差分が結構あってわからない。 いくつか試してみたが、成果出ず。
+investigation#2 git bisect git bisect があったことを思い出す。 まずは
+hugo server -w でwatch mode でhugo server を起動し、 top page に_index.mdの内容が表示されている元々folkした時のhashを確認、 次に最新のhash値をcheckoutすると記事一覧が表示されることを確認。
+git bisect start git bisect git bisect good a28c65d41178ff39981a3df5b80a7108eec2a1bc git bisect bad 2a34760541f983068786cbe7b2e901fefa357e5d bad の hash値は駄目だったときのもの、good はindexが表示されたもの。</description>
+    </item>
     
     <item>
       <title>Links</title>
@@ -7569,18 +7589,6 @@ EditURIなんてのもある・・・
 むせた
 むせた
 二度と吸うものか・・・・</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/posts/20191224/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/20191224/</guid>
-      <description>https://github.com/palaniraja/blog2md
- git bisect
-git bisect start git bisect git bisect good a28c65d41178ff39981a3df5b80a7108eec2a1bc git bisect bad 2a34760541f983068786cbe7b2e901fefa357e5d git bisect good git bisect bad $ git bisect good 3d20322e3ad506e0110a0f134b043b90534a15fc is the first bad commit commit 3d20322e3ad506e0110a0f134b043b90534a15fc Author: William Sandbrink &amp;lt;wilsandbrink@gmail.com&amp;gt; Date: Wed Aug 14 22:08:50 2019 +0200 fixes broken page list layouts/_default/list.html | 2 +- 1 file changed, 1 insertion(+), 1 deletion(-) layouts/_default/list.html
-- {{ $paginator := .Paginate (where .Data.Pages &amp;#34;Type&amp;#34; $contentTypeName) }} + {{ $paginator := .</description>
     </item>
     
   </channel>

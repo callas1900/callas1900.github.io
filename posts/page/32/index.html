@@ -19,7 +19,7 @@
 
 
 
-
+<link rel="stylesheet" href="/style.css">
 
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
@@ -53,6 +53,7 @@
 
 
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
 
 
 
@@ -132,10 +133,40 @@
 
   
   
-  false
   
   
 
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/se-pgse-se-se-pg-se-pgse-se-pgse-pg/">PG vs SE</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/se-pgse-se-se-pg-se-pgse-se-pgse-pg/">Read more →</a>
+    </div>
+    
+  </div>
   
   <div class="post on-list">
     <h1 class="post-title">
@@ -294,63 +325,6 @@ if (major_ver &gt; 7) {
     <div>
       <a class="read-more button"
         href="/posts/xxxxaaaabbbb-0-xxxx-100-100-0-zero/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/fameactionscript-xml-macromediafalsh/">[Flash]FAME環境でXML読み込み</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/flash/">Flash</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      FAMEでActionScriptを書こうとすると色々と不便なことがある。
-（まだまだ開発されたての環境なので致し方ないが）
-さて先日ある案件でXMLデータを読みこんで処理したいといった内容があったのだが、
-いかんせん、MacromediaFalshのように簡易的に書くとコンパイルエラーで落ちてしまう。
-また、XMLでの検索は面度なのでActionScript用のJSONクラスを用意しても
-JSONクラスで落ちてしまう。
-結局手書きでやることにした。
-作業の流れとしては
-XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload  XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
-さて実際に以下に書いてみましょう。
-XMLデータ内容   ActionScript内容  //XMLインスタンス作成
-var my_xml :XML = new XML();
-// 改行などを無視
-my_xml.ignoreWhite = true;
-//onLoadのイベントハンドラにfunctionを設定
-my_xml.onLoad =
-function(success) {
-if (success) {
-my_xml = this;
-// XMLエレメントの取得
-var my_xmlnode :XMLNode = my_xml.firstChild;
-var name :String = “&quot;;
-var url :String = “&quot;;
-var i :Number = 0;
-while ( my_xmlnode.
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/fameactionscript-xml-macromediafalsh/">Read more →</a>
     </div>
     
   </div>
