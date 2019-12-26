@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>/posts/20191225/</loc>
+    <lastmod>2019-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2019-12-25T00:00:00+00:00</lastmod>
   </url>
@@ -33,23 +38,8 @@
   </url>
   
   <url>
-    <loc>/posts/20191225/</loc>
-    <lastmod>2019-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/links/</loc>
-    <lastmod>2019-04-30T09:32:47+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/posts/20190419/</loc>
     <lastmod>2019-04-29T20:53:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1668,7 +1658,19 @@
   </url>
   
   <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/links/</loc>
+  </url>
+  
+  <url>
+    <loc>/quotes/</loc>
   </url>
   
 </urlset>

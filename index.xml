@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>お引っ越し</title>
+      <title>Bloggerからお引っ越し</title>
       <link>/posts/20191225/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       
@@ -30,15 +30,6 @@ investigation#1 meld とりあえず、meldを使って２つのthemeを見比�
 investigation#2 git bisect git bisect があったことを思い出す。 まずは
 hugo server -w でwatch mode でhugo server を起動し、 top page に_index.mdの内容が表示されている元々folkした時のhashを確認、 次に最新のhash値をcheckoutすると記事一覧が表示されることを確認。
 git bisect start git bisect git bisect good a28c65d41178ff39981a3df5b80a7108eec2a1bc git bisect bad 2a34760541f983068786cbe7b2e901fefa357e5d bad の hash値は駄目だったときのもの、good はindexが表示されたもの。</description>
-    </item>
-    
-    <item>
-      <title>Links</title>
-      <link>/links/</link>
-      <pubDate>Tue, 30 Apr 2019 09:32:47 +0900</pubDate>
-      
-      <guid>/links/</guid>
-      <description>General  twitter blogger  Dev  dev.to github  Photograph  Unsplash Instagram Flickr  Recording  MyAnimeList bookmeter  Running  strava  </description>
     </item>
     
     <item>
@@ -61,16 +52,6 @@ git bisect start git bisect git bisect good a28c65d41178ff39981a3df5b80a7108eec2
 両国 実は息子と一番楽しみにしていたプレゼン。息子はなんとなく両国に行きたいみたいです。まだ十分な情報がない中、模試のために志望校を書く必要が有り各校のWEBページを見て一番気に入ったのが両国。だがしかし、とりあえず今回のところ、今回のプレゼンに限ってだけど一番内容がひどかった。まずプレゼン対象がブレブレ。何を主題にしているのかわからない。他の学校が六年間をどういう教育戦略でやっていくのか、また戦略に対しての特徴的な戦術としてどういったイベントをやっているかの紹介なのに、両国の特徴で印象に残ったのは、区内どこからでも３０分で通学可能。うーん。。。このプレゼンが悪かったから両国が悪いわけじゃないとはわかっているけど、息子と私の中ではかなり評価が下がりました。
 白鴎 一番期待してなかったというと凄く失礼ですが、元女子高ということもあるし、あまり私と息子の中では順位が上がっていなかった。これもプレゼンの影響だと思うけどわかりやすい内容の説明で何をしたいのかが明確で、小石川か白鴎どちらがいいのかと息子と話し合いが起きるぐらい評価が上がった。ただ残念だったのがダイバシティ教育の話をしたあとに、生徒が自分で決めて制服のスカート丈を同じにしている事を、誇らしげに語っていたところ。生徒が自分で決めることは良いことで、制服を否定する気も全く無くて、ただしダイバシティ教育の結果としてそこはどうなの？服だけで多様性を表せるわけでもなく、制服だろうがダイバシティが出来ないわけはないが、うーん。と疑問が残る終わり方になりました。
 終わり パネルディスカッションは来年見てみたい、来年はパネルディスカッションと生徒発表だけでもいいかもしれない。後から時間割見て気づいたけど、相対的に評価が低かった九段と両国は丁度パネルディスカッション中で一番の話が上手い人がパネルディスカッションに取られていた可能性がある。子供と行くことで子供側も結構影響を受けていたので来年も行ってみようと思っています。</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>とりあえずのページ
-This page is the webpage of mine. no meaning, no purpose, just putting on the web.</description>
     </item>
     
     <item>
@@ -7589,6 +7570,38 @@ EditURIなんてのもある・・・
 むせた
 むせた
 二度と吸うものか・・・・</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>とりあえずのページ
+This page is the webpage of mine. no meaning, no purpose, just putting on the web.</description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/links/</guid>
+      <description>General  twitter blogger  Dev  dev.to github  Photograph  Unsplash Instagram Flickr  Recording  MyAnimeList bookmeter  Running  strava  </description>
+    </item>
+    
+    <item>
+      <title>Quortes</title>
+      <link>/quotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/quotes/</guid>
+      <description>個人的に好きな言葉あつめ  あらゆるものを見聞きし頭の中に天下をおさめて
+しかも　それらをすっかり忘れて戻ってまいりましたあーーーーッ
+ 蒼天航路より
+荀彧文若が放浪の旅より曹操のもとに戻ってきた時の台詞
+ </description>
     </item>
     
   </channel>
