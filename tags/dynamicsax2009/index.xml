@@ -14,10 +14,10 @@
     
     <item>
       <title>[DynamicsAX2009]Admin グループの権限が外れた場合の対処方法</title>
-      <link>/posts/dynamicsax2009admin/</link>
+      <link>/posts/2010/05/13/dynamicsax2009admin-%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E6%A8%A9%E9%99%90%E3%81%8C%E5%A4%96%E3%82%8C%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AE%E5%AF%BE%E5%87%A6%E6%96%B9%E6%B3%95/</link>
       <pubDate>Thu, 13 May 2010 21:58:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009admin/</guid>
+      <guid>/posts/2010/05/13/dynamicsax2009admin-%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E6%A8%A9%E9%99%90%E3%81%8C%E5%A4%96%E3%82%8C%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AE%E5%AF%BE%E5%87%A6%E6%96%B9%E6%B3%95/</guid>
       <description>DynamicsAxにはデフォルトで管理者グループ「Admin」が存在します。
 Adminは全ての画面・機能へのアクセス権限を持ち、それを修正することは出来ません。
 しかしながら、開発時DBの差し替え、aodファイルによる定義差し替え等によって
@@ -38,10 +38,10 @@ Setupセクション User group permissions を起動。
     
     <item>
       <title>[DynamicsAX2009]AIFファイル上限値とその解除</title>
-      <link>/posts/dynamicsax2009aif/</link>
+      <link>/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/</link>
       <pubDate>Fri, 07 May 2010 18:07:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009aif/</guid>
+      <guid>/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/</guid>
       <description>デフォルト上限値の設定とエラー内容 DynamicsAXのAIFは外部ファイルとのやり取りを行うインターフェースの一つです。
 外部ファイルとのやり取り時、明示されてはいませんがファイルサイズの上限値があります。
 デフォルトでは10MBに設定されています。
@@ -64,10 +64,10 @@ For more information, see Help and Support Center at http://go.microsoft.com/fwl
     
     <item>
       <title>[DynamicsAX2009]DocumentServiceClassのアップデート</title>
-      <link>/posts/dynamicsax2009documentserviceclass/</link>
+      <link>/posts/2010/03/19/dynamicsax2009documentserviceclass%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/</link>
       <pubDate>Fri, 19 Mar 2010 02:33:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009documentserviceclass/</guid>
+      <guid>/posts/2010/03/19/dynamicsax2009documentserviceclass%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/</guid>
       <description>AIFサービスのベースになっているテーブルの定義変更をした場合に
 DocumentServiceClassのアップデートを行わなければならない。
 Query復元 AOTのQueryオブジェクト上で **Restore **を実行
@@ -86,10 +86,10 @@ Regenerate data object classes にのみチェックを入れる。</description
     
     <item>
       <title>[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事</title>
-      <link>/posts/dynamicsax2009axtabledb6/</link>
+      <link>/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/</link>
       <pubDate>Mon, 08 Mar 2010 00:23:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009axtabledb6/</guid>
+      <guid>/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/</guid>
       <description>DynamicsAXで開発をしていたり、
 AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。
 その場合にやるべき6つのことを書いておく。
@@ -118,10 +118,10 @@ C:\Users\\AppData\Local
     
     <item>
       <title>[DynamicsAX2009][X&#43;&#43;]安全なクラスキャストとシステム日付</title>
-      <link>/posts/dynamicsax2009x/</link>
+      <link>/posts/2010/02/11/dynamicsax2009x-%E5%AE%89%E5%85%A8%E3%81%AA%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%97%A5%E4%BB%98/</link>
       <pubDate>Thu, 11 Feb 2010 14:02:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009x/</guid>
+      <guid>/posts/2010/02/11/dynamicsax2009x-%E5%AE%89%E5%85%A8%E3%81%AA%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%97%A5%E4%BB%98/</guid>
       <description>X++の小技を自分メモ用に紹介。
 X++に対してgoogle-code-prettifyがうまく動作するか不安だがやってみる。
  安全なクラスキャスト システム日付  [](http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016)安全なクラスキャスト static pulic void main(Args \_args) { binaryIO b; textIO t; ; b = SysDictClass::as(t,classIdGet(b)); } ちなみにObjectを使用して安全でないクラスキャストもできる。
@@ -132,10 +132,10 @@ void method1() { utcDateTime utc; Date d; ; utc = DateTimeUtil::applyTimeZoneOff
     
     <item>
       <title>[DynamicsAX2009]AIFの実行環境設定</title>
-      <link>/posts/dynamicsax2009aif_1262/</link>
+      <link>/posts/2010/01/21/dynamicsax2009aif%E3%81%AE%E5%AE%9F%E8%A1%8C%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</link>
       <pubDate>Thu, 21 Jan 2010 00:49:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009aif_1262/</guid>
+      <guid>/posts/2010/01/21/dynamicsax2009aif%E3%81%AE%E5%AE%9F%E8%A1%8C%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</guid>
       <description>AIFの実行環境設定 AXのBasicメニューより以下を設定する。
  AIFの実行環境設定  Local endpoints設定 Transport adapters設定 Channels設定  File System Adapter BizTalk Adapter   Endpoints設定  Data policies設定 Endpoint有効化      Local endpoints設定 会社毎にLocal endpointsを設定する。
 Local endpointsはI/Oを許可した会社の別名と考えれられる。
@@ -163,10 +163,10 @@ Inboundの場合は対応するOutboundを、</description>
     
     <item>
       <title>[DynamicsAX2009]X&#43;&#43;でよく使う型とそのスコープのまとめ</title>
-      <link>/posts/dynamicsax2009x_16/</link>
+      <link>/posts/2010/01/16/dynamicsax2009x-%E3%81%A7%E3%82%88%E3%81%8F%E4%BD%BF%E3%81%86%E5%9E%8B%E3%81%A8%E3%81%9D%E3%81%AE%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sat, 16 Jan 2010 16:45:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009x_16/</guid>
+      <guid>/posts/2010/01/16/dynamicsax2009x-%E3%81%A7%E3%82%88%E3%81%8F%E4%BD%BF%E3%81%86%E5%9E%8B%E3%81%A8%E3%81%9D%E3%81%AE%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>X++でよく使う型とそのスコープのまとめ 時々質問が飛んでくるので、メモ。
 標準的な型 型
 スコープ
@@ -220,10 +220,10 @@ xsd:time , ISO format:HH:MM:SS</description>
     
     <item>
       <title>[DynamicsAX2009]DynamicsAXの用語整理</title>
-      <link>/posts/dynamicsax2009dynamicsax/</link>
+      <link>/posts/2010/01/14/dynamicsax2009dynamicsax%E3%81%AE%E7%94%A8%E8%AA%9E%E6%95%B4%E7%90%86/</link>
       <pubDate>Thu, 14 Jan 2010 12:58:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009dynamicsax/</guid>
+      <guid>/posts/2010/01/14/dynamicsax2009dynamicsax%E3%81%AE%E7%94%A8%E8%AA%9E%E6%95%B4%E7%90%86/</guid>
       <description>Dynamics AXのお仕事の最初の頃の、
 皆がAXって何よ？って感じだったころ、
 打ち合わせの会話は適度にカオスっていた。

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Oracle 10g Express Edition でチト困った :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Oracle 10g Express Edition　は
+ AL32UTF8 WE8MSWIN1252  のみのCHARACTER SETしか使用できない
+資料：
+Oracle® Database Express Edition
+10 Oracle Database XE Character and Language Configurations
+これで非常に困った。
+現在数社で連携をとってＷｅｂアプリを開発しているのだけど、
+他社が作った機能の検証用テストデータとしてINSERT文が書かれたSQLファイルを送付してもらった。
+いざINSERTしてみると、
+ORA-12899:
+列&amp;quot;hoge&amp;rdquo;.&amp;ldquo;foo&amp;rdquo;.&amp;ldquo;bar&amp;quot;の値が大きすぎます
+(実際: 60、最大: 40)
+とOracleに怒られ、データが入らない箇所がある。
+慌てて文字数をカウントしたが、データに間違いはない。
+これはなんだ？と思ったところで、
+思い当たったのが、DBモデルのバージョンが違うのではないか？ということ
+誤解を招く言い方かもしれないので補足を書くと、
+上記の違いとはDBのバージョンが違うという意味ではない、
+今回のプロジェクトでは（あってはならないことなんだけども）、
+客先要求の追加などで、テーブルの名前が変わったり、テーブル自体が消えてたりなどの数回のモデルチェンジが行われているのだ。
+そして何度かデータの最大文字数も変更されている。
+数社で連携をとって開発している中でのモデルチェンジだったので、
+もしかしたら各社でバージョンが違うのではないのか？
+そのバージョンでは文字数定義が違うのではないか？と思った。
+細かい敬意を省くために結果を述べると**「モデルのバージョンは同じ」**だった。
+原因は弊社と他社のDBの差にあったのだ。
+私の会社ではWindows版のOracle10gサーバーが見つからなかったので、
+他社検証用として急いでOracle10g Express Editionを導入した。
+無料で使える10gということでワクワクしながら環境構築していったのだが、
+構築過程でサービス名が一つしか設定できないことを知る。
+まぁこれは、今回プロジェクト限りで潰してもいいDBなので、問題はない。
+それから上記の問題の発生である。
+XEのインストールウィザードで文字コードの選択が出てこなかったので考えてなかったのだけど
+（浅薄だなぁ・・・）
+文字コードの差が問題だということが結果としてわかった。
+現在Oracle10g正式版は何種類かの文字コードをカバーしている。
+そしてデフォルトインストールすると、文字コードは**SHIFT_JIS（JA16SJIS）**になるのだが、
+10gXEは**UTF8（AL32UTF8）**がデフォルトだ、
+仕様書 を見ると、WE8MSWIN1252というコードも選択出来るそうなのだがこの文字コード自体初見である。
+じゃあ、何が困るのか？
+プログラマな人はとっくに原因なんて分かっていると思うけど、
+プログラマじゃない人も世の中にはいるわけで・・・説明を続けると、
+どうやら今回のプロジェクトにおいて10gを使用している所はすべてSHIFT_JISで設計されている。
+（日本国内のイントラネット的なＷｅｂシステムなのでこれはまぁ、いいんじゃないかな･･･怒る人もいるだろうけど）
+そうすると型VARCHAR2での日本語全角20文字MAX文字数の設計のは
+VARCHAR2 = 40[Byte]"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Oracle 10g Express Edition でチト困った :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="Oracle 10g Express Edition　は
+ AL32UTF8 WE8MSWIN1252  のみのCHARACTER SETしか使用できない
+資料：
+Oracle® Database Express Edition
+10 Oracle Database XE Character and Language Configurations
+これで非常に困った。
+現在数社で連携をとってＷｅｂアプリを開発しているのだけど、
+他社が作った機能の検証用テストデータとしてINSERT文が書かれたSQLファイルを送付してもらった。
+いざINSERTしてみると、
+ORA-12899:
+列&amp;quot;hoge&amp;rdquo;.&amp;ldquo;foo&amp;rdquo;.&amp;ldquo;bar&amp;quot;の値が大きすぎます
+(実際: 60、最大: 40)
+とOracleに怒られ、データが入らない箇所がある。
+慌てて文字数をカウントしたが、データに間違いはない。
+これはなんだ？と思ったところで、
+思い当たったのが、DBモデルのバージョンが違うのではないか？ということ
+誤解を招く言い方かもしれないので補足を書くと、
+上記の違いとはDBのバージョンが違うという意味ではない、
+今回のプロジェクトでは（あってはならないことなんだけども）、
+客先要求の追加などで、テーブルの名前が変わったり、テーブル自体が消えてたりなどの数回のモデルチェンジが行われているのだ。
+そして何度かデータの最大文字数も変更されている。
+数社で連携をとって開発している中でのモデルチェンジだったので、
+もしかしたら各社でバージョンが違うのではないのか？
+そのバージョンでは文字数定義が違うのではないか？と思った。
+細かい敬意を省くために結果を述べると**「モデルのバージョンは同じ」**だった。
+原因は弊社と他社のDBの差にあったのだ。
+私の会社ではWindows版のOracle10gサーバーが見つからなかったので、
+他社検証用として急いでOracle10g Express Editionを導入した。
+無料で使える10gということでワクワクしながら環境構築していったのだが、
+構築過程でサービス名が一つしか設定できないことを知る。
+まぁこれは、今回プロジェクト限りで潰してもいいDBなので、問題はない。
+それから上記の問題の発生である。
+XEのインストールウィザードで文字コードの選択が出てこなかったので考えてなかったのだけど
+（浅薄だなぁ・・・）
+文字コードの差が問題だということが結果としてわかった。
+現在Oracle10g正式版は何種類かの文字コードをカバーしている。
+そしてデフォルトインストールすると、文字コードは**SHIFT_JIS（JA16SJIS）**になるのだが、
+10gXEは**UTF8（AL32UTF8）**がデフォルトだ、
+仕様書 を見ると、WE8MSWIN1252というコードも選択出来るそうなのだがこの文字コード自体初見である。
+じゃあ、何が困るのか？
+プログラマな人はとっくに原因なんて分かっていると思うけど、
+プログラマじゃない人も世の中にはいるわけで・・・説明を続けると、
+どうやら今回のプロジェクトにおいて10gを使用している所はすべてSHIFT_JISで設計されている。
+（日本国内のイントラネット的なＷｅｂシステムなのでこれはまぁ、いいんじゃないかな･･･怒る人もいるだろうけど）
+そうすると型VARCHAR2での日本語全角20文字MAX文字数の設計のは
+VARCHAR2 = 40[Byte]" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Oracle 10g Express Edition でチト困った :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="Oracle 10g Express Edition　は
+ AL32UTF8 WE8MSWIN1252  のみのCHARACTER SETしか使用できない
+資料：
+Oracle® Database Express Edition
+10 Oracle Database XE Character and Language Configurations
+これで非常に困った。
+現在数社で連携をとってＷｅｂアプリを開発しているのだけど、
+他社が作った機能の検証用テストデータとしてINSERT文が書かれたSQLファイルを送付してもらった。
+いざINSERTしてみると、
+ORA-12899:
+列&amp;quot;hoge&amp;rdquo;.&amp;ldquo;foo&amp;rdquo;.&amp;ldquo;bar&amp;quot;の値が大きすぎます
+(実際: 60、最大: 40)
+とOracleに怒られ、データが入らない箇所がある。
+慌てて文字数をカウントしたが、データに間違いはない。
+これはなんだ？と思ったところで、
+思い当たったのが、DBモデルのバージョンが違うのではないか？ということ
+誤解を招く言い方かもしれないので補足を書くと、
+上記の違いとはDBのバージョンが違うという意味ではない、
+今回のプロジェクトでは（あってはならないことなんだけども）、
+客先要求の追加などで、テーブルの名前が変わったり、テーブル自体が消えてたりなどの数回のモデルチェンジが行われているのだ。
+そして何度かデータの最大文字数も変更されている。
+数社で連携をとって開発している中でのモデルチェンジだったので、
+もしかしたら各社でバージョンが違うのではないのか？
+そのバージョンでは文字数定義が違うのではないか？と思った。
+細かい敬意を省くために結果を述べると**「モデルのバージョンは同じ」**だった。
+原因は弊社と他社のDBの差にあったのだ。
+私の会社ではWindows版のOracle10gサーバーが見つからなかったので、
+他社検証用として急いでOracle10g Express Editionを導入した。
+無料で使える10gということでワクワクしながら環境構築していったのだが、
+構築過程でサービス名が一つしか設定できないことを知る。
+まぁこれは、今回プロジェクト限りで潰してもいいDBなので、問題はない。
+それから上記の問題の発生である。
+XEのインストールウィザードで文字コードの選択が出てこなかったので考えてなかったのだけど
+（浅薄だなぁ・・・）
+文字コードの差が問題だということが結果としてわかった。
+現在Oracle10g正式版は何種類かの文字コードをカバーしている。
+そしてデフォルトインストールすると、文字コードは**SHIFT_JIS（JA16SJIS）**になるのだが、
+10gXEは**UTF8（AL32UTF8）**がデフォルトだ、
+仕様書 を見ると、WE8MSWIN1252というコードも選択出来るそうなのだがこの文字コード自体初見である。
+じゃあ、何が困るのか？
+プログラマな人はとっくに原因なんて分かっていると思うけど、
+プログラマじゃない人も世の中にはいるわけで・・・説明を続けると、
+どうやら今回のプロジェクトにおいて10gを使用している所はすべてSHIFT_JISで設計されている。
+（日本国内のイントラネット的なＷｅｂシステムなのでこれはまぁ、いいんじゃないかな･･･怒る人もいるだろうけど）
+そうすると型VARCHAR2での日本語全角20文字MAX文字数の設計のは
+VARCHAR2 = 40[Byte]" />
+<meta property="og:url" content="/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/" />
+<meta property="og:site_name" content="Oracle 10g Express Edition でチト困った" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2007-12-06 11:22:00 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/">Oracle 10g Express Edition でチト困った</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2007-12-06
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/oracle/">Oracle</a>&nbsp;
+    
+    #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>Oracle 10g Express Edition　は</p>
+<ul>
+<li><strong>AL32UTF8</strong></li>
+<li><strong>WE8MSWIN1252</strong></li>
+</ul>
+<p>のみのCHARACTER SETしか使用できない</p>
+<p>資料：<br>
+<strong>Oracle® Database Express Edition</strong><br>
+<a href="http://download-west.oracle.com/docs/cd/B25329_01/doc/install.102/b25143/toc.htm#BABJACJJ" title="10 Oracle Database XE Character and Language Configurations"><strong>10 Oracle Database XE Character and Language Configurations</strong></a></p>
+<p>これで非常に困った。</p>
+<p>現在数社で連携をとってＷｅｂアプリを開発しているのだけど、<br>
+他社が作った機能の検証用テストデータとしてINSERT文が書かれたSQLファイルを送付してもらった。</p>
+<p>いざINSERTしてみると、</p>
+<p>ORA-12899:<br>
+列&quot;hoge&rdquo;.&ldquo;foo&rdquo;.&ldquo;bar&quot;の値が大きすぎます<br>
+(実際: 60、最大: 40)</p>
+<p>とOracleに怒られ、データが入らない箇所がある。</p>
+<p>慌てて文字数をカウントしたが、データに間違いはない。</p>
+<p>これはなんだ？と思ったところで、<br>
+思い当たったのが、DBモデルのバージョンが違うのではないか？ということ</p>
+<p>誤解を招く言い方かもしれないので補足を書くと、<br>
+上記の違いとはDBのバージョンが違うという意味ではない、<br>
+今回のプロジェクトでは（あってはならないことなんだけども）、<br>
+客先要求の追加などで、テーブルの名前が変わったり、テーブル自体が消えてたりなどの数回のモデルチェンジが行われているのだ。</p>
+<p>そして何度かデータの最大文字数も変更されている。</p>
+<p>数社で連携をとって開発している中でのモデルチェンジだったので、<br>
+もしかしたら各社でバージョンが違うのではないのか？<br>
+そのバージョンでは文字数定義が違うのではないか？と思った。</p>
+<p>細かい敬意を省くために結果を述べると**「モデルのバージョンは同じ」**だった。</p>
+<p>原因は弊社と他社のDBの差にあったのだ。</p>
+<p>私の会社ではWindows版のOracle10gサーバーが見つからなかったので、<br>
+他社検証用として急いでOracle10g Express Editionを導入した。</p>
+<p>無料で使える10gということでワクワクしながら環境構築していったのだが、<br>
+構築過程でサービス名が一つしか設定できないことを知る。</p>
+<p>まぁこれは、今回プロジェクト限りで潰してもいいDBなので、問題はない。</p>
+<p>それから上記の問題の発生である。<br>
+XEのインストールウィザードで文字コードの選択が出てこなかったので考えてなかったのだけど<br>
+（浅薄だなぁ・・・）</p>
+<p>文字コードの差が問題だということが結果としてわかった。</p>
+<p>現在Oracle10g正式版は何種類かの文字コードをカバーしている。<br>
+そしてデフォルトインストールすると、文字コードは**SHIFT_JIS（JA16SJIS）**になるのだが、</p>
+<p>10gXEは**UTF8（AL32UTF8）**がデフォルトだ、<br>
+<a href="http://download-west.oracle.com/docs/cd/B25329_01/doc/install.102/b25143/toc.htm#BABJACJJ" title="仕様書">仕様書</a> を見ると、<strong>WE8MSWIN1252</strong>というコードも選択出来るそうなのだがこの文字コード自体初見である。</p>
+<p>じゃあ、何が困るのか？</p>
+<p>プログラマな人はとっくに原因なんて分かっていると思うけど、<br>
+プログラマじゃない人も世の中にはいるわけで・・・説明を続けると、</p>
+<p>どうやら今回のプロジェクトにおいて10gを使用している所はすべて<strong>SHIFT_JIS</strong>で設計されている。<br>
+（日本国内のイントラネット的なＷｅｂシステムなのでこれはまぁ、いいんじゃないかな･･･怒る人もいるだろうけど）</p>
+<p>そうすると型<strong>VARCHAR2</strong>での日本語全角20文字MAX文字数の設計のは</p>
+<p>VARCHAR2 = 40[Byte]</p>
+<p>これは日本語の出力には<strong>2byte分のデータ</strong>が必要なので文字数２倍としただけである。</p>
+<p>さて、DBのCHARACTER SETが<strong>UTF8</strong>だった場合。<br>
+日本語全角20文字は</p>
+<p>VARCHAR2 = 60[byte]</p>
+<p>となる。<strong>UTF8</strong>はマルチバイト文字であり、<br>
+多言語をカバーするため1byte文字以外の出力に<strong>2～6byte分のデータ</strong>が必要になる。<br>
+日本語の全角文字に必要なデータは<strong>3byte</strong>である。<br>
+よって文字数３倍とした。</p>
+<p>さて、私は<strong>10gXEと10g正式版の違いを意識せずに</strong>提供されたCreateTable文を走らせた。</p>
+<p>条件は揃ったので、最初の問題に戻ろう。</p>
+<p><strong>SHIFT_JIS</strong>で設計されたテーブルデータを<strong>UTF8</strong>の<strong>10gXE</strong>にCreateし、<br>
+全角20文字のDBのフィールド用に作られたテストデータをINSERT文で突っ込むと、</p>
+<p>DB側は設計上<strong>VARChAR2（40byte）<strong>という情報と、<br>
+入力された</strong>全角20文字のテストデータ</strong>を見比べて</p>
+<p><strong>全角20文字を60byteデータと解釈</strong>し、入力者側に</p>
+<p>ORA-12899:<br>
+列&quot;hoge&rdquo;.&ldquo;foo&rdquo;.&ldquo;bar&quot;の値が大きすぎます<br>
+(実際: 60、最大: 40)</p>
+<p>というエラーを返す。</p>
+<p>結論　：　こっちが悪い。</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2008/05/20/macbootcamp%E7%B5%82%E7%84%89%E3%81%AE%E6%97%A5/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[Mac]BootCamp終焉の日</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2007/12/05/toolcvs-for-nt-2.5.03%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/">
+          <span class="button__text">[Tool]CVS for NT 2.5.03インストールメモ</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

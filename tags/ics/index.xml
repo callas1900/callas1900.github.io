@@ -14,10 +14,10 @@
     
     <item>
       <title>JBとICSのPermission比較（メーカー署名関係）</title>
-      <link>/posts/jbicspermission/</link>
+      <link>/posts/2012/08/13/jb%E3%81%A8ics%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Mon, 13 Aug 2012 09:00:00 +0900</pubDate>
       
-      <guid>/posts/jbicspermission/</guid>
+      <guid>/posts/2012/08/13/jb%E3%81%A8ics%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
  注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
  またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
@@ -47,10 +47,10 @@ android.permission.ASEC_ACCESS</description>
     
     <item>
       <title>ICSとGingerbreadのPermission比較（メーカー署名関係）</title>
-      <link>/posts/icsgingerbreadpermission/</link>
+      <link>/posts/2011/11/28/ics%E3%81%A8gingerbread%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Mon, 28 Nov 2011 13:45:00 +0900</pubDate>
       
-      <guid>/posts/icsgingerbreadpermission/</guid>
+      <guid>/posts/2011/11/28/ics%E3%81%A8gingerbread%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>ICSのテストをしていると、前まで動いていたところでSecurityExceptionをはきました。
 端末不具合かソースが変わったのかを調べる為に
 公開されているICS(Android 4.0)とGingerbread(Android 2.3.3)のAndroidManifest.xmlを比較してみました。

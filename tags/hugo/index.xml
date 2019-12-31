@@ -14,10 +14,10 @@
     
     <item>
       <title>Bloggerからお引っ越し</title>
-      <link>/posts/20191225/</link>
+      <link>/posts/2019/12/25/blogger%E3%81%8B%E3%82%89%E3%81%8A%E5%BC%95%E3%81%A3%E8%B6%8A%E3%81%97/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/20191225/</guid>
+      <guid>/posts/2019/12/25/blogger%E3%81%8B%E3%82%89%E3%81%8A%E5%BC%95%E3%81%A3%E8%B6%8A%E3%81%97/</guid>
       <description>ずっとBloggerでmarkdownで書きたいなーとか、Bloggerなんか更新して書きやすくならないかなーとか、思ってた。 思ってもう５年ぐらい経ったけど全然更新されないし、そもそもTwitterとかfacebookやdev.toに大体の事書いてるから別に情報発信の場を考えてないし、というわけでBloggerはおしまいおしまい。長らくありがとうございました。 移行先は色々考えたけど、この具にもつかない日記を未来永劫保管できるところはないよなと考えて、自分のWebページを今年のはじめにHugoで作り変えたことを思い出して、そこでいいじゃないかと。
 移行 とりあえず、一ページごとにこぴーあんどぺーすとなんてやってられないので、BloggerでMarkdownの吐き出しがないかを確認、ない。 次にツールで何か無いかと思ったらドンピシャなものを発見。
 https://github.com/palaniraja/blog2md

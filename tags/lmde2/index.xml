@@ -14,10 +14,10 @@
     
     <item>
       <title>LMDE2とデュアルブートしているwindows 7 を 10 にアップグレードする</title>
-      <link>/posts/lmde2windows-7-10/</link>
+      <link>/posts/2016/02/18/lmde2%E3%81%A8%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%96%E3%83%BC%E3%83%88%E3%81%97%E3%81%A6%E3%81%84%E3%82%8Bwindows-7-%E3%82%92-10-%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</link>
       <pubDate>Thu, 18 Feb 2016 01:57:00 +0900</pubDate>
       
-      <guid>/posts/lmde2windows-7-10/</guid>
+      <guid>/posts/2016/02/18/lmde2%E3%81%A8%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%96%E3%83%BC%E3%83%88%E3%81%97%E3%81%A6%E3%81%84%E3%82%8Bwindows-7-%E3%82%92-10-%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</guid>
       <description>結論から言うと、特に何も問題なく、あっさりアップグレードできました。
 参考にしたのは以下のページ
 How to Upgrade a Linux Dual-Boot System to Windows 10
@@ -36,10 +36,10 @@ Windows 10 アップグレード後、GRUB2 への影響 何もありません�
     
     <item>
       <title>LMDE2のNVIDIA Driverを更新する</title>
-      <link>/posts/lmde2nvidia-driver/</link>
+      <link>/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/</link>
       <pubDate>Thu, 14 Jan 2016 00:28:00 +0900</pubDate>
       
-      <guid>/posts/lmde2nvidia-driver/</guid>
+      <guid>/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/</guid>
       <description>LMDE2 に NVIDIA のグラフィックドライバを入れます。
  Inspect your graphic board Download a driver Installer Prepare Installation Installation  Inspect your graphic board terminalで
 lspci -vnn | grep VGA -A 12 Download a driver Installer NVIDIAの公式サイトからLinux X64用のDriver Installerを手に入れます。

@@ -14,10 +14,10 @@
     
     <item>
       <title>[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処</title>
-      <link>/posts/wlcompile/</link>
+      <link>/posts/2007/10/23/anteclipseweblogicant%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A7%E3%81%93%E3%81%91%E3%82%8B%E6%99%82%E3%81%AE%E5%AF%BE%E5%87%A6/</link>
       <pubDate>Tue, 23 Oct 2007 22:30:00 +0900</pubDate>
       
-      <guid>/posts/wlcompile/</guid>
+      <guid>/posts/2007/10/23/anteclipseweblogicant%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A7%E3%81%93%E3%81%91%E3%82%8B%E6%99%82%E3%81%AE%E5%AF%BE%E5%87%A6/</guid>
       <description>仕事の備忘録メモ
 Weblogic92を使用し、
 JREにJRockitを使いIDEをEclipse3.2にした場合
@@ -33,10 +33,10 @@ the usual solutions are to read the manual pages then download andinstall needed
     
     <item>
       <title>[Eclipse][Flash]フリーなFLASH　FAME!</title>
-      <link>/posts/flashfame-fame-flash-fame-fame-f/</link>
+      <link>/posts/2007/02/23/eclipseflash%E3%83%95%E3%83%AA%E3%83%BC%E3%81%AAflash-fame/</link>
       <pubDate>Fri, 23 Feb 2007 19:15:00 +0900</pubDate>
       
-      <guid>/posts/flashfame-fame-flash-fame-fame-f/</guid>
+      <guid>/posts/2007/02/23/eclipseflash%E3%83%95%E3%83%AA%E3%83%BC%E3%81%AAflash-fame/</guid>
       <description>フリーなFLASH　FAME!
 前の記事でFAMEというフリーのFlash開発環境を見つけたと書きました。
 FAMEの環境が整ったので、それについて書こうと思うます。
@@ -83,10 +83,10 @@ FAMEは使えるか？
     
     <item>
       <title>Eclipse3.1.1 memo</title>
-      <link>/posts/eclipse311-memo/</link>
+      <link>/posts/2006/10/13/eclipse3.1.1-memo/</link>
       <pubDate>Fri, 13 Oct 2006 10:53:00 +0900</pubDate>
       
-      <guid>/posts/eclipse311-memo/</guid>
+      <guid>/posts/2006/10/13/eclipse3.1.1-memo/</guid>
       <description>Eclipse3.1.1 memo
 現在使用JSPプラグイン
 EclipseHtmlEditor Ver2.0.2

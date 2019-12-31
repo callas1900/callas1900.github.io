@@ -14,10 +14,10 @@
     
     <item>
       <title>Oracle 10g Express Edition でチト困った</title>
-      <link>/posts/oracle-10g-express-edition-al32utf8/</link>
+      <link>/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/</link>
       <pubDate>Thu, 06 Dec 2007 11:22:00 +0900</pubDate>
       
-      <guid>/posts/oracle-10g-express-edition-al32utf8/</guid>
+      <guid>/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/</guid>
       <description>Oracle 10g Express Edition　は
  AL32UTF8 WE8MSWIN1252  のみのCHARACTER SETしか使用できない
 資料：
@@ -68,10 +68,10 @@ VARCHAR2 = 40[Byte]</description>
     
     <item>
       <title>Oracle 10g Express Editionのインストールメモ</title>
-      <link>/posts/oracle-oracle-10g-express-editionoracle/</link>
+      <link>/posts/2007/10/29/oracle-10g-express-edition%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/</link>
       <pubDate>Mon, 29 Oct 2007 16:13:00 +0900</pubDate>
       
-      <guid>/posts/oracle-oracle-10g-express-editionoracle/</guid>
+      <guid>/posts/2007/10/29/oracle-10g-express-edition%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/</guid>
       <description>Oracle備忘録
 仕事のテスト環境用にOracle 10g Express Edition（Oracle 10gの無料版）を使用する機会があったのでそのインストールメモ
 Oracle : Oracle 10g Express Edition
@@ -103,10 +103,10 @@ Oracle DataBase を入れているPCのファイヤーウォールの1521ポー�
     
     <item>
       <title>銀への道</title>
-      <link>/posts/oraclehp-oracle-silver-oracle-silver/</link>
+      <link>/posts/2007/02/07/%E9%8A%80%E3%81%B8%E3%81%AE%E9%81%93/</link>
       <pubDate>Wed, 07 Feb 2007 17:34:00 +0900</pubDate>
       
-      <guid>/posts/oraclehp-oracle-silver-oracle-silver/</guid>
+      <guid>/posts/2007/02/07/%E9%8A%80%E3%81%B8%E3%81%AE%E9%81%93/</guid>
       <description>昨日からヘルシア緑茶一日一本のみはじめました。
 これは特定保健用食品なので、飲み続ければ効果があるはず！
 （それより運動したほうがいいけどね！）

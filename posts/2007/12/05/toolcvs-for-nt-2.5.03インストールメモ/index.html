@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[Tool]CVS for NT 2.5.03インストールメモ :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="インストール環境
+サーバーサイド・クライアントサイド共に　WindowsXP
+CVSには「CVS for NT」を仕様（Verは2.5.03）
+  下記にてDL（右端にある）
+[CVS
+](http://www.march-hare.com/cvspro/prods.asp?lang=JP &amp;ldquo;CVS&amp;rdquo;)
+  実行後ウィザード内で
+【Select Components】の画面で【Server Components】にチェックを入れる
+他はデフォルトインストール
+（考えるの面倒だったらFullインストールすればOK)
+  環境変数「Path」にCVS for NT のインストールディレクトリが追加されていることを確認
+  コントロールパネルの中に「CVS NT Server」なるものが出来上がっているので、
+それをダブルクリック。
+  【Repository Configuration】なるタブがあるのでそれを選択。
+【ADD】ボタンから新規作成
+ Location　：　CVS管理したいフォルダをインストール Name　：　上記が入れば勝手にデフォルトが入力されるのでそれを採用 Description　：　適当    「適用」を押すと、initialize するか聞いてくるのでOK
+この作業が終わると、Location先のフォルダに「CVSROOT」というフォルダが出来る。
+  コマンドプロンプトを起動してパスワードを設定。
+ C:\適当なディレクトリ&amp;gt;cvs -d c:\hogehoge\hoge passwd -r Administrator -a user01
+Adding user user01
+New Password: [作成するユーザ(user01)のパスワードを入力]"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2007/12/05/toolcvs-for-nt-2.5.03%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[Tool]CVS for NT 2.5.03インストールメモ :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="インストール環境
+サーバーサイド・クライアントサイド共に　WindowsXP
+CVSには「CVS for NT」を仕様（Verは2.5.03）
+  下記にてDL（右端にある）
+[CVS
+](http://www.march-hare.com/cvspro/prods.asp?lang=JP &amp;ldquo;CVS&amp;rdquo;)
+  実行後ウィザード内で
+【Select Components】の画面で【Server Components】にチェックを入れる
+他はデフォルトインストール
+（考えるの面倒だったらFullインストールすればOK)
+  環境変数「Path」にCVS for NT のインストールディレクトリが追加されていることを確認
+  コントロールパネルの中に「CVS NT Server」なるものが出来上がっているので、
+それをダブルクリック。
+  【Repository Configuration】なるタブがあるのでそれを選択。
+【ADD】ボタンから新規作成
+ Location　：　CVS管理したいフォルダをインストール Name　：　上記が入れば勝手にデフォルトが入力されるのでそれを採用 Description　：　適当    「適用」を押すと、initialize するか聞いてくるのでOK
+この作業が終わると、Location先のフォルダに「CVSROOT」というフォルダが出来る。
+  コマンドプロンプトを起動してパスワードを設定。
+ C:\適当なディレクトリ&amp;gt;cvs -d c:\hogehoge\hoge passwd -r Administrator -a user01
+Adding user user01
+New Password: [作成するユーザ(user01)のパスワードを入力]" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[Tool]CVS for NT 2.5.03インストールメモ :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="インストール環境
+サーバーサイド・クライアントサイド共に　WindowsXP
+CVSには「CVS for NT」を仕様（Verは2.5.03）
+  下記にてDL（右端にある）
+[CVS
+](http://www.march-hare.com/cvspro/prods.asp?lang=JP &amp;ldquo;CVS&amp;rdquo;)
+  実行後ウィザード内で
+【Select Components】の画面で【Server Components】にチェックを入れる
+他はデフォルトインストール
+（考えるの面倒だったらFullインストールすればOK)
+  環境変数「Path」にCVS for NT のインストールディレクトリが追加されていることを確認
+  コントロールパネルの中に「CVS NT Server」なるものが出来上がっているので、
+それをダブルクリック。
+  【Repository Configuration】なるタブがあるのでそれを選択。
+【ADD】ボタンから新規作成
+ Location　：　CVS管理したいフォルダをインストール Name　：　上記が入れば勝手にデフォルトが入力されるのでそれを採用 Description　：　適当    「適用」を押すと、initialize するか聞いてくるのでOK
+この作業が終わると、Location先のフォルダに「CVSROOT」というフォルダが出来る。
+  コマンドプロンプトを起動してパスワードを設定。
+ C:\適当なディレクトリ&amp;gt;cvs -d c:\hogehoge\hoge passwd -r Administrator -a user01
+Adding user user01
+New Password: [作成するユーザ(user01)のパスワードを入力]" />
+<meta property="og:url" content="/posts/2007/12/05/toolcvs-for-nt-2.5.03%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/" />
+<meta property="og:site_name" content="[Tool]CVS for NT 2.5.03インストールメモ" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2007-12-05 20:32:00.001 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2007/12/05/toolcvs-for-nt-2.5.03%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/">[Tool]CVS for NT 2.5.03インストールメモ</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2007-12-05
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/tool/">Tool</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p><strong>インストール環境</strong><br>
+サーバーサイド・クライアントサイド共に　WindowsXP<br>
+CVSには「CVS for NT」を仕様（Verは2.5.03）</p>
+<ol>
+<li>
+<p>下記にてDL（右端にある）<br>
+[CVS</p>
+<p>](<a href="http://www.march-hare.com/cvspro/prods.asp?lang=JP">http://www.march-hare.com/cvspro/prods.asp?lang=JP</a> &ldquo;CVS&rdquo;)</p>
+</li>
+<li>
+<p>実行後ウィザード内で<br>
+【Select Components】の画面で【Server Components】にチェックを入れる<br>
+他はデフォルトインストール<br>
+（考えるの面倒だったらFullインストールすればOK)</p>
+</li>
+<li>
+<p>環境変数「Path」にCVS for NT のインストールディレクトリが追加されていることを確認</p>
+</li>
+<li>
+<p>コントロールパネルの中に「CVS NT Server」なるものが出来上がっているので、<br>
+それをダブルクリック。</p>
+</li>
+<li>
+<p>【Repository Configuration】なるタブがあるのでそれを選択。<br>
+【ADD】ボタンから新規作成</p>
+<ul>
+<li>Location　：　CVS管理したいフォルダをインストール</li>
+<li>Name　：　上記が入れば勝手にデフォルトが入力されるのでそれを採用</li>
+<li>Description　：　適当</li>
+</ul>
+</li>
+<li>
+<p>「適用」を押すと、initialize するか聞いてくるのでOK<br>
+この作業が終わると、Location先のフォルダに「CVSROOT」というフォルダが出来る。</p>
+</li>
+<li>
+<p>コマンドプロンプトを起動してパスワードを設定。</p>
+<blockquote>
+<p>C:\適当なディレクトリ&gt;cvs -d c:\hogehoge\hoge passwd -r Administrator -a user01<br>
+Adding user user01<br>
+New Password: [作成するユーザ(user01)のパスワードを入力]<br>
+Verify Password: [作成するユーザ(user01)のパスワードを入力]</p>
+<p>[オプション説明]<br>
+-d ： リポジトリルート<br>
+-r ： Administrator権限を持っているWindowsUser名<br>
+-a ： 作成するCVSのUser名</p>
+<p>c</p>
+<p>※社内開発とかでイントラネットなどでやる場合はパスなんてなくても困らないです。</p>
+</blockquote>
+</li>
+<li>
+<p>以上で終わり、後はEclipseから接続するなりなんなりと</p>
+</li>
+</ol>
+<p><strong>参考サイト</strong></p>
+<ul>
+<li><a href="http://www.atmarkit.co.jp/im/carc/serial/xpd02/xpd02.html" title="＠IT：連載：快適なXPドライビングのすすめ 第2回">＠IT：連載：快適なXPドライビングのすすめ 第2回</a></li>
+</ul>
+<p>[](<a href="http://www.atmarkit.co.jp/im/carc/serial/xpd02/xpd02.html">http://www.atmarkit.co.jp/im/carc/serial/xpd02/xpd02.html</a> &ldquo;＠IT：連載：快適なXPドライビングのすすめ 第2回&rdquo;)*   <code>[＠IT：連載：快適なXPドライビングのすすめ 第3回](http://www.atmarkit.co.jp/im/carc/serial/xpd03/xpd03.html &quot;＠IT：連載：快適なXPドライビングのすすめ 第3回&quot;) </code></p>
+<ul>
+<li>
+<pre><code>[CVS(CVSNT)のリポジトリ設定](http://www.develop-memo.com/server/cvs/cvsrepository.html &quot;CVS(CVSNT)のリポジトリ設定&quot;)  
+    
+</code></pre></li>
+</ul>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/">
+          <span class="button__icon">←</span>
+          <span class="button__text">Oracle 10g Express Edition でチト困った</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2007/11/07/flashlaszlo%E3%82%88%E7%B4%8D%E5%93%81%E5%BE%8C%E3%81%AE%E6%9A%87%E3%81%AA%E6%99%82%E9%96%93%E3%82%92%E8%BF%94%E3%81%9B/">
+          <span class="button__text">[Flash]Laszloよ、納品後の暇な時間を返せ。</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

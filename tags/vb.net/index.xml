@@ -14,10 +14,10 @@
     
     <item>
       <title>[VB.NET]文字列型列挙体の実装</title>
-      <link>/posts/vbnet-comments/</link>
+      <link>/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/</link>
       <pubDate>Wed, 24 Dec 2008 11:29:00 +0900</pubDate>
       
-      <guid>/posts/vbnet-comments/</guid>
+      <guid>/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/</guid>
       <description>列挙体のメリットの一つに、 Dim a As 列挙体 と書いて、列挙体のメンバを指定することを明示で&amp;hellip; 匿名 - Apr 1, 2013列挙体のメリットの一つに、
 Dim a As 列挙体
 と書いて、列挙体のメンバを指定することを明示できる点もありますよね。
@@ -30,10 +30,10 @@ Dim a As 列挙体も出来ます。</description>
     
     <item>
       <title>[VB.NET]文字列型列挙体の実装</title>
-      <link>/posts/vbnet/</link>
+      <link>/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/</link>
       <pubDate>Wed, 24 Dec 2008 11:29:00 +0900</pubDate>
       
-      <guid>/posts/vbnet/</guid>
+      <guid>/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/</guid>
       <description>enumとか使っていると、文字列型列挙体が欲しくなってきます。
 VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。
 以下コードと解説

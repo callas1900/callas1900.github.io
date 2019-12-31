@@ -14,10 +14,10 @@
     
     <item>
       <title>/var/lib/docker の移動</title>
-      <link>/posts/varlibdocker/</link>
+      <link>/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/</link>
       <pubDate>Wed, 25 Jan 2017 01:20:00 +0900</pubDate>
       
-      <guid>/posts/varlibdocker/</guid>
+      <guid>/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/</guid>
       <description>docker のホストマシン容量不足対策。
 docker をインストール後稼働していると、ディスクが足りなくなることがあります。
 いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。

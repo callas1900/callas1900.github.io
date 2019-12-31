@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[Flash]FAME環境でXML読み込み :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="FAMEでActionScriptを書こうとすると色々と不便なことがある。
+（まだまだ開発されたての環境なので致し方ないが）
+さて先日ある案件でXMLデータを読みこんで処理したいといった内容があったのだが、
+いかんせん、MacromediaFalshのように簡易的に書くとコンパイルエラーで落ちてしまう。
+また、XMLでの検索は面度なのでActionScript用のJSONクラスを用意しても
+JSONクラスで落ちてしまう。
+結局手書きでやることにした。
+作業の流れとしては
+ XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload  XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
+さて実際に以下に書いてみましょう。
+XMLデータ内容   ActionScript内容  //XMLインスタンス作成
+var my_xml :XML = new XML();
+// 改行などを無視
+my_xml.ignoreWhite = true;
+//onLoadのイベントハンドラにfunctionを設定
+my_xml.onLoad =
+function(success) {
+if (success) {
+my_xml = this;
+// XMLエレメントの取得
+var my_xmlnode :XMLNode = my_xml.firstChild;
+var name :String = &amp;ldquo;&amp;quot;;
+var url :String = &amp;ldquo;&amp;quot;;
+var i :Number = 0;
+while ( my_xmlnode."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2007/03/14/flashfame%E7%92%B0%E5%A2%83%E3%81%A7xml%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[Flash]FAME環境でXML読み込み :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="FAMEでActionScriptを書こうとすると色々と不便なことがある。
+（まだまだ開発されたての環境なので致し方ないが）
+さて先日ある案件でXMLデータを読みこんで処理したいといった内容があったのだが、
+いかんせん、MacromediaFalshのように簡易的に書くとコンパイルエラーで落ちてしまう。
+また、XMLでの検索は面度なのでActionScript用のJSONクラスを用意しても
+JSONクラスで落ちてしまう。
+結局手書きでやることにした。
+作業の流れとしては
+ XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload  XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
+さて実際に以下に書いてみましょう。
+XMLデータ内容   ActionScript内容  //XMLインスタンス作成
+var my_xml :XML = new XML();
+// 改行などを無視
+my_xml.ignoreWhite = true;
+//onLoadのイベントハンドラにfunctionを設定
+my_xml.onLoad =
+function(success) {
+if (success) {
+my_xml = this;
+// XMLエレメントの取得
+var my_xmlnode :XMLNode = my_xml.firstChild;
+var name :String = &amp;ldquo;&amp;quot;;
+var url :String = &amp;ldquo;&amp;quot;;
+var i :Number = 0;
+while ( my_xmlnode." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[Flash]FAME環境でXML読み込み :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="FAMEでActionScriptを書こうとすると色々と不便なことがある。
+（まだまだ開発されたての環境なので致し方ないが）
+さて先日ある案件でXMLデータを読みこんで処理したいといった内容があったのだが、
+いかんせん、MacromediaFalshのように簡易的に書くとコンパイルエラーで落ちてしまう。
+また、XMLでの検索は面度なのでActionScript用のJSONクラスを用意しても
+JSONクラスで落ちてしまう。
+結局手書きでやることにした。
+作業の流れとしては
+ XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload  XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
+さて実際に以下に書いてみましょう。
+XMLデータ内容   ActionScript内容  //XMLインスタンス作成
+var my_xml :XML = new XML();
+// 改行などを無視
+my_xml.ignoreWhite = true;
+//onLoadのイベントハンドラにfunctionを設定
+my_xml.onLoad =
+function(success) {
+if (success) {
+my_xml = this;
+// XMLエレメントの取得
+var my_xmlnode :XMLNode = my_xml.firstChild;
+var name :String = &amp;ldquo;&amp;quot;;
+var url :String = &amp;ldquo;&amp;quot;;
+var i :Number = 0;
+while ( my_xmlnode." />
+<meta property="og:url" content="/posts/2007/03/14/flashfame%E7%92%B0%E5%A2%83%E3%81%A7xml%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF/" />
+<meta property="og:site_name" content="[Flash]FAME環境でXML読み込み" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2007-03-14 18:21:00.001 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2007/03/14/flashfame%E7%92%B0%E5%A2%83%E3%81%A7xml%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF/">[Flash]FAME環境でXML読み込み</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2007-03-14
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/flash/">Flash</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>FAMEでActionScriptを書こうとすると色々と不便なことがある。<br>
+（まだまだ開発されたての環境なので致し方ないが）</p>
+<p>さて先日ある案件でXMLデータを読みこんで処理したいといった内容があったのだが、</p>
+<p>いかんせん、MacromediaFalshのように簡易的に書くとコンパイルエラーで落ちてしまう。<br>
+また、XMLでの検索は面度なのでActionScript用のJSONクラスを用意しても<br>
+JSONクラスで落ちてしまう。</p>
+<p>結局手書きでやることにした。</p>
+<p>作業の流れとしては</p>
+<ol>
+<li>XMLインスタンス作成</li>
+<li>インスタンス.ignoreWhite プロパティをtrueに設定。</li>
+<li>XMLインスタンのonLoadにファンクション設定。</li>
+<li>XMLインスタンスに外部XMLをload</li>
+</ol>
+<p>XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。<br>
+さて実際に以下に書いてみましょう。</p>
+<h3 id="xml">XMLデータ内容</h3>
+<blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+</blockquote>
+<h3 id="actionscript">ActionScript内容</h3>
+<blockquote>
+<p>//XMLインスタンス作成<br>
+var my_xml :XML = new XML();</p>
+<p>// 改行などを無視<br>
+my_xml.ignoreWhite = true;</p>
+<p>//onLoadのイベントハンドラにfunctionを設定<br>
+my_xml.onLoad =<br>
+function(success) {<br>
+if (success) {<br>
+my_xml = this;<br>
+// XMLエレメントの取得<br>
+var my_xmlnode :XMLNode = my_xml.firstChild;</p>
+<p>var name :String = &ldquo;&quot;;<br>
+var url :String = &ldquo;&quot;;<br>
+var i :Number = 0;</p>
+<p>while ( my_xmlnode.childNodes[i].hasChildNodes() ){<br>
+name = my_xmlnode.childNodes[i].childNodes[0].childNodes;<br>
+url = my_xmlnode.childNodes[i].childNodes[1].childNodes;<br>
+trace  ( name );<br>
+trace  ( url );<br>
+i++;<br>
+}<br>
+}<br>
+}</p>
+<p>//xmlファイルをロード（swfファイルからの相対パスであることに注意<br>
+my_xml.load(&ldquo;data.xml&rdquo;);</p>
+</blockquote>
+<p>呼び出したデータを配列に入れるなりなんだなりすれば、使いまわしも出来る。<br>
+ただ、そうなるとコードが長めになってしまうので、<br>
+別関数もしくはクラスとして定義すればいいだろう。<br>
+もっとCoolな書き方はあると思うが、<br>
+とりあえず動いたのでメモ残し。</p>
+<p>諸注意</p>
+<ul>
+<li><!-- raw HTML omitted -->タグはhasChildNodes()でfalseを出させるために使用。</li>
+<li>trace()はデバッグ領域に書き出す関数</li>
+</ul>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2007/03/15/%E6%97%A5%E6%9C%AC%E3%81%AF%E5%A4%A7%E4%B8%88%E5%A4%AB%E3%81%8B/">
+          <span class="button__icon">←</span>
+          <span class="button__text">日本は大丈夫か？</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2007/03/13/actionscript%E3%81%A8%E9%AB%98%E7%AD%89%E8%A8%80%E8%AA%9E/">
+          <span class="button__text">ActionScriptと高等言語</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

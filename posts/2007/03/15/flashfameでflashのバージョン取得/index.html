@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[Flash]FAMEでFlashのバージョン取得 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="会社で作ったFlashがFlash7で動かないとのこと、
+そりゃそうだ、Flash8で作ってるんだから。
+会社曰く、現在インスコされているFlashPlayerの初期は7だからそれに合わせろ。
+ふーん・・・7がデフォでインスコされているとは知らなかった。
+で、パブリッシュの書き出しで7にすれば対応できますよっとメールを送ったところ。
+対応できたが、一部ドロップシャドウが消失
+ナンデスト？
+どうやらドロップシャドウではなくシャドウ部位に使用していたグラデがFlash7だと存在しないようだ。
+（それぐらい事前に調べとけってか？ハイ、その通りですスイマセン）
+で、出来上がったものを見たが、
+やはりグラデが全部消えてるとちょっと嫌な感じだ。
+う～ん・・・そういや昔javaScriptにhttpヘッダの中読んで
+ブラウザのバージョンをGETする方法とかを見た気がする。
+ActionScriptで、FlashPlayerのバージョンをGETできないものだろうか？ さらにそのバージョン毎に違うswfファイルを見せること出来ないか？
+つまりFlashPlayer8以上を使用している人には8以上のバブリッシュ設定のものを
+7を使用している人には7用のswfをそれぞれ提供できないか？
+（今回最低バージョンは7としている、理由はActionScript2.0が提供されるのは7以降なので）
+調べた結果
+System.capabilities.version;
+を使用すれば望みのものを得ることが出来るようだ。
+以下実際のコードを書いてみる。
+(FAME環境で作ったため、Macromediaと違うところがあります）
+versionManager.as  class versionManager {
+function versionManager (path){
+trace(Flashout.DEBUG &#43; &amp;ldquo;trace()&amp;quot;);
+// _rootのDepth=1にMovieClipのインスタンスseedを作成
+path.createEmptyMovieClip(&amp;ldquo;seed&amp;rdquo;,1);
+//インスタンスseedをmcとする
+var mc :MovieClip = path.seed;
+//バージョン情報を取得
+var ver :String= System.capabilities.version;
+var major_ver = ver.split(&amp;rdquo; &amp;ldquo;)[1].split(&amp;quot;,&amp;quot;)[0];
+trace (&amp;ldquo;ver = &amp;quot; &#43; ver);
+trace (&amp;ldquo;major_ver = &amp;quot; &#43; major_ver);
+//今回パブリッシュ設定を７と８で分けたいので
+if (major_ver &amp;gt; 7) {"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2007/03/15/flashfame%E3%81%A7flash%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%8F%96%E5%BE%97/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[Flash]FAMEでFlashのバージョン取得 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="会社で作ったFlashがFlash7で動かないとのこと、
+そりゃそうだ、Flash8で作ってるんだから。
+会社曰く、現在インスコされているFlashPlayerの初期は7だからそれに合わせろ。
+ふーん・・・7がデフォでインスコされているとは知らなかった。
+で、パブリッシュの書き出しで7にすれば対応できますよっとメールを送ったところ。
+対応できたが、一部ドロップシャドウが消失
+ナンデスト？
+どうやらドロップシャドウではなくシャドウ部位に使用していたグラデがFlash7だと存在しないようだ。
+（それぐらい事前に調べとけってか？ハイ、その通りですスイマセン）
+で、出来上がったものを見たが、
+やはりグラデが全部消えてるとちょっと嫌な感じだ。
+う～ん・・・そういや昔javaScriptにhttpヘッダの中読んで
+ブラウザのバージョンをGETする方法とかを見た気がする。
+ActionScriptで、FlashPlayerのバージョンをGETできないものだろうか？ さらにそのバージョン毎に違うswfファイルを見せること出来ないか？
+つまりFlashPlayer8以上を使用している人には8以上のバブリッシュ設定のものを
+7を使用している人には7用のswfをそれぞれ提供できないか？
+（今回最低バージョンは7としている、理由はActionScript2.0が提供されるのは7以降なので）
+調べた結果
+System.capabilities.version;
+を使用すれば望みのものを得ることが出来るようだ。
+以下実際のコードを書いてみる。
+(FAME環境で作ったため、Macromediaと違うところがあります）
+versionManager.as  class versionManager {
+function versionManager (path){
+trace(Flashout.DEBUG &#43; &amp;ldquo;trace()&amp;quot;);
+// _rootのDepth=1にMovieClipのインスタンスseedを作成
+path.createEmptyMovieClip(&amp;ldquo;seed&amp;rdquo;,1);
+//インスタンスseedをmcとする
+var mc :MovieClip = path.seed;
+//バージョン情報を取得
+var ver :String= System.capabilities.version;
+var major_ver = ver.split(&amp;rdquo; &amp;ldquo;)[1].split(&amp;quot;,&amp;quot;)[0];
+trace (&amp;ldquo;ver = &amp;quot; &#43; ver);
+trace (&amp;ldquo;major_ver = &amp;quot; &#43; major_ver);
+//今回パブリッシュ設定を７と８で分けたいので
+if (major_ver &amp;gt; 7) {" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[Flash]FAMEでFlashのバージョン取得 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="会社で作ったFlashがFlash7で動かないとのこと、
+そりゃそうだ、Flash8で作ってるんだから。
+会社曰く、現在インスコされているFlashPlayerの初期は7だからそれに合わせろ。
+ふーん・・・7がデフォでインスコされているとは知らなかった。
+で、パブリッシュの書き出しで7にすれば対応できますよっとメールを送ったところ。
+対応できたが、一部ドロップシャドウが消失
+ナンデスト？
+どうやらドロップシャドウではなくシャドウ部位に使用していたグラデがFlash7だと存在しないようだ。
+（それぐらい事前に調べとけってか？ハイ、その通りですスイマセン）
+で、出来上がったものを見たが、
+やはりグラデが全部消えてるとちょっと嫌な感じだ。
+う～ん・・・そういや昔javaScriptにhttpヘッダの中読んで
+ブラウザのバージョンをGETする方法とかを見た気がする。
+ActionScriptで、FlashPlayerのバージョンをGETできないものだろうか？ さらにそのバージョン毎に違うswfファイルを見せること出来ないか？
+つまりFlashPlayer8以上を使用している人には8以上のバブリッシュ設定のものを
+7を使用している人には7用のswfをそれぞれ提供できないか？
+（今回最低バージョンは7としている、理由はActionScript2.0が提供されるのは7以降なので）
+調べた結果
+System.capabilities.version;
+を使用すれば望みのものを得ることが出来るようだ。
+以下実際のコードを書いてみる。
+(FAME環境で作ったため、Macromediaと違うところがあります）
+versionManager.as  class versionManager {
+function versionManager (path){
+trace(Flashout.DEBUG &#43; &amp;ldquo;trace()&amp;quot;);
+// _rootのDepth=1にMovieClipのインスタンスseedを作成
+path.createEmptyMovieClip(&amp;ldquo;seed&amp;rdquo;,1);
+//インスタンスseedをmcとする
+var mc :MovieClip = path.seed;
+//バージョン情報を取得
+var ver :String= System.capabilities.version;
+var major_ver = ver.split(&amp;rdquo; &amp;ldquo;)[1].split(&amp;quot;,&amp;quot;)[0];
+trace (&amp;ldquo;ver = &amp;quot; &#43; ver);
+trace (&amp;ldquo;major_ver = &amp;quot; &#43; major_ver);
+//今回パブリッシュ設定を７と８で分けたいので
+if (major_ver &amp;gt; 7) {" />
+<meta property="og:url" content="/posts/2007/03/15/flashfame%E3%81%A7flash%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%8F%96%E5%BE%97/" />
+<meta property="og:site_name" content="[Flash]FAMEでFlashのバージョン取得" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2007-03-15 18:33:00.001 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2007/03/15/flashfame%E3%81%A7flash%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%8F%96%E5%BE%97/">[Flash]FAMEでFlashのバージョン取得</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2007-03-15
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/flash/">Flash</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>会社で作ったFlashがFlash7で動かないとのこと、<br>
+そりゃそうだ、Flash8で作ってるんだから。</p>
+<p>会社曰く、現在インスコされているFlashPlayerの初期は7だからそれに合わせろ。</p>
+<p>ふーん・・・7がデフォでインスコされているとは知らなかった。</p>
+<p>で、パブリッシュの書き出しで7にすれば対応できますよっとメールを送ったところ。</p>
+<p>対応できたが、一部ドロップシャドウが消失</p>
+<p>ナンデスト？<br>
+どうやらドロップシャドウではなくシャドウ部位に使用していたグラデがFlash7だと存在しないようだ。<br>
+（それぐらい事前に調べとけってか？ハイ、その通りですスイマセン）</p>
+<p>で、出来上がったものを見たが、<br>
+やはりグラデが全部消えてるとちょっと嫌な感じだ。</p>
+<p>う～ん・・・そういや昔javaScriptにhttpヘッダの中読んで<br>
+ブラウザのバージョンをGETする方法とかを見た気がする。</p>
+<p>ActionScriptで、FlashPlayerのバージョンをGETできないものだろうか？ さらにそのバージョン毎に違うswfファイルを見せること出来ないか？<br>
+つまりFlashPlayer8以上を使用している人には8以上のバブリッシュ設定のものを<br>
+7を使用している人には7用のswfをそれぞれ提供できないか？<br>
+（今回最低バージョンは7としている、理由はActionScript2.0が提供されるのは7以降なので）</p>
+<p>調べた結果<br>
+System.capabilities.version;</p>
+<p>を使用すれば望みのものを得ることが出来るようだ。</p>
+<p>以下実際のコードを書いてみる。<br>
+(FAME環境で作ったため、Macromediaと違うところがあります）</p>
+<h3 id="versionmanageras">versionManager.as</h3>
+<blockquote>
+<p>class versionManager {<br>
+function versionManager (path){<br>
+trace(Flashout.DEBUG + &ldquo;trace()&quot;);</p>
+<p>// _rootのDepth=1にMovieClipのインスタンスseedを作成<br>
+path.createEmptyMovieClip(&ldquo;seed&rdquo;,1);</p>
+<p>//インスタンスseedをmcとする<br>
+var mc :MovieClip = path.seed;</p>
+<p>//バージョン情報を取得<br>
+var ver :String= System.capabilities.version;<br>
+var major_ver = ver.split(&rdquo; &ldquo;)[1].split(&quot;,&quot;)[0];<br>
+trace (&ldquo;ver = &quot; + ver);<br>
+trace (&ldquo;major_ver = &quot; + major_ver);</p>
+<p>//今回パブリッシュ設定を７と８で分けたいので<br>
+if (major_ver &gt; 7) {<br>
+//バージョン８以上対応のswf読み込み<br>
+mc.loadMovie(&ldquo;swf/8.swf&rdquo;);<br>
+} else {<br>
+//バージョン７対応のswf読み込み<br>
+mc.loadMovie(&ldquo;swf/7.swf&rdquo;);<br>
+}<br>
+}</p>
+<p>static function main () :Void {<br>
+var base :versionManager = new versionManager(_root);<br>
+}<br>
+}</p>
+</blockquote>
+<p>これをコンパイルすればＯＫ<br>
+注意点）</p>
+<ul>
+<li>コンパイルする時Flash7で書き出さないと本末転倒。</li>
+<li>swfファイルから相対バスでFlashPlayerを指定しています。</li>
+</ul>
+<p>気になった掲示板投稿</p>
+<p><a href="http://www.gac.jp/article/index.php?stats=question&amp;category=14&amp;id=16284&amp;command=msg" title="新人が育たない… (GAC)">新人が育たない… (GAC)</a><br>
+GACというBBSコミュニティに投稿されていたものなのですが、<br>
+昨今のデザイナー、プログラマー事情を知るにはよい投稿です。</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2007/03/19/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC%E3%81%AF%E3%81%84%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E4%BC%91%E6%97%A5%E3%82%92%E9%81%8E%E3%81%94%E3%81%99%E3%81%B9%E3%81%8D%E3%81%8B/">
+          <span class="button__icon">←</span>
+          <span class="button__text">プログラマーはいかにして休日を過ごすべきか？</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2007/03/15/%E6%97%A5%E6%9C%AC%E3%81%AF%E5%A4%A7%E4%B8%88%E5%A4%AB%E3%81%8B/">
+          <span class="button__text">日本は大丈夫か？</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

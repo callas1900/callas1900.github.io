@@ -14,10 +14,10 @@
     
     <item>
       <title>Androidで共通鍵暗号化でつまづいたので記録に残す</title>
-      <link>/posts/android/</link>
+      <link>/posts/2012/10/01/android%E3%81%A7%E5%85%B1%E9%80%9A%E9%8D%B5%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F%E3%81%AE%E3%81%A7%E8%A8%98%E9%8C%B2%E3%81%AB%E6%AE%8B%E3%81%99/</link>
       <pubDate>Mon, 01 Oct 2012 09:00:00 +0900</pubDate>
       
-      <guid>/posts/android/</guid>
+      <guid>/posts/2012/10/01/android%E3%81%A7%E5%85%B1%E9%80%9A%E9%8D%B5%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F%E3%81%AE%E3%81%A7%E8%A8%98%E9%8C%B2%E3%81%AB%E6%AE%8B%E3%81%99/</guid>
       <description>Androidで文字列をセキュアに保存したい場合、
 暗号化してsqliteに保存するのがよろしいと思われる。
 ここではAndroid自体のセキュリティがアレだとか、Rooted端末とapktoolがあればアレをこうしてアレ出来るだとかいう話はとりあえず置いとく。

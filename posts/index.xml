@@ -7,17 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>2019年 大晦日</title>
+      <link>/posts/2019/12/31/2019%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2019/12/31/2019%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
+      <description>Blog ついにBloggerをやめてHugoで作成するPostsに変更。 GitHubPagesでポストしています。 最近考えてたBlogの存在意義ってなんだろうってのは、 気軽に誰の目にも注目されないところだけど、見ようと思えば誰でも見れる場所にポストしたいんだなという一見矛盾したような結論になりました。
+Running 今年はトレラン30km(実質32kmぐらい)を無事完走。 フルマラソンも出ようと思いましたが、台風１９号の影響で色々とマラソン大会が中止になって、 私が出ようと思ってた、さのマラソンも中止になってしまったのが残念で仕方ない。
+Cycling 前半はいい感じだったけど、後半はランニングに重点を置いてしまった。 夏に乗らなくなったのが問題だった、理由は通勤環境が変わったことと、あつすぎたこと。 大きな進歩としては、ブルホーンハンドルへの換装をしたことと、 箱根の山を小田原から上ったこと、 それから、チェーンの洗浄方法を覚えたこと。
+Camera Flickr から引っ越し終了。 基本はGoogle Photosで、Unsplashに写真を載せるようになっていった。 アクションカムを買おうかどうか、特にOsumo Action を買うかでもの凄く迷ったのだけど、 結局RX100の見直しで満足する自分に気づけた。 一眼の方は、もう本当どうしようかな。 買い換えるとなると予算が大変なことになるんだよな。 シグマFpも考えたけど、やっぱファインダーが欲しい。
+読書 小説筋が衰えている、仕事の本ばっかりじゃ駄目だなぁ
+Code Micro Service, k8s を勉強中。 前に使ってたdocker swarm の考え方がいかせるようないかせないような。 Rust勉強したいなぁ。
+アニメ Netflixさまさま、ケンガンアシュラ面白かったのと、血界戦線はbeyond含め面白かった。
+Game switch year は続く！ FE風花雪月、リングフィットアドベンチャー！
+〆 今年は色々と新しいことに挑戦して、楽しめた年でした。 ベトナム・ダナンに出張に社員３人でいったり、 フランス・ニースにも出張行けました。 来年はインドにも行く予定です。 更に自分の枠を伸ばせるような一年に来年もしたいと思います。</description>
+    </item>
+    
+    <item>
       <title>Bloggerからお引っ越し</title>
-      <link>/posts/20191225/</link>
+      <link>/posts/2019/12/25/blogger%E3%81%8B%E3%82%89%E3%81%8A%E5%BC%95%E3%81%A3%E8%B6%8A%E3%81%97/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/20191225/</guid>
+      <guid>/posts/2019/12/25/blogger%E3%81%8B%E3%82%89%E3%81%8A%E5%BC%95%E3%81%A3%E8%B6%8A%E3%81%97/</guid>
       <description>ずっとBloggerでmarkdownで書きたいなーとか、Bloggerなんか更新して書きやすくならないかなーとか、思ってた。 思ってもう５年ぐらい経ったけど全然更新されないし、そもそもTwitterとかfacebookやdev.toに大体の事書いてるから別に情報発信の場を考えてないし、というわけでBloggerはおしまいおしまい。長らくありがとうございました。 移行先は色々考えたけど、この具にもつかない日記を未来永劫保管できるところはないよなと考えて、自分のWebページを今年のはじめにHugoで作り変えたことを思い出して、そこでいいじゃないかと。
 移行 とりあえず、一ページごとにこぴーあんどぺーすとなんてやってられないので、BloggerでMarkdownの吐き出しがないかを確認、ない。 次にツールで何か無いかと思ったらドンピシャなものを発見。
 https://github.com/palaniraja/blog2md
@@ -34,10 +51,10 @@ git bisect start git bisect git bisect good a28c65d41178ff39981a3df5b80a7108eec2
     
     <item>
       <title>公立中高一貫校を知る会</title>
-      <link>/posts/20190419/</link>
+      <link>/posts/2019/04/29/%E5%85%AC%E7%AB%8B%E4%B8%AD%E9%AB%98%E4%B8%80%E8%B2%AB%E6%A0%A1%E3%82%92%E7%9F%A5%E3%82%8B%E4%BC%9A/</link>
       <pubDate>Mon, 29 Apr 2019 20:53:00 +0900</pubDate>
       
-      <guid>/posts/20190419/</guid>
+      <guid>/posts/2019/04/29/%E5%85%AC%E7%AB%8B%E4%B8%AD%E9%AB%98%E4%B8%80%E8%B2%AB%E6%A0%A1%E3%82%92%E7%9F%A5%E3%82%8B%E4%BC%9A/</guid>
       <description>公立中高一貫校（以下一貫校）って知ってますか？ いわゆる中学高校エレベーター式ってのは私立には見られるスタイルでしたが、最近といってもここ５，６年で公立でも６年教育を行って一貫した教育を行うことがいいのではないかと思われ実験的にいくつかの中学校高校で行われてきました。 最近では実験的な立ち位置から定着の立ち位置になったのかな？このあたり詳しい事はわからないです。
 子供が５年生になり、公立中高一貫校が視野に入ってきたので、情報収集をするために息子と表題の「公立中高一貫校を知る会」に参加してきました。場所は東京都立白鴎高等学校です。 ちなみに私は関西から出てきたので東京の名門校などにはとても疎い状態です。ずっとこちらで暮らしている人からしたら、あの学校は昔から有名で〜みたいのがあると思いますが、知識フラットな状態で行っています。
 服装・持ち物 参加人数がとても多いため、服装は比較的自由で大丈夫です。誰も気にならない感じでした。
@@ -56,10 +73,10 @@ git bisect start git bisect git bisect good a28c65d41178ff39981a3df5b80a7108eec2
     
     <item>
       <title>2018年 大晦日</title>
-      <link>/posts/2018/</link>
+      <link>/posts/2018/12/31/2018%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Mon, 31 Dec 2018 23:53:00 +0900</pubDate>
       
-      <guid>/posts/2018/</guid>
+      <guid>/posts/2018/12/31/2018%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>Blog 来年はちょっと今後blogをbloggerで続けるか考えていかないとなぁ。
 ランニング 今年はなんとフルマラソン完走しました！来年はちょっとそれを超えるやつ、トレラン30kmオーバーや、ロードのオーバー42km挑戦してみたいなぁ。
 自転車 今年はbirdyを買ったので、来年は更に乗りこなして行きたいです。
@@ -74,10 +91,10 @@ Game switch でBoW。スマブラと大神！色々出来て幸せ！
     
     <item>
       <title>2017 大晦日</title>
-      <link>/posts/2017/</link>
+      <link>/posts/2017/12/31/2017-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Sun, 31 Dec 2017 22:37:00 +0900</pubDate>
       
-      <guid>/posts/2017/</guid>
+      <guid>/posts/2017/12/31/2017-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>今年は色々と苦い経験をした年でした。
 読書はしてないわけじゃないけど、読了はゼロ。
 来年は色々とまた読書して読了していきたいですね。
@@ -94,10 +111,10 @@ Agile との関わりは、より強固な方向に年末辺りで急に方向�
     
     <item>
       <title>/var/lib/docker の移動</title>
-      <link>/posts/varlibdocker/</link>
+      <link>/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/</link>
       <pubDate>Wed, 25 Jan 2017 01:20:00 +0900</pubDate>
       
-      <guid>/posts/varlibdocker/</guid>
+      <guid>/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/</guid>
       <description>docker のホストマシン容量不足対策。
 docker をインストール後稼働していると、ディスクが足りなくなることがあります。
 いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。
@@ -113,10 +130,10 @@ echo other_args=&amp;quot;-g /mnt/extra/docker&amp;quot; &amp;gt; /etc/sysconfig
     
     <item>
       <title>2016年 大晦日</title>
-      <link>/posts/2016/</link>
+      <link>/posts/2016/12/31/2016%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Sat, 31 Dec 2016 10:05:00 +0900</pubDate>
       
-      <guid>/posts/2016/</guid>
+      <guid>/posts/2016/12/31/2016%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>Blog 更新頻度は高くないけど、ぼちぼちと技術情報をアップしているStackeditを使うようになったからかも。
 カメラ Sony A99II が販売されたのはいい励みになった。
 高いけど。高すぎるけど。もう少し安いフルサイズα出してくれないかな。
@@ -144,10 +161,10 @@ Game 今年クリアしたゲームはWiiUのトワイライトプリンセス�
     
     <item>
       <title>Smaller APKs : Android におけるAPKを小さく保つためのテクニック</title>
-      <link>/posts/smaller-apks-android-apk/</link>
+      <link>/posts/2016/11/10/smaller-apks-android-%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Bapk%E3%82%92%E5%B0%8F%E3%81%95%E3%81%8F%E4%BF%9D%E3%81%A4%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/</link>
       <pubDate>Thu, 10 Nov 2016 02:06:00 +0900</pubDate>
       
-      <guid>/posts/smaller-apks-android-apk/</guid>
+      <guid>/posts/2016/11/10/smaller-apks-android-%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Bapk%E3%82%92%E5%B0%8F%E3%81%95%E3%81%8F%E4%BF%9D%E3%81%A4%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/</guid>
       <description>Android Performance Patterns Session にいい動画が上がっていたので、備忘録として中身を書き出しておく
  Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer  Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
 android { ... buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;), &#39;proguard-rules.pro&#39; } } } これらはアプリ内で使用していないリソースを除去してくれます。
@@ -167,10 +184,10 @@ xxxhdpi</description>
     
     <item>
       <title>Laravel :: phpunit with clean database.</title>
-      <link>/posts/laravel-phpunit-with-clean-database/</link>
+      <link>/posts/2016/07/21/laravel-phpunit-with-clean-database./</link>
       <pubDate>Thu, 21 Jul 2016 17:50:00 +0900</pubDate>
       
-      <guid>/posts/laravel-phpunit-with-clean-database/</guid>
+      <guid>/posts/2016/07/21/laravel-phpunit-with-clean-database./</guid>
       <description>Laravel + postgresSQLを使ったサイトで unit test を書いてたが、既存のデータベースを使うと、テストが意図しない挙動になることがあったので、汚れていないDBを使いたくなったので、調べてやってみたら、意外と詰まってしまったという話。
  環境 sqlite in memory database を使う方法  config/database.php config/database.php phpunit.xml TestCase.php   Sqliteでエラーがでる場合の対処1  Driver not found ALTER TABLE SYNTAX ERROR   Sqliteでエラーがでる場合の対処2  環境  laravel 5.x PostgreSQL  sqlite in memory database を使う方法 config/database.php 環境変数で default 値を差し替えれるようにする
 &#39;default&#39; =&amp;gt; env(&#39;DB_DEFAULT&#39;, &#39;pgsql&#39;), config/database.php memory database の定義を作る
@@ -179,10 +196,10 @@ xxxhdpi</description>
     
     <item>
       <title>[読書メーター] 2016年6月まとめ</title>
-      <link>/posts/20166/</link>
+      <link>/posts/2016/07/02/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B46%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sat, 02 Jul 2016 01:42:00 +0900</pubDate>
       
-      <guid>/posts/20166/</guid>
+      <guid>/posts/2016/07/02/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B46%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>並行して、色々と技術本を読み始めたので、
 読了数が少なくなったけど気にしない。
 2016年6月の読書メーター
@@ -197,10 +214,10 @@ xxxhdpi</description>
     
     <item>
       <title>[読書メーター] 2016年5月まとめ</title>
-      <link>/posts/20165/</link>
+      <link>/posts/2016/06/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B45%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sun, 05 Jun 2016 23:46:00 +0900</pubDate>
       
-      <guid>/posts/20165/</guid>
+      <guid>/posts/2016/06/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B45%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>ようやく読書の習慣が少し戻ってきました。
 英語の勉強が少しだけひと段落したってのもあります。（まだまだ続きますけど）
 仕事本の読み込みが相変わらず終わらないので、速読読了を目指してみたいと思います。
@@ -215,10 +232,10 @@ xxxhdpi</description>
     
     <item>
       <title>[読書メーター] 2016年4月まとめ</title>
-      <link>/posts/20164/</link>
+      <link>/posts/2016/05/11/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B44%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Wed, 11 May 2016 16:26:00 +0900</pubDate>
       
-      <guid>/posts/20164/</guid>
+      <guid>/posts/2016/05/11/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B44%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>4月は小説のみ、理由はなんだろう無いかもしれない。
 読書が習慣から抜けつつあるな。なんとかしたいところ。
 2016年4月の読書メーター
@@ -232,10 +249,10 @@ xxxhdpi</description>
     
     <item>
       <title>[読書メーター] 2016年3月まとめ</title>
-      <link>/posts/20163/</link>
+      <link>/posts/2016/04/12/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B43%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Tue, 12 Apr 2016 16:14:00 +0900</pubDate>
       
-      <guid>/posts/20163/</guid>
+      <guid>/posts/2016/04/12/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B43%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>先月分の読書も一冊でした。
 今回は3月中２週間ほどベトナムに出張しており、
 本持っていけば良かったのですが、持って行かず、このような結果になってしまいました。
@@ -253,10 +270,10 @@ xxxhdpi</description>
     
     <item>
       <title>Docker registry を構築した後のimage整理</title>
-      <link>/posts/docker-registry-image/</link>
+      <link>/posts/2016/04/04/docker-registry-%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%9F%E5%BE%8C%E3%81%AEimage%E6%95%B4%E7%90%86/</link>
       <pubDate>Mon, 04 Apr 2016 12:38:00 +0900</pubDate>
       
-      <guid>/posts/docker-registry-image/</guid>
+      <guid>/posts/2016/04/04/docker-registry-%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%9F%E5%BE%8C%E3%81%AEimage%E6%95%B4%E7%90%86/</guid>
       <description>Docker registry を作って、別チームに任せて放置する Docker registry で image 管理をすると段々とゴミが溜まってきます。API(https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository)で削除できるのはTAGがついているimageだけなので、
 TAGが外れているimagesがどんどん残っていきます。
 エラーが起きる ずーっと管理せずに放置していると、ある日こんなエラーと出会います。
@@ -271,10 +288,10 @@ parse error: Invalid numeric literal at line 144, column 114 これは直前に�
     
     <item>
       <title>[読書メーター] 2016年2月まとめ</title>
-      <link>/posts/20162/</link>
+      <link>/posts/2016/03/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B42%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sat, 05 Mar 2016 00:07:00 +0900</pubDate>
       
-      <guid>/posts/20162/</guid>
+      <guid>/posts/2016/03/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B42%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>またしても一冊のみ。
 現在読書中の本が積まれていく。
 1月の低スコアを反省して読み始めているけど、未だに起動には乗らず。
@@ -292,10 +309,10 @@ parse error: Invalid numeric literal at line 144, column 114 これは直前に�
     
     <item>
       <title>LMDE2とデュアルブートしているwindows 7 を 10 にアップグレードする</title>
-      <link>/posts/lmde2windows-7-10/</link>
+      <link>/posts/2016/02/18/lmde2%E3%81%A8%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%96%E3%83%BC%E3%83%88%E3%81%97%E3%81%A6%E3%81%84%E3%82%8Bwindows-7-%E3%82%92-10-%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</link>
       <pubDate>Thu, 18 Feb 2016 01:57:00 +0900</pubDate>
       
-      <guid>/posts/lmde2windows-7-10/</guid>
+      <guid>/posts/2016/02/18/lmde2%E3%81%A8%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%96%E3%83%BC%E3%83%88%E3%81%97%E3%81%A6%E3%81%84%E3%82%8Bwindows-7-%E3%82%92-10-%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</guid>
       <description>結論から言うと、特に何も問題なく、あっさりアップグレードできました。
 参考にしたのは以下のページ
 How to Upgrade a Linux Dual-Boot System to Windows 10
@@ -314,10 +331,10 @@ Windows 10 アップグレード後、GRUB2 への影響 何もありません�
     
     <item>
       <title>Android 5.0.2 以上でBLEが動かない</title>
-      <link>/posts/android-502-ble/</link>
+      <link>/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</link>
       <pubDate>Wed, 03 Feb 2016 22:48:00 +0900</pubDate>
       
-      <guid>/posts/android-502-ble/</guid>
+      <guid>/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</guid>
       <description>Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
 5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
 エラー内容は以下のようになっている。
@@ -328,10 +345,10 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE</description
     
     <item>
       <title>[読書メーター]2016年 1月まとめ</title>
-      <link>/posts/2016-1/</link>
+      <link>/posts/2016/02/03/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2016%E5%B9%B4-1%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Wed, 03 Feb 2016 22:09:00 +0900</pubDate>
       
-      <guid>/posts/2016-1/</guid>
+      <guid>/posts/2016/02/03/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2016%E5%B9%B4-1%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>絶望的なまでに本を読んでいない。
 月末にTOEICの試験があったとはいえ、これはひどい。
 完全に読書の習慣が抜けてしまっている、
@@ -347,10 +364,10 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE</description
     
     <item>
       <title>Scrum Gathering Tokyo 2016</title>
-      <link>/posts/scrum-gathering-tokyo-2016/</link>
+      <link>/posts/2016/01/22/scrum-gathering-tokyo-2016/</link>
       <pubDate>Fri, 22 Jan 2016 15:29:00 +0900</pubDate>
       
-      <guid>/posts/scrum-gathering-tokyo-2016/</guid>
+      <guid>/posts/2016/01/22/scrum-gathering-tokyo-2016/</guid>
       <description>Scrum Gathering って何？  どんな内容？   Day 0 Day 1  Opening Talk Keynote Sessions Open Jam   Day 2  Opening Talk Keynote Sessions   得た教訓 参考  Regional Scrum Gathering Tokyo に行ってきました。
 Scrum Gathering って何？ 正式名称は
 [Regional|Global] Scrum Gathering (場所)
@@ -369,10 +386,10 @@ Day 1 東京に久しぶりの大雪、色々な場所で電車がとまると�
     
     <item>
       <title>LMDE2のNVIDIA Driverを更新する</title>
-      <link>/posts/lmde2nvidia-driver/</link>
+      <link>/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/</link>
       <pubDate>Thu, 14 Jan 2016 00:28:00 +0900</pubDate>
       
-      <guid>/posts/lmde2nvidia-driver/</guid>
+      <guid>/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/</guid>
       <description>LMDE2 に NVIDIA のグラフィックドライバを入れます。
  Inspect your graphic board Download a driver Installer Prepare Installation Installation  Inspect your graphic board terminalで
 lspci -vnn | grep VGA -A 12 Download a driver Installer NVIDIAの公式サイトからLinux X64用のDriver Installerを手に入れます。
@@ -392,10 +409,10 @@ X serviceを止めます。</description>
     
     <item>
       <title>[読書メーター]2015年 12月読書まとめ</title>
-      <link>/posts/2015-12/</link>
+      <link>/posts/2016/01/12/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2015%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Tue, 12 Jan 2016 01:34:00 +0900</pubDate>
       
-      <guid>/posts/2015-12/</guid>
+      <guid>/posts/2016/01/12/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2015%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>先月も本を全然読めてませんね。
 昨年7月あたりから職場環境が変わったせいで、
 通勤電車内は英語の勉強の場へと変わってしまったので、
@@ -419,10 +436,10 @@ Samsung kindle で貰えたのでとりあえず読んだ。
     
     <item>
       <title>臆病者のための Ansible</title>
-      <link>/posts/ansible_5/</link>
+      <link>/posts/2016/01/12/%E8%87%86%E7%97%85%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-ansible/</link>
       <pubDate>Tue, 12 Jan 2016 01:06:00 +0900</pubDate>
       
-      <guid>/posts/ansible_5/</guid>
+      <guid>/posts/2016/01/12/%E8%87%86%E7%97%85%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-ansible/</guid>
       <description>Target Links 臆病者のための確認コマンド  基本 確認 hosts 制限 hosts 確認 tasks 確認 最終   〆  Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
 全て手順書のように書いていればいいのだが、多数のRoleを使い高度に書かれたAnsible playbookを引き継ぎ、メンテまたは代わりに実行するのはとても怖い。
 playbook実行する前に何がどうなるのか確認しまくりたい。
@@ -442,10 +459,10 @@ host は hosts ファイルなどで定義された ansible のためのサー�
     
     <item>
       <title>2015年 大晦日</title>
-      <link>/posts/2015/</link>
+      <link>/posts/2015/12/31/2015%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Thu, 31 Dec 2015 23:09:00 +0900</pubDate>
       
-      <guid>/posts/2015/</guid>
+      <guid>/posts/2015/12/31/2015%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>Blog
 今年は、本当に全く更新しませんでした。転職して前より多少は時間に余裕が出たので、ぼちぼちと月一ぐらいは何か書きたいなぁ。
 カメラ
@@ -468,10 +485,10 @@ Twitter 変わらずぼちぼち、Facebook 結構使うように、LINE 高校�
     
     <item>
       <title>CP&#43; 2015 行ってきました</title>
-      <link>/posts/cp-2015/</link>
+      <link>/posts/2015/02/17/cp-2015-%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Tue, 17 Feb 2015 14:52:00 +0900</pubDate>
       
-      <guid>/posts/cp-2015/</guid>
+      <guid>/posts/2015/02/17/cp-2015-%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>今までミノルタ X-700 を使ってた時は最新のカメラ動向は気にならなかったのですが、
 去年末にソニー α77 に買い換えてからデジタル一眼の最新動向が気になり始めました。
 で、行ってきました cp+ 2015 ！
@@ -516,10 +533,10 @@ CP+に初めて来て知ったが、ここは最新の写真家一覧を見る�
     
     <item>
       <title>2014年 大晦日</title>
-      <link>/posts/2014/</link>
+      <link>/posts/2014/12/31/2014%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Wed, 31 Dec 2014 22:48:00 +0900</pubDate>
       
-      <guid>/posts/2014/</guid>
+      <guid>/posts/2014/12/31/2014%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>Blog 今年もぼちぼちとしかblog更新しませんでした、来年はがんばる（毎年言ってる）
 何個か技術ネタをぼちぼち出せたのが良かった。
 カメラ 今年は鈴鹿までWTCC撮影にいけた。流し撮り楽しくて満足。
@@ -543,10 +560,10 @@ EVE online 完全なスキルげーに、打開策を模索中。
     
     <item>
       <title>PureScriptでHello world</title>
-      <link>/posts/purescripthello-world/</link>
+      <link>/posts/2014/10/14/purescript%E3%81%A7hello-world/</link>
       <pubDate>Tue, 14 Oct 2014 12:44:00 +0900</pubDate>
       
-      <guid>/posts/purescripthello-world/</guid>
+      <guid>/posts/2014/10/14/purescript%E3%81%A7hello-world/</guid>
       <description>関数型言語系の本山（と思ってる）Haskell を勉強したいけど、
 折角勉強しても使い道を思いつかなかった時に PureScript を知る。
 PureScript は Haskell -&amp;gt; Javascript のコンパイラ。
@@ -563,10 +580,10 @@ cabal update cabal install purescript 実行</description>
     
     <item>
       <title>Microsoft Azure で ubuntu サーバー立てて sshで繋いでみる</title>
-      <link>/posts/microsoft-azure-ubuntu-ssh/</link>
+      <link>/posts/2014/08/25/microsoft-azure-%E3%81%A7-ubuntu-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%AB%8B%E3%81%A6%E3%81%A6-ssh%E3%81%A7%E7%B9%8B%E3%81%84%E3%81%A7%E3%81%BF%E3%82%8B/</link>
       <pubDate>Mon, 25 Aug 2014 19:00:00 +0900</pubDate>
       
-      <guid>/posts/microsoft-azure-ubuntu-ssh/</guid>
+      <guid>/posts/2014/08/25/microsoft-azure-%E3%81%A7-ubuntu-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%AB%8B%E3%81%A6%E3%81%A6-ssh%E3%81%A7%E7%B9%8B%E3%81%84%E3%81%A7%E3%81%BF%E3%82%8B/</guid>
       <description>AWSに関しては散々方々で語られているのでAzureに手を出してみた。
 Windowsしか作れないと思ってたらちゃんとubuntuも用意されているし、最近追加された新ビューだとMySQLも作れるようになっている。
 Windows上にsshを入れる（読み飛ばし可） ubuntuに繋げるためにsshが必要、鍵作成にopensslもいるので
@@ -598,10 +615,10 @@ UIの画面込みで説明したいけど、すぐUI構成変わりそうなの�
     
     <item>
       <title>[読書メーター]2013年 12月読書まとめ読書メーター</title>
-      <link>/posts/2013-12/</link>
+      <link>/posts/2014/01/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
       <pubDate>Fri, 31 Jan 2014 14:10:00 +0900</pubDate>
       
-      <guid>/posts/2013-12/</guid>
+      <guid>/posts/2014/01/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
       <description>昨年１２月のまとめ。
 読んだ内容としてはラノベ２冊とダン・ブラウンの下巻のみ。
 相変わらず読んだ量が少ない。
@@ -622,10 +639,10 @@ UIの画面込みで説明したいけど、すぐUI構成変わりそうなの�
     
     <item>
       <title>2013年 大晦日</title>
-      <link>/posts/2013/</link>
+      <link>/posts/2013/12/31/2013%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Tue, 31 Dec 2013 23:18:00 +0900</pubDate>
       
-      <guid>/posts/2013/</guid>
+      <guid>/posts/2013/12/31/2013%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>今年も早いもので一年が過ぎようとしています。
 紅白を見ながら今年一年を振り返ってみます。
 Blog 反省。更新頻度低し、ただ発信する心がなくなったわけではなく、相変わらずTwitter, facebook, Instagram にばらけてるだけ、来年は仕事系のまとめをもう少し増やしたい。
@@ -649,10 +666,10 @@ Androidチームだった面々は一人を除いて、Androidと別の仕事の
     
     <item>
       <title>[読書メーター]2013年 11月読書まとめ読書メーター</title>
-      <link>/posts/2013-11/</link>
+      <link>/posts/2013/12/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-11%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
       <pubDate>Tue, 31 Dec 2013 22:19:00 +0900</pubDate>
       
-      <guid>/posts/2013-11/</guid>
+      <guid>/posts/2013/12/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-11%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
       <description>11月 前から気になっていたダン=ブラウンのロストシンボルと、
 有川さんの空飛ぶ広報室がようやっとみれた。
 後、平行してとある魔術の・・・シリーズを読破中。
@@ -676,10 +693,10 @@ Androidチームだった面々は一人を除いて、Androidと別の仕事の
     
     <item>
       <title>JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係）</title>
-      <link>/posts/jbmr243kitkat44permission/</link>
+      <link>/posts/2013/11/01/jb_mr24.3%E3%81%A8kitkat4.4%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Fri, 01 Nov 2013 14:59:00 +0900</pubDate>
       
-      <guid>/posts/jbmr243kitkat44permission/</guid>
+      <guid>/posts/2013/11/01/jb_mr24.3%E3%81%A8kitkat4.4%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
  ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
@@ -704,10 +721,10 @@ android.permission.GET_DETAILED_TASKS</description>
     
     <item>
       <title>JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）</title>
-      <link>/posts/jbmr142jbmr243permission/</link>
+      <link>/posts/2013/11/01/jb_mr14.2%E3%81%A8jb_mr24.3%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Fri, 01 Nov 2013 12:40:00 +0900</pubDate>
       
-      <guid>/posts/jbmr142jbmr243permission/</guid>
+      <guid>/posts/2013/11/01/jb_mr14.2%E3%81%A8jb_mr24.3%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
  ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）  にあります。
@@ -730,10 +747,10 @@ android.permission.REMOTE_AUDIO_PLAYBACK</description>
     
     <item>
       <title>Mountain LionでOpenGrok メモ</title>
-      <link>/posts/mountain-lionopengrok/</link>
+      <link>/posts/2013/10/30/mountain-lion%E3%81%A7opengrok-%E3%83%A1%E3%83%A2/</link>
       <pubDate>Wed, 30 Oct 2013 17:41:00 +0900</pubDate>
       
-      <guid>/posts/mountain-lionopengrok/</guid>
+      <guid>/posts/2013/10/30/mountain-lion%E3%81%A7opengrok-%E3%83%A1%E3%83%A2/</guid>
       <description>このページを参考にしてOpenGrokをセットアップしてたけど何点か詰まったので備忘録として。
 参考ページ：Mac OS X に OpenGrok で、今日からコードリーディング
 こちらの状況：java, antはセットアップ済み
@@ -747,10 +764,10 @@ Bug#388371: jflex: JFlexTask cannot be found
     
     <item>
       <title>[読書メーター]2013年 8月読書まとめ読書メーター</title>
-      <link>/posts/2013-8/</link>
+      <link>/posts/2013/09/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-8%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
       <pubDate>Mon, 30 Sep 2013 23:42:00 +0900</pubDate>
       
-      <guid>/posts/2013-8/</guid>
+      <guid>/posts/2013/09/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-8%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
       <description>ぼちぼち涼しくなり始めたので読書がはかどり始めた。
 疲れと、気温に読書量が影響されるようになってきた。
 そういえば、メイドインジャパンは久しぶりの図書館背表紙借り、結果は当たりのような外れのような。
@@ -772,29 +789,29 @@ Bug#388371: jflex: JFlexTask cannot be found
     
     <item>
       <title>Xperia Z tablet の初期化（no Companion)</title>
-      <link>/posts/xperia-z-tablet-no-companion-comments/</link>
+      <link>/posts/2013/09/04/xperia-z-tablet-%E3%81%AE%E5%88%9D%E6%9C%9F%E5%8C%96no-companion/</link>
       <pubDate>Wed, 04 Sep 2013 18:56:00 +0900</pubDate>
       
-      <guid>/posts/xperia-z-tablet-no-companion-comments/</guid>
+      <guid>/posts/2013/09/04/xperia-z-tablet-%E3%81%AE%E5%88%9D%E6%9C%9F%E5%8C%96no-companion/</guid>
       <description>でない 匿名 - Aug 1, 2016でない
 SONYロゴが出たらボリュームキーの下を押しぱなしみたいだが、未確認</description>
     </item>
     
     <item>
       <title>Xperia Z tablet の初期化（no Companion)</title>
-      <link>/posts/xperia-z-tablet-no-companion/</link>
+      <link>/posts/2013/09/04/xperia-z-tablet-%E3%81%AE%E5%88%9D%E6%9C%9F%E5%8C%96no-companion/</link>
       <pubDate>Wed, 04 Sep 2013 18:56:00 +0900</pubDate>
       
-      <guid>/posts/xperia-z-tablet-no-companion/</guid>
+      <guid>/posts/2013/09/04/xperia-z-tablet-%E3%81%AE%E5%88%9D%E6%9C%9F%E5%8C%96no-companion/</guid>
       <description>ロックパスワードが不明な状態の Xperia Z tablet を初期化で救う方法をネットで検索したらCompanionを使う方法ばかりだったので、 macの人が困るのでハードキーのみを使用したリセット方法を見つけたのでメモ。  電源落とす ボリュームキーの下を押しながら電源ボタン長押しで再起動 初期化画面が出てくる  </description>
     </item>
     
     <item>
       <title>[読書メーター]2013年 7月読書まとめ読書メーター</title>
-      <link>/posts/2013-6/</link>
+      <link>/posts/2013/08/01/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-7%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
       <pubDate>Thu, 01 Aug 2013 02:32:00 +0900</pubDate>
       
-      <guid>/posts/2013-6/</guid>
+      <guid>/posts/2013/08/01/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-7%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
       <description>あーもー７月も終わり。 最近は暑くて本が全然進んでおりませぬ。
 森さんや京極さんなんかのガツンとした本を全然読んどりません。 西尾さんも面白いんだけど、 やっぱガツンとしたの読まないとな～。9月から本気だす。
 西尾さんといえば、まさかの悲鳴伝の続編。 さらに悲惨伝、悲報伝、非業伝と続くみたい、 よくもそんなにポンポンとアイディアが出てくるなと関心。 同人小説のようなノリなのに、それ臭さが消されてるあたりに凄いと思います。
@@ -813,10 +830,10 @@ SONYロゴが出たらボリュームキーの下を押しぱなしみたいだ�
     
     <item>
       <title>[読書メーター]2013年 4月読書まとめ読書メーター</title>
-      <link>/posts/2013-4/</link>
+      <link>/posts/2013/05/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-4%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
       <pubDate>Fri, 31 May 2013 11:58:00 +0900</pubDate>
       
-      <guid>/posts/2013-4/</guid>
+      <guid>/posts/2013/05/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-4%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
       <description>相変わらず漫画ばかり読む日々、４月は星界の紋章の再読のみ。
 そういや最近MMOのEVE onlineに結構ハマってます。
 内容的には星界の紋章と似たような世界観。
@@ -836,10 +853,10 @@ SFなゲームってある意味ファンタジー系よりも作りにくいの
     
     <item>
       <title>[読書メーター]2013年 3月読書まとめ読書メーター</title>
-      <link>/posts/2013-3/</link>
+      <link>/posts/2013/05/01/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-3%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
       <pubDate>Wed, 01 May 2013 00:47:00 +0900</pubDate>
       
-      <guid>/posts/2013-3/</guid>
+      <guid>/posts/2013/05/01/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-3%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
       <description>久しくブログ更新してなかったので（ネタがない訳じゃないんだけど）
 とりあえず３月分の読書記録をペタっと。
 って本読んでなさ過ぎ！
@@ -861,19 +878,19 @@ SFなゲームってある意味ファンタジー系よりも作りにくいの
     
     <item>
       <title>JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）</title>
-      <link>/posts/jb41jbmr142permission-comments/</link>
+      <link>/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Wed, 12 Dec 2012 00:30:00 +0900</pubDate>
       
-      <guid>/posts/jb41jbmr142permission-comments/</guid>
+      <guid>/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>大変勉強になりました。ありがとうございます(^-^)/ 匿名 - Feb 5, 2013大変勉強になりました。ありがとうございます(^-^)/</description>
     </item>
     
     <item>
       <title>JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）</title>
-      <link>/posts/jb41jbmr142permission/</link>
+      <link>/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Wed, 12 Dec 2012 00:30:00 +0900</pubDate>
       
-      <guid>/posts/jb41jbmr142permission/</guid>
+      <guid>/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>Android 4.2 (JELLY_BEAN_MR1) が出ましたので、恒例のsignatureがらみのPermission比較したいと思います。
 前回までのPermission比較は
  ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係）  にあります。
@@ -896,10 +913,10 @@ android.permission.HARDWARE_TEST</description>
     
     <item>
       <title>鈴鹿WTCC 2012</title>
-      <link>/posts/wtcc-2012/</link>
+      <link>/posts/2012/12/03/%E9%88%B4%E9%B9%BFwtcc-2012/</link>
       <pubDate>Mon, 03 Dec 2012 02:29:00 +0900</pubDate>
       
-      <guid>/posts/wtcc-2012/</guid>
+      <guid>/posts/2012/12/03/%E9%88%B4%E9%B9%BFwtcc-2012/</guid>
       <description>今年も１０月に鈴鹿までWTCCとスーパー耐久を流し撮りに行ってきました。
 去年は一眼レフ、WTCC共に初心者。
 慣れないカメラに望遠が何mmかも分からないまま75mmレンズを携えて、ルールも知らずに鈴鹿について、WTCCの迫力に圧倒されながら夢中で流し撮りしてました。
@@ -935,10 +952,10 @@ android.permission.HARDWARE_TEST</description>
     
     <item>
       <title>[読書メーター]2012年 11月読書まとめ読書メーター</title>
-      <link>/posts/2012-11/</link>
+      <link>/posts/2012/12/03/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-11%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
       <pubDate>Mon, 03 Dec 2012 00:17:00 +0900</pubDate>
       
-      <guid>/posts/2012-11/</guid>
+      <guid>/posts/2012/12/03/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-11%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
       <description>10月の読書まとめ忘れてター。
 過ぎたことは仕方ないか、さてあいも変わらず皇国の守護者と漫画読んでます。
 本年中に皇国の～は読み終わるかな？
@@ -959,10 +976,10 @@ android.permission.HARDWARE_TEST</description>
     
     <item>
       <title>[読書メーター]2012年 9月読書まとめ読書メーター</title>
-      <link>/posts/2012-9/</link>
+      <link>/posts/2012/12/03/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-9%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
       <pubDate>Mon, 03 Dec 2012 00:15:00 +0900</pubDate>
       
-      <guid>/posts/2012-9/</guid>
+      <guid>/posts/2012/12/03/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-9%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
       <description>最近は本当に漫画が多いなぁ。
 さくさく読めちゃうし最近は面白い漫画との出会いが多くて困ってしまう。小説読まないどころか寝不足気味。
 でも漫画がきっかけで、&amp;ldquo;星を継ぐもの&amp;rdquo;、&amp;ldquo;皇国の守護者&amp;quot;との新しい小説との出会いもありましたのでよしとするかな。
@@ -978,10 +995,10 @@ android.permission.HARDWARE_TEST</description>
     
     <item>
       <title>Androidで共通鍵暗号化でつまづいたので記録に残す</title>
-      <link>/posts/android/</link>
+      <link>/posts/2012/10/01/android%E3%81%A7%E5%85%B1%E9%80%9A%E9%8D%B5%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F%E3%81%AE%E3%81%A7%E8%A8%98%E9%8C%B2%E3%81%AB%E6%AE%8B%E3%81%99/</link>
       <pubDate>Mon, 01 Oct 2012 09:00:00 +0900</pubDate>
       
-      <guid>/posts/android/</guid>
+      <guid>/posts/2012/10/01/android%E3%81%A7%E5%85%B1%E9%80%9A%E9%8D%B5%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F%E3%81%AE%E3%81%A7%E8%A8%98%E9%8C%B2%E3%81%AB%E6%AE%8B%E3%81%99/</guid>
       <description>Androidで文字列をセキュアに保存したい場合、
 暗号化してsqliteに保存するのがよろしいと思われる。
 ここではAndroid自体のセキュリティがアレだとか、Rooted端末とapktoolがあればアレをこうしてアレ出来るだとかいう話はとりあえず置いとく。
@@ -992,10 +1009,10 @@ android.permission.HARDWARE_TEST</description>
     
     <item>
       <title>[読書メーター]2012年 8月読書まとめ読書メーター</title>
-      <link>/posts/2012-8/</link>
+      <link>/posts/2012/09/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-8%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
       <pubDate>Sun, 30 Sep 2012 22:01:00 +0900</pubDate>
       
-      <guid>/posts/2012-8/</guid>
+      <guid>/posts/2012/09/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-8%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
       <description>最近は漫画ばかり読んでて小説に手がつけれていない。
 それでもビブリア古書堂と森博嗣のVシリーズを読み始めた。
 Vシリーズの紅子さんのキャラ立ちっぷりが凄い。
@@ -1019,10 +1036,10 @@ Vシリーズ初弾。瀬在丸紅子のキャラクタが良い。端的にと�
     
     <item>
       <title>JBとICSのPermission比較（メーカー署名関係）</title>
-      <link>/posts/jbicspermission/</link>
+      <link>/posts/2012/08/13/jb%E3%81%A8ics%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Mon, 13 Aug 2012 09:00:00 +0900</pubDate>
       
-      <guid>/posts/jbicspermission/</guid>
+      <guid>/posts/2012/08/13/jb%E3%81%A8ics%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
  注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
  またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
@@ -1052,10 +1069,10 @@ android.permission.ASEC_ACCESS</description>
     
     <item>
       <title>[読書メーター]2012年 6月読書まとめ読書メーター</title>
-      <link>/posts/2012-6/</link>
+      <link>/posts/2012/07/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-6%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</link>
       <pubDate>Tue, 31 Jul 2012 23:43:00 +0900</pubDate>
       
-      <guid>/posts/2012-6/</guid>
+      <guid>/posts/2012/07/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-6%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/</guid>
       <description>久しぶりに読書メーターのログを貼ってみる。
 最近は調子が悪くて読書がはかどっていない。
 ６月なぞ一冊だけだったようだ。
@@ -1074,10 +1091,10 @@ android.permission.ASEC_ACCESS</description>
     
     <item>
       <title>ドコモのGalaxySIII と世界のGalaxySIIIの違い</title>
-      <link>/posts/galaxysiii-galaxysiii/</link>
+      <link>/posts/2012/05/18/%E3%83%89%E3%82%B3%E3%83%A2%E3%81%AEgalaxysiii-%E3%81%A8%E4%B8%96%E7%95%8C%E3%81%AEgalaxysiii%E3%81%AE%E9%81%95%E3%81%84/</link>
       <pubDate>Fri, 18 May 2012 22:19:00 +0900</pubDate>
       
-      <guid>/posts/galaxysiii-galaxysiii/</guid>
+      <guid>/posts/2012/05/18/%E3%83%89%E3%82%B3%E3%83%A2%E3%81%AEgalaxysiii-%E3%81%A8%E4%B8%96%E7%95%8C%E3%81%AEgalaxysiii%E3%81%AE%E9%81%95%E3%81%84/</guid>
       <description>GIGAZINEのこの記事を見て勢いで作った。
   「Galaxy S Ⅲ」900万台の事前予約注文が全世界の通信キャリアから殺到、最終的には5000万台も
 http://gigazine.net/news/20120518-galaxy-s3-9million-pre-orders/
@@ -1105,10 +1122,10 @@ Galaxy SII LTE触ったことがある人なら3GとLTEの切り替えで電池�
     
     <item>
       <title>[読書メーター]2011年 12月読書まとめ</title>
-      <link>/posts/2011-12/</link>
+      <link>/posts/2012/01/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Mon, 30 Jan 2012 01:35:00 +0900</pubDate>
       
-      <guid>/posts/2011-12/</guid>
+      <guid>/posts/2012/01/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>とりあえずこっそり目標にしていた
 森 博嗣さんのS&amp;amp;Mシリーズはなんとか最後まで読んだ。
 相変わらず読む冊数が少ないのは、
@@ -1130,10 +1147,10 @@ S&amp;amp;Mシリーズらすとにして、何かの始まりのような物語
     
     <item>
       <title>【写真】ISO100フィルム色々買ってみた。</title>
-      <link>/posts/iso100/</link>
+      <link>/posts/2012/01/04/%E5%86%99%E7%9C%9Fiso100%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0%E8%89%B2%E3%80%85%E8%B2%B7%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</link>
       <pubDate>Wed, 04 Jan 2012 02:33:00 +0900</pubDate>
       
-      <guid>/posts/iso100/</guid>
+      <guid>/posts/2012/01/04/%E5%86%99%E7%9C%9Fiso100%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0%E8%89%B2%E3%80%85%E8%B2%B7%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
       <description>ずーっと安さ優先でISO400のKodak SUPER GOLDを使っていましたが、そろそろ構図ぐらいはまともに撮れる事が多くなってきたのでフィルムにも凝ってみるかーと、有楽町ビックカメラで5種類程買ってきました。
 
 ついでに日中風景写真撮りたいのでISO100で全部揃えました。
@@ -1147,10 +1164,10 @@ S&amp;amp;Mシリーズらすとにして、何かの始まりのような物語
     
     <item>
       <title>2011年終了</title>
-      <link>/posts/2011/</link>
+      <link>/posts/2011/12/31/2011%E5%B9%B4%E7%B5%82%E4%BA%86/</link>
       <pubDate>Sat, 31 Dec 2011 23:55:00 +0900</pubDate>
       
-      <guid>/posts/2011/</guid>
+      <guid>/posts/2011/12/31/2011%E5%B9%B4%E7%B5%82%E4%BA%86/</guid>
       <description>今年も残すところ後数分、ささっと今年を振り返ってみたいと思います。
 地震 3月にあった地震とりあえず阪神大震災の時よりも生きた心地がしませんでした。
 被害にあった場所は某都内の高層ビルの33階。
@@ -1184,10 +1201,10 @@ Androidと喧嘩するややこしいお仕事に変更。
     
     <item>
       <title>[読書メーター]2011年 11月読書まとめ</title>
-      <link>/posts/2011-11/</link>
+      <link>/posts/2011/12/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-11%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sat, 31 Dec 2011 23:42:00 +0900</pubDate>
       
-      <guid>/posts/2011-11/</guid>
+      <guid>/posts/2011/12/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-11%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>行き帰りの電車の中でスマホゲームをしちゃう時間が増えたなぁ。
 出来るだけ何も残らないゲームよりも、読書のほうに時間をかけるようにしたい。
 11月の読書メーター
@@ -1206,10 +1223,10 @@ Androidと喧嘩するややこしいお仕事に変更。
     
     <item>
       <title>[読書メーター]2011年 10月読書まとめ</title>
-      <link>/posts/2011-10/</link>
+      <link>/posts/2011/11/29/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-10%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Tue, 29 Nov 2011 13:39:00 +0900</pubDate>
       
-      <guid>/posts/2011-10/</guid>
+      <guid>/posts/2011/11/29/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-10%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>たった２冊かぁ
 忙しいとはいえ反省しなきゃいけないな。
 10月の読書メーター
@@ -1228,10 +1245,10 @@ Androidと喧嘩するややこしいお仕事に変更。
     
     <item>
       <title>ICSとGingerbreadのPermission比較（メーカー署名関係）</title>
-      <link>/posts/icsgingerbreadpermission/</link>
+      <link>/posts/2011/11/28/ics%E3%81%A8gingerbread%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Mon, 28 Nov 2011 13:45:00 +0900</pubDate>
       
-      <guid>/posts/icsgingerbreadpermission/</guid>
+      <guid>/posts/2011/11/28/ics%E3%81%A8gingerbread%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>ICSのテストをしていると、前まで動いていたところでSecurityExceptionをはきました。
 端末不具合かソースが変わったのかを調べる為に
 公開されているICS(Android 4.0)とGingerbread(Android 2.3.3)のAndroidManifest.xmlを比較してみました。
@@ -1301,10 +1318,10 @@ android.permission.ASEC_RENAME</description>
     
     <item>
       <title>WTCCとスーパー耐久</title>
-      <link>/posts/wtcc/</link>
+      <link>/posts/2011/10/23/wtcc%E3%81%A8%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E8%80%90%E4%B9%85/</link>
       <pubDate>Sun, 23 Oct 2011 00:10:00 +0900</pubDate>
       
-      <guid>/posts/wtcc/</guid>
+      <guid>/posts/2011/10/23/wtcc%E3%81%A8%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E8%80%90%E4%B9%85/</guid>
       <description>ある日職場の先輩に「WTCCいかね？」と誘われる。
 モータースポーツには興味がなかったので断ろうかと思ったが今まで見た事もないので、一度見てみるのもいいかと思い承諾。日時はおって伝えると言われた。日程は10/21〜23の３日間。金曜日に有給とっていくぜよと言われ有給申請。後は野となれ山となれで日々仕事に追われてた。
 唯一、趣味の一眼レフカメラでいつもと違うものを撮れるだろうことだけが楽しみだった。
@@ -1375,10 +1392,10 @@ WTCCは１レースが前半戦と後半戦に分かれている。
     
     <item>
       <title>[読書メーター]2011年 6月読書まとめ</title>
-      <link>/posts/2011-6/</link>
+      <link>/posts/2011/07/07/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-6%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Thu, 07 Jul 2011 10:31:00 +0900</pubDate>
       
-      <guid>/posts/2011-6/</guid>
+      <guid>/posts/2011/07/07/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-6%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>銀河英雄伝説な月。
 箸休めに読んだ本等あるけど、基本的には銀英伝を読みまくってました。
 この本は本当に読み応えがある、キャラが立ってる、話の縦軸となるテーマがきっちり消化されていっている、巻毎の起承転結もメリハリが聞いてる。
@@ -1412,10 +1429,10 @@ WTCCは１レースが前半戦と後半戦に分かれている。
     
     <item>
       <title>[読書メーター]2011年 4月読書まとめ</title>
-      <link>/posts/2011-4/</link>
+      <link>/posts/2011/05/25/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-4%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Wed, 25 May 2011 01:31:00 +0900</pubDate>
       
-      <guid>/posts/2011-4/</guid>
+      <guid>/posts/2011/05/25/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-4%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>3月分の読書まとめ忘れてた〜。
 既に取得出来ない〜、サボリ癖が出始めてますね気をつけないと。
 さて、もう取得出来なくなった３月分はおいといて、
@@ -1442,10 +1459,10 @@ WTCCは１レースが前半戦と後半戦に分かれている。
     
     <item>
       <title>[読書メーター]2011年 2月読書まとめ</title>
-      <link>/posts/2/</link>
+      <link>/posts/2011/03/23/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-2%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Wed, 23 Mar 2011 22:40:00 +0900</pubDate>
       
-      <guid>/posts/2/</guid>
+      <guid>/posts/2011/03/23/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-2%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>あやうく忘れるところだった2月読書まとめ。
 3冊かぁ・・・たいして読んでないなぁ。
 著作権本は読んでよかった
@@ -1471,10 +1488,10 @@ WTCCは１レースが前半戦と後半戦に分かれている。
     
     <item>
       <title>[読書メーター]2011年 1月読書まとめ</title>
-      <link>/posts/2011-1/</link>
+      <link>/posts/2011/02/07/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-1%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Mon, 07 Feb 2011 22:19:00 +0900</pubDate>
       
-      <guid>/posts/2011-1/</guid>
+      <guid>/posts/2011/02/07/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-1%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>1月は５冊にとどまる。
 通勤時間が減ったのがネックかな。
 機本さんで久しぶりにSF熱、サイエンス熱に火がつく。
@@ -1501,10 +1518,10 @@ WTCCは１レースが前半戦と後半戦に分かれている。
     
     <item>
       <title>[読書メーター]2010年 12月読書まとめ</title>
-      <link>/posts/2010-12/</link>
+      <link>/posts/2011/01/22/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sat, 22 Jan 2011 02:00:00 +0900</pubDate>
       
-      <guid>/posts/2010-12/</guid>
+      <guid>/posts/2011/01/22/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>去年の１２月の読書まとめ。
 なんと三冊しか読んでいない。
 理由はきっとリトルリトルクトゥルー
@@ -1526,10 +1543,10 @@ WTCCは１レースが前半戦と後半戦に分かれている。
     
     <item>
       <title>2010年大晦日</title>
-      <link>/posts/2010/</link>
+      <link>/posts/2010/12/31/2010%E5%B9%B4%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Fri, 31 Dec 2010 23:25:00 +0900</pubDate>
       
-      <guid>/posts/2010/</guid>
+      <guid>/posts/2010/12/31/2010%E5%B9%B4%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>今年も色々ありました。
 仕事では
 東京にきてからずっと一緒に仕事してきた人とお別れをし、
@@ -1569,10 +1586,10 @@ Dynamics AXっていうんですけどね。
     
     <item>
       <title>[読書メーター]2010年 11月読書まとめ</title>
-      <link>/posts/2010-11/</link>
+      <link>/posts/2010/12/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-11%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Fri, 31 Dec 2010 17:41:00 +0900</pubDate>
       
-      <guid>/posts/2010-11/</guid>
+      <guid>/posts/2010/12/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-11%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>更新忘れてたー。
 １１月はフルメタ見つけて読んでました。
 それと有川さんの図書館戦争読み切りですね。
@@ -1611,10 +1628,10 @@ Dynamics AXっていうんですけどね。
     
     <item>
       <title>Flickr始めました</title>
-      <link>/posts/flickr_20/</link>
+      <link>/posts/2010/12/20/flickr%E5%A7%8B%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Mon, 20 Dec 2010 01:37:00 +0900</pubDate>
       
-      <guid>/posts/flickr_20/</guid>
+      <guid>/posts/2010/12/20/flickr%E5%A7%8B%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>飼い猫黒猫
 Originally uploaded by callas1900flickr
 最近、素人一眼レフ使いになりました。
@@ -1628,10 +1645,10 @@ http://www.flickr.com/photos/callas1900/</description>
     
     <item>
       <title>[読書メーター]2010年 9月読書まとめ</title>
-      <link>/posts/2010-9/</link>
+      <link>/posts/2010/10/25/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-9%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Mon, 25 Oct 2010 00:29:00 +0900</pubDate>
       
-      <guid>/posts/2010-9/</guid>
+      <guid>/posts/2010/10/25/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-9%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>全然更新してなかったけど１１月になる前に慌てて９月分の読書メーター更新。
 ８月分も更新してなかったけど、更新しようにももうデータがゲットできないみたい。
 まぁあんまり読書してなかったしいっかなぁ。
@@ -1659,10 +1676,10 @@ http://www.flickr.com/photos/callas1900/</description>
     
     <item>
       <title>[読書メーター]2010年 7月読書まとめ</title>
-      <link>/posts/exteml-2010-7/</link>
+      <link>/posts/2010/08/19/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-7%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Thu, 19 Aug 2010 22:50:00 +0900</pubDate>
       
-      <guid>/posts/exteml-2010-7/</guid>
+      <guid>/posts/2010/08/19/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-7%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>夏は読書に向かない季節。暑い汗が出てページに汗が吸い込まれる気がする。
 本だって読まれたくないよね！
 って言い訳はおいといて７月は４冊でした。少ない！
@@ -1687,10 +1704,10 @@ QED 竹取伝説 (講談社文庫)
     
     <item>
       <title>[TS][Windows2008]期限が切れたターミナルサービスの復旧方法</title>
-      <link>/posts/tswindows2008/</link>
+      <link>/posts/2010/08/18/tswindows2008%E6%9C%9F%E9%99%90%E3%81%8C%E5%88%87%E3%82%8C%E3%81%9F%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E5%BE%A9%E6%97%A7%E6%96%B9%E6%B3%95/</link>
       <pubDate>Wed, 18 Aug 2010 18:00:00 +0900</pubDate>
       
-      <guid>/posts/tswindows2008/</guid>
+      <guid>/posts/2010/08/18/tswindows2008%E6%9C%9F%E9%99%90%E3%81%8C%E5%88%87%E3%82%8C%E3%81%9F%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E5%BE%A9%E6%97%A7%E6%96%B9%E6%B3%95/</guid>
       <description>ターミナルサービス（TS）の無料を使ってて、期限が切れた（切れそう）なので
 ライセンスを買って設定するなんてことありますよね。
 Windows 2008 Server でTSのライセンスが切れたので、設定方法を残しておきます。
@@ -1710,10 +1727,10 @@ Activate Server Wizardが開始します。</description>
     
     <item>
       <title>[読書メーター]2010年6月読書まとめ</title>
-      <link>/posts/20106/</link>
+      <link>/posts/2010/07/21/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B46%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Wed, 21 Jul 2010 02:29:00 +0900</pubDate>
       
-      <guid>/posts/20106/</guid>
+      <guid>/posts/2010/07/21/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B46%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>やっとこさ化物語シリーズを読めた。
 化物語　上下
 偽物語　上下　と進むうちに面白くなっていった。
@@ -1751,10 +1768,10 @@ Activate Server Wizardが開始します。</description>
     
     <item>
       <title>[JavaScript][VBScript]VBScript &#43; Javascriptで簡単プロジェクト内ツール。その２</title>
-      <link>/posts/javascriptvbscriptvbscript-javascript_08/</link>
+      <link>/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/</link>
       <pubDate>Thu, 08 Jul 2010 13:55:00 +0900</pubDate>
       
-      <guid>/posts/javascriptvbscriptvbscript-javascript_08/</guid>
+      <guid>/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/</guid>
       <description>０埋めはsliceを使え。 数値の０埋め処理のやり方
 ３桁０埋め
 function zeroPadding3(num){ return (&amp;quot;000&amp;quot; + num).slice(-3); } 日付型は6/31日とかセットするとちゃんと7/1になってくれる。 //月は0で1月、5で6月 alert(new Date(2010,5,31)); 実行結果
@@ -1769,10 +1786,10 @@ hoge()とするとブラウザが壊れるので要注意。
     
     <item>
       <title>[JavaScript][VBScript]VBScript &#43; Javascriptで簡単プロジェクト内ツール。その１</title>
-      <link>/posts/javascriptvbscriptvbscript-javascript/</link>
+      <link>/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/</link>
       <pubDate>Thu, 08 Jul 2010 13:44:00 +0900</pubDate>
       
-      <guid>/posts/javascriptvbscriptvbscript-javascript/</guid>
+      <guid>/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/</guid>
       <description>プロジェクトでIE6上で動く VBScript + JavaScript + HTML のツールを作ってみた。
 なんで今更？IE6？
 会社の中では未だに頑固にIE6が標準だーって会社は多いのさ。
@@ -1795,10 +1812,10 @@ VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  
     
     <item>
       <title>[読書メーター]2010年 5月読書まとめ</title>
-      <link>/posts/5-13-5059-professional-computing-series/</link>
+      <link>/posts/2010/06/16/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-5%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Wed, 16 Jun 2010 22:23:00 +0900</pubDate>
       
-      <guid>/posts/5-13-5059-professional-computing-series/</guid>
+      <guid>/posts/2010/06/16/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-5%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>５月の冊数は１３冊。西尾維新　戯言シリーズ読破！良く読んだよほんと。
 後長らく読書中だったソフトウェア職人気質も読了。
 狼と香辛料も順調に読破中。
@@ -1834,10 +1851,10 @@ VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  
     
     <item>
       <title>[勉強会]qpstudyにいってきました。</title>
-      <link>/posts/qpstudy/</link>
+      <link>/posts/2010/06/11/%E5%8B%89%E5%BC%B7%E4%BC%9Aqpstudy%E3%81%AB%E3%81%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Fri, 11 Jun 2010 15:14:00 +0900</pubDate>
       
-      <guid>/posts/qpstudy/</guid>
+      <guid>/posts/2010/06/11/%E5%8B%89%E5%BC%B7%E4%BC%9Aqpstudy%E3%81%AB%E3%81%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>まとめるの遅くなったけど、インフラ勉強会の
 qpstudy - キューピー３分インフラクッキング - 第一回に参加してきました。
 勉強会HP:
@@ -1889,10 +1906,10 @@ Agile まさかインフラエンジニアの勉強会でAgileって単語を聞
     
     <item>
       <title>[DynamicsAX2009]Admin グループの権限が外れた場合の対処方法</title>
-      <link>/posts/dynamicsax2009admin/</link>
+      <link>/posts/2010/05/13/dynamicsax2009admin-%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E6%A8%A9%E9%99%90%E3%81%8C%E5%A4%96%E3%82%8C%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AE%E5%AF%BE%E5%87%A6%E6%96%B9%E6%B3%95/</link>
       <pubDate>Thu, 13 May 2010 21:58:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009admin/</guid>
+      <guid>/posts/2010/05/13/dynamicsax2009admin-%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E6%A8%A9%E9%99%90%E3%81%8C%E5%A4%96%E3%82%8C%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AE%E5%AF%BE%E5%87%A6%E6%96%B9%E6%B3%95/</guid>
       <description>DynamicsAxにはデフォルトで管理者グループ「Admin」が存在します。
 Adminは全ての画面・機能へのアクセス権限を持ち、それを修正することは出来ません。
 しかしながら、開発時DBの差し替え、aodファイルによる定義差し替え等によって
@@ -1913,10 +1930,10 @@ Setupセクション User group permissions を起動。
     
     <item>
       <title>[読書メーター]2010年 4月読書まとめ</title>
-      <link>/posts/2010-4/</link>
+      <link>/posts/2010/05/10/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-4%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Mon, 10 May 2010 18:12:00 +0900</pubDate>
       
-      <guid>/posts/2010-4/</guid>
+      <guid>/posts/2010/05/10/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-4%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>4月読書数は8冊。
 冊数的には少なめ。
 理由は本の質と、4月末あたりに急に読書しない病が来たから。
@@ -1962,10 +1979,10 @@ Setupセクション User group permissions を起動。
     
     <item>
       <title>[DynamicsAX2009]AIFファイル上限値とその解除</title>
-      <link>/posts/dynamicsax2009aif/</link>
+      <link>/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/</link>
       <pubDate>Fri, 07 May 2010 18:07:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009aif/</guid>
+      <guid>/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/</guid>
       <description>デフォルト上限値の設定とエラー内容 DynamicsAXのAIFは外部ファイルとのやり取りを行うインターフェースの一つです。
 外部ファイルとのやり取り時、明示されてはいませんがファイルサイズの上限値があります。
 デフォルトでは10MBに設定されています。
@@ -1988,10 +2005,10 @@ For more information, see Help and Support Center at http://go.microsoft.com/fwl
     
     <item>
       <title>[日記]Agile Japan 2010に行って来ました</title>
-      <link>/posts/agile-japan-2010/</link>
+      <link>/posts/2010/04/14/%E6%97%A5%E8%A8%98agile-japan-2010%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E6%9D%A5%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Wed, 14 Apr 2010 01:59:00 +0900</pubDate>
       
-      <guid>/posts/agile-japan-2010/</guid>
+      <guid>/posts/2010/04/14/%E6%97%A5%E8%A8%98agile-japan-2010%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E6%9D%A5%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>4月9日（金）と4月10日（土）に行われたAgile Japan 2010に
 会社の上司さんと土曜日だけ参加してきました。
 会場の様子 会場はIBM本社ビルのセミナールーム。
@@ -2036,10 +2053,10 @@ IPAという公的機関がそういったアプローチをしていること�
     
     <item>
       <title>[読書メーター]2010年 3月読書まとめ</title>
-      <link>/posts/2010-3/</link>
+      <link>/posts/2010/04/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-3%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Mon, 05 Apr 2010 23:38:00 +0900</pubDate>
       
-      <guid>/posts/2010-3/</guid>
+      <guid>/posts/2010/04/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-3%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>さて、３月の読書まとめです。
 冊数は１０冊。
 ちょいと勢いが落ちた気がしますが、１５冊とかゼロ使の読みやすさが成せた技です。
@@ -2089,10 +2106,10 @@ IPAという公的機関がそういったアプローチをしていること�
     
     <item>
       <title>[BizTalk2009]BtsTaskによるバッチ作成</title>
-      <link>/posts/biztalk2009btstask/</link>
+      <link>/posts/2010/03/23/biztalk2009btstask%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90/</link>
       <pubDate>Tue, 23 Mar 2010 22:56:00 +0900</pubDate>
       
-      <guid>/posts/biztalk2009btstask/</guid>
+      <guid>/posts/2010/03/23/biztalk2009btstask%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90/</guid>
       <description>btstaskはBizTalkアプリケーションのインストール等をコマンドライン上で行えるコマンドラインツールです。
 以下に自分の使用例を書いときます。
   バインド設定を省いたアプリケーションのmsiファイルを作成する方法
@@ -2114,10 +2131,10 @@ btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizAp
     
     <item>
       <title>[DynamicsAX2009]DocumentServiceClassのアップデート</title>
-      <link>/posts/dynamicsax2009documentserviceclass/</link>
+      <link>/posts/2010/03/19/dynamicsax2009documentserviceclass%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/</link>
       <pubDate>Fri, 19 Mar 2010 02:33:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009documentserviceclass/</guid>
+      <guid>/posts/2010/03/19/dynamicsax2009documentserviceclass%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/</guid>
       <description>AIFサービスのベースになっているテーブルの定義変更をした場合に
 DocumentServiceClassのアップデートを行わなければならない。
 Query復元 AOTのQueryオブジェクト上で **Restore **を実行
@@ -2136,10 +2153,10 @@ Regenerate data object classes にのみチェックを入れる。</description
     
     <item>
       <title>[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事</title>
-      <link>/posts/dynamicsax2009axtabledb6/</link>
+      <link>/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/</link>
       <pubDate>Mon, 08 Mar 2010 00:23:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009axtabledb6/</guid>
+      <guid>/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/</guid>
       <description>DynamicsAXで開発をしていたり、
 AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。
 その場合にやるべき6つのことを書いておく。
@@ -2168,10 +2185,10 @@ C:\Users\\AppData\Local
     
     <item>
       <title>[読書メーター]2010年2月読書まとめ</title>
-      <link>/posts/20102_05/</link>
+      <link>/posts/2010/03/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B42%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Fri, 05 Mar 2010 00:55:00 +0900</pubDate>
       
-      <guid>/posts/20102_05/</guid>
+      <guid>/posts/2010/03/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B42%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>2月の読書数が13冊でした。
 ラノベで冊数を稼いでる感じがいなめない。
 ゼロ使17巻を図書館で借りれたので、無理矢理16巻まで再読しました。
@@ -2212,10 +2229,10 @@ Windows Server2008完全ガイドブック
     
     <item>
       <title>[BizTalk2009]BizTalk2009プロジェクト管理にVSS2005を使うとエラーポップアップ！</title>
-      <link>/posts/biztalk2009biztalk2009vss2005/</link>
+      <link>/posts/2010/02/28/biztalk2009biztalk2009%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E7%AE%A1%E7%90%86%E3%81%ABvss2005%E3%82%92%E4%BD%BF%E3%81%86%E3%81%A8%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%9D%E3%83%83%E3%83%97%E3%82%A2%E3%83%83%E3%83%97/</link>
       <pubDate>Sun, 28 Feb 2010 14:50:00 +0900</pubDate>
       
-      <guid>/posts/biztalk2009biztalk2009vss2005/</guid>
+      <guid>/posts/2010/02/28/biztalk2009biztalk2009%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E7%AE%A1%E7%90%86%E3%81%ABvss2005%E3%82%92%E4%BD%BF%E3%81%86%E3%81%A8%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%9D%E3%83%83%E3%83%97%E3%82%A2%E3%83%83%E3%83%97/</guid>
       <description>VisualStudio2008でBizTalkServer2009のプロジェクトを作り、
 管理をVSS2005でしていたところ、
 開発メンバーからアップデート・チェックイン・チェックアウトが出来ないと苦情がきた。
@@ -2241,10 +2258,10 @@ BizTalk Server 2009 プロジェクトを Visualk Studio 2008 で作成し、VSS
     
     <item>
       <title>[Windows][続報]2月 Windows Update で XP がブルースクリーンになる現象について</title>
-      <link>/posts/windows2-windows-update-xp/</link>
+      <link>/posts/2010/02/22/windows%E7%B6%9A%E5%A0%B12%E6%9C%88-windows-update-%E3%81%A7-xp-%E3%81%8C%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AB%E3%81%AA%E3%82%8B%E7%8F%BE%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
       <pubDate>Mon, 22 Feb 2010 23:57:00 +0900</pubDate>
       
-      <guid>/posts/windows2-windows-update-xp/</guid>
+      <guid>/posts/2010/02/22/windows%E7%B6%9A%E5%A0%B12%E6%9C%88-windows-update-%E3%81%A7-xp-%E3%81%8C%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AB%E3%81%AA%E3%82%8B%E7%8F%BE%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
       <description>[Windows]2月 Windows Update で XP がブルースクリーンになる現象について
 の続報
 結局MS10-015が悪いの？ どうやらMS10-015が悪い訳ではなく。
@@ -2265,10 +2282,10 @@ http://blogs.technet.com/jpsecurity/archive/2010/02/18/3313624.aspx</description
     
     <item>
       <title>[BizTalk2009]VisualStudio2008でBizTalk新規プロジェクトが作れなくなる。</title>
-      <link>/posts/biztalk2009visualstudio2008biztalk/</link>
+      <link>/posts/2010/02/19/biztalk2009visualstudio2008%E3%81%A7biztalk%E6%96%B0%E8%A6%8F%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%8C%E4%BD%9C%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B/</link>
       <pubDate>Fri, 19 Feb 2010 02:49:00 +0900</pubDate>
       
-      <guid>/posts/biztalk2009visualstudio2008biztalk/</guid>
+      <guid>/posts/2010/02/19/biztalk2009visualstudio2008%E3%81%A7biztalk%E6%96%B0%E8%A6%8F%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%8C%E4%BD%9C%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B/</guid>
       <description>BizTalk Server 2009 のプロジェクトをVisual Studio 2008 で作ってると
 ある日突然新規プロジェクトを作成しようとしても、
  Creating project &amp;lsquo;project name&amp;rsquo;… project creation failed.
@@ -2296,10 +2313,10 @@ BizTalk2009のインストール時に &amp;ldquo;csproj;btproj&amp;rdquo; に�
     
     <item>
       <title>[Windows]2月 Windows Update で XP がブルースクリーンになる現象について</title>
-      <link>/posts/windows2windowsupdatexp/</link>
+      <link>/posts/2010/02/16/windows2%E6%9C%88-windows-update-%E3%81%A7-xp-%E3%81%8C%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AB%E3%81%AA%E3%82%8B%E7%8F%BE%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
       <pubDate>Tue, 16 Feb 2010 00:46:00 +0900</pubDate>
       
-      <guid>/posts/windows2windowsupdatexp/</guid>
+      <guid>/posts/2010/02/16/windows2%E6%9C%88-windows-update-%E3%81%A7-xp-%E3%81%8C%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AB%E3%81%AA%E3%82%8B%E7%8F%BE%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
       <description>２月のWindowsUpdate適用後に
 WindowsXPがブルースクリーンになる現象が起きているそうです。
 多くは日本語環境以外でおきてるそうですが、油断はできません。
@@ -2325,10 +2342,10 @@ MS10-015を適用してねーってMSから言われたばかりで手のひら�
     
     <item>
       <title>[DynamicsAX2009][X&#43;&#43;]安全なクラスキャストとシステム日付</title>
-      <link>/posts/dynamicsax2009x/</link>
+      <link>/posts/2010/02/11/dynamicsax2009x-%E5%AE%89%E5%85%A8%E3%81%AA%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%97%A5%E4%BB%98/</link>
       <pubDate>Thu, 11 Feb 2010 14:02:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009x/</guid>
+      <guid>/posts/2010/02/11/dynamicsax2009x-%E5%AE%89%E5%85%A8%E3%81%AA%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%97%A5%E4%BB%98/</guid>
       <description>X++の小技を自分メモ用に紹介。
 X++に対してgoogle-code-prettifyがうまく動作するか不安だがやってみる。
  安全なクラスキャスト システム日付  [](http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016)安全なクラスキャスト static pulic void main(Args \_args) { binaryIO b; textIO t; ; b = SysDictClass::as(t,classIdGet(b)); } ちなみにObjectを使用して安全でないクラスキャストもできる。
@@ -2339,10 +2356,10 @@ void method1() { utcDateTime utc; Date d; ; utc = DateTimeUtil::applyTimeZoneOff
     
     <item>
       <title>[読書メーター]2010年1月読書まとめ</title>
-      <link>/posts/20101/</link>
+      <link>/posts/2010/02/02/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B41%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Tue, 02 Feb 2010 00:55:00 +0900</pubDate>
       
-      <guid>/posts/20101/</guid>
+      <guid>/posts/2010/02/02/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B41%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>あー、これだけ見るとラノベしか読んでない人になってしまうなぁ・・
 仕事本、勉強本も読んでるんだが、
 読み終わるって本が少ないのだ。
@@ -2378,10 +2395,10 @@ void method1() { utcDateTime utc; Date d; ; utc = DateTimeUtil::applyTimeZoneOff
     
     <item>
       <title>[JavaScript]BookMarklet覚書</title>
-      <link>/posts/javascriptbookmarklet/</link>
+      <link>/posts/2010/01/30/javascriptbookmarklet%E8%A6%9A%E6%9B%B8/</link>
       <pubDate>Sat, 30 Jan 2010 00:48:00 +0900</pubDate>
       
-      <guid>/posts/javascriptbookmarklet/</guid>
+      <guid>/posts/2010/01/30/javascriptbookmarklet%E8%A6%9A%E6%9B%B8/</guid>
       <description>BookMarkletはJavaScriptで作られた一行のプログラムです。
 javaScriptで書いたものを一行にすればとりあえず動くと思って下さい。
 サンプル実行方法はブラウザのURL入力欄に張り付けとシンプルなものです。
@@ -2399,10 +2416,10 @@ URLエンコードはサイトを探せばなんなりと出てきますのでGo
     
     <item>
       <title>[DynamicsAX2009]AIFの実行環境設定</title>
-      <link>/posts/dynamicsax2009aif_1262/</link>
+      <link>/posts/2010/01/21/dynamicsax2009aif%E3%81%AE%E5%AE%9F%E8%A1%8C%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</link>
       <pubDate>Thu, 21 Jan 2010 00:49:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009aif_1262/</guid>
+      <guid>/posts/2010/01/21/dynamicsax2009aif%E3%81%AE%E5%AE%9F%E8%A1%8C%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</guid>
       <description>AIFの実行環境設定 AXのBasicメニューより以下を設定する。
  AIFの実行環境設定  Local endpoints設定 Transport adapters設定 Channels設定  File System Adapter BizTalk Adapter   Endpoints設定  Data policies設定 Endpoint有効化      Local endpoints設定 会社毎にLocal endpointsを設定する。
 Local endpointsはI/Oを許可した会社の別名と考えれられる。
@@ -2430,10 +2447,10 @@ Inboundの場合は対応するOutboundを、</description>
     
     <item>
       <title>[DynamicsAX2009]X&#43;&#43;でよく使う型とそのスコープのまとめ</title>
-      <link>/posts/dynamicsax2009x_16/</link>
+      <link>/posts/2010/01/16/dynamicsax2009x-%E3%81%A7%E3%82%88%E3%81%8F%E4%BD%BF%E3%81%86%E5%9E%8B%E3%81%A8%E3%81%9D%E3%81%AE%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sat, 16 Jan 2010 16:45:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009x_16/</guid>
+      <guid>/posts/2010/01/16/dynamicsax2009x-%E3%81%A7%E3%82%88%E3%81%8F%E4%BD%BF%E3%81%86%E5%9E%8B%E3%81%A8%E3%81%9D%E3%81%AE%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>X++でよく使う型とそのスコープのまとめ 時々質問が飛んでくるので、メモ。
 標準的な型 型
 スコープ
@@ -2487,10 +2504,10 @@ xsd:time , ISO format:HH:MM:SS</description>
     
     <item>
       <title>[DynamicsAX2009]DynamicsAXの用語整理</title>
-      <link>/posts/dynamicsax2009dynamicsax/</link>
+      <link>/posts/2010/01/14/dynamicsax2009dynamicsax%E3%81%AE%E7%94%A8%E8%AA%9E%E6%95%B4%E7%90%86/</link>
       <pubDate>Thu, 14 Jan 2010 12:58:00 +0900</pubDate>
       
-      <guid>/posts/dynamicsax2009dynamicsax/</guid>
+      <guid>/posts/2010/01/14/dynamicsax2009dynamicsax%E3%81%AE%E7%94%A8%E8%AA%9E%E6%95%B4%E7%90%86/</guid>
       <description>Dynamics AXのお仕事の最初の頃の、
 皆がAXって何よ？って感じだったころ、
 打ち合わせの会話は適度にカオスっていた。
@@ -2541,10 +2558,10 @@ Dynamics AXが他のアプリケーションとやりとりをするためのサ
     
     <item>
       <title>[読書メーター]2009年12月読書まとめ</title>
-      <link>/posts/200912/</link>
+      <link>/posts/2010/01/02/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2009%E5%B9%B412%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sat, 02 Jan 2010 23:10:00 +0900</pubDate>
       
-      <guid>/posts/200912/</guid>
+      <guid>/posts/2010/01/02/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2009%E5%B9%B412%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>読書メーターに読みたい本を登録しようとしたら
 １２月の本をまとめてみなってあったので、
 いわれるがままに2010年初エントリー
@@ -2584,10 +2601,10 @@ http://book.akahoshitakuya.com/</description>
     
     <item>
       <title>[日記]2009年最終更新</title>
-      <link>/posts/2009/</link>
+      <link>/posts/2009/12/31/%E6%97%A5%E8%A8%982009%E5%B9%B4%E6%9C%80%E7%B5%82%E6%9B%B4%E6%96%B0/</link>
       <pubDate>Thu, 31 Dec 2009 22:51:00 +0900</pubDate>
       
-      <guid>/posts/2009/</guid>
+      <guid>/posts/2009/12/31/%E6%97%A5%E8%A8%982009%E5%B9%B4%E6%9C%80%E7%B5%82%E6%9B%B4%E6%96%B0/</guid>
       <description>本年も残すところ後一時間とちょっと、
 今年も色々ありましたが、あっとゆーまでしたね。
 きっと年をとる毎に、この加速度は増していくのでしょう。
@@ -2617,10 +2634,10 @@ http://book.akahoshitakuya.com/</description>
     
     <item>
       <title>[Web][読書メーカー]読書メーカーはじめました。</title>
-      <link>/posts/web/</link>
+      <link>/posts/2009/12/21/web%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Mon, 21 Dec 2009 23:59:00 +0900</pubDate>
       
-      <guid>/posts/web/</guid>
+      <guid>/posts/2009/12/21/web%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>今更ながらに読書メーカー初めてみました。
 こいつは「読みたい本」「読んでる本」「読んだ本」の管理ができるネットサービスです。
 読書に特化したTask管理みたいなものです。
@@ -2641,10 +2658,10 @@ http://book.akahoshitakuya.com/</description>
     
     <item>
       <title>[日記][Blogger]BloggerのFTP機能を使うのをやめようか？</title>
-      <link>/posts/bloggerftp/</link>
+      <link>/posts/2009/10/21/%E6%97%A5%E8%A8%98bloggerblogger%E3%81%AEftp%E6%A9%9F%E8%83%BD%E3%82%92%E4%BD%BF%E3%81%86%E3%81%AE%E3%82%92%E3%82%84%E3%82%81%E3%82%88%E3%81%86%E3%81%8B/</link>
       <pubDate>Wed, 21 Oct 2009 00:10:00 +0900</pubDate>
       
-      <guid>/posts/bloggerftp/</guid>
+      <guid>/posts/2009/10/21/%E6%97%A5%E8%A8%98bloggerblogger%E3%81%AEftp%E6%A9%9F%E8%83%BD%E3%82%92%E4%BD%BF%E3%81%86%E3%81%AE%E3%82%92%E3%82%84%E3%82%81%E3%82%88%E3%81%86%E3%81%8B/</guid>
       <description>Bloggerには自分の持っているHPスペースに
 Blogを公開するFTPアップロード機能がある。
 この機能を使うのをやめて、
@@ -2693,10 +2710,10 @@ FTP経由でせこせこ運ばれてくる私のブログでは
     
     <item>
       <title>[日記][Twitter]近況報告とTwitter</title>
-      <link>/posts/twittertwitter/</link>
+      <link>/posts/2009/08/23/%E6%97%A5%E8%A8%98twitter%E8%BF%91%E6%B3%81%E5%A0%B1%E5%91%8A%E3%81%A8twitter/</link>
       <pubDate>Sun, 23 Aug 2009 22:35:00 +0900</pubDate>
       
-      <guid>/posts/twittertwitter/</guid>
+      <guid>/posts/2009/08/23/%E6%97%A5%E8%A8%98twitter%E8%BF%91%E6%B3%81%E5%A0%B1%E5%91%8A%E3%81%A8twitter/</guid>
       <description>全然投稿してなかったので、生存確認をかねた近況報告です。
 お手伝いでデスマってるプロジェクトにお手伝いに放り込まれました。
 Javaでうひうひ楽しく実装し、
@@ -2722,10 +2739,10 @@ http://twitter.com/callas1900</description>
     
     <item>
       <title>[VB6]久し振りのVB6</title>
-      <link>/posts/vb6vb6/</link>
+      <link>/posts/2009/07/30/vb6%E4%B9%85%E3%81%97%E6%8C%AF%E3%82%8A%E3%81%AEvb6/</link>
       <pubDate>Thu, 30 Jul 2009 18:37:00 +0900</pubDate>
       
-      <guid>/posts/vb6vb6/</guid>
+      <guid>/posts/2009/07/30/vb6%E4%B9%85%E3%81%97%E6%8C%AF%E3%82%8A%E3%81%AEvb6/</guid>
       <description>ちょっとしたヘルプでVB6を書いてきました。
 久し振りの実装だったのでVB6でも文句も言わずウキウキやるぞー！
 と思っても実装開始後文句がいっぱい！
@@ -2767,10 +2784,10 @@ Next i
     
     <item>
       <title>[日記]28歳になりました。</title>
-      <link>/posts/28/</link>
+      <link>/posts/2009/07/01/%E6%97%A5%E8%A8%9828%E6%AD%B3%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Wed, 01 Jul 2009 20:31:00 +0900</pubDate>
       
-      <guid>/posts/28/</guid>
+      <guid>/posts/2009/07/01/%E6%97%A5%E8%A8%9828%E6%AD%B3%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>[](http://callas1900.net/blog/uploaded_images/TS3G0242-742476.JPG)28歳になりました。
 そんだけです。
 嫁さんから誕生日プレゼントに香水をもらいました。
@@ -2788,10 +2805,10 @@ Next i
     
     <item>
       <title>[日記][PDM]DMS終了</title>
-      <link>/posts/pdmdms/</link>
+      <link>/posts/2009/06/27/%E6%97%A5%E8%A8%98pdmdms%E7%B5%82%E4%BA%86/</link>
       <pubDate>Sat, 27 Jun 2009 01:29:00 +0900</pubDate>
       
-      <guid>/posts/pdmdms/</guid>
+      <guid>/posts/2009/06/27/%E6%97%A5%E8%A8%98pdmdms%E7%B5%82%E4%BA%86/</guid>
       <description>24日～26日にあった東京DMS（設計・製造ソリューション展）が終了しました。
 慣れない説明員、立ち仕事のせいで足が爆発しそうです。
 体力的にはきつかったのですが、
@@ -2816,10 +2833,10 @@ DMSのまとめをしたいですね。</description>
     
     <item>
       <title>[Google]GoogleデスクトップでGoogle tasks</title>
-      <link>/posts/googlegooglegoogle-tasks/</link>
+      <link>/posts/2009/06/16/googlegoogle%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%81%A7google-tasks/</link>
       <pubDate>Tue, 16 Jun 2009 15:22:00 +0900</pubDate>
       
-      <guid>/posts/googlegooglegoogle-tasks/</guid>
+      <guid>/posts/2009/06/16/googlegoogle%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%81%A7google-tasks/</guid>
       <description>GoogleカレンダーでGoogle Tasksが使えるようになり、
 タスク管理が大分楽になった。
 Google Tasksはネットワーク対応のTaskリスト。
@@ -2868,10 +2885,10 @@ IEのCookieを許可していなければ、
     
     <item>
       <title>[日記]インフルエンザ・パンデミック</title>
-      <link>/posts/blog-post_04/</link>
+      <link>/posts/2009/05/04/%E6%97%A5%E8%A8%98%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B6%E3%83%91%E3%83%B3%E3%83%87%E3%83%9F%E3%83%83%E3%82%AF/</link>
       <pubDate>Mon, 04 May 2009 20:41:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_04/</guid>
+      <guid>/posts/2009/05/04/%E6%97%A5%E8%A8%98%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B6%E3%83%91%E3%83%B3%E3%83%87%E3%83%9F%E3%83%83%E3%82%AF/</guid>
       <description>パンデミックとは一時的世界大流行のこと。
 今はやっている豚インフルが世界大流行することをインフルエンザ・パンデミックといいます。
 現在ＷＨＯが発表しているフェーズは５です。
@@ -2896,10 +2913,10 @@ IEのCookieを許可していなければ、
     
     <item>
       <title>[日記]息子が風邪引いた。</title>
-      <link>/posts/blog-post_8755/</link>
+      <link>/posts/2009/04/22/%E6%97%A5%E8%A8%98%E6%81%AF%E5%AD%90%E3%81%8C%E9%A2%A8%E9%82%AA%E5%BC%95%E3%81%84%E3%81%9F/</link>
       <pubDate>Wed, 22 Apr 2009 11:18:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_8755/</guid>
+      <guid>/posts/2009/04/22/%E6%97%A5%E8%A8%98%E6%81%AF%E5%AD%90%E3%81%8C%E9%A2%A8%E9%82%AA%E5%BC%95%E3%81%84%E3%81%9F/</guid>
       <description>今週頭の日曜日に息子が風邪引いた。
 どうやら私の風邪が移ったようだ。
 これには正直驚いた。
@@ -2921,10 +2938,10 @@ IEのCookieを許可していなければ、
     
     <item>
       <title>[日記]N700のホットスポットを1dayチケットで試してみた。</title>
-      <link>/posts/n7001day/</link>
+      <link>/posts/2009/03/17/%E6%97%A5%E8%A8%98n700%E3%81%AE%E3%83%9B%E3%83%83%E3%83%88%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E3%82%921day%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E3%81%A7%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
       <pubDate>Tue, 17 Mar 2009 10:09:00 +0900</pubDate>
       
-      <guid>/posts/n7001day/</guid>
+      <guid>/posts/2009/03/17/%E6%97%A5%E8%A8%98n700%E3%81%AE%E3%83%9B%E3%83%83%E3%83%88%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E3%82%921day%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E3%81%A7%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
       <description>この前の土曜日からN700系内無線LANサービス「ホットスポット」が使えるようになった。
 早速1dayチケット（500円）を買って試してみた。
 まずはネットに接続、
@@ -2957,10 +2974,10 @@ IEのCookieを許可していなければ、
     
     <item>
       <title>[日記]HotSpot in N700</title>
-      <link>/posts/hotspot-in-n700/</link>
+      <link>/posts/2009/03/09/%E6%97%A5%E8%A8%98hotspot-in-n700/</link>
       <pubDate>Mon, 09 Mar 2009 23:20:00 +0900</pubDate>
       
-      <guid>/posts/hotspot-in-n700/</guid>
+      <guid>/posts/2009/03/09/%E6%97%A5%E8%A8%98hotspot-in-n700/</guid>
       <description>どうやら3月14日よりN７００内でホットスポットが使用できるようだ。
 私は会社の都合で、一月に一度は東京⇔新大阪間を日帰りで新幹線で行き来する。
 いくら早い新幹線といえど、その移動時間は2時間半ぐらいはかかってしまう。
@@ -2976,10 +2993,10 @@ IEのCookieを許可していなければ、
     
     <item>
       <title>[JavaScript]tbodyのinnerHTML</title>
-      <link>/posts/javascripttbodyinnerhtml/</link>
+      <link>/posts/2009/02/25/javascripttbody%E3%81%AEinnerhtml/</link>
       <pubDate>Wed, 25 Feb 2009 23:02:00 +0900</pubDate>
       
-      <guid>/posts/javascripttbodyinnerhtml/</guid>
+      <guid>/posts/2009/02/25/javascripttbody%E3%81%AEinnerhtml/</guid>
       <description>ちょちょいとした計算ツールを使用するのにJavaScriptは便利だ。
 だが問題がある、IEとFirefoxでは同一のスクリプトが動いたり動かなかったりすることがある。
 今回はtbodyタグに関する話。
@@ -3018,10 +3035,10 @@ var tr = document.createElement(&amp;lsquo;tr&amp;rsquo;);
     
     <item>
       <title>[baby]誕生</title>
-      <link>/posts/baby/</link>
+      <link>/posts/2009/02/14/baby%E8%AA%95%E7%94%9F/</link>
       <pubDate>Sat, 14 Feb 2009 00:11:00 +0900</pubDate>
       
-      <guid>/posts/baby/</guid>
+      <guid>/posts/2009/02/14/baby%E8%AA%95%E7%94%9F/</guid>
       <description>調度一週間前に息子が生まれました。
 いやはや・・・怒涛の一週間でした。
 早朝突然の陣痛、
@@ -3046,10 +3063,10 @@ var tr = document.createElement(&amp;lsquo;tr&amp;rsquo;);
     
     <item>
       <title>[日記]Skypeで勉強会</title>
-      <link>/posts/skype/</link>
+      <link>/posts/2009/02/03/%E6%97%A5%E8%A8%98skype%E3%81%A7%E5%8B%89%E5%BC%B7%E4%BC%9A/</link>
       <pubDate>Tue, 03 Feb 2009 10:48:00 +0900</pubDate>
       
-      <guid>/posts/skype/</guid>
+      <guid>/posts/2009/02/03/%E6%97%A5%E8%A8%98skype%E3%81%A7%E5%8B%89%E5%BC%B7%E4%BC%9A/</guid>
       <description>勉強会を試験的にSkype上で行っているが、
 どうなんだろうな、これ。
 とりあえず、ホワイトボードとノートの変わりにGoogleSites
@@ -3064,10 +3081,10 @@ var tr = document.createElement(&amp;lsquo;tr&amp;rsquo;);
     
     <item>
       <title>[baby]カウントダウン 3,2,1,0...</title>
-      <link>/posts/3210/</link>
+      <link>/posts/2009/01/27/baby%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3-3210.../</link>
       <pubDate>Tue, 27 Jan 2009 09:50:00 +0900</pubDate>
       
-      <guid>/posts/3210/</guid>
+      <guid>/posts/2009/01/27/baby%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3-3210.../</guid>
       <description>土曜日～月曜日まで風邪でぶっ倒れていました。
 病欠したのは一年半ぶりぐらい。
 風邪でぶっ倒れたというより医者にもらった薬の効き目が強すぎて
@@ -3081,10 +3098,10 @@ var tr = document.createElement(&amp;lsquo;tr&amp;rsquo;);
     
     <item>
       <title>[baby][Google]カウントダウン　後６日とGoogle Chromeインストール</title>
-      <link>/posts/babygooglegoogle-chrome/</link>
+      <link>/posts/2009/01/21/babygoogle%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3-%E5%BE%8C%EF%BC%96%E6%97%A5%E3%81%A8google-chrome%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
       <pubDate>Wed, 21 Jan 2009 13:48:00 +0900</pubDate>
       
-      <guid>/posts/babygooglegoogle-chrome/</guid>
+      <guid>/posts/2009/01/21/babygoogle%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3-%E5%BE%8C%EF%BC%96%E6%97%A5%E3%81%A8google-chrome%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
       <description>出産カウントダウン　後6日
 社会保険の加入に何がいるのか会社に聞いたら、
 特に何もいらないそうだ。
@@ -3117,10 +3134,10 @@ GoogleChromeインストーラーを再度立ち上げてみてください。
     
     <item>
       <title>[baby]出産までカウントダウン開始</title>
-      <link>/posts/untitled/</link>
+      <link>/posts/2009/01/20/baby%E5%87%BA%E7%94%A3%E3%81%BE%E3%81%A7%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3%E9%96%8B%E5%A7%8B/</link>
       <pubDate>Tue, 20 Jan 2009 17:17:00 +0900</pubDate>
       
-      <guid>/posts/untitled/</guid>
+      <guid>/posts/2009/01/20/baby%E5%87%BA%E7%94%A3%E3%81%BE%E3%81%A7%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3%E9%96%8B%E5%A7%8B/</guid>
       <description>ついに出産予定日まで一週間となりました。
 カウントダウン開始。
 正直緊張しますねコレは・・・
@@ -3164,10 +3181,10 @@ GoogleChromeインストーラーを再度立ち上げてみてください。
     
     <item>
       <title>[日記]Google Notebookが消える？</title>
-      <link>/posts/google-notebook/</link>
+      <link>/posts/2009/01/19/%E6%97%A5%E8%A8%98google-notebook%E3%81%8C%E6%B6%88%E3%81%88%E3%82%8B/</link>
       <pubDate>Mon, 19 Jan 2009 15:31:00 +0900</pubDate>
       
-      <guid>/posts/google-notebook/</guid>
+      <guid>/posts/2009/01/19/%E6%97%A5%E8%A8%98google-notebook%E3%81%8C%E6%B6%88%E3%81%88%E3%82%8B/</guid>
       <description>ちょっと驚いた記事
 Google が Notebooks、Video などのサービスを停止し、レイオフも実施
 (スラッシュドットジャパン）
@@ -3215,10 +3232,10 @@ Docsは機能としては申し分ないのだけど、重い。
     
     <item>
       <title>[日記]2008年大晦日</title>
-      <link>/posts/2008/</link>
+      <link>/posts/2008/12/31/%E6%97%A5%E8%A8%982008%E5%B9%B4%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Wed, 31 Dec 2008 23:39:00 +0900</pubDate>
       
-      <guid>/posts/2008/</guid>
+      <guid>/posts/2008/12/31/%E6%97%A5%E8%A8%982008%E5%B9%B4%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>大晦日に食い収めってことで
 嫁と大量の焼肉を食いに行った。
 23時過ぎまでぶっ倒れるほど食った。
@@ -3230,10 +3247,10 @@ Docsは機能としては申し分ないのだけど、重い。
     
     <item>
       <title>[日記]K-20</title>
-      <link>/posts/k-20/</link>
+      <link>/posts/2008/12/31/%E6%97%A5%E8%A8%98k-20/</link>
       <pubDate>Wed, 31 Dec 2008 18:15:00 +0900</pubDate>
       
-      <guid>/posts/k-20/</guid>
+      <guid>/posts/2008/12/31/%E6%97%A5%E8%A8%98k-20/</guid>
       <description>昨日レイトショーで
 K-20 怪人二十面相・伝を見に行ってきた。
 細かい内容はネタバレになってしまうので
@@ -3249,10 +3266,10 @@ K-20 怪人二十面相・伝を見に行ってきた。
     
     <item>
       <title>[日記]最近の迷いごと</title>
-      <link>/posts/blog-post_27/</link>
+      <link>/posts/2008/12/27/%E6%97%A5%E8%A8%98%E6%9C%80%E8%BF%91%E3%81%AE%E8%BF%B7%E3%81%84%E3%81%94%E3%81%A8/</link>
       <pubDate>Sat, 27 Dec 2008 02:36:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_27/</guid>
+      <guid>/posts/2008/12/27/%E6%97%A5%E8%A8%98%E6%9C%80%E8%BF%91%E3%81%AE%E8%BF%B7%E3%81%84%E3%81%94%E3%81%A8/</guid>
       <description>最近ちょっとまわりと話が噛み合わない時が多い。
 正直なんでだろう？なんでだろう？と思っていたが、
 今日、自分の話し方の方法が間違えていることに
@@ -3284,10 +3301,10 @@ K-20 怪人二十面相・伝を見に行ってきた。
     
     <item>
       <title>[VB.NET]文字列型列挙体の実装</title>
-      <link>/posts/vbnet-comments/</link>
+      <link>/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/</link>
       <pubDate>Wed, 24 Dec 2008 11:29:00 +0900</pubDate>
       
-      <guid>/posts/vbnet-comments/</guid>
+      <guid>/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/</guid>
       <description>列挙体のメリットの一つに、 Dim a As 列挙体 と書いて、列挙体のメンバを指定することを明示で&amp;hellip; 匿名 - Apr 1, 2013列挙体のメリットの一つに、
 Dim a As 列挙体
 と書いて、列挙体のメンバを指定することを明示できる点もありますよね。
@@ -3300,10 +3317,10 @@ Dim a As 列挙体も出来ます。</description>
     
     <item>
       <title>[VB.NET]文字列型列挙体の実装</title>
-      <link>/posts/vbnet/</link>
+      <link>/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/</link>
       <pubDate>Wed, 24 Dec 2008 11:29:00 +0900</pubDate>
       
-      <guid>/posts/vbnet/</guid>
+      <guid>/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/</guid>
       <description>enumとか使っていると、文字列型列挙体が欲しくなってきます。
 VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。
 以下コードと解説
@@ -3328,10 +3345,10 @@ End Structure</description>
     
     <item>
       <title>[WebService]Amazonプライムに要注意</title>
-      <link>/posts/amazon/</link>
+      <link>/posts/2008/12/11/webserviceamazon%E3%83%97%E3%83%A9%E3%82%A4%E3%83%A0%E3%81%AB%E8%A6%81%E6%B3%A8%E6%84%8F/</link>
       <pubDate>Thu, 11 Dec 2008 12:11:00 +0900</pubDate>
       
-      <guid>/posts/amazon/</guid>
+      <guid>/posts/2008/12/11/webserviceamazon%E3%83%97%E3%83%A9%E3%82%A4%E3%83%A0%E3%81%AB%E8%A6%81%E6%B3%A8%E6%84%8F/</guid>
       <description>先日とある買い物でAmazonを使った。
 支払い方法などを設定する画面で
 配送方法の中に
@@ -3366,10 +3383,10 @@ Welcome mailがきた。
     
     <item>
       <title>[C&#43;&#43;]C&#43;&#43;のバイブルとISBN。</title>
-      <link>/posts/cisbn/</link>
+      <link>/posts/2008/09/17/c-c-%E3%81%AE%E3%83%90%E3%82%A4%E3%83%96%E3%83%AB%E3%81%A8isbn/</link>
       <pubDate>Wed, 17 Sep 2008 00:30:00 +0900</pubDate>
       
-      <guid>/posts/cisbn/</guid>
+      <guid>/posts/2008/09/17/c-c-%E3%81%AE%E3%83%90%E3%82%A4%E3%83%96%E3%83%AB%E3%81%A8isbn/</guid>
       <description>最近JavaからC++に移ったのだが、
 Javaに比べて美しく書けないし、
 CからC++に移った人のソースコードが読みにくい
@@ -3423,10 +3440,10 @@ A = 言語コード（日本語だと４）</description>
     
     <item>
       <title>[Google]Google ChromeとV8エンジン</title>
-      <link>/posts/google-chromev8/</link>
+      <link>/posts/2008/09/03/googlegoogle-chrome%E3%81%A8v8%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3/</link>
       <pubDate>Wed, 03 Sep 2008 17:38:00 +0900</pubDate>
       
-      <guid>/posts/google-chromev8/</guid>
+      <guid>/posts/2008/09/03/googlegoogle-chrome%E3%81%A8v8%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3/</guid>
       <description>いつもどおりiGoogleでNEWS記事を確認しようとすると
 変なリンクがGoogleのトップページに貼ってあることに気づいた。
 Chrome?
@@ -3482,10 +3499,10 @@ IEとFireFox両方対応のJavaScript（※1）があるのだけど、
     
     <item>
       <title>[FireFox]爆速FireFox3</title>
-      <link>/posts/dlfirefox3-beta-firefox3dl-firefox3/</link>
+      <link>/posts/2008/06/23/firefox%E7%88%86%E9%80%9Ffirefox3/</link>
       <pubDate>Mon, 23 Jun 2008 14:13:00 +0900</pubDate>
       
-      <guid>/posts/dlfirefox3-beta-firefox3dl-firefox3/</guid>
+      <guid>/posts/2008/06/23/firefox%E7%88%86%E9%80%9Ffirefox3/</guid>
       <description>一日のDL数でギネス記録に載せようとか色々話題になっているFireFox3 まだBetaのリリースなので、 試すには早いかと思ったのだが、 「爆速FireFox3」という広告を踏んでしまいDLするに至る。 FireFox3を入れる上で心配だったこと。
   既存のアドオンが動くのか？
   FireFox2と同居出来るのか？
@@ -3500,10 +3517,10 @@ IEとFireFox両方対応のJavaScript（※1）があるのだけど、
     
     <item>
       <title>[Java]JavaFXとJavaAppletとSwing</title>
-      <link>/posts/javafxjavaappletswing/</link>
+      <link>/posts/2008/06/19/javajavafx%E3%81%A8javaapplet%E3%81%A8swing/</link>
       <pubDate>Thu, 19 Jun 2008 18:00:00 +0900</pubDate>
       
-      <guid>/posts/javafxjavaappletswing/</guid>
+      <guid>/posts/2008/06/19/javajavafx%E3%81%A8javaapplet%E3%81%A8swing/</guid>
       <description>以下JavaFXを過大に期待していたものの叫びです。
 お目汚しを失礼します。
 2007年のJavaOneにてJavaFXが出ていた。
@@ -3556,20 +3573,20 @@ ActionScriptを使うだろう！
     
     <item>
       <title>嫁さん御懐妊</title>
-      <link>/posts/blog-post_10-comments/</link>
+      <link>/posts/2008/06/10/%E5%AB%81%E3%81%95%E3%82%93%E5%BE%A1%E6%87%90%E5%A6%8A/</link>
       <pubDate>Tue, 10 Jun 2008 09:40:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_10-comments/</guid>
+      <guid>/posts/2008/06/10/%E5%AB%81%E3%81%95%E3%82%93%E5%BE%A1%E6%87%90%E5%A6%8A/</guid>
       <description>心からお祝いしますよ！ おめでとうございますー！ 道行マリル - Jun 2, 2008心からお祝いしますよ！
 おめでとうございますー！</description>
     </item>
     
     <item>
       <title>[日記]梅酒作成</title>
-      <link>/posts/blog-post_05/</link>
+      <link>/posts/2008/06/05/%E6%97%A5%E8%A8%98%E6%A2%85%E9%85%92%E4%BD%9C%E6%88%90/</link>
       <pubDate>Thu, 05 Jun 2008 00:33:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_05/</guid>
+      <guid>/posts/2008/06/05/%E6%97%A5%E8%A8%98%E6%A2%85%E9%85%92%E4%BD%9C%E6%88%90/</guid>
       <description>本日は嫁さんの実家から送られてきた梅酒作成セットで梅酒初挑戦。
 
 前に梅酒作りたいなぁと言ってたら、
@@ -3594,10 +3611,10 @@ ActionScriptを使うだろう！
     
     <item>
       <title>[Mac]BootCamp終焉の日</title>
-      <link>/posts/bootcamp-comments/</link>
+      <link>/posts/2008/05/20/macbootcamp%E7%B5%82%E7%84%89%E3%81%AE%E6%97%A5/</link>
       <pubDate>Tue, 20 May 2008 01:20:00 +0900</pubDate>
       
-      <guid>/posts/bootcamp-comments/</guid>
+      <guid>/posts/2008/05/20/macbootcamp%E7%B5%82%E7%84%89%E3%81%AE%E6%97%A5/</guid>
       <description>全ての領域をOS Xにするだけでしたら、インストールCDからのディスクユーティリティでパーティション&amp;hellip; Linsi - Jun 3, 2008全ての領域をOS Xにするだけでしたら、インストールCDからのディスクユーティリティでパーティションを再設定出来ます。
 必然的にOS再インストールになりますから、OS Xのデータも初期化されるのでご注意下さい。
 Blogの中では書きそびれていたのですが、Windowsで&amp;hellip; callas - Jun 4, 2008情報ありがとうございます。
@@ -3611,10 +3628,10 @@ Apple「OSX入れなおしてこい！」
     
     <item>
       <title>[Mac]BootCamp終焉の日</title>
-      <link>/posts/bootcamp/</link>
+      <link>/posts/2008/05/20/macbootcamp%E7%B5%82%E7%84%89%E3%81%AE%E6%97%A5/</link>
       <pubDate>Tue, 20 May 2008 01:20:00 +0900</pubDate>
       
-      <guid>/posts/bootcamp/</guid>
+      <guid>/posts/2008/05/20/macbootcamp%E7%B5%82%E7%84%89%E3%81%AE%E6%97%A5/</guid>
       <description>去年の秋あたりから私のMacBook（OSX10.4 Tiger）は
 BootCampによるWindowsXPのみの起動だけになっていた。
 起動ディスクもWindowsにしていたので、
@@ -3658,10 +3675,10 @@ Windowsをインストールする時にのみ日付をいじれば
     
     <item>
       <title>Oracle 10g Express Edition でチト困った</title>
-      <link>/posts/oracle-10g-express-edition-al32utf8/</link>
+      <link>/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/</link>
       <pubDate>Thu, 06 Dec 2007 11:22:00 +0900</pubDate>
       
-      <guid>/posts/oracle-10g-express-edition-al32utf8/</guid>
+      <guid>/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/</guid>
       <description>Oracle 10g Express Edition　は
  AL32UTF8 WE8MSWIN1252  のみのCHARACTER SETしか使用できない
 資料：
@@ -3712,10 +3729,10 @@ VARCHAR2 = 40[Byte]</description>
     
     <item>
       <title>[Tool]CVS for NT 2.5.03インストールメモ</title>
-      <link>/posts/windowsxp-cvscvs-for-ntver2/</link>
+      <link>/posts/2007/12/05/toolcvs-for-nt-2.5.03%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/</link>
       <pubDate>Wed, 05 Dec 2007 20:32:00 +0900</pubDate>
       
-      <guid>/posts/windowsxp-cvscvs-for-ntver2/</guid>
+      <guid>/posts/2007/12/05/toolcvs-for-nt-2.5.03%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/</guid>
       <description>インストール環境
 サーバーサイド・クライアントサイド共に　WindowsXP
 CVSには「CVS for NT」を仕様（Verは2.5.03）
@@ -3741,10 +3758,10 @@ New Password: [作成するユーザ(user01)のパスワードを入力]</descri
     
     <item>
       <title>[Flash]Laszloよ、納品後の暇な時間を返せ。</title>
-      <link>/posts/fameflashoutasdtmtasceclipse-flash-fame/</link>
+      <link>/posts/2007/11/07/flashlaszlo%E3%82%88%E7%B4%8D%E5%93%81%E5%BE%8C%E3%81%AE%E6%9A%87%E3%81%AA%E6%99%82%E9%96%93%E3%82%92%E8%BF%94%E3%81%9B/</link>
       <pubDate>Wed, 07 Nov 2007 21:10:00 +0900</pubDate>
       
-      <guid>/posts/fameflashoutasdtmtasceclipse-flash-fame/</guid>
+      <guid>/posts/2007/11/07/flashlaszlo%E3%82%88%E7%B4%8D%E5%93%81%E5%BE%8C%E3%81%AE%E6%9A%87%E3%81%AA%E6%99%82%E9%96%93%E3%82%92%E8%BF%94%E3%81%9B/</guid>
       <description>昨日納品が一端終わって今日は暇だ。
 といっても納品先から何をいってくるかわからないので待機状態なんだけどね。
 ついでに言うと、明日からまた忙しくなる。
@@ -3801,10 +3818,10 @@ emf.ecoreをダウンロードしてインストール
     
     <item>
       <title>なんだかBloggerの調子がおかしい？</title>
-      <link>/posts/blogger-comments/</link>
+      <link>/posts/2007/11/07/%E3%81%AA%E3%82%93%E3%81%A0%E3%81%8Bblogger%E3%81%AE%E8%AA%BF%E5%AD%90%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84/</link>
       <pubDate>Wed, 07 Nov 2007 13:12:00 +0900</pubDate>
       
-      <guid>/posts/blogger-comments/</guid>
+      <guid>/posts/2007/11/07/%E3%81%AA%E3%82%93%E3%81%A0%E3%81%8Bblogger%E3%81%AE%E8%AA%BF%E5%AD%90%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84/</guid>
       <description>FTP 経由の投稿公開に Kuribo - Nov 6, 2007FTP 経由の投稿公開に問題があったようですね。
 &amp;gt;FTP 経由の投稿&amp;hellip; callas - Nov 1, 2007Blogger Tipsいつも参考にさせてもらっています。
 &amp;gt;FTP 経由の投稿公開に問題があったようですね。
@@ -3816,19 +3833,19 @@ GoogleDocsの「公開機能」を使用して投稿すると何故か安定し�
     
     <item>
       <title>なんだかBloggerの調子がおかしい？</title>
-      <link>/posts/blogger/</link>
+      <link>/posts/2007/11/07/%E3%81%AA%E3%82%93%E3%81%A0%E3%81%8Bblogger%E3%81%AE%E8%AA%BF%E5%AD%90%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84/</link>
       <pubDate>Wed, 07 Nov 2007 13:12:00 +0900</pubDate>
       
-      <guid>/posts/blogger/</guid>
+      <guid>/posts/2007/11/07/%E3%81%AA%E3%82%93%E3%81%A0%E3%81%8Bblogger%E3%81%AE%E8%AA%BF%E5%AD%90%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84/</guid>
       <description>なんか投稿したやつが反映されてなかったり、反映したのに消えたりとちょっと調子がおかしいかも？</description>
     </item>
     
     <item>
       <title>ニアリーイコールと一般人</title>
-      <link>/posts/blog-post_06/</link>
+      <link>/posts/2007/11/06/%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB%E3%81%A8%E4%B8%80%E8%88%AC%E4%BA%BA/</link>
       <pubDate>Tue, 06 Nov 2007 19:04:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_06/</guid>
+      <guid>/posts/2007/11/06/%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB%E3%81%A8%E4%B8%80%E8%88%AC%E4%BA%BA/</guid>
       <description>システムの外部設計書（お客さんに見せる設計書）を
 パートナー会社さん（別会社で一緒に同じプロジェクトをしているところ）
 に送付し、一仕事終えてぼけ～っとしてると、
@@ -3872,10 +3889,10 @@ GoogleDocsの「公開機能」を使用して投稿すると何故か安定し�
     
     <item>
       <title>Oracle 10g Express Editionのインストールメモ</title>
-      <link>/posts/oracle-oracle-10g-express-editionoracle/</link>
+      <link>/posts/2007/10/29/oracle-10g-express-edition%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/</link>
       <pubDate>Mon, 29 Oct 2007 16:13:00 +0900</pubDate>
       
-      <guid>/posts/oracle-oracle-10g-express-editionoracle/</guid>
+      <guid>/posts/2007/10/29/oracle-10g-express-edition%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/</guid>
       <description>Oracle備忘録
 仕事のテスト環境用にOracle 10g Express Edition（Oracle 10gの無料版）を使用する機会があったのでそのインストールメモ
 Oracle : Oracle 10g Express Edition
@@ -3907,10 +3924,10 @@ Oracle DataBase を入れているPCのファイヤーウォールの1521ポー�
     
     <item>
       <title>[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処</title>
-      <link>/posts/wlcompile/</link>
+      <link>/posts/2007/10/23/anteclipseweblogicant%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A7%E3%81%93%E3%81%91%E3%82%8B%E6%99%82%E3%81%AE%E5%AF%BE%E5%87%A6/</link>
       <pubDate>Tue, 23 Oct 2007 22:30:00 +0900</pubDate>
       
-      <guid>/posts/wlcompile/</guid>
+      <guid>/posts/2007/10/23/anteclipseweblogicant%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A7%E3%81%93%E3%81%91%E3%82%8B%E6%99%82%E3%81%AE%E5%AF%BE%E5%87%A6/</guid>
       <description>仕事の備忘録メモ
 Weblogic92を使用し、
 JREにJRockitを使いIDEをEclipse3.2にした場合
@@ -3926,19 +3943,19 @@ the usual solutions are to read the manual pages then download andinstall needed
     
     <item>
       <title>基本情報処理試験（一回目）</title>
-      <link>/posts/blog-post_23-comments/</link>
+      <link>/posts/2007/10/23/%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E8%A9%A6%E9%A8%93%E4%B8%80%E5%9B%9E%E7%9B%AE/</link>
       <pubDate>Tue, 23 Oct 2007 17:29:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_23-comments/</guid>
+      <guid>/posts/2007/10/23/%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E8%A9%A6%E9%A8%93%E4%B8%80%E5%9B%9E%E7%9B%AE/</guid>
       <description>コメントテスト callas - Feb 3, 2009コメントテスト</description>
     </item>
     
     <item>
       <title>[日記]吉野家DEラーメン!!</title>
-      <link>/posts/de/</link>
+      <link>/posts/2007/10/16/%E6%97%A5%E8%A8%98%E5%90%89%E9%87%8E%E5%AE%B6de%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3/</link>
       <pubDate>Tue, 16 Oct 2007 18:13:00 +0900</pubDate>
       
-      <guid>/posts/de/</guid>
+      <guid>/posts/2007/10/16/%E6%97%A5%E8%A8%98%E5%90%89%E9%87%8E%E5%AE%B6de%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3/</guid>
       <description>吉野家、次はラーメン - ニュース - nikkei BPnet
 うーむ、吉野家でラーメン・・・
 昨日の夜にテレビで吉野家の企業としての特集を見たばかりでこの記事
@@ -3971,10 +3988,10 @@ http://itpro.nikkeibp.co.jp/・・・/284627/
     
     <item>
       <title>[日記]S.A.C.の世界がくるのか？</title>
-      <link>/posts/sac/</link>
+      <link>/posts/2007/10/15/%E6%97%A5%E8%A8%98s.a.c.%E3%81%AE%E4%B8%96%E7%95%8C%E3%81%8C%E3%81%8F%E3%82%8B%E3%81%AE%E3%81%8B/</link>
       <pubDate>Mon, 15 Oct 2007 19:18:00 +0900</pubDate>
       
-      <guid>/posts/sac/</guid>
+      <guid>/posts/2007/10/15/%E6%97%A5%E8%A8%98s.a.c.%E3%81%AE%E4%B8%96%E7%95%8C%E3%81%8C%E3%81%8F%E3%82%8B%E3%81%AE%E3%81%8B/</guid>
       <description>慶大、思い浮かべるだけで「セカンドライフ」内を移動できる技術を開発
 ん～脳とネットを結ぶアダプターが出来たってことですかね？
 どういう状態を取得できるのかが非常に興味深い。
@@ -4007,10 +4024,10 @@ S.A.C.の中で述べられた「好奇心」という回答は回答足るの�
     
     <item>
       <title>会社に泊まりこみって楽しいの？</title>
-      <link>/posts/blog-post_13/</link>
+      <link>/posts/2007/10/13/%E4%BC%9A%E7%A4%BE%E3%81%AB%E6%B3%8A%E3%81%BE%E3%82%8A%E3%81%93%E3%81%BF%E3%81%A3%E3%81%A6%E6%A5%BD%E3%81%97%E3%81%84%E3%81%AE/</link>
       <pubDate>Sat, 13 Oct 2007 03:06:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_13/</guid>
+      <guid>/posts/2007/10/13/%E4%BC%9A%E7%A4%BE%E3%81%AB%E6%B3%8A%E3%81%BE%E3%82%8A%E3%81%93%E3%81%BF%E3%81%A3%E3%81%A6%E6%A5%BD%E3%81%97%E3%81%84%E3%81%AE/</guid>
       <description>最近会社に泊まりこみが増えています。
 能率は上がるのか？
 →NO
@@ -4026,10 +4043,10 @@ S.A.C.の中で述べられた「好奇心」という回答は回答足るの�
     
     <item>
       <title>NeoOffice!</title>
-      <link>/posts/neooffice-ie-office-office-macoffice/</link>
+      <link>/posts/2007/08/07/neooffice/</link>
       <pubDate>Tue, 07 Aug 2007 23:49:00 +0900</pubDate>
       
-      <guid>/posts/neooffice-ie-office-office-macoffice/</guid>
+      <guid>/posts/2007/08/07/neooffice/</guid>
       <description>NeoOffice!
 現在元気にぷりぷり稼働中のマイマック。
 現在のところ不満といえばIEでしか動かないサイトがみれないことと、
@@ -4058,10 +4075,10 @@ NeoOffice を見つけた。これは上記のOpenOfficeのUIをOSXライクに�
     
     <item>
       <title>許せないこと。</title>
-      <link>/posts/db-delflg-flgdel-fdel-delf-deleteflg/</link>
+      <link>/posts/2007/08/03/%E8%A8%B1%E3%81%9B%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8/</link>
       <pubDate>Fri, 03 Aug 2007 20:27:00 +0900</pubDate>
       
-      <guid>/posts/db-delflg-flgdel-fdel-delf-deleteflg/</guid>
+      <guid>/posts/2007/08/03/%E8%A8%B1%E3%81%9B%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8/</guid>
       <description>許せないこと。
 仕事でDBの物理名に切れそうになった。
 なんだこれは。
@@ -4109,10 +4126,10 @@ Your Brain is like a Donkey&#39;s!</description>
     
     <item>
       <title>わからせ力</title>
-      <link>/posts/abbc-abbc-ac-ac/</link>
+      <link>/posts/2007/08/01/%E3%82%8F%E3%81%8B%E3%82%89%E3%81%9B%E5%8A%9B/</link>
       <pubDate>Wed, 01 Aug 2007 21:16:00 +0900</pubDate>
       
-      <guid>/posts/abbc-abbc-ac-ac/</guid>
+      <guid>/posts/2007/08/01/%E3%82%8F%E3%81%8B%E3%82%89%E3%81%9B%E5%8A%9B/</guid>
       <description>わからせ力
 自分が理解する理解力は武器だ。
 そして相手に自分の考えを理解させる分からせ力も武器だ。
@@ -4139,10 +4156,10 @@ AがBであり、BがCである場合
     
     <item>
       <title>[日記]参院が野党に染まる</title>
-      <link>/posts/youtube-macbook-bootcampwindowsxp/</link>
+      <link>/posts/2007/07/30/%E6%97%A5%E8%A8%98%E5%8F%82%E9%99%A2%E3%81%8C%E9%87%8E%E5%85%9A%E3%81%AB%E6%9F%93%E3%81%BE%E3%82%8B/</link>
       <pubDate>Mon, 30 Jul 2007 18:33:00 +0900</pubDate>
       
-      <guid>/posts/youtube-macbook-bootcampwindowsxp/</guid>
+      <guid>/posts/2007/07/30/%E6%97%A5%E8%A8%98%E5%8F%82%E9%99%A2%E3%81%8C%E9%87%8E%E5%85%9A%E3%81%AB%E6%9F%93%E3%81%BE%E3%82%8B/</guid>
       <description>備忘録風
 参院が野党に染まった。
 議長席までもが野党が押さえた場合、
@@ -4205,10 +4222,10 @@ winのがやっぱいいじゃないかと思う人もいるだろう。
     
     <item>
       <title>注文していたMacBookが届いてキャホウォウ</title>
-      <link>/posts/macbook-macbookosx-osx/</link>
+      <link>/posts/2007/07/25/%E6%B3%A8%E6%96%87%E3%81%97%E3%81%A6%E3%81%84%E3%81%9Fmacbook%E3%81%8C%E5%B1%8A%E3%81%84%E3%81%A6%E3%82%AD%E3%83%A3%E3%83%9B%E3%82%A6%E3%82%A9%E3%82%A6/</link>
       <pubDate>Wed, 25 Jul 2007 18:49:00 +0900</pubDate>
       
-      <guid>/posts/macbook-macbookosx-osx/</guid>
+      <guid>/posts/2007/07/25/%E6%B3%A8%E6%96%87%E3%81%97%E3%81%A6%E3%81%84%E3%81%9Fmacbook%E3%81%8C%E5%B1%8A%E3%81%84%E3%81%A6%E3%82%AD%E3%83%A3%E3%83%9B%E3%82%A6%E3%82%A9%E3%82%A6/</guid>
       <description>注文していたMacBookが届いてキャホウォウ
 としていたらトラブルが立て続けに発生。
 まずMacBookのOSXに関してはまったく問題なし、
@@ -4252,10 +4269,10 @@ AOL社のAVS(Active Virus Shield) というソフトなのですが、
     
     <item>
       <title>黒Macがくる</title>
-      <link>/posts/pcwin95-windows95-cd-640mb-hd-500mbhd/</link>
+      <link>/posts/2007/07/17/%E9%BB%92mac%E3%81%8C%E3%81%8F%E3%82%8B/</link>
       <pubDate>Tue, 17 Jul 2007 19:25:00 +0900</pubDate>
       
-      <guid>/posts/pcwin95-windows95-cd-640mb-hd-500mbhd/</guid>
+      <guid>/posts/2007/07/17/%E9%BB%92mac%E3%81%8C%E3%81%8F%E3%82%8B/</guid>
       <description>今日の日記は懐古臭く、また駄文で他人が読むに値しない文章です。
 暇つぶしに読む人は止めません、悪しからず。
 初代自宅PCはWIN95ブームにあやかり
@@ -4311,10 +4328,10 @@ OSとしてMacを選ぶのも初めての経験なので、それもあって緊
     
     <item>
       <title>日曜日のお出かけ</title>
-      <link>/posts/pc-lenovo-thinkpad-x60-apple-macbook/</link>
+      <link>/posts/2007/07/10/%E6%97%A5%E6%9B%9C%E6%97%A5%E3%81%AE%E3%81%8A%E5%87%BA%E3%81%8B%E3%81%91/</link>
       <pubDate>Tue, 10 Jul 2007 10:59:00 +0900</pubDate>
       
-      <guid>/posts/pc-lenovo-thinkpad-x60-apple-macbook/</guid>
+      <guid>/posts/2007/07/10/%E6%97%A5%E6%9B%9C%E6%97%A5%E3%81%AE%E3%81%8A%E5%87%BA%E3%81%8B%E3%81%91/</guid>
       <description>日曜日のお買い物
 久しぶりに彼女と日曜日の休みがかぶったので買い物にいきました。
 目当てはボーナスで買う予定の個人用ノートPCの下見と、
@@ -4363,10 +4380,10 @@ MacBookをチロチロ見てると彼女が一言。
     
     <item>
       <title>Nikkei RSS</title>
-      <link>/posts/nikkei-bpnet/</link>
+      <link>/posts/2007/06/20/nikkei-rss/</link>
       <pubDate>Wed, 20 Jun 2007 12:20:00 +0900</pubDate>
       
-      <guid>/posts/nikkei-bpnet/</guid>
+      <guid>/posts/2007/06/20/nikkei-rss/</guid>
       <description>最近よくNikkei BPnet（日経新聞のネット版）の環境問題カテゴリに属するエントリー記事が気になるようになってきた。
 前々から多少は環境維持ないしは環境回復に関して意識は持っていたが、
 大したものではなかったのだが、
@@ -4397,10 +4414,10 @@ MacBookをチロチロ見てると彼女が一言。
     
     <item>
       <title>[日記]どうでもいい感動</title>
-      <link>/posts/2-2-841mm-1169mm-22-fuck-copy-machine/</link>
+      <link>/posts/2007/06/12/%E6%97%A5%E8%A8%98%E3%81%A9%E3%81%86%E3%81%A7%E3%82%82%E3%81%84%E3%81%84%E6%84%9F%E5%8B%95/</link>
       <pubDate>Tue, 12 Jun 2007 20:51:00 +0900</pubDate>
       
-      <guid>/posts/2-2-841mm-1169mm-22-fuck-copy-machine/</guid>
+      <guid>/posts/2007/06/12/%E6%97%A5%E8%A8%98%E3%81%A9%E3%81%86%E3%81%A7%E3%82%82%E3%81%84%E3%81%84%E6%84%9F%E5%8B%95/</guid>
       <description>どうでもいい感動
 現在帳票系の仕様を作っているのだが、どうもＢ４やらＢ５やらＡ４やらＡ３など色々混じって面倒くさい。
 全部Ａ４でいいじゃないかと思うのだが、一部のやつはＢ４じゃないとダメらしい。
@@ -4433,10 +4450,10 @@ Fuck the copy machine!</description>
     
     <item>
       <title>Google map street view!!</title>
-      <link>/posts/googlemap-google-google-wow-google/</link>
+      <link>/posts/2007/05/31/google-map-street-view/</link>
       <pubDate>Thu, 31 May 2007 17:13:00 +0900</pubDate>
       
-      <guid>/posts/googlemap-google-google-wow-google/</guid>
+      <guid>/posts/2007/05/31/google-map-street-view/</guid>
       <description>久しぶりにキタ
 やってくれた
 GoogleMapに新機能がきた。
@@ -4460,10 +4477,10 @@ NY セントラルパーク近辺
     
     <item>
       <title>[日記]来世に行った人、来世への認識、来世に残れるか？</title>
-      <link>/posts/23-it-ibmweb-ibm-blackboxibm/</link>
+      <link>/posts/2007/05/18/%E6%97%A5%E8%A8%98%E6%9D%A5%E4%B8%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%9F%E4%BA%BA%E6%9D%A5%E4%B8%96%E3%81%B8%E3%81%AE%E8%AA%8D%E8%AD%98%E6%9D%A5%E4%B8%96%E3%81%AB%E6%AE%8B%E3%82%8C%E3%82%8B%E3%81%8B/</link>
       <pubDate>Fri, 18 May 2007 18:03:00 +0900</pubDate>
       
-      <guid>/posts/23-it-ibmweb-ibm-blackboxibm/</guid>
+      <guid>/posts/2007/05/18/%E6%97%A5%E8%A8%98%E6%9D%A5%E4%B8%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%9F%E4%BA%BA%E6%9D%A5%E4%B8%96%E3%81%B8%E3%81%AE%E8%AA%8D%E8%AD%98%E6%9D%A5%E4%B8%96%E3%81%AB%E6%AE%8B%E3%82%8C%E3%82%8B%E3%81%8B/</guid>
       <description>昨日ぼへっとヤンジャン立ち読みしてたらエクソシトの漫画があった。
 流し見・・・
 ・・・
@@ -4503,10 +4520,10 @@ IBMの“非プログラマ向け”Webアプリ開発ツールを使ってみ�
     
     <item>
       <title>LineBuzz</title>
-      <link>/posts/linebuzz-httplinebuzz/</link>
+      <link>/posts/2007/05/17/linebuzz/</link>
       <pubDate>Thu, 17 May 2007 20:20:00 +0900</pubDate>
       
-      <guid>/posts/linebuzz-httplinebuzz/</guid>
+      <guid>/posts/2007/05/17/linebuzz/</guid>
       <description>百式さんで以下のようなツールを見つけた。
 ブログの文章にピンポイントでコメントがつけられる『LineBuzz』
 http://linebuzz.com/
@@ -4549,10 +4566,10 @@ LineBuzzのポータルを見てみたところ、blogspotのドメインを見�
     
     <item>
       <title>GoogleBookMarks</title>
-      <link>/posts/awesome-firefoxgoogletoolbar/</link>
+      <link>/posts/2007/05/15/googlebookmarks/</link>
       <pubDate>Tue, 15 May 2007 16:57:00 +0900</pubDate>
       
-      <guid>/posts/awesome-firefoxgoogletoolbar/</guid>
+      <guid>/posts/2007/05/15/googlebookmarks/</guid>
       <description>Awesome!
 FireFoxでGoogleToolBarを使用し、
 さらにGoogleBookmarkでブックマーク管理をしてて、
@@ -4592,10 +4609,10 @@ root ├hoge1 │ ├bar1 │ ├bar2 │ └bar3 └hoge2 └bar4
     
     <item>
       <title>真のアルファブロガーになるには何をすればいいのか？</title>
-      <link>/posts/gigagine-ttpgigazine/</link>
+      <link>/posts/2007/05/09/%E7%9C%9F%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%96%E3%83%AD%E3%82%AC%E3%83%BC%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%AB%E3%81%AF%E4%BD%95%E3%82%92%E3%81%99%E3%82%8C%E3%81%B0%E3%81%84%E3%81%84%E3%81%AE%E3%81%8B/</link>
       <pubDate>Wed, 09 May 2007 19:10:00 +0900</pubDate>
       
-      <guid>/posts/gigagine-ttpgigazine/</guid>
+      <guid>/posts/2007/05/09/%E7%9C%9F%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%96%E3%83%AD%E3%82%AC%E3%83%BC%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%AB%E3%81%AF%E4%BD%95%E3%82%92%E3%81%99%E3%82%8C%E3%81%B0%E3%81%84%E3%81%84%E3%81%AE%E3%81%8B/</guid>
       <description>真のアルファブロガーになるには何をすればいいのか？(GIGAGINE)
 ttp://gigazine.net/index.php?/news/comments/20070508_alphablogger/
 アルファーブロガー（有名であり影響力のあるブロガー）になるためには・・・とりあえず書くことか。
@@ -4658,10 +4675,10 @@ Facadeデザインパターンはオブジェクト指向的ではない？ GoF�
     
     <item>
       <title>Web2.0の取り扱い注意点</title>
-      <link>/posts/1/</link>
+      <link>/posts/2007/05/01/web2.0%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%B3%A8%E6%84%8F%E7%82%B9/</link>
       <pubDate>Tue, 01 May 2007 10:18:00 +0900</pubDate>
       
-      <guid>/posts/1/</guid>
+      <guid>/posts/2007/05/01/web2.0%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%B3%A8%E6%84%8F%E7%82%B9/</guid>
       <description>日系ビジネスオンラインに以下のような記事がありました。
 →参照
 中身について分かり難い人もいるかなーって思ったので注釈つけていく。
@@ -4709,10 +4726,10 @@ If 6 was 9 ?
     
     <item>
       <title>[日記]wikka設置</title>
-      <link>/posts/wikka-httpwww/</link>
+      <link>/posts/2007/04/26/%E6%97%A5%E8%A8%98wikka%E8%A8%AD%E7%BD%AE/</link>
       <pubDate>Thu, 26 Apr 2007 22:24:00 +0900</pubDate>
       
-      <guid>/posts/wikka-httpwww/</guid>
+      <guid>/posts/2007/04/26/%E6%97%A5%E8%A8%98wikka%E8%A8%AD%E7%BD%AE/</guid>
       <description>wikka設置してみた。
 http://www.callas1900.net/wikka/
 設置に関しては以下のページを参考に作りました。
@@ -4729,10 +4746,10 @@ http://tokyo.atso-net.jp/index.php?UID=1127820702
     
     <item>
       <title>沖縄民謡に気をつけろ！</title>
-      <link>/posts/y-y/</link>
+      <link>/posts/2007/04/19/%E6%B2%96%E7%B8%84%E6%B0%91%E8%AC%A1%E3%81%AB%E6%B0%97%E3%82%92%E3%81%A4%E3%81%91%E3%82%8D/</link>
       <pubDate>Thu, 19 Apr 2007 18:41:00 +0900</pubDate>
       
-      <guid>/posts/y-y/</guid>
+      <guid>/posts/2007/04/19/%E6%B2%96%E7%B8%84%E6%B0%91%E8%AC%A1%E3%81%AB%E6%B0%97%E3%82%92%E3%81%A4%E3%81%91%E3%82%8D/</guid>
       <description>昨日は終電まで、今回の仕事で知り合ったYさんと飲んだ。
 Yさんはこの業界においてかなり異質な存在である。
 ウォターホール設計ではなくスパイラル型設計を押す数少ない人だ。
@@ -4769,10 +4786,10 @@ Yさんはこの業界においてかなり異質な存在である。
     
     <item>
       <title>ブログリハビリ</title>
-      <link>/posts/aspectj-notepc-cpu-doqwn-blog-java-0/</link>
+      <link>/posts/2007/04/17/%E3%83%96%E3%83%AD%E3%82%B0%E3%83%AA%E3%83%8F%E3%83%93%E3%83%AA/</link>
       <pubDate>Tue, 17 Apr 2007 15:22:00 +0900</pubDate>
       
-      <guid>/posts/aspectj-notepc-cpu-doqwn-blog-java-0/</guid>
+      <guid>/posts/2007/04/17/%E3%83%96%E3%83%AD%E3%82%B0%E3%83%AA%E3%83%8F%E3%83%93%E3%83%AA/</guid>
       <description>ブログリハビリ
 仕事忙しいけど楽しい。
 週末はAspectJの勉強会にいける
@@ -4803,10 +4820,10 @@ Yさんはこの業界においてかなり異質な存在である。
     
     <item>
       <title>FPSとポート開放</title>
-      <link>/posts/fpsfps-pca-aa-wan-p2p-fps-eo-127/</link>
+      <link>/posts/2007/03/28/fps%E3%81%A8%E3%83%9D%E3%83%BC%E3%83%88%E9%96%8B%E6%94%BE/</link>
       <pubDate>Wed, 28 Mar 2007 17:56:00 +0900</pubDate>
       
-      <guid>/posts/fpsfps-pca-aa-wan-p2p-fps-eo-127/</guid>
+      <guid>/posts/2007/03/28/fps%E3%81%A8%E3%83%9D%E3%83%BC%E3%83%88%E9%96%8B%E6%94%BE/</guid>
       <description>最近FPSにはまっているのだが、FPSなどのアクションゲームをやる場合一番の敵となるのがラグである。
 例えば私のPCクライアントから銃弾をAという敵に撃った場合
  私のクライアントで弾をある座標に向かって撃つというデータが送信される →サーバがその情報を受け取る →Aのキャラクタの位置をAのクライアントからゲットし弾道計算 →私とAのクライアントに結果を返却 →結果に見合った画面表示がなされる。  大まかにはこんな感じだろうか？
@@ -4856,10 +4873,10 @@ http://itpro.nikkeibp.co.jp/article/NEWS/20070328/266587/
     
     <item>
       <title>PG vs SE</title>
-      <link>/posts/se-pgse-se-se-pg-se-pgse-se-pgse-pg/</link>
+      <link>/posts/2007/03/27/pg-vs-se/</link>
       <pubDate>Tue, 27 Mar 2007 13:38:00 +0900</pubDate>
       
-      <guid>/posts/se-pgse-se-se-pg-se-pgse-se-pgse-pg/</guid>
+      <guid>/posts/2007/03/27/pg-vs-se/</guid>
       <description>プログラマーの上がSEか？
 仕事に貴賎はないと言っても、一つの評価基準がある。
 それはギャランティ（報酬）である。
@@ -4912,10 +4929,10 @@ Skype経由で感染するマルウェアが拡大中
     
     <item>
       <title>25歳にして始めてまじめに孫子の兵法を読む....</title>
-      <link>/posts/25/</link>
+      <link>/posts/2007/03/20/25%E6%AD%B3%E3%81%AB%E3%81%97%E3%81%A6%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BE%E3%81%98%E3%82%81%E3%81%AB%E5%AD%AB%E5%AD%90%E3%81%AE%E5%85%B5%E6%B3%95%E3%82%92%E8%AA%AD%E3%82%80..../</link>
       <pubDate>Tue, 20 Mar 2007 11:29:00 +0900</pubDate>
       
-      <guid>/posts/25/</guid>
+      <guid>/posts/2007/03/20/25%E6%AD%B3%E3%81%AB%E3%81%97%E3%81%A6%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BE%E3%81%98%E3%82%81%E3%81%AB%E5%AD%AB%E5%AD%90%E3%81%AE%E5%85%B5%E6%B3%95%E3%82%92%E8%AA%AD%E3%82%80..../</guid>
       <description>25歳にして始めてまじめに孫子の兵法を読む&amp;hellip;.
 とりあえず昨日孫子を軽率に引用をした反省から、孫子の兵法を読んでみた。
 とはいっても時間がなかったので、ご飯を食べながら
@@ -4987,10 +5004,10 @@ Skype経由で感染するマルウェアが拡大中
     
     <item>
       <title>プログラマーはいかにして休日を過ごすべきか？</title>
-      <link>/posts/pg-se-oracle-flash-flash-flash-flash/</link>
+      <link>/posts/2007/03/19/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC%E3%81%AF%E3%81%84%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E4%BC%91%E6%97%A5%E3%82%92%E9%81%8E%E3%81%94%E3%81%99%E3%81%B9%E3%81%8D%E3%81%8B/</link>
       <pubDate>Mon, 19 Mar 2007 17:42:00 +0900</pubDate>
       
-      <guid>/posts/pg-se-oracle-flash-flash-flash-flash/</guid>
+      <guid>/posts/2007/03/19/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC%E3%81%AF%E3%81%84%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E4%BC%91%E6%97%A5%E3%82%92%E9%81%8E%E3%81%94%E3%81%99%E3%81%B9%E3%81%8D%E3%81%8B/</guid>
       <description>プログラマーはいかにして休日を過ごすべきか？
 PG / SE に必要な知識を全て取得しようとすると、
 それは恐らく、一生涯かけても会得しきれないほどの量があると思われる。
@@ -5040,10 +5057,10 @@ PG / SE に必要な知識を全て取得しようとすると、
     
     <item>
       <title>[Flash]FAMEでFlashのバージョン取得</title>
-      <link>/posts/flashflash7-flash8-flashplayer7-7-7/</link>
+      <link>/posts/2007/03/15/flashfame%E3%81%A7flash%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%8F%96%E5%BE%97/</link>
       <pubDate>Thu, 15 Mar 2007 18:33:00 +0900</pubDate>
       
-      <guid>/posts/flashflash7-flash8-flashplayer7-7-7/</guid>
+      <guid>/posts/2007/03/15/flashfame%E3%81%A7flash%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%8F%96%E5%BE%97/</guid>
       <description>会社で作ったFlashがFlash7で動かないとのこと、
 そりゃそうだ、Flash8で作ってるんだから。
 会社曰く、現在インスコされているFlashPlayerの初期は7だからそれに合わせろ。
@@ -5084,10 +5101,10 @@ if (major_ver &amp;gt; 7) {</description>
     
     <item>
       <title>日本は大丈夫か？</title>
-      <link>/posts/xxxxaaaabbbb-0-xxxx-100-100-0-zero/</link>
+      <link>/posts/2007/03/15/%E6%97%A5%E6%9C%AC%E3%81%AF%E5%A4%A7%E4%B8%88%E5%A4%AB%E3%81%8B/</link>
       <pubDate>Thu, 15 Mar 2007 18:26:00 +0900</pubDate>
       
-      <guid>/posts/xxxxaaaabbbb-0-xxxx-100-100-0-zero/</guid>
+      <guid>/posts/2007/03/15/%E6%97%A5%E6%9C%AC%E3%81%AF%E5%A4%A7%E4%B8%88%E5%A4%AB%E3%81%8B/</guid>
       <description>家で某巨大掲示板の下位互換掲示板を見てたら
 あるゲームの批判で、こんな書き込みがあった。
 「XXXXなんてAAAAとBBBBのいい所とって0で割って、@@@@風味足したようなもん」
@@ -5111,10 +5128,10 @@ if (major_ver &amp;gt; 7) {</description>
     
     <item>
       <title>[Flash]FAME環境でXML読み込み</title>
-      <link>/posts/fameactionscript-xml-macromediafalsh/</link>
+      <link>/posts/2007/03/14/flashfame%E7%92%B0%E5%A2%83%E3%81%A7xml%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF/</link>
       <pubDate>Wed, 14 Mar 2007 18:21:00 +0900</pubDate>
       
-      <guid>/posts/fameactionscript-xml-macromediafalsh/</guid>
+      <guid>/posts/2007/03/14/flashfame%E7%92%B0%E5%A2%83%E3%81%A7xml%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF/</guid>
       <description>FAMEでActionScriptを書こうとすると色々と不便なことがある。
 （まだまだ開発されたての環境なので致し方ないが）
 さて先日ある案件でXMLデータを読みこんで処理したいといった内容があったのだが、
@@ -5144,10 +5161,10 @@ while ( my_xmlnode.</description>
     
     <item>
       <title>ActionScriptと高等言語</title>
-      <link>/posts/actionscript-fps-pcpc-162-pc/</link>
+      <link>/posts/2007/03/13/actionscript%E3%81%A8%E9%AB%98%E7%AD%89%E8%A8%80%E8%AA%9E/</link>
       <pubDate>Tue, 13 Mar 2007 09:50:00 +0900</pubDate>
       
-      <guid>/posts/actionscript-fps-pcpc-162-pc/</guid>
+      <guid>/posts/2007/03/13/actionscript%E3%81%A8%E9%AB%98%E7%AD%89%E8%A8%80%E8%AA%9E/</guid>
       <description>ActionScriptと高等言語
 月曜日の朝、日曜日に生まれて初めてFPSというものを経験し、疲れ目の莫迦です。
 さてちょっと思ったことを書き込み
@@ -5206,10 +5223,10 @@ HTTPヘッダーとは
     
     <item>
       <title>[misstake][日記]失敗と戒めと復活</title>
-      <link>/posts/4-i-fucked-up/</link>
+      <link>/posts/2007/03/09/misstake%E6%97%A5%E8%A8%98%E5%A4%B1%E6%95%97%E3%81%A8%E6%88%92%E3%82%81%E3%81%A8%E5%BE%A9%E6%B4%BB/</link>
       <pubDate>Fri, 09 Mar 2007 15:18:00 +0900</pubDate>
       
-      <guid>/posts/4-i-fucked-up/</guid>
+      <guid>/posts/2007/03/09/misstake%E6%97%A5%E8%A8%98%E5%A4%B1%E6%95%97%E3%81%A8%E6%88%92%E3%82%81%E3%81%A8%E5%BE%A9%E6%B4%BB/</guid>
       <description>※本日ネガティブ日記につき注意
 かなり凹む内容の通告がきた。
 悔しいし、凹むし、正直隠して何もなかった風を装って日々を過ごしたいけど、
@@ -5282,10 +5299,10 @@ I fucked up&amp;hellip;..
     
     <item>
       <title>ツラツラカキカキ</title>
-      <link>/posts/fame-google-google-pcpcgooglecallas/</link>
+      <link>/posts/2007/03/01/%E3%83%84%E3%83%A9%E3%83%84%E3%83%A9%E3%82%AB%E3%82%AD%E3%82%AB%E3%82%AD/</link>
       <pubDate>Thu, 01 Mar 2007 17:36:00 +0900</pubDate>
       
-      <guid>/posts/fame-google-google-pcpcgooglecallas/</guid>
+      <guid>/posts/2007/03/01/%E3%83%84%E3%83%A9%E3%83%84%E3%83%A9%E3%82%AB%E3%82%AD%E3%82%AB%E3%82%AD/</guid>
       <description>本当はFAMEについて書きたいけど、
 ちょっと徹夜あけでテンションがそこまであがらないので、
 最近ネット上で見つけたものを適当に並べていきます。
@@ -5348,10 +5365,10 @@ Photoshopのウェブアプリ版、無料で半年以内にリリース予定
     
     <item>
       <title>[Eclipse][Flash]フリーなFLASH　FAME!</title>
-      <link>/posts/flashfame-fame-flash-fame-fame-f/</link>
+      <link>/posts/2007/02/23/eclipseflash%E3%83%95%E3%83%AA%E3%83%BC%E3%81%AAflash-fame/</link>
       <pubDate>Fri, 23 Feb 2007 19:15:00 +0900</pubDate>
       
-      <guid>/posts/flashfame-fame-flash-fame-fame-f/</guid>
+      <guid>/posts/2007/02/23/eclipseflash%E3%83%95%E3%83%AA%E3%83%BC%E3%81%AAflash-fame/</guid>
       <description>フリーなFLASH　FAME!
 前の記事でFAMEというフリーのFlash開発環境を見つけたと書きました。
 FAMEの環境が整ったので、それについて書こうと思うます。
@@ -5398,10 +5415,10 @@ FAMEは使えるか？
     
     <item>
       <title>最近暇です。</title>
-      <link>/posts/json-exewin-javascript-javascript-ajax/</link>
+      <link>/posts/2007/02/20/%E6%9C%80%E8%BF%91%E6%9A%87%E3%81%A7%E3%81%99/</link>
       <pubDate>Tue, 20 Feb 2007 17:55:00 +0900</pubDate>
       
-      <guid>/posts/json-exewin-javascript-javascript-ajax/</guid>
+      <guid>/posts/2007/02/20/%E6%9C%80%E8%BF%91%E6%9A%87%E3%81%A7%E3%81%99/</guid>
       <description>最近暇です。
 仕事こないです。
 火消し役は火が起こらないと暇なんです。
@@ -5460,10 +5477,10 @@ XML</description>
     
     <item>
       <title>[日記]チョコパイとハッカー</title>
-      <link>/posts/ps3-hd-dvdblu-ray-sony-hnarnezami/</link>
+      <link>/posts/2007/02/15/%E6%97%A5%E8%A8%98%E3%83%81%E3%83%A7%E3%82%B3%E3%83%91%E3%82%A4%E3%81%A8%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC/</link>
       <pubDate>Thu, 15 Feb 2007 18:18:00 +0900</pubDate>
       
-      <guid>/posts/ps3-hd-dvdblu-ray-sony-hnarnezami/</guid>
+      <guid>/posts/2007/02/15/%E6%97%A5%E8%A8%98%E3%83%81%E3%83%A7%E3%82%B3%E3%83%91%E3%82%A4%E3%81%A8%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC/</guid>
       <description>バレンタインにチョコじゃなくてチョコパイもらった。
 多いな・・・中身はチョコとレアチーズ、うまかとです。
 さて、殺伐とした話題にいきましょう。
@@ -5489,10 +5506,10 @@ arnezamiはなんと
     
     <item>
       <title>[日記]恐ろしい春</title>
-      <link>/posts/oracle-sql-bronze-sql-updatedml-flash/</link>
+      <link>/posts/2007/02/14/%E6%97%A5%E8%A8%98%E6%81%90%E3%82%8D%E3%81%97%E3%81%84%E6%98%A5/</link>
       <pubDate>Wed, 14 Feb 2007 17:26:00 +0900</pubDate>
       
-      <guid>/posts/oracle-sql-bronze-sql-updatedml-flash/</guid>
+      <guid>/posts/2007/02/14/%E6%97%A5%E8%A8%98%E6%81%90%E3%82%8D%E3%81%97%E3%81%84%E6%98%A5/</guid>
       <description>今年は暖冬だということをつくづく思い知らされました。
 もう花粉ですか・・・
 電車の中でボロボロ泣いちゃいましたよ。
@@ -5523,10 +5540,10 @@ JSON
     
     <item>
       <title>銀への道</title>
-      <link>/posts/oraclehp-oracle-silver-oracle-silver/</link>
+      <link>/posts/2007/02/07/%E9%8A%80%E3%81%B8%E3%81%AE%E9%81%93/</link>
       <pubDate>Wed, 07 Feb 2007 17:34:00 +0900</pubDate>
       
-      <guid>/posts/oraclehp-oracle-silver-oracle-silver/</guid>
+      <guid>/posts/2007/02/07/%E9%8A%80%E3%81%B8%E3%81%AE%E9%81%93/</guid>
       <description>昨日からヘルシア緑茶一日一本のみはじめました。
 これは特定保健用食品なので、飲み続ければ効果があるはず！
 （それより運動したほうがいいけどね！）
@@ -5552,10 +5569,10 @@ Silver DBA 10g ：
     
     <item>
       <title>2月脳内デフラグ</title>
-      <link>/posts/2-flash-5-2-flash-actionscript-java/</link>
+      <link>/posts/2007/02/06/2%E6%9C%88%E8%84%B3%E5%86%85%E3%83%87%E3%83%95%E3%83%A9%E3%82%B0/</link>
       <pubDate>Tue, 06 Feb 2007 10:38:00 +0900</pubDate>
       
-      <guid>/posts/2-flash-5-2-flash-actionscript-java/</guid>
+      <guid>/posts/2007/02/06/2%E6%9C%88%E8%84%B3%E5%86%85%E3%83%87%E3%83%95%E3%83%A9%E3%82%B0/</guid>
       <description>2月本社での全体会議も終わり、ほっとひと段落。
 さて今日は脳内デフラグをしようと思います。
 現在今後の勉強課題として上っているものがいくつかあります
@@ -5612,10 +5629,10 @@ javaから作られたjavaScriptをよく理解できるようになったこと
     
     <item>
       <title>ロリポップ更新</title>
-      <link>/posts/4-telnet-tomcat-telnettomcat-10-21/</link>
+      <link>/posts/2007/02/01/%E3%83%AD%E3%83%AA%E3%83%9D%E3%83%83%E3%83%97%E6%9B%B4%E6%96%B0/</link>
       <pubDate>Thu, 01 Feb 2007 14:46:00 +0900</pubDate>
       
-      <guid>/posts/4-telnet-tomcat-telnettomcat-10-21/</guid>
+      <guid>/posts/2007/02/01/%E3%83%AD%E3%83%AA%E3%83%9D%E3%83%83%E3%83%97%E6%9B%B4%E6%96%B0/</guid>
       <description>朝、雪が降っていました。
 暖冬といえど、まだまだ寒い二月です。
 今借りているレンタルサーバーの期限切れ通知がきていました。
@@ -5642,10 +5659,10 @@ javaから作られたjavaScriptをよく理解できるようになったこと
     
     <item>
       <title>我が家にアレがやってきた</title>
-      <link>/posts/wii-ds-pc/</link>
+      <link>/posts/2007/01/29/%E6%88%91%E3%81%8C%E5%AE%B6%E3%81%AB%E3%82%A2%E3%83%AC%E3%81%8C%E3%82%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F/</link>
       <pubDate>Mon, 29 Jan 2007 15:23:00 +0900</pubDate>
       
-      <guid>/posts/wii-ds-pc/</guid>
+      <guid>/posts/2007/01/29/%E6%88%91%E3%81%8C%E5%AE%B6%E3%81%AB%E3%82%A2%E3%83%AC%E3%81%8C%E3%82%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F/</guid>
       <description>我が家にアレがやってきた
 土曜日疲れて実家に帰ると、母親が暴れていました。
 妹も暴れていました。
@@ -5678,10 +5695,10 @@ Wiiを母親がゲットし、
     
     <item>
       <title>一末・不安</title>
-      <link>/posts/jsonweb-13days-blog/</link>
+      <link>/posts/2007/01/23/%E4%B8%80%E6%9C%AB%E4%B8%8D%E5%AE%89/</link>
       <pubDate>Tue, 23 Jan 2007 17:09:00 +0900</pubDate>
       
-      <guid>/posts/jsonweb-13days-blog/</guid>
+      <guid>/posts/2007/01/23/%E4%B8%80%E6%9C%AB%E4%B8%8D%E5%AE%89/</guid>
       <description>一月も末になってまいりました。
 本年の最初の目標である「皆勤」はなんとか維持できています。
 さて、細かい目標を心の中で立てていたのですが
@@ -5695,10 +5712,10 @@ Wiiを母親がゲットし、
     
     <item>
       <title>2ch用語の原意</title>
-      <link>/posts/2ch2ch-2ch-2ch-aa-23-2ch-nullpointer-aa/</link>
+      <link>/posts/2007/01/18/2ch%E7%94%A8%E8%AA%9E%E3%81%AE%E5%8E%9F%E6%84%8F/</link>
       <pubDate>Thu, 18 Jan 2007 10:09:00 +0900</pubDate>
       
-      <guid>/posts/2ch2ch-2ch-2ch-aa-23-2ch-nullpointer-aa/</guid>
+      <guid>/posts/2007/01/18/2ch%E7%94%A8%E8%AA%9E%E3%81%AE%E5%8E%9F%E6%84%8F/</guid>
       <description>2chのドメインが差し押さえられるとか、なんとかいう話題の中それを無視して2ch用語について語ってみたり。
 2chについてはもう説明の必要はないでしょう
 某大型掲示板です。
@@ -5746,10 +5763,10 @@ AA付きの場合、大抵何かを殴ってる擬音として使用されてい
     
     <item>
       <title>Blogger壊れる？</title>
-      <link>/posts/bloggertips-google-googleweb-blog-com/</link>
+      <link>/posts/2007/01/15/blogger%E5%A3%8A%E3%82%8C%E3%82%8B/</link>
       <pubDate>Mon, 15 Jan 2007 10:12:00 +0900</pubDate>
       
-      <guid>/posts/bloggertips-google-googleweb-blog-com/</guid>
+      <guid>/posts/2007/01/15/blogger%E5%A3%8A%E3%82%8C%E3%82%8B/</guid>
       <description>一週間ほど前に、自分のブログを開いたら大変なことになっていた。
 しばらく、色々設定を変えたりしたが、何も起こらなく・・・
 ま、こういう時って何をしても無駄だと思い
@@ -5773,10 +5790,10 @@ com.google.blogger.api.UserNotAuthorizedException
     
     <item>
       <title>Strutsハマリチュウ</title>
-      <link>/posts/struts/</link>
+      <link>/posts/2007/01/12/struts%E3%83%8F%E3%83%9E%E3%83%AA%E3%83%81%E3%83%A5%E3%82%A6/</link>
       <pubDate>Fri, 12 Jan 2007 00:37:00 +0900</pubDate>
       
-      <guid>/posts/struts/</guid>
+      <guid>/posts/2007/01/12/struts%E3%83%8F%E3%83%9E%E3%83%AA%E3%83%81%E3%83%A5%E3%82%A6/</guid>
       <description>本日は曇天ではあるけど、早めに起きれたので朝はゆったり。
 遅刻する心配もまったくねーやと思い、余裕で出発
 そんな日に限って電車事故
@@ -5806,10 +5823,10 @@ PGやっている上で何が快感かと問われれば、
     
     <item>
       <title>更新サボってた間にあったこと</title>
-      <link>/posts/blog-110-12-13-pitapa-14-15-1-16-13-17/</link>
+      <link>/posts/2007/01/10/%E6%9B%B4%E6%96%B0%E3%82%B5%E3%83%9C%E3%81%A3%E3%81%A6%E3%81%9F%E9%96%93%E3%81%AB%E3%81%82%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8/</link>
       <pubDate>Wed, 10 Jan 2007 16:10:00 +0900</pubDate>
       
-      <guid>/posts/blog-110-12-13-pitapa-14-15-1-16-13-17/</guid>
+      <guid>/posts/2007/01/10/%E6%9B%B4%E6%96%B0%E3%82%B5%E3%83%9C%E3%81%A3%E3%81%A6%E3%81%9F%E9%96%93%E3%81%AB%E3%81%82%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8/</guid>
       <description>最近更新さぼってました。
 Blogの更新が止まる理由で多いのは
 書くネタが無いこと。
@@ -5873,10 +5890,10 @@ USB接続のミサイル砲台は素晴らしいものであった。
     
     <item>
       <title>2006年〆〆</title>
-      <link>/posts/302007-6/</link>
+      <link>/posts/2006/12/31/2006%E5%B9%B4%E3%80%86%E3%80%86/</link>
       <pubDate>Sun, 31 Dec 2006 23:37:00 +0900</pubDate>
       
-      <guid>/posts/302007-6/</guid>
+      <guid>/posts/2006/12/31/2006%E5%B9%B4%E3%80%86%E3%80%86/</guid>
       <description>後30分ほどで、2007年になります。
 今年も色々ありました。
 出会い、別れイロイロ
@@ -5893,10 +5910,10 @@ USB接続のミサイル砲台は素晴らしいものであった。
     
     <item>
       <title>2006年〆</title>
-      <link>/posts/s-s/</link>
+      <link>/posts/2006/12/31/2006%E5%B9%B4%E3%80%86/</link>
       <pubDate>Sun, 31 Dec 2006 23:21:00 +0900</pubDate>
       
-      <guid>/posts/s-s/</guid>
+      <guid>/posts/2006/12/31/2006%E5%B9%B4%E3%80%86/</guid>
       <description>はい３１日大晦日がやってきました。
 今年も色々ありましたが、年末にあったことをまずはポチポチ
 １２月２８日
@@ -5943,10 +5960,10 @@ S席を取れたのは結構運がよかったことを知った。
     
     <item>
       <title>2006年クリスマスの出来事</title>
-      <link>/posts/23-174-24-4-ipod-nano-i-pod-max-16-4/</link>
+      <link>/posts/2006/12/26/2006%E5%B9%B4%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%81%AE%E5%87%BA%E6%9D%A5%E4%BA%8B/</link>
       <pubDate>Tue, 26 Dec 2006 18:11:00 +0900</pubDate>
       
-      <guid>/posts/23-174-24-4-ipod-nano-i-pod-max-16-4/</guid>
+      <guid>/posts/2006/12/26/2006%E5%B9%B4%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%81%AE%E5%87%BA%E6%9D%A5%E4%BA%8B/</guid>
       <description>今週末の日曜日はクリスマスイヴ、そして月曜日はクリスマスでした。
 みなさん週末いかが過ごされたでしょうか？
 ま、私はネットゲームしてたんですがね。
@@ -6010,10 +6027,10 @@ S席を取れたのは結構運がよかったことを知った。
     
     <item>
       <title>FireFox版GoogleToolBar(Beta)!!!</title>
-      <link>/posts/firefoxgoogletoolbarbeta-ie6-ie-firefo/</link>
+      <link>/posts/2006/12/21/firefox%E7%89%88googletoolbarbeta/</link>
       <pubDate>Thu, 21 Dec 2006 16:09:00 +0900</pubDate>
       
-      <guid>/posts/firefoxgoogletoolbarbeta-ie6-ie-firefo/</guid>
+      <guid>/posts/2006/12/21/firefox%E7%89%88googletoolbarbeta/</guid>
       <description>ついにｷﾀｱｱｱｱｱｱｱｱ!!!!!
 FireFox版GoogleToolBar(Beta)!!!
 この日をどんなに待ち焦がれていたことか・・・
@@ -6032,10 +6049,10 @@ ToolBarのブックマーク機能さいこーーーーーーーー！！！
     
     <item>
       <title>Skype me!!</title>
-      <link>/posts/hp-hp-msn-orz-skype-skype-me-skype/</link>
+      <link>/posts/2006/12/20/skype-me/</link>
       <pubDate>Wed, 20 Dec 2006 16:38:00 +0900</pubDate>
       
-      <guid>/posts/hp-hp-msn-orz-skype-skype-me-skype/</guid>
+      <guid>/posts/2006/12/20/skype-me/</guid>
       <description>友達がHPほしいな～と言っていたので、
 久しぶりにHP製作をしてみる。
 サイトの内容は私と友達双方がやっているネットゲームに関してのものなので、
@@ -6072,10 +6089,10 @@ Skypeの**「Skype Me!」**機能だ。
     
     <item>
       <title>Googleの隠れた機能</title>
-      <link>/posts/google-more-search-google-google-ok/</link>
+      <link>/posts/2006/12/19/google%E3%81%AE%E9%9A%A0%E3%82%8C%E3%81%9F%E6%A9%9F%E8%83%BD/</link>
       <pubDate>Tue, 19 Dec 2006 16:58:00 +0900</pubDate>
       
-      <guid>/posts/google-more-search-google-google-ok/</guid>
+      <guid>/posts/2006/12/19/google%E3%81%AE%E9%9A%A0%E3%82%8C%E3%81%9F%E6%A9%9F%E8%83%BD/</guid>
       <description>時々ではあるけど、Googleにつなぐと全て英語になっている事がある。
 さらに英語になるだけではなく、通常より「more」から見れる場所のメニューが増えてたり、
 知らない名前のSearch機能などがある。
@@ -6110,10 +6127,10 @@ amazonで本を探すみたいな感覚なのかな？と思って試しに検�
     
     <item>
       <title>日曜日の過ごし方</title>
-      <link>/posts/sleepy-hollow/</link>
+      <link>/posts/2006/12/18/%E6%97%A5%E6%9B%9C%E6%97%A5%E3%81%AE%E9%81%8E%E3%81%94%E3%81%97%E6%96%B9/</link>
       <pubDate>Mon, 18 Dec 2006 09:50:00 +0900</pubDate>
       
-      <guid>/posts/sleepy-hollow/</guid>
+      <guid>/posts/2006/12/18/%E6%97%A5%E6%9B%9C%E6%97%A5%E3%81%AE%E9%81%8E%E3%81%94%E3%81%97%E6%96%B9/</guid>
       <description>今週の日曜日は久しぶりにツレと買い物にフラフラ
 スーツ用のロングコートが欲しかったので、
 メインの買い物はそれなのだが、あっちにフラフラこっちにフラフラ。
@@ -6169,10 +6186,10 @@ amazonで本を探すみたいな感覚なのかな？と思って試しに検�
     
     <item>
       <title>中２病</title>
-      <link>/posts/blog-post_14/</link>
+      <link>/posts/2006/12/14/%E4%B8%AD%EF%BC%92%E7%97%85/</link>
       <pubDate>Thu, 14 Dec 2006 18:21:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_14/</guid>
+      <guid>/posts/2006/12/14/%E4%B8%AD%EF%BC%92%E7%97%85/</guid>
       <description>痛いニュース の記事に
 【中二病】自分は特別な存在だと思い込む、邦楽がダサく思えて、突然洋楽を聴き始める・・・
 ってのがあり、昼休みそれを読んでると、自分の中２のころを思い出した。
@@ -6221,10 +6238,10 @@ amazonで本を探すみたいな感覚なのかな？と思って試しに検�
     
     <item>
       <title>アイウエオ作文</title>
-      <link>/posts/html-javascript-c-flash-html-css-xhtml/</link>
+      <link>/posts/2006/12/12/%E3%82%A2%E3%82%A4%E3%82%A6%E3%82%A8%E3%82%AA%E4%BD%9C%E6%96%87/</link>
       <pubDate>Tue, 12 Dec 2006 17:56:00 +0900</pubDate>
       
-      <guid>/posts/html-javascript-c-flash-html-css-xhtml/</guid>
+      <guid>/posts/2006/12/12/%E3%82%A2%E3%82%A4%E3%82%A6%E3%82%A8%E3%82%AA%E4%BD%9C%E6%96%87/</guid>
       <description>htmlに興味を持ち。
 javaScriptで画面が動くことに感動し
 C言語をほんのりかじり。
@@ -6248,10 +6265,10 @@ ANT , WebSphere , Oracle10g , struts ・・・というかJakarta-Project関連�
     
     <item>
       <title>GTDを考える</title>
-      <link>/posts/java-35-30-54-itmedia-bizidgtd-life/</link>
+      <link>/posts/2006/12/11/gtd%E3%82%92%E8%80%83%E3%81%88%E3%82%8B/</link>
       <pubDate>Mon, 11 Dec 2006 10:40:00 +0900</pubDate>
       
-      <guid>/posts/java-35-30-54-itmedia-bizidgtd-life/</guid>
+      <guid>/posts/2006/12/11/gtd%E3%82%92%E8%80%83%E3%81%88%E3%82%8B/</guid>
       <description>金曜日は飲み会であった。
 師走に入ってからの金曜日はすべて飲み会なのだが
 （所謂忘年会シーズン）
@@ -6291,10 +6308,10 @@ Gettomg Things Done&amp;hellip;</description>
     
     <item>
       <title>男の香水</title>
-      <link>/posts/gatsby-gatsby-gatsby-gytsby-java-struts/</link>
+      <link>/posts/2006/11/28/%E7%94%B7%E3%81%AE%E9%A6%99%E6%B0%B4/</link>
       <pubDate>Tue, 28 Nov 2006 23:07:00 +0900</pubDate>
       
-      <guid>/posts/gatsby-gatsby-gatsby-gytsby-java-struts/</guid>
+      <guid>/posts/2006/11/28/%E7%94%B7%E3%81%AE%E9%A6%99%E6%B0%B4/</guid>
       <description>現在のプロジェクトチームは５人
 私以外の４人は、３０代～４０代の人たちである。
 さて年齢なぞ出してどうするかという事なんだけど、
@@ -6340,10 +6357,10 @@ java開発者が読んだら赤面するような内容の告白でした。
     
     <item>
       <title>mixi復活</title>
-      <link>/posts/mixi/</link>
+      <link>/posts/2006/11/26/mixi%E5%BE%A9%E6%B4%BB/</link>
       <pubDate>Sun, 26 Nov 2006 18:59:00 +0900</pubDate>
       
-      <guid>/posts/mixi/</guid>
+      <guid>/posts/2006/11/26/mixi%E5%BE%A9%E6%B4%BB/</guid>
       <description>なんとかmixi復活しました。
 あーなんかず～っとほっとくと、どーでーもいーよー
 って感じになる自分の癖をなんとかしないといけませんね・・・・
@@ -6352,10 +6369,10 @@ java開発者が読んだら赤面するような内容の告白でした。
     
     <item>
       <title>ホワイトカラー・イグゼンプション</title>
-      <link>/posts/1-jsgflsfoxq-20061109-002125-id0/</link>
+      <link>/posts/2006/11/22/%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%A4%E3%82%B0%E3%82%BC%E3%83%B3%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3/</link>
       <pubDate>Wed, 22 Nov 2006 13:19:00 +0900</pubDate>
       
-      <guid>/posts/1-jsgflsfoxq-20061109-002125-id0/</guid>
+      <guid>/posts/2006/11/22/%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%A4%E3%82%B0%E3%82%BC%E3%83%B3%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3/</guid>
       <description>勢いで書いたものなので、色々勘違いしてるかも・・・
 書く動機となったソースはコレ
 1 名前：☆ばぐた☆ ◆JSGFLSFOXQ ＠☆ばぐ太☆φ ★ 投稿日：2006/11/09(木) 00:21:25 ID:???0
@@ -6412,10 +6429,10 @@ http://www.jcp.or.jp/akahata/aik4/2006-06-15/2006061501_01_0.html
     
     <item>
       <title>楽しい休日</title>
-      <link>/posts/gdgd-blog/</link>
+      <link>/posts/2006/11/18/%E6%A5%BD%E3%81%97%E3%81%84%E4%BC%91%E6%97%A5/</link>
       <pubDate>Sat, 18 Nov 2006 17:53:00 +0900</pubDate>
       
-      <guid>/posts/gdgd-blog/</guid>
+      <guid>/posts/2006/11/18/%E6%A5%BD%E3%81%97%E3%81%84%E4%BC%91%E6%97%A5/</guid>
       <description>本日は休日出勤。
 まったり昼から来てポチポチとソース修正。
 正直まだまだ分からない事が多すぎて大変だけど、
@@ -6434,10 +6451,10 @@ gdgdな前のプロジェクトみたいなのはおいといてね・・・
     
     <item>
       <title>BloggerBeta移行</title>
-      <link>/posts/bloggerbetablogger-ftp-google/</link>
+      <link>/posts/2006/11/17/bloggerbeta%E7%A7%BB%E8%A1%8C/</link>
       <pubDate>Fri, 17 Nov 2006 19:12:00 +0900</pubDate>
       
-      <guid>/posts/bloggerbetablogger-ftp-google/</guid>
+      <guid>/posts/2006/11/17/bloggerbeta%E7%A7%BB%E8%A1%8C/</guid>
       <description>BloggerBeta（Bloggerの次のバージョン）が出来てから久しいのですが、
 ずっと英語版しかなく、さらにFTP機能もついていなかったので無視っていましたが・・・
 ある日更新した後の画面を見てると。
@@ -6453,10 +6470,10 @@ gdgdな前のプロジェクトみたいなのはおいといてね・・・
     
     <item>
       <title>本日の反省点</title>
-      <link>/posts/5w1h/</link>
+      <link>/posts/2006/11/14/%E6%9C%AC%E6%97%A5%E3%81%AE%E5%8F%8D%E7%9C%81%E7%82%B9/</link>
       <pubDate>Tue, 14 Nov 2006 19:22:00 +0900</pubDate>
       
-      <guid>/posts/5w1h/</guid>
+      <guid>/posts/2006/11/14/%E6%9C%AC%E6%97%A5%E3%81%AE%E5%8F%8D%E7%9C%81%E7%82%B9/</guid>
       <description>本日の反省点
 『質問は質問される側の立場に立って考える。』
 はい・・・当たり前のことですね。
@@ -6477,10 +6494,10 @@ gdgdな前のプロジェクトみたいなのはおいといてね・・・
     
     <item>
       <title>ショパンが回る</title>
-      <link>/posts/i-pod-jazz/</link>
+      <link>/posts/2006/11/09/%E3%82%B7%E3%83%A7%E3%83%91%E3%83%B3%E3%81%8C%E5%9B%9E%E3%82%8B/</link>
       <pubDate>Thu, 09 Nov 2006 09:46:00 +0900</pubDate>
       
-      <guid>/posts/i-pod-jazz/</guid>
+      <guid>/posts/2006/11/09/%E3%82%B7%E3%83%A7%E3%83%91%E3%83%B3%E3%81%8C%E5%9B%9E%E3%82%8B/</guid>
       <description>現在、会社までは片道一時間半ほどかかります。
 そのうち一時間は電車にのっているわけで
 i-podを買ってからというもの、ずーっと音楽を聴き続ける時間になっています。
@@ -6498,10 +6515,10 @@ i-podを買ってからというもの、ずーっと音楽を聴き続ける時
     
     <item>
       <title>私がIE6が嫌いな理由、使う理由。</title>
-      <link>/posts/ie6-ie6-ie6-css2/</link>
+      <link>/posts/2006/11/02/%E7%A7%81%E3%81%8Cie6%E3%81%8C%E5%AB%8C%E3%81%84%E3%81%AA%E7%90%86%E7%94%B1%E4%BD%BF%E3%81%86%E7%90%86%E7%94%B1/</link>
       <pubDate>Thu, 02 Nov 2006 18:56:00 +0900</pubDate>
       
-      <guid>/posts/ie6-ie6-ie6-css2/</guid>
+      <guid>/posts/2006/11/02/%E7%A7%81%E3%81%8Cie6%E3%81%8C%E5%AB%8C%E3%81%84%E3%81%AA%E7%90%86%E7%94%B1%E4%BD%BF%E3%81%86%E7%90%86%E7%94%B1/</guid>
       <description>私がIE6が嫌いな理由、使う理由。
 私はIE6が嫌いである、
 だが、使い続けている。
@@ -6537,10 +6554,10 @@ IE嫌いの私が進んでIEを家のPCで使うようになったのはひと�
     
     <item>
       <title>深く静かに潜行せよ</title>
-      <link>/posts/81-pg/</link>
+      <link>/posts/2006/11/01/%E6%B7%B1%E3%81%8F%E9%9D%99%E3%81%8B%E3%81%AB%E6%BD%9C%E8%A1%8C%E3%81%9B%E3%82%88/</link>
       <pubDate>Wed, 01 Nov 2006 17:58:00 +0900</pubDate>
       
-      <guid>/posts/81-pg/</guid>
+      <guid>/posts/2006/11/01/%E6%B7%B1%E3%81%8F%E9%9D%99%E3%81%8B%E3%81%AB%E6%BD%9C%E8%A1%8C%E3%81%9B%E3%82%88/</guid>
       <description>ハチワンダイバーといった言葉をこの前見た。
 某漫画雑誌に連載している賭け将棋漫画の言葉なのだけど、
 彼が将棋に集中する時、
@@ -6567,10 +6584,10 @@ IE嫌いの私が進んでIEを家のPCで使うようになったのはひと�
     
     <item>
       <title>Create</title>
-      <link>/posts/pgweb-blog-3d-phpjavascriptajax-blog/</link>
+      <link>/posts/2006/10/31/create/</link>
       <pubDate>Tue, 31 Oct 2006 15:59:00 +0900</pubDate>
       
-      <guid>/posts/pgweb-blog-3d-phpjavascriptajax-blog/</guid>
+      <guid>/posts/2006/10/31/create/</guid>
       <description>PGやWebデザイナはクリエイターである。
 故に何かを生み出さないのは、金になるにしろ金にならんにしろ
 罪である。
@@ -6610,10 +6627,10 @@ Blogの記事だけではないか
     
     <item>
       <title>思考回路ノート</title>
-      <link>/posts/blog-blog-hp-wiki-hp-hp-blog-wiki-hp/</link>
+      <link>/posts/2006/10/26/%E6%80%9D%E8%80%83%E5%9B%9E%E8%B7%AF%E3%83%8E%E3%83%BC%E3%83%88/</link>
       <pubDate>Thu, 26 Oct 2006 16:41:00 +0900</pubDate>
       
-      <guid>/posts/blog-blog-hp-wiki-hp-hp-blog-wiki-hp/</guid>
+      <guid>/posts/2006/10/26/%E6%80%9D%E8%80%83%E5%9B%9E%E8%B7%AF%E3%83%8E%E3%83%BC%E3%83%88/</guid>
       <description>最近、やっとブログの更新がまともになってきたが、肝心のホームページの整理がまだまだである。
 課題を書き出してみよう。
  blogの方向性が定まっていない。 blogの宣伝をしていない。 HPの内容が足りてない。 デザインしてない。 wiki放置中 でらーずふりーとHP放置中  こんなもんか。
@@ -6644,10 +6661,10 @@ wikiは敷居が高かったかもしれない。
     
     <item>
       <title>順風満帆？</title>
-      <link>/posts/was-java-jspwar-jsp-hpjavawas/</link>
+      <link>/posts/2006/10/25/%E9%A0%86%E9%A2%A8%E6%BA%80%E5%B8%86/</link>
       <pubDate>Wed, 25 Oct 2006 16:30:00 +0900</pubDate>
       
-      <guid>/posts/was-java-jspwar-jsp-hpjavawas/</guid>
+      <guid>/posts/2006/10/25/%E9%A0%86%E9%A2%A8%E6%BA%80%E5%B8%86/</guid>
       <description>なーんとか予定通りかな？
 間に合いました・・・
 てかWSは開発には向かないと思う・・・
@@ -6680,10 +6697,10 @@ JSPのWARパッケージングもまぁいいさ・・・
     
     <item>
       <title>Second Life</title>
-      <link>/posts/second-life/</link>
+      <link>/posts/2006/10/23/second-life/</link>
       <pubDate>Mon, 23 Oct 2006 15:30:00 +0900</pubDate>
       
-      <guid>/posts/second-life/</guid>
+      <guid>/posts/2006/10/23/second-life/</guid>
       <description>最近目の疲れが激しくなってきたので、ブルーベリーのサプリメントを買ってみました。
 さて、効果のほどやいかに・・・・
 私は今、プログラマーという不規則な生活を余儀なくされる職についています。
@@ -6735,19 +6752,19 @@ Second Life というMMOGがあるそうです。
     
     <item>
       <title>macBook is Awesome and Cool</title>
-      <link>/posts/macbook-is-awesome-and-cool-comments/</link>
+      <link>/posts/2006/10/19/macbook-is-awesome-and-cool/</link>
       <pubDate>Thu, 19 Oct 2006 19:09:00 +0900</pubDate>
       
-      <guid>/posts/macbook-is-awesome-and-cool-comments/</guid>
+      <guid>/posts/2006/10/19/macbook-is-awesome-and-cool/</guid>
       <description>お？ワクワクですね～ loopa - Oct 1, 2006お？ワクワクですね～</description>
     </item>
     
     <item>
       <title>macBook is Awesome and Cool</title>
-      <link>/posts/macbook-is-awesome-and-cool/</link>
+      <link>/posts/2006/10/19/macbook-is-awesome-and-cool/</link>
       <pubDate>Thu, 19 Oct 2006 19:09:00 +0900</pubDate>
       
-      <guid>/posts/macbook-is-awesome-and-cool/</guid>
+      <guid>/posts/2006/10/19/macbook-is-awesome-and-cool/</guid>
       <description>前の仕事でMacBookを触る機会があったのですが・・・
 その時以来、MacBookがほしくてしかたないというお話。
 昔からmacはｲｲとは聞かされていましたがね・・・ここまでいいもんだとは思いませんでしたよ。
@@ -6778,10 +6795,10 @@ Boot Camp　の文字が・・・
     
     <item>
       <title>現在、ソースコードの修正中。</title>
-      <link>/posts/blog-post_18/</link>
+      <link>/posts/2006/10/18/%E7%8F%BE%E5%9C%A8%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E4%BF%AE%E6%AD%A3%E4%B8%AD/</link>
       <pubDate>Wed, 18 Oct 2006 13:40:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_18/</guid>
+      <guid>/posts/2006/10/18/%E7%8F%BE%E5%9C%A8%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E4%BF%AE%E6%AD%A3%E4%B8%AD/</guid>
       <description>現在、ソースコードの修正中。
 ソースを修正し、ローカルサーバーにデプロイするのだけど、
 一回ちょこっと直してから再度テストするためには
@@ -6821,10 +6838,10 @@ IBMｺﾛｽｿﾞ</description>
     
     <item>
       <title>Eclipse3.1.1 memo</title>
-      <link>/posts/eclipse311-memo/</link>
+      <link>/posts/2006/10/13/eclipse3.1.1-memo/</link>
       <pubDate>Fri, 13 Oct 2006 10:53:00 +0900</pubDate>
       
-      <guid>/posts/eclipse311-memo/</guid>
+      <guid>/posts/2006/10/13/eclipse3.1.1-memo/</guid>
       <description>Eclipse3.1.1 memo
 現在使用JSPプラグイン
 EclipseHtmlEditor Ver2.0.2
@@ -6849,10 +6866,10 @@ futures → 中身をeclipseのfuturesフォルダの下にコピー
     
     <item>
       <title>selectWindowsVista.security</title>
-      <link>/posts/selectwindowsvistasecurity/</link>
+      <link>/posts/2006/08/21/selectwindowsvista.security/</link>
       <pubDate>Mon, 21 Aug 2006 09:57:00 +0900</pubDate>
       
-      <guid>/posts/selectwindowsvistasecurity/</guid>
+      <guid>/posts/2006/08/21/selectwindowsvista.security/</guid>
       <description>こんな記事を見つけた
 Vista の登場をセキュリティベンダが喜ばない理由
 http://japan.internet.com/busnews/20060818/6.html
@@ -6880,10 +6897,10 @@ Vistaは様々な保護機能の他に管理者ユーザー以外でのログイ
     
     <item>
       <title>酒とバラの日々ならず</title>
-      <link>/posts/blog-post_17/</link>
+      <link>/posts/2006/08/17/%E9%85%92%E3%81%A8%E3%83%90%E3%83%A9%E3%81%AE%E6%97%A5%E3%80%85%E3%81%AA%E3%82%89%E3%81%9A/</link>
       <pubDate>Thu, 17 Aug 2006 13:29:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_17/</guid>
+      <guid>/posts/2006/08/17/%E9%85%92%E3%81%A8%E3%83%90%E3%83%A9%E3%81%AE%E6%97%A5%E3%80%85%E3%81%AA%E3%82%89%E3%81%9A/</guid>
       <description>酒とバラの日々ならず
 最近はうどんとラーメンの日々です。
 現在プロジェクトの関係で会社を出て、別の会社に出向にきているのですが、
@@ -6900,10 +6917,10 @@ Vistaは様々な保護機能の他に管理者ユーザー以外でのログイ
     
     <item>
       <title>焼肉not筋肉</title>
-      <link>/posts/not/</link>
+      <link>/posts/2006/07/20/%E7%84%BC%E8%82%89not%E7%AD%8B%E8%82%89/</link>
       <pubDate>Thu, 20 Jul 2006 02:36:00 +0900</pubDate>
       
-      <guid>/posts/not/</guid>
+      <guid>/posts/2006/07/20/%E7%84%BC%E8%82%89not%E7%AD%8B%E8%82%89/</guid>
       <description>職場のプロジェクトチームで焼肉いってきました。
 久しぶりの焼肉でしたが、酒の肴は「昔見たアニメor漫画」
 
@@ -6918,10 +6935,10 @@ Vistaは様々な保護機能の他に管理者ユーザー以外でのログイ
     
     <item>
       <title>初バリウム</title>
-      <link>/posts/blog-post_28/</link>
+      <link>/posts/2006/06/28/%E5%88%9D%E3%83%90%E3%83%AA%E3%82%A6%E3%83%A0/</link>
       <pubDate>Wed, 28 Jun 2006 13:33:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_28/</guid>
+      <guid>/posts/2006/06/28/%E5%88%9D%E3%83%90%E3%83%AA%E3%82%A6%E3%83%A0/</guid>
       <description>今日は会社から健康診断いってきましたよ。
 初バリウム＆初下剤
 現在、下剤は我腹の中でその力をチャージしております・・・・
@@ -6930,10 +6947,10 @@ Vistaは様々な保護機能の他に管理者ユーザー以外でのログイ
     
     <item>
       <title>虎虎トラ</title>
-      <link>/posts/blog-post_26/</link>
+      <link>/posts/2006/05/26/%E8%99%8E%E8%99%8E%E3%83%88%E3%83%A9/</link>
       <pubDate>Fri, 26 May 2006 12:50:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_26/</guid>
+      <guid>/posts/2006/05/26/%E8%99%8E%E8%99%8E%E3%83%88%E3%83%A9/</guid>
       <description>昨日は久しぶりに友達とのみに行きました（今日も会社あるってのに・・・
 久しぶりに会ったダチは相変わらずな様子で一安心？
 赤虎っていう初めての店で飲んだのだけど、
@@ -6952,10 +6969,10 @@ VBを6月の会社の仕事で使わないとダメらしくて、
     
     <item>
       <title>いろいろURL拾いました。</title>
-      <link>/posts/url/</link>
+      <link>/posts/2006/05/23/%E3%81%84%E3%82%8D%E3%81%84%E3%82%8Durl%E6%8B%BE%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Tue, 23 May 2006 20:34:00 +0900</pubDate>
       
-      <guid>/posts/url/</guid>
+      <guid>/posts/2006/05/23/%E3%81%84%E3%82%8D%E3%81%84%E3%82%8Durl%E6%8B%BE%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>Bloggerにカテゴリ表示をさせる事が出来るスクリプトを組んだそうです。
 今週末とか時間を作って設置してみようかと思います。
 コレが出来たらBloggerへの不満は極端に少なくなるな・・・
@@ -6977,10 +6994,10 @@ http://www.rpbourret.com/xml/XMLAndDatabases.htm
     
     <item>
       <title>Blogスタイル変更</title>
-      <link>/posts/blog/</link>
+      <link>/posts/2006/05/18/blog%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E5%A4%89%E6%9B%B4/</link>
       <pubDate>Thu, 18 May 2006 22:25:00 +0900</pubDate>
       
-      <guid>/posts/blog/</guid>
+      <guid>/posts/2006/05/18/blog%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E5%A4%89%E6%9B%B4/</guid>
       <description>ちょっとblogのスタイルを変更してみる。
 さらにTOPページもいじりってみる。
 まだまだ満足できる出来ではないので、後日サイドバーあたりをいじろうかと思っています。
@@ -6989,10 +7006,10 @@ http://www.rpbourret.com/xml/XMLAndDatabases.htm
     
     <item>
       <title>Wiki設置でけた</title>
-      <link>/posts/wiki/</link>
+      <link>/posts/2006/05/16/wiki%E8%A8%AD%E7%BD%AE%E3%81%A7%E3%81%91%E3%81%9F/</link>
       <pubDate>Tue, 16 May 2006 12:36:00 +0900</pubDate>
       
-      <guid>/posts/wiki/</guid>
+      <guid>/posts/2006/05/16/wiki%E8%A8%AD%E7%BD%AE%E3%81%A7%E3%81%91%E3%81%9F/</guid>
       <description>PhpBBを設置
 Pukiwikiを設置
 Wikimediaを定義**
@@ -7022,10 +7039,10 @@ VBなんて名前しか知らんっちゅーねん。
     
     <item>
       <title>サボリ魔をエクソシズム</title>
-      <link>/posts/blog-post_15/</link>
+      <link>/posts/2006/05/15/%E3%82%B5%E3%83%9C%E3%83%AA%E9%AD%94%E3%82%92%E3%82%A8%E3%82%AF%E3%82%BD%E3%82%B7%E3%82%BA%E3%83%A0/</link>
       <pubDate>Mon, 15 May 2006 15:55:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_15/</guid>
+      <guid>/posts/2006/05/15/%E3%82%B5%E3%83%9C%E3%83%AA%E9%AD%94%E3%82%92%E3%82%A8%E3%82%AF%E3%82%BD%E3%82%B7%E3%82%BA%E3%83%A0/</guid>
       <description>最近急がしさとゲームにかまけてブログの更新サボリまくりでした。
 超反省。
 新しい会社にきてどうやら一週間ほど気が張っていたようです。
@@ -7036,10 +7053,10 @@ VBなんて名前しか知らんっちゅーねん。
     
     <item>
       <title>富士樹海にはいかない旅行</title>
-      <link>/posts/blog-post_114638731251208204/</link>
+      <link>/posts/2006/04/30/%E5%AF%8C%E5%A3%AB%E6%A8%B9%E6%B5%B7%E3%81%AB%E3%81%AF%E3%81%84%E3%81%8B%E3%81%AA%E3%81%84%E6%97%85%E8%A1%8C/</link>
       <pubDate>Sun, 30 Apr 2006 17:04:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_114638731251208204/</guid>
+      <guid>/posts/2006/04/30/%E5%AF%8C%E5%A3%AB%E6%A8%B9%E6%B5%B7%E3%81%AB%E3%81%AF%E3%81%84%E3%81%8B%E3%81%AA%E3%81%84%E6%97%85%E8%A1%8C/</guid>
       <description>旅行に出るまでは、引きこもる方がよかったけど、
 やっぱ外出るとワクワクしてます。
 せっかくなので旅行記みたいな物でも書いてみましょう。
@@ -7083,10 +7100,10 @@ table{border-collapse:collapse;}#fuzi{border:1px solid #369;width:300px;font-siz
     
     <item>
       <title>なぜか富士山に・・・・</title>
-      <link>/posts/blog-post_30/</link>
+      <link>/posts/2006/04/30/%E3%81%AA%E3%81%9C%E3%81%8B%E5%AF%8C%E5%A3%AB%E5%B1%B1%E3%81%AB/</link>
       <pubDate>Sun, 30 Apr 2006 14:44:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_30/</guid>
+      <guid>/posts/2006/04/30/%E3%81%AA%E3%81%9C%E3%81%8B%E5%AF%8C%E5%A3%AB%E5%B1%B1%E3%81%AB/</guid>
       <description>現在、何故か富士山ふもとのレークホテルにいたりします。
 元々4/30・5/1・5/2　と両親・祖父母が
 連れ立って旅行にいく予定だったんだが・・・
@@ -7101,19 +7118,19 @@ table{border-collapse:collapse;}#fuzi{border:1px solid #369;width:300px;font-siz
     
     <item>
       <title>GoogleとIEとの相性に関して</title>
-      <link>/posts/googleie-comments/</link>
+      <link>/posts/2006/04/26/google%E3%81%A8ie%E3%81%A8%E3%81%AE%E7%9B%B8%E6%80%A7%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6/</link>
       <pubDate>Wed, 26 Apr 2006 21:09:00 +0900</pubDate>
       
-      <guid>/posts/googleie-comments/</guid>
+      <guid>/posts/2006/04/26/google%E3%81%A8ie%E3%81%A8%E3%81%AE%E7%9B%B8%E6%80%A7%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6/</guid>
       <description>オメ～！兄者～ 妹。 - Apr 4, 2006オメ～！兄者～</description>
     </item>
     
     <item>
       <title>GoogleとIEとの相性に関して</title>
-      <link>/posts/googleie/</link>
+      <link>/posts/2006/04/26/google%E3%81%A8ie%E3%81%A8%E3%81%AE%E7%9B%B8%E6%80%A7%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6/</link>
       <pubDate>Wed, 26 Apr 2006 21:09:00 +0900</pubDate>
       
-      <guid>/posts/googleie/</guid>
+      <guid>/posts/2006/04/26/google%E3%81%A8ie%E3%81%A8%E3%81%AE%E7%9B%B8%E6%80%A7%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6/</guid>
       <description>いまさらですが、GoogleCalendarは素晴らしい！
 そして、BloggerもGmailもGoogleがネット上でおこなおうとしているファーム製作用のツールは
 素晴らしいの一言につきます。
@@ -7131,19 +7148,19 @@ FireFoxで見ると美しく見えます。</description>
     
     <item>
       <title>就職活動</title>
-      <link>/posts/blog-post_25-comments/</link>
+      <link>/posts/2006/04/25/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95/</link>
       <pubDate>Tue, 25 Apr 2006 13:30:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_25-comments/</guid>
+      <guid>/posts/2006/04/25/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95/</guid>
       <description>兄者～オメ～～～！！！！ 妹。 - Apr 4, 2006兄者～オメ～～～！！！！</description>
     </item>
     
     <item>
       <title>就職活動</title>
-      <link>/posts/blog-post_25/</link>
+      <link>/posts/2006/04/25/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95/</link>
       <pubDate>Tue, 25 Apr 2006 13:30:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_25/</guid>
+      <guid>/posts/2006/04/25/%E5%B0%B1%E8%81%B7%E6%B4%BB%E5%8B%95/</guid>
       <description>ぽちぽちと就職活動を始めたおり、
 プログラマー募集（経験無くてもプログラマーとして育てます）っというのがありました。
 使用言語もJAVAにXMLとあり、かなーり興味をそそられたので、
@@ -7167,10 +7184,10 @@ FireFoxで見ると美しく見えます。</description>
     
     <item>
       <title>昔の言葉を知る</title>
-      <link>/posts/blog-post_23/</link>
+      <link>/posts/2006/04/23/%E6%98%94%E3%81%AE%E8%A8%80%E8%91%89%E3%82%92%E7%9F%A5%E3%82%8B/</link>
       <pubDate>Sun, 23 Apr 2006 22:31:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_23/</guid>
+      <guid>/posts/2006/04/23/%E6%98%94%E3%81%AE%E8%A8%80%E8%91%89%E3%82%92%E7%9F%A5%E3%82%8B/</guid>
       <description>就職活動をちょろちょろ始めています。
 明日は本命の面接でごわす。
 そんな時にためになる言葉～
@@ -7189,10 +7206,10 @@ blockquote{background:#369;color:white;padding:5px;text-align:center;}html &amp;
     
     <item>
       <title>Bloggerで自分のHP上にブログを公開する時のTIPS</title>
-      <link>/posts/bloggerhptips/</link>
+      <link>/posts/2006/04/16/blogger%E3%81%A7%E8%87%AA%E5%88%86%E3%81%AEhp%E4%B8%8A%E3%81%AB%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B%E6%99%82%E3%81%AEtips/</link>
       <pubDate>Sun, 16 Apr 2006 18:12:00 +0900</pubDate>
       
-      <guid>/posts/bloggerhptips/</guid>
+      <guid>/posts/2006/04/16/blogger%E3%81%A7%E8%87%AA%E5%88%86%E3%81%AEhp%E4%B8%8A%E3%81%AB%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B%E6%99%82%E3%81%AEtips/</guid>
       <description>BloggerにはFTP情報を登録して、
 自分のサイト上にHTMLファイルを吐き出させ表示すると言うことが出来る。
 実際、
@@ -7216,10 +7233,10 @@ http://callas1900.blogspot.com/</description>
     
     <item>
       <title>雨フリ、桜チル</title>
-      <link>/posts/blog-post_11/</link>
+      <link>/posts/2006/04/11/%E9%9B%A8%E3%83%95%E3%83%AA%E6%A1%9C%E3%83%81%E3%83%AB/</link>
       <pubDate>Tue, 11 Apr 2006 13:30:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_11/</guid>
+      <guid>/posts/2006/04/11/%E9%9B%A8%E3%83%95%E3%83%AA%E6%A1%9C%E3%83%81%E3%83%AB/</guid>
       <description>昨日から延々と雨が降り続いているわけですが、
 ほんっと、日曜日に花見いっといてよかったぁ・・・
 去年と同じく、大阪城の石垣の上で花見をしてきましたよ。
@@ -7231,10 +7248,10 @@ http://callas1900.blogspot.com/</description>
     
     <item>
       <title>独自ドメイン獲得！</title>
-      <link>/posts/blog-post_31/</link>
+      <link>/posts/2006/03/31/%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E7%8D%B2%E5%BE%97/</link>
       <pubDate>Fri, 31 Mar 2006 21:08:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_31/</guid>
+      <guid>/posts/2006/03/31/%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E7%8D%B2%E5%BE%97/</guid>
       <description>独自ドメインついにとりました！
 http://www.callas1900.net/
 です！
@@ -7252,10 +7269,10 @@ xml や　xhtml のTIPSを書いていこうかと思います。
     
     <item>
       <title>ご無沙汰ご無沙汰</title>
-      <link>/posts/blog-post_22/</link>
+      <link>/posts/2006/03/22/%E3%81%94%E7%84%A1%E6%B2%99%E6%B1%B0%E3%81%94%E7%84%A1%E6%B2%99%E6%B1%B0/</link>
       <pubDate>Wed, 22 Mar 2006 10:46:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_22/</guid>
+      <guid>/posts/2006/03/22/%E3%81%94%E7%84%A1%E6%B2%99%E6%B1%B0%E3%81%94%E7%84%A1%E6%B2%99%E6%B1%B0/</guid>
       <description>最近、転職を決意しましたcallasであります。
 ほぼ中心的な業務だったものを渡してしまえば、
 結構気楽な日々だったりします。
@@ -7279,10 +7296,10 @@ xml や　xhtml のTIPSを書いていこうかと思います。
     
     <item>
       <title>ｦwｦw</title>
-      <link>/posts/ww/</link>
+      <link>/posts/2006/03/14/%EF%BD%A6w%EF%BD%A6w/</link>
       <pubDate>Tue, 14 Mar 2006 11:20:00 +0900</pubDate>
       
-      <guid>/posts/ww/</guid>
+      <guid>/posts/2006/03/14/%EF%BD%A6w%EF%BD%A6w/</guid>
       <description>,,.-‐&amp;lsquo;&amp;lsquo;&amp;lsquo;&amp;lsquo;&amp;lsquo;&amp;lsquo;￣￣&#39;&amp;lsquo;&amp;lsquo;&amp;lsquo;ｰ､､,
 ,.r&amp;rdquo;:::::::::::::::::::::::::::::::::::::::ヽ,
 ./　&#39; .:::::::::::::::::::::::::::::::::::::::::::`､. / ::&amp;hellip;:::::::::::ﾊ:::::::::::::::::::::::::::::::::::::&#39;, .!:::::::::::::;i:::;&#39;. &amp;lsquo;､:::i､:::i､:::::::::::::::::::::::i
@@ -7298,10 +7315,10 @@ i　i　i !　.i.　&amp;lsquo;,
     
     <item>
       <title>雪フル3月</title>
-      <link>/posts/3/</link>
+      <link>/posts/2006/03/13/%E9%9B%AA%E3%83%95%E3%83%AB3%E6%9C%88/</link>
       <pubDate>Mon, 13 Mar 2006 13:27:00 +0900</pubDate>
       
-      <guid>/posts/3/</guid>
+      <guid>/posts/2006/03/13/%E9%9B%AA%E3%83%95%E3%83%AB3%E6%9C%88/</guid>
       <description>えーっと、なんつーか雪降ってる・・・んですけど
 今3月なんですでけど・・・
 何事だあああああああ
@@ -7317,10 +7334,10 @@ i　i　i !　.i.　&amp;lsquo;,
     
     <item>
       <title>ポーション</title>
-      <link>/posts/blog-post_07/</link>
+      <link>/posts/2006/03/07/%E3%83%9D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</link>
       <pubDate>Tue, 07 Mar 2006 09:40:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_07/</guid>
+      <guid>/posts/2006/03/07/%E3%83%9D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</guid>
       <description>・・・かっちまった・・・(´・ω・`)
 【感想】
 気持ち悪い・・・とりあえず舌のまわりに気持ちの悪い味がとぐろを巻いている。
@@ -7343,10 +7360,10 @@ i　i　i !　.i.　&amp;lsquo;,
     
     <item>
       <title>Googleデスクトップ３</title>
-      <link>/posts/google/</link>
+      <link>/posts/2006/02/09/google%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%EF%BC%93/</link>
       <pubDate>Thu, 09 Feb 2006 16:14:00 +0900</pubDate>
       
-      <guid>/posts/google/</guid>
+      <guid>/posts/2006/02/09/google%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%EF%BC%93/</guid>
       <description>Googleデスクトップ３が本日発表されるようです
 なかなかに楽しみな感じですね。
 複数のPCを検索できたり、今までよりカスタマイズされた
@@ -7357,10 +7374,10 @@ i　i　i !　.i.　&amp;lsquo;,
     
     <item>
       <title>xhtmlとｃｓｓに関して</title>
-      <link>/posts/xhtml/</link>
+      <link>/posts/2006/02/01/xhtml%E3%81%A8%EF%BD%83%EF%BD%93%EF%BD%93%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6/</link>
       <pubDate>Wed, 01 Feb 2006 03:54:00 +0900</pubDate>
       
-      <guid>/posts/xhtml/</guid>
+      <guid>/posts/2006/02/01/xhtml%E3%81%A8%EF%BD%83%EF%BD%93%EF%BD%93%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6/</guid>
       <description>夜中に自分のサイトをxhtml化していていて、気付いた事が２点
 １、xhtmlはxml宣言をするのだがIEｴﾝｼﾞﾝではxmlとして独自タグの生成ができない？
 ２、cssにおいて背景画像を指定する場合、絶対パスと相対パスによる差異が存在する。
@@ -7393,10 +7410,10 @@ Geckoｴﾝｼﾞﾝとは違う計算式でボックス要素が計算される
     
     <item>
       <title>Googleを追いかけてみよう！</title>
-      <link>/posts/google_18/</link>
+      <link>/posts/2006/01/18/google%E3%82%92%E8%BF%BD%E3%81%84%E3%81%8B%E3%81%91%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</link>
       <pubDate>Wed, 18 Jan 2006 12:10:00 +0900</pubDate>
       
-      <guid>/posts/google_18/</guid>
+      <guid>/posts/2006/01/18/google%E3%82%92%E8%BF%BD%E3%81%84%E3%81%8B%E3%81%91%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</guid>
       <description>最近ネット関係のニュースＲＳＳを拾っていると、
 ほぼ毎日といっていいぐらいの勢いでGoogleが何か新しい物を提供してくる。
 え？Googleって検索するだけのものじゃないの？(´･ω･`)
@@ -7418,10 +7435,10 @@ http://www.google.co.jp
     
     <item>
       <title>GoogleEditerに登録してみる。</title>
-      <link>/posts/googleediter/</link>
+      <link>/posts/2006/01/17/googleediter%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</link>
       <pubDate>Tue, 17 Jan 2006 18:11:00 +0900</pubDate>
       
-      <guid>/posts/googleediter/</guid>
+      <guid>/posts/2006/01/17/googleediter%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
       <description>最近、SEOの事について考えるにつれ、わからなくなってきた。
 何をすればいいのか？
 何をしてたらGoogleにひっかけれるんだ？
@@ -7439,19 +7456,19 @@ http://www.google.co.jp
     
     <item>
       <title>漫画最近面白いのないなぁ</title>
-      <link>/posts/blog-post_16/</link>
+      <link>/posts/2006/01/16/%E6%BC%AB%E7%94%BB%E6%9C%80%E8%BF%91%E9%9D%A2%E7%99%BD%E3%81%84%E3%81%AE%E3%81%AA%E3%81%84%E3%81%AA%E3%81%81/</link>
       <pubDate>Mon, 16 Jan 2006 18:05:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_16/</guid>
+      <guid>/posts/2006/01/16/%E6%BC%AB%E7%94%BB%E6%9C%80%E8%BF%91%E9%9D%A2%E7%99%BD%E3%81%84%E3%81%AE%E3%81%AA%E3%81%84%E3%81%AA%E3%81%81/</guid>
       <description>漫画買いにいったつもりがこんなの買っちゃいましたよ</description>
     </item>
     
     <item>
       <title>三連休という名の悪魔</title>
-      <link>/posts/blog-post_10/</link>
+      <link>/posts/2006/01/10/%E4%B8%89%E9%80%A3%E4%BC%91%E3%81%A8%E3%81%84%E3%81%86%E5%90%8D%E3%81%AE%E6%82%AA%E9%AD%94/</link>
       <pubDate>Tue, 10 Jan 2006 11:06:00 +0900</pubDate>
       
-      <guid>/posts/blog-post_10/</guid>
+      <guid>/posts/2006/01/10/%E4%B8%89%E9%80%A3%E4%BC%91%E3%81%A8%E3%81%84%E3%81%86%E5%90%8D%E3%81%AE%E6%82%AA%E9%AD%94/</guid>
       <description>三連休の後の仕事はだるかとです。
 三連休の間は人としてそれは大丈夫なのか？
 ってなぐらいだらけてました。
@@ -7460,10 +7477,10 @@ http://www.google.co.jp
     
     <item>
       <title>一年の計は元旦にあり。</title>
-      <link>/posts/blog-post-comments/</link>
+      <link>/posts/2006/01/01/%E4%B8%80%E5%B9%B4%E3%81%AE%E8%A8%88%E3%81%AF%E5%85%83%E6%97%A6%E3%81%AB%E3%81%82%E3%82%8A/</link>
       <pubDate>Sun, 01 Jan 2006 14:21:00 +0900</pubDate>
       
-      <guid>/posts/blog-post-comments/</guid>
+      <guid>/posts/2006/01/01/%E4%B8%80%E5%B9%B4%E3%81%AE%E8%A8%88%E3%81%AF%E5%85%83%E6%97%A6%E3%81%AB%E3%81%82%E3%82%8A/</guid>
       <description>無声映画がいけるなら… 増田龍二（たぶんこの漢字で合ってると思うんだけど）監督の「ポピ&amp;hellip; aerial - Jan 4, 2006無声映画がいけるなら…
 増田龍二（たぶんこの漢字で合ってると思うんだけど）監督の「ポピー・ザ・パフォーマー」「ガタクタ通りのステイン」ですな。
 ケーブルテレビで放映されているフル3Ｄアニメーションだす。
@@ -7478,10 +7495,10 @@ tsutayaにおいてあるので是非一度レンタルを。
     
     <item>
       <title>2005年ラスト更新</title>
-      <link>/posts/2005-comments/</link>
+      <link>/posts/2005/12/31/2005%E5%B9%B4%E3%83%A9%E3%82%B9%E3%83%88%E6%9B%B4%E6%96%B0/</link>
       <pubDate>Sat, 31 Dec 2005 23:41:00 +0900</pubDate>
       
-      <guid>/posts/2005-comments/</guid>
+      <guid>/posts/2005/12/31/2005%E5%B9%B4%E3%83%A9%E3%82%B9%E3%83%88%E6%9B%B4%E6%96%B0/</guid>
       <description>年末バタバタして来れなかったのを ようやくお邪魔しました★
 シックでおしゃれなブログやね&amp;hellip; aerial - Jan 0, 2006年末バタバタして来れなかったのを
 ようやくお邪魔しました★
@@ -7499,10 +7516,10 @@ tsutayaにおいてあるので是非一度レンタルを。
     
     <item>
       <title>2005年ラスト更新</title>
-      <link>/posts/2005/</link>
+      <link>/posts/2005/12/31/2005%E5%B9%B4%E3%83%A9%E3%82%B9%E3%83%88%E6%9B%B4%E6%96%B0/</link>
       <pubDate>Sat, 31 Dec 2005 23:41:00 +0900</pubDate>
       
-      <guid>/posts/2005/</guid>
+      <guid>/posts/2005/12/31/2005%E5%B9%B4%E3%83%A9%E3%82%B9%E3%83%88%E6%9B%B4%E6%96%B0/</guid>
       <description>紅白も見終えて、
 穏やかな気持ちでゴミ箱の中のような部屋にて
 ボーとしてます。
@@ -7516,10 +7533,10 @@ tsutayaにおいてあるので是非一度レンタルを。
     
     <item>
       <title>大晦日</title>
-      <link>/posts/blog-post/</link>
+      <link>/posts/2005/12/31/%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Sat, 31 Dec 2005 18:08:00 +0900</pubDate>
       
-      <guid>/posts/blog-post/</guid>
+      <guid>/posts/2005/12/31/%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>仕事が昨日で終わり（30日まであるってどうよ・・・(´･ω･`)
 部屋の大掃除なんぞしてるのですがね、
 まったく持って片付かないわけですよ。
@@ -7529,10 +7546,10 @@ tsutayaにおいてあるので是非一度レンタルを。
     
     <item>
       <title>bloggerのrss情報を拾ってみる。</title>
-      <link>/posts/bloggerrss/</link>
+      <link>/posts/2005/12/28/blogger%E3%81%AErss%E6%83%85%E5%A0%B1%E3%82%92%E6%8B%BE%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</link>
       <pubDate>Wed, 28 Dec 2005 12:10:00 +0900</pubDate>
       
-      <guid>/posts/bloggerrss/</guid>
+      <guid>/posts/2005/12/28/blogger%E3%81%AErss%E6%83%85%E5%A0%B1%E3%82%92%E6%8B%BE%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
       <description>試しにこのブログのrssを拾ってみる
 さてさて上記ハイパーリンクを開いてみる。
 あれ・・・いつもならxmlのソースちっくなものが出てくるのにきっちり整形されてるなぁ
@@ -7560,10 +7577,10 @@ EditURIなんてのもある・・・
     
     <item>
       <title>（ﾟДﾟ)y─┛~~ﾏｽﾞｰ</title>
-      <link>/posts/y/</link>
+      <link>/posts/2005/12/27/%EF%BE%9F%D0%B4%EF%BE%9Fy~~%EF%BE%8F%EF%BD%BD%EF%BE%9E%EF%BD%B0/</link>
       <pubDate>Tue, 27 Dec 2005 18:17:00 +0900</pubDate>
       
-      <guid>/posts/y/</guid>
+      <guid>/posts/2005/12/27/%EF%BE%9F%D0%B4%EF%BE%9Fy~~%EF%BE%8F%EF%BD%BD%EF%BE%9E%EF%BD%B0/</guid>
       <description>右近からタバコもらった・・・
 秋山さんから肺に入れろといわれた
 入れてみた

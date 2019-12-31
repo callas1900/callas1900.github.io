@@ -14,10 +14,10 @@
     
     <item>
       <title>Mountain LionでOpenGrok メモ</title>
-      <link>/posts/mountain-lionopengrok/</link>
+      <link>/posts/2013/10/30/mountain-lion%E3%81%A7opengrok-%E3%83%A1%E3%83%A2/</link>
       <pubDate>Wed, 30 Oct 2013 17:41:00 +0900</pubDate>
       
-      <guid>/posts/mountain-lionopengrok/</guid>
+      <guid>/posts/2013/10/30/mountain-lion%E3%81%A7opengrok-%E3%83%A1%E3%83%A2/</guid>
       <description>このページを参考にしてOpenGrokをセットアップしてたけど何点か詰まったので備忘録として。
 参考ページ：Mac OS X に OpenGrok で、今日からコードリーディング
 こちらの状況：java, antはセットアップ済み
@@ -31,10 +31,10 @@ Bug#388371: jflex: JFlexTask cannot be found
     
     <item>
       <title>[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処</title>
-      <link>/posts/wlcompile/</link>
+      <link>/posts/2007/10/23/anteclipseweblogicant%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A7%E3%81%93%E3%81%91%E3%82%8B%E6%99%82%E3%81%AE%E5%AF%BE%E5%87%A6/</link>
       <pubDate>Tue, 23 Oct 2007 22:30:00 +0900</pubDate>
       
-      <guid>/posts/wlcompile/</guid>
+      <guid>/posts/2007/10/23/anteclipseweblogicant%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A7%E3%81%93%E3%81%91%E3%82%8B%E6%99%82%E3%81%AE%E5%AF%BE%E5%87%A6/</guid>
       <description>仕事の備忘録メモ
 Weblogic92を使用し、
 JREにJRockitを使いIDEをEclipse3.2にした場合

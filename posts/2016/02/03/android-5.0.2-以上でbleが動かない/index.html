@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Android 5.0.2 以上でBLEが動かない :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
+エラー内容は以下のようになっている。
+java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
+Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
+Android 5.0.2 onwards don’t allow HID access through Bluetooth LE"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Android 5.0.2 以上でBLEが動かない :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
+エラー内容は以下のようになっている。
+java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
+Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
+Android 5.0.2 onwards don’t allow HID access through Bluetooth LE" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Android 5.0.2 以上でBLEが動かない :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
+エラー内容は以下のようになっている。
+java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
+Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
+Android 5.0.2 onwards don’t allow HID access through Bluetooth LE" />
+<meta property="og:url" content="/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/" />
+<meta property="og:site_name" content="Android 5.0.2 以上でBLEが動かない" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2016-02-03 22:48:00.001 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/">Android 5.0.2 以上でBLEが動かない</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2016-02-03
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/bluetooth/">Bluetooth</a>&nbsp;
+    
+    #<a href="/tags/ble/">BLE</a>&nbsp;
+    
+    #<a href="/tags/%E6%8A%80%E8%A1%93/">技術</a>&nbsp;
+    
+    #<a href="/tags/android/">Android</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <ul>
+<li><a href="#occurrence-%E4%BA%8B%E8%B1%A1">Occurrence -事象-</a></li>
+<li><a href="#causes-%E5%8E%9F%E5%9B%A0">Causes -原因-</a>
+<ul>
+<li><a href="#hid-%E3%81%A8%E3%81%AF">HID とは ?</a></li>
+<li><a href="#bluetoothprivileged-%E3%81%A8%E3%81%AF">BLUETOOTH_PRIVILEGED とは?</a></li>
+</ul>
+</li>
+<li><a href="#summary-%E3%81%BE%E3%81%A8%E3%82%81">Summary -まとめ-</a>
+<ul>
+<li><a href="#hid-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%8B%E3%81%8B%E3%81%AE%E5%88%A4%E6%96%AD">HID を使ってるかの判断</a></li>
+<li><a href="#%E7%A6%81%E6%AD%A2%E3%81%95%E3%82%8C%E3%81%9F-characteristic-uuid">禁止された Characteristic UUID</a></li>
+<li><a href="#%E3%81%AA%E3%81%9C%E7%A6%81%E6%AD%A2%E3%81%95%E3%82%8C%E3%81%9F%E3%81%AE%E3%81%8B">なぜ禁止されたのか？</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="occurrence---">Occurrence -事象-</h1>
+<p>機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。<br>
+5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。</p>
+<p>エラー内容は以下のようになっている。</p>
+<pre><code>java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED.
+</code></pre><p>発生箇所は BluetoothGatt#setCharacteristicNotification</p>
+<h1 id="causes---">Causes -原因-</h1>
+<p>StackOverflow にほぼ発生事例そのままの報告がある、<br>
+<a href="http://stackoverflow.com/questions/30579580/android-5-0-2-onwards-dont-allow-hid-access-through-bluetooth-le"><br>
+Android 5.0.2 onwards don’t allow HID access through Bluetooth LE<br>
+</a></p>
+<p>さらに、Android Issues に <a href="https://code.google.com/p/android/issues/detail?id=174870">[BLE] Reading/writing char/descr of a HID service throws an exception</a> があり、その中で</p>
+<blockquote>
+<p>“Enforce BLUETOOTH_PRIVILEGED permission for HID-over-GATT”</p>
+</blockquote>
+<p>のメッセージのコミットが原因でHIDに対する GATTのコネクションに <strong>BLUETOOTH_PRIVILEGED</strong> が要求されるようになったと書かれている。</p>
+<h2 id="hid--">HID とは ?</h2>
+<p>HID（Human Interface Device）のことで、<br>
+マウスやキーボードなどの入力装置を無線化するためのBluetooth用のプロファイル。<br>
+本来上記の通り、マウスキーボードなどに使われるものだが、健康器具などにも使われているケースがある。確かに人が使うものだけど。</p>
+<h2 id="bluetooth-privileged-">BLUETOOTH_PRIVILEGED とは?</h2>
+<p>Android Developers によれば、</p>
+<blockquote>
+<p>Allows applications to pair bluetooth devices without user interaction, and to allow or disallow phonebook access or message access. This is not available to third party applications.</p>
+</blockquote>
+<p>HIDに関係ありそうなのは、メッセージに対するアクセスかな？<br>
+全然HIDと関係なさそうに見える。<br>
+ただ一番大事なのは最後のサードパーティアプリはこれを有効に出来ないという一文。<br>
+ビルドインアプリを開発するか、OSのビルド署名を貰えるようなアプリ開発の時は問題ないが、普通にアプリを作っている場合は、この権限を有効化する方法はない。</p>
+<p>see also <a href="http://developer.android.com/reference/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED">AndroidDevelopers::Manifest.permission::BLUETOOTH_PRIVILEGED</a></p>
+<h1 id="summary---">Summary -まとめ-</h1>
+<h2 id="hid-">HID を使ってるかの判断</h2>
+<p>以下のコミットによると、HIDの判断は, Characteristic UUID が<br>
+<a href="https://android.googlesource.com/platform/packages/apps/Bluetooth/+/02bebee">https://android.googlesource.com/platform/packages/apps/Bluetooth/+/02bebee</a></p>
+<pre><code>00002A4A-0000-1000-8000-00805F9B34FB  
+00002A4B-0000-1000-8000-00805F9B34FB  
+00002A4C-0000-1000-8000-00805F9B34FB  
+00002A4D-0000-1000-8000-00805F9B34FB
+</code></pre><p>のいずれかに該当した場合となる。</p>
+<p>上記 Characteristic を引数にしてい BluetoothGatt#setCharacteristicNotification をコールすると SecurityException が発生するようになっている。</p>
+<h2 id="-characteristic-uuid">禁止された Characteristic UUID</h2>
+<p>Bluetooth Developer portal で Characteristic UUID の区分け確認できる。</p>
+<p>Characteristic UUID</p>
+<p>内容</p>
+<p>00002A4A-0000-1000-8000-00805F9B34FB</p>
+<p>HID Information</p>
+<p>00002A4B-0000-1000-8000-00805F9B34FB</p>
+<p>Report Map</p>
+<p>00002A4C-0000-1000-8000-00805F9B34FB</p>
+<p>HID Control Point</p>
+<p>00002A4D-0000-1000-8000-00805F9B34FB</p>
+<p>Report</p>
+<p>see also <a href="https://developer.bluetooth.org/gatt/characteristics">Bluetooth Developer portal : Characteristics</a></p>
+<h2 id="heading">なぜ禁止されたのか？</h2>
+<p>わからない。<br>
+結論から言うとわからない。なんらかのバグ修正としてコミットされているが、<br>
+どのような背景があるのかはわからなかった。</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2016/02/18/lmde2%E3%81%A8%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%96%E3%83%BC%E3%83%88%E3%81%97%E3%81%A6%E3%81%84%E3%82%8Bwindows-7-%E3%82%92-10-%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/">
+          <span class="button__icon">←</span>
+          <span class="button__text">LMDE2とデュアルブートしているwindows 7 を 10 にアップグレードする</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2016/02/03/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2016%E5%B9%B4-1%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/">
+          <span class="button__text">[読書メーター]2016年 1月まとめ</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

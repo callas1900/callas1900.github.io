@@ -14,10 +14,10 @@
     
     <item>
       <title>Laravel :: phpunit with clean database.</title>
-      <link>/posts/laravel-phpunit-with-clean-database/</link>
+      <link>/posts/2016/07/21/laravel-phpunit-with-clean-database./</link>
       <pubDate>Thu, 21 Jul 2016 17:50:00 +0900</pubDate>
       
-      <guid>/posts/laravel-phpunit-with-clean-database/</guid>
+      <guid>/posts/2016/07/21/laravel-phpunit-with-clean-database./</guid>
       <description>Laravel + postgresSQLを使ったサイトで unit test を書いてたが、既存のデータベースを使うと、テストが意図しない挙動になることがあったので、汚れていないDBを使いたくなったので、調べてやってみたら、意外と詰まってしまったという話。
  環境 sqlite in memory database を使う方法  config/database.php config/database.php phpunit.xml TestCase.php   Sqliteでエラーがでる場合の対処1  Driver not found ALTER TABLE SYNTAX ERROR   Sqliteでエラーがでる場合の対処2  環境  laravel 5.x PostgreSQL  sqlite in memory database を使う方法 config/database.php 環境変数で default 値を差し替えれるようにする
 &#39;default&#39; =&amp;gt; env(&#39;DB_DEFAULT&#39;, &#39;pgsql&#39;), config/database.php memory database の定義を作る

@@ -14,19 +14,19 @@
     
     <item>
       <title>JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）</title>
-      <link>/posts/jb41jbmr142permission-comments/</link>
+      <link>/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Wed, 12 Dec 2012 00:30:00 +0900</pubDate>
       
-      <guid>/posts/jb41jbmr142permission-comments/</guid>
+      <guid>/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>大変勉強になりました。ありがとうございます(^-^)/ 匿名 - Feb 5, 2013大変勉強になりました。ありがとうございます(^-^)/</description>
     </item>
     
     <item>
       <title>JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）</title>
-      <link>/posts/jb41jbmr142permission/</link>
+      <link>/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Wed, 12 Dec 2012 00:30:00 +0900</pubDate>
       
-      <guid>/posts/jb41jbmr142permission/</guid>
+      <guid>/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>Android 4.2 (JELLY_BEAN_MR1) が出ましたので、恒例のsignatureがらみのPermission比較したいと思います。
 前回までのPermission比較は
  ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係）  にあります。
@@ -49,10 +49,10 @@ android.permission.HARDWARE_TEST</description>
     
     <item>
       <title>JBとICSのPermission比較（メーカー署名関係）</title>
-      <link>/posts/jbicspermission/</link>
+      <link>/posts/2012/08/13/jb%E3%81%A8ics%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Mon, 13 Aug 2012 09:00:00 +0900</pubDate>
       
-      <guid>/posts/jbicspermission/</guid>
+      <guid>/posts/2012/08/13/jb%E3%81%A8ics%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
  注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
  またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。

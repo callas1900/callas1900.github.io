@@ -7,17 +7,72 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Sat, 31 Dec 2016 10:05:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/%E5%A4%A7%E6%99%A6%E6%97%A5/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>2019年 大晦日</title>
+      <link>/posts/2019/12/31/2019%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2019/12/31/2019%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
+      <description>Blog ついにBloggerをやめてHugoで作成するPostsに変更。 GitHubPagesでポストしています。 最近考えてたBlogの存在意義ってなんだろうってのは、 気軽に誰の目にも注目されないところだけど、見ようと思えば誰でも見れる場所にポストしたいんだなという一見矛盾したような結論になりました。
+Running 今年はトレラン30km(実質32kmぐらい)を無事完走。 フルマラソンも出ようと思いましたが、台風１９号の影響で色々とマラソン大会が中止になって、 私が出ようと思ってた、さのマラソンも中止になってしまったのが残念で仕方ない。
+Cycling 前半はいい感じだったけど、後半はランニングに重点を置いてしまった。 夏に乗らなくなったのが問題だった、理由は通勤環境が変わったことと、あつすぎたこと。 大きな進歩としては、ブルホーンハンドルへの換装をしたことと、 箱根の山を小田原から上ったこと、 それから、チェーンの洗浄方法を覚えたこと。
+Camera Flickr から引っ越し終了。 基本はGoogle Photosで、Unsplashに写真を載せるようになっていった。 アクションカムを買おうかどうか、特にOsumo Action を買うかでもの凄く迷ったのだけど、 結局RX100の見直しで満足する自分に気づけた。 一眼の方は、もう本当どうしようかな。 買い換えるとなると予算が大変なことになるんだよな。 シグマFpも考えたけど、やっぱファインダーが欲しい。
+読書 小説筋が衰えている、仕事の本ばっかりじゃ駄目だなぁ
+Code Micro Service, k8s を勉強中。 前に使ってたdocker swarm の考え方がいかせるようないかせないような。 Rust勉強したいなぁ。
+アニメ Netflixさまさま、ケンガンアシュラ面白かったのと、血界戦線はbeyond含め面白かった。
+Game switch year は続く！ FE風花雪月、リングフィットアドベンチャー！
+〆 今年は色々と新しいことに挑戦して、楽しめた年でした。 ベトナム・ダナンに出張に社員３人でいったり、 フランス・ニースにも出張行けました。 来年はインドにも行く予定です。 更に自分の枠を伸ばせるような一年に来年もしたいと思います。</description>
+    </item>
+    
+    <item>
+      <title>2018年 大晦日</title>
+      <link>/posts/2018/12/31/2018%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
+      <pubDate>Mon, 31 Dec 2018 23:53:00 +0900</pubDate>
+      
+      <guid>/posts/2018/12/31/2018%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
+      <description>Blog 来年はちょっと今後blogをbloggerで続けるか考えていかないとなぁ。
+ランニング 今年はなんとフルマラソン完走しました！来年はちょっとそれを超えるやつ、トレラン30kmオーバーや、ロードのオーバー42km挑戦してみたいなぁ。
+自転車 今年はbirdyを買ったので、来年は更に乗りこなして行きたいです。
+カメラ 何か挑戦的なことをしたいなぁ。何をしようかなぁ。そういやFlickr から引っ越ししないなぁ。
+読書 ぼちぼち読んでるけどもっと継続的によんで
+プログラミング 今年はAndroid java な年でした、趣味ではgolangでやってます。
+golang もっと勉強していきたい。
+アニメ アニゴジ！
+Game switch でBoW。スマブラと大神！色々出来て幸せ！
+〆 今年は新しい会社との一年でした、一緒に作っていくような会社なので来年も一緒に楽しい会社として維持していきたいと思います。合わせて自身のアップデートも！</description>
+    </item>
+    
+    <item>
+      <title>2017 大晦日</title>
+      <link>/posts/2017/12/31/2017-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
+      <pubDate>Sun, 31 Dec 2017 22:37:00 +0900</pubDate>
+      
+      <guid>/posts/2017/12/31/2017-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
+      <description>今年は色々と苦い経験をした年でした。
+読書はしてないわけじゃないけど、読了はゼロ。
+来年は色々とまた読書して読了していきたいですね。
+写真は撮ってるけど、台風の中レース撮った以外は
+挑戦的なことをしてない。
+もっとマクロ使って遊んでみたいですね。
+後今年はシェイプアップのためにもランニング始めました。今のところ14kmぐらい走れています。フルマラソン挑戦したいな。
+コード書きに関しては、php7/laravel な一年でした。
+もっと色んなもの書いて仕事にしていきたいですね。
+Agile との関わりは、より強固な方向に年末辺りで急に方向転換してきました。
+嬉しい流れですね。
+来年はより良い年に友と家族と共にしていきたいと思います。</description>
+    </item>
+    
+    <item>
       <title>2016年 大晦日</title>
-      <link>/posts/2016/</link>
+      <link>/posts/2016/12/31/2016%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Sat, 31 Dec 2016 10:05:00 +0900</pubDate>
       
-      <guid>/posts/2016/</guid>
+      <guid>/posts/2016/12/31/2016%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>Blog 更新頻度は高くないけど、ぼちぼちと技術情報をアップしているStackeditを使うようになったからかも。
 カメラ Sony A99II が販売されたのはいい励みになった。
 高いけど。高すぎるけど。もう少し安いフルサイズα出してくれないかな。
@@ -45,10 +100,10 @@ Game 今年クリアしたゲームはWiiUのトワイライトプリンセス�
     
     <item>
       <title>2015年 大晦日</title>
-      <link>/posts/2015/</link>
+      <link>/posts/2015/12/31/2015%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Thu, 31 Dec 2015 23:09:00 +0900</pubDate>
       
-      <guid>/posts/2015/</guid>
+      <guid>/posts/2015/12/31/2015%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>Blog
 今年は、本当に全く更新しませんでした。転職して前より多少は時間に余裕が出たので、ぼちぼちと月一ぐらいは何か書きたいなぁ。
 カメラ
@@ -71,10 +126,10 @@ Twitter 変わらずぼちぼち、Facebook 結構使うように、LINE 高校�
     
     <item>
       <title>2014年 大晦日</title>
-      <link>/posts/2014/</link>
+      <link>/posts/2014/12/31/2014%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Wed, 31 Dec 2014 22:48:00 +0900</pubDate>
       
-      <guid>/posts/2014/</guid>
+      <guid>/posts/2014/12/31/2014%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>Blog 今年もぼちぼちとしかblog更新しませんでした、来年はがんばる（毎年言ってる）
 何個か技術ネタをぼちぼち出せたのが良かった。
 カメラ 今年は鈴鹿までWTCC撮影にいけた。流し撮り楽しくて満足。
@@ -98,10 +153,10 @@ EVE online 完全なスキルげーに、打開策を模索中。
     
     <item>
       <title>2013年 大晦日</title>
-      <link>/posts/2013/</link>
+      <link>/posts/2013/12/31/2013%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Tue, 31 Dec 2013 23:18:00 +0900</pubDate>
       
-      <guid>/posts/2013/</guid>
+      <guid>/posts/2013/12/31/2013%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>今年も早いもので一年が過ぎようとしています。
 紅白を見ながら今年一年を振り返ってみます。
 Blog 反省。更新頻度低し、ただ発信する心がなくなったわけではなく、相変わらずTwitter, facebook, Instagram にばらけてるだけ、来年は仕事系のまとめをもう少し増やしたい。
@@ -125,10 +180,10 @@ Androidチームだった面々は一人を除いて、Androidと別の仕事の
     
     <item>
       <title>2011年終了</title>
-      <link>/posts/2011/</link>
+      <link>/posts/2011/12/31/2011%E5%B9%B4%E7%B5%82%E4%BA%86/</link>
       <pubDate>Sat, 31 Dec 2011 23:55:00 +0900</pubDate>
       
-      <guid>/posts/2011/</guid>
+      <guid>/posts/2011/12/31/2011%E5%B9%B4%E7%B5%82%E4%BA%86/</guid>
       <description>今年も残すところ後数分、ささっと今年を振り返ってみたいと思います。
 地震 3月にあった地震とりあえず阪神大震災の時よりも生きた心地がしませんでした。
 被害にあった場所は某都内の高層ビルの33階。
@@ -162,10 +217,10 @@ Androidと喧嘩するややこしいお仕事に変更。
     
     <item>
       <title>2010年大晦日</title>
-      <link>/posts/2010/</link>
+      <link>/posts/2010/12/31/2010%E5%B9%B4%E5%A4%A7%E6%99%A6%E6%97%A5/</link>
       <pubDate>Fri, 31 Dec 2010 23:25:00 +0900</pubDate>
       
-      <guid>/posts/2010/</guid>
+      <guid>/posts/2010/12/31/2010%E5%B9%B4%E5%A4%A7%E6%99%A6%E6%97%A5/</guid>
       <description>今年も色々ありました。
 仕事では
 東京にきてからずっと一緒に仕事してきた人とお別れをし、

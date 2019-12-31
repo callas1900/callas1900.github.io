@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[C&#43;&#43;]C&#43;&#43;のバイブルとISBN。 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="最近JavaからC&#43;&#43;に移ったのだが、
+Javaに比べて美しく書けないし、
+CからC&#43;&#43;に移った人のソースコードが読みにくい
+（JavaからC&#43;&#43;に移った人のソースは読みやすい）
+これはJava書きとC書きの間に大きな隔たりがあるのじゃないだろうか？と考える。
+昔関わったプロジェクトでC書きが納品したプログラムの修正をしたことがあったが、
+読みづらく根を上げたことがあった。
+（プロジェクトでは「古文書」と呼ばれていた）
+あの時は、C書きの人のソースが汚いだけかと思っていたが、
+もしかしたらC書きの間ではメジャーな書き方なのかもしれない。
+やはりC&#43;&#43;のバイブル的なものを一読しなかればいけないだろうと思い、
+少し調べてみると、
+Scott Meyersの「Effective C&#43;&#43;」がバイブルだという話だ。
+(Gofのデザパタ本も読んだほうがいいんだろうが、まずはコーディングバイブル）
+さー買うぜ！って思い立ち本屋に直行。
+見つけたEffective C&#43;&#43; なんだか More Effective C&#43;&#43; と書いてある、
+気にせず購入しようとしたら、お金が足りない！
+その時は購入をあきらめ、家に帰ってからAmazonで注文しようとすると、
+どうもさっき本屋で見たものとは表紙が違う。
+よくよくAmazonのコメント欄を見ていくと、
+どうやらScotto MeyersのEffective C&#43;&#43;は有名本でもあるらしく、
+数人の訳者が訳本を出しているようだ。
+中にはひどい訳本もあるらしく、私が買おうとしていたMore Effective C&#43;&#43;は
+かなり評判が悪い。
+そういったコメントの中で吉川邦夫氏という名前が見つかる、
+彼が訳者の本は評判が良いようだ。
+検索し見比べてみると、Amazonの本に対する評価も彼の本だけ満点がついている。
+よし、吉川邦夫氏訳本を買うぞーとAmazonで注文しようとするも在庫切れ、
+う～ん、流石吉川邦夫（笑）
+近所の書店で注文するために、
+AmazonからISBNコードを抽出。
+そういえば、ISBNコードって書籍出版物に対するＩＤコードなんだろうけど、
+ISBN-10とISBN-13があるんだね。
+どう違うのだろう？両方ともメモって書店に渡さないと分からないのだろうか？
+気になって調べてみると
+ISBN-10は旧コード体系
+ISBN-13は新コード体系
+ということだそうだ
+どうやら旧コードの10桁ISBNでは足りなくなったので、
+13桁にしたようだ。
+よって13桁のほうを書店に持っていけば問題ない。
+以下本当にどうでもよい記述。
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;
+ちなみに吉川邦夫氏のEffective C&#43;&#43; ISBNは
+ISBN-10 : 4756118089
+ISBN-13 : 978-4756118080
+ISBN-10のコード体系は
+A BBBB CCCC D
+A = 言語コード（日本語だと４）"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2008/09/17/c-c-%E3%81%AE%E3%83%90%E3%82%A4%E3%83%96%E3%83%AB%E3%81%A8isbn/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[C&#43;&#43;]C&#43;&#43;のバイブルとISBN。 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="最近JavaからC&#43;&#43;に移ったのだが、
+Javaに比べて美しく書けないし、
+CからC&#43;&#43;に移った人のソースコードが読みにくい
+（JavaからC&#43;&#43;に移った人のソースは読みやすい）
+これはJava書きとC書きの間に大きな隔たりがあるのじゃないだろうか？と考える。
+昔関わったプロジェクトでC書きが納品したプログラムの修正をしたことがあったが、
+読みづらく根を上げたことがあった。
+（プロジェクトでは「古文書」と呼ばれていた）
+あの時は、C書きの人のソースが汚いだけかと思っていたが、
+もしかしたらC書きの間ではメジャーな書き方なのかもしれない。
+やはりC&#43;&#43;のバイブル的なものを一読しなかればいけないだろうと思い、
+少し調べてみると、
+Scott Meyersの「Effective C&#43;&#43;」がバイブルだという話だ。
+(Gofのデザパタ本も読んだほうがいいんだろうが、まずはコーディングバイブル）
+さー買うぜ！って思い立ち本屋に直行。
+見つけたEffective C&#43;&#43; なんだか More Effective C&#43;&#43; と書いてある、
+気にせず購入しようとしたら、お金が足りない！
+その時は購入をあきらめ、家に帰ってからAmazonで注文しようとすると、
+どうもさっき本屋で見たものとは表紙が違う。
+よくよくAmazonのコメント欄を見ていくと、
+どうやらScotto MeyersのEffective C&#43;&#43;は有名本でもあるらしく、
+数人の訳者が訳本を出しているようだ。
+中にはひどい訳本もあるらしく、私が買おうとしていたMore Effective C&#43;&#43;は
+かなり評判が悪い。
+そういったコメントの中で吉川邦夫氏という名前が見つかる、
+彼が訳者の本は評判が良いようだ。
+検索し見比べてみると、Amazonの本に対する評価も彼の本だけ満点がついている。
+よし、吉川邦夫氏訳本を買うぞーとAmazonで注文しようとするも在庫切れ、
+う～ん、流石吉川邦夫（笑）
+近所の書店で注文するために、
+AmazonからISBNコードを抽出。
+そういえば、ISBNコードって書籍出版物に対するＩＤコードなんだろうけど、
+ISBN-10とISBN-13があるんだね。
+どう違うのだろう？両方ともメモって書店に渡さないと分からないのだろうか？
+気になって調べてみると
+ISBN-10は旧コード体系
+ISBN-13は新コード体系
+ということだそうだ
+どうやら旧コードの10桁ISBNでは足りなくなったので、
+13桁にしたようだ。
+よって13桁のほうを書店に持っていけば問題ない。
+以下本当にどうでもよい記述。
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;
+ちなみに吉川邦夫氏のEffective C&#43;&#43; ISBNは
+ISBN-10 : 4756118089
+ISBN-13 : 978-4756118080
+ISBN-10のコード体系は
+A BBBB CCCC D
+A = 言語コード（日本語だと４）" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[C&#43;&#43;]C&#43;&#43;のバイブルとISBN。 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="最近JavaからC&#43;&#43;に移ったのだが、
+Javaに比べて美しく書けないし、
+CからC&#43;&#43;に移った人のソースコードが読みにくい
+（JavaからC&#43;&#43;に移った人のソースは読みやすい）
+これはJava書きとC書きの間に大きな隔たりがあるのじゃないだろうか？と考える。
+昔関わったプロジェクトでC書きが納品したプログラムの修正をしたことがあったが、
+読みづらく根を上げたことがあった。
+（プロジェクトでは「古文書」と呼ばれていた）
+あの時は、C書きの人のソースが汚いだけかと思っていたが、
+もしかしたらC書きの間ではメジャーな書き方なのかもしれない。
+やはりC&#43;&#43;のバイブル的なものを一読しなかればいけないだろうと思い、
+少し調べてみると、
+Scott Meyersの「Effective C&#43;&#43;」がバイブルだという話だ。
+(Gofのデザパタ本も読んだほうがいいんだろうが、まずはコーディングバイブル）
+さー買うぜ！って思い立ち本屋に直行。
+見つけたEffective C&#43;&#43; なんだか More Effective C&#43;&#43; と書いてある、
+気にせず購入しようとしたら、お金が足りない！
+その時は購入をあきらめ、家に帰ってからAmazonで注文しようとすると、
+どうもさっき本屋で見たものとは表紙が違う。
+よくよくAmazonのコメント欄を見ていくと、
+どうやらScotto MeyersのEffective C&#43;&#43;は有名本でもあるらしく、
+数人の訳者が訳本を出しているようだ。
+中にはひどい訳本もあるらしく、私が買おうとしていたMore Effective C&#43;&#43;は
+かなり評判が悪い。
+そういったコメントの中で吉川邦夫氏という名前が見つかる、
+彼が訳者の本は評判が良いようだ。
+検索し見比べてみると、Amazonの本に対する評価も彼の本だけ満点がついている。
+よし、吉川邦夫氏訳本を買うぞーとAmazonで注文しようとするも在庫切れ、
+う～ん、流石吉川邦夫（笑）
+近所の書店で注文するために、
+AmazonからISBNコードを抽出。
+そういえば、ISBNコードって書籍出版物に対するＩＤコードなんだろうけど、
+ISBN-10とISBN-13があるんだね。
+どう違うのだろう？両方ともメモって書店に渡さないと分からないのだろうか？
+気になって調べてみると
+ISBN-10は旧コード体系
+ISBN-13は新コード体系
+ということだそうだ
+どうやら旧コードの10桁ISBNでは足りなくなったので、
+13桁にしたようだ。
+よって13桁のほうを書店に持っていけば問題ない。
+以下本当にどうでもよい記述。
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;
+ちなみに吉川邦夫氏のEffective C&#43;&#43; ISBNは
+ISBN-10 : 4756118089
+ISBN-13 : 978-4756118080
+ISBN-10のコード体系は
+A BBBB CCCC D
+A = 言語コード（日本語だと４）" />
+<meta property="og:url" content="/posts/2008/09/17/c-c-%E3%81%AE%E3%83%90%E3%82%A4%E3%83%96%E3%83%AB%E3%81%A8isbn/" />
+<meta property="og:site_name" content="[C&#43;&#43;]C&#43;&#43;のバイブルとISBN。" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2008-09-17 00:30:00.003 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2008/09/17/c-c-%E3%81%AE%E3%83%90%E3%82%A4%E3%83%96%E3%83%AB%E3%81%A8isbn/">[C++]C++のバイブルとISBN。</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2008-09-17
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>最近JavaからC++に移ったのだが、</p>
+<p>Javaに比べて美しく書けないし、</p>
+<p>CからC++に移った人のソースコードが読みにくい</p>
+<p>（JavaからC++に移った人のソースは読みやすい）</p>
+<p>これはJava書きとC書きの間に大きな隔たりがあるのじゃないだろうか？と考える。</p>
+<p>昔関わったプロジェクトでC書きが納品したプログラムの修正をしたことがあったが、</p>
+<p>読みづらく根を上げたことがあった。</p>
+<p>（プロジェクトでは「古文書」と呼ばれていた）</p>
+<p>あの時は、C書きの人のソースが汚いだけかと思っていたが、</p>
+<p>もしかしたらC書きの間ではメジャーな書き方なのかもしれない。</p>
+<p>やはりC++のバイブル的なものを一読しなかればいけないだろうと思い、</p>
+<p>少し調べてみると、</p>
+<p>Scott Meyersの「Effective C++」がバイブルだという話だ。</p>
+<p>(Gofのデザパタ本も読んだほうがいいんだろうが、まずはコーディングバイブル）</p>
+<p>さー買うぜ！って思い立ち本屋に直行。</p>
+<p>見つけたEffective C++ なんだか More Effective C++ と書いてある、</p>
+<p>気にせず購入しようとしたら、お金が足りない！</p>
+<p>その時は購入をあきらめ、家に帰ってからAmazonで注文しようとすると、</p>
+<p>どうもさっき本屋で見たものとは表紙が違う。</p>
+<p>よくよくAmazonのコメント欄を見ていくと、</p>
+<p>どうやらScotto MeyersのEffective C++は有名本でもあるらしく、</p>
+<p>数人の訳者が訳本を出しているようだ。</p>
+<p>中にはひどい訳本もあるらしく、私が買おうとしていたMore Effective C++は</p>
+<p>かなり評判が悪い。</p>
+<p>そういったコメントの中で吉川邦夫氏という名前が見つかる、</p>
+<p>彼が訳者の本は評判が良いようだ。</p>
+<p>検索し見比べてみると、Amazonの本に対する評価も彼の本だけ満点がついている。</p>
+<p>よし、吉川邦夫氏訳本を買うぞーとAmazonで注文しようとするも在庫切れ、</p>
+<p>う～ん、流石吉川邦夫（笑）</p>
+<p>近所の書店で注文するために、</p>
+<p>AmazonからISBNコードを抽出。</p>
+<p>そういえば、ISBNコードって書籍出版物に対するＩＤコードなんだろうけど、</p>
+<p>ISBN-10とISBN-13があるんだね。</p>
+<p>どう違うのだろう？両方ともメモって書店に渡さないと分からないのだろうか？</p>
+<p>気になって調べてみると</p>
+<p>ISBN-10は旧コード体系</p>
+<p>ISBN-13は新コード体系</p>
+<p>ということだそうだ</p>
+<p>どうやら旧コードの10桁ISBNでは足りなくなったので、</p>
+<p>13桁にしたようだ。</p>
+<p>よって13桁のほうを書店に持っていけば問題ない。</p>
+<p>以下本当にどうでもよい記述。</p>
+<p>-&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
+<p>ちなみに吉川邦夫氏のEffective C++ ISBNは</p>
+<p>ISBN-10 : 4756118089</p>
+<p>ISBN-13 : 978-4756118080</p>
+<p>ISBN-10のコード体系は</p>
+<p>A BBBB CCCC D</p>
+<p>A = 言語コード（日本語だと４）</p>
+<p>B = 出版者記号</p>
+<p>C = 書名記号</p>
+<p>D = チェックデジット</p>
+<p>※ただしBとCは合計で８になる範囲内で桁数が変動する</p>
+<p>ISBN-13は</p>
+<p>NNN - A BBBB CCCC D</p>
+<p>Nは978,979のどちらか</p>
+<p>A～Dの意味は同じ</p>
+<p>ただしISBN-10とISBN-13でチェックデジットの計算式が違う。</p>
+<p>ISBN-10は「モジュラス11 ウェイト10-2」</p>
+<p>ISBN-13は「モジュラス10 ウェイト3・1（モジュラス10 ウェイト3）」</p>
+<p>前者の計算式だとEffective C++のチェックデジットは</p>
+<p>4*10 + 7*9 + 5*8 + 6*7 + 1*6 + 1*5 + 8*4 + 0*3 + 8*2 = 244</p>
+<p>11 - ( 244 mod 11 ) = 9</p>
+<p>A. 9</p>
+<p>後者だと</p>
+<p>9*1 + 7*3 + 8*1 + 4*3 + 7*1 + 5*3 + 6*1 + 1*3 + 1*1 + 8*3 + 0*1 + 8*3 = 130</p>
+<p>10 - (130 mod 10 ) = 10</p>
+<p>算出結果の下一桁が0ならばチェックデジットは 0 とするので、</p>
+<p>A. 0</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2008/12/11/webserviceamazon%E3%83%97%E3%83%A9%E3%82%A4%E3%83%A0%E3%81%AB%E8%A6%81%E6%B3%A8%E6%84%8F/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[WebService]Amazonプライムに要注意</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2008/09/03/googlegoogle-chrome%E3%81%A8v8%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3/">
+          <span class="button__text">[Google]Google ChromeとV8エンジン</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

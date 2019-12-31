@@ -14,10 +14,10 @@
     
     <item>
       <title>LMDE2のNVIDIA Driverを更新する</title>
-      <link>/posts/lmde2nvidia-driver/</link>
+      <link>/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/</link>
       <pubDate>Thu, 14 Jan 2016 00:28:00 +0900</pubDate>
       
-      <guid>/posts/lmde2nvidia-driver/</guid>
+      <guid>/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/</guid>
       <description>LMDE2 に NVIDIA のグラフィックドライバを入れます。
  Inspect your graphic board Download a driver Installer Prepare Installation Installation  Inspect your graphic board terminalで
 lspci -vnn | grep VGA -A 12 Download a driver Installer NVIDIAの公式サイトからLinux X64用のDriver Installerを手に入れます。

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>selectWindowsVista.security :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="こんな記事を見つけた
+Vista の登場をセキュリティベンダが喜ばない理由
+http://japan.internet.com/busnews/20060818/6.html
+掻い摘んで言うと、Vistaはファイヤーウォールとかウィルス対策ソフトとか要らなくなるかもよー
+だから、セキュリティベンダ（セキュリティソフトを開発している会社）は
+Vistaを喜ばないかもね。
+って話。
+内容を見てみると、色々自分が勉強不足だった事を改めて思い知る。
+XPの脆弱性は知っていたが（脆弱だからこそSP2等での強化があったのだ）
+特にユーザー認証の下りだけど
+ 現在、あなたはコンピュータ管理者として Windows XP を起動し、Internet Explorer 6 を利用していることだろう。コンピュータ管理者として、スパイウェアとマルウェアのシステムへの侵入を許していることになる。IE 6 は保護されておらず、管理者としてコンピュータを起動しているため、スパイウェアとマルウェアがシステムファイルに書き込むためのアクセスを自動的に提供しているのだ。
+ 確かに管理者権限でのログインでインターネットに繋ぐっていうのは、
+業務システムの観点から見るとありえない話だ。
+（※管理者権限：そのプログラムに対して何でも出来る権限を持つユーザー、システム自体を改造する事も可能だし、他のユーザーを消去などのアクションをとる事も出来る。使い方を間違えればシステム事態を破綻させる事も可）
+端的に言うと、大企業の注文管理システムの中枢コンピュータに管理者権限でログインし、エロサイト巡回をしてるようなもんなんだ。
+Vistaは様々な保護機能の他に管理者ユーザー以外でのログインしてからのインターネットブラウジングを容易にし、
+（これによって、例えウィルス等が入ってきてもPC自体の中枢機能がやられる可能性はぐんと減る。汚染されてもそのユーザーを切り捨てるだけで済むからだ）
+さらにIE7はOSからブラウジング機能を分けて起動する、保護モードでの軌道が可能になった。
+色々セキュリティ界にとって来春に発売されるVistaは波紋を呼びそうではある。
+もちろん良い噂だけじゃなく、悪い噂もたくっさんありますけどね。
+例えば、IE7では全てのJavaScript機能に対して許可を求めてくるとか・・・
+これは現在のサイト構築の手法を考えると致命的！（HTML＋JavaScript&#43;CSS)ってのが理想的（サーバーサイドプログラムは除いてね）
+現在新しいノートPCの購入を考えているけど、Vistaが搭載されたモデルにしようか迷い中。"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2006/08/21/selectwindowsvista.security/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="selectWindowsVista.security :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="こんな記事を見つけた
+Vista の登場をセキュリティベンダが喜ばない理由
+http://japan.internet.com/busnews/20060818/6.html
+掻い摘んで言うと、Vistaはファイヤーウォールとかウィルス対策ソフトとか要らなくなるかもよー
+だから、セキュリティベンダ（セキュリティソフトを開発している会社）は
+Vistaを喜ばないかもね。
+って話。
+内容を見てみると、色々自分が勉強不足だった事を改めて思い知る。
+XPの脆弱性は知っていたが（脆弱だからこそSP2等での強化があったのだ）
+特にユーザー認証の下りだけど
+ 現在、あなたはコンピュータ管理者として Windows XP を起動し、Internet Explorer 6 を利用していることだろう。コンピュータ管理者として、スパイウェアとマルウェアのシステムへの侵入を許していることになる。IE 6 は保護されておらず、管理者としてコンピュータを起動しているため、スパイウェアとマルウェアがシステムファイルに書き込むためのアクセスを自動的に提供しているのだ。
+ 確かに管理者権限でのログインでインターネットに繋ぐっていうのは、
+業務システムの観点から見るとありえない話だ。
+（※管理者権限：そのプログラムに対して何でも出来る権限を持つユーザー、システム自体を改造する事も可能だし、他のユーザーを消去などのアクションをとる事も出来る。使い方を間違えればシステム事態を破綻させる事も可）
+端的に言うと、大企業の注文管理システムの中枢コンピュータに管理者権限でログインし、エロサイト巡回をしてるようなもんなんだ。
+Vistaは様々な保護機能の他に管理者ユーザー以外でのログインしてからのインターネットブラウジングを容易にし、
+（これによって、例えウィルス等が入ってきてもPC自体の中枢機能がやられる可能性はぐんと減る。汚染されてもそのユーザーを切り捨てるだけで済むからだ）
+さらにIE7はOSからブラウジング機能を分けて起動する、保護モードでの軌道が可能になった。
+色々セキュリティ界にとって来春に発売されるVistaは波紋を呼びそうではある。
+もちろん良い噂だけじゃなく、悪い噂もたくっさんありますけどね。
+例えば、IE7では全てのJavaScript機能に対して許可を求めてくるとか・・・
+これは現在のサイト構築の手法を考えると致命的！（HTML＋JavaScript&#43;CSS)ってのが理想的（サーバーサイドプログラムは除いてね）
+現在新しいノートPCの購入を考えているけど、Vistaが搭載されたモデルにしようか迷い中。" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="selectWindowsVista.security :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="こんな記事を見つけた
+Vista の登場をセキュリティベンダが喜ばない理由
+http://japan.internet.com/busnews/20060818/6.html
+掻い摘んで言うと、Vistaはファイヤーウォールとかウィルス対策ソフトとか要らなくなるかもよー
+だから、セキュリティベンダ（セキュリティソフトを開発している会社）は
+Vistaを喜ばないかもね。
+って話。
+内容を見てみると、色々自分が勉強不足だった事を改めて思い知る。
+XPの脆弱性は知っていたが（脆弱だからこそSP2等での強化があったのだ）
+特にユーザー認証の下りだけど
+ 現在、あなたはコンピュータ管理者として Windows XP を起動し、Internet Explorer 6 を利用していることだろう。コンピュータ管理者として、スパイウェアとマルウェアのシステムへの侵入を許していることになる。IE 6 は保護されておらず、管理者としてコンピュータを起動しているため、スパイウェアとマルウェアがシステムファイルに書き込むためのアクセスを自動的に提供しているのだ。
+ 確かに管理者権限でのログインでインターネットに繋ぐっていうのは、
+業務システムの観点から見るとありえない話だ。
+（※管理者権限：そのプログラムに対して何でも出来る権限を持つユーザー、システム自体を改造する事も可能だし、他のユーザーを消去などのアクションをとる事も出来る。使い方を間違えればシステム事態を破綻させる事も可）
+端的に言うと、大企業の注文管理システムの中枢コンピュータに管理者権限でログインし、エロサイト巡回をしてるようなもんなんだ。
+Vistaは様々な保護機能の他に管理者ユーザー以外でのログインしてからのインターネットブラウジングを容易にし、
+（これによって、例えウィルス等が入ってきてもPC自体の中枢機能がやられる可能性はぐんと減る。汚染されてもそのユーザーを切り捨てるだけで済むからだ）
+さらにIE7はOSからブラウジング機能を分けて起動する、保護モードでの軌道が可能になった。
+色々セキュリティ界にとって来春に発売されるVistaは波紋を呼びそうではある。
+もちろん良い噂だけじゃなく、悪い噂もたくっさんありますけどね。
+例えば、IE7では全てのJavaScript機能に対して許可を求めてくるとか・・・
+これは現在のサイト構築の手法を考えると致命的！（HTML＋JavaScript&#43;CSS)ってのが理想的（サーバーサイドプログラムは除いてね）
+現在新しいノートPCの購入を考えているけど、Vistaが搭載されたモデルにしようか迷い中。" />
+<meta property="og:url" content="/posts/2006/08/21/selectwindowsvista.security/" />
+<meta property="og:site_name" content="selectWindowsVista.security" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2006-08-21 09:57:00 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2006/08/21/selectwindowsvista.security/">selectWindowsVista.security</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2006-08-21
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/windows/">Windows</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>こんな記事を見つけた</p>
+<p>Vista の登場をセキュリティベンダが喜ばない理由<br>
+<a href="http://japan.internet.com/busnews/20060818/6.html">http://japan.internet.com/busnews/20060818/6.html</a></p>
+<p>掻い摘んで言うと、Vistaはファイヤーウォールとかウィルス対策ソフトとか要らなくなるかもよー<br>
+だから、セキュリティベンダ（セキュリティソフトを開発している会社）は<br>
+Vistaを喜ばないかもね。</p>
+<p>って話。</p>
+<p>内容を見てみると、色々自分が勉強不足だった事を改めて思い知る。<br>
+XPの脆弱性は知っていたが（脆弱だからこそSP2等での強化があったのだ）<br>
+特にユーザー認証の下りだけど</p>
+<blockquote>
+<p>現在、あなたはコンピュータ管理者として Windows XP を起動し、Internet Explorer 6 を利用していることだろう。コンピュータ管理者として、スパイウェアとマルウェアのシステムへの侵入を許していることになる。IE 6 は保護されておらず、管理者としてコンピュータを起動しているため、スパイウェアとマルウェアがシステムファイルに書き込むためのアクセスを自動的に提供しているのだ。</p>
+</blockquote>
+<p>確かに管理者権限でのログインでインターネットに繋ぐっていうのは、<br>
+業務システムの観点から見るとありえない話だ。<br>
+（※管理者権限：そのプログラムに対して何でも出来る権限を持つユーザー、システム自体を改造する事も可能だし、他のユーザーを消去などのアクションをとる事も出来る。使い方を間違えればシステム事態を破綻させる事も可）</p>
+<p>端的に言うと、大企業の注文管理システムの中枢コンピュータに管理者権限でログインし、エロサイト巡回をしてるようなもんなんだ。<br>
+Vistaは様々な保護機能の他に管理者ユーザー以外でのログインしてからのインターネットブラウジングを容易にし、<br>
+（これによって、例えウィルス等が入ってきてもPC自体の中枢機能がやられる可能性はぐんと減る。汚染されてもそのユーザーを切り捨てるだけで済むからだ）<br>
+さらにIE7はOSからブラウジング機能を分けて起動する、保護モードでの軌道が可能になった。<br>
+色々セキュリティ界にとって来春に発売されるVistaは波紋を呼びそうではある。</p>
+<p>もちろん良い噂だけじゃなく、悪い噂もたくっさんありますけどね。<br>
+例えば、IE7では全てのJavaScript機能に対して許可を求めてくるとか・・・<br>
+これは現在のサイト構築の手法を考えると致命的！（HTML＋JavaScript+CSS)ってのが理想的（サーバーサイドプログラムは除いてね）</p>
+<p>現在新しいノートPCの購入を考えているけど、Vistaが搭載されたモデルにしようか迷い中。</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2006/10/13/eclipse3.1.1-memo/">
+          <span class="button__icon">←</span>
+          <span class="button__text">Eclipse3.1.1 memo</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2006/08/17/%E9%85%92%E3%81%A8%E3%83%90%E3%83%A9%E3%81%AE%E6%97%A5%E3%80%85%E3%81%AA%E3%82%89%E3%81%9A/">
+          <span class="button__text">酒とバラの日々ならず</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

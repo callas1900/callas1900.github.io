@@ -14,10 +14,10 @@
     
     <item>
       <title>Docker registry を構築した後のimage整理</title>
-      <link>/posts/docker-registry-image/</link>
+      <link>/posts/2016/04/04/docker-registry-%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%9F%E5%BE%8C%E3%81%AEimage%E6%95%B4%E7%90%86/</link>
       <pubDate>Mon, 04 Apr 2016 12:38:00 +0900</pubDate>
       
-      <guid>/posts/docker-registry-image/</guid>
+      <guid>/posts/2016/04/04/docker-registry-%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%9F%E5%BE%8C%E3%81%AEimage%E6%95%B4%E7%90%86/</guid>
       <description>Docker registry を作って、別チームに任せて放置する Docker registry で image 管理をすると段々とゴミが溜まってきます。API(https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository)で削除できるのはTAGがついているimageだけなので、
 TAGが外れているimagesがどんどん残っていきます。
 エラーが起きる ずーっと管理せずに放置していると、ある日こんなエラーと出会います。
@@ -32,10 +32,10 @@ parse error: Invalid numeric literal at line 144, column 114 これは直前に�
     
     <item>
       <title>LMDE2とデュアルブートしているwindows 7 を 10 にアップグレードする</title>
-      <link>/posts/lmde2windows-7-10/</link>
+      <link>/posts/2016/02/18/lmde2%E3%81%A8%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%96%E3%83%BC%E3%83%88%E3%81%97%E3%81%A6%E3%81%84%E3%82%8Bwindows-7-%E3%82%92-10-%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</link>
       <pubDate>Thu, 18 Feb 2016 01:57:00 +0900</pubDate>
       
-      <guid>/posts/lmde2windows-7-10/</guid>
+      <guid>/posts/2016/02/18/lmde2%E3%81%A8%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%96%E3%83%BC%E3%83%88%E3%81%97%E3%81%A6%E3%81%84%E3%82%8Bwindows-7-%E3%82%92-10-%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</guid>
       <description>結論から言うと、特に何も問題なく、あっさりアップグレードできました。
 参考にしたのは以下のページ
 How to Upgrade a Linux Dual-Boot System to Windows 10
@@ -54,10 +54,10 @@ Windows 10 アップグレード後、GRUB2 への影響 何もありません�
     
     <item>
       <title>Android 5.0.2 以上でBLEが動かない</title>
-      <link>/posts/android-502-ble/</link>
+      <link>/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</link>
       <pubDate>Wed, 03 Feb 2016 22:48:00 +0900</pubDate>
       
-      <guid>/posts/android-502-ble/</guid>
+      <guid>/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</guid>
       <description>Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
 5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
 エラー内容は以下のようになっている。
@@ -68,10 +68,10 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE</description
     
     <item>
       <title>LMDE2のNVIDIA Driverを更新する</title>
-      <link>/posts/lmde2nvidia-driver/</link>
+      <link>/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/</link>
       <pubDate>Thu, 14 Jan 2016 00:28:00 +0900</pubDate>
       
-      <guid>/posts/lmde2nvidia-driver/</guid>
+      <guid>/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/</guid>
       <description>LMDE2 に NVIDIA のグラフィックドライバを入れます。
  Inspect your graphic board Download a driver Installer Prepare Installation Installation  Inspect your graphic board terminalで
 lspci -vnn | grep VGA -A 12 Download a driver Installer NVIDIAの公式サイトからLinux X64用のDriver Installerを手に入れます。
@@ -91,10 +91,10 @@ X serviceを止めます。</description>
     
     <item>
       <title>臆病者のための Ansible</title>
-      <link>/posts/ansible_5/</link>
+      <link>/posts/2016/01/12/%E8%87%86%E7%97%85%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-ansible/</link>
       <pubDate>Tue, 12 Jan 2016 01:06:00 +0900</pubDate>
       
-      <guid>/posts/ansible_5/</guid>
+      <guid>/posts/2016/01/12/%E8%87%86%E7%97%85%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-ansible/</guid>
       <description>Target Links 臆病者のための確認コマンド  基本 確認 hosts 制限 hosts 確認 tasks 確認 最終   〆  Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
 全て手順書のように書いていればいいのだが、多数のRoleを使い高度に書かれたAnsible playbookを引き継ぎ、メンテまたは代わりに実行するのはとても怖い。
 playbook実行する前に何がどうなるのか確認しまくりたい。

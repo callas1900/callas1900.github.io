@@ -14,10 +14,10 @@
     
     <item>
       <title>JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係）</title>
-      <link>/posts/jbmr243kitkat44permission/</link>
+      <link>/posts/2013/11/01/jb_mr24.3%E3%81%A8kitkat4.4%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</link>
       <pubDate>Fri, 01 Nov 2013 14:59:00 +0900</pubDate>
       
-      <guid>/posts/jbmr243kitkat44permission/</guid>
+      <guid>/posts/2013/11/01/jb_mr24.3%E3%81%A8kitkat4.4%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
  ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。

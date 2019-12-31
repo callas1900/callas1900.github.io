@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>FPSとポート開放 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="最近FPSにはまっているのだが、FPSなどのアクションゲームをやる場合一番の敵となるのがラグである。
+例えば私のPCクライアントから銃弾をAという敵に撃った場合
+ 私のクライアントで弾をある座標に向かって撃つというデータが送信される →サーバがその情報を受け取る →Aのキャラクタの位置をAのクライアントからゲットし弾道計算 →私とAのクライアントに結果を返却 →結果に見合った画面表示がなされる。  大まかにはこんな感じだろうか？
+これをWAN内で行うのだから当然通信ラグが発生する。
+Aを撃ったと思ったら明後日の方向に急に現れたなんてこともあるだろう。
+それを解消するためには、「ポートの開放」といったものが必要になってくる。
+このポートの開放だが、昔いけないP2Pソフトなどを起動する際も使用していたのだが、
+実は意味があまりよくわかっていなかった。
+さらに無知を加速させるのに、ポートの開放を自動で行ってくれるフリーソフトまで出回り始めたのだ。
+そこで私はポートの開放に関して考えることをやめた。
+時はたち、オンライン系のプログラムを組むにあたって多少のポートに関する知識が見えてきた。
+だがまだ良く分かっていない。
+頭の中で「ぽ～とのかぃほぅ」が「ポートのカイホウ」になった程度の理解度だ。
+さて、今回FPSで遊ぼうとすると任意のポートを開く必要が出てきた。
+しかもどうやら自動ツールでは私の家の環境。
+（光ファイバーを２階まで無線で飛ばしている）
+だと無理なようだ。
+予想だが、eoから支給されたルーターにさらに無線を飛ばす用のバファローのルーターを入れてるので
+二重ルーターになっていることが原因・・・か？
+そこでいい機会なので色々調べることにした。
+以下はメモ書きみたいなものなので、
+本当の知識ではないことに注意
+ループバックアドレス
+　自分自身のこと127.0.0.1:110
+PID
+　Process ID
+UDP
+　User Datagram Protocol
+TCP
+　Transmission Control Protocol
+※インターネットでは、トランスポート層のプロトコルとしてTCPも使われるが、 UDPは転送速度は高いが信頼性が低く、 TCPは信頼性は高いが転送速度が低い。
+二重ルーターに関して調べてみたらドンピシャなページを発見
+二重ルータ モデム バッファロー PC
+今週は土曜日まで家に帰れないから、週末帰ってから設定だな。
+気になる記事 ハードディスクの物理障害、果たして本当に復旧できるのか？
+～前編～
+[](http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/ &amp;ldquo;http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/&amp;quot;)
+ハードディスクの物理障害、果たして本当に復旧できるのか？
+～後編～
+ハードディスクは消耗品、わかっちゃいるけど忘れてしまう。
+Mozilla，次期ブラウザ「Firefox 3」のアルファ3版を公開，Animated PNG対応など
+http://itpro.nikkeibp.co.jp/article/NEWS/20070328/266587/
+システム開発者向けのリリース開始、
+今年の１１月末には３が正式バージョンでリリースされる予定だそうです。
+（めちゃめちゃはやくないか？）"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2007/03/28/fps%E3%81%A8%E3%83%9D%E3%83%BC%E3%83%88%E9%96%8B%E6%94%BE/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="FPSとポート開放 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="最近FPSにはまっているのだが、FPSなどのアクションゲームをやる場合一番の敵となるのがラグである。
+例えば私のPCクライアントから銃弾をAという敵に撃った場合
+ 私のクライアントで弾をある座標に向かって撃つというデータが送信される →サーバがその情報を受け取る →Aのキャラクタの位置をAのクライアントからゲットし弾道計算 →私とAのクライアントに結果を返却 →結果に見合った画面表示がなされる。  大まかにはこんな感じだろうか？
+これをWAN内で行うのだから当然通信ラグが発生する。
+Aを撃ったと思ったら明後日の方向に急に現れたなんてこともあるだろう。
+それを解消するためには、「ポートの開放」といったものが必要になってくる。
+このポートの開放だが、昔いけないP2Pソフトなどを起動する際も使用していたのだが、
+実は意味があまりよくわかっていなかった。
+さらに無知を加速させるのに、ポートの開放を自動で行ってくれるフリーソフトまで出回り始めたのだ。
+そこで私はポートの開放に関して考えることをやめた。
+時はたち、オンライン系のプログラムを組むにあたって多少のポートに関する知識が見えてきた。
+だがまだ良く分かっていない。
+頭の中で「ぽ～とのかぃほぅ」が「ポートのカイホウ」になった程度の理解度だ。
+さて、今回FPSで遊ぼうとすると任意のポートを開く必要が出てきた。
+しかもどうやら自動ツールでは私の家の環境。
+（光ファイバーを２階まで無線で飛ばしている）
+だと無理なようだ。
+予想だが、eoから支給されたルーターにさらに無線を飛ばす用のバファローのルーターを入れてるので
+二重ルーターになっていることが原因・・・か？
+そこでいい機会なので色々調べることにした。
+以下はメモ書きみたいなものなので、
+本当の知識ではないことに注意
+ループバックアドレス
+　自分自身のこと127.0.0.1:110
+PID
+　Process ID
+UDP
+　User Datagram Protocol
+TCP
+　Transmission Control Protocol
+※インターネットでは、トランスポート層のプロトコルとしてTCPも使われるが、 UDPは転送速度は高いが信頼性が低く、 TCPは信頼性は高いが転送速度が低い。
+二重ルーターに関して調べてみたらドンピシャなページを発見
+二重ルータ モデム バッファロー PC
+今週は土曜日まで家に帰れないから、週末帰ってから設定だな。
+気になる記事 ハードディスクの物理障害、果たして本当に復旧できるのか？
+～前編～
+[](http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/ &amp;ldquo;http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/&amp;quot;)
+ハードディスクの物理障害、果たして本当に復旧できるのか？
+～後編～
+ハードディスクは消耗品、わかっちゃいるけど忘れてしまう。
+Mozilla，次期ブラウザ「Firefox 3」のアルファ3版を公開，Animated PNG対応など
+http://itpro.nikkeibp.co.jp/article/NEWS/20070328/266587/
+システム開発者向けのリリース開始、
+今年の１１月末には３が正式バージョンでリリースされる予定だそうです。
+（めちゃめちゃはやくないか？）" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="FPSとポート開放 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="最近FPSにはまっているのだが、FPSなどのアクションゲームをやる場合一番の敵となるのがラグである。
+例えば私のPCクライアントから銃弾をAという敵に撃った場合
+ 私のクライアントで弾をある座標に向かって撃つというデータが送信される →サーバがその情報を受け取る →Aのキャラクタの位置をAのクライアントからゲットし弾道計算 →私とAのクライアントに結果を返却 →結果に見合った画面表示がなされる。  大まかにはこんな感じだろうか？
+これをWAN内で行うのだから当然通信ラグが発生する。
+Aを撃ったと思ったら明後日の方向に急に現れたなんてこともあるだろう。
+それを解消するためには、「ポートの開放」といったものが必要になってくる。
+このポートの開放だが、昔いけないP2Pソフトなどを起動する際も使用していたのだが、
+実は意味があまりよくわかっていなかった。
+さらに無知を加速させるのに、ポートの開放を自動で行ってくれるフリーソフトまで出回り始めたのだ。
+そこで私はポートの開放に関して考えることをやめた。
+時はたち、オンライン系のプログラムを組むにあたって多少のポートに関する知識が見えてきた。
+だがまだ良く分かっていない。
+頭の中で「ぽ～とのかぃほぅ」が「ポートのカイホウ」になった程度の理解度だ。
+さて、今回FPSで遊ぼうとすると任意のポートを開く必要が出てきた。
+しかもどうやら自動ツールでは私の家の環境。
+（光ファイバーを２階まで無線で飛ばしている）
+だと無理なようだ。
+予想だが、eoから支給されたルーターにさらに無線を飛ばす用のバファローのルーターを入れてるので
+二重ルーターになっていることが原因・・・か？
+そこでいい機会なので色々調べることにした。
+以下はメモ書きみたいなものなので、
+本当の知識ではないことに注意
+ループバックアドレス
+　自分自身のこと127.0.0.1:110
+PID
+　Process ID
+UDP
+　User Datagram Protocol
+TCP
+　Transmission Control Protocol
+※インターネットでは、トランスポート層のプロトコルとしてTCPも使われるが、 UDPは転送速度は高いが信頼性が低く、 TCPは信頼性は高いが転送速度が低い。
+二重ルーターに関して調べてみたらドンピシャなページを発見
+二重ルータ モデム バッファロー PC
+今週は土曜日まで家に帰れないから、週末帰ってから設定だな。
+気になる記事 ハードディスクの物理障害、果たして本当に復旧できるのか？
+～前編～
+[](http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/ &amp;ldquo;http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/&amp;quot;)
+ハードディスクの物理障害、果たして本当に復旧できるのか？
+～後編～
+ハードディスクは消耗品、わかっちゃいるけど忘れてしまう。
+Mozilla，次期ブラウザ「Firefox 3」のアルファ3版を公開，Animated PNG対応など
+http://itpro.nikkeibp.co.jp/article/NEWS/20070328/266587/
+システム開発者向けのリリース開始、
+今年の１１月末には３が正式バージョンでリリースされる予定だそうです。
+（めちゃめちゃはやくないか？）" />
+<meta property="og:url" content="/posts/2007/03/28/fps%E3%81%A8%E3%83%9D%E3%83%BC%E3%83%88%E9%96%8B%E6%94%BE/" />
+<meta property="og:site_name" content="FPSとポート開放" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2007-03-28 17:56:00 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2007/03/28/fps%E3%81%A8%E3%83%9D%E3%83%BC%E3%83%88%E9%96%8B%E6%94%BE/">FPSとポート開放</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2007-03-28
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/game/">game</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>最近FPSにはまっているのだが、FPSなどのアクションゲームをやる場合一番の敵となるのがラグである。</p>
+<p>例えば私のPCクライアントから銃弾をAという敵に撃った場合</p>
+<ol>
+<li>私のクライアントで弾をある座標に向かって撃つというデータが送信される</li>
+<li>→サーバがその情報を受け取る</li>
+<li>→Aのキャラクタの位置をAのクライアントからゲットし弾道計算</li>
+<li>→私とAのクライアントに結果を返却</li>
+<li>→結果に見合った画面表示がなされる。</li>
+</ol>
+<p>大まかにはこんな感じだろうか？<br>
+これをWAN内で行うのだから当然通信ラグが発生する。<br>
+Aを撃ったと思ったら明後日の方向に急に現れたなんてこともあるだろう。</p>
+<p>それを解消するためには、「ポートの開放」といったものが必要になってくる。</p>
+<p>このポートの開放だが、昔いけないP2Pソフトなどを起動する際も使用していたのだが、</p>
+<p>実は意味があまりよくわかっていなかった。</p>
+<p>さらに無知を加速させるのに、ポートの開放を自動で行ってくれるフリーソフトまで出回り始めたのだ。<br>
+そこで私はポートの開放に関して考えることをやめた。</p>
+<p>時はたち、オンライン系のプログラムを組むにあたって多少のポートに関する知識が見えてきた。<br>
+だがまだ良く分かっていない。<br>
+頭の中で「ぽ～とのかぃほぅ」が「ポートのカイホウ」になった程度の理解度だ。</p>
+<p>さて、今回FPSで遊ぼうとすると任意のポートを開く必要が出てきた。<br>
+しかもどうやら自動ツールでは私の家の環境。<br>
+（光ファイバーを２階まで無線で飛ばしている）<br>
+だと無理なようだ。<br>
+予想だが、eoから支給されたルーターにさらに無線を飛ばす用のバファローのルーターを入れてるので<br>
+二重ルーターになっていることが原因・・・か？</p>
+<p>そこでいい機会なので色々調べることにした。</p>
+<p>以下はメモ書きみたいなものなので、<br>
+本当の知識ではないことに注意</p>
+<p>ループバックアドレス</p>
+<p>　自分自身のこと127.0.0.1:110</p>
+<p>PID</p>
+<p>　Process ID</p>
+<p>UDP</p>
+<p>　User Datagram Protocol</p>
+<p>TCP</p>
+<p>　Transmission Control Protocol</p>
+<p>※インターネットでは、トランスポート層のプロトコルとしてTCPも使われるが、 UDPは転送速度は高いが信頼性が低く、 TCPは信頼性は高いが転送速度が低い。</p>
+<p>二重ルーターに関して調べてみたらドンピシャなページを発見<br>
+<a href="http://ratan.dyndns.info/help/nijyuuru-ta-baffaro-.html" title="二重ルータ モデム バッファロー PC">二重ルータ モデム バッファロー PC</a></p>
+<p>今週は土曜日まで家に帰れないから、週末帰ってから設定だな。</p>
+<h3 id="heading">気になる記事</h3>
+<p><a href="http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/%20" title="ハードディスクの物理障害、果たして本当に復旧できるのか？～前編～">ハードディスクの物理障害、果たして本当に復旧できるのか？<br>
+～前編～</a><br>
+[](<a href="http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/">http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/</a> &ldquo;<a href="http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/%22">http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_01/&quot;</a>)<br>
+<a href="http://gigazine.net/index.php?/news/comments/20070328_hdd_repair_02/%20" title="ハードディスクの物理障害、果たして本当に復旧できるのか？～後編～">ハードディスクの物理障害、果たして本当に復旧できるのか？<br>
+～後編～</a><br>
+ハードディスクは消耗品、わかっちゃいるけど忘れてしまう。</p>
+<p>Mozilla，次期ブラウザ「Firefox 3」のアルファ3版を公開，Animated PNG対応など<br>
+<a href="http://itpro.nikkeibp.co.jp/article/NEWS/20070328/266587/" title="http://itpro.nikkeibp.co.jp/article/NEWS/20070328/266587/">http://itpro.nikkeibp.co.jp/article/NEWS/20070328/266587/</a><br>
+システム開発者向けのリリース開始、<br>
+今年の１１月末には３が正式バージョンでリリースされる予定だそうです。<br>
+（めちゃめちゃはやくないか？）</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2007/04/17/%E3%83%96%E3%83%AD%E3%82%B0%E3%83%AA%E3%83%8F%E3%83%93%E3%83%AA/">
+          <span class="button__icon">←</span>
+          <span class="button__text">ブログリハビリ</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2007/03/27/pg-vs-se/">
+          <span class="button__text">PG vs SE</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

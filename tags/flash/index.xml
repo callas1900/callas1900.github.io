@@ -14,10 +14,10 @@
     
     <item>
       <title>[Flash]Laszloよ、納品後の暇な時間を返せ。</title>
-      <link>/posts/fameflashoutasdtmtasceclipse-flash-fame/</link>
+      <link>/posts/2007/11/07/flashlaszlo%E3%82%88%E7%B4%8D%E5%93%81%E5%BE%8C%E3%81%AE%E6%9A%87%E3%81%AA%E6%99%82%E9%96%93%E3%82%92%E8%BF%94%E3%81%9B/</link>
       <pubDate>Wed, 07 Nov 2007 21:10:00 +0900</pubDate>
       
-      <guid>/posts/fameflashoutasdtmtasceclipse-flash-fame/</guid>
+      <guid>/posts/2007/11/07/flashlaszlo%E3%82%88%E7%B4%8D%E5%93%81%E5%BE%8C%E3%81%AE%E6%9A%87%E3%81%AA%E6%99%82%E9%96%93%E3%82%92%E8%BF%94%E3%81%9B/</guid>
       <description>昨日納品が一端終わって今日は暇だ。
 といっても納品先から何をいってくるかわからないので待機状態なんだけどね。
 ついでに言うと、明日からまた忙しくなる。
@@ -74,10 +74,10 @@ emf.ecoreをダウンロードしてインストール
     
     <item>
       <title>[Flash]FAMEでFlashのバージョン取得</title>
-      <link>/posts/flashflash7-flash8-flashplayer7-7-7/</link>
+      <link>/posts/2007/03/15/flashfame%E3%81%A7flash%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%8F%96%E5%BE%97/</link>
       <pubDate>Thu, 15 Mar 2007 18:33:00 +0900</pubDate>
       
-      <guid>/posts/flashflash7-flash8-flashplayer7-7-7/</guid>
+      <guid>/posts/2007/03/15/flashfame%E3%81%A7flash%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%8F%96%E5%BE%97/</guid>
       <description>会社で作ったFlashがFlash7で動かないとのこと、
 そりゃそうだ、Flash8で作ってるんだから。
 会社曰く、現在インスコされているFlashPlayerの初期は7だからそれに合わせろ。
@@ -118,10 +118,10 @@ if (major_ver &amp;gt; 7) {</description>
     
     <item>
       <title>[Flash]FAME環境でXML読み込み</title>
-      <link>/posts/fameactionscript-xml-macromediafalsh/</link>
+      <link>/posts/2007/03/14/flashfame%E7%92%B0%E5%A2%83%E3%81%A7xml%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF/</link>
       <pubDate>Wed, 14 Mar 2007 18:21:00 +0900</pubDate>
       
-      <guid>/posts/fameactionscript-xml-macromediafalsh/</guid>
+      <guid>/posts/2007/03/14/flashfame%E7%92%B0%E5%A2%83%E3%81%A7xml%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF/</guid>
       <description>FAMEでActionScriptを書こうとすると色々と不便なことがある。
 （まだまだ開発されたての環境なので致し方ないが）
 さて先日ある案件でXMLデータを読みこんで処理したいといった内容があったのだが、
@@ -151,10 +151,10 @@ while ( my_xmlnode.</description>
     
     <item>
       <title>ActionScriptと高等言語</title>
-      <link>/posts/actionscript-fps-pcpc-162-pc/</link>
+      <link>/posts/2007/03/13/actionscript%E3%81%A8%E9%AB%98%E7%AD%89%E8%A8%80%E8%AA%9E/</link>
       <pubDate>Tue, 13 Mar 2007 09:50:00 +0900</pubDate>
       
-      <guid>/posts/actionscript-fps-pcpc-162-pc/</guid>
+      <guid>/posts/2007/03/13/actionscript%E3%81%A8%E9%AB%98%E7%AD%89%E8%A8%80%E8%AA%9E/</guid>
       <description>ActionScriptと高等言語
 月曜日の朝、日曜日に生まれて初めてFPSというものを経験し、疲れ目の莫迦です。
 さてちょっと思ったことを書き込み
@@ -213,10 +213,10 @@ HTTPヘッダーとは
     
     <item>
       <title>[Eclipse][Flash]フリーなFLASH　FAME!</title>
-      <link>/posts/flashfame-fame-flash-fame-fame-f/</link>
+      <link>/posts/2007/02/23/eclipseflash%E3%83%95%E3%83%AA%E3%83%BC%E3%81%AAflash-fame/</link>
       <pubDate>Fri, 23 Feb 2007 19:15:00 +0900</pubDate>
       
-      <guid>/posts/flashfame-fame-flash-fame-fame-f/</guid>
+      <guid>/posts/2007/02/23/eclipseflash%E3%83%95%E3%83%AA%E3%83%BC%E3%81%AAflash-fame/</guid>
       <description>フリーなFLASH　FAME!
 前の記事でFAMEというフリーのFlash開発環境を見つけたと書きました。
 FAMEの環境が整ったので、それについて書こうと思うます。

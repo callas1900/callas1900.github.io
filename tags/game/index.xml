@@ -14,10 +14,10 @@
     
     <item>
       <title>FPSとポート開放</title>
-      <link>/posts/fpsfps-pca-aa-wan-p2p-fps-eo-127/</link>
+      <link>/posts/2007/03/28/fps%E3%81%A8%E3%83%9D%E3%83%BC%E3%83%88%E9%96%8B%E6%94%BE/</link>
       <pubDate>Wed, 28 Mar 2007 17:56:00 +0900</pubDate>
       
-      <guid>/posts/fpsfps-pca-aa-wan-p2p-fps-eo-127/</guid>
+      <guid>/posts/2007/03/28/fps%E3%81%A8%E3%83%9D%E3%83%BC%E3%83%88%E9%96%8B%E6%94%BE/</guid>
       <description>最近FPSにはまっているのだが、FPSなどのアクションゲームをやる場合一番の敵となるのがラグである。
 例えば私のPCクライアントから銃弾をAという敵に撃った場合
  私のクライアントで弾をある座標に向かって撃つというデータが送信される →サーバがその情報を受け取る →Aのキャラクタの位置をAのクライアントからゲットし弾道計算 →私とAのクライアントに結果を返却 →結果に見合った画面表示がなされる。  大まかにはこんな感じだろうか？
@@ -67,10 +67,10 @@ http://itpro.nikkeibp.co.jp/article/NEWS/20070328/266587/
     
     <item>
       <title>我が家にアレがやってきた</title>
-      <link>/posts/wii-ds-pc/</link>
+      <link>/posts/2007/01/29/%E6%88%91%E3%81%8C%E5%AE%B6%E3%81%AB%E3%82%A2%E3%83%AC%E3%81%8C%E3%82%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F/</link>
       <pubDate>Mon, 29 Jan 2007 15:23:00 +0900</pubDate>
       
-      <guid>/posts/wii-ds-pc/</guid>
+      <guid>/posts/2007/01/29/%E6%88%91%E3%81%8C%E5%AE%B6%E3%81%AB%E3%82%A2%E3%83%AC%E3%81%8C%E3%82%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F/</guid>
       <description>我が家にアレがやってきた
 土曜日疲れて実家に帰ると、母親が暴れていました。
 妹も暴れていました。

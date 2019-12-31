@@ -14,10 +14,10 @@
     
     <item>
       <title>[JavaScript][VBScript]VBScript &#43; Javascriptで簡単プロジェクト内ツール。その２</title>
-      <link>/posts/javascriptvbscriptvbscript-javascript_08/</link>
+      <link>/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/</link>
       <pubDate>Thu, 08 Jul 2010 13:55:00 +0900</pubDate>
       
-      <guid>/posts/javascriptvbscriptvbscript-javascript_08/</guid>
+      <guid>/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/</guid>
       <description>０埋めはsliceを使え。 数値の０埋め処理のやり方
 ３桁０埋め
 function zeroPadding3(num){ return (&amp;quot;000&amp;quot; + num).slice(-3); } 日付型は6/31日とかセットするとちゃんと7/1になってくれる。 //月は0で1月、5で6月 alert(new Date(2010,5,31)); 実行結果
@@ -32,10 +32,10 @@ hoge()とするとブラウザが壊れるので要注意。
     
     <item>
       <title>[JavaScript][VBScript]VBScript &#43; Javascriptで簡単プロジェクト内ツール。その１</title>
-      <link>/posts/javascriptvbscriptvbscript-javascript/</link>
+      <link>/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/</link>
       <pubDate>Thu, 08 Jul 2010 13:44:00 +0900</pubDate>
       
-      <guid>/posts/javascriptvbscriptvbscript-javascript/</guid>
+      <guid>/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/</guid>
       <description>プロジェクトでIE6上で動く VBScript + JavaScript + HTML のツールを作ってみた。
 なんで今更？IE6？
 会社の中では未だに頑固にIE6が標準だーって会社は多いのさ。

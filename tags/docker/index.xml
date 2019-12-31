@@ -14,10 +14,10 @@
     
     <item>
       <title>/var/lib/docker の移動</title>
-      <link>/posts/varlibdocker/</link>
+      <link>/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/</link>
       <pubDate>Wed, 25 Jan 2017 01:20:00 +0900</pubDate>
       
-      <guid>/posts/varlibdocker/</guid>
+      <guid>/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/</guid>
       <description>docker のホストマシン容量不足対策。
 docker をインストール後稼働していると、ディスクが足りなくなることがあります。
 いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。
@@ -33,10 +33,10 @@ echo other_args=&amp;quot;-g /mnt/extra/docker&amp;quot; &amp;gt; /etc/sysconfig
     
     <item>
       <title>Docker registry を構築した後のimage整理</title>
-      <link>/posts/docker-registry-image/</link>
+      <link>/posts/2016/04/04/docker-registry-%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%9F%E5%BE%8C%E3%81%AEimage%E6%95%B4%E7%90%86/</link>
       <pubDate>Mon, 04 Apr 2016 12:38:00 +0900</pubDate>
       
-      <guid>/posts/docker-registry-image/</guid>
+      <guid>/posts/2016/04/04/docker-registry-%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%9F%E5%BE%8C%E3%81%AEimage%E6%95%B4%E7%90%86/</guid>
       <description>Docker registry を作って、別チームに任せて放置する Docker registry で image 管理をすると段々とゴミが溜まってきます。API(https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository)で削除できるのはTAGがついているimageだけなので、
 TAGが外れているimagesがどんどん残っていきます。
 エラーが起きる ずーっと管理せずに放置していると、ある日こんなエラーと出会います。
