@@ -6,11 +6,26 @@
     <description>Recent content on callas1900.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Sat, 04 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rustを触ってみよう</title>
+      <link>/posts/2020/01/04/rust%E3%82%92%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020/01/04/rust%E3%82%92%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</guid>
+      <description>冬休みの間、何かプログラミングの勉強をしたくなったので、前から気になっていたRustを勉強してみることにした。勉強しながら感じたことをつらつらと書いてみました。特にまとまっていません。
+以下のURLを参照しながら勉強しています。 https://doc.rust-lang.org/book/ch01-02-hello-world.html
+まずは Hello, World! fn main() { println!(&amp;#34;Hello, world!&amp;#34;); } 試しにエンドコロン削除 特に問題ないし、
+println!が気になったので説明を読むとこれはマクロのコールだと、 ためしに!を削除してみる、 エラーになった。
+error[E0423]: expected function, found macro `println` --&amp;gt; main.rs:2:5 | 2 | println(&amp;#34;Hello World!&amp;#34;); | ^^^^^^^ help: use `!` to invoke the macro: `println!` error: aborting due to previous error For more information about this error, try `rustc --explain E0423`. コンパイラからの情報見るに関数期待していてマクロがきたと言っているので、printlnはマクロとして先に定義しているのか、それとも記法が違うのか。Ch19で説明とあるから一旦従う
+Hello, Cargo! 先程は rustc でコンパイルしたが、rust は cargo　というマネジメントツールを使うみたい。以下のようにやることでプロジェクトなんかも作れちゃう。
+cargo new hello_world cd hello_world $ tree -a .</description>
+    </item>
     
     <item>
       <title>2019年 大晦日</title>
@@ -7609,16 +7624,21 @@ This page is the webpage of mine. no meaning, no purpose, just putting on the we
     </item>
     
     <item>
-      <title>Quortes</title>
+      <title>Quotes</title>
       <link>/quotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/quotes/</guid>
-      <description>個人的に好きな言葉あつめ  あらゆるものを見聞きし頭の中に天下をおさめて
+      <description>あらゆるものを見聞きし頭の中に天下をおさめて
 しかも　それらをすっかり忘れて戻ってまいりましたあーーーーッ
  蒼天航路より
 荀彧文若が放浪の旅より曹操のもとに戻ってきた時の台詞
- </description>
+ それは、想像力が不足しているのではなくて、想像力が過剰なのです。
+貴女の認識は正反対ですよ。
+いいですか、つまり、想像力をコントロールできないことに起因した障害なのです
+ 有限と微小のパン -The Perfect Outsider- より
+真賀田四季博士と新庄久美子との対話
+想像力を使ってイミテーションを本物と思いこむことが出来るかの問に対して新庄が無理だと答えたとことに対する回答</description>
     </item>
     
   </channel>

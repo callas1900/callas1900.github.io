@@ -6,11 +6,29 @@
     <description>Recent content in Tags on callas1900.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright 2006-2019 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Sat, 04 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hello world</title>
+      <link>/tags/hello-world/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hello-world/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>/tags/rust/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rust/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>大晦日</title>
@@ -31,7 +49,7 @@
     </item>
     
     <item>
-      <title>blogger</title>
+      <title>Blogger</title>
       <link>/tags/blogger/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       

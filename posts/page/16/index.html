@@ -147,6 +147,56 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/">[DynamicsAX2009]AIFファイル上限値とその解除</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/dynamicsax2009/">DynamicsAX2009</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      デフォルト上限値の設定とエラー内容 DynamicsAXのAIFは外部ファイルとのやり取りを行うインターフェースの一つです。
+外部ファイルとのやり取り時、明示されてはいませんがファイルサイズの上限値があります。
+デフォルトでは10MBに設定されています。
+これを超えるファイルのやり取りをAIFで行おうとすると下記エラーがイベントログに出力されます。
+The adapter is unable to send the following message to Microsoft Dynamics AX:
+MessageId: XXXXXXXX-1111-AAAA-9999-ZZZZZZZZZZZZ
+Error: Error executing code: Insufficient memory to run script.
+Error executing code: object not initialized.
+(C)\Classes\processRequest
+-————————————————————————-
+Product Version : 5.0
+Assembly Version : 5.0.0.0
+Class : AppEventLog
+Method : WriteLocalizedError
+Subsystem : BizTalkDynamicsAdapter
+-————————————————————————-
+For more information, see Help and Support Center at <a href="http://go.microsoft.com/fwlink/events.asp">http://go.microsoft.com/fwlink/events.asp</a>.
+上限設定変更もしくは解除方法 レジストリを編集することで解除 or 上限値変更が出来ます。
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2010/04/14/%E6%97%A5%E8%A8%98agile-japan-2010%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E6%9D%A5%E3%81%BE%E3%81%97%E3%81%9F/">[日記]Agile Japan 2010に行って来ました</a></h1>
     <div class="post-meta">
       
@@ -389,62 +439,6 @@ Regenerate data object classes にのみチェックを入れる。
     
   </div>
   
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/">[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/dynamicsax2009/">DynamicsAX2009</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      DynamicsAXで開発をしていたり、
-AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。
-その場合にやるべき6つのことを書いておく。
-DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除  DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
-Compile AOTのルートで右クリックコンテキストメニューを出し、**Compile **を実行する。
-ここでエラーが出たものは基本的に修正したほうがよいが、X++はインタプリタ言語なので現在エラーが出ている箇所以外のものは放置してもよい。
-Synchronize Data Dictionaryで右クリックコンテキストメニューを出し、Synchronize を実行する。
-これでAXとDBとの同期化される。
-Compile &amp; Synchronize である程度のDBとのアンマッチ等のErrorやWaringは除去される。
-あなたがインフラ担当ならば、昼休みと帰る前にこの二点はやっておいて損はない。
-Index再作成   AOSサービス停止
-Axapd.aoi ファイルを削除する。
-(Axapd.aoiはデフォルトで C:\Program Files\Microsoft Dynamics AX\50\Application\Appl\DynamicsAx1 にある。)
-AOSサービス再開（もしくはWindows再起動）
-これで大抵のものは治るはず。
-特にDBとAXのDataDictionaryのアンマッチ系はこれでほとんど治る。
-それでも駄目なら・・・
-クライアントキャッシュファイル削除   AXクライアントを終了
-クライアントキャッシュファイル(.auc)を削除
-WindowsXPの場合:
-C:\Documents and Setting\Local Settings\Application Data
-Windows2008の場合:
-C:\Users\AppData\Local
-Usage Data削除   AXクライアントを起動
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/">Read more →</a>
-    </div>
-    
-  </div>
-  
   <div class="pagination">
   <div class="pagination__buttons">
     
@@ -475,7 +469,7 @@ Usage Data削除   AXクライアントを起動
   <div class="footer__inner">
     
       <div class="copyright copyright--user">
-        <span>Copyright 2006-2019 callas1900.net All rights reserved.</span>
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
     
         <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
       </div>

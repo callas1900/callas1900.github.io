@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hello world on callas1900.net</title>
+    <link>/tags/hello-world/</link>
+    <description>Recent content in hello world on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Sat, 04 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/hello-world/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rustを触ってみよう</title>
+      <link>/posts/2020/01/04/rust%E3%82%92%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020/01/04/rust%E3%82%92%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</guid>
+      <description>冬休みの間、何かプログラミングの勉強をしたくなったので、前から気になっていたRustを勉強してみることにした。勉強しながら感じたことをつらつらと書いてみました。特にまとまっていません。
+以下のURLを参照しながら勉強しています。 https://doc.rust-lang.org/book/ch01-02-hello-world.html
+まずは Hello, World! fn main() { println!(&amp;#34;Hello, world!&amp;#34;); } 試しにエンドコロン削除 特に問題ないし、
+println!が気になったので説明を読むとこれはマクロのコールだと、 ためしに!を削除してみる、 エラーになった。
+error[E0423]: expected function, found macro `println` --&amp;gt; main.rs:2:5 | 2 | println(&amp;#34;Hello World!&amp;#34;); | ^^^^^^^ help: use `!` to invoke the macro: `println!` error: aborting due to previous error For more information about this error, try `rustc --explain E0423`. コンパイラからの情報見るに関数期待していてマクロがきたと言っているので、printlnはマクロとして先に定義しているのか、それとも記法が違うのか。Ch19で説明とあるから一旦従う
+Hello, Cargo! 先程は rustc でコンパイルしたが、rust は cargo　というマネジメントツールを使うみたい。以下のようにやることでプロジェクトなんかも作れちゃう。
+cargo new hello_world cd hello_world $ tree -a .</description>
+    </item>
+    
+  </channel>
+</rss>
