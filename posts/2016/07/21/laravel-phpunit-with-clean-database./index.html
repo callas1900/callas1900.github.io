@@ -187,12 +187,12 @@
 </li>
 <li><a href="#sqlite%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E3%81%A7%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E5%AF%BE%E5%87%A62">Sqliteでエラーがでる場合の対処2</a></li>
 </ul>
-<h1 id="heading">環境</h1>
+<h1 id="環境">環境</h1>
 <ul>
 <li>laravel 5.x</li>
 <li>PostgreSQL</li>
 </ul>
-<h1 id="sqlite-in-memory-database-">sqlite in memory database を使う方法</h1>
+<h1 id="sqlite-in-memory-database-を使う方法">sqlite in memory database を使う方法</h1>
 <h2 id="configdatabasephp">config/database.php</h2>
 <p>環境変数で default 値を差し替えれるようにする</p>
 <pre><code>'default' =&gt; env('DB_DEFAULT', 'pgsql'),
@@ -225,7 +225,7 @@
   }
 </code></pre><p>これで上手くいく人は上手くいく。</p>
 <hr>
-<h1 id="sqlite1">Sqliteでエラーがでる場合の対処1</h1>
+<h1 id="sqliteでエラーがでる場合の対処1">Sqliteでエラーがでる場合の対処1</h1>
 <h2 id="driver-not-found">Driver not found</h2>
 <pre><code>[Symfony\Component\Debug\Exception\FatalErrorException]  
 Class 'Doctrine\DBAL\Driver\PDOSqlite\Driver' not found
@@ -253,7 +253,7 @@ ALTER TABLE が syntax エラーと migration 中に出る。</p>
 </ul>
 <p>migration 中にエラーが出たら、エラーが出たファイルを消して、migration を終了させた後、テストを流してみたが、特定のカラムが無いというエラーが起きた。<br>
 一つの migration ファイルの中で、<strong>ADD COLUMN</strong> と <strong>DROP COLUMN</strong> 両方を入れているとエラーにならず、追加もされない。</p>
-<h1 id="sqlite2">Sqliteでエラーがでる場合の対処2</h1>
+<h1 id="sqliteでエラーがでる場合の対処2">Sqliteでエラーがでる場合の対処2</h1>
 <p>sqlite を諦め、PostgreSQL に一時的な testdb を作成し、<br>
 そちらでテストを行い、終了後は drop database する。</p>
 <p>script を書きそれを実行した。</p>

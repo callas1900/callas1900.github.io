@@ -223,7 +223,7 @@ btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizAp
 <p><a href="#msi_BizTalk__8431878918781877">msiファイルを使った対象BizTalkアプリを削除する</a></p>
 </li>
 </ol>
-<h3 id="msi">バインド設定を省いたアプリケーションのmsiファイルを作成する方法</h3>
+<h3 id="バインド設定を省いたアプリケーションのmsiファイルを作成する方法">バインド設定を省いたアプリケーションのmsiファイルを作成する方法</h3>
 <ol>
 <li>
 <p>アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。</p>
@@ -245,8 +245,8 @@ btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizAp
 <pre><code>btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_
 </code></pre></li>
 </ol>
-<h3 id="heading">バッチ例</h3>
-<h4 id="msi-1">msiファイルとバインド設定ファイルをエクスポートする</h4>
+<h3 id="バッチ例">バッチ例</h3>
+<h4 id="msiファイルとバインド設定ファイルをエクスポートする">msiファイルとバインド設定ファイルをエクスポートする</h4>
 <pre><code>@setlocal  
 @echo off  
   
@@ -276,7 +276,7 @@ btstask ExportApp -a:%APP\_NAME% -p:%MSI\_NAME% -r:%RES\_NAME%
 REM \#### バインド設定xmlをエクスポートします。  
 btstask ExportBindings -Destination:%XML\_NAME% -ApplicationName:%APP\_NAME%  
 
-</code></pre><h4 id="msibiztalk"><strong>msiファイルからBizTalkアプリをインストールする</strong></h4>
+</code></pre><h4 id="msiファイルからbiztalkアプリをインストールする"><strong>msiファイルからBizTalkアプリをインストールする</strong></h4>
 <pre><code>@setlocal  
 @echo off  
   
@@ -309,7 +309,7 @@ BTSTask AddApp -ApplicationName:%APP\_NAME%
 REM #### BizTalk アプリの設定をインポートする  
 BTSTask ImportApp -Package:%MSI\_NAME% -ApplicationName:%APP\_NAME% -o  
 
-</code></pre><h4 id="heading-1">バインド設定をインポートする</h4>
+</code></pre><h4 id="バインド設定をインポートする">バインド設定をインポートする</h4>
 <pre><code>@echo off  
 @setlocal  
   
@@ -330,7 +330,7 @@ set XML\_NAME=&quot;%~dp0%1.BindingInfo.xml&quot;
 set APP\_NAME=%1  
 btstask ImportBindings -Source:%XML\_NAME% -ApplicationName:%APP\_NAME%  
 
-</code></pre><h4 id="msibiztalk-1">msiファイルを使った対象BizTalkアプリを削除する</h4>
+</code></pre><h4 id="msiファイルを使った対象biztalkアプリを削除する">msiファイルを使った対象BizTalkアプリを削除する</h4>
 <pre><code>@echo off  
 @setlocal  
   

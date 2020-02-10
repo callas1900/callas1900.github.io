@@ -186,19 +186,19 @@ parse error: Invalid numeric literal at line 144, column 114 これは直前に�
   
 
   <div class="post-content">
-    <h2 id="docker-registry-">Docker registry を作って、別チームに任せて放置する</h2>
+    <h2 id="docker-registry-を作って別チームに任せて放置する">Docker registry を作って、別チームに任せて放置する</h2>
 <p>Docker registry で image 管理をすると段々とゴミが溜まってきます。API(<a href="https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository">https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository</a>)で削除できるのはTAGがついているimageだけなので、<br>
 TAGが外れているimagesがどんどん残っていきます。</p>
-<h2 id="heading">エラーが起きる</h2>
+<h2 id="エラーが起きる">エラーが起きる</h2>
 <p>ずーっと管理せずに放置していると、ある日こんなエラーと出会います。</p>
 <pre><code>HTTP code 500 while uploading metadata: &quot;invalid character '&lt;' looking for beginning of value&quot;
 </code></pre><p>これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。</p>
-<h2 id="image">不要なimageを削除する。</h2>
+<h2 id="不要なimageを削除する">不要なimageを削除する。</h2>
 <p>以下スクリプとが非常に有用です。<br>
 jqのインストールが必須になります。</p>
 <p><a href="https://gist.github.com/kwk/c5443f2a1abcf0eb1eaa">kwk/remove-orphan-images.sh</a><br>
 <a href="https://gist.github.com/kwk/c5443f2a1abcf0eb1eaa">https://gist.github.com/kwk/c5443f2a1abcf0eb1eaa</a></p>
-<h2 id="heading-1">追記:実行時のエラー</h2>
+<h2 id="追記実行時のエラー">追記:実行時のエラー</h2>
 <p>私の場合、実行時に下記エラーが出ました。</p>
 <pre><code>parse error: Invalid numeric literal at line 144, column 114
 </code></pre><p>これは直前に表示されたrepository名のindexファイルが破損していたため、起きた現象でした。手修正でindexファイルを修正したところ、うまく動きました。</p>

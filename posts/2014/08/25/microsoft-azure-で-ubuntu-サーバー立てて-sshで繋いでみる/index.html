@@ -237,7 +237,7 @@ UIの画面込みで説明したいけど、すぐUI構成変わりそうなの�
   <div class="post-content">
     <p>AWSに関しては散々方々で語られているのでAzureに手を出してみた。<br>
 Windowsしか作れないと思ってたらちゃんとubuntuも用意されているし、最近追加された新ビューだとMySQLも作れるようになっている。</p>
-<h3 id="windowsssh">Windows上にsshを入れる（読み飛ばし可）</h3>
+<h3 id="windows上にsshを入れる読み飛ばし可">Windows上にsshを入れる（読み飛ばし可）</h3>
 <p>ubuntuに繋げるためにsshが必要、鍵作成にopensslもいるので<br>
 msygitをインストール。<br>
 今後の事を考え、CUIベースのパッケージ管理ソフトが欲しい。<br>
@@ -258,7 +258,7 @@ chocolateyが流行っぽいのでchocolatey経由でmsygitをインストール
 もし認識されていないようだったらパスが通っていない可能性があるので通す。</p>
 </li>
 </ol>
-<h3 id="ssh">SSHの鍵作成</h3>
+<h3 id="sshの鍵作成">SSHの鍵作成</h3>
 <p>適当に鍵を作ると、サーバー作成時に以下のエラーが出てサーバー作成に失敗する。</p>
 <blockquote>
 <p>The certificate is in an invalid format. X.509 standard format in a .cer or .pem file is supported.。</p>
@@ -270,7 +270,7 @@ chocolateyが流行っぽいのでchocolatey経由でmsygitをインストール
 msysgitインストールからの手順が書かれている。<br>
 鍵が出来たら、chocolateyのルートディレクトリに.sshがあるので（無ければ作る）<br>
 そこに突っ込んでおく。</p>
-<h3 id="ubuntu">Ubuntuサーバー作成</h3>
+<h3 id="ubuntuサーバー作成">Ubuntuサーバー作成</h3>
 <p>Azureにubuntuを立てる方法は<br>
 Newメニューを開いてUbuntuを選択し作るだけ（デフォルトでは12系と14系が選べる）、<br>
 UIの画面込みで説明したいけど、すぐUI構成変わりそうなので割愛。</p>
@@ -281,7 +281,7 @@ UIの画面込みで説明したいけど、すぐUI構成変わりそうなの�
 <li>指定したusernameをメモっておく。</li>
 </ul>
 <p>Createを押して暫く待つと出来てる。</p>
-<h3 id="ubuntu-1">Ubuntuに繋げる</h3>
+<h3 id="ubuntuに繋げる">Ubuntuに繋げる</h3>
 <p>sshの接続には以下コマンドを使用する。</p>
 <blockquote>
 <p>ssh -i  myPrivateKey.key -p <!-- raw HTML omitted --> <a href="mailto:username@servicename.cloudapp.net">username@servicename.cloudapp.net</a></p>

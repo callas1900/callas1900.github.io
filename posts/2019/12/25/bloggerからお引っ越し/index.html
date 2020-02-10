@@ -193,7 +193,7 @@ git bisect start git bisect git bisect good a28c65d41178ff39981a3df5b80a7108eec2
     <p>ずっとBloggerでmarkdownで書きたいなーとか、Bloggerなんか更新して書きやすくならないかなーとか、思ってた。
 思ってもう５年ぐらい経ったけど全然更新されないし、そもそもTwitterとかfacebookやdev.toに大体の事書いてるから別に情報発信の場を考えてないし、というわけでBloggerはおしまいおしまい。長らくありがとうございました。
 移行先は色々考えたけど、この具にもつかない日記を未来永劫保管できるところはないよなと考えて、自分のWebページを今年のはじめにHugoで作り変えたことを思い出して、そこでいいじゃないかと。</p>
-<h1 id="heading">移行</h1>
+<h1 id="移行">移行</h1>
 <p>とりあえず、一ページごとにこぴーあんどぺーすとなんてやってられないので、BloggerでMarkdownの吐き出しがないかを確認、ない。
 次にツールで何か無いかと思ったらドンピシャなものを発見。</p>
 <p><a href="https://github.com/palaniraja/blog2md">https://github.com/palaniraja/blog2md</a></p>
@@ -201,7 +201,7 @@ git bisect start git bisect git bisect good a28c65d41178ff39981a3df5b80a7108eec2
 嫌素晴らしい。多分同じ気持ちだった人だろう。
 というわけで、Bloggerからエクスポートして、出てきたxmlをツールに食わせて、終わり終わり。
 Tagsとかまできちんと出来てる。</p>
-<h1 id="-indexmd"><code>_index.md</code>を表示する！</h1>
+<h1 id="_indexmdを表示する"><code>_index.md</code>を表示する！</h1>
 <p><code>_index.md</code>とは -&gt; <a href="https://bwaycer.github.io/hugo_tutorial.hugo/content/using-index-md/">https://bwaycer.github.io/hugo_tutorial.hugo/content/using-index-md/</a></p>
 <p>hugo って大体メインページが無い感じでした。
 大体、ページあけるとブログみたいにずらっと記事一覧が出てくる感じ。
@@ -253,7 +253,7 @@ Date:   Wed Aug <span style="color:#ae81ff">14</span> 22:08:50 <span style="colo
 自分のrepositoryに取り込んだ後、修正コードを買いて終了。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">- {{ $paginator := .Paginate (where .Data.Pages &#34;Type&#34; $contentTypeName) }}
 </span><span style="color:#f92672"></span><span style="color:#a6e22e">+ {{ $paginator := .Paginate (where .Site.RegularPages &#34;Type&#34; $contentTypeName) }}
-</span></code></pre></div><h1 id="heading-1">最終</h1>
+</span></code></pre></div><h1 id="最終">最終</h1>
 <p>これで移行は終了。<br>
 後は、gitlab ci/cd を使っての自動publish とか考えているけど又今度でいいや。</p>
 

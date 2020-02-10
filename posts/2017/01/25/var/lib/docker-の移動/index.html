@@ -203,31 +203,31 @@ echo other_args=&amp;quot;-g /mnt/extra/docker&amp;quot; &amp;gt; /etc/sysconfig
 </li>
 <li><a href="#docker-%E5%86%8D%E8%B5%B7%E5%8B%95-%E7%A2%BA%E8%AA%8D">docker 再起動 &amp; 確認</a></li>
 </ul>
-<h1 id="docker-">docker 停止</h1>
+<h1 id="docker-停止">docker 停止</h1>
 <pre><code>sudo service docker stop
-</code></pre><h1 id="varlibdocker-">/var/lib/docker を移す</h1>
+</code></pre><h1 id="varlibdocker-を移す">/var/lib/docker を移す</h1>
 <p>ディスク容量に余裕がある場所に /var/lib/docker を移す。(ここでは例として <code>/mnt/extra/docker</code> とする)<br>
 インストール直後ぐらいなら、<code>mv</code> で、<br>
 安全にやりたいなら</p>
 <pre><code>mkdir /mnt/extra/docker  
 sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/
-</code></pre><h1 id="heading">設定ファイル変更</h1>
-<h2 id="redhat">redhat系の場合</h2>
+</code></pre><h1 id="設定ファイル変更">設定ファイル変更</h1>
+<h2 id="redhat系の場合">redhat系の場合</h2>
 <p>設定ファイル: /etc/sysconfig/docker<br>
 (あれば追加で、なければ作成)</p>
 <pre><code>echo other_args=&quot;-g /mnt/extra/docker&quot; &gt; /etc/sysconfig/docker
-</code></pre><h2 id="debian">debian系の場合</h2>
+</code></pre><h2 id="debian系の場合">debian系の場合</h2>
 <p>設定ファイル: /etc/default/docker</p>
 <pre><code># DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4&quot;  
 DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4 -g /mnt/extra/docker&quot;
 </code></pre><p>と書かれていますが、手前の ubuntu 16 では動きませんでしたので</p>
-<h2 id="ubuntu-16-">ubuntu 16 の場合</h2>
+<h2 id="ubuntu-16-の場合">ubuntu 16 の場合</h2>
 <p>設定ファイル: /lib/systemd/system/docker.service</p>
 <pre><code># ExecStart=/usr/bin/dockerd -H fd://  
 ExecStart=/usr/bin/dockerd -g /mnt/extra/docker -H fd://
 </code></pre><p>その後、</p>
 <pre><code>sudo systemctl daemon-reload
-</code></pre><h1 id="docker---">docker 再起動 &amp; 確認</h1>
+</code></pre><h1 id="docker-再起動--確認">docker 再起動 &amp; 確認</h1>
 <pre><code>sudo service docker start
 </code></pre><p>確認は</p>
 <pre><code>docker info

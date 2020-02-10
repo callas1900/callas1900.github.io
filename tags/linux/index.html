@@ -176,7 +176,7 @@ docker 停止 /var/lib/docker を移す 設定ファイル変更  redhat系の�
 mkdir /mnt/extra/docker sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/ 設定ファイル変更 redhat系の場合 設定ファイル: /etc/sysconfig/docker
 (あれば追加で、なければ作成)
 echo other_args=&quot;-g /mnt/extra/docker&quot; &gt; /etc/sysconfig/docker debian系の場合 設定ファイル: /etc/default/docker</p>
-<h1 id="docker-optsquot-dns-8888--dns-8844quot-docker-optsquot-dns-8888--dns-8">DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4&quot; DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.</h1>
+<h1 id="docker_optsquot-dns-8888--dns-8844quot-docker_optsquot-dns-8888--dns-8">DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4&quot; DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.</h1>
       
       
     </div>

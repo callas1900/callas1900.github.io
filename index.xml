@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Sat, 04 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>linux mint re-setup after clean installation</title>
+      <link>/posts/2020/02/09/linux-mint-re-setup-after-clean-installation/</link>
+      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020/02/09/linux-mint-re-setup-after-clean-installation/</guid>
+      <description>linux mint の調子がおかしくなったので、クリーンインストールし直しました。 ついでにその時の手順を今後のために書き留めておきます。
+1. Install essentail applications  brave browser dropbox  2. Change keyboard settings activate japanese input  open input method install Japanese input method select fcitx logout then login  change keymaps open keyboard in the cinnamon menu.
+ capslock to ctrl  open fcitx option in the cinnamon menu.
+ left bottom ctrl to input method changer  3. Make symbolic links I stored lots of configuration file in Dropbox.</description>
+    </item>
     
     <item>
       <title>Rustを触ってみよう</title>
@@ -4136,7 +4148,7 @@ CODEでいいだろ！
 &amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;..
 そうすると書き直し工数に見合う分の対価が提示できないんだよ！
 コーディングするのに可読性は落ちるとはいえ、出来ないわけじゃないからね！
-Your Brain is like a Donkey&#39;s!</description>
+Your Brain is like a Donkey&amp;rsquo;s!</description>
     </item>
     
     <item>
@@ -4223,7 +4235,7 @@ macにwinOSを入れれるということはジョプズにとってディスア
 もちろん色々なユーザがいるのだから、
 winのがやっぱいいじゃないかと思う人もいるだろう。
 でも、一部のwinユーザ層をmacユーザにすることには成功する。
- Billy&#39;s Bootcamp感想 ついでにビリーズブートキャンプをやってみた。
+ Billy&amp;rsquo;s Bootcamp感想 ついでにビリーズブートキャンプをやってみた。
 これは痩せる。
 だが、基本運動量が少ないエンジニアにとって、これはえげつない運動量となるだろう。
 だが続ければ痩せることは確実だ、続ければ・・・
@@ -6787,7 +6799,7 @@ Second Life というMMOGがあるそうです。
 ちょっとネットで検索する。
 そのちょっとした作業が楽しい・・・
 同じくmac初心者の仕事仲間と、ウィンドウの最小化だけで歓声を上げていました。
-It&#39;s very very cool PC!
+It&amp;rsquo;s very very cool PC!
 彼女がﾏｯｸを使える人なのですが、mac使いがmacを好きになる理由が見えました。
 そして親父が昔いってた言葉の意味も
 「macは本当にいい！だがな、やっぱり今のスタンダードはWINなんだ。一番いいのはmacだと知ってるんだけどな、みんなWIN使うしかないんだよ」
@@ -7080,7 +7092,7 @@ table{border-collapse:collapse;}#fuzi{border:1px solid #369;width:300px;font-siz
 本日のルート
 大阪　→　富士山ふもとの浜名湖　→　湖畔ホテル
 移動方法
-親父&#39;s 車
+親父&amp;rsquo;s 車
 その時の状態
 惰眠
 で気づいたら

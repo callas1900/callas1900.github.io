@@ -190,13 +190,13 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE" />
 </ul>
 </li>
 </ul>
-<h1 id="occurrence---">Occurrence -事象-</h1>
+<h1 id="occurrence--事象-">Occurrence -事象-</h1>
 <p>機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。<br>
 5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。</p>
 <p>エラー内容は以下のようになっている。</p>
 <pre><code>java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED.
 </code></pre><p>発生箇所は BluetoothGatt#setCharacteristicNotification</p>
-<h1 id="causes---">Causes -原因-</h1>
+<h1 id="causes--原因-">Causes -原因-</h1>
 <p>StackOverflow にほぼ発生事例そのままの報告がある、<br>
 <a href="http://stackoverflow.com/questions/30579580/android-5-0-2-onwards-dont-allow-hid-access-through-bluetooth-le"><br>
 Android 5.0.2 onwards don’t allow HID access through Bluetooth LE<br>
@@ -206,11 +206,11 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE<br>
 <p>“Enforce BLUETOOTH_PRIVILEGED permission for HID-over-GATT”</p>
 </blockquote>
 <p>のメッセージのコミットが原因でHIDに対する GATTのコネクションに <strong>BLUETOOTH_PRIVILEGED</strong> が要求されるようになったと書かれている。</p>
-<h2 id="hid--">HID とは ?</h2>
+<h2 id="hid-とは-">HID とは ?</h2>
 <p>HID（Human Interface Device）のことで、<br>
 マウスやキーボードなどの入力装置を無線化するためのBluetooth用のプロファイル。<br>
 本来上記の通り、マウスキーボードなどに使われるものだが、健康器具などにも使われているケースがある。確かに人が使うものだけど。</p>
-<h2 id="bluetooth-privileged-">BLUETOOTH_PRIVILEGED とは?</h2>
+<h2 id="bluetooth_privileged-とは">BLUETOOTH_PRIVILEGED とは?</h2>
 <p>Android Developers によれば、</p>
 <blockquote>
 <p>Allows applications to pair bluetooth devices without user interaction, and to allow or disallow phonebook access or message access. This is not available to third party applications.</p>
@@ -220,8 +220,8 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE<br>
 ただ一番大事なのは最後のサードパーティアプリはこれを有効に出来ないという一文。<br>
 ビルドインアプリを開発するか、OSのビルド署名を貰えるようなアプリ開発の時は問題ないが、普通にアプリを作っている場合は、この権限を有効化する方法はない。</p>
 <p>see also <a href="http://developer.android.com/reference/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED">AndroidDevelopers::Manifest.permission::BLUETOOTH_PRIVILEGED</a></p>
-<h1 id="summary---">Summary -まとめ-</h1>
-<h2 id="hid-">HID を使ってるかの判断</h2>
+<h1 id="summary--まとめ-">Summary -まとめ-</h1>
+<h2 id="hid-を使ってるかの判断">HID を使ってるかの判断</h2>
 <p>以下のコミットによると、HIDの判断は, Characteristic UUID が<br>
 <a href="https://android.googlesource.com/platform/packages/apps/Bluetooth/+/02bebee">https://android.googlesource.com/platform/packages/apps/Bluetooth/+/02bebee</a></p>
 <pre><code>00002A4A-0000-1000-8000-00805F9B34FB  
@@ -230,7 +230,7 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE<br>
 00002A4D-0000-1000-8000-00805F9B34FB
 </code></pre><p>のいずれかに該当した場合となる。</p>
 <p>上記 Characteristic を引数にしてい BluetoothGatt#setCharacteristicNotification をコールすると SecurityException が発生するようになっている。</p>
-<h2 id="-characteristic-uuid">禁止された Characteristic UUID</h2>
+<h2 id="禁止された-characteristic-uuid">禁止された Characteristic UUID</h2>
 <p>Bluetooth Developer portal で Characteristic UUID の区分け確認できる。</p>
 <p>Characteristic UUID</p>
 <p>内容</p>
@@ -243,7 +243,7 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE<br>
 <p>00002A4D-0000-1000-8000-00805F9B34FB</p>
 <p>Report</p>
 <p>see also <a href="https://developer.bluetooth.org/gatt/characteristics">Bluetooth Developer portal : Characteristics</a></p>
-<h2 id="heading">なぜ禁止されたのか？</h2>
+<h2 id="なぜ禁止されたのか">なぜ禁止されたのか？</h2>
 <p>わからない。<br>
 結論から言うとわからない。なんらかのバグ修正としてコミットされているが、<br>
 どのような背景があるのかはわからなかった。</p>

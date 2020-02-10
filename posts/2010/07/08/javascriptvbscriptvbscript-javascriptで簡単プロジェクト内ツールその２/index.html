@@ -182,20 +182,20 @@ hoge()とするとブラウザが壊れるので要注意。
   
 
   <div class="post-content">
-    <h4 id="slice">０埋めはsliceを使え。</h4>
+    <h4 id="０埋めはsliceを使え">０埋めはsliceを使え。</h4>
 <p>数値の０埋め処理のやり方</p>
 <p>３桁０埋め</p>
 <pre><code>function zeroPadding3(num){  
     return (&quot;000&quot; + num).slice(-3);  
 }  
 
-</code></pre><h4 id="63171">日付型は6/31日とかセットするとちゃんと7/1になってくれる。</h4>
+</code></pre><h4 id="日付型は631日とかセットするとちゃんと71になってくれる">日付型は6/31日とかセットするとちゃんと7/1になってくれる。</h4>
 <pre><code>//月は0で1月、5で6月  
 alert(new Date(2010,5,31));  
 
 </code></pre><p>実行結果</p>
 <p>Thu Jul 1 00:00:00 UTC+0900 2010</p>
-<h4 id="shortcutsjs">ショートカットを実装するにはshortcuts.jsが便利。</h4>
+<h4 id="ショートカットを実装するにはshortcutsjsが便利">ショートカットを実装するにはshortcuts.jsが便利。</h4>
 <p>サンプル</p>
 <pre><code>shortcut.add(&quot;Ctrl+B&quot;,function() {  
 	alert(&quot;The bookmarks of your browser will show up after this alert...&quot;);  
@@ -203,7 +203,7 @@ alert(new Date(2010,5,31));
 
 </code></pre><p>参考URL:</p>
 <p><a href="http://www.openjs.com/scripts/events/keyboard_shortcuts/#add_docs" title="http://www.openjs.com/scripts/events/keyboard_shortcuts/#add_docs">http://www.openjs.com/scripts/events/keyboard_shortcuts/#add_docs</a></p>
-<h4 id="settimeout">setTimeoutの繰り返しは自己呼び出しで</h4>
+<h4 id="settimeoutの繰り返しは自己呼び出しで">setTimeoutの繰り返しは自己呼び出しで</h4>
 <pre><code>function hoge(){  
 	alert(&quot;hoge&quot;);  
 	setTimeout(hoge,1000);  
