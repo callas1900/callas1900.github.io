@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>lmde2</title>
+      <link>/tags/lmde2/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/lmde2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>修理</title>
+      <link>/tags/%E4%BF%AE%E7%90%86/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E4%BF%AE%E7%90%86/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux mint</title>
@@ -189,15 +207,6 @@
       <pubDate>Mon, 04 Apr 2016 12:38:00 +0900</pubDate>
       
       <guid>/tags/%E6%8A%80%E8%A1%93/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LMDE2</title>
-      <link>/tags/lmde2/</link>
-      <pubDate>Thu, 18 Feb 2016 01:57:00 +0900</pubDate>
-      
-      <guid>/tags/lmde2/</guid>
       <description></description>
     </item>
     

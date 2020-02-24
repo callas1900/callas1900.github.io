@@ -7,10 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2008のデスクトップそろそろ終わる</title>
+      <link>/posts/2020/02/24/2008%E3%81%AE%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%81%9D%E3%82%8D%E3%81%9D%E3%82%8D%E7%B5%82%E3%82%8F%E3%82%8B/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020/02/24/2008%E3%81%AE%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%81%9D%E3%82%8D%E3%81%9D%E3%82%8D%E7%B5%82%E3%82%8F%E3%82%8B/</guid>
+      <description>数日前からデスクトップの調子が悪かったので、休日暇なのでチェック 症状としては、起動しても音がするだけで何も表示されない。 まったく何も。最初のBIOS画面すら出ない。
+完全死亡を疑いつつ、クリーニングしてから起動して音を聞いていると、 なんか動いている感じがするので、ルーターをチェックしたら、きちんとIPが振られていた。
+sshでアクセス成功したので、中身チェック。 ファイルシステムは生きているみたいなので、大急ぎでバックアップをとろうと、USB外部ストレージを挿すがmediaの下にマウントされない。
+fdisk -l | less でディスクを調べ、
+sudo mount /dev/sdbb1 /media/usb/SOTRAGE でいつもの場所にマウント。
+バックアップ完了後に、調査継続。 ディスプレイに別PCを接続してみると、認識したので、ディスプレイではない。 sshでの接続もできたので、linux側ではない。 ケーブルに傷が入っているかと確認したがなし。 ビデオカードが怪しいなとチェック。
+inxi -G Graphics: Card: Failed to Detect Video Card! Display Server: X.org 1.16.4 driver: nvidia tty size: 100x29 Advanced Data: N/A out of X ビンゴ。 使ってるビデオカードがGTS450と古いやつなので。 秋葉原でもジャンクで売っているかどうか。。
+一応掃除しとこうかと、詰まってたほこりを除去。
+除去後、接続したら、動きました。 こまめに掃除しないといけませんね。</description>
+    </item>
     
     <item>
       <title>linux mint re-setup after clean installation</title>
