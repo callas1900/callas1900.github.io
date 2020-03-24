@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lmde2 on callas1900.net</title>
+    <title>LMDE2 on callas1900.net</title>
     <link>/tags/lmde2/</link>
-    <description>Recent content in lmde2 on callas1900.net</description>
+    <description>Recent content in LMDE2 on callas1900.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
@@ -13,11 +13,11 @@
     
     
     <item>
-      <title>2008のデスクトップそろそろ終わる</title>
-      <link>/posts/2020/02/24/2008%E3%81%AE%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%81%9D%E3%82%8D%E3%81%9D%E3%82%8D%E7%B5%82%E3%82%8F%E3%82%8B/</link>
+      <title>2008に組んだデスクトップ機、死にかけてまた復活</title>
+      <link>/posts/2020/02/24/2008%E3%81%AB%E7%B5%84%E3%82%93%E3%81%A0%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%A9%9F%E6%AD%BB%E3%81%AB%E3%81%8B%E3%81%91%E3%81%A6%E3%81%BE%E3%81%9F%E5%BE%A9%E6%B4%BB/</link>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2020/02/24/2008%E3%81%AE%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%81%9D%E3%82%8D%E3%81%9D%E3%82%8D%E7%B5%82%E3%82%8F%E3%82%8B/</guid>
+      <guid>/posts/2020/02/24/2008%E3%81%AB%E7%B5%84%E3%82%93%E3%81%A0%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%A9%9F%E6%AD%BB%E3%81%AB%E3%81%8B%E3%81%91%E3%81%A6%E3%81%BE%E3%81%9F%E5%BE%A9%E6%B4%BB/</guid>
       <description>数日前からデスクトップの調子が悪かったので、休日暇なのでチェック 症状としては、起動しても音がするだけで何も表示されない。 まったく何も。最初のBIOS画面すら出ない。
 完全死亡を疑いつつ、クリーニングしてから起動して音を聞いていると、 なんか動いている感じがするので、ルーターをチェックしたら、きちんとIPが振られていた。
 sshでアクセス成功したので、中身チェック。 ファイルシステムは生きているみたいなので、大急ぎでバックアップをとろうと、USB外部ストレージを挿すがmediaの下にマウントされない。

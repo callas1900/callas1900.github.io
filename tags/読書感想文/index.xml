@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>読書感想文 on callas1900.net</title>
+    <link>/tags/%E8%AA%AD%E6%9B%B8%E6%84%9F%E6%83%B3%E6%96%87/</link>
+    <description>Recent content in 読書感想文 on callas1900.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E8%AA%AD%E6%9B%B8%E6%84%9F%E6%83%B3%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>「エンジニアのためのデザイン思考入門」を読んだまとめ</title>
+      <link>/posts/2020/03/17/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E6%80%9D%E8%80%83%E5%85%A5%E9%96%80%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0%E3%81%BE%E3%81%A8%E3%82%81/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020/03/17/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E6%80%9D%E8%80%83%E5%85%A5%E9%96%80%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0%E3%81%BE%E3%81%A8%E3%82%81/</guid>
+      <description>以下の本の内容を一部引用して個人用にまとめます。
+エンジニアのためのデザイン思考入門
+ 著 角征典 著 東京工業大学エンジニアリングデザインプロジェクト 著 齊藤滋規 他4名  ISBN-10: 4798153850 ISBN-13: 978-4798153858
+ 「デザイン思考とは」 デザイン思考の５つのステップ
+ 共感 問題定義 発想 プロトタイプ テスト  このステップを理解することは勉強として大事。 でも、この本で紹介されていた別記事で、５つのステップでの勉強は否定されている。
+d.school デザイン・プロセスの話はもうやめよう Ray Yamazaki
+問題定義(define)  正確には「みつけたことにしました」。ユーザーが実際にそう思っているかは、プロトタイプを持っていって確かめればよいので、この時点ではあまり重要ではないのです。
+ これぐらいの思い切りが大事、いい雑さの指標になる。
+思考方法のフレームワーク     LONGER TERM t (長期的) SHORT TERM t (短期的)     急進的イノベーション(BREAKTHROUGH INNOVATION) 未来志向 FUTURE THINKING デザイン思考 DESIGN THINKING   暫定的イノベーション(INCREMENTAL INNOVATION) 生産思考 PRODUCTION THINKING エンジニアリング思考 ENGINEERING THINKING     Introducting a &amp;ldquo;Way of Thinking&amp;rdquo; Framework for Student Engineers Learning to Do Desing (M.</description>
+    </item>
+    
+  </channel>
+</rss>

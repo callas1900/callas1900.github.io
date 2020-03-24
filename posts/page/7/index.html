@@ -147,6 +147,107 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2014/10/14/purescript%E3%81%A7hello-world/">PureScriptでHello world</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      関数型言語系の本山（と思ってる）Haskell を勉強したいけど、
+折角勉強しても使い道を思いつかなかった時に PureScript を知る。
+PureScript は Haskell -&gt; Javascript のコンパイラ。
+正しくは Haskell “風&quot;らしいが、最終系は Haskell になるのだろ。
+Mac 上で Hello world してみる。
+まず Cabal をインストールする（ Cabal は Haskell のパッケージシステム）。
+ついでに実行環境用に node もインストール
+brew install ghc cabal-install node 次に PureScript のインストール
+psc &ndash;main=Main hello.purs &gt; hello.js もし psc と打ち込んでもTerminalが反応しなかったら以下のようにパスを通す。
+export PATH=&quot;$HOME/.cabal/bin:$PATH&quot; Hello world を書く。ファイル名は hello.purs とする。
+module Main where import Debug.Trace main = trace &quot;Hello, PureScript!&quot; コンパイル
+cabal update cabal install purescript 実行
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2014/10/14/purescript%E3%81%A7hello-world/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2014/08/25/microsoft-azure-%E3%81%A7-ubuntu-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%AB%8B%E3%81%A6%E3%81%A6-ssh%E3%81%A7%E7%B9%8B%E3%81%84%E3%81%A7%E3%81%BF%E3%82%8B/">Microsoft Azure で ubuntu サーバー立てて sshで繋いでみる</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/ssh/">ssh</a>&nbsp;
+      
+      #<a href="/tags/ubuntu/">ubuntu</a>&nbsp;
+      
+      #<a href="/tags/azure/">Azure</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      AWSに関しては散々方々で語られているのでAzureに手を出してみた。
+Windowsしか作れないと思ってたらちゃんとubuntuも用意されているし、最近追加された新ビューだとMySQLも作れるようになっている。
+Windows上にsshを入れる（読み飛ばし可） ubuntuに繋げるためにsshが必要、鍵作成にopensslもいるので
+msygitをインストール。
+今後の事を考え、CUIベースのパッケージ管理ソフトが欲しい。
+chocolateyが流行っぽいのでchocolatey経由でmsygitをインストールする。
+chocolatey installation
+<a href="https://github.com/chocolatey/chocolatey/wiki/Installation">https://github.com/chocolatey/chocolatey/wiki/Installation</a>
+作業はPowerShellでやった。成功するとcinstコマンドが認識される。
+msysgitをインストールする
+cinst msysgit でmsysgitをインストールこれでsshもopensslも使える。
+それぞれのコマンドを打てば認識されているのがわかる。
+もし認識されていないようだったらパスが通っていない可能性があるので通す。
+SSHの鍵作成 適当に鍵を作ると、サーバー作成時に以下のエラーが出てサーバー作成に失敗する。
+The certificate is in an invalid format. X.509 standard format in a .cer or .pem file is supported.。
+回避するには以下リンク先の手順通りに鍵を作成する必要がある。
+How to Use SSH with Linux on Azure
+<a href="http://azure.microsoft.com/ja-jp/documentation/articles/virtual-machines-linux-use-ssh-key/">http://azure.microsoft.com/ja-jp/documentation/articles/virtual-machines-linux-use-ssh-key/</a>
+Get OpenSSL on Windowsのセクションに
+msysgitインストールからの手順が書かれている。
+鍵が出来たら、chocolateyのルートディレクトリに.sshがあるので（無ければ作る）
+そこに突っ込んでおく。
+Ubuntuサーバー作成 Azureにubuntuを立てる方法は
+Newメニューを開いてUbuntuを選択し作るだけ（デフォルトでは12系と14系が選べる）、
+UIの画面込みで説明したいけど、すぐUI構成変わりそうなので割愛。
+どこに作ればいいのかは料金表と睨めっこして決める
+料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2014/08/25/microsoft-azure-%E3%81%A7-ubuntu-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%AB%8B%E3%81%A6%E3%81%A6-ssh%E3%81%A7%E7%B9%8B%E3%81%84%E3%81%A7%E3%81%BF%E3%82%8B/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2014/01/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">[読書メーター]2013年 12月読書まとめ読書メーター</a></h1>
     <div class="post-meta">
       
@@ -234,128 +335,6 @@
     <div>
       <a class="read-more button"
         href="/posts/2013/12/31/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-11%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2013/11/01/jb_mr24.3%E3%81%A8kitkat4.4%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/">JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係）</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/4.4/">4.4</a>&nbsp;
-      
-      #<a href="/tags/signature/">signature</a>&nbsp;
-      
-      #<a href="/tags/4.3/">4.3</a>&nbsp;
-      
-      #<a href="/tags/kitkat/">KitKat</a>&nbsp;
-      
-      #<a href="/tags/android/">Android</a>&nbsp;
-      
-      #<a href="/tags/jb_mr2/">JB_MR2</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
-前回までのPermission比較は
-ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
-何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
-これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
-メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
-通常出来ません。
-よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
-Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
-JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
-Permission増減調査(JB MR1(4.2) &gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
-android.permission.BLUETOOTH_STACK
-android.permission.ACCOUNT_MANAGER
-android.permission.HARDWARE_TEST
-android.permission.NET_ADMIN
-android.permission.REMOTE_AUDIO_PLAYBACK
-android.permission.INTERACT_ACROSS_USERS_FULL
-android.permission.GET_DETAILED_TASKS
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2013/11/01/jb_mr24.3%E3%81%A8kitkat4.4%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2013/11/01/jb_mr14.2%E3%81%A8jb_mr24.3%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/">JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/signature/">signature</a>&nbsp;
-      
-      #<a href="/tags/jb_mr1/">JB_MR1</a>&nbsp;
-      
-      #<a href="/tags/4.3/">4.3</a>&nbsp;
-      
-      #<a href="/tags/4.2/">4.2</a>&nbsp;
-      
-      #<a href="/tags/android/">Android</a>&nbsp;
-      
-      #<a href="/tags/jb_mr2/">JB_MR2</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
-前回までのPermission比較は
-ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）  にあります。
-何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
-これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
-メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
-通常出来ません。
-よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
-Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
-JB MR1 と JB MR2 のプロテクションレベルの一覧比較 JB MR1
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  JB MR2
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更はありませんね。
-Permission増減調査(JB MR1(4.2) &gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
-android.permission.BLUETOOTH_STACK
-android.permission.ACCOUNT_MANAGER
-android.permission.HARDWARE_TEST
-android.permission.NET_ADMIN
-android.permission.REMOTE_AUDIO_PLAYBACK
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2013/11/01/jb_mr14.2%E3%81%A8jb_mr24.3%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/">Read more →</a>
     </div>
     
   </div>

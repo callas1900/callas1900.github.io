@@ -7,17 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>2008のデスクトップそろそろ終わる</title>
-      <link>/posts/2020/02/24/2008%E3%81%AE%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%81%9D%E3%82%8D%E3%81%9D%E3%82%8D%E7%B5%82%E3%82%8F%E3%82%8B/</link>
+      <title>「エンジニアのためのデザイン思考入門」を読んだまとめ</title>
+      <link>/posts/2020/03/17/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E6%80%9D%E8%80%83%E5%85%A5%E9%96%80%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0%E3%81%BE%E3%81%A8%E3%82%81/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020/03/17/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E6%80%9D%E8%80%83%E5%85%A5%E9%96%80%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0%E3%81%BE%E3%81%A8%E3%82%81/</guid>
+      <description>以下の本の内容を一部引用して個人用にまとめます。
+エンジニアのためのデザイン思考入門
+ 著 角征典 著 東京工業大学エンジニアリングデザインプロジェクト 著 齊藤滋規 他4名  ISBN-10: 4798153850 ISBN-13: 978-4798153858
+ 「デザイン思考とは」 デザイン思考の５つのステップ
+ 共感 問題定義 発想 プロトタイプ テスト  このステップを理解することは勉強として大事。 でも、この本で紹介されていた別記事で、５つのステップでの勉強は否定されている。
+d.school デザイン・プロセスの話はもうやめよう Ray Yamazaki
+問題定義(define)  正確には「みつけたことにしました」。ユーザーが実際にそう思っているかは、プロトタイプを持っていって確かめればよいので、この時点ではあまり重要ではないのです。
+ これぐらいの思い切りが大事、いい雑さの指標になる。
+思考方法のフレームワーク     LONGER TERM t (長期的) SHORT TERM t (短期的)     急進的イノベーション(BREAKTHROUGH INNOVATION) 未来志向 FUTURE THINKING デザイン思考 DESIGN THINKING   暫定的イノベーション(INCREMENTAL INNOVATION) 生産思考 PRODUCTION THINKING エンジニアリング思考 ENGINEERING THINKING     Introducting a &amp;ldquo;Way of Thinking&amp;rdquo; Framework for Student Engineers Learning to Do Desing (M.</description>
+    </item>
+    
+    <item>
+      <title>2008に組んだデスクトップ機、死にかけてまた復活</title>
+      <link>/posts/2020/02/24/2008%E3%81%AB%E7%B5%84%E3%82%93%E3%81%A0%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%A9%9F%E6%AD%BB%E3%81%AB%E3%81%8B%E3%81%91%E3%81%A6%E3%81%BE%E3%81%9F%E5%BE%A9%E6%B4%BB/</link>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2020/02/24/2008%E3%81%AE%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%81%9D%E3%82%8D%E3%81%9D%E3%82%8D%E7%B5%82%E3%82%8F%E3%82%8B/</guid>
+      <guid>/posts/2020/02/24/2008%E3%81%AB%E7%B5%84%E3%82%93%E3%81%A0%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%A9%9F%E6%AD%BB%E3%81%AB%E3%81%8B%E3%81%91%E3%81%A6%E3%81%BE%E3%81%9F%E5%BE%A9%E6%B4%BB/</guid>
       <description>数日前からデスクトップの調子が悪かったので、休日暇なのでチェック 症状としては、起動しても音がするだけで何も表示されない。 まったく何も。最初のBIOS画面すら出ない。
 完全死亡を疑いつつ、クリーニングしてから起動して音を聞いていると、 なんか動いている感じがするので、ルーターをチェックしたら、きちんとIPが振られていた。
 sshでアクセス成功したので、中身チェック。 ファイルシステムは生きているみたいなので、大急ぎでバックアップをとろうと、USB外部ストレージを挿すがmediaの下にマウントされない。
@@ -39,6 +56,29 @@ inxi -G Graphics: Card: Failed to Detect Video Card! Display Server: X.org 1.16.
 1. Install essentail applications  brave browser dropbox  2. Change keyboard settings activate japanese input  open input method install Japanese input method select fcitx logout then login  change keymaps open keyboard in the cinnamon menu.
  capslock to ctrl  open fcitx option in the cinnamon menu.
  left bottom ctrl to input method changer  3. Make symbolic links I stored lots of configuration file in Dropbox.</description>
+    </item>
+    
+    <item>
+      <title>インドのビザ申請</title>
+      <link>/posts/2020/02/01/%E3%82%A4%E3%83%B3%E3%83%89%E3%81%AE%E3%83%93%E3%82%B6%E7%94%B3%E8%AB%8B/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020/02/01/%E3%82%A4%E3%83%B3%E3%83%89%E3%81%AE%E3%83%93%E3%82%B6%E7%94%B3%E8%AB%8B/</guid>
+      <description>ビザがいる ３月にagile indiaに行く予定です。
+が、ビザのことを忘れていました。
+去年、ベトナム、インド、イタリアと行ったけど、一回行くだけだとビザが必要な国が無かったから、ビザのことを完全に失念していたけど、 友達からカンファレンスビザじゃなくて観光ビザがいいみたいだよと教えて貰って。
+https://2020.agileindia.org/call-for-proposals/#visa
+なるほど、カンファレンスは政府関係じゃないと駄目だってことか。。。 というかその前にビザ！とりあえず上記によるとE観光ビザが良いってことね。
+そもそも個人でビザとるの初めて、とりあえず外務省かなと検索したら、以下ページで
+外務省;; 海外渡航・滞在 &amp;gt; ビザ
+で、各大使館で情報をときた。 でインドの大使館のページは、
+インド大使館
+ビザ
+そういや、先達がどこかにいるはず。
+ 詳細解説保存版【 2019年12月最新】最大5年間有効。インド e ビザ を オンライン申請 しよう！！｜ インド いかへん？｜ バックパッカー 旅 企画 女子旅ハック::インド eビザ(電子ビザ) の取得方法【2019年版】必要書類・注意点・手順  読む。
+e-Visa より
+ Q7. When will my e-Visa be issued and how will I be informed about it?
+Ans- Your e-Visa application may take 72 hours or more for processing. You will be intimated about your Visa status (Granted or Rejected) on your email id provided by you in the e-Visa application.</description>
     </item>
     
     <item>
@@ -7674,7 +7714,10 @@ This page is the webpage of mine. no meaning, no purpose, just putting on the we
  責難は成事に非ず
  十二国記「華胥の幽夢」より
 何かを責めて非難することは、何かを成す事ではない。
- </description>
+  つひにゆく道とはかねて聞きしかど昨日今日とは思はざりしを
+ 作者：在原業平　古今和歌集、伊勢物語より
+シンプルに凝った技工なくすっと読まれた歌。自分に迫った死を思う歌。
+  </description>
     </item>
     
   </channel>
