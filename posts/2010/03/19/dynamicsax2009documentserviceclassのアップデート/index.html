@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[DynamicsAX2009]DocumentServiceClassのアップデート :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="AIFサービスのベースになっているテーブルの定義変更をした場合に
+DocumentServiceClassのアップデートを行わなければならない。
+Query復元 AOTのQueryオブジェクト上で **Restore **を実行
+Document Service の更新 AxClass より parm Method と set Method を消去する   AxClassをAOT上で表示し、フィールド一覧を展開し、表示する。
+  変更フィールド名称が含まれている parm Method を消去する。
+  変更フィールド名称が含まれている set Method を消去する。
+例）
+Fooテーブルの Barフィールドに変更を加えたのなら、
+AxFoo ClassのparmBarメソッドを消去し、
+setBarメソッドを消去する。
+  Update document serviceを実行する   Tool &amp;gt; Development tools &amp;gt; Application Integration Framework &amp;gt; Update document service を起動する。
+  Service class name で サービス名を選択する。
+  変更内容がフィールドの削除だった場合は
+Regenerate data object classes にのみチェックを入れる。"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2010/03/19/dynamicsax2009documentserviceclass%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[DynamicsAX2009]DocumentServiceClassのアップデート :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="AIFサービスのベースになっているテーブルの定義変更をした場合に
+DocumentServiceClassのアップデートを行わなければならない。
+Query復元 AOTのQueryオブジェクト上で **Restore **を実行
+Document Service の更新 AxClass より parm Method と set Method を消去する   AxClassをAOT上で表示し、フィールド一覧を展開し、表示する。
+  変更フィールド名称が含まれている parm Method を消去する。
+  変更フィールド名称が含まれている set Method を消去する。
+例）
+Fooテーブルの Barフィールドに変更を加えたのなら、
+AxFoo ClassのparmBarメソッドを消去し、
+setBarメソッドを消去する。
+  Update document serviceを実行する   Tool &amp;gt; Development tools &amp;gt; Application Integration Framework &amp;gt; Update document service を起動する。
+  Service class name で サービス名を選択する。
+  変更内容がフィールドの削除だった場合は
+Regenerate data object classes にのみチェックを入れる。" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[DynamicsAX2009]DocumentServiceClassのアップデート :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="AIFサービスのベースになっているテーブルの定義変更をした場合に
+DocumentServiceClassのアップデートを行わなければならない。
+Query復元 AOTのQueryオブジェクト上で **Restore **を実行
+Document Service の更新 AxClass より parm Method と set Method を消去する   AxClassをAOT上で表示し、フィールド一覧を展開し、表示する。
+  変更フィールド名称が含まれている parm Method を消去する。
+  変更フィールド名称が含まれている set Method を消去する。
+例）
+Fooテーブルの Barフィールドに変更を加えたのなら、
+AxFoo ClassのparmBarメソッドを消去し、
+setBarメソッドを消去する。
+  Update document serviceを実行する   Tool &amp;gt; Development tools &amp;gt; Application Integration Framework &amp;gt; Update document service を起動する。
+  Service class name で サービス名を選択する。
+  変更内容がフィールドの削除だった場合は
+Regenerate data object classes にのみチェックを入れる。" />
+<meta property="og:url" content="/posts/2010/03/19/dynamicsax2009documentserviceclass%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/" />
+<meta property="og:site_name" content="[DynamicsAX2009]DocumentServiceClassのアップデート" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2010-03-19 02:33:00 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2010/03/19/dynamicsax2009documentserviceclass%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/">[DynamicsAX2009]DocumentServiceClassのアップデート</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2010-03-19
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/dynamicsax2009/">DynamicsAX2009</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>AIFサービスのベースになっているテーブルの定義変更をした場合に<br>
+DocumentServiceClassのアップデートを行わなければならない。</p>
+<h3 id="query復元">Query復元</h3>
+<p>AOTのQueryオブジェクト上で **Restore **を実行</p>
+<h3 id="document-service-の更新">Document Service の更新</h3>
+<h4 id="axtableclass-より-parm-method-と-set-method-を消去する">Ax<!-- raw HTML omitted -->Class より parm Method と set Method を消去する</h4>
+<ol>
+<li>
+<p>Ax<!-- raw HTML omitted --> ClassをAOT上で表示し、フィールド一覧を展開し、表示する。</p>
+</li>
+<li>
+<p>変更フィールド名称が含まれている <strong>parm Method</strong> を消去する。</p>
+</li>
+<li>
+<p>変更フィールド名称が含まれている <strong>set Method</strong> を消去する。</p>
+<p>例）<br>
+Fooテーブルの Barフィールドに変更を加えたのなら、<br>
+AxFoo ClassのparmBarメソッドを消去し、<br>
+setBarメソッドを消去する。</p>
+</li>
+</ol>
+<h4 id="update-document-serviceを実行する">Update document serviceを実行する</h4>
+<ol>
+<li>
+<p><strong>Tool &gt; Development tools &gt; Application Integration Framework &gt; Update document service</strong> を起動する。</p>
+<p><img src="http://docs.google.com/File?id=dhr8vrth_656c36z6rhb_b" alt=""></p>
+</li>
+<li>
+<p>Service class name で サービス名を選択する。</p>
+</li>
+<li>
+<p>変更内容がフィールドの削除だった場合は<br>
+<strong>Regenerate data object classes</strong> にのみチェックを入れる。</p>
+<p>変更内容がフィールドの変更ないしは、追加だった場合は、<br>
+<strong>Update AxBC classes</strong> にもチェックを入れる。</p>
+</li>
+<li>
+<p>OKを押す。</p>
+</li>
+<li>
+<p>終わった後に ServiceのRefresh、<br>
+AOTのノードでのCompile &amp; Synchronize を実行する。</p>
+</li>
+</ol>
+<p>参考URL<br>
+<a href="http://msdn.microsoft.com/en-us/library/ee330229.aspx" title="http://msdn.microsoft.com/en-us/library/ee330229.aspx">http://msdn.microsoft.com/en-us/library/ee330229.aspx</a></p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2010/03/23/biztalk2009btstask%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[BizTalk2009]BtsTaskによるバッチ作成</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/">
+          <span class="button__text">[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>LineBuzz :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="百式さんで以下のようなツールを見つけた。
+ブログの文章にピンポイントでコメントがつけられる『LineBuzz』
+http://linebuzz.com/
+LineBuzzのポータルを見てみたところ、blogspotのドメインを見かけたので、
+一応Bloggerには対応しているようだ（Bloggerのドメインはblogspot）
+ただし、私みたいに自分用のスペースにFTPで吐いてる人に届くかは謎。
+家に帰ったら試してみよう。
+ 昨日は仕事の先輩と飲みにいった。
+話題としては
+「現在のＦＷが何故オブジェクト指向的ではないか？」
+「そもそもオブジェクト指向ってなんさ？お前（私のこと）わかってるの？」
+「ファサードに何故固執するの？やっぱオブジェクト指向分かってないだろ？」
+「お前は結局何になりたいんだよ？どうしたいんだ？」
+「こっち側（先輩サイド）にはくるな、地獄だから」
+「アスペクト使うきあるの？」
+&amp;hellip;etc
+いやー楽しい飲み会でした。
+え？マゾじゃないのかって？
+そーだと思います。
+もう質問攻めのサンドバック状態。
+根拠と意味を求めるWHY?WHY?WHYWHWHWHWHWHWHWHWHWYYYYYYYYYY?
+楽しかったですよ？（裏の意味はなく）
+お酒もよく進みました
+（私にしては珍しく焼酎ロックＸ２、焼酎水割りＸ１　－「牧場の夢」となんか芋焼酎）
+よくこんな事を言うと、おかしいんじゃないの？って言われるんだけど、
+自分の現状を見ることが出来るし、
+何より自分のバカを晒すことが出来る。
+だって、自分より明らかに上の人がいて、
+その人の前では無知と自分の中の既知がほぼ同等で、
+そんな人の前で取り繕ってもコンマ数秒で化けの皮をはがされる。
+バカ晒すしかないさ
+まー収穫もあったしね。
+オブジェクト指向についてはわからないことが大分わかってきた。
+これは資料として残しておこうと思う。
+世に沢山のオブジェクト指向に対する説明はあれど、私と同じ脳構造している人に分かりやすいものはなかったのだから。
+あー酒がまだ抜け切れてない。
+Ｑ：仕事できるの？ Ａ：ええ何故かいつもより仕事が早いんです。
+困ったもんだ"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2007/05/17/linebuzz/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="LineBuzz :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="百式さんで以下のようなツールを見つけた。
+ブログの文章にピンポイントでコメントがつけられる『LineBuzz』
+http://linebuzz.com/
+LineBuzzのポータルを見てみたところ、blogspotのドメインを見かけたので、
+一応Bloggerには対応しているようだ（Bloggerのドメインはblogspot）
+ただし、私みたいに自分用のスペースにFTPで吐いてる人に届くかは謎。
+家に帰ったら試してみよう。
+ 昨日は仕事の先輩と飲みにいった。
+話題としては
+「現在のＦＷが何故オブジェクト指向的ではないか？」
+「そもそもオブジェクト指向ってなんさ？お前（私のこと）わかってるの？」
+「ファサードに何故固執するの？やっぱオブジェクト指向分かってないだろ？」
+「お前は結局何になりたいんだよ？どうしたいんだ？」
+「こっち側（先輩サイド）にはくるな、地獄だから」
+「アスペクト使うきあるの？」
+&amp;hellip;etc
+いやー楽しい飲み会でした。
+え？マゾじゃないのかって？
+そーだと思います。
+もう質問攻めのサンドバック状態。
+根拠と意味を求めるWHY?WHY?WHYWHWHWHWHWHWHWHWHWYYYYYYYYYY?
+楽しかったですよ？（裏の意味はなく）
+お酒もよく進みました
+（私にしては珍しく焼酎ロックＸ２、焼酎水割りＸ１　－「牧場の夢」となんか芋焼酎）
+よくこんな事を言うと、おかしいんじゃないの？って言われるんだけど、
+自分の現状を見ることが出来るし、
+何より自分のバカを晒すことが出来る。
+だって、自分より明らかに上の人がいて、
+その人の前では無知と自分の中の既知がほぼ同等で、
+そんな人の前で取り繕ってもコンマ数秒で化けの皮をはがされる。
+バカ晒すしかないさ
+まー収穫もあったしね。
+オブジェクト指向についてはわからないことが大分わかってきた。
+これは資料として残しておこうと思う。
+世に沢山のオブジェクト指向に対する説明はあれど、私と同じ脳構造している人に分かりやすいものはなかったのだから。
+あー酒がまだ抜け切れてない。
+Ｑ：仕事できるの？ Ａ：ええ何故かいつもより仕事が早いんです。
+困ったもんだ" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="LineBuzz :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="百式さんで以下のようなツールを見つけた。
+ブログの文章にピンポイントでコメントがつけられる『LineBuzz』
+http://linebuzz.com/
+LineBuzzのポータルを見てみたところ、blogspotのドメインを見かけたので、
+一応Bloggerには対応しているようだ（Bloggerのドメインはblogspot）
+ただし、私みたいに自分用のスペースにFTPで吐いてる人に届くかは謎。
+家に帰ったら試してみよう。
+ 昨日は仕事の先輩と飲みにいった。
+話題としては
+「現在のＦＷが何故オブジェクト指向的ではないか？」
+「そもそもオブジェクト指向ってなんさ？お前（私のこと）わかってるの？」
+「ファサードに何故固執するの？やっぱオブジェクト指向分かってないだろ？」
+「お前は結局何になりたいんだよ？どうしたいんだ？」
+「こっち側（先輩サイド）にはくるな、地獄だから」
+「アスペクト使うきあるの？」
+&amp;hellip;etc
+いやー楽しい飲み会でした。
+え？マゾじゃないのかって？
+そーだと思います。
+もう質問攻めのサンドバック状態。
+根拠と意味を求めるWHY?WHY?WHYWHWHWHWHWHWHWHWHWYYYYYYYYYY?
+楽しかったですよ？（裏の意味はなく）
+お酒もよく進みました
+（私にしては珍しく焼酎ロックＸ２、焼酎水割りＸ１　－「牧場の夢」となんか芋焼酎）
+よくこんな事を言うと、おかしいんじゃないの？って言われるんだけど、
+自分の現状を見ることが出来るし、
+何より自分のバカを晒すことが出来る。
+だって、自分より明らかに上の人がいて、
+その人の前では無知と自分の中の既知がほぼ同等で、
+そんな人の前で取り繕ってもコンマ数秒で化けの皮をはがされる。
+バカ晒すしかないさ
+まー収穫もあったしね。
+オブジェクト指向についてはわからないことが大分わかってきた。
+これは資料として残しておこうと思う。
+世に沢山のオブジェクト指向に対する説明はあれど、私と同じ脳構造している人に分かりやすいものはなかったのだから。
+あー酒がまだ抜け切れてない。
+Ｑ：仕事できるの？ Ａ：ええ何故かいつもより仕事が早いんです。
+困ったもんだ" />
+<meta property="og:url" content="/posts/2007/05/17/linebuzz/" />
+<meta property="og:site_name" content="LineBuzz" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2007-05-17 20:20:00 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2007/05/17/linebuzz/">LineBuzz</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2007-05-17
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>百式さんで以下のようなツールを見つけた。</p>
+<p><a href="http://www.100shiki.com/archives/2007/05/linebuzz.html" title="ブログの文章にピンポイントでコメントがつけられる『LineBuzz』">ブログの文章にピンポイントでコメントがつけられる『LineBuzz』</a></p>
+<p><a href="http://linebuzz.com/" title="http://linebuzz.com/">http://linebuzz.com/</a></p>
+<p>LineBuzzのポータルを見てみたところ、blogspotのドメインを見かけたので、<br>
+一応Bloggerには対応しているようだ（Bloggerのドメインはblogspot）<br>
+ただし、私みたいに自分用のスペースにFTPで吐いてる人に届くかは謎。</p>
+<p>家に帰ったら試してみよう。</p>
+<hr>
+<p>昨日は仕事の先輩と飲みにいった。<br>
+話題としては</p>
+<p>「現在のＦＷが何故オブジェクト指向的ではないか？」<br>
+「そもそもオブジェクト指向ってなんさ？お前（私のこと）わかってるの？」<br>
+「ファサードに何故固執するの？やっぱオブジェクト指向分かってないだろ？」<br>
+「お前は結局何になりたいんだよ？どうしたいんだ？」<br>
+「こっち側（先輩サイド）にはくるな、地獄だから」<br>
+「アスペクト使うきあるの？」<br>
+&hellip;etc</p>
+<p>いやー楽しい飲み会でした。<br>
+え？マゾじゃないのかって？<br>
+そーだと思います。</p>
+<p>もう質問攻めのサンドバック状態。<br>
+根拠と意味を求めるWHY?WHY?WHYWHWHWHWHWHWHWHWHWYYYYYYYYYY?</p>
+<p>楽しかったですよ？（裏の意味はなく）<br>
+お酒もよく進みました<br>
+（私にしては珍しく焼酎ロックＸ２、焼酎水割りＸ１　－「牧場の夢」となんか芋焼酎）</p>
+<p>よくこんな事を言うと、おかしいんじゃないの？って言われるんだけど、</p>
+<p>自分の現状を見ることが出来るし、<br>
+何より自分のバカを晒すことが出来る。</p>
+<p>だって、自分より明らかに上の人がいて、<br>
+その人の前では無知と自分の中の既知がほぼ同等で、<br>
+そんな人の前で取り繕ってもコンマ数秒で化けの皮をはがされる。</p>
+<p>バカ晒すしかないさ</p>
+<p>まー収穫もあったしね。</p>
+<p>オブジェクト指向についてはわからないことが大分わかってきた。<br>
+これは資料として残しておこうと思う。</p>
+<p>世に沢山のオブジェクト指向に対する説明はあれど、私と同じ脳構造している人に分かりやすいものはなかったのだから。</p>
+<p>あー酒がまだ抜け切れてない。</p>
+<p>Ｑ：仕事できるの？ Ａ：ええ何故かいつもより仕事が早いんです。</p>
+<p>困ったもんだ</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2007/05/18/%E6%97%A5%E8%A8%98%E6%9D%A5%E4%B8%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%9F%E4%BA%BA%E6%9D%A5%E4%B8%96%E3%81%B8%E3%81%AE%E8%AA%8D%E8%AD%98%E6%9D%A5%E4%B8%96%E3%81%AB%E6%AE%8B%E3%82%8C%E3%82%8B%E3%81%8B/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[日記]来世に行った人、来世への認識、来世に残れるか？</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2007/05/15/googlebookmarks/">
+          <span class="button__text">GoogleBookMarks</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

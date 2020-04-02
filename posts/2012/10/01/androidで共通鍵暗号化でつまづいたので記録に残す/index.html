@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Androidで共通鍵暗号化でつまづいたので記録に残す :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Androidで文字列をセキュアに保存したい場合、
+暗号化してsqliteに保存するのがよろしいと思われる。
+ここではAndroid自体のセキュリティがアレだとか、Rooted端末とapktoolがあればアレをこうしてアレ出来るだとかいう話はとりあえず置いとく。
+まず以下のようなソースを書いた。
+内容は、
+ 共通鍵の秘密鍵を生成している箇所のみ抽出。 DBに鍵が保存されていない初回はif文を迂回して生成ロジックで生成後DBに保存。 DB保存後はDBから復元する。  private final static String ARGOLISM = &amp;quot;PBEWithSHA1And256BitAES-CBC-BC&amp;quot;; private SecretKey getSecretKey() throws NoSuchAlgorithmException, InvalidKeySpecException, NameNotFoundException { // check saved secret key is exist. byte\[\] savedSecretKey = DBHelper.readByteData(context, &amp;quot;hoge&amp;quot;); if(savedSecretKey != null &amp;amp;&amp;amp; savedSecretKey.length &amp;gt; 0){ return new SecretKeySpec(savedSecretKey, ARGOLISM); } // generate new secret key. char\[\] pw = generatePassword(); int iteratorCount = 1024; int keySize = 256; int saltLength = 8; byte\[\] salt = &amp;quot;00000000&amp;quot;."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2012/10/01/android%E3%81%A7%E5%85%B1%E9%80%9A%E9%8D%B5%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F%E3%81%AE%E3%81%A7%E8%A8%98%E9%8C%B2%E3%81%AB%E6%AE%8B%E3%81%99/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Androidで共通鍵暗号化でつまづいたので記録に残す :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="Androidで文字列をセキュアに保存したい場合、
+暗号化してsqliteに保存するのがよろしいと思われる。
+ここではAndroid自体のセキュリティがアレだとか、Rooted端末とapktoolがあればアレをこうしてアレ出来るだとかいう話はとりあえず置いとく。
+まず以下のようなソースを書いた。
+内容は、
+ 共通鍵の秘密鍵を生成している箇所のみ抽出。 DBに鍵が保存されていない初回はif文を迂回して生成ロジックで生成後DBに保存。 DB保存後はDBから復元する。  private final static String ARGOLISM = &amp;quot;PBEWithSHA1And256BitAES-CBC-BC&amp;quot;; private SecretKey getSecretKey() throws NoSuchAlgorithmException, InvalidKeySpecException, NameNotFoundException { // check saved secret key is exist. byte\[\] savedSecretKey = DBHelper.readByteData(context, &amp;quot;hoge&amp;quot;); if(savedSecretKey != null &amp;amp;&amp;amp; savedSecretKey.length &amp;gt; 0){ return new SecretKeySpec(savedSecretKey, ARGOLISM); } // generate new secret key. char\[\] pw = generatePassword(); int iteratorCount = 1024; int keySize = 256; int saltLength = 8; byte\[\] salt = &amp;quot;00000000&amp;quot;." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Androidで共通鍵暗号化でつまづいたので記録に残す :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="Androidで文字列をセキュアに保存したい場合、
+暗号化してsqliteに保存するのがよろしいと思われる。
+ここではAndroid自体のセキュリティがアレだとか、Rooted端末とapktoolがあればアレをこうしてアレ出来るだとかいう話はとりあえず置いとく。
+まず以下のようなソースを書いた。
+内容は、
+ 共通鍵の秘密鍵を生成している箇所のみ抽出。 DBに鍵が保存されていない初回はif文を迂回して生成ロジックで生成後DBに保存。 DB保存後はDBから復元する。  private final static String ARGOLISM = &amp;quot;PBEWithSHA1And256BitAES-CBC-BC&amp;quot;; private SecretKey getSecretKey() throws NoSuchAlgorithmException, InvalidKeySpecException, NameNotFoundException { // check saved secret key is exist. byte\[\] savedSecretKey = DBHelper.readByteData(context, &amp;quot;hoge&amp;quot;); if(savedSecretKey != null &amp;amp;&amp;amp; savedSecretKey.length &amp;gt; 0){ return new SecretKeySpec(savedSecretKey, ARGOLISM); } // generate new secret key. char\[\] pw = generatePassword(); int iteratorCount = 1024; int keySize = 256; int saltLength = 8; byte\[\] salt = &amp;quot;00000000&amp;quot;." />
+<meta property="og:url" content="/posts/2012/10/01/android%E3%81%A7%E5%85%B1%E9%80%9A%E9%8D%B5%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F%E3%81%AE%E3%81%A7%E8%A8%98%E9%8C%B2%E3%81%AB%E6%AE%8B%E3%81%99/" />
+<meta property="og:site_name" content="Androidで共通鍵暗号化でつまづいたので記録に残す" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2012-10-01 09:00:00 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2012/10/01/android%E3%81%A7%E5%85%B1%E9%80%9A%E9%8D%B5%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F%E3%81%AE%E3%81%A7%E8%A8%98%E9%8C%B2%E3%81%AB%E6%AE%8B%E3%81%99/">Androidで共通鍵暗号化でつまづいたので記録に残す</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2012-10-01
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/java/">Java</a>&nbsp;
+    
+    #<a href="/tags/security/">Security</a>&nbsp;
+    
+    #<a href="/tags/android/">Android</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>Androidで文字列をセキュアに保存したい場合、<br>
+暗号化してsqliteに保存するのがよろしいと思われる。</p>
+<p>ここではAndroid自体のセキュリティがアレだとか、Rooted端末とapktoolがあればアレをこうしてアレ出来るだとかいう話はとりあえず置いとく。</p>
+<p>まず以下のようなソースを書いた。</p>
+<p>内容は、</p>
+<ul>
+<li>共通鍵の秘密鍵を生成している箇所のみ抽出。</li>
+<li>DBに鍵が保存されていない初回はif文を迂回して生成ロジックで生成後DBに保存。</li>
+<li>DB保存後はDBから復元する。</li>
+</ul>
+<pre><code>private final static String ARGOLISM = &quot;PBEWithSHA1And256BitAES-CBC-BC&quot;;  
+  
+private SecretKey getSecretKey()  
+throws NoSuchAlgorithmException, InvalidKeySpecException, NameNotFoundException {  
+  
+   // check saved secret key is exist.  
+   byte\[\] savedSecretKey = DBHelper.readByteData(context, &quot;hoge&quot;);  
+  
+   if(savedSecretKey != null &amp;&amp; savedSecretKey.length &gt; 0){  
+      return new SecretKeySpec(savedSecretKey, ARGOLISM);  
+   }  
+  
+   // generate new secret key.  
+   char\[\] pw = generatePassword();  
+   int iteratorCount = 1024;  
+   int keySize = 256;  
+   int saltLength = 8;  
+   byte\[\] salt = &quot;00000000&quot;.getBytes();  
+  
+   KeySpec keySpec = new PBEKeySpec(pw, salt, iteratorCount, keySize);  
+  
+   SecretKeyFactory factory = SecretKeyFactory.getInstance(ARGOLISM);  
+   SecretKey secretKey = factory.generateSecret(keySpec);  
+  
+   // here  
+  
+   // save secret key.  
+   DBHelper.writeByteData(context, &quot;hoge&quot;, secretKey.getEncoded());  
+  
+   return secretKey;  
+}  
+
+```_※DBHelperはsqliteへの簡便なアクセスを提供するクラスとする。_  
+_ここで使用しているDBHelperの先にあるテーブルはマップのようにkey/valueのデータ構造をしているものとする。_  
+  
+上記実行したところ、  
+生成後のDBから読み出した鍵が暗号化した鍵とは違うとのExceptionが発生。  
+secretKey.getEncoded()の値をDB書き込み前と後で見比べてみても同じ。  
+ワケワカラーン  
+  
+結局、Exceptionの原因はクラス差でした。  
+**生成前** : com.android.org.bouncycastle.jce.provider.JCEPBEKey  
+**生成後** : javax.crypto.spec.SecretKeySpec  
+  
+&lt;guchi&gt;  
+両方共 [SecretKey](http://java.sun.com/j2se/1.5.0/ja/docs/ja/api/javax/crypto/SecretKey.html &quot;javax.crypto 内のインタフェース&quot;) を実装してるんだから、うまく動いてくれよ。  
+後、**com.android.**org.bouncycastle.jce.provider.JCEPBEKey の太字部位が出力されるのってバグじゃないの？  
+&lt;/guchi&gt;  
+  
+解決方法は  
+`secretKey = new SecretKeySpec(secretKey.getEncoded(), ARGOLISM);`  
+を先ほどのコードのDB書き込み直前（コードの //here の箇所）に追加して問題解決。  
+  
+注意：saltの値は上記では簡易てますが、本当に使う場合はきちんとランダム値を生成するように変更してください。</code></pre>
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2012/12/03/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-9%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[読書メーター]2012年 9月読書まとめ読書メーター</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2012/09/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-8%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">
+          <span class="button__text">[読書メーター]2012年 8月読書まとめ読書メーター</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

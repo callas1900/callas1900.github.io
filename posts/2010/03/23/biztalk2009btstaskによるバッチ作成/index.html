@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[BizTalk2009]BtsTaskによるバッチ作成 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="btstaskはBizTalkアプリケーションのインストール等をコマンドライン上で行えるコマンドラインツールです。
+以下に自分の使用例を書いときます。
+  バインド設定を省いたアプリケーションのmsiファイルを作成する方法
+  バッチ例
+  msiファイルとバインド設定ファイルをエクスポートする
+  msiファイルからBizTalkアプリをインストールする
+  バインド設定をインポートする
+  msiファイルを使った対象BizTalkアプリを削除する
+  バインド設定を省いたアプリケーションのmsiファイルを作成する方法   アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。
+btstask listapp -a:_**BizApp1**_ -r:_**BizApp1\_Resource.xml**_   _**BizApp1_Resource.xml **を修正する。
+タグ以下の
+&amp;lt;Resource Type=&amp;quot;System.BizTalk:BizTalkBinding&amp;rdquo;
+で始まるタグを削除する。
+_
+  エクスポート実行
+btstask ExportApp -a:_**BizApp1**_ -p:_**&amp;lt;MsiFileName&amp;gt;**_ -r:_**BizApp1\_Resource.xml**_   バインドファイルもエクスポート実行
+btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_   バッチ例 msiファイルとバインド設定ファイルをエクスポートする @setlocal @echo off echo ################################## echo %DATE% %TIME% Running export.bat echo ################################## REM !"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2010/03/23/biztalk2009btstask%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[BizTalk2009]BtsTaskによるバッチ作成 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="btstaskはBizTalkアプリケーションのインストール等をコマンドライン上で行えるコマンドラインツールです。
+以下に自分の使用例を書いときます。
+  バインド設定を省いたアプリケーションのmsiファイルを作成する方法
+  バッチ例
+  msiファイルとバインド設定ファイルをエクスポートする
+  msiファイルからBizTalkアプリをインストールする
+  バインド設定をインポートする
+  msiファイルを使った対象BizTalkアプリを削除する
+  バインド設定を省いたアプリケーションのmsiファイルを作成する方法   アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。
+btstask listapp -a:_**BizApp1**_ -r:_**BizApp1\_Resource.xml**_   _**BizApp1_Resource.xml **を修正する。
+タグ以下の
+&amp;lt;Resource Type=&amp;quot;System.BizTalk:BizTalkBinding&amp;rdquo;
+で始まるタグを削除する。
+_
+  エクスポート実行
+btstask ExportApp -a:_**BizApp1**_ -p:_**&amp;lt;MsiFileName&amp;gt;**_ -r:_**BizApp1\_Resource.xml**_   バインドファイルもエクスポート実行
+btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_   バッチ例 msiファイルとバインド設定ファイルをエクスポートする @setlocal @echo off echo ################################## echo %DATE% %TIME% Running export.bat echo ################################## REM !" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[BizTalk2009]BtsTaskによるバッチ作成 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="btstaskはBizTalkアプリケーションのインストール等をコマンドライン上で行えるコマンドラインツールです。
+以下に自分の使用例を書いときます。
+  バインド設定を省いたアプリケーションのmsiファイルを作成する方法
+  バッチ例
+  msiファイルとバインド設定ファイルをエクスポートする
+  msiファイルからBizTalkアプリをインストールする
+  バインド設定をインポートする
+  msiファイルを使った対象BizTalkアプリを削除する
+  バインド設定を省いたアプリケーションのmsiファイルを作成する方法   アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。
+btstask listapp -a:_**BizApp1**_ -r:_**BizApp1\_Resource.xml**_   _**BizApp1_Resource.xml **を修正する。
+タグ以下の
+&amp;lt;Resource Type=&amp;quot;System.BizTalk:BizTalkBinding&amp;rdquo;
+で始まるタグを削除する。
+_
+  エクスポート実行
+btstask ExportApp -a:_**BizApp1**_ -p:_**&amp;lt;MsiFileName&amp;gt;**_ -r:_**BizApp1\_Resource.xml**_   バインドファイルもエクスポート実行
+btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_   バッチ例 msiファイルとバインド設定ファイルをエクスポートする @setlocal @echo off echo ################################## echo %DATE% %TIME% Running export.bat echo ################################## REM !" />
+<meta property="og:url" content="/posts/2010/03/23/biztalk2009btstask%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90/" />
+<meta property="og:site_name" content="[BizTalk2009]BtsTaskによるバッチ作成" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2010-03-23 22:56:00.005 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2010/03/23/biztalk2009btstask%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90/">[BizTalk2009]BtsTaskによるバッチ作成</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2010-03-23
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/biztalk2009/">BizTalk2009</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>btstaskはBizTalkアプリケーションのインストール等をコマンドライン上で行えるコマンドラインツールです。</p>
+<p>以下に自分の使用例を書いときます。</p>
+<ol>
+<li>
+<p><a href="#_msi__9627675348892808">バインド設定を省いたアプリケーションのmsiファイルを作成する方法</a></p>
+</li>
+<li>
+<p><a href="#_7420771233737469">バッチ例</a></p>
+</li>
+<li>
+<p><a href="#msi__2998540448024869">msiファイルとバインド設定ファイルをエクスポートする</a></p>
+</li>
+<li>
+<p><a href="#msi_BizTalk_">msiファイルからBizTalkアプリをインストールする</a></p>
+</li>
+<li>
+<p><a href="#__8566624764353037">バインド設定をインポートする</a></p>
+</li>
+<li>
+<p><a href="#msi_BizTalk__8431878918781877">msiファイルを使った対象BizTalkアプリを削除する</a></p>
+</li>
+</ol>
+<h3 id="バインド設定を省いたアプリケーションのmsiファイルを作成する方法">バインド設定を省いたアプリケーションのmsiファイルを作成する方法</h3>
+<ol>
+<li>
+<p>アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。</p>
+<pre><code>btstask listapp -a:_**BizApp1**_ -r:_**BizApp1\_Resource.xml**_
+</code></pre></li>
+<li>
+<p>_**BizApp1_Resource.xml **を修正する。</p>
+<p><!-- raw HTML omitted -->タグ以下の<br>
+&lt;Resource Type=&quot;System.BizTalk:BizTalkBinding&rdquo;<br>
+で始まるタグを削除する。</p>
+<p>_</p>
+</li>
+<li>
+<p>エクスポート実行</p>
+<pre><code>btstask ExportApp -a:_**BizApp1**_ -p:_**&lt;MsiFileName&gt;**_ -r:_**BizApp1\_Resource.xml**_
+</code></pre></li>
+<li>
+<p>バインドファイルもエクスポート実行</p>
+<pre><code>btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_
+</code></pre></li>
+</ol>
+<h3 id="バッチ例">バッチ例</h3>
+<h4 id="msiファイルとバインド設定ファイルをエクスポートする">msiファイルとバインド設定ファイルをエクスポートする</h4>
+<pre><code>@setlocal  
+@echo off  
+  
+echo ##################################  
+echo %DATE% %TIME% Running export.bat  
+echo ##################################  
+  
+REM !!!!You edit this block!!!!  
+call :SUB BizApp1  
+call :SUB BizApp2  
+REM !!!!You edit this block!!!!  
+  
+@endlocal  
+goto :EOF  
+  
+:SUB  
+  
+set APP\_NAME=%1  
+set MSI\_NAME=&quot;%~dp0%1.msi&quot;  
+set XML\_NAME=&quot;%~dp0%1.BindingInfo.xml&quot;  
+set RES\_NAME=&quot;%~dp0%1\_Resource.xml&quot;  
+  
+  
+REM \#### Resource.xmlを指定して、エクスポートします。  
+btstask ExportApp -a:%APP\_NAME% -p:%MSI\_NAME% -r:%RES\_NAME%  
+  
+REM \#### バインド設定xmlをエクスポートします。  
+btstask ExportBindings -Destination:%XML\_NAME% -ApplicationName:%APP\_NAME%  
+
+</code></pre><h4 id="msiファイルからbiztalkアプリをインストールする"><strong>msiファイルからBizTalkアプリをインストールする</strong></h4>
+<pre><code>@setlocal  
+@echo off  
+  
+echo ##################################  
+echo %DATE% %TIME% Running create.bat  
+echo ##################################  
+  
+REM !!!!You edit here!!!!  
+call :SUB BizApp1  
+call :SUB BizApp2  
+REM !!!!You edit here!!!!  
+  
+@endlocal  
+goto :EOF  
+  
+:SUB  
+set MSI\_NAME=&quot;%~dp0%1.msi&quot;  
+set APP\_NAME=%1  
+  
+echo ##################################  
+echo %MSI\_NAME% %APP\_NAME%  
+echo ##################################  
+  
+REM #### msiファイルをローカルに展開する。  
+msiexec /i %MSI\_NAME% TARGETDIR=&quot;%cd%&quot; /qn  
+  
+REM #### BizTalk アプリを作る  
+BTSTask AddApp -ApplicationName:%APP\_NAME%  
+  
+REM #### BizTalk アプリの設定をインポートする  
+BTSTask ImportApp -Package:%MSI\_NAME% -ApplicationName:%APP\_NAME% -o  
+
+</code></pre><h4 id="バインド設定をインポートする">バインド設定をインポートする</h4>
+<pre><code>@echo off  
+@setlocal  
+  
+echo ##################################  
+echo %DATE% %TIME% Running importBindings.bat  
+echo ##################################  
+  
+REM !!!!You edit here!!!!  
+call :SUB BizApp1  
+call :SUB BizApp2  
+REM !!!!You edit here!!!!  
+  
+@endlocal  
+goto :EOF  
+  
+:SUB  
+set XML\_NAME=&quot;%~dp0%1.BindingInfo.xml&quot;  
+set APP\_NAME=%1  
+btstask ImportBindings -Source:%XML\_NAME% -ApplicationName:%APP\_NAME%  
+
+</code></pre><h4 id="msiファイルを使った対象biztalkアプリを削除する">msiファイルを使った対象BizTalkアプリを削除する</h4>
+<pre><code>@echo off  
+@setlocal  
+  
+echo ##################################  
+echo %DATE% %TIME% Running remove.bat  
+echo ##################################  
+  
+REM !!!!You edit here!!!!  
+call :SUB BizApp1  
+call :SUB BizApp2  
+REM !!!!You edit here!!!!  
+  
+@endlocal  
+goto :EOF  
+  
+:SUB  
+set APP\_NAME=%1  
+set MSI\_NAME=&quot;%~dp0%1.msi&quot;  
+  
+REM #### アプリケーションを削除します。  
+BTSTask RemoveApp -ApplicationName:%APP\_NAME%  
+BTSTask UninstallApp -ApplicationName:%APP\_NAME%  
+  
+REM #### msiファイルを削除します  
+msiexec /x %MSI\_NAME% /qb  
+
+</code></pre>
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2010/04/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-3%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[読書メーター]2010年 3月読書まとめ</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2010/03/19/dynamicsax2009documentserviceclass%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/">
+          <span class="button__text">[DynamicsAX2009]DocumentServiceClassのアップデート</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

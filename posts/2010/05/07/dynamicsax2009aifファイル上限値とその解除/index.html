@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[DynamicsAX2009]AIFファイル上限値とその解除 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="デフォルト上限値の設定とエラー内容 DynamicsAXのAIFは外部ファイルとのやり取りを行うインターフェースの一つです。
+外部ファイルとのやり取り時、明示されてはいませんがファイルサイズの上限値があります。
+デフォルトでは10MBに設定されています。
+これを超えるファイルのやり取りをAIFで行おうとすると下記エラーがイベントログに出力されます。
+ The adapter is unable to send the following message to Microsoft Dynamics AX:
+MessageId: XXXXXXXX-1111-AAAA-9999-ZZZZZZZZZZZZ
+Error: Error executing code: Insufficient memory to run script.
+Error executing code: object not initialized.
+(C)\Classes\\processRequest
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-
+Product Version : 5.0
+Assembly Version : 5.0.0.0
+Class : AppEventLog
+Method : WriteLocalizedError
+Subsystem : BizTalkDynamicsAdapter
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-
+For more information, see Help and Support Center at http://go.microsoft.com/fwlink/events.asp.
+ 上限設定変更もしくは解除方法 レジストリを編集することで解除 or 上限値変更が出来ます。"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[DynamicsAX2009]AIFファイル上限値とその解除 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="デフォルト上限値の設定とエラー内容 DynamicsAXのAIFは外部ファイルとのやり取りを行うインターフェースの一つです。
+外部ファイルとのやり取り時、明示されてはいませんがファイルサイズの上限値があります。
+デフォルトでは10MBに設定されています。
+これを超えるファイルのやり取りをAIFで行おうとすると下記エラーがイベントログに出力されます。
+ The adapter is unable to send the following message to Microsoft Dynamics AX:
+MessageId: XXXXXXXX-1111-AAAA-9999-ZZZZZZZZZZZZ
+Error: Error executing code: Insufficient memory to run script.
+Error executing code: object not initialized.
+(C)\Classes\\processRequest
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-
+Product Version : 5.0
+Assembly Version : 5.0.0.0
+Class : AppEventLog
+Method : WriteLocalizedError
+Subsystem : BizTalkDynamicsAdapter
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-
+For more information, see Help and Support Center at http://go.microsoft.com/fwlink/events.asp.
+ 上限設定変更もしくは解除方法 レジストリを編集することで解除 or 上限値変更が出来ます。" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[DynamicsAX2009]AIFファイル上限値とその解除 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="デフォルト上限値の設定とエラー内容 DynamicsAXのAIFは外部ファイルとのやり取りを行うインターフェースの一つです。
+外部ファイルとのやり取り時、明示されてはいませんがファイルサイズの上限値があります。
+デフォルトでは10MBに設定されています。
+これを超えるファイルのやり取りをAIFで行おうとすると下記エラーがイベントログに出力されます。
+ The adapter is unable to send the following message to Microsoft Dynamics AX:
+MessageId: XXXXXXXX-1111-AAAA-9999-ZZZZZZZZZZZZ
+Error: Error executing code: Insufficient memory to run script.
+Error executing code: object not initialized.
+(C)\Classes\\processRequest
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-
+Product Version : 5.0
+Assembly Version : 5.0.0.0
+Class : AppEventLog
+Method : WriteLocalizedError
+Subsystem : BizTalkDynamicsAdapter
+-&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-
+For more information, see Help and Support Center at http://go.microsoft.com/fwlink/events.asp.
+ 上限設定変更もしくは解除方法 レジストリを編集することで解除 or 上限値変更が出来ます。" />
+<meta property="og:url" content="/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/" />
+<meta property="og:site_name" content="[DynamicsAX2009]AIFファイル上限値とその解除" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2010-05-07 18:07:00.001 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/">[DynamicsAX2009]AIFファイル上限値とその解除</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2010-05-07
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/dynamicsax2009/">DynamicsAX2009</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <h4 id="デフォルト上限値の設定とエラー内容">デフォルト上限値の設定とエラー内容</h4>
+<p>DynamicsAXのAIFは外部ファイルとのやり取りを行うインターフェースの一つです。</p>
+<p>外部ファイルとのやり取り時、明示されてはいませんがファイルサイズの上限値があります。</p>
+<p>デフォルトでは<strong>10MB</strong>に設定されています。</p>
+<p>これを超えるファイルのやり取りをAIFで行おうとすると下記エラーがイベントログに出力されます。</p>
+<blockquote>
+<p>The adapter is unable to send the following message to Microsoft Dynamics AX:</p>
+<p>MessageId: XXXXXXXX-1111-AAAA-9999-ZZZZZZZZZZZZ</p>
+<p>Error: Error executing code: Insufficient memory to run script.</p>
+<p>Error executing code:  object not initialized.</p>
+<p>(C)\Classes\\processRequest</p>
+<p>-&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</p>
+<p>Product Version : 5.0</p>
+<p>Assembly Version : 5.0.0.0</p>
+<p>Class : AppEventLog</p>
+<p>Method : WriteLocalizedError</p>
+<p>Subsystem : BizTalkDynamicsAdapter</p>
+<p>-&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</p>
+<p>For more information, see Help and Support Center at <a href="http://go.microsoft.com/fwlink/events.asp">http://go.microsoft.com/fwlink/events.asp</a>.</p>
+</blockquote>
+<h4 id="上限設定変更もしくは解除方法">上限設定変更もしくは解除方法</h4>
+<p>レジストリを編集することで解除 or 上限値変更が出来ます。</p>
+<ol>
+<li>
+<p>regeditを起動します。</p>
+</li>
+<li>
+<p><strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Dynamics\5.0\Configuration\Original (installed configuration)</strong><br>
+を開き以下のように編集。</p>
+<p>Value name</p>
+<p>maxbuffersize</p>
+<p>Value type</p>
+<p>REG_SZ</p>
+<p>Value</p>
+<p>上限値(MB) or 0（上限値なし）</p>
+</li>
+<li>
+<p><strong>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dynamics Server\5.0\01\Original (installed configuration)</strong><br>
+を開き以下のように編集。</p>
+<p>Value name</p>
+<p>maxbuffersize</p>
+<p>Value type</p>
+<p>REG_SZ</p>
+<p>Value</p>
+<p>上限値(MB) or 0（上限値なし）</p>
+</li>
+</ol>
+<p>※設定名でOriginal (installed configuration)設定を使用している時。</p>
+<h4 id="注意事項">注意事項</h4>
+<p>上記説明ではファイルサイズとしたが上限値はファイルを展開した際のメモリの確保量になる。</p>
+<p>なので10MB丁度のファイルをAIFで取り扱ったとしてもメモリ展開時に10MBを超えてしまうようなXML出会った場合は</p>
+<p>エラーが出力される。</p>
+<p>また、上限値なしは基本的にはお勧めしない（らしい）。</p>
+<p>開発筋の情報では１ファイルの上限値は50,000行以下を推奨し、</p>
+<p>100MB以上のファイルサイズのやりとりは想定していないそうだ。</p>
+<p>参考URL:</p>
+<p><a href="http://blogs.msdn.com/emeadaxsupport/archive/2009/06/15/error-executing-code-insufficient-memory-to-run-script.aspx" title="EMEA Dynamics AX Support : Error executing code: Insufficient memory to run script">EMEA Dynamics AX Support : Error executing code: Insufficient memory to run script</a></p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2010/05/10/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-4%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[読書メーター]2010年 4月読書まとめ</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2010/04/14/%E6%97%A5%E8%A8%98agile-japan-2010%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E6%9D%A5%E3%81%BE%E3%81%97%E3%81%9F/">
+          <span class="button__text">[日記]Agile Japan 2010に行って来ました</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

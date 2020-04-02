@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="仕事の備忘録メモ
+Weblogic92を使用し、
+JREにJRockitを使いIDEをEclipse3.2にした場合
+EclipseからANTを実行する場合のwlcompileタスクにおいて以下のエラーが起こった場合の対処
+ BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:
+The following error occurred while executing this line:C:\project\hogehoge\Src\foo\src\fooEar\build.xml:77:
+Could not create task or type of type: wlcompile.
+Ant could not find the task or a class this task relies upon.
+This is common and has a number of causes;
+the usual solutions are to read the manual pages then download andinstall needed JAR files, or fix the build file:
+- You have misspelt &amp;lsquo;wlcompile&amp;rsquo;."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2007/10/23/anteclipseweblogicant%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A7%E3%81%93%E3%81%91%E3%82%8B%E6%99%82%E3%81%AE%E5%AF%BE%E5%87%A6/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="仕事の備忘録メモ
+Weblogic92を使用し、
+JREにJRockitを使いIDEをEclipse3.2にした場合
+EclipseからANTを実行する場合のwlcompileタスクにおいて以下のエラーが起こった場合の対処
+ BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:
+The following error occurred while executing this line:C:\project\hogehoge\Src\foo\src\fooEar\build.xml:77:
+Could not create task or type of type: wlcompile.
+Ant could not find the task or a class this task relies upon.
+This is common and has a number of causes;
+the usual solutions are to read the manual pages then download andinstall needed JAR files, or fix the build file:
+- You have misspelt &amp;lsquo;wlcompile&amp;rsquo;." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="仕事の備忘録メモ
+Weblogic92を使用し、
+JREにJRockitを使いIDEをEclipse3.2にした場合
+EclipseからANTを実行する場合のwlcompileタスクにおいて以下のエラーが起こった場合の対処
+ BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:
+The following error occurred while executing this line:C:\project\hogehoge\Src\foo\src\fooEar\build.xml:77:
+Could not create task or type of type: wlcompile.
+Ant could not find the task or a class this task relies upon.
+This is common and has a number of causes;
+the usual solutions are to read the manual pages then download andinstall needed JAR files, or fix the build file:
+- You have misspelt &amp;lsquo;wlcompile&amp;rsquo;." />
+<meta property="og:url" content="/posts/2007/10/23/anteclipseweblogicant%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A7%E3%81%93%E3%81%91%E3%82%8B%E6%99%82%E3%81%AE%E5%AF%BE%E5%87%A6/" />
+<meta property="og:site_name" content="[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2007-10-23 22:30:00.002 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2007/10/23/anteclipseweblogicant%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A7%E3%81%93%E3%81%91%E3%82%8B%E6%99%82%E3%81%AE%E5%AF%BE%E5%87%A6/">[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2007-10-23
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/weblogic/">Weblogic</a>&nbsp;
+    
+    #<a href="/tags/eclipse/">Eclipse</a>&nbsp;
+    
+    #<a href="/tags/ant/">ANT</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>仕事の備忘録メモ</p>
+<p><a href="http://www.beasys.co.jp/dev2dev/index.html">Weblogic92</a>を使用し、<br>
+<a href="http://e-words.jp/w/JRE.html">JRE</a>に<a href="http://www.beasys.co.jp/dev2dev/pub/a/2006/02/jrockit-mission-control.html">JRockit</a>を使いIDEを<a href="http://www.eclipse.org/downloads/index.php">Eclipse3.2</a>にした場合<br>
+Eclipseから<a href="http://www.jajakarta.org/ant/">ANT</a>を実行する場合のwlcompileタスクにおいて以下のエラーが起こった場合の対処</p>
+<blockquote>
+<p>BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:<br>
+The following error occurred while executing this line:C:\project\hogehoge\Src\foo\src\fooEar\build.xml:77:<br>
+Could not create task or type of type: wlcompile.<br>
+Ant could not find the task or a class this task relies upon.<br>
+This is common and has a number of causes;<br>
+the usual solutions are to read the manual pages then download andinstall needed JAR files, or fix the build file:<br>
+- You have misspelt &lsquo;wlcompile&rsquo;. Fix: check your spelling.<br>
+- The task needs an external JAR file to execute and this is not found at the right place in the classpath. Fix: check the documentation for dependencies. Fix: declare the task.<br>
+- The task is an Ant optional task and the JAR file and/or libraries implementing the functionality were not found at the time you yourself built your installation of Ant from the Ant sources. Fix: Look in the ANT_HOME/lib for the &lsquo;ant-&rsquo; JAR corresponding to the task and make sure it contains more than merely a META-INF/MANIFEST.MF. If all it contains is the manifest, then rebuild Ant with the needed libraries present in ${ant.home}/lib/optional/ , or alternatively, download a pre-built release version from apache.org<br>
+- The build file was written for a later version of Ant Fix: upgrade to at least the latest release version of Ant - The task is not an Ant core or optional task and needs to be declared using .<br>
+- You are attempting to use a task defined using or but have spelt wrong or not defined it at the point of use<br>
+Remember that for JAR files to be visible to Ant tasks implementedin ANT_HOME/lib, the files must be in the same directory or on theclasspath<br>
+Please neither file bug reports on this problem, nor email theAnt mailing lists, until all of these causes have been explored,as this is not an Ant bug.</p>
+</blockquote>
+<p>【対処】</p>
+<ol>
+<li>
+<p>「ウィンドウ」→「設定」→「ANT」→「ランタイム」を選択</p>
+</li>
+<li>
+<p>「Antホーム」をクリック</p>
+</li>
+<li>
+<p>「C:\bea\weblogic92\server」を設定<br>
+（※デフォルトインストール設定だと上記の場所にWeblogicがインストールされているはず）</p>
+</li>
+<li>
+<p>外部JRE追加よりJRockitの【tools.jar】を追加</p>
+</li>
+</ol>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2007/10/29/oracle-10g-express-edition%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/">
+          <span class="button__icon">←</span>
+          <span class="button__text">Oracle 10g Express Editionのインストールメモ</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2007/10/23/%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E8%A9%A6%E9%A8%93%E4%B8%80%E5%9B%9E%E7%9B%AE/">
+          <span class="button__text">基本情報処理試験（一回目）</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

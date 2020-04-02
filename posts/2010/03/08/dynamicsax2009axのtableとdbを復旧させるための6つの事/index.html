@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="DynamicsAXで開発をしていたり、
+AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。
+その場合にやるべき6つのことを書いておく。
+ DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除  DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
+Compile AOTのルートで右クリックコンテキストメニューを出し、**Compile **を実行する。
+ここでエラーが出たものは基本的に修正したほうがよいが、X&#43;&#43;はインタプリタ言語なので現在エラーが出ている箇所以外のものは放置してもよい。
+Synchronize Data Dictionaryで右クリックコンテキストメニューを出し、Synchronize を実行する。
+これでAXとDBとの同期化される。
+Compile &amp;amp; Synchronize である程度のDBとのアンマッチ等のErrorやWaringは除去される。
+あなたがインフラ担当ならば、昼休みと帰る前にこの二点はやっておいて損はない。
+Index再作成   AOSサービス停止
+  Axapd.aoi ファイルを削除する。
+(Axapd.aoiはデフォルトで C:\Program Files\Microsoft Dynamics AX\50\Application\Appl\DynamicsAx1 にある。)
+  AOSサービス再開（もしくはWindows再起動）
+  これで大抵のものは治るはず。
+特にDBとAXのDataDictionaryのアンマッチ系はこれでほとんど治る。
+それでも駄目なら・・・
+クライアントキャッシュファイル削除   AXクライアントを終了
+  クライアントキャッシュファイル(.auc)を削除
+WindowsXPの場合:
+C:\Documents and Setting\\Local Settings\Application Data
+Windows2008の場合:
+C:\Users\\AppData\Local
+  Usage Data削除   AXクライアントを起動"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="DynamicsAXで開発をしていたり、
+AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。
+その場合にやるべき6つのことを書いておく。
+ DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除  DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
+Compile AOTのルートで右クリックコンテキストメニューを出し、**Compile **を実行する。
+ここでエラーが出たものは基本的に修正したほうがよいが、X&#43;&#43;はインタプリタ言語なので現在エラーが出ている箇所以外のものは放置してもよい。
+Synchronize Data Dictionaryで右クリックコンテキストメニューを出し、Synchronize を実行する。
+これでAXとDBとの同期化される。
+Compile &amp;amp; Synchronize である程度のDBとのアンマッチ等のErrorやWaringは除去される。
+あなたがインフラ担当ならば、昼休みと帰る前にこの二点はやっておいて損はない。
+Index再作成   AOSサービス停止
+  Axapd.aoi ファイルを削除する。
+(Axapd.aoiはデフォルトで C:\Program Files\Microsoft Dynamics AX\50\Application\Appl\DynamicsAx1 にある。)
+  AOSサービス再開（もしくはWindows再起動）
+  これで大抵のものは治るはず。
+特にDBとAXのDataDictionaryのアンマッチ系はこれでほとんど治る。
+それでも駄目なら・・・
+クライアントキャッシュファイル削除   AXクライアントを終了
+  クライアントキャッシュファイル(.auc)を削除
+WindowsXPの場合:
+C:\Documents and Setting\\Local Settings\Application Data
+Windows2008の場合:
+C:\Users\\AppData\Local
+  Usage Data削除   AXクライアントを起動" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="DynamicsAXで開発をしていたり、
+AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。
+その場合にやるべき6つのことを書いておく。
+ DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除  DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
+Compile AOTのルートで右クリックコンテキストメニューを出し、**Compile **を実行する。
+ここでエラーが出たものは基本的に修正したほうがよいが、X&#43;&#43;はインタプリタ言語なので現在エラーが出ている箇所以外のものは放置してもよい。
+Synchronize Data Dictionaryで右クリックコンテキストメニューを出し、Synchronize を実行する。
+これでAXとDBとの同期化される。
+Compile &amp;amp; Synchronize である程度のDBとのアンマッチ等のErrorやWaringは除去される。
+あなたがインフラ担当ならば、昼休みと帰る前にこの二点はやっておいて損はない。
+Index再作成   AOSサービス停止
+  Axapd.aoi ファイルを削除する。
+(Axapd.aoiはデフォルトで C:\Program Files\Microsoft Dynamics AX\50\Application\Appl\DynamicsAx1 にある。)
+  AOSサービス再開（もしくはWindows再起動）
+  これで大抵のものは治るはず。
+特にDBとAXのDataDictionaryのアンマッチ系はこれでほとんど治る。
+それでも駄目なら・・・
+クライアントキャッシュファイル削除   AXクライアントを終了
+  クライアントキャッシュファイル(.auc)を削除
+WindowsXPの場合:
+C:\Documents and Setting\\Local Settings\Application Data
+Windows2008の場合:
+C:\Users\\AppData\Local
+  Usage Data削除   AXクライアントを起動" />
+<meta property="og:url" content="/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/" />
+<meta property="og:site_name" content="[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2010-03-08 00:23:00 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/">[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2010-03-08
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/dynamicsax2009/">DynamicsAX2009</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>DynamicsAXで開発をしていたり、</p>
+<p>AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。</p>
+<p>その場合にやるべき6つのことを書いておく。</p>
+<ol>
+<li><a href="http://www.blogger.com/post-edit.g?blogID=20219551&amp;postID=6787775841824196995#DynamicsAX__9086810667067766">DynamicsAXにログインしている人たちを全員ログアウトさせる。</a></li>
+<li><a href="http://www.blogger.com/post-edit.g?blogID=20219551&amp;postID=6787775841824196995#Compile_24089203216135502">Compile</a></li>
+<li><a href="http://www.blogger.com/post-edit.g?blogID=20219551&amp;postID=6787775841824196995#Synchronize_9854677263647318">Synchronize</a></li>
+<li><a href="http://www.blogger.com/post-edit.g?blogID=20219551&amp;postID=6787775841824196995#Index__9263471895828843">Index再作成</a></li>
+<li><a href="http://www.blogger.com/post-edit.g?blogID=20219551&amp;postID=6787775841824196995#_3336683753877878">クライアントキャッシュファイル削除</a></li>
+<li><a href="http://www.blogger.com/post-edit.g?blogID=20219551&amp;postID=6787775841824196995#Usage_Data_">Usage Data削除</a></li>
+</ol>
+<h4 id="dynamicsaxにログインしている人たちを全員ログアウトさせる">DynamicsAXにログインしている人たちを全員ログアウトさせる。</h4>
+<p>これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。</p>
+<h4 id="compile">Compile</h4>
+<p>AOTのルートで右クリックコンテキストメニューを出し、**Compile **を実行する。</p>
+<p>ここでエラーが出たものは基本的に修正したほうがよいが、X++はインタプリタ言語なので現在エラーが出ている箇所以外のものは放置してもよい。</p>
+<h4 id="synchronize">Synchronize</h4>
+<p>Data Dictionaryで右クリックコンテキストメニューを出し、<strong>Synchronize</strong> を実行する。</p>
+<p>これでAXとDBとの同期化される。</p>
+<p>Compile &amp; Synchronize である程度のDBとのアンマッチ等のErrorやWaringは除去される。</p>
+<p>あなたがインフラ担当ならば、昼休みと帰る前にこの二点はやっておいて損はない。</p>
+<h4 id="index再作成">Index再作成</h4>
+<ol>
+<li>
+<p>AOSサービス停止</p>
+</li>
+<li>
+<p><strong>Axapd.aoi</strong> ファイルを削除する。<br>
+(Axapd.aoiはデフォルトで C:\Program Files\Microsoft Dynamics AX\50\Application\Appl\DynamicsAx1 にある。)</p>
+</li>
+<li>
+<p>AOSサービス再開（もしくはWindows再起動）</p>
+</li>
+</ol>
+<p>これで大抵のものは治るはず。<br>
+特にDBとAXのDataDictionaryのアンマッチ系はこれでほとんど治る。<br>
+それでも駄目なら・・・</p>
+<h4 id="クライアントキャッシュファイル削除">クライアントキャッシュファイル削除</h4>
+<ol>
+<li>
+<p>AXクライアントを終了</p>
+</li>
+<li>
+<p>クライアントキャッシュファイル(.auc)を削除</p>
+<p>WindowsXPの場合:</p>
+<p>C:\Documents and Setting\<!-- raw HTML omitted -->\Local Settings\Application Data</p>
+<p>Windows2008の場合:</p>
+<p>C:\Users\<!-- raw HTML omitted -->\AppData\Local</p>
+</li>
+</ol>
+<h4 id="usage-data削除">Usage Data削除</h4>
+<ol>
+<li>
+<p>AXクライアントを起動</p>
+</li>
+<li>
+<p>Tool &gt; Options を起動</p>
+</li>
+<li>
+<p>Usage dataを押す</p>
+</li>
+<li>
+<p>General をタブで Reset を押す</p>
+</li>
+</ol>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2010/03/19/dynamicsax2009documentserviceclass%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[DynamicsAX2009]DocumentServiceClassのアップデート</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2010/03/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B42%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">
+          <span class="button__text">[読書メーター]2010年2月読書まとめ</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

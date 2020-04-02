@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Hello! Allo! こんにちは!! :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Hello! Allo! こんにちは!!
+"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Hello! Allo! こんにちは!! :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="Hello! Allo! こんにちは!!
+" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="/top.jpg">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Hello! Allo! こんにちは!! :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="Hello! Allo! こんにちは!!
+" />
+<meta property="og:url" content="/posts/" />
+<meta property="og:site_name" content="Hello! Allo! こんにちは!!" />
+<meta property="og:image" content="/top.jpg">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="posts">
+  
+  
+
+  
+  
+  
+  
+
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/">/var/lib/docker の移動</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/linux/">Linux</a>&nbsp;
+      
+      #<a href="/tags/docker/">docker</a>&nbsp;
+      
+      #<a href="/tags/ubuntu16/">ubuntu16</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      docker のホストマシン容量不足対策。
+docker をインストール後稼働していると、ディスクが足りなくなることがあります。
+いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。
+外部ディスクマウント後の容量食う /var/lib/docker の移動の仕方に関して記します。
+docker 停止 /var/lib/docker を移す 設定ファイル変更  redhat系の場合 debian系の場合 ubuntu 16 の場合   docker 再起動 &amp; 確認  docker 停止 sudo service docker stop /var/lib/docker を移す ディスク容量に余裕がある場所に /var/lib/docker を移す。(ここでは例として /mnt/extra/docker とする)
+インストール直後ぐらいなら、mv で、
+安全にやりたいなら
+mkdir /mnt/extra/docker sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/ 設定ファイル変更 redhat系の場合 設定ファイル: /etc/sysconfig/docker
+(あれば追加で、なければ作成)
+echo other_args=&quot;-g /mnt/extra/docker&quot; &gt; /etc/sysconfig/docker debian系の場合 設定ファイル: /etc/default/docker</p>
+<h1 id="docker_optsquot-dns-8888--dns-8844quot-docker_optsquot-dns-8888--dns-8">DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4&quot; DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.</h1>
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2016/12/31/2016%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/">2016年 大晦日</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E5%A4%A7%E6%99%A6%E6%97%A5/">大晦日</a>&nbsp;
+      
+      #<a href="/tags/%E6%97%A5%E8%A8%98/">日記</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2016/12/31/2016%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2016/11/10/smaller-apks-android-%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Bapk%E3%82%92%E5%B0%8F%E3%81%95%E3%81%8F%E4%BF%9D%E3%81%A4%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/">Smaller APKs : Android におけるAPKを小さく保つためのテクニック</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/android/">Android</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      Android Performance Patterns Session にいい動画が上がっていたので、備忘録として中身を書き出しておく
+Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer  Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
+android { &hellip; buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile(&lsquo;proguard-android.txt&rsquo;), &lsquo;proguard-rules.pro&rsquo; } } } これらはアプリ内で使用していないリソースを除去してくれます。
+Multi Resources Support Android がサポートしているリソースサイズを全て揃えるとそれだけで結構な量になるので、必要なものだけ使う。
+ldpi
+mdpi から自動で作られる
+mdpi
+tvdpi
+使わない
+hdpi
+xxhdpi から自動で作られる
+xhdpi
+xxhdpi から自動で作られる
+xxhdpi
+xxxhdpi
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2016/11/10/smaller-apks-android-%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Bapk%E3%82%92%E5%B0%8F%E3%81%95%E3%81%8F%E4%BF%9D%E3%81%A4%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2016/07/21/laravel-phpunit-with-clean-database./">Laravel :: phpunit with clean database.</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/sqlite/">sqlite</a>&nbsp;
+      
+      #<a href="/tags/laravel/">laravel</a>&nbsp;
+      
+      #<a href="/tags/phpunit/">phpunit</a>&nbsp;
+      
+      #<a href="/tags/postgresql/">PostgreSQL</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      Laravel + postgresSQLを使ったサイトで unit test を書いてたが、既存のデータベースを使うと、テストが意図しない挙動になることがあったので、汚れていないDBを使いたくなったので、調べてやってみたら、意外と詰まってしまったという話。
+環境 sqlite in memory database を使う方法  config/database.php config/database.php phpunit.xml TestCase.php   Sqliteでエラーがでる場合の対処1  Driver not found ALTER TABLE SYNTAX ERROR   Sqliteでエラーがでる場合の対処2  環境  laravel 5.x PostgreSQL  sqlite in memory database を使う方法 config/database.php 環境変数で default 値を差し替えれるようにする
+&lsquo;default&rsquo; =&gt; env(&lsquo;DB_DEFAULT&rsquo;, &lsquo;pgsql&rsquo;), config/database.php memory database の定義を作る
+&lsquo;sqlite_testing&rsquo; =&gt; [ &lsquo;driver&rsquo; =&gt; &lsquo;sqlite&rsquo;, &lsquo;database&rsquo; =&gt; &lsquo;:memory:', &lsquo;prefix&rsquo; =&gt; &lsquo;', ], phpunit.xml 環境変数追加。環境変数を与える方法は別に何でも良い。
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2016/07/21/laravel-phpunit-with-clean-database./">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2016/07/02/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B46%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/">[読書メーター] 2016年6月まとめ</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2016/07/02/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B46%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="pagination">
+  <div class="pagination__buttons">
+    
+      <span class="button previous">
+        <a href="/posts/page/2/">
+          <span class="button__icon">←</span>
+          <span class="button__text">Newer posts</span>
+        </a>
+      </span>
+    
+    
+      <span class="button next">
+        <a href="/posts/page/4/">
+          <span class="button__text">Older posts</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Hello! Allo! こんにちは!! :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Hello! Allo! こんにちは!!
+"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Hello! Allo! こんにちは!! :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="Hello! Allo! こんにちは!!
+" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="/top.jpg">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Hello! Allo! こんにちは!! :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="Hello! Allo! こんにちは!!
+" />
+<meta property="og:url" content="/posts/" />
+<meta property="og:site_name" content="Hello! Allo! こんにちは!!" />
+<meta property="og:image" content="/top.jpg">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="callas1900.net" />
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="posts">
+  
+  
+
+  
+  
+  
+  
+
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/">Oracle 10g Express Edition でチト困った</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/oracle/">Oracle</a>&nbsp;
+      
+      #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      Oracle 10g Express Edition　は
+AL32UTF8 WE8MSWIN1252  のみのCHARACTER SETしか使用できない
+資料：
+Oracle® Database Express Edition
+10 Oracle Database XE Character and Language Configurations
+これで非常に困った。
+現在数社で連携をとってＷｅｂアプリを開発しているのだけど、
+他社が作った機能の検証用テストデータとしてINSERT文が書かれたSQLファイルを送付してもらった。
+いざINSERTしてみると、
+ORA-12899:
+列&quot;hoge”.“foo”.“bar&quot;の値が大きすぎます
+(実際: 60、最大: 40)
+とOracleに怒られ、データが入らない箇所がある。
+慌てて文字数をカウントしたが、データに間違いはない。
+これはなんだ？と思ったところで、
+思い当たったのが、DBモデルのバージョンが違うのではないか？ということ
+誤解を招く言い方かもしれないので補足を書くと、
+上記の違いとはDBのバージョンが違うという意味ではない、
+今回のプロジェクトでは（あってはならないことなんだけども）、
+客先要求の追加などで、テーブルの名前が変わったり、テーブル自体が消えてたりなどの数回のモデルチェンジが行われているのだ。
+そして何度かデータの最大文字数も変更されている。
+数社で連携をとって開発している中でのモデルチェンジだったので、
+もしかしたら各社でバージョンが違うのではないのか？
+そのバージョンでは文字数定義が違うのではないか？と思った。
+細かい敬意を省くために結果を述べると**「モデルのバージョンは同じ」**だった。
+原因は弊社と他社のDBの差にあったのだ。
+私の会社ではWindows版のOracle10gサーバーが見つからなかったので、
+他社検証用として急いでOracle10g Express Editionを導入した。
+無料で使える10gということでワクワクしながら環境構築していったのだが、
+構築過程でサービス名が一つしか設定できないことを知る。
+まぁこれは、今回プロジェクト限りで潰してもいいDBなので、問題はない。
+それから上記の問題の発生である。
+XEのインストールウィザードで文字コードの選択が出てこなかったので考えてなかったのだけど
+（浅薄だなぁ・・・）
+文字コードの差が問題だということが結果としてわかった。
+現在Oracle10g正式版は何種類かの文字コードをカバーしている。
+そしてデフォルトインストールすると、文字コードは**SHIFT_JIS（JA16SJIS）**になるのだが、
+10gXEは**UTF8（AL32UTF8）**がデフォルトだ、
+仕様書 を見ると、WE8MSWIN1252というコードも選択出来るそうなのだがこの文字コード自体初見である。
+じゃあ、何が困るのか？
+プログラマな人はとっくに原因なんて分かっていると思うけど、
+プログラマじゃない人も世の中にはいるわけで・・・説明を続けると、
+どうやら今回のプロジェクトにおいて10gを使用している所はすべてSHIFT_JISで設計されている。
+（日本国内のイントラネット的なＷｅｂシステムなのでこれはまぁ、いいんじゃないかな･･･怒る人もいるだろうけど）
+そうすると型VARCHAR2での日本語全角20文字MAX文字数の設計のは
+VARCHAR2 = 40[Byte]
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2007/12/05/toolcvs-for-nt-2.5.03%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/">[Tool]CVS for NT 2.5.03インストールメモ</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/tool/">Tool</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      インストール環境
+サーバーサイド・クライアントサイド共に　WindowsXP
+CVSには「CVS for NT」を仕様（Verは2.5.03）
+下記にてDL（右端にある）
+[CVS
+](<a href="http://www.march-hare.com/cvspro/prods.asp?lang=JP">http://www.march-hare.com/cvspro/prods.asp?lang=JP</a> “CVS”)
+実行後ウィザード内で
+【Select Components】の画面で【Server Components】にチェックを入れる
+他はデフォルトインストール
+（考えるの面倒だったらFullインストールすればOK)
+環境変数「Path」にCVS for NT のインストールディレクトリが追加されていることを確認
+コントロールパネルの中に「CVS NT Server」なるものが出来上がっているので、
+それをダブルクリック。
+【Repository Configuration】なるタブがあるのでそれを選択。
+【ADD】ボタンから新規作成
+Location　：　CVS管理したいフォルダをインストール Name　：　上記が入れば勝手にデフォルトが入力されるのでそれを採用 Description　：　適当    「適用」を押すと、initialize するか聞いてくるのでOK
+この作業が終わると、Location先のフォルダに「CVSROOT」というフォルダが出来る。
+コマンドプロンプトを起動してパスワードを設定。
+C:\適当なディレクトリ&gt;cvs -d c:\hogehoge\hoge passwd -r Administrator -a user01
+Adding user user01
+New Password: [作成するユーザ(user01)のパスワードを入力]
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2007/12/05/toolcvs-for-nt-2.5.03%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2007/11/07/flashlaszlo%E3%82%88%E7%B4%8D%E5%93%81%E5%BE%8C%E3%81%AE%E6%9A%87%E3%81%AA%E6%99%82%E9%96%93%E3%82%92%E8%BF%94%E3%81%9B/">[Flash]Laszloよ、納品後の暇な時間を返せ。</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/flash/">Flash</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      昨日納品が一端終わって今日は暇だ。
+といっても納品先から何をいってくるかわからないので待機状態なんだけどね。
+ついでに言うと、明日からまた忙しくなる。
+そんなわけでプロジェクトの仕様書なぞを読みつつ。
+今年の初めにちょっと触ったFAME(Flashout＋ASDT＋MTASC＋Eclipse)
+でも再度触ってみようかと思いぐーぐるで検索する。
+最近またFlashに興味が出てきたのだ。
+FAMEは中々に面白い考え方だったので、
+FAMEに関するBlogの新規エントリーが増え
+FAMEコミュニティが活性化しているかと思いきや、
+あらら、全然エントリーがない、一番最近のエントリーでも2005年だよ
+どうやらFAMEははやらなかったようだ。
+（Swifmillとの組み合わせでFAMESとかいうものもあったのになぁ）
+じゃあ、EclipseでFlashを作成するような環境って今他のものはあるのだろうか？
+一番今はやっているものは何かないかなぁ？
+と
+またまたぐーぐるにて「Flash eclipse」で検索をかける。
+こんな記事を見つけた。
+Ajax，Flash，Java—オープンソースで実現するリッチクライアント 第4回
+さらに、そこからこんなものを見つけた。
+Open Laszlo （オープン・ラズロと読むらしい）
+どうやらCPLライセンスのオープンソフトみたいだ。
+CPLライセンスとは・・・麻原○晃にドッペルゲンガーである。。。
+って書いたら信者から殺されそうなので、
+とりあえず、未来永劫無料、商用利用にあたっても
+ラズロのソースコードの公開だけでいいという素晴らしいライセンスてことでOK。
+さて、オープンソースであることは非常に気にいたのだけど
+（ついでに名前の響きも面白い）
+調べてみるとこんなものがった。
+EclipseプラグインでOpenLaszlo IDEを構築する
+まさに探していたものじゃーないか！
+早速Open Laszoloをインストールする。
+これは驚くほどさっくりといけた。
+→Open Laszlo DL場所
+次にIDE4ECLIPSEをインストールしようと
+Open Laszlo用のEclipseプラグインを公開している
+alphaWorksのサイトにいってみる→ここ
+ここにあると書いてたけど・・・？あれ？無い！おいてない！
+ってことでネットの海の中血眼になって探すと
+LaszloJapanのフォーラムに情報があった
+→これ
+IDE4LASZLOのDL場所
+ふぅ、これでDLできる
+やっとこさIde4laszloをインストールできると思ったら。
+org.eclipse.emf.ecore.resource が無いとかいって怒られた。
+emf.ecoreをダウンロードしてインストール
+さて次こそインストール！
+必須:フィーチャー&quot;org.eclipse.emf.ocl(1.0.0)&quot;、または互換。
+とまた怒られた。
+要するに、emf.olcのバージョン1.0.0が足りてねーっていうことだ
+エラーワードでググってみると、あるブログに以下プラグインを全部インストールすると解決したとあったのでぶちこむ。
+org.eclipse.emf.ocl org.eclipse.emf.query org.eclipse.emf.validation org.eclipse.emf.transaction  さーインストールだ。
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2007/11/07/flashlaszlo%E3%82%88%E7%B4%8D%E5%93%81%E5%BE%8C%E3%81%AE%E6%9A%87%E3%81%AA%E6%99%82%E9%96%93%E3%82%92%E8%BF%94%E3%81%9B/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2007/11/07/%E3%81%AA%E3%82%93%E3%81%A0%E3%81%8Bblogger%E3%81%AE%E8%AA%BF%E5%AD%90%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84/">なんだかBloggerの調子がおかしい？</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/blogger/">Blogger</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2007/11/07/%E3%81%AA%E3%82%93%E3%81%A0%E3%81%8Bblogger%E3%81%AE%E8%AA%BF%E5%AD%90%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2007/11/07/%E3%81%AA%E3%82%93%E3%81%A0%E3%81%8Bblogger%E3%81%AE%E8%AA%BF%E5%AD%90%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84/">なんだかBloggerの調子がおかしい？</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/blogger/">Blogger</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2007/11/07/%E3%81%AA%E3%82%93%E3%81%A0%E3%81%8Bblogger%E3%81%AE%E8%AA%BF%E5%AD%90%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="pagination">
+  <div class="pagination__buttons">
+    
+      <span class="button previous">
+        <a href="/posts/page/26/">
+          <span class="button__icon">←</span>
+          <span class="button__text">Newer posts</span>
+        </a>
+      </span>
+    
+    
+      <span class="button next">
+        <a href="/posts/page/28/">
+          <span class="button__text">Older posts</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

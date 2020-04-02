@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>/var/lib/docker の移動 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="docker のホストマシン容量不足対策。
+docker をインストール後稼働していると、ディスクが足りなくなることがあります。
+いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。
+外部ディスクマウント後の容量食う /var/lib/docker の移動の仕方に関して記します。
+ docker 停止 /var/lib/docker を移す 設定ファイル変更  redhat系の場合 debian系の場合 ubuntu 16 の場合   docker 再起動 &amp;amp; 確認  docker 停止 sudo service docker stop /var/lib/docker を移す ディスク容量に余裕がある場所に /var/lib/docker を移す。(ここでは例として /mnt/extra/docker とする)
+インストール直後ぐらいなら、mv で、
+安全にやりたいなら
+mkdir /mnt/extra/docker sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/ 設定ファイル変更 redhat系の場合 設定ファイル: /etc/sysconfig/docker
+(あれば追加で、なければ作成)
+echo other_args=&amp;quot;-g /mnt/extra/docker&amp;quot; &amp;gt; /etc/sysconfig/docker debian系の場合 設定ファイル: /etc/default/docker
+# DOCKER_OPTS=&amp;quot;-dns 8.8.8.8 -dns 8.8.4.4&amp;quot; DOCKER_OPTS=&amp;quot;-dns 8.8.8.8 -dns 8."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="/var/lib/docker の移動 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="docker のホストマシン容量不足対策。
+docker をインストール後稼働していると、ディスクが足りなくなることがあります。
+いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。
+外部ディスクマウント後の容量食う /var/lib/docker の移動の仕方に関して記します。
+ docker 停止 /var/lib/docker を移す 設定ファイル変更  redhat系の場合 debian系の場合 ubuntu 16 の場合   docker 再起動 &amp;amp; 確認  docker 停止 sudo service docker stop /var/lib/docker を移す ディスク容量に余裕がある場所に /var/lib/docker を移す。(ここでは例として /mnt/extra/docker とする)
+インストール直後ぐらいなら、mv で、
+安全にやりたいなら
+mkdir /mnt/extra/docker sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/ 設定ファイル変更 redhat系の場合 設定ファイル: /etc/sysconfig/docker
+(あれば追加で、なければ作成)
+echo other_args=&amp;quot;-g /mnt/extra/docker&amp;quot; &amp;gt; /etc/sysconfig/docker debian系の場合 設定ファイル: /etc/default/docker
+# DOCKER_OPTS=&amp;quot;-dns 8.8.8.8 -dns 8.8.4.4&amp;quot; DOCKER_OPTS=&amp;quot;-dns 8.8.8.8 -dns 8." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="/var/lib/docker の移動 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="docker のホストマシン容量不足対策。
+docker をインストール後稼働していると、ディスクが足りなくなることがあります。
+いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。
+外部ディスクマウント後の容量食う /var/lib/docker の移動の仕方に関して記します。
+ docker 停止 /var/lib/docker を移す 設定ファイル変更  redhat系の場合 debian系の場合 ubuntu 16 の場合   docker 再起動 &amp;amp; 確認  docker 停止 sudo service docker stop /var/lib/docker を移す ディスク容量に余裕がある場所に /var/lib/docker を移す。(ここでは例として /mnt/extra/docker とする)
+インストール直後ぐらいなら、mv で、
+安全にやりたいなら
+mkdir /mnt/extra/docker sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/ 設定ファイル変更 redhat系の場合 設定ファイル: /etc/sysconfig/docker
+(あれば追加で、なければ作成)
+echo other_args=&amp;quot;-g /mnt/extra/docker&amp;quot; &amp;gt; /etc/sysconfig/docker debian系の場合 設定ファイル: /etc/default/docker
+# DOCKER_OPTS=&amp;quot;-dns 8.8.8.8 -dns 8.8.4.4&amp;quot; DOCKER_OPTS=&amp;quot;-dns 8.8.8.8 -dns 8." />
+<meta property="og:url" content="/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/" />
+<meta property="og:site_name" content="/var/lib/docker の移動" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2017-01-25 01:20:00 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2017/01/25/var/lib/docker-%E3%81%AE%E7%A7%BB%E5%8B%95/">/var/lib/docker の移動</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2017-01-25
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/linux/">Linux</a>&nbsp;
+    
+    #<a href="/tags/docker/">docker</a>&nbsp;
+    
+    #<a href="/tags/ubuntu16/">ubuntu16</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>docker のホストマシン容量不足対策。</p>
+<p>docker をインストール後稼働していると、ディスクが足りなくなることがあります。<br>
+いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。<br>
+外部ディスクマウント後の容量食う /var/lib/docker の移動の仕方に関して記します。</p>
+<ul>
+<li><a href="#docker-%E5%81%9C%E6%AD%A2">docker 停止</a></li>
+<li><a href="#varlibdocker-%E3%82%92%E7%A7%BB%E3%81%99">/var/lib/docker を移す</a></li>
+<li><a href="#%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%A4%89%E6%9B%B4">設定ファイル変更</a>
+<ul>
+<li><a href="#redhat%E7%B3%BB%E3%81%AE%E5%A0%B4%E5%90%88">redhat系の場合</a></li>
+<li><a href="#debian%E7%B3%BB%E3%81%AE%E5%A0%B4%E5%90%88">debian系の場合</a></li>
+<li><a href="#ubuntu-16-%E3%81%AE%E5%A0%B4%E5%90%88">ubuntu 16 の場合</a></li>
+</ul>
+</li>
+<li><a href="#docker-%E5%86%8D%E8%B5%B7%E5%8B%95-%E7%A2%BA%E8%AA%8D">docker 再起動 &amp; 確認</a></li>
+</ul>
+<h1 id="docker-停止">docker 停止</h1>
+<pre><code>sudo service docker stop
+</code></pre><h1 id="varlibdocker-を移す">/var/lib/docker を移す</h1>
+<p>ディスク容量に余裕がある場所に /var/lib/docker を移す。(ここでは例として <code>/mnt/extra/docker</code> とする)<br>
+インストール直後ぐらいなら、<code>mv</code> で、<br>
+安全にやりたいなら</p>
+<pre><code>mkdir /mnt/extra/docker  
+sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/
+</code></pre><h1 id="設定ファイル変更">設定ファイル変更</h1>
+<h2 id="redhat系の場合">redhat系の場合</h2>
+<p>設定ファイル: /etc/sysconfig/docker<br>
+(あれば追加で、なければ作成)</p>
+<pre><code>echo other_args=&quot;-g /mnt/extra/docker&quot; &gt; /etc/sysconfig/docker
+</code></pre><h2 id="debian系の場合">debian系の場合</h2>
+<p>設定ファイル: /etc/default/docker</p>
+<pre><code># DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4&quot;  
+DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4 -g /mnt/extra/docker&quot;
+</code></pre><p>と書かれていますが、手前の ubuntu 16 では動きませんでしたので</p>
+<h2 id="ubuntu-16-の場合">ubuntu 16 の場合</h2>
+<p>設定ファイル: /lib/systemd/system/docker.service</p>
+<pre><code># ExecStart=/usr/bin/dockerd -H fd://  
+ExecStart=/usr/bin/dockerd -g /mnt/extra/docker -H fd://
+</code></pre><p>その後、</p>
+<pre><code>sudo systemctl daemon-reload
+</code></pre><h1 id="docker-再起動--確認">docker 再起動 &amp; 確認</h1>
+<pre><code>sudo service docker start
+</code></pre><p>確認は</p>
+<pre><code>docker info
+</code></pre><p>の <code>Root Dir:</code> の項目を見れば良い</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2017/12/31/2017-%E5%A4%A7%E6%99%A6%E6%97%A5/">
+          <span class="button__icon">←</span>
+          <span class="button__text">2017 大晦日</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2016/12/31/2016%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/">
+          <span class="button__text">2016年 大晦日</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

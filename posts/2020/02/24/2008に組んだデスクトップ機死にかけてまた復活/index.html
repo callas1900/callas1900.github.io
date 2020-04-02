@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>2008に組んだデスクトップ機、死にかけてまた復活 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="数日前からデスクトップの調子が悪かったので、休日暇なのでチェック 症状としては、起動しても音がするだけで何も表示されない。 まったく何も。最初のBIOS画面すら出ない。
+完全死亡を疑いつつ、クリーニングしてから起動して音を聞いていると、 なんか動いている感じがするので、ルーターをチェックしたら、きちんとIPが振られていた。
+sshでアクセス成功したので、中身チェック。 ファイルシステムは生きているみたいなので、大急ぎでバックアップをとろうと、USB外部ストレージを挿すがmediaの下にマウントされない。
+fdisk -l | less でディスクを調べ、
+sudo mount /dev/sdbb1 /media/usb/SOTRAGE でいつもの場所にマウント。
+バックアップ完了後に、調査継続。 ディスプレイに別PCを接続してみると、認識したので、ディスプレイではない。 sshでの接続もできたので、linux側ではない。 ケーブルに傷が入っているかと確認したがなし。 ビデオカードが怪しいなとチェック。
+inxi -G Graphics: Card: Failed to Detect Video Card! Display Server: X.org 1.16.4 driver: nvidia tty size: 100x29 Advanced Data: N/A out of X ビンゴ。 使ってるビデオカードがGTS450と古いやつなので。 秋葉原でもジャンクで売っているかどうか。。
+一応掃除しとこうかと、詰まってたほこりを除去。
+除去後、接続したら、動きました。 こまめに掃除しないといけませんね。"/>
+<meta name="keywords" content=", "/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2020/02/24/2008%E3%81%AB%E7%B5%84%E3%82%93%E3%81%A0%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%A9%9F%E6%AD%BB%E3%81%AB%E3%81%8B%E3%81%91%E3%81%A6%E3%81%BE%E3%81%9F%E5%BE%A9%E6%B4%BB/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="2008に組んだデスクトップ機、死にかけてまた復活 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="数日前からデスクトップの調子が悪かったので、休日暇なのでチェック 症状としては、起動しても音がするだけで何も表示されない。 まったく何も。最初のBIOS画面すら出ない。
+完全死亡を疑いつつ、クリーニングしてから起動して音を聞いていると、 なんか動いている感じがするので、ルーターをチェックしたら、きちんとIPが振られていた。
+sshでアクセス成功したので、中身チェック。 ファイルシステムは生きているみたいなので、大急ぎでバックアップをとろうと、USB外部ストレージを挿すがmediaの下にマウントされない。
+fdisk -l | less でディスクを調べ、
+sudo mount /dev/sdbb1 /media/usb/SOTRAGE でいつもの場所にマウント。
+バックアップ完了後に、調査継続。 ディスプレイに別PCを接続してみると、認識したので、ディスプレイではない。 sshでの接続もできたので、linux側ではない。 ケーブルに傷が入っているかと確認したがなし。 ビデオカードが怪しいなとチェック。
+inxi -G Graphics: Card: Failed to Detect Video Card! Display Server: X.org 1.16.4 driver: nvidia tty size: 100x29 Advanced Data: N/A out of X ビンゴ。 使ってるビデオカードがGTS450と古いやつなので。 秋葉原でもジャンクで売っているかどうか。。
+一応掃除しとこうかと、詰まってたほこりを除去。
+除去後、接続したら、動きました。 こまめに掃除しないといけませんね。" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="2008に組んだデスクトップ機、死にかけてまた復活 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="数日前からデスクトップの調子が悪かったので、休日暇なのでチェック 症状としては、起動しても音がするだけで何も表示されない。 まったく何も。最初のBIOS画面すら出ない。
+完全死亡を疑いつつ、クリーニングしてから起動して音を聞いていると、 なんか動いている感じがするので、ルーターをチェックしたら、きちんとIPが振られていた。
+sshでアクセス成功したので、中身チェック。 ファイルシステムは生きているみたいなので、大急ぎでバックアップをとろうと、USB外部ストレージを挿すがmediaの下にマウントされない。
+fdisk -l | less でディスクを調べ、
+sudo mount /dev/sdbb1 /media/usb/SOTRAGE でいつもの場所にマウント。
+バックアップ完了後に、調査継続。 ディスプレイに別PCを接続してみると、認識したので、ディスプレイではない。 sshでの接続もできたので、linux側ではない。 ケーブルに傷が入っているかと確認したがなし。 ビデオカードが怪しいなとチェック。
+inxi -G Graphics: Card: Failed to Detect Video Card! Display Server: X.org 1.16.4 driver: nvidia tty size: 100x29 Advanced Data: N/A out of X ビンゴ。 使ってるビデオカードがGTS450と古いやつなので。 秋葉原でもジャンクで売っているかどうか。。
+一応掃除しとこうかと、詰まってたほこりを除去。
+除去後、接続したら、動きました。 こまめに掃除しないといけませんね。" />
+<meta property="og:url" content="/posts/2020/02/24/2008%E3%81%AB%E7%B5%84%E3%82%93%E3%81%A0%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%A9%9F%E6%AD%BB%E3%81%AB%E3%81%8B%E3%81%91%E3%81%A6%E3%81%BE%E3%81%9F%E5%BE%A9%E6%B4%BB/" />
+<meta property="og:site_name" content="2008に組んだデスクトップ機、死にかけてまた復活" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-02-24 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2020/02/24/2008%E3%81%AB%E7%B5%84%E3%82%93%E3%81%A0%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%A9%9F%E6%AD%BB%E3%81%AB%E3%81%8B%E3%81%91%E3%81%A6%E3%81%BE%E3%81%9F%E5%BE%A9%E6%B4%BB/">2008に組んだデスクトップ機、死にかけてまた復活</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2020-02-24
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/lmde2/">lmde2</a>&nbsp;
+    
+    #<a href="/tags/%E4%BF%AE%E7%90%86/">修理</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>数日前からデスクトップの調子が悪かったので、休日暇なのでチェック
+症状としては、起動しても音がするだけで何も表示されない。
+まったく何も。最初のBIOS画面すら出ない。</p>
+<p>完全死亡を疑いつつ、クリーニングしてから起動して音を聞いていると、
+なんか動いている感じがするので、ルーターをチェックしたら、きちんとIPが振られていた。</p>
+<p>sshでアクセス成功したので、中身チェック。
+ファイルシステムは生きているみたいなので、大急ぎでバックアップをとろうと、USB外部ストレージを挿すがmediaの下にマウントされない。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">fdisk -l | less
+</code></pre></div><p>でディスクを調べ、</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo mount /dev/sdbb1 /media/usb/SOTRAGE
+</code></pre></div><p>でいつもの場所にマウント。</p>
+<p>バックアップ完了後に、調査継続。
+ディスプレイに別PCを接続してみると、認識したので、ディスプレイではない。
+sshでの接続もできたので、linux側ではない。
+ケーブルに傷が入っているかと確認したがなし。
+ビデオカードが怪しいなとチェック。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">inxi -G
+Graphics:  Card: Failed to Detect Video Card!
+           Display Server: X.org 1.16.4 driver: nvidia
+           tty size: 100x29 Advanced Data: N/A out of X
+</code></pre></div><p>ビンゴ。
+使ってるビデオカードがGTS450と古いやつなので。
+秋葉原でもジャンクで売っているかどうか。。</p>
+<p>一応掃除しとこうかと、詰まってたほこりを除去。</p>
+<p>除去後、接続したら、動きました。
+こまめに掃除しないといけませんね。</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2020/03/17/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E6%80%9D%E8%80%83%E5%85%A5%E9%96%80%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0%E3%81%BE%E3%81%A8%E3%82%81/">
+          <span class="button__icon">←</span>
+          <span class="button__text">「エンジニアのためのデザイン思考入門」を読んだまとめ</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2020/02/09/linux-mint-re-setup-after-clean-installation/">
+          <span class="button__text">linux mint re-setup after clean installation</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

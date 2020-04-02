@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>ActionScriptと高等言語 :: callas1900.net — A simple page of mine</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="ActionScriptと高等言語
+月曜日の朝、日曜日に生まれて初めてFPSというものを経験し、疲れ目の莫迦です。
+さてちょっと思ったことを書き込み
+人間には人間の、
+PCにはPCの言葉がある。
+プログラムの世界において、人間語とは基本的に英語のことを指す。
+プログラムの言葉は16進数や2進数で表されるような機械語を意味する。
+この機械語だが、非常にロジカル過ぎて、
+正直人間には理解しがたいものだ、
+同じく、ファージー過ぎて人間語を理解できる機械は少ない。
+いや、機械が直接理解できるということは無い。
+そこでPCに仕事をさせたい時には翻訳機を使う。
+それがプログラミング言語である。
+プログラミング言語は種々様々であり、その中でも人間語（英語）に比較的近い文法を持つものが高等言語とされる。
+さらにここからオブジェクト指向言語やらなんやらと細分化されていく。
+また、簡易化したり、複雑化したり時と使用目的ごとに高等言語は増えていく。
+しかしながら、その根幹は機械語であり、それを英語で分かりやすく表記するという考え自体に変更はない。
+なので、一つの高等言語をある程度理解すると
+「プログラム的な思考回路」が脳内に出来上がる。
+そして、他のプログラム言語を見た時にもそれを
+「一般の人よりは理解しやすい」脳になっている。
+それを繰り返していくごとに、プログラムのしたいことが見え、初見のプログラムでもある程度動かせてしまう。
+それが一般的なプログラマーに求められる経験値である。
+さて、今現在出向先の仕事でJavaと社内の仕事でActionScriptをしている。
+双方初めての言語であった。
+ただ、私にはJavaScriptという言語への知識とVB.NEtに関する知識が事前にあった。
+JavaScriptは突き詰めれば完全にプログラムと言ってもいいのだが、
+深い段階までいかないとただのお遊び言語である。
+（JavaScriptは今一番負のポテンシャルを期待されて注目されている言語でもある。）
+VB.NETは完全にオブジェクト指向言語である。
+JavaScriptはJavaをベースに簡易化されたものであり、
+ActionScriptはJavaScriptを基盤としてFlash用に作成された言語である。
+派生されていく言語は親子兄弟のような関係といってもよい、
+そういう親類縁者から攻めていくと使える言語の幅は急激に広まる。
+なので・・・先輩頼むから勉強してください！
+気になった記事
+最近の大学生は携帯メールでレポートを書くらしい
+オレにはムリ
+アップルのMacBookが爆発炎上
+あらぁ・・・リンゴ爆発・・・
+悪意のJavaScriptで情報が漏えい
+XSSの脆弱性ってこんだけ警告されてるのに消えないなぁ
+番外編第2回 赤坂さん、Flashを攻める！
+ほのぼのとアプリなんかの脆弱性を照会するシリーズ
+ほのぼのしてるけど、やってることは超コエー
+しかし・・・Httpヘッダーってなんだ・・・
+いや、よく聞くけど実際なんのことだか知らないーー；
+よく聞くってことは「常識」ってことだよね。
+調べよ・・
+追記：
+HTTPヘッダーとは
+→リンク先参照
+中身を参照したければ
+→リンク先参照（Proxomitron-J）"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/2007/03/13/actionscript%E3%81%A8%E9%AB%98%E7%AD%89%E8%A8%80%E8%AA%9E/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="ActionScriptと高等言語 :: callas1900.net — A simple page of mine" />
+<meta name="twitter:description" content="ActionScriptと高等言語
+月曜日の朝、日曜日に生まれて初めてFPSというものを経験し、疲れ目の莫迦です。
+さてちょっと思ったことを書き込み
+人間には人間の、
+PCにはPCの言葉がある。
+プログラムの世界において、人間語とは基本的に英語のことを指す。
+プログラムの言葉は16進数や2進数で表されるような機械語を意味する。
+この機械語だが、非常にロジカル過ぎて、
+正直人間には理解しがたいものだ、
+同じく、ファージー過ぎて人間語を理解できる機械は少ない。
+いや、機械が直接理解できるということは無い。
+そこでPCに仕事をさせたい時には翻訳機を使う。
+それがプログラミング言語である。
+プログラミング言語は種々様々であり、その中でも人間語（英語）に比較的近い文法を持つものが高等言語とされる。
+さらにここからオブジェクト指向言語やらなんやらと細分化されていく。
+また、簡易化したり、複雑化したり時と使用目的ごとに高等言語は増えていく。
+しかしながら、その根幹は機械語であり、それを英語で分かりやすく表記するという考え自体に変更はない。
+なので、一つの高等言語をある程度理解すると
+「プログラム的な思考回路」が脳内に出来上がる。
+そして、他のプログラム言語を見た時にもそれを
+「一般の人よりは理解しやすい」脳になっている。
+それを繰り返していくごとに、プログラムのしたいことが見え、初見のプログラムでもある程度動かせてしまう。
+それが一般的なプログラマーに求められる経験値である。
+さて、今現在出向先の仕事でJavaと社内の仕事でActionScriptをしている。
+双方初めての言語であった。
+ただ、私にはJavaScriptという言語への知識とVB.NEtに関する知識が事前にあった。
+JavaScriptは突き詰めれば完全にプログラムと言ってもいいのだが、
+深い段階までいかないとただのお遊び言語である。
+（JavaScriptは今一番負のポテンシャルを期待されて注目されている言語でもある。）
+VB.NETは完全にオブジェクト指向言語である。
+JavaScriptはJavaをベースに簡易化されたものであり、
+ActionScriptはJavaScriptを基盤としてFlash用に作成された言語である。
+派生されていく言語は親子兄弟のような関係といってもよい、
+そういう親類縁者から攻めていくと使える言語の幅は急激に広まる。
+なので・・・先輩頼むから勉強してください！
+気になった記事
+最近の大学生は携帯メールでレポートを書くらしい
+オレにはムリ
+アップルのMacBookが爆発炎上
+あらぁ・・・リンゴ爆発・・・
+悪意のJavaScriptで情報が漏えい
+XSSの脆弱性ってこんだけ警告されてるのに消えないなぁ
+番外編第2回 赤坂さん、Flashを攻める！
+ほのぼのとアプリなんかの脆弱性を照会するシリーズ
+ほのぼのしてるけど、やってることは超コエー
+しかし・・・Httpヘッダーってなんだ・・・
+いや、よく聞くけど実際なんのことだか知らないーー；
+よく聞くってことは「常識」ってことだよね。
+調べよ・・
+追記：
+HTTPヘッダーとは
+→リンク先参照
+中身を参照したければ
+→リンク先参照（Proxomitron-J）" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="ActionScriptと高等言語 :: callas1900.net — A simple page of mine">
+<meta property="og:description" content="ActionScriptと高等言語
+月曜日の朝、日曜日に生まれて初めてFPSというものを経験し、疲れ目の莫迦です。
+さてちょっと思ったことを書き込み
+人間には人間の、
+PCにはPCの言葉がある。
+プログラムの世界において、人間語とは基本的に英語のことを指す。
+プログラムの言葉は16進数や2進数で表されるような機械語を意味する。
+この機械語だが、非常にロジカル過ぎて、
+正直人間には理解しがたいものだ、
+同じく、ファージー過ぎて人間語を理解できる機械は少ない。
+いや、機械が直接理解できるということは無い。
+そこでPCに仕事をさせたい時には翻訳機を使う。
+それがプログラミング言語である。
+プログラミング言語は種々様々であり、その中でも人間語（英語）に比較的近い文法を持つものが高等言語とされる。
+さらにここからオブジェクト指向言語やらなんやらと細分化されていく。
+また、簡易化したり、複雑化したり時と使用目的ごとに高等言語は増えていく。
+しかしながら、その根幹は機械語であり、それを英語で分かりやすく表記するという考え自体に変更はない。
+なので、一つの高等言語をある程度理解すると
+「プログラム的な思考回路」が脳内に出来上がる。
+そして、他のプログラム言語を見た時にもそれを
+「一般の人よりは理解しやすい」脳になっている。
+それを繰り返していくごとに、プログラムのしたいことが見え、初見のプログラムでもある程度動かせてしまう。
+それが一般的なプログラマーに求められる経験値である。
+さて、今現在出向先の仕事でJavaと社内の仕事でActionScriptをしている。
+双方初めての言語であった。
+ただ、私にはJavaScriptという言語への知識とVB.NEtに関する知識が事前にあった。
+JavaScriptは突き詰めれば完全にプログラムと言ってもいいのだが、
+深い段階までいかないとただのお遊び言語である。
+（JavaScriptは今一番負のポテンシャルを期待されて注目されている言語でもある。）
+VB.NETは完全にオブジェクト指向言語である。
+JavaScriptはJavaをベースに簡易化されたものであり、
+ActionScriptはJavaScriptを基盤としてFlash用に作成された言語である。
+派生されていく言語は親子兄弟のような関係といってもよい、
+そういう親類縁者から攻めていくと使える言語の幅は急激に広まる。
+なので・・・先輩頼むから勉強してください！
+気になった記事
+最近の大学生は携帯メールでレポートを書くらしい
+オレにはムリ
+アップルのMacBookが爆発炎上
+あらぁ・・・リンゴ爆発・・・
+悪意のJavaScriptで情報が漏えい
+XSSの脆弱性ってこんだけ警告されてるのに消えないなぁ
+番外編第2回 赤坂さん、Flashを攻める！
+ほのぼのとアプリなんかの脆弱性を照会するシリーズ
+ほのぼのしてるけど、やってることは超コエー
+しかし・・・Httpヘッダーってなんだ・・・
+いや、よく聞くけど実際なんのことだか知らないーー；
+よく聞くってことは「常識」ってことだよね。
+調べよ・・
+追記：
+HTTPヘッダーとは
+→リンク先参照
+中身を参照したければ
+→リンク先参照（Proxomitron-J）" />
+<meta property="og:url" content="/posts/2007/03/13/actionscript%E3%81%A8%E9%AB%98%E7%AD%89%E8%A8%80%E8%AA%9E/" />
+<meta property="og:site_name" content="ActionScriptと高等言語" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2007-03-13 09:50:00 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    callas1900
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/links">Links</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/quotes">Quotes</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/links">Links</a></li>
+      
+    
+      
+        <li><a href="/posts">Posts</a></li>
+      
+    
+      
+        <li><a href="/quotes">Quotes</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/2007/03/13/actionscript%E3%81%A8%E9%AB%98%E7%AD%89%E8%A8%80%E8%AA%9E/">ActionScriptと高等言語</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2007-03-13
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/flash/">Flash</a>&nbsp;
+    
+    #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>ActionScriptと高等言語</p>
+<p>月曜日の朝、日曜日に生まれて初めてFPSというものを経験し、疲れ目の莫迦です。</p>
+<p>さてちょっと思ったことを書き込み</p>
+<p>人間には人間の、<br>
+PCにはPCの言葉がある。<br>
+プログラムの世界において、人間語とは基本的に英語のことを指す。<br>
+プログラムの言葉は16進数や2進数で表されるような機械語を意味する。</p>
+<p>この機械語だが、非常にロジカル過ぎて、<br>
+正直人間には理解しがたいものだ、<br>
+同じく、ファージー過ぎて人間語を理解できる機械は少ない。<br>
+いや、機械が直接理解できるということは無い。</p>
+<p>そこでPCに仕事をさせたい時には翻訳機を使う。<br>
+それがプログラミング言語である。<br>
+プログラミング言語は種々様々であり、その中でも人間語（英語）に比較的近い文法を持つものが高等言語とされる。</p>
+<p>さらにここからオブジェクト指向言語やらなんやらと細分化されていく。<br>
+また、簡易化したり、複雑化したり時と使用目的ごとに高等言語は増えていく。</p>
+<p>しかしながら、その根幹は機械語であり、それを英語で分かりやすく表記するという考え自体に変更はない。</p>
+<p>なので、一つの高等言語をある程度理解すると<br>
+「プログラム的な思考回路」が脳内に出来上がる。</p>
+<p>そして、他のプログラム言語を見た時にもそれを<br>
+「一般の人よりは理解しやすい」脳になっている。</p>
+<p>それを繰り返していくごとに、プログラムのしたいことが見え、初見のプログラムでもある程度動かせてしまう。</p>
+<p>それが一般的なプログラマーに求められる経験値である。</p>
+<p>さて、今現在出向先の仕事でJavaと社内の仕事でActionScriptをしている。<br>
+双方初めての言語であった。<br>
+ただ、私にはJavaScriptという言語への知識とVB.NEtに関する知識が事前にあった。</p>
+<p>JavaScriptは突き詰めれば完全にプログラムと言ってもいいのだが、<br>
+深い段階までいかないとただのお遊び言語である。<br>
+（JavaScriptは今一番負のポテンシャルを期待されて注目されている言語でもある。）</p>
+<p>VB.NETは完全にオブジェクト指向言語である。</p>
+<p>JavaScriptはJavaをベースに簡易化されたものであり、<br>
+ActionScriptはJavaScriptを基盤としてFlash用に作成された言語である。</p>
+<p>派生されていく言語は親子兄弟のような関係といってもよい、<br>
+そういう親類縁者から攻めていくと使える言語の幅は急激に広まる。</p>
+<p>なので・・・先輩頼むから勉強してください！</p>
+<p>気になった記事</p>
+<p><a href="http://www.atmarkit.co.jp/news/200703/09/mail.html" title="最近の大学生は携帯メールでレポートを書くらしい">最近の大学生は携帯メールでレポートを書くらしい</a><br>
+オレにはムリ</p>
+<p><a href="http://gigazine.net/index.php?/news/comments/20070313_macbook_inferno/" title="アップルのMacBookが爆発炎上">アップルのMacBookが爆発炎上</a><br>
+あらぁ・・・リンゴ爆発・・・</p>
+<p><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20070307/264131/?ST=security" title="悪意のJavaScriptで情報が漏えい">悪意のJavaScriptで情報が漏えい</a><br>
+XSSの脆弱性ってこんだけ警告されてるのに消えないなぁ</p>
+<p><a href="http://www.atmarkit.co.jp/fsecurity/rensai/hoshinoex02/hoshinoex01.html" title="番外編第2回 赤坂さん、Flashを攻める！">番外編第2回 赤坂さん、Flashを攻める！</a><br>
+ほのぼのとアプリなんかの脆弱性を照会するシリーズ<br>
+ほのぼのしてるけど、やってることは超コエー</p>
+<p>しかし・・・Httpヘッダーってなんだ・・・<br>
+いや、よく聞くけど実際なんのことだか知らないーー；<br>
+よく聞くってことは「常識」ってことだよね。<br>
+調べよ・・</p>
+<p>追記：<br>
+HTTPヘッダーとは<br>
+<a href="http://www.studyinghttp.net/header" title="→リンク先参照">→リンク先参照</a></p>
+<p>中身を参照したければ<br>
+<a href="http://www.pluto.dti.ne.jp/%7Etengu/proxomitron/download.html" title="→リンク先参照（Proxomitron-J）">→リンク先参照（Proxomitron-J）</a></p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/2007/03/14/flashfame%E7%92%B0%E5%A2%83%E3%81%A7xml%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF/">
+          <span class="button__icon">←</span>
+          <span class="button__text">[Flash]FAME環境でXML読み込み</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2007/03/09/misstake%E6%97%A5%E8%A8%98%E5%A4%B1%E6%95%97%E3%81%A8%E6%88%92%E3%82%81%E3%81%A8%E5%BE%A9%E6%B4%BB/">
+          <span class="button__text">[misstake][日記]失敗と戒めと復活</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
