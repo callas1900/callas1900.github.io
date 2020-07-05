@@ -6,24 +6,7 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="Android 4.2 (JELLY_BEAN_MR1) が出ましたので、恒例のsignatureがらみのPermission比較したいと思います。
-前回までのPermission比較は
- ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係）  にあります。
-何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
-これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
-メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
-通常出来ません。
-よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
-Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
-JB と JB MR1 のプロテクションレベルの一覧比較 JB
- dangerous signature|system normal signature signature|system|development signatureOrSystem  JB MR1
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  増えた？と思ったらパイプラインで区切られたフラグの順番が逆転していただけでした。
-これは signature|system と同一ですね。
-しかし signatureOrSystem の件といい、段々適当になってきてる気がする。
-Permission増減調査(JB(4.1) &amp;gt; JB MR1(4.2)) [signature]  これはメーカー署名がないと使用出来ないもの
- &#43; android.permission.BLUETOOTH_STACK
-android.permission.ACCOUNT_MANAGER
-android.permission.HARDWARE_TEST"/>
+<meta name="description" content="大変勉強になりました。ありがとうございます(^-^)/ 匿名 - Feb 5, 2013大変勉強になりました。ありがとうございます(^-^)/"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/" />
@@ -46,24 +29,7 @@ android.permission.HARDWARE_TEST"/>
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine" />
-<meta name="twitter:description" content="Android 4.2 (JELLY_BEAN_MR1) が出ましたので、恒例のsignatureがらみのPermission比較したいと思います。
-前回までのPermission比較は
- ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係）  にあります。
-何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
-これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
-メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
-通常出来ません。
-よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
-Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
-JB と JB MR1 のプロテクションレベルの一覧比較 JB
- dangerous signature|system normal signature signature|system|development signatureOrSystem  JB MR1
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  増えた？と思ったらパイプラインで区切られたフラグの順番が逆転していただけでした。
-これは signature|system と同一ですね。
-しかし signatureOrSystem の件といい、段々適当になってきてる気がする。
-Permission増減調査(JB(4.1) &amp;gt; JB MR1(4.2)) [signature]  これはメーカー署名がないと使用出来ないもの
- &#43; android.permission.BLUETOOTH_STACK
-android.permission.ACCOUNT_MANAGER
-android.permission.HARDWARE_TEST" />
+<meta name="twitter:description" content="大変勉強になりました。ありがとうございます(^-^)/ 匿名 - Feb 5, 2013大変勉強になりました。ありがとうございます(^-^)/" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -72,24 +38,7 @@ android.permission.HARDWARE_TEST" />
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine">
-<meta property="og:description" content="Android 4.2 (JELLY_BEAN_MR1) が出ましたので、恒例のsignatureがらみのPermission比較したいと思います。
-前回までのPermission比較は
- ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係）  にあります。
-何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
-これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
-メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
-通常出来ません。
-よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
-Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
-JB と JB MR1 のプロテクションレベルの一覧比較 JB
- dangerous signature|system normal signature signature|system|development signatureOrSystem  JB MR1
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  増えた？と思ったらパイプラインで区切られたフラグの順番が逆転していただけでした。
-これは signature|system と同一ですね。
-しかし signatureOrSystem の件といい、段々適当になってきてる気がする。
-Permission増減調査(JB(4.1) &amp;gt; JB MR1(4.2)) [signature]  これはメーカー署名がないと使用出来ないもの
- &#43; android.permission.BLUETOOTH_STACK
-android.permission.ACCOUNT_MANAGER
-android.permission.HARDWARE_TEST" />
+<meta property="og:description" content="大変勉強になりました。ありがとうございます(^-^)/ 匿名 - Feb 5, 2013大変勉強になりました。ありがとうございます(^-^)/" />
 <meta property="og:url" content="/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/" />
 <meta property="og:site_name" content="JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）" />
 <meta property="og:image" content="">
@@ -214,190 +163,10 @@ android.permission.HARDWARE_TEST" />
   
 
   <div class="post-content">
-    <p>Android 4.2 (JELLY_BEAN_MR1) が出ましたので、恒例のsignatureがらみのPermission比較したいと思います。<br>
-前回までのPermission比較は</p>
-<ul>
-<li><a href="http://blog.callas1900.net/2011/11/icsgingerbreadpermission.html">ICSとGingerbreadのPermission比較（メーカー署名関係）</a></li>
-<li><a href="http://blog.callas1900.net/2012/08/jbicspermission.html">JBとICSのPermission比較（メーカー署名関係）</a></li>
-</ul>
-<p>にあります。</p>
-<h2 id="何調べてるの">何調べてるの？</h2>
-<p>本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。<br>
-これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。</p>
-<p>メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、</p>
-<p>通常出来ません。<br>
-よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。<br>
-Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。</p>
-<h2 id="jb-と-jb-mr1-のプロテクションレベルの一覧比較">JB と JB MR1 のプロテクションレベルの一覧比較</h2>
-<p><strong>JB</strong></p>
-<ul>
-<li>dangerous</li>
-<li>signature|system</li>
-<li>normal</li>
-<li>signature</li>
-<li>signature|system|development</li>
-<li>signatureOrSystem</li>
-</ul>
-<p><strong>JB MR1</strong></p>
-<ul>
-<li>dangerous</li>
-<li>signature|system</li>
-<li>normal</li>
-<li>signature</li>
-<li>signature|system|development</li>
-<li><strong>system|signature</strong></li>
-<li>signatureOrSystem</li>
-</ul>
-<p>増えた？と思ったらパイプラインで区切られたフラグの順番が逆転していただけでした。</p>
-<p>これは signature|system と同一ですね。</p>
-<p>しかし signatureOrSystem の件といい、段々適当になってきてる気がする。</p>
-<h2 id="permission増減調査jb41--jb-mr142">Permission増減調査(JB(4.1) &gt; JB MR1(4.2))</h2>
-<h3 id="signature">[signature]</h3>
-<blockquote>
-<p>これはメーカー署名がないと使用出来ないもの</p>
-</blockquote>
-<p>+ android.permission.BLUETOOTH_STACK</p>
-<p>android.permission.ACCOUNT_MANAGER</p>
-<p>android.permission.HARDWARE_TEST</p>
-<p>android.permission.NET_ADMIN</p>
-<p>android.permission.REMOTE_AUDIO_PLAYBACK</p>
-<p>+ android.permission.INTERACT_ACROSS_USERS_FULL</p>
-<p>android.permission.GET_DETAILED_TASKS</p>
-<p>android.permission.REMOVE_TASKS</p>
-<p>android.permission.START_ANY_ACTIVITY</p>
-<p>android.permission.SET_SCREEN_COMPATIBILITY</p>
-<p>+ android.permission.ACCESS_ALL_EXTERNAL_STORAGE</p>
-<p>+ android.permission.SET_SCREEN_COMPATIBILITY</p>
-<p>android.permission.FORCE_STOP_PACKAGES</p>
-<p>android.permission.SET_PREFERRED_APPLICATIONS</p>
-<p>android.permission.ASEC_ACCESS</p>
-<p>android.permission.ASEC_CREATE</p>
-<p>android.permission.ASEC_DESTROY</p>
-<p>android.permission.ASEC_MOUNT_UNMOUNT</p>
-<p>android.permission.ASEC_RENAME</p>
-<p>android.permission.DIAGNOSTIC</p>
-<p>android.permission.STATUS_BAR_SERVICE</p>
-<p>android.permission.FORCE_BACK</p>
-<p>android.permission.INTERNAL_SYSTEM_WINDOW</p>
-<p>android.permission.MANAGE_APP_TOKENS</p>
-<p>+ android.permission.FREEZE_SCREEN</p>
-<p>android.permission.INJECT_EVENTS</p>
-<p>+ android.permission.FILTER_EVENTS</p>
-<p>+ android.permission.RETRIEVE_WINDOW_INFO</p>
-<p>+ android.permission.TEMPORARY_ENABLE_ACCESSIBILITY</p>
-<p>+ android.permission.MAGNIFY_DISPLAY</p>
-<p>android.permission.SET_ACTIVITY_WATCHER</p>
-<p>android.permission.READ_INPUT_STATE</p>
-<p>android.permission.BIND_INPUT_METHOD</p>
-<p>android.permission.BIND_ACCESSIBILITY_SERVICE</p>
-<p>android.permission.BIND_TEXT_SERVICE</p>
-<p>android.permission.BIND_VPN_SERVICE</p>
-<p>android.permission.BIND_DEVICE_ADMIN</p>
-<p>android.permission.SET_ORIENTATION</p>
-<p>android.permission.SET_POINTER_SPEED</p>
-<p>android.permission.SET_KEYBOARD_LAYOUT</p>
-<p>android.permission.CLEAR_APP_USER_DATA</p>
-<p>android.permission.GRANT_REVOKE_PERMISSIONS</p>
-<p>android.permission.ACCESS_SURFACE_FLINGER</p>
-<p>+ android.permission.CONFIGURE_WIFI_DISPLAY</p>
-<p>+ android.permission.CONTROL_WIFI_DISPLAY</p>
-<p>android.permission.BRICK</p>
-<p>android.permission.DEVICE_POWER</p>
-<p>+ android.permission.NET_TUNNELING</p>
-<p>android.permission.FACTORY_TEST</p>
-<p>android.permission.BROADCAST_PACKAGE_REMOVED</p>
-<p>android.permission.BROADCAST_SMS</p>
-<p>android.permission.BROADCAST_WAP_PUSH</p>
-<p>android.permission.CONFIRM_FULL_BACKUP</p>
-<p>android.permission.CHANGE_BACKGROUND_DATA_SETTING</p>
-<p>android.permission.GLOBAL_SEARCH_CONTROL</p>
-<p>+ android.permission.READ_DREAM_STATE</p>
-<p>+ android.permission.WRITE_DREAM_STATE</p>
-<p>android.permission.COPY_PROTECTED_DATA</p>
-<p>android.permission.MANAGE_NETWORK_POLICY</p>
-<p>android.intent.category.MASTER_CLEAR.permission.C2D_MESSAGE</p>
-<p>android.permission.BIND_PACKAGE_VERIFIER</p>
-<p>android.permission.ACCESS_CONTENT_PROVIDERS_EXTERNALLY</p>
-<h3 id="signaturesystem">[signature|system]</h3>
-<blockquote>
-<p>メーカー署名があるか、プリインストールのシステムアプリでしか使用出来ないもの</p>
-</blockquote>
-<p>android.permission.SEND_SMS_NO_CONFIRMATION</p>
-<p>android.permission.RECEIVE_EMERGENCY_BROADCAST</p>
-<p>+ android.permission.BIND_DIRECTORY_SEARCH</p>
-<p>android.permission.INSTALL_LOCATION_PROVIDER</p>
-<p>android.permission.CONNECTIVITY_INTERNAL</p>
-<p>+ android.permission.RECEIVE_DATA_ACTIVITY_CHANGE</p>
-<p>android.permission.MANAGE_USB</p>
-<p>android.permission.ACCESS_MTP</p>
-<p>android.permission.MODIFY_PHONE_STATE</p>
-<p>android.permission.READ_PRIVILEGED_PHONE_STATE</p>
-<p>android.permission.WRITE_MEDIA_STORAGE</p>
-<p>+ android.permission.MANAGE_USERS</p>
-<p>android.permission.SET_TIME</p>
-<p>android.permission.WRITE_GSERVICES</p>
-<p>android.permission.RETRIEVE_WINDOW_CONTENT</p>
-<p>android.permission.WRITE_APN_SETTINGS</p>
-<p>android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK</p>
-<p>android.permission.STATUS_BAR</p>
-<p>android.permission.UPDATE_DEVICE_STATS</p>
-<p>android.permission.SHUTDOWN</p>
-<p>android.permission.STOP_APP_SWITCHES</p>
-<p>android.permission.BIND_WALLPAPER</p>
-<p>android.permission.INSTALL_PACKAGES</p>
-<p>android.permission.DELETE_CACHE_FILES</p>
-<p>android.permission.DELETE_PACKAGES</p>
-<p>android.permission.MOVE_PACKAGE</p>
-<p>android.permission.CHANGE_COMPONENT_ENABLED_STATE</p>
-<p>android.permission.READ_FRAME_BUFFER</p>
-<p>android.permission.REBOOT</p>
-<p>android.permission.MASTER_CLEAR</p>
-<p>android.permission.CALL_PRIVILEGED</p>
-<p>android.permission.PERFORM_CDMA_PROVISIONING</p>
-<p>android.permission.CONTROL_LOCATION_UPDATES</p>
-<p>android.permission.ACCESS_CHECKIN_PROPERTIES</p>
-<p>android.permission.PACKAGE_USAGE_STATS</p>
-<p>android.permission.BACKUP</p>
-<p>android.permission.BIND_REMOTEVIEWS</p>
-<p>android.permission.BIND_APPWIDGET</p>
-<p>+ android.permission.BIND_KEYGUARD_APPWIDGET</p>
-<p>android.permission.MODIFY_APPWIDGET_BIND_PERMISSIONS</p>
-<p>android.permission.GLOBAL_SEARCH</p>
-<p>android.permission.SET_WALLPAPER_COMPONENT</p>
-<p>android.permission.ACCESS_CACHE_FILESYSTEM</p>
-<p>android.permission.CRYPT_KEEPER</p>
-<p>android.permission.READ_NETWORK_USAGE_HISTORY</p>
-<p>android.permission.MODIFY_NETWORK_ACCOUNTING</p>
-<p>android.permission.PACKAGE_VERIFICATION_AGENT</p>
-<p>+ android.permission.SERIAL_PORT</p>
-<h3 id="systemsignature">[system|signature]</h3>
-<blockquote>
-<p>[signature|system]と同じ</p>
-</blockquote>
-<p>+ <strong>android.permission.CHANGE_CONFIGURATION</strong></p>
-<p>+ android.permission.MOUNT_UNMOUNT_FILESYSTEMS</p>
-<p>+ android.permission.MOUNT_FORMAT_FILESYSTEMS</p>
-<h3 id="signaturesystemdevelopment"> [signature|system|development]</h3>
-<blockquote>
-<p>メーカー署名、システムアプリ、もしくは開発中に使用出来るもの</p>
-</blockquote>
-<p>+ android.permission.INTERACT_ACROSS_USERS</p>
-<p>+ <strong>android.permission.CHANGE_CONFIGURATION</strong></p>
-<p>android.permission.SET_ANIMATION_SCALE</p>
-<p>android.permission.WRITE_SECURE_SETTINGS</p>
-<p>android.permission.DUMP</p>
-<p>android.permission.READ_LOGS</p>
-<p>android.permission.SET_DEBUG_APP</p>
-<p>android.permission.SET_PROCESS_LIMIT</p>
-<p>android.permission.SET_ALWAYS_FINISH</p>
-<p>+ android.permission.SIGNAL_PERSISTENT_PROCESSES</p>
-<h3 id="signatureorsystem">[signatureOrSystem]</h3>
-<blockquote>
-<p>[signature|system]と同じ</p>
-</blockquote>
-<p>android.permission.UPDATE_LOCK</p>
-<h2 id="突っ込みどころ">突っ込みどころ</h2>
-<p>CHANGE_CONFIGURATIONが[system|signature] と [signature|system|development] の両方に記載されている。どっちだ？</p>
+    <h4 id="大変勉強になりましたありがとうございます-">大変勉強になりました。ありがとうございます(^-^)/</h4>
+<p><a href="%22noreply@blogger.com%22">匿名</a> - <!-- raw HTML omitted -->Feb 5, 2013<!-- raw HTML omitted --></p>
+<p>大変勉強になりました。ありがとうございます(^-^)/</p>
+<!-- raw HTML omitted -->
 
   </div>
   
@@ -410,16 +179,16 @@ Androidはバージョンアップを重ねる毎にこれら Permission の締�
     <div class="pagination__buttons">
       
       <span class="button previous">
-        <a href="/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/">
+        <a href="/posts/2013/05/01/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-3%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">
           <span class="button__icon">←</span>
-          <span class="button__text">JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）</span>
+          <span class="button__text">[読書メーター]2013年 3月読書まとめ読書メーター</span>
         </a>
       </span>
       
       
       <span class="button next">
-        <a href="/posts/2012/12/03/%E9%88%B4%E9%B9%BFwtcc-2012/">
-          <span class="button__text">鈴鹿WTCC 2012</span>
+        <a href="/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/">
+          <span class="button__text">JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）</span>
           <span class="button__icon">→</span>
         </a>
       </span>
