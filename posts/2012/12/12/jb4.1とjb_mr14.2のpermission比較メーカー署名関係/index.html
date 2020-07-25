@@ -6,7 +6,24 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="大変勉強になりました。ありがとうございます(^-^)/ 匿名 - Feb 5, 2013大変勉強になりました。ありがとうございます(^-^)/"/>
+<meta name="description" content="Android 4.2 (JELLY_BEAN_MR1) が出ましたので、恒例のsignatureがらみのPermission比較したいと思います。
+前回までのPermission比較は
+ ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係）  にあります。
+何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
+これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
+メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
+通常出来ません。
+よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
+Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
+JB と JB MR1 のプロテクションレベルの一覧比較 JB
+ dangerous signature|system normal signature signature|system|development signatureOrSystem  JB MR1
+ dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  増えた？と思ったらパイプラインで区切られたフラグの順番が逆転していただけでした。
+これは signature|system と同一ですね。
+しかし signatureOrSystem の件といい、段々適当になってきてる気がする。
+Permission増減調査(JB(4.1) &amp;gt; JB MR1(4.2)) [signature]  これはメーカー署名がないと使用出来ないもの
+ &#43; android.permission.BLUETOOTH_STACK
+android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/" />
@@ -29,7 +46,24 @@
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine" />
-<meta name="twitter:description" content="大変勉強になりました。ありがとうございます(^-^)/ 匿名 - Feb 5, 2013大変勉強になりました。ありがとうございます(^-^)/" />
+<meta name="twitter:description" content="Android 4.2 (JELLY_BEAN_MR1) が出ましたので、恒例のsignatureがらみのPermission比較したいと思います。
+前回までのPermission比較は
+ ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係）  にあります。
+何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
+これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
+メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
+通常出来ません。
+よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
+Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
+JB と JB MR1 のプロテクションレベルの一覧比較 JB
+ dangerous signature|system normal signature signature|system|development signatureOrSystem  JB MR1
+ dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  増えた？と思ったらパイプラインで区切られたフラグの順番が逆転していただけでした。
+これは signature|system と同一ですね。
+しかし signatureOrSystem の件といい、段々適当になってきてる気がする。
+Permission増減調査(JB(4.1) &amp;gt; JB MR1(4.2)) [signature]  これはメーカー署名がないと使用出来ないもの
+ &#43; android.permission.BLUETOOTH_STACK
+android.permission.ACCOUNT_MANAGER
+android.permission.HARDWARE_TEST" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -38,196 +72,17 @@
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine">
-<meta property="og:description" content="大変勉強になりました。ありがとうございます(^-^)/ 匿名 - Feb 5, 2013大変勉強になりました。ありがとうございます(^-^)/" />
-<meta property="og:url" content="/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/" />
-<meta property="og:site_name" content="JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）" />
-<meta property="og:image" content="">
-<meta property="og:image:width" content="2048">
-<meta property="og:image:height" content="1024">
-
-<meta property="article:published_time" content="2012-12-12 00:30:00 &#43;0900 JST" />
-
-
-
-
-
-
-
-
-
-
-
-</head>
-<body class="">
-
-
-<div class="container center">
-
-  <header class="header">
-  <div class="header__inner">
-    <div class="header__logo">
-      <a href="/">
-  <div class="logo">
-    callas1900
-  </div>
-</a>
-
-    </div>
-    <div class="menu-trigger">menu</div>
-  </div>
-  
-    <nav class="menu">
-  <ul class="menu__inner menu__inner--desktop">
-    
-      
-        
-          <li><a href="/about">About</a></li>
-        
-      
-        
-          <li><a href="/links">Links</a></li>
-        
-      
-        
-          <li><a href="/posts">Posts</a></li>
-        
-      
-        
-          <li><a href="/quotes">Quotes</a></li>
-        
-      
-      
-    
-
-    
-  </ul>
-
-  <ul class="menu__inner menu__inner--mobile">
-    
-      
-        <li><a href="/about">About</a></li>
-      
-    
-      
-        <li><a href="/links">Links</a></li>
-      
-    
-      
-        <li><a href="/posts">Posts</a></li>
-      
-    
-      
-        <li><a href="/quotes">Quotes</a></li>
-      
-    
-    
-  </ul>
-</nav>
-
-  
-</header>
-
-
-  <div class="content">
-    
-<div class="post">
-  <h1 class="post-title">
-    <a href="/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/">JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）</a></h1>
-  <div class="post-meta">
-      
-    <span class="post-date">
-      2012-12-12
-    </span>
-    
-    
-  </div>
-
-  
-  <span class="post-tags">
-    
-    #<a href="/tags/jb/">JB</a>&nbsp;
-    
-    #<a href="/tags/signature/">signature</a>&nbsp;
-    
-    #<a href="/tags/4.1/">4.1</a>&nbsp;
-    
-    #<a href="/tags/jb_mr1/">JB_MR1</a>&nbsp;
-    
-    #<a href="/tags/4.2/">4.2</a>&nbsp;
-    
-    #<a href="/tags/android/">Android</a>&nbsp;
-    
-  </span>
-  
-
-  
-
-  <div class="post-content">
-    <h4 id="大変勉強になりましたありがとうございます-">大変勉強になりました。ありがとうございます(^-^)/</h4>
-<p><a href="%22noreply@blogger.com%22">匿名</a> - <!-- raw HTML omitted -->Feb 5, 2013<!-- raw HTML omitted --></p>
-<p>大変勉強になりました。ありがとうございます(^-^)/</p>
-<!-- raw HTML omitted -->
-
-  </div>
-  
-  <div class="pagination">
-    <div class="pagination__title">
-      <span
-        class="pagination__title-h">Read other posts</span>
-      <hr />
-    </div>
-    <div class="pagination__buttons">
-      
-      <span class="button previous">
-        <a href="/posts/2013/05/01/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2013%E5%B9%B4-3%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">
-          <span class="button__icon">←</span>
-          <span class="button__text">[読書メーター]2013年 3月読書まとめ読書メーター</span>
-        </a>
-      </span>
-      
-      
-      <span class="button next">
-        <a href="/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/">
-          <span class="button__text">JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）</span>
-          <span class="button__icon">→</span>
-        </a>
-      </span>
-      
-    </div>
-  </div>
-  
-
-  
-
-</div>
-
-  </div>
-
-  
-    <footer class="footer">
-  <div class="footer__inner">
-    
-      <div class="copyright copyright--user">
-        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
-    
-        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
-      </div>
-  </div>
-</footer>
-
-<script src="/assets/main.js"></script>
-<script src="/assets/prism.js"></script>
-
-
-
-
-
-  
-</div>
-
-</body>
-</html>
-tem|development signatureOrSystem  JB MR1
+<meta property="og:description" content="Android 4.2 (JELLY_BEAN_MR1) が出ましたので、恒例のsignatureがらみのPermission比較したいと思います。
+前回までのPermission比較は
+ ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係）  にあります。
+何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
+これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
+メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
+通常出来ません。
+よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
+Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
+JB と JB MR1 のプロテクションレベルの一覧比較 JB
+ dangerous signature|system normal signature signature|system|development signatureOrSystem  JB MR1
  dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  増えた？と思ったらパイプラインで区切られたフラグの順番が逆転していただけでした。
 これは signature|system と同一ですね。
 しかし signatureOrSystem の件といい、段々適当になってきてる気がする。
