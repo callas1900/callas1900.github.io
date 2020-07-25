@@ -147,6 +147,53 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2016/11/10/smaller-apks-android-%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Bapk%E3%82%92%E5%B0%8F%E3%81%95%E3%81%8F%E4%BF%9D%E3%81%A4%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/">Smaller APKs : Android におけるAPKを小さく保つためのテクニック</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/android/">Android</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      Android Performance Patterns Session にいい動画が上がっていたので、備忘録として中身を書き出しておく
+Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer  Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
+android { &hellip; buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile(&lsquo;proguard-android.txt&rsquo;), &lsquo;proguard-rules.pro&rsquo; } } } これらはアプリ内で使用していないリソースを除去してくれます。
+Multi Resources Support Android がサポートしているリソースサイズを全て揃えるとそれだけで結構な量になるので、必要なものだけ使う。
+ldpi
+mdpi から自動で作られる
+mdpi
+tvdpi
+使わない
+hdpi
+xxhdpi から自動で作られる
+xhdpi
+xxhdpi から自動で作られる
+xxhdpi
+xxxhdpi
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2016/11/10/smaller-apks-android-%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Bapk%E3%82%92%E5%B0%8F%E3%81%95%E3%81%8F%E4%BF%9D%E3%81%A4%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2016/07/21/laravel-phpunit-with-clean-database./">Laravel :: phpunit with clean database.</a></h1>
     <div class="post-meta">
       
@@ -276,37 +323,6 @@
     <div>
       <a class="read-more button"
         href="/posts/2016/05/11/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B44%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2016/04/12/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B43%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/">[読書メーター] 2016年3月まとめ</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2016/04/12/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC-2016%E5%B9%B43%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/">Read more →</a>
     </div>
     
   </div>

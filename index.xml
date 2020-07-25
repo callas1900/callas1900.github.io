@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Sat, 27 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在宅向けにコンデンサーマイクを探してみた話</title>
+      <link>/posts/2020/07/25/%E5%9C%A8%E5%AE%85%E5%90%91%E3%81%91%E3%81%AB%E3%82%B3%E3%83%B3%E3%83%87%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%9E%E3%82%A4%E3%82%AF%E3%82%92%E6%8E%A2%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</link>
+      <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020/07/25/%E5%9C%A8%E5%AE%85%E5%90%91%E3%81%91%E3%81%AB%E3%82%B3%E3%83%B3%E3%83%87%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%9E%E3%82%A4%E3%82%AF%E3%82%92%E6%8E%A2%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</guid>
+      <description>在宅でオンラインの仕事が増えてから、色々と机周りの機材が増えている。 時折、ヘッドセットやラップトップの備え付けのマイクじゃないマイク単体を使っている人を見かけるが、あまりそこまで気にしていなかった。
+ある日、オンラインの勉強会でコンデンサーマイクを使ったほうが良いんじゃないかという意見を聞いた。いやいや要らないでしょう。会ったほうがいいかもしれないけど、必須じゃないのでは？と言ったところ。マイクの単一指向性の話を聞いて興味が出てしまった。確かにオンラインでやっている時、他の家族が家にいて彼らもオンラインで何らかの活動をしたり話し声を出したりしている。その声が入るのは確かにあまり気持ちの良いものではない。単一指向性によってそれらの音を除外出来るのであるばそれは良いのかもしれない。
+要件を考える 欲しい機能  usb 接続&amp;amp;バスパワー起動 単一指向性 自立スタンド  あると嬉しい機能  指向性切り替え。単一・双方向・無指向の切り替え 高音質 ミュート機能  マイクに関して勉強 単一指向性の種類 単一指向性にはさらにタイプが存在することがわかった。 それらの中で有名なものを列挙し比較する。
+ Cardioid Super Cardioid Hyper Cardioid Unidirectional     name Diagram Comment     Cardioid  普通   Super-Cardioid  Cardioid より若干指向性が強まってるが、後方からの音も取ってしまう   Hyper Cardioid  Super より傾向が進んでいる   Unidirectional  Hyperより指向性が高まっている。Ultra-Cardioidともいう    see also : https://blog.discmakers.com/2012/07/microphone-pickup-or-polar-patterns/
+目的が単一指向性による環境ノイズの除去なので、可能であれば指向性が高いほうが良いのでUnidirectionalが最強となるが、何個か手頃な価格の製品を見たところRazerがSuper-Cardioidを出しているぐらいで、ほとんどCardioidだったので、気にしないことにする。
+周波数特性 マイクの性能を見比べているとこの周波数特性が表示さているが。これは何か？ 数字が大きいと良いのか？ SHURE ブログ::マイクロホン 周波数特性表の見方</description>
+    </item>
     
     <item>
       <title>Scrum Fest Osaka 2020 Online で登壇しました。</title>
