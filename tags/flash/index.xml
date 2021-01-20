@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Wed, 07 Nov 2007 21:10:00 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/flash/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 07 Nov 2007 21:10:00 +0900</lastBuildDate><atom:link href="/tags/flash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Flash]Laszloよ、納品後の暇な時間を返せ。</title>
       <link>/posts/2007/11/07/flashlaszlo%E3%82%88%E7%B4%8D%E5%93%81%E5%BE%8C%E3%81%AE%E6%9A%87%E3%81%AA%E6%99%82%E9%96%93%E3%82%92%E8%BF%94%E3%81%9B/</link>
@@ -109,7 +105,7 @@ path.createEmptyMovieClip(&amp;ldquo;seed&amp;rdquo;,1);
 var mc :MovieClip = path.seed;
 //バージョン情報を取得
 var ver :String= System.capabilities.version;
-var major_ver = ver.split(&amp;rdquo; &amp;ldquo;)[1].split(&amp;quot;,&amp;quot;)[0];
+var major_ver = ver.split(&amp;rdquo; &amp;ldquo;)[1].split(&amp;rdquo;,&amp;quot;)[0];
 trace (&amp;ldquo;ver = &amp;quot; + ver);
 trace (&amp;ldquo;major_ver = &amp;quot; + major_ver);
 //今回パブリッシュ設定を７と８で分けたいので

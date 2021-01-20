@@ -166,8 +166,8 @@
       
       X++の小技を自分メモ用に紹介。
 X++に対してgoogle-code-prettifyがうまく動作するか不安だがやってみる。
-安全なクラスキャスト システム日付  [](<a href="http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016">http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016</a>)安全なクラスキャスト static pulic void main(Args _args) { binaryIO b; textIO t; ; b = SysDictClass::as(t,classIdGet(b)); } ちなみにObjectを使用して安全でないクラスキャストもできる。
-static pulic void main(Args _args) { binaryIO b; textIO t; Object o; ; o = t; b = o; } [](<a href="http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016">http://www.blogger.com/post-edit.g?blogID=20219551&amp;amp;postID=5928169760714323016</a>)システム日付 utcDateTime型とDate型で取得
+安全なクラスキャスト システム日付  安全なクラスキャスト static pulic void main(Args _args) { binaryIO b; textIO t; ; b = SysDictClass::as(t,classIdGet(b)); } ちなみにObjectを使用して安全でないクラスキャストもできる。
+static pulic void main(Args _args) { binaryIO b; textIO t; Object o; ; o = t; b = o; } システム日付 utcDateTime型とDate型で取得
 void method1() { utcDateTime utc; Date d; ; utc = DateTimeUtil::applyTimeZoneOffset( DateTimeUtil::getSystemDateTime(), DateTimeUtil::getUserPreferredTimeZone() ); d = DateTimeUtil::date(utc); print utc; print d; } 実行結果
 2010/12/12 12:12:12
       

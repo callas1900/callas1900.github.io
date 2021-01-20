@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Mon, 04 Apr 2016 12:38:00 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/docker-registry/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 04 Apr 2016 12:38:00 +0900</lastBuildDate><atom:link href="/tags/docker-registry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker registry を構築した後のimage整理</title>
       <link>/posts/2016/04/04/docker-registry-%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%9F%E5%BE%8C%E3%81%AEimage%E6%95%B4%E7%90%86/</link>

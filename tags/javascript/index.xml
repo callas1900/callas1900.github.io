@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Thu, 08 Jul 2010 13:55:00 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 08 Jul 2010 13:55:00 +0900</lastBuildDate><atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[JavaScript][VBScript]VBScript &#43; Javascriptで簡単プロジェクト内ツール。その２</title>
       <link>/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/</link>
@@ -72,7 +68,7 @@ javascript:(function(){ //スクリプト内容 })(); というフォーマッ�
 通常BookMarkletの変数はvar宣言してもグローバル変数になってしまうのですが、
 このように無名ファンクションのインスタンス呼び出しにすることで変数をローカル扱いすることができます。
 また関数を内部で定義し、後に呼び出すといったことも出来ます。
-javascript:(function(){function%20msgAlert(msg){alert(msg);} var%20txt;txt=&#39;Hello,world!&#39;;msgAlert(txt);})(); 時々出てくる&amp;rsquo;%20&#39;は半角スペースのURLエンコードです。
+javascript:(function(){function%20msgAlert(msg){alert(msg);} var%20txt;txt=&#39;Hello,world!&#39;;msgAlert(txt);})(); 時々出てくる&#39;%20&amp;rsquo;は半角スペースのURLエンコードです。
 これ以外にも日本語を使用するためにはURLエンコードが必要になります。
 URLエンコードはサイトを探せばなんなりと出てきますのでGoogle先生にでもお尋ねください。</description>
     </item>
@@ -96,7 +92,7 @@ function main(){
 var tb = document.getElementById(&amp;ldquo;tableBody&amp;rdquo;);
 //書き込む内容を作成
 var tbHTML = &amp;lsquo;1hoge&amp;rsquo;
- + &amp;lsquo;2hogehoge&amp;rsquo;;
+ + &amp;lsquo;2hogehoge&#39;;
 tb.innerHTML = tbHTML;
 }
 上記コードはFireFoxやChromeだと動くのだが、

@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Tue, 23 Oct 2007 22:30:00 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/weblogic/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 23 Oct 2007 22:30:00 +0900</lastBuildDate><atom:link href="/tags/weblogic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[ANT][Eclipse][Weblogic]ANTのタスクでこける時の対処</title>
       <link>/posts/2007/10/23/anteclipseweblogicant%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A7%E3%81%93%E3%81%91%E3%82%8B%E6%99%82%E3%81%AE%E5%AF%BE%E5%87%A6/</link>

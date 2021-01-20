@@ -10,3 +10,15 @@
     border-left: var(--border);
     padding-left: 10px;
 }
+
+.token.deleted {
+    color: #ffa86a;
+}
+
+.token.inserted {
+    color: var(--accent);
+}
+
+pre.language-diff code.language-diff {
+    white-space: pre-wrap;
+}

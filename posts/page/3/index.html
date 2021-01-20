@@ -295,7 +295,7 @@
     <div class="post-content">
       
       
-      docker のホストマシン容量不足対策。
+      <p>docker のホストマシン容量不足対策。
 docker をインストール後稼働していると、ディスクが足りなくなることがあります。
 いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。
 外部ディスクマウント後の容量食う /var/lib/docker の移動の仕方に関して記します。
@@ -306,6 +306,7 @@ mkdir /mnt/extra/docker sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/ 設
 (あれば追加で、なければ作成)
 echo other_args=&quot;-g /mnt/extra/docker&quot; &gt; /etc/sysconfig/docker debian系の場合 設定ファイル: /etc/default/docker</p>
 <h1 id="docker_optsquot-dns-8888--dns-8844quot-docker_optsquot-dns-8888--dns-8">DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4&quot; DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.</h1>
+
       
       
     </div>

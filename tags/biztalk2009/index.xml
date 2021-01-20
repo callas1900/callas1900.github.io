@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Tue, 23 Mar 2010 22:56:00 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/biztalk2009/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 23 Mar 2010 22:56:00 +0900</lastBuildDate><atom:link href="/tags/biztalk2009/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[BizTalk2009]BtsTaskによるバッチ作成</title>
       <link>/posts/2010/03/23/biztalk2009btstask%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90/</link>
@@ -29,7 +25,7 @@
   バインド設定を省いたアプリケーションのmsiファイルを作成する方法   アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。
 btstask listapp -a:_**BizApp1**_ -r:_**BizApp1\_Resource.xml**_   _**BizApp1_Resource.xml **を修正する。
 タグ以下の
-&amp;lt;Resource Type=&amp;quot;System.BizTalk:BizTalkBinding&amp;rdquo;
+&amp;lt;Resource Type=&amp;ldquo;System.BizTalk:BizTalkBinding&amp;rdquo;
 で始まるタグを削除する。
 _
   エクスポート実行
@@ -84,8 +80,8 @@ http://blogs.msdn.com/biztalkcrt/archive/2009/08/21/visual-studio-2008-fails-to-
 レジストリはファイル名を指定して実行の欄で「regedit」と入力すれば編集出来る。
 Visual Studio 2008 32bit の場合 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Projects\{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}]
 の中の
-&amp;ldquo;PossibleProjectExtensions&amp;quot;=&amp;quot;csproj&amp;rdquo;　を
-&amp;ldquo;PossibleProjectExtensions&amp;quot;=&amp;quot;csproj**;btproj**&amp;rdquo; に変更する。
+&amp;ldquo;PossibleProjectExtensions&amp;rdquo;=&amp;ldquo;csproj&amp;rdquo;　を
+&amp;ldquo;PossibleProjectExtensions&amp;rdquo;=&amp;ldquo;csproj**;btproj**&amp;rdquo; に変更する。
 Visual Studio 2008 64bit の場合 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\9.0\Projects\{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}]
 を上記32bitと同じように編集する。
 まとめ 上記のレジストリキーはデフォルトでは &amp;ldquo;csproj&amp;rdquo; であり、

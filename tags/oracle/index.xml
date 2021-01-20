@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Thu, 06 Dec 2007 11:22:00 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 06 Dec 2007 11:22:00 +0900</lastBuildDate><atom:link href="/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oracle 10g Express Edition でチト困った</title>
       <link>/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/</link>
@@ -28,7 +24,7 @@ Oracle® Database Express Edition
 他社が作った機能の検証用テストデータとしてINSERT文が書かれたSQLファイルを送付してもらった。
 いざINSERTしてみると、
 ORA-12899:
-列&amp;quot;hoge&amp;rdquo;.&amp;ldquo;foo&amp;rdquo;.&amp;ldquo;bar&amp;quot;の値が大きすぎます
+列&amp;quot;hoge&amp;quot;.&amp;ldquo;foo&amp;rdquo;.&amp;ldquo;bar&amp;quot;の値が大きすぎます
 (実際: 60、最大: 40)
 とOracleに怒られ、データが入らない箇所がある。
 慌てて文字数をカウントしたが、データに間違いはない。

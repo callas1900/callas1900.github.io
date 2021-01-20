@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 2005-2020 callas1900.net All rights reserved.</copyright>
-    <lastBuildDate>Tue, 16 Jun 2009 15:22:00 +0900</lastBuildDate>
-    
-	<atom:link href="/tags/google/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 16 Jun 2009 15:22:00 +0900</lastBuildDate><atom:link href="/tags/google/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Google]GoogleデスクトップでGoogle tasks</title>
       <link>/posts/2009/06/16/googlegoogle%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%81%A7google-tasks/</link>
@@ -240,7 +236,7 @@ root ├hoge1 │ ├bar1 │ ├bar2 │ └bar3 └hoge2 └bar4
 ま、こういう時って何をしても無駄だと思い
 放置する事に決めたら、いつの間にか直ってた
 はてなんだったのだろうと忘れかけてたころに、
-こんな記事を「クリボウのBloggerTips [](http://www.kuribo.info/ &amp;ldquo;クリボウのBloggerTips&amp;rdquo;)」さんで見つけた。
+こんな記事を「クリボウのBloggerTips 」さんで見つけた。
 カスタムドメインで Google 乗っ取り!?
 これが原因だったのかなぁ・・・とちょっと考える。
 比較的安定しているGoogleのWebサービスだが、

@@ -227,9 +227,9 @@ src ディレクトリの中に Hello, World! が既に入っているのもい�
 <p>&amp;の参照型はデフォルトでは変更不可。したがって<code>&amp;mut guess</code> と書くことで変更可能にすることが出来る。 <code>&amp;guess</code> だと変更不可。</p>
 <p>次のお題は</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">match</span> guess.cmp(<span style="color:#f92672">&amp;</span>secret_number) {
-        Ordering::Less <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too small!&#34;</span>),
-        Ordering::Greater <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too big!&#34;</span>),
-        Ordering::Equal <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;You win!&#34;</span>),
+        Ordering::Less <span style="color:#f92672">=&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too small!&#34;</span>),
+        Ordering::Greater <span style="color:#f92672">=&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too big!&#34;</span>),
+        Ordering::Equal <span style="color:#f92672">=&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;You win!&#34;</span>),
     }
 </code></pre></div><p>を追加することで入力と生成された文字との比較をして推測ゲームを完成させる。
 上が比較なのはわかるし、Ordering::Lessとかの後の<code>=&gt;</code>はラムダなのかなでも、カールブラケットの中に入れているが不思議。</p>
@@ -255,9 +255,9 @@ src ディレクトリの中に Hello, World! が既に入っているのもい�
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#75715e">// --snip--
 </span><span style="color:#75715e"></span>
         <span style="color:#66d9ef">match</span> guess.cmp(<span style="color:#f92672">&amp;</span>secret_number) {
-            Ordering::Less <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too small!&#34;</span>),
-            Ordering::Greater <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too big!&#34;</span>),
-            Ordering::Equal <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> {
+            Ordering::Less <span style="color:#f92672">=&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too small!&#34;</span>),
+            Ordering::Greater <span style="color:#f92672">=&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too big!&#34;</span>),
+            Ordering::Equal <span style="color:#f92672">=&gt;</span> {
                 println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;You win!&#34;</span>);
                 <span style="color:#66d9ef">break</span>;
             }
@@ -268,8 +268,8 @@ src ディレクトリの中に Hello, World! が既に入っているのもい�
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#75715e">// --snip--
 </span><span style="color:#75715e"></span>
 <span style="color:#66d9ef">let</span> guess: <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">match</span> guess.trim().parse() {
-    Ok(num) <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> num,
-    Err(_) <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">continue</span>,
+    Ok(num) <span style="color:#f92672">=&gt;</span> num,
+    Err(_) <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">continue</span>,
 };
 
 <span style="color:#75715e">// --snip--
