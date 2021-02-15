@@ -147,6 +147,121 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その１</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/javascript/">JavaScript</a>&nbsp;
+      
+      #<a href="/tags/vbscript/">VBScript</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      プロジェクトでIE6上で動く VBScript + JavaScript + HTML のツールを作ってみた。
+なんで今更？IE6？
+会社の中では未だに頑固にIE6が標準だーって会社は多いのさ。
+本当は HTML5 + JavaScript で作りたかったけど仕方ない。
+会社のみんなにChromeやFireFoxを強制的にインストールさせるのは面倒だからね。
+要件はある固定長インターフェースファイルを使ったテスト用に、
+テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。  この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
+ついでに皆標準的に入れてるブラウザはIE6。
+ファイル I/O　部位を VBScript に任し、
+他の挙動を JavaScript で制御するのが適当か？
+以下その場合の注意点
+VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)…】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。  これを画面の最下部に常に表記。
+で、まずはFile I/O部のVBScriptコード
+注意点は読み込んだ内容をJavaScriptに渡す場合、
+配列渡しはうまくいかなかったので、
+適当な区切り文字をはさんで渡し、JavaScript側でSpritしたことと、
+動的な配列が定義出来なかったのでReDimとPreserveを多様したこと
+書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&quot;Scripting.FileSystemObject&quot;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile.
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2010/06/16/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-5%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">[読書メーター]2010年 5月読書まとめ</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      ５月の冊数は１３冊。西尾維新　戯言シリーズ読破！良く読んだよほんと。
+後長らく読書中だったソフトウェア職人気質も読了。
+狼と香辛料も順調に読破中。
+西尾維新、次は化物語と零崎シリーズだな。
+5月の読書メーター
+読んだ本の数：13冊
+読んだページ数：5059ページ
+ソフトウェア職人気質―人を育て、システム開発を成功へと導くための重要キーワード (Professional Computing Series)
+アジャイル入門書な感じ。W/Fの何が悪いのか？どうしてW/Fだとうまくいかないのか？逆にどういうケースだとうまくいくのか？ソフトウェアに携わる人間がどうあるべきか？について言及されている。読み切って良かった。しばらく寝かしたら再読しよう。
+読了日：05月31日 著者：ピート マクブリーン
+ネコソギラジカル（下）　青色サヴァンと戯言遣い (講談社文庫)
+終わった終わった。きっちり終わった。ハッピーかアンハッピーかは内緒だけど、きっちりしっかり終わった。さぁ零崎シリーズ読もうか。
+読了日：05月28日 著者：西尾 維新
+ネコソギラジカル（中）　赤き征裁vs．橙なる種 (講談社文庫)
+読了日：05月27日 著者：西尾 維新
+ネコソギラジカル（上）　十三階段 (講談社文庫)
+この巻の感想は一言だけ「七年後が楽しみだ!!!!!」
+読了日：05月26日 著者：西尾 維新
+ゼロの使い魔 18 滅亡の精霊石 (MF文庫J)
+ファンタジーの箱庭を閉じ始めた感じがする。世界の広がりが無くなってしまうのが少しさびしい。でもきっと、いい作者なら良い感じに私の期待を裏切ってくれるに違いない。
+読了日：05月23日 著者：ヤマグチ ノボル
+狼と香辛料 13 (電撃文庫 は 8-13)
+ホロとロレンスの話は苦い商売の話の上にあってこそ、その甘さが心地よいもの、ガムシロップ一気飲みはちときつい、次の長編では程よい甘さを期待する。ノーラの短編は小気味いい感じの短編。
+読了日：05月21日 著者：支倉 凍砂
+(講談社文庫)&ldquo;ヒトクイマジカル&lt;殺戮奇術の匂宮兄妹&gt; (講談社文庫)
+今回の話はネタバレをせずに感想を書くのが難しいね。青いのちょっと面倒。赤いの相変わらず良い。黄色いの切ない。バイト先の人しゃべり方結構好きだったよ。まぁ読め。
+読了日：05月16日 著者：西尾 維新
+サイコロジカル 下 (講談社文庫 に 32-5 西尾維新文庫)
+哀川さん成分が少なかった。本当は多かったのかもしれないけど。
+読了日：05月14日 著者：西尾 維新
+サイコロジカル 上 (講談社文庫 に 32-4 西尾維新文庫)
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2010/06/16/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-5%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2010/06/11/%E5%8B%89%E5%BC%B7%E4%BC%9Aqpstudy%E3%81%AB%E3%81%84%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/">[勉強会]qpstudyにいってきました。</a></h1>
     <div class="post-meta">
       
@@ -330,128 +445,6 @@ Agile まさかインフラエンジニアの勉強会でAgileって単語を聞
     
   </div>
   
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/">[DynamicsAX2009]AIFファイル上限値とその解除</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/dynamicsax2009/">DynamicsAX2009</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      デフォルト上限値の設定とエラー内容 DynamicsAXのAIFは外部ファイルとのやり取りを行うインターフェースの一つです。
-外部ファイルとのやり取り時、明示されてはいませんがファイルサイズの上限値があります。
-デフォルトでは10MBに設定されています。
-これを超えるファイルのやり取りをAIFで行おうとすると下記エラーがイベントログに出力されます。
-The adapter is unable to send the following message to Microsoft Dynamics AX:
-MessageId: XXXXXXXX-1111-AAAA-9999-ZZZZZZZZZZZZ
-Error: Error executing code: Insufficient memory to run script.
-Error executing code: object not initialized.
-(C)\Classes\processRequest
--————————————————————————-
-Product Version : 5.0
-Assembly Version : 5.0.0.0
-Class : AppEventLog
-Method : WriteLocalizedError
-Subsystem : BizTalkDynamicsAdapter
--————————————————————————-
-For more information, see Help and Support Center at <a href="http://go.microsoft.com/fwlink/events.asp">http://go.microsoft.com/fwlink/events.asp</a>.
-上限設定変更もしくは解除方法 レジストリを編集することで解除 or 上限値変更が出来ます。
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2010/05/07/dynamicsax2009aif%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%8A%E9%99%90%E5%80%A4%E3%81%A8%E3%81%9D%E3%81%AE%E8%A7%A3%E9%99%A4/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2010/04/14/%E6%97%A5%E8%A8%98agile-japan-2010%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E6%9D%A5%E3%81%BE%E3%81%97%E3%81%9F/">[日記]Agile Japan 2010に行って来ました</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/%E6%97%A5%E8%A8%98/">日記</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      4月9日（金）と4月10日（土）に行われたAgile Japan 2010に
-会社の上司さんと土曜日だけ参加してきました。
-会場の様子 会場はIBM本社ビルのセミナールーム。
-メイン会場の収容人数は300人ぐらいでしょうか？
-大きいなぁ
-注目すべきはプレゼン資料が映し出されるスクリーンの横に
-Agile Japan 2010のハッシュタグ(#aj10)に発言したTwitterの内容がリアルタイム表示されること。
-現在目の前で行われているセッションに対する
-忌憚のない参加者の意見が見えるのが面白い。
-セッション 参加したセッションは
-アジャイルの現状と未来、次に来るもの。〜リーン開発への展望〜
-非ウォーターフォール型開発に関する調査結果と課題
-Agile on プロジェクトファシリテーションでイテレーション体験ワークショップ
-成長する組織へ導くコミュニケーション変革
-Agile Japan 2010 プログラム：クロージングキーノート
-参加したセッション毎の詳細レポートは別途書くつもりですが、
-多少時間がかかりそうなので、とりあえず記事の新鮮味が落ちないうちに、
-全体を通したざくっと感想を書いておきます。
-アジャイルの現状と未来、次に来るもの。〜リーン開発への展望〜 Alan Shalloway 氏によるセッション。
-Agileが持っている現状の問題点。
-そしてこれからやってくる問題点。
-その解決策としてのリーン開発。
-リーン開発は、トヨタ生産方式を一般化した開発方式。
-要点は「無駄を省く」。
-Agile界隈ではポッペンディーク夫妻が書いた本を通して広まりました。
-チーム内でのAgileに留まらない、
-会社経営にまで広がる話、
-本を読むだけじゃわからない「なるほど」と何度も頷く話。
-メインセッションだけあって、一番得るものが多い時間でした。
-会社の経営に携わる上司さんとしては、
-色々思うところがあったようで、
-図を書きながら、色々と我が社の問題点と
-果たしてそれの改善策として本当にAgileが有効なのか？
-と静かに討論開始。
-しばらくして、司会者に静かにしてくれと注意された。
-申し訳ない。
-非ウォーターフォール型開発に関する調査結果と課題 IPAによる非ウォターフォール型開発を行っているプロジェクト関する調査結果発表。
-IPAという公的機関がそういったアプローチをしていることに関心。
-内容はというと・・・
-どっかネットに落ちてる100P近い資料を読んでみよう。（資料リンク）
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2010/04/14/%E6%97%A5%E8%A8%98agile-japan-2010%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E6%9D%A5%E3%81%BE%E3%81%97%E3%81%9F/">Read more →</a>
-    </div>
-    
-  </div>
-  
   <div class="pagination">
   <div class="pagination__buttons">
     
@@ -482,7 +475,7 @@ IPAという公的機関がそういったアプローチをしていること�
   <div class="footer__inner">
     
       <div class="copyright copyright--user">
-        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+        <span>Copyright 2005-2021 callas1900.net All rights reserved.</span>
     
         <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
       </div>

@@ -147,6 +147,70 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2012/01/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">[読書メーター]2011年 12月読書まとめ</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2012/01/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2012/01/04/%E5%86%99%E7%9C%9Fiso100%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0%E8%89%B2%E3%80%85%E8%B2%B7%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/">【写真】ISO100フィルム色々買ってみた。</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95/">一眼レフ</a>&nbsp;
+      
+      #<a href="/tags/%E5%86%99%E7%9C%9F/">写真</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2012/01/04/%E5%86%99%E7%9C%9Fiso100%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0%E8%89%B2%E3%80%85%E8%B2%B7%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2011/12/31/2011%E5%B9%B4%E7%B5%82%E4%BA%86/">2011年終了</a></h1>
     <div class="post-meta">
       
@@ -238,146 +302,6 @@
     
   </div>
   
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2011/11/28/ics%E3%81%A8gingerbread%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/">ICSとGingerbreadのPermission比較（メーカー署名関係）</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/gingerbread/">Gingerbread</a>&nbsp;
-      
-      #<a href="/tags/signature/">signature</a>&nbsp;
-      
-      #<a href="/tags/ics/">ICS</a>&nbsp;
-      
-      #<a href="/tags/android/">Android</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      ICSのテストをしていると、前まで動いていたところでSecurityExceptionをはきました。
-端末不具合かソースが変わったのかを調べる為に
-公開されているICS(Android 4.0)とGingerbread(Android 2.3.3)のAndroidManifest.xmlを比較してみました。
-AndroidではAndroid自体をビルドする時に使用されている署名（所謂メーカー所有の署名）とその他の署名の間に格差があり、特定のAPIを叩く際に必要となるpermissionの値が、“signatureOrSystem” もしくは&quot;signature&quot;となっている時は、実行する為にこのメーカー署名が必要となります。
-それらAPIを叩くためには、メーカーに依頼して出来たAPKに署名を入れてもらうか、
-rootを取る、もしくは自分でAndroidをビルドして実機に焼く等を行う必要があります。
-それぞれ、frameworks/base/core/res/AndroidManifest.xml
-を比較し、ICSで増えた箇所を赤字＋太字で表示しました。
-※ICSで減ったものはなかった。
-[signatureOrSystem]
-android.permission.SEND_SMS_NO_CONFIRMATION
-android.permission.RECEIVE_EMERGENCY_BROADCAST
-android.permission.INSTALL_LOCATION_PROVIDER
-android.permission.CONNECTIVITY_INTERNAL
-android.permission.MANAGE_USB
-android.permission.ACCESS_MTP
-android.permission.MODIFY_PHONE_STATE
-android.permission.READ_PRIVILEGED_PHONE_STATE
-android.permission.WRITE_MEDIA_STORAGE
-android.permission.WRITE_SECURE_SETTINGS
-android.permission.WRITE_GSERVICES
-android.permission.DUMP
-android.permission.RETRIEVE_WINDOW_CONTENT
-android.permission.SET_TIME
-android.permission.WRITE_APN_SETTINGS
-android.permission.STATUS_BAR
-android.permission.UPDATE_DEVICE_STATS
-android.permission.SHUTDOWN
-android.permission.STOP_APP_SWITCHES
-android.permission.BIND_WALLPAPER
-android.permission.INSTALL_PACKAGES
-android.permission.DELETE_CACHE_FILES
-android.permission.DELETE_PACKAGES
-android.permission.MOVE_PACKAGE
-android.permission.CHANGE_COMPONENT_ENABLED_STATE
-android.permission.READ_FRAME_BUFFER
-android.permission.REBOOT
-android.permission.MASTER_CLEAR
-android.permission.CALL_PRIVILEGED
-android.permission.PERFORM_CDMA_PROVISIONING
-android.permission.CONTROL_LOCATION_UPDATES
-android.permission.ACCESS_CHECKIN_PROPERTIES
-android.permission.PACKAGE_USAGE_STATS
-android.permission.BACKUP
-android.permission.BIND_REMOTEVIEWS
-android.permission.BIND_APPWIDGET
-android.permission.GLOBAL_SEARCH
-android.permission.SET_WALLPAPER_COMPONENT
-android.permission.ACCESS_CACHE_FILESYSTEM
-android.permission.CRYPT_KEEPER
-android.permission.READ_NETWORK_USAGE_HISTORY
-android.permission.MODIFY_NETWORK_ACCOUNTING
-android.permission.PACKAGE_VERIFICATION_AGENT
-[signature]
-android.permission.ACCOUNT_MANAGER
-android.permission.HARDWARE_TEST
-android.permission.NET_ADMIN
-android.permission.REMOVE_TASKS
-android.permission.FORCE_STOP_PACKAGES
-android.permission.SET_PREFERRED_APPLICATIONS
-android.permission.ASEC_ACCESS
-android.permission.ASEC_CREATE
-android.permission.ASEC_DESTROY
-android.permission.ASEC_MOUNT_UNMOUNT
-android.permission.ASEC_RENAME
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2011/11/28/ics%E3%81%A8gingerbread%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2011/10/23/wtcc%E3%81%A8%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E8%80%90%E4%B9%85/">WTCCとスーパー耐久</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/%E4%B8%80%E7%9C%BC%E3%83%AC%E3%83%95/">一眼レフ</a>&nbsp;
-      
-      #<a href="/tags/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E8%80%90%E4%B9%85/">スーパー耐久</a>&nbsp;
-      
-      #<a href="/tags/%E6%97%A5%E8%A8%98/">日記</a>&nbsp;
-      
-      #<a href="/tags/wtcc/">WTCC</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2011/10/23/wtcc%E3%81%A8%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E8%80%90%E4%B9%85/">Read more →</a>
-    </div>
-    
-  </div>
-  
   <div class="pagination">
   <div class="pagination__buttons">
     
@@ -408,7 +332,7 @@ android.permission.ASEC_RENAME
   <div class="footer__inner">
     
       <div class="copyright copyright--user">
-        <span>Copyright 2005-2020 callas1900.net All rights reserved.</span>
+        <span>Copyright 2005-2021 callas1900.net All rights reserved.</span>
     
         <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
       </div>
