@@ -147,59 +147,6 @@
   
   <div class="post on-list">
     <h1 class="post-title">
-      <a href="/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/">LMDE2のNVIDIA Driverを更新する</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/linux/">Linux</a>&nbsp;
-      
-      #<a href="/tags/gpu/">GPU</a>&nbsp;
-      
-      #<a href="/tags/lmde2/">LMDE2</a>&nbsp;
-      
-      #<a href="/tags/%E6%8A%80%E8%A1%93/">技術</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      LMDE2 に NVIDIA のグラフィックドライバを入れます。
-Inspect your graphic board Download a driver Installer Prepare Installation Installation  Inspect your graphic board terminalで
-lspci -vnn | grep VGA -A 12 Download a driver Installer NVIDIAの公式サイトからLinux X64用のDriver Installerを手に入れます。
-私の場合は以下から
-<a href="http://www.nvidia.com/download/driverResults.aspx/77525/en-us">http://www.nvidia.com/download/driverResults.aspx/77525/en-us</a>
-NVIDIA-Linux-x86_64-340.32.run というシェルファイルを手に入れました。
-Prepare Installation reboot し grub で recovery mode を選択し、
-ログイン画面で、Ctrl + Alt + F1 を押してCUIモードになります。
-ユーザーログイン後、
-sudo update-initramfs -u を実行します。
-これはNVIDIAシェルがカーネルモジュールを追加するため必要になります。
-これが実行されない場合
-Nouveau kernel driver を止めてくれとのエラーメッセージが表示されます。
-Installation 再度再起動し、recovery modeになり、CUIモードにログインします。
-X serviceを止めます。
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
       <a href="/posts/2016/01/12/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2015%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">[読書メーター]2015年 12月読書まとめ</a></h1>
     <div class="post-meta">
       
@@ -382,6 +329,39 @@ CP+に初めて来て知ったが、ここは最新の写真家一覧を見る�
     <div>
       <a class="read-more button"
         href="/posts/2015/02/17/cp-2015-%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2014/12/31/2014%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/">2014年 大晦日</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E5%A4%A7%E6%99%A6%E6%97%A5/">大晦日</a>&nbsp;
+      
+      #<a href="/tags/%E6%97%A5%E8%A8%98/">日記</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2014/12/31/2014%E5%B9%B4-%E5%A4%A7%E6%99%A6%E6%97%A5/">Read more →</a>
     </div>
     
   </div>

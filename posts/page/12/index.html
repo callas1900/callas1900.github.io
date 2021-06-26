@@ -147,48 +147,6 @@
   
   <div class="post on-list">
     <h1 class="post-title">
-      <a href="/posts/2012/10/01/android%E3%81%A7%E5%85%B1%E9%80%9A%E9%8D%B5%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F%E3%81%AE%E3%81%A7%E8%A8%98%E9%8C%B2%E3%81%AB%E6%AE%8B%E3%81%99/">Androidで共通鍵暗号化でつまづいたので記録に残す</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/java/">Java</a>&nbsp;
-      
-      #<a href="/tags/security/">Security</a>&nbsp;
-      
-      #<a href="/tags/android/">Android</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      Androidで文字列をセキュアに保存したい場合、
-暗号化してsqliteに保存するのがよろしいと思われる。
-ここではAndroid自体のセキュリティがアレだとか、Rooted端末とapktoolがあればアレをこうしてアレ出来るだとかいう話はとりあえず置いとく。
-まず以下のようなソースを書いた。
-内容は、
-共通鍵の秘密鍵を生成している箇所のみ抽出。 DBに鍵が保存されていない初回はif文を迂回して生成ロジックで生成後DBに保存。 DB保存後はDBから復元する。  private final static String ARGOLISM = &quot;PBEWithSHA1And256BitAES-CBC-BC&quot;; private SecretKey getSecretKey() throws NoSuchAlgorithmException, InvalidKeySpecException, NameNotFoundException { // check saved secret key is exist. byte[] savedSecretKey = DBHelper.readByteData(context, &quot;hoge&quot;); if(savedSecretKey != null &amp;&amp; savedSecretKey.length &gt; 0){ return new SecretKeySpec(savedSecretKey, ARGOLISM); } // generate new secret key. char[] pw = generatePassword(); int iteratorCount = 1024; int keySize = 256; int saltLength = 8; byte[] salt = &quot;00000000&quot;.
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2012/10/01/android%E3%81%A7%E5%85%B1%E9%80%9A%E9%8D%B5%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%A7%E3%81%A4%E3%81%BE%E3%81%A5%E3%81%84%E3%81%9F%E3%81%AE%E3%81%A7%E8%A8%98%E9%8C%B2%E3%81%AB%E6%AE%8B%E3%81%99/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
       <a href="/posts/2012/09/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2012%E5%B9%B4-8%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">[読書メーター]2012年 8月読書まとめ読書メーター</a></h1>
     <div class="post-meta">
       
@@ -341,6 +299,37 @@ android.permission.ASEC_ACCESS
     <div>
       <a class="read-more button"
         href="/posts/2012/05/18/%E3%83%89%E3%82%B3%E3%83%A2%E3%81%AEgalaxysiii-%E3%81%A8%E4%B8%96%E7%95%8C%E3%81%AEgalaxysiii%E3%81%AE%E9%81%95%E3%81%84/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2012/01/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">[読書メーター]2011年 12月読書まとめ</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2012/01/30/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2011%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">Read more →</a>
     </div>
     
   </div>

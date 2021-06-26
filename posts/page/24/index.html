@@ -147,72 +147,6 @@
   
   <div class="post on-list">
     <h1 class="post-title">
-      <a href="/posts/2009/02/25/javascripttbody%E3%81%AEinnerhtml/">[JavaScript]tbodyのinnerHTML</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/javascript/">JavaScript</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      ちょちょいとした計算ツールを使用するのにJavaScriptは便利だ。
-だが問題がある、IEとFirefoxでは同一のスクリプトが動いたり動かなかったりすることがある。
-今回はtbodyタグに関する話。
-計算結果を表形式で表したい時にHTMLのtableタグを使用する。
-得にtbodyタグの中身を可変編集することはよくするテクニックの一つだ。
-以下のコードを見てもらいたい。
--–HTML
--–javaScript
-function main(){
-//HTML上のtbodyを取得
-var tb = document.getElementById(“tableBody”);
-//書き込む内容を作成
-var tbHTML = ‘1hoge’
- + ‘2hogehoge';
-tb.innerHTML = tbHTML;
-}
-上記コードはFireFoxやChromeだと動くのだが、
-IEでは動かない。
-ﾅﾝﾃﾞｴｴｴと思って調べてみると。
-**Internet Explorer で **
-PRB エラー設定 table.innerHTML
-<a href="http://support.microsoft.com/kb/239832/ja">http://support.microsoft.com/kb/239832/ja</a>
-tbodyのinnerHTMLは読取り専用だと！
-なのでこう書かないといけない。
--–javaScript
-function main(){
-//HTML上のtbodyを取得
-var tb = document.getElementById(“tableBody”);
-//DOMオブジェクトを作成
-var tr = document.createElement(‘tr’);
- var td1 = document.createElement(‘td’);
- var td2 = document.createElement(‘td’);
- //作成したオブジェクトを組み合わせてtbodyの中を作成
- for(var i = 1; i &lt; 3; i++){
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2009/02/25/javascripttbody%E3%81%AEinnerhtml/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
       <a href="/posts/2009/02/14/baby%E8%AA%95%E7%94%9F/">[baby]誕生</a></h1>
     <div class="post-meta">
       
@@ -333,6 +267,37 @@ var tr = document.createElement(‘tr’);
     <div>
       <a class="read-more button"
         href="/posts/2009/01/21/babygoogle%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3-%E5%BE%8C%EF%BC%96%E6%97%A5%E3%81%A8google-chrome%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
+      <a href="/posts/2009/01/20/baby%E5%87%BA%E7%94%A3%E3%81%BE%E3%81%A7%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3%E9%96%8B%E5%A7%8B/">[baby]出産までカウントダウン開始</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/baby/">baby</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2009/01/20/baby%E5%87%BA%E7%94%A3%E3%81%BE%E3%81%A7%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3%E9%96%8B%E5%A7%8B/">Read more →</a>
     </div>
     
   </div>
