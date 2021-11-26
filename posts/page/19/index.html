@@ -147,6 +147,62 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/">[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/dynamicsax2009/">DynamicsAX2009</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      DynamicsAXで開発をしていたり、
+AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。
+その場合にやるべき6つのことを書いておく。
+DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除  DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
+Compile AOTのルートで右クリックコンテキストメニューを出し、**Compile **を実行する。
+ここでエラーが出たものは基本的に修正したほうがよいが、X++はインタプリタ言語なので現在エラーが出ている箇所以外のものは放置してもよい。
+Synchronize Data Dictionaryで右クリックコンテキストメニューを出し、Synchronize を実行する。
+これでAXとDBとの同期化される。
+Compile &amp; Synchronize である程度のDBとのアンマッチ等のErrorやWaringは除去される。
+あなたがインフラ担当ならば、昼休みと帰る前にこの二点はやっておいて損はない。
+Index再作成   AOSサービス停止
+Axapd.aoi ファイルを削除する。
+(Axapd.aoiはデフォルトで C:\Program Files\Microsoft Dynamics AX\50\Application\Appl\DynamicsAx1 にある。)
+AOSサービス再開（もしくはWindows再起動）
+これで大抵のものは治るはず。
+特にDBとAXのDataDictionaryのアンマッチ系はこれでほとんど治る。
+それでも駄目なら・・・
+クライアントキャッシュファイル削除   AXクライアントを終了
+クライアントキャッシュファイル(.auc)を削除
+WindowsXPの場合:
+C:\Documents and Setting\Local Settings\Application Data
+Windows2008の場合:
+C:\Users\AppData\Local
+Usage Data削除   AXクライアントを起動
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2010/03/05/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B42%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">[読書メーター]2010年2月読書まとめ</a></h1>
     <div class="post-meta">
       
@@ -302,37 +358,6 @@ Windows Server2008完全ガイドブック
     <div>
       <a class="read-more button"
         href="/posts/2010/02/19/biztalk2009visualstudio2008%E3%81%A7biztalk%E6%96%B0%E8%A6%8F%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%8C%E4%BD%9C%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2010/02/16/windows2%E6%9C%88-windows-update-%E3%81%A7-xp-%E3%81%8C%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AB%E3%81%AA%E3%82%8B%E7%8F%BE%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">[Windows]2月 Windows Update で XP がブルースクリーンになる現象について</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/windows/">Windows</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2010/02/16/windows2%E6%9C%88-windows-update-%E3%81%A7-xp-%E3%81%8C%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AB%E3%81%AA%E3%82%8B%E7%8F%BE%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">Read more →</a>
     </div>
     
   </div>

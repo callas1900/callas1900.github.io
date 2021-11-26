@@ -147,6 +147,37 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2010/10/25/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-9%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">[読書メーター]2010年 9月読書まとめ</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC/">読書メーター</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2010/10/25/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-9%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2010/08/19/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2010%E5%B9%B4-7%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">[読書メーター]2010年 7月読書まとめ</a></h1>
     <div class="post-meta">
       
@@ -285,58 +316,6 @@ Activate Server Wizardが開始します。
     <div>
       <a class="read-more button"
         href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その１</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/javascript/">JavaScript</a>&nbsp;
-      
-      #<a href="/tags/vbscript/">VBScript</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      プロジェクトでIE6上で動く VBScript + JavaScript + HTML のツールを作ってみた。
-なんで今更？IE6？
-会社の中では未だに頑固にIE6が標準だーって会社は多いのさ。
-本当は HTML5 + JavaScript で作りたかったけど仕方ない。
-会社のみんなにChromeやFireFoxを強制的にインストールさせるのは面倒だからね。
-要件はある固定長インターフェースファイルを使ったテスト用に、
-テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。  この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
-ついでに皆標準的に入れてるブラウザはIE6。
-ファイル I/O　部位を VBScript に任し、
-他の挙動を JavaScript で制御するのが適当か？
-以下その場合の注意点
-VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)…】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。  これを画面の最下部に常に表記。
-で、まずはFile I/O部のVBScriptコード
-注意点は読み込んだ内容をJavaScriptに渡す場合、
-配列渡しはうまくいかなかったので、
-適当な区切り文字をはさんで渡し、JavaScript側でSpritしたことと、
-動的な配列が定義出来なかったのでReDimとPreserveを多様したこと
-書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&quot;Scripting.FileSystemObject&quot;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile.
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/">Read more →</a>
     </div>
     
   </div>
