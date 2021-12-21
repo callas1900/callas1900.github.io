@@ -2,11 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/advent-calendar/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/</loc>
-    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/impro/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/rsgt/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2021/12/21/rsgt2022_advent_calendar/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/scrum/</loc>
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
@@ -14,14 +29,8 @@
     <loc>/tags/sprint-review/</loc>
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/posts/2021/11/25/sprint_review_with_context/</loc>
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/rsgt/</loc>
-    <lastmod>2021-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2021/01/09/rsgt2021-%E3%81%82%E3%82%8B%E3%82%AB%E3%83%A1%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E3%81%AE%E8%A6%96%E7%82%B9/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
