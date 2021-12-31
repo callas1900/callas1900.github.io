@@ -147,6 +147,55 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2010/03/23/biztalk2009btstask%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90/">[BizTalk2009]BtsTaskによるバッチ作成</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/biztalk2009/">BizTalk2009</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      btstaskはBizTalkアプリケーションのインストール等をコマンドライン上で行えるコマンドラインツールです。
+以下に自分の使用例を書いときます。
+バインド設定を省いたアプリケーションのmsiファイルを作成する方法
+バッチ例
+msiファイルとバインド設定ファイルをエクスポートする
+msiファイルからBizTalkアプリをインストールする
+バインド設定をインポートする
+msiファイルを使った対象BizTalkアプリを削除する
+バインド設定を省いたアプリケーションのmsiファイルを作成する方法   アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。
+btstask listapp -a:<em><strong>BizApp1</strong></em> -r:<em><strong>BizApp1_Resource.xml</strong></em>   <em>**BizApp1_Resource.xml **を修正する。
+タグ以下の
+&lt;Resource Type=“System.BizTalk:BizTalkBinding”
+で始まるタグを削除する。
+_
+エクスポート実行
+btstask ExportApp -a:</em><strong>BizApp1</strong>_ -p:_**&lt;MsiFileName&gt;**_ -r:_**BizApp1_Resource.xml**_   バインドファイルもエクスポート実行
+btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_   バッチ例 msiファイルとバインド設定ファイルをエクスポートする @setlocal @echo off echo ################################## echo %DATE% %TIME% Running export.bat echo ################################## REM !
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2010/03/23/biztalk2009btstask%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%83%83%E3%83%81%E4%BD%9C%E6%88%90/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2010/03/19/dynamicsax2009documentserviceclass%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/">[DynamicsAX2009]DocumentServiceClassのアップデート</a></h1>
     <div class="post-meta">
       
@@ -342,37 +391,6 @@ Windows Server2008完全ガイドブック
     <div>
       <a class="read-more button"
         href="/posts/2010/02/28/biztalk2009biztalk2009%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E7%AE%A1%E7%90%86%E3%81%ABvss2005%E3%82%92%E4%BD%BF%E3%81%86%E3%81%A8%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%9D%E3%83%83%E3%83%97%E3%82%A2%E3%83%83%E3%83%97/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2010/02/22/windows%E7%B6%9A%E5%A0%B12%E6%9C%88-windows-update-%E3%81%A7-xp-%E3%81%8C%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AB%E3%81%AA%E3%82%8B%E7%8F%BE%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">[Windows][続報]2月 Windows Update で XP がブルースクリーンになる現象について</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/windows/">Windows</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2010/02/22/windows%E7%B6%9A%E5%A0%B12%E6%9C%88-windows-update-%E3%81%A7-xp-%E3%81%8C%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AB%E3%81%AA%E3%82%8B%E7%8F%BE%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">Read more →</a>
     </div>
     
   </div>
