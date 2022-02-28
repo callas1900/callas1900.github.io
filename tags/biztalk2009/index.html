@@ -177,8 +177,8 @@ btstask listapp -a:<em><strong>BizApp1</strong></em> -r:<em><strong>BizApp1_Reso
 で始まるタグを削除する。
 _
 エクスポート実行
-btstask ExportApp -a:</em><strong>BizApp1</strong>_ -p:_**&lt;MsiFileName&gt;**_ -r:_**BizApp1_Resource.xml**_   バインドファイルもエクスポート実行
-btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_   バッチ例 msiファイルとバインド設定ファイルをエクスポートする @setlocal @echo off echo ################################## echo %DATE% %TIME% Running export.bat echo ################################## REM !
+btstask ExportApp -a:</em><strong>BizApp1</strong>_ -p:<em><strong>&lt;MsiFileName&gt;</strong></em> -r:<em><strong>BizApp1_Resource.xml</strong></em>   バインドファイルもエクスポート実行
+btstask ExportBindings -Destination:<strong><em>BindFile.xml</em></strong> -ApplicationName:<em><strong>BizApp1</strong></em>   バッチ例 msiファイルとバインド設定ファイルをエクスポートする @setlocal @echo off echo ################################## echo %DATE% %TIME% Running export.bat echo ################################## REM !
       
       
     </div>

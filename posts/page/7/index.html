@@ -147,6 +147,50 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/">Android 5.0.2 以上でBLEが動かない</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/bluetooth/">Bluetooth</a>&nbsp;
+      
+      #<a href="/tags/ble/">BLE</a>&nbsp;
+      
+      #<a href="/tags/%E6%8A%80%E8%A1%93/">技術</a>&nbsp;
+      
+      #<a href="/tags/android/">Android</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
+エラー内容は以下のようになっている。
+java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
+Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
+Android 5.0.2 onwards don’t allow HID access through Bluetooth LE
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2016/02/03/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2016%E5%B9%B4-1%E6%9C%88%E3%81%BE%E3%81%A8%E3%82%81/">[読書メーター]2016年 1月まとめ</a></h1>
     <div class="post-meta">
       
@@ -308,57 +352,6 @@ X serviceを止めます。
     <div>
       <a class="read-more button"
         href="/posts/2016/01/12/%E8%AA%AD%E6%9B%B8%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC2015%E5%B9%B4-12%E6%9C%88%E8%AA%AD%E6%9B%B8%E3%81%BE%E3%81%A8%E3%82%81/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2016/01/12/%E8%87%86%E7%97%85%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-ansible/">臆病者のための Ansible</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/serverside/">serverside</a>&nbsp;
-      
-      #<a href="/tags/%E6%8A%80%E8%A1%93/">技術</a>&nbsp;
-      
-      #<a href="/tags/ansible/">Ansible</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      Target Links 臆病者のための確認コマンド  基本 確認 hosts 制限 hosts 確認 tasks 確認 最終   〆  Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
-全て手順書のように書いていればいいのだが、多数のRoleを使い高度に書かれたAnsible playbookを引き継ぎ、メンテまたは代わりに実行するのはとても怖い。
-playbook実行する前に何がどうなるのか確認しまくりたい。
-そんな自分のための初心者ガイド
-Links 実行の仕方など基礎的な事は公式ドキュメント参照
-Hello world
-<a href="http://docs.ansible.com/ansible/intro_getting_started.html">http://docs.ansible.com/ansible/intro_getting_started.html</a>
-どうやって使うかのオススメ、ディレクトリ配置など
-<a href="http://docs.ansible.com/ansible/playbooks_best_practices.html">http://docs.ansible.com/ansible/playbooks_best_practices.html</a>
-確認コマンド playbook は実行前に色々確認したいですよね。
-基本 ansible-playbook playbook.yml これで playbook が実行されます、設定がしっかりしてる環境であれば、外部サーバに実際に変更を行ったり、時には取り返しのつかない変更が実行されたりします。何も考えずに実行するのは危険
-確認 hosts ansible-playbook playbook.yml &ndash;list-hosts playbook は実行されません。
-playbookが実行される相手先をリストアップするだけです。
-host は hosts ファイルなどで定義された ansible のためのサーバー接続先設定のことです。
-制限 hosts ansible-playbook playbook.yml -l hoge &ndash;list-hosts -l の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 &ndash;list-hosts と組み合わせると捗ります。
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2016/01/12/%E8%87%86%E7%97%85%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-ansible/">Read more →</a>
     </div>
     
   </div>

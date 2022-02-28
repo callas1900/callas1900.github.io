@@ -60,7 +60,7 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE" />
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2016-02-03 22:48:00.001 &#43;0900 JST" />
+<meta property="article:published_time" content="2016-02-03 22:48:00 &#43;0900 JST" />
 
 
 
@@ -194,7 +194,7 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE" />
 <p>機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。<br>
 5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。</p>
 <p>エラー内容は以下のようになっている。</p>
-<pre><code>java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED.
+<pre tabindex="0"><code>java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED.
 </code></pre><p>発生箇所は BluetoothGatt#setCharacteristicNotification</p>
 <h1 id="causes--原因-">Causes -原因-</h1>
 <p>StackOverflow にほぼ発生事例そのままの報告がある、<br>
@@ -224,7 +224,7 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE<br>
 <h2 id="hid-を使ってるかの判断">HID を使ってるかの判断</h2>
 <p>以下のコミットによると、HIDの判断は, Characteristic UUID が<br>
 <a href="https://android.googlesource.com/platform/packages/apps/Bluetooth/+/02bebee">https://android.googlesource.com/platform/packages/apps/Bluetooth/+/02bebee</a></p>
-<pre><code>00002A4A-0000-1000-8000-00805F9B34FB  
+<pre tabindex="0"><code>00002A4A-0000-1000-8000-00805F9B34FB  
 00002A4B-0000-1000-8000-00805F9B34FB  
 00002A4C-0000-1000-8000-00805F9B34FB  
 00002A4D-0000-1000-8000-00805F9B34FB

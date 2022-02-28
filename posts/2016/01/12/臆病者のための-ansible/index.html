@@ -227,24 +227,24 @@ playbook実行する前に何がどうなるのか確認しまくりたい。</p
 <h1 id="確認コマンド">確認コマンド</h1>
 <p>playbook は実行前に色々確認したいですよね。</p>
 <h2 id="基本">基本</h2>
-<pre><code>ansible-playbook playbook.yml
+<pre tabindex="0"><code>ansible-playbook playbook.yml
 </code></pre><p>これで playbook が実行されます、設定がしっかりしてる環境であれば、外部サーバに実際に変更を行ったり、時には取り返しのつかない変更が実行されたりします。何も考えずに実行するのは危険</p>
 <h2 id="確認-hosts">確認 hosts</h2>
-<pre><code>ansible-playbook playbook.yml --list-hosts
+<pre tabindex="0"><code>ansible-playbook playbook.yml --list-hosts
 </code></pre><p>playbook は実行されません。<br>
 playbookが実行される相手先をリストアップするだけです。<br>
 host は hosts ファイルなどで定義された ansible のためのサーバー接続先設定のことです。</p>
 <h2 id="制限-hosts">制限 hosts</h2>
-<pre><code>ansible-playbook playbook.yml -l hoge --list-hosts
+<pre tabindex="0"><code>ansible-playbook playbook.yml -l hoge --list-hosts
 </code></pre><p><code>-l</code> の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 <code>--list-hosts</code> と組み合わせると捗ります。</p>
 <h2 id="確認-tasks">確認 tasks</h2>
-<pre><code>ansible-playbook playbook.yml --list-task
+<pre tabindex="0"><code>ansible-playbook playbook.yml --list-task
 </code></pre><p>playbook は実行されません。<br>
 各タスクの<code>-name</code>箇所が実行順番通りに列挙されます。<br>
 <code>-name</code>をきちんと書いておけばきっちり確認になります。</p>
 <p>私は気になる箇所は 出力内容で grep 検索しています。</p>
 <h2 id="確認-最終">確認 最終</h2>
-<pre><code>ansible-playbook playbook.yml -CD
+<pre tabindex="0"><code>ansible-playbook playbook.yml -CD
 </code></pre><p>playbook は実行されません。<br>
 <code>-CD</code> は <code>-C, --check</code>, <code>-D, --diff</code> の合成です。<br>
 二つ同時に実行したほうが効果的です。<br>
@@ -258,7 +258,7 @@ playbook は実行されませんが、実際に各 host に接続し、<br>
 </ol>
 <p>実際にはファイルAは消されていないので手順2でエラーになります。</p>
 <p>また、さらに詳細に内容がみたい場合は以下実行して下さい</p>
-<pre><code>ansible-playbook playbook.yml -CD -vvvv
+<pre tabindex="0"><code>ansible-playbook playbook.yml -CD -vvvv
 </code></pre><blockquote>
 <p>-v, –verbose verbose mode (-vvv for more, -vvvv to enable<br>
 connection debugging)</p>

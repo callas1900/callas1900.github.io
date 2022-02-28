@@ -54,7 +54,7 @@
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2016-07-21 17:50:00.001 &#43;0900 JST" />
+<meta property="article:published_time" content="2016-07-21 17:50:00 &#43;0900 JST" />
 
 
 
@@ -195,23 +195,23 @@
 <h1 id="sqlite-in-memory-database-を使う方法">sqlite in memory database を使う方法</h1>
 <h2 id="configdatabasephp">config/database.php</h2>
 <p>環境変数で default 値を差し替えれるようにする</p>
-<pre><code>'default' =&gt; env('DB_DEFAULT', 'pgsql'),
+<pre tabindex="0"><code>'default' =&gt; env('DB_DEFAULT', 'pgsql'),
 </code></pre><h2 id="configdatabasephp-1">config/database.php</h2>
 <p>memory database の定義を作る</p>
-<pre><code>'sqlite_testing' =&gt; [  
+<pre tabindex="0"><code>'sqlite_testing' =&gt; [  
     'driver'   =&gt; 'sqlite',  
     'database' =&gt; ':memory:',  
     'prefix'   =&gt; '',  
 ],
 </code></pre><h2 id="phpunitxml">phpunit.xml</h2>
 <p>環境変数追加。環境変数を与える方法は別に何でも良い。</p>
-<pre><code>~~~~~~~~~~~~~  
+<pre tabindex="0"><code>~~~~~~~~~~~~~  
         &lt;env name=&quot;DB_DEFAULT&quot; value=&quot;sqlite_testing&quot;/&gt;  
     &lt;/php&gt;  
 &lt;/phpunit&gt;
 </code></pre><h2 id="testcasephp">TestCase.php</h2>
 <p>都度migrateをするようにする。</p>
-<pre><code> public function setUp()  
+<pre tabindex="0"><code> public function setUp()  
   {  
       parent::setUp();  
   
@@ -227,11 +227,11 @@
 <hr>
 <h1 id="sqliteでエラーがでる場合の対処1">Sqliteでエラーがでる場合の対処1</h1>
 <h2 id="driver-not-found">Driver not found</h2>
-<pre><code>[Symfony\Component\Debug\Exception\FatalErrorException]  
+<pre tabindex="0"><code>[Symfony\Component\Debug\Exception\FatalErrorException]  
 Class 'Doctrine\DBAL\Driver\PDOSqlite\Driver' not found
 </code></pre><p>が出たら。</p>
 <p>cmposer に</p>
-<pre><code>&quot;doctrine/dbal&quot;: &quot;^2.5&quot;
+<pre tabindex="0"><code>&quot;doctrine/dbal&quot;: &quot;^2.5&quot;
 </code></pre><h2 id="alter-table-syntax-error">ALTER TABLE SYNTAX ERROR</h2>
 <p>さらにエラーが出る。<br>
 ALTER TABLE が syntax エラーと migration 中に出る。</p>
@@ -257,7 +257,7 @@ ALTER TABLE が syntax エラーと migration 中に出る。</p>
 <p>sqlite を諦め、PostgreSQL に一時的な testdb を作成し、<br>
 そちらでテストを行い、終了後は drop database する。</p>
 <p>script を書きそれを実行した。</p>
-<pre><code>psql -U postgres -c &quot;CREATE DATABASE testdb&quot;  
+<pre tabindex="0"><code>psql -U postgres -c &quot;CREATE DATABASE testdb&quot;  
 php artisan migrate --database=pgsql_testing  
 php artisan db:seed --database=pgsql_testing  
 phpunit -c phpunit.xml &quot;$@&quot;  

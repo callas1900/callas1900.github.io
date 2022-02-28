@@ -78,7 +78,7 @@ cabal update cabal install purescript 実行" />
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2014-10-14 12:44:00.001 &#43;0900 JST" />
+<meta property="article:published_time" content="2014-10-14 12:44:00 &#43;0900 JST" />
 
 
 
@@ -187,20 +187,20 @@ cabal update cabal install purescript 実行" />
 <p>Mac 上で Hello world してみる。<br>
 まず Cabal をインストールする（ Cabal は Haskell のパッケージシステム）。<br>
 ついでに実行環境用に node もインストール</p>
-<pre><code>brew install ghc cabal-install node
+<pre tabindex="0"><code>brew install ghc cabal-install node
 </code></pre><p>次に PureScript のインストール</p>
-<pre><code>psc --main=Main hello.purs &gt; hello.js
+<pre tabindex="0"><code>psc --main=Main hello.purs &gt; hello.js
 </code></pre><p>もし psc と打ち込んでもTerminalが反応しなかったら以下のようにパスを通す。</p>
-<pre><code>export PATH=&quot;$HOME/.cabal/bin:$PATH&quot;
+<pre tabindex="0"><code>export PATH=&quot;$HOME/.cabal/bin:$PATH&quot;
 </code></pre><p>Hello world を書く。ファイル名は hello.purs とする。</p>
-<pre><code>module Main where  
+<pre tabindex="0"><code>module Main where  
 import Debug.Trace  
 main = trace &quot;Hello, PureScript!&quot;
 </code></pre><p>コンパイル</p>
-<pre><code>cabal update  
+<pre tabindex="0"><code>cabal update  
 cabal install purescript
 </code></pre><p>実行</p>
-<pre><code>node hello.js  
+<pre tabindex="0"><code>node hello.js  
   
 &gt; Hello, PureScript!
 </code></pre><p>参考：<br>

@@ -147,6 +147,75 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2009/07/30/vb6%E4%B9%85%E3%81%97%E6%8C%AF%E3%82%8A%E3%81%AEvb6/">[VB6]久し振りのVB6</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/vb6/">VB6</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      ちょっとしたヘルプでVB6を書いてきました。
+久し振りの実装だったのでVB6でも文句も言わずウキウキやるぞー！
+と思っても実装開始後文句がいっぱい！
+それでも久し振りの実装だから笑顔で文句だけどね。
+VB6への文句集  VB6への文句集 ホイールでころころさせろ！ Collectionは爆発しろ！ StringBuilderなりStringBufferなり実装しろ！ TrueDBGridも爆発しろ！  レイアウトファイルが新規生成出来ないんだけど？ チェックボックスがうまく動かないんだけど？    ホイールでころころさせろ！ IDE開いて既存ソースを見てて違和感。
+あん？マウスで画面がスクロールしないぞ！？
+マウスの調子がおかしいわけでもないし・・？
+Google先生に聞いてみると、VB6のIDEじゃ
+ホイールロールイベントが使えないらしい！！！
+なんてことだ！
+結局本家MSのサイトでマウスロールに対応させる
+KBが置いてたので導入
+VB6でマウスころころKB
+どうでもいいけどKBってknowledge-Baseの略だったんだね。
+Collectionは爆発しろ！ ほのかに覚えているVB6の実装の記憶じゃ
+CollectionとrecodeSetを使って、
+DBから取得してイテレータ的なことをしていた記憶がある。
+Keyを使って登録できるということでHashMap的に使えるのかと思ったら。
+だまされた！
+Key一覧を吐き出せないじゃないか！
+Indexでしかアクセス出来ないならKeyで登録する意味が分からない！
+さらに意味がわからないのはそのIndexが1から始まることだ。
+PCでIndexを振る場合は0からと相場が決まってるだろぉ！
+何度Indexエラーを起こしてしまったことか！
+（私が悪いんですけどね、はい）
+従来のFor文だと
+For i = 0 To Dictionary.Count - 1
+なんか処理
+Next i
+となっちゃうのが
+For i = 1 To Collection.Count
+なんか処理
+Next i
+になるから - 1 書かなくていいからスマート！
+とかでも考えたんだろうか？
+なんてことだ！
+結局、参照設定にMicrosoft Scripting Runtimeを追加して
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2009/07/30/vb6%E4%B9%85%E3%81%97%E6%8C%AF%E3%82%8A%E3%81%AEvb6/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2009/07/01/%E6%97%A5%E8%A8%9828%E6%AD%B3%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/">[日記]28歳になりました。</a></h1>
     <div class="post-meta">
       
@@ -267,37 +336,6 @@
     <div>
       <a class="read-more button"
         href="/posts/2009/05/04/%E6%97%A5%E8%A8%98%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B6%E3%83%91%E3%83%B3%E3%83%87%E3%83%9F%E3%83%83%E3%82%AF/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2009/04/22/%E6%97%A5%E8%A8%98%E6%81%AF%E5%AD%90%E3%81%8C%E9%A2%A8%E9%82%AA%E5%BC%95%E3%81%84%E3%81%9F/">[日記]息子が風邪引いた。</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/%E6%97%A5%E8%A8%98/">日記</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2009/04/22/%E6%97%A5%E8%A8%98%E6%81%AF%E5%AD%90%E3%81%8C%E9%A2%A8%E9%82%AA%E5%BC%95%E3%81%84%E3%81%9F/">Read more →</a>
     </div>
     
   </div>

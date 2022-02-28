@@ -186,16 +186,16 @@ inxi -G Graphics: Card: Failed to Detect Video Card! Display Server: X.org 1.16.
 なんか動いている感じがするので、ルーターをチェックしたら、きちんとIPが振られていた。</p>
 <p>sshでアクセス成功したので、中身チェック。
 ファイルシステムは生きているみたいなので、大急ぎでバックアップをとろうと、USB外部ストレージを挿すがmediaの下にマウントされない。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">fdisk -l | less
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">fdisk -l | less
 </code></pre></div><p>でディスクを調べ、</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo mount /dev/sdbb1 /media/usb/SOTRAGE
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo mount /dev/sdbb1 /media/usb/SOTRAGE
 </code></pre></div><p>でいつもの場所にマウント。</p>
 <p>バックアップ完了後に、調査継続。
 ディスプレイに別PCを接続してみると、認識したので、ディスプレイではない。
 sshでの接続もできたので、linux側ではない。
 ケーブルに傷が入っているかと確認したがなし。
 ビデオカードが怪しいなとチェック。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">inxi -G
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">inxi -G
 Graphics:  Card: Failed to Detect Video Card!
            Display Server: X.org 1.16.4 driver: nvidia
            tty size: 100x29 Advanced Data: N/A out of X

@@ -72,7 +72,7 @@ parse error: Invalid numeric literal at line 144, column 114 これは直前に�
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2016-04-04 12:38:00.001 &#43;0900 JST" />
+<meta property="article:published_time" content="2016-04-04 12:38:00 &#43;0900 JST" />
 
 
 
@@ -191,7 +191,7 @@ parse error: Invalid numeric literal at line 144, column 114 これは直前に�
 TAGが外れているimagesがどんどん残っていきます。</p>
 <h2 id="エラーが起きる">エラーが起きる</h2>
 <p>ずーっと管理せずに放置していると、ある日こんなエラーと出会います。</p>
-<pre><code>HTTP code 500 while uploading metadata: &quot;invalid character '&lt;' looking for beginning of value&quot;
+<pre tabindex="0"><code>HTTP code 500 while uploading metadata: &quot;invalid character '&lt;' looking for beginning of value&quot;
 </code></pre><p>これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。</p>
 <h2 id="不要なimageを削除する">不要なimageを削除する。</h2>
 <p>以下スクリプとが非常に有用です。<br>
@@ -200,7 +200,7 @@ jqのインストールが必須になります。</p>
 <a href="https://gist.github.com/kwk/c5443f2a1abcf0eb1eaa">https://gist.github.com/kwk/c5443f2a1abcf0eb1eaa</a></p>
 <h2 id="追記実行時のエラー">追記:実行時のエラー</h2>
 <p>私の場合、実行時に下記エラーが出ました。</p>
-<pre><code>parse error: Invalid numeric literal at line 144, column 114
+<pre tabindex="0"><code>parse error: Invalid numeric literal at line 144, column 114
 </code></pre><p>これは直前に表示されたrepository名のindexファイルが破損していたため、起きた現象でした。手修正でindexファイルを修正したところ、うまく動きました。</p>
 
   </div>

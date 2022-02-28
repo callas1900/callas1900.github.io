@@ -147,6 +147,59 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2007/12/05/toolcvs-for-nt-2.5.03%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/">[Tool]CVS for NT 2.5.03インストールメモ</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/tool/">Tool</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      インストール環境
+サーバーサイド・クライアントサイド共に　WindowsXP
+CVSには「CVS for NT」を仕様（Verは2.5.03）
+下記にてDL（右端にある）
+[CVS
+](<a href="http://www.march-hare.com/cvspro/prods.asp?lang=JP">http://www.march-hare.com/cvspro/prods.asp?lang=JP</a> “CVS”)
+実行後ウィザード内で
+【Select Components】の画面で【Server Components】にチェックを入れる
+他はデフォルトインストール
+（考えるの面倒だったらFullインストールすればOK)
+環境変数「Path」にCVS for NT のインストールディレクトリが追加されていることを確認
+コントロールパネルの中に「CVS NT Server」なるものが出来上がっているので、
+それをダブルクリック。
+【Repository Configuration】なるタブがあるのでそれを選択。
+【ADD】ボタンから新規作成
+Location　：　CVS管理したいフォルダをインストール Name　：　上記が入れば勝手にデフォルトが入力されるのでそれを採用 Description　：　適当    「適用」を押すと、initialize するか聞いてくるのでOK
+この作業が終わると、Location先のフォルダに「CVSROOT」というフォルダが出来る。
+コマンドプロンプトを起動してパスワードを設定。
+C:\適当なディレクトリ&gt;cvs -d c:\hogehoge\hoge passwd -r Administrator -a user01
+Adding user user01
+New Password: [作成するユーザ(user01)のパスワードを入力]
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2007/12/05/toolcvs-for-nt-2.5.03%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2007/11/07/flashlaszlo%E3%82%88%E7%B4%8D%E5%93%81%E5%BE%8C%E3%81%AE%E6%9A%87%E3%81%AA%E6%99%82%E9%96%93%E3%82%92%E8%BF%94%E3%81%9B/">[Flash]Laszloよ、納品後の暇な時間を返せ。</a></h1>
     <div class="post-meta">
       
@@ -358,39 +411,6 @@ org.eclipse.emf.ocl org.eclipse.emf.query org.eclipse.emf.validation org.eclipse
     <div>
       <a class="read-more button"
         href="/posts/2007/11/06/%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%A4%E3%82%B3%E3%83%BC%E3%83%AB%E3%81%A8%E4%B8%80%E8%88%AC%E4%BA%BA/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2007/10/29/oracle-10g-express-edition%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/">Oracle 10g Express Editionのインストールメモ</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/oracle/">Oracle</a>&nbsp;
-      
-      #<a href="/tags/worklog/">WorkLog</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2007/10/29/oracle-10g-express-edition%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%A1%E3%83%A2/">Read more →</a>
     </div>
     
   </div>

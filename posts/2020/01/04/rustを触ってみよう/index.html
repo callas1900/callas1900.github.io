@@ -177,14 +177,14 @@ cargo new hello_world cd hello_world $ tree -a ." />
 <p>以下のURLを参照しながら勉強しています。
 <a href="https://doc.rust-lang.org/book/ch01-02-hello-world.html">https://doc.rust-lang.org/book/ch01-02-hello-world.html</a></p>
 <h1 id="まずは-hello-world">まずは Hello, World!</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
-    println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+    println!(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>);
 }
 </code></pre></div><p>試しにエンドコロン削除
 特に問題ないし、</p>
 <p><code>println!</code>が気になったので説明を読むとこれはマクロのコールだと、
 ためしに<code>!</code>を削除してみる、 エラーになった。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">error<span style="color:#f92672">[</span>E0423<span style="color:#f92672">]</span>: expected <span style="color:#66d9ef">function</span>, found macro <span style="color:#e6db74">`</span>println<span style="color:#e6db74">`</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">error<span style="color:#f92672">[</span>E0423<span style="color:#f92672">]</span>: expected <span style="color:#66d9ef">function</span>, found macro <span style="color:#e6db74">`</span>println<span style="color:#e6db74">`</span>
  --&gt; main.rs:2:5
   |
 <span style="color:#ae81ff">2</span> |     println<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello World!&#34;</span><span style="color:#f92672">)</span>;
@@ -196,9 +196,9 @@ For more information about this error, try <span style="color:#e6db74">`</span>r
 </code></pre></div><p>コンパイラからの情報見るに関数期待していてマクロがきたと言っているので、<code>println</code>はマクロとして先に定義しているのか、それとも記法が違うのか。Ch19で説明とあるから一旦従う</p>
 <h1 id="hello-cargo">Hello, Cargo!</h1>
 <p>先程は <code>rustc</code> でコンパイルしたが、rust は cargo　というマネジメントツールを使うみたい。以下のようにやることでプロジェクトなんかも作れちゃう。</p>
-<pre><code>cargo new hello_world
+<pre tabindex="0"><code>cargo new hello_world
 cd hello_world
-</code></pre><pre><code>$ tree -a
+</code></pre><pre tabindex="0"><code>$ tree -a
 .
 ├── Cargo.toml
 ├── .git
@@ -215,9 +215,9 @@ cd hello_world
 src ディレクトリの中に Hello, World! が既に入っているのもいいですね。</p>
 <h1 id="programming-a-guessing-game">Programming a Guessing Game</h1>
 <p>Guessing Game を作りながらプログラミングを学ぶ。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> foo <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>; <span style="color:#75715e">// immutable
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> foo <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>; <span style="color:#75715e">// immutable
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> bar <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>; <span style="color:#75715e">// mutable
-</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">io::stdin().read_line(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> guess)
+</span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">io::stdin().read_line(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> guess)
     .expect(<span style="color:#e6db74">&#34;Failed to read line&#34;</span>);
 </code></pre></div><p>usingを使うことでパッケージを短縮できるが、必須ではない。このあたりはJavaチック。</p>
 <p><code>&amp;mut guess</code></p>
@@ -226,10 +226,10 @@ src ディレクトリの中に Hello, World! が既に入っているのもい�
 </blockquote>
 <p>&amp;の参照型はデフォルトでは変更不可。したがって<code>&amp;mut guess</code> と書くことで変更可能にすることが出来る。 <code>&amp;guess</code> だと変更不可。</p>
 <p>次のお題は</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">match</span> guess.cmp(<span style="color:#f92672">&amp;</span>secret_number) {
-        Ordering::Less <span style="color:#f92672">=&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too small!&#34;</span>),
-        Ordering::Greater <span style="color:#f92672">=&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too big!&#34;</span>),
-        Ordering::Equal <span style="color:#f92672">=&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;You win!&#34;</span>),
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">match</span> guess.cmp(<span style="color:#f92672">&amp;</span>secret_number) {
+        Ordering::Less <span style="color:#f92672">=&gt;</span> println!(<span style="color:#e6db74">&#34;Too small!&#34;</span>),
+        Ordering::Greater <span style="color:#f92672">=&gt;</span> println!(<span style="color:#e6db74">&#34;Too big!&#34;</span>),
+        Ordering::Equal <span style="color:#f92672">=&gt;</span> println!(<span style="color:#e6db74">&#34;You win!&#34;</span>),
     }
 </code></pre></div><p>を追加することで入力と生成された文字との比較をして推測ゲームを完成させる。
 上が比較なのはわかるし、Ordering::Lessとかの後の<code>=&gt;</code>はラムダなのかなでも、カールブラケットの中に入れているが不思議。</p>
@@ -237,7 +237,7 @@ src ディレクトリの中に Hello, World! が既に入っているのもい�
 <p>でっ結果はコンパイルエラー、型不一致。
 入力値はStringなので、という話
 じゃ入力値を数字に変換しましょう</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> guess: <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> guess.trim().parse()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> guess: <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> guess.trim().parse()
     .expect(<span style="color:#e6db74">&#34;Please type a number!&#34;</span>);
 </code></pre></div><p>なんか不思議な書き方。</p>
 <blockquote>
@@ -252,20 +252,20 @@ src ディレクトリの中に Hello, World! が既に入っているのもい�
 <p><code>guess: u32</code> って何かなと思ったら。</p>
 <p><code>let guess: u32 = guess.parse().unwrap();</code> と <code>let guess = guess.parse::&lt;u32&gt;();</code> は等価だそうだ。後者のほうが私はわかりやすいけど、慣れたら前者のほうが早くかけるし、式の頭で何が行われるかわかりやすいのかな。</p>
 <p>結局 <code>: i32</code> はただのrustの型宣言のやり方。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#75715e">// --snip--
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#75715e">// --snip--
 </span><span style="color:#75715e"></span>
         <span style="color:#66d9ef">match</span> guess.cmp(<span style="color:#f92672">&amp;</span>secret_number) {
-            Ordering::Less <span style="color:#f92672">=&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too small!&#34;</span>),
-            Ordering::Greater <span style="color:#f92672">=&gt;</span> println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Too big!&#34;</span>),
+            Ordering::Less <span style="color:#f92672">=&gt;</span> println!(<span style="color:#e6db74">&#34;Too small!&#34;</span>),
+            Ordering::Greater <span style="color:#f92672">=&gt;</span> println!(<span style="color:#e6db74">&#34;Too big!&#34;</span>),
             Ordering::Equal <span style="color:#f92672">=&gt;</span> {
-                println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;You win!&#34;</span>);
+                println!(<span style="color:#e6db74">&#34;You win!&#34;</span>);
                 <span style="color:#66d9ef">break</span>;
             }
         }
     }
 }
 </code></pre></div><p>やはり <code>=&gt;</code> はラムダ式的なものか、<del>でもLessとかの値がどこからきたのかわからない。</del> &lt;-<code>fn cmp</code> の戻り値からきてる。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#75715e">// --snip--
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#75715e">// --snip--
 </span><span style="color:#75715e"></span>
 <span style="color:#66d9ef">let</span> guess: <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">match</span> guess.trim().parse() {
     Ok(num) <span style="color:#f92672">=&gt;</span> num,
@@ -280,42 +280,42 @@ parse 関数の戻り値を <code>match {};</code> で受けてるようだ。</
 <h2 id="variables-and-mutability">Variables and Mutability</h2>
 <p>基本はimmutableつまり<code>const</code>がデフォルトなのかと思ったら。<code>const</code>もあった。
 <code>let</code>はあくまで<code>mut</code> を使えるよと言うだけみたい。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
 <span style="color:#66d9ef">const</span> MAX_POINTS: <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100_000</span>;
 }
 </code></pre></div><p><code>100_000</code> 地味に便利。100,000と同じ感覚</p>
 <h3 id="shadowing">Shadowing</h3>
 <p>変数の使い回しが出来るってことだけど、注意点は<code>let</code>がいるってことか。
 再宣言でオーバーライド出来るってことね。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
     <span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
     <span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
     <span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
 
-    println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;The value of x is: {}&#34;</span>, x);
+    println!(<span style="color:#e6db74">&#34;The value of x is: {}&#34;</span>, x);
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
     <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
     x <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
     x <span style="color:#f92672">=</span> x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
 
-    println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;The value of x is: {}&#34;</span>, x);
+    println!(<span style="color:#e6db74">&#34;The value of x is: {}&#34;</span>, x);
 }
 </code></pre></div><p>上２つは同じ結果になるけど、前者はShadowingを使っている、以下は変数値を書き換えている。
 <del>メモリ的には前者かな</del> おそらく Shadowing した瞬間に前の変数はドロップされるので、メモリ的には変わらない。CPU的にはわからない。ベンチマークそのうちしてみる。</p>
 <p>あと、</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
 <span style="color:#66d9ef">let</span> spaces <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;   &#34;</span>;
 <span style="color:#66d9ef">let</span> spaces <span style="color:#f92672">=</span> spaces.len();
 }
 </code></pre></div><p>はOKだけど、</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
 <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> spaces <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;   &#34;</span>;
 spaces <span style="color:#f92672">=</span> spaces.len();
 }
 </code></pre></div><p>はだめ、Shadwingは型の再定義はできない。</p>
 <p>次に、</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
     <span style="color:#75715e">// This binding lives in the main function
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> long_lived_binding <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
 
@@ -324,28 +324,28 @@ spaces <span style="color:#f92672">=</span> spaces.len();
         <span style="color:#75715e">// This binding only exists in this block
 </span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> short_lived_binding <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
 
-        println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;inner short: {}&#34;</span>, short_lived_binding);
+        println!(<span style="color:#e6db74">&#34;inner short: {}&#34;</span>, short_lived_binding);
 
         <span style="color:#75715e">// This binding *shadows* the outer one
 </span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> long_lived_binding <span style="color:#f92672">=</span> <span style="color:#ae81ff">5_</span><span style="color:#66d9ef">f32</span>;
 
-        println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;inner long: {}&#34;</span>, long_lived_binding);
+        println!(<span style="color:#e6db74">&#34;inner long: {}&#34;</span>, long_lived_binding);
     }
     <span style="color:#75715e">// End of the block
 </span><span style="color:#75715e"></span>
     <span style="color:#75715e">// Error! `short_lived_binding` doesn&#39;t exist in this scope
-</span><span style="color:#75715e"></span>    println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;outer short: {}&#34;</span>, short_lived_binding);
+</span><span style="color:#75715e"></span>    println!(<span style="color:#e6db74">&#34;outer short: {}&#34;</span>, short_lived_binding);
     <span style="color:#75715e">// FIXME ^ Comment out this line
 </span><span style="color:#75715e"></span>
-    println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;outer long: {}&#34;</span>, long_lived_binding);
+    println!(<span style="color:#e6db74">&#34;outer long: {}&#34;</span>, long_lived_binding);
     
     <span style="color:#75715e">// This binding also *shadows* the previous binding
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> long_lived_binding <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;a&#39;</span>;
     
-    println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;outer long: {}&#34;</span>, long_lived_binding);
+    println!(<span style="color:#e6db74">&#34;outer long: {}&#34;</span>, long_lived_binding);
 }
 </code></pre></div><p>上の例のアウトプットは</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">inner short: <span style="color:#ae81ff">2</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">inner short: <span style="color:#ae81ff">2</span>
 inner long: <span style="color:#ae81ff">5</span>
 outer long: <span style="color:#ae81ff">1</span>
 outer long: a
@@ -361,7 +361,7 @@ outer long: a
 </ul>
 <h3 id="functions">Functions</h3>
 <p>関数の戻り値の型宣言が面白い</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">five</span>() -&gt; <span style="color:#66d9ef">i32</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">five</span>() -&gt; <span style="color:#66d9ef">i32</span> {
     <span style="color:#ae81ff">5</span>
 }
 
@@ -370,21 +370,21 @@ outer long: a
 }
 </code></pre></div><p>return 値はセミコロンなし。
 セミコロンありでも無しでも動くと思っていたら。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">plus_one</span>(x: <span style="color:#66d9ef">i32</span>) -&gt; <span style="color:#66d9ef">i32</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">plus_one</span>(x: <span style="color:#66d9ef">i32</span>) -&gt; <span style="color:#66d9ef">i32</span> {
     x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
 }
 </code></pre></div><p>は問題なく動くいて、もし5が入ってきたら、6を返すけど、</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">plus_one</span>(x: <span style="color:#66d9ef">i32</span>) -&gt; <span style="color:#66d9ef">i32</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">plus_one</span>(x: <span style="color:#66d9ef">i32</span>) -&gt; <span style="color:#66d9ef">i32</span> {
     x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
 }
 </code></pre></div><p>は空のタプルを返す。</p>
 <h3 id="control-flow">Control Flow</h3>
 <p>きちんと for-eachある</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
     <span style="color:#66d9ef">let</span> a <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">50</span>];
 
     <span style="color:#66d9ef">for</span> element <span style="color:#66d9ef">in</span> a.iter() {
-        println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;the value is: {}&#34;</span>, element);
+        println!(<span style="color:#e6db74">&#34;the value is: {}&#34;</span>, element);
     }
 }
 </code></pre></div><h1 id="wrap-up">Wrap up</h1>

@@ -224,21 +224,21 @@ theme切り戻すと、indexページが復活する。
 <h2 id="investigation2-git-bisect">investigation#2 git bisect</h2>
 <p><code>git bisect</code> があったことを思い出す。
 まずは</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -w
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -w
 </code></pre></div><p>でwatch mode でhugo server を起動し、
 top page に<code>_index.md</code>の内容が表示されている元々folkした時のhashを確認、
 次に最新のhash値をcheckoutすると記事一覧が表示されることを確認。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git bisect start
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git bisect start
 git bisect 
 git bisect good a28c65d41178ff39981a3df5b80a7108eec2a1bc
 git bisect bad 2a34760541f983068786cbe7b2e901fefa357e5d
 </code></pre></div><p><strong>bad</strong> の hash値は駄目だったときのもの、<strong>good</strong> はindexが表示されたもの。</p>
 <p>後は、gitが自動的にcheckoutをしてくれるので、
 good と bad を以下のようにやりながら、gitが見つけるまで続ける</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git bisect good
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git bisect good
 git bisect bad
 </code></pre></div><p>最終的には以下のようになった。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git bisect good
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git bisect good
 3d20322e3ad506e0110a0f134b043b90534a15fc is the first bad commit
 commit 3d20322e3ad506e0110a0f134b043b90534a15fc
 Author: William Sandbrink &lt;wilsandbrink@gmail.com&gt;
@@ -251,7 +251,7 @@ Date:   Wed Aug <span style="color:#ae81ff">14</span> 22:08:50 <span style="colo
 </code></pre></div><p>結局、以下の変更が問題だった見たい。
 おそらく修正後の方が正しいんだけど、私には都合がわるいので、
 自分のrepositoryに取り込んだ後、修正コードを買いて終了。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">- {{ $paginator := .Paginate (where .Data.Pages &#34;Type&#34; $contentTypeName) }}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">- {{ $paginator := .Paginate (where .Data.Pages &#34;Type&#34; $contentTypeName) }}
 </span><span style="color:#f92672"></span><span style="color:#a6e22e">+ {{ $paginator := .Paginate (where .Site.RegularPages &#34;Type&#34; $contentTypeName) }}
 </span></code></pre></div><h1 id="最終">最終</h1>
 <p>これで移行は終了。<br>

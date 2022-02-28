@@ -93,7 +93,7 @@ btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizAp
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2010-03-23 22:56:00.005 &#43;0900 JST" />
+<meta property="article:published_time" content="2010-03-23 22:56:00 &#43;0900 JST" />
 
 
 
@@ -227,7 +227,7 @@ btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizAp
 <ol>
 <li>
 <p>アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。</p>
-<pre><code>btstask listapp -a:_**BizApp1**_ -r:_**BizApp1\_Resource.xml**_
+<pre tabindex="0"><code>btstask listapp -a:_**BizApp1**_ -r:_**BizApp1\_Resource.xml**_
 </code></pre></li>
 <li>
 <p>_**BizApp1_Resource.xml **を修正する。</p>
@@ -238,16 +238,16 @@ btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizAp
 </li>
 <li>
 <p>エクスポート実行</p>
-<pre><code>btstask ExportApp -a:_**BizApp1**_ -p:_**&lt;MsiFileName&gt;**_ -r:_**BizApp1\_Resource.xml**_
+<pre tabindex="0"><code>btstask ExportApp -a:_**BizApp1**_ -p:_**&lt;MsiFileName&gt;**_ -r:_**BizApp1\_Resource.xml**_
 </code></pre></li>
 <li>
 <p>バインドファイルもエクスポート実行</p>
-<pre><code>btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_
+<pre tabindex="0"><code>btstask ExportBindings -Destination:**_BindFile.xml_** -ApplicationName:_**BizApp1**_
 </code></pre></li>
 </ol>
 <h3 id="バッチ例">バッチ例</h3>
 <h4 id="msiファイルとバインド設定ファイルをエクスポートする">msiファイルとバインド設定ファイルをエクスポートする</h4>
-<pre><code>@setlocal  
+<pre tabindex="0"><code>@setlocal  
 @echo off  
   
 echo ##################################  
@@ -277,7 +277,7 @@ REM \#### バインド設定xmlをエクスポートします。
 btstask ExportBindings -Destination:%XML\_NAME% -ApplicationName:%APP\_NAME%  
 
 </code></pre><h4 id="msiファイルからbiztalkアプリをインストールする"><strong>msiファイルからBizTalkアプリをインストールする</strong></h4>
-<pre><code>@setlocal  
+<pre tabindex="0"><code>@setlocal  
 @echo off  
   
 echo ##################################  
@@ -310,7 +310,7 @@ REM #### BizTalk アプリの設定をインポートする
 BTSTask ImportApp -Package:%MSI\_NAME% -ApplicationName:%APP\_NAME% -o  
 
 </code></pre><h4 id="バインド設定をインポートする">バインド設定をインポートする</h4>
-<pre><code>@echo off  
+<pre tabindex="0"><code>@echo off  
 @setlocal  
   
 echo ##################################  
@@ -331,7 +331,7 @@ set APP\_NAME=%1
 btstask ImportBindings -Source:%XML\_NAME% -ApplicationName:%APP\_NAME%  
 
 </code></pre><h4 id="msiファイルを使った対象biztalkアプリを削除する">msiファイルを使った対象BizTalkアプリを削除する</h4>
-<pre><code>@echo off  
+<pre tabindex="0"><code>@echo off  
 @setlocal  
   
 echo ##################################  
