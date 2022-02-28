@@ -6,14 +6,26 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="列挙体のメリットの一つに、 Dim a As 列挙体 と書いて、列挙体のメンバを指定することを明示で&amp;hellip; 匿名 - Apr 1, 2013列挙体のメリットの一つに、
-Dim a As 列挙体
-と書いて、列挙体のメンバを指定することを明示できる点もありますよね。
-そういった使い方もできるようにするには、どうしたらいいんだろう。
-コメントありがとうございます。
-これを書いたのは大分前なので、現在はVB.NETにネイティブなENUM使えるみたいなのでそちらを使う事をお勧めします。
-http://msdn.microsoft.com/en-us/library/8h84wky1(v=vs.80).aspx
-Dim a As 列挙体も出来ます。"/>
+<meta name="description" content="enumとか使っていると、文字列型列挙体が欲しくなってきます。
+VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。
+以下コードと解説
+コード
+ `Public Structure sampleStructure
+Public Const hoge As String = &amp;ldquo;hogehoge&amp;rdquo;
+Public Const fuga As String = &amp;ldquo;fugafuga&amp;rdquo;
+Public Const foo As String = &amp;ldquo;foofoo&amp;rdquo;
+Public Const bar As String = &amp;ldquo;barbar&amp;rdquo;
+ &amp;lsquo;構造体用インスタンスメンバをダミー実装
+Private dummy As String
+ &amp;lsquo;構造体のReferenceEqualsを参照出来なくする。
+Private Shadows Function ReferenceEquals() As Object
+Return New Object
+End Function
+ &amp;lsquo;構造体のEqualsを参照出来なくする。
+Private Shadows Function equals() As Object
+Return New Object
+End Function
+End Structure"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/" />
@@ -36,14 +48,26 @@ Dim a As 列挙体も出来ます。"/>
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="[VB.NET]文字列型列挙体の実装 :: callas1900.net — A simple page of mine" />
-<meta name="twitter:description" content="列挙体のメリットの一つに、 Dim a As 列挙体 と書いて、列挙体のメンバを指定することを明示で&amp;hellip; 匿名 - Apr 1, 2013列挙体のメリットの一つに、
-Dim a As 列挙体
-と書いて、列挙体のメンバを指定することを明示できる点もありますよね。
-そういった使い方もできるようにするには、どうしたらいいんだろう。
-コメントありがとうございます。
-これを書いたのは大分前なので、現在はVB.NETにネイティブなENUM使えるみたいなのでそちらを使う事をお勧めします。
-http://msdn.microsoft.com/en-us/library/8h84wky1(v=vs.80).aspx
-Dim a As 列挙体も出来ます。" />
+<meta name="twitter:description" content="enumとか使っていると、文字列型列挙体が欲しくなってきます。
+VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。
+以下コードと解説
+コード
+ `Public Structure sampleStructure
+Public Const hoge As String = &amp;ldquo;hogehoge&amp;rdquo;
+Public Const fuga As String = &amp;ldquo;fugafuga&amp;rdquo;
+Public Const foo As String = &amp;ldquo;foofoo&amp;rdquo;
+Public Const bar As String = &amp;ldquo;barbar&amp;rdquo;
+ &amp;lsquo;構造体用インスタンスメンバをダミー実装
+Private dummy As String
+ &amp;lsquo;構造体のReferenceEqualsを参照出来なくする。
+Private Shadows Function ReferenceEquals() As Object
+Return New Object
+End Function
+ &amp;lsquo;構造体のEqualsを参照出来なくする。
+Private Shadows Function equals() As Object
+Return New Object
+End Function
+End Structure" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -52,14 +76,26 @@ Dim a As 列挙体も出来ます。" />
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="[VB.NET]文字列型列挙体の実装 :: callas1900.net — A simple page of mine">
-<meta property="og:description" content="列挙体のメリットの一つに、 Dim a As 列挙体 と書いて、列挙体のメンバを指定することを明示で&amp;hellip; 匿名 - Apr 1, 2013列挙体のメリットの一つに、
-Dim a As 列挙体
-と書いて、列挙体のメンバを指定することを明示できる点もありますよね。
-そういった使い方もできるようにするには、どうしたらいいんだろう。
-コメントありがとうございます。
-これを書いたのは大分前なので、現在はVB.NETにネイティブなENUM使えるみたいなのでそちらを使う事をお勧めします。
-http://msdn.microsoft.com/en-us/library/8h84wky1(v=vs.80).aspx
-Dim a As 列挙体も出来ます。" />
+<meta property="og:description" content="enumとか使っていると、文字列型列挙体が欲しくなってきます。
+VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。
+以下コードと解説
+コード
+ `Public Structure sampleStructure
+Public Const hoge As String = &amp;ldquo;hogehoge&amp;rdquo;
+Public Const fuga As String = &amp;ldquo;fugafuga&amp;rdquo;
+Public Const foo As String = &amp;ldquo;foofoo&amp;rdquo;
+Public Const bar As String = &amp;ldquo;barbar&amp;rdquo;
+ &amp;lsquo;構造体用インスタンスメンバをダミー実装
+Private dummy As String
+ &amp;lsquo;構造体のReferenceEqualsを参照出来なくする。
+Private Shadows Function ReferenceEquals() As Object
+Return New Object
+End Function
+ &amp;lsquo;構造体のEqualsを参照出来なくする。
+Private Shadows Function equals() As Object
+Return New Object
+End Function
+End Structure" />
 <meta property="og:url" content="/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/" />
 <meta property="og:site_name" content="[VB.NET]文字列型列挙体の実装" />
 <meta property="og:image" content="">
@@ -174,18 +210,46 @@ Dim a As 列挙体も出来ます。" />
   
 
   <div class="post-content">
-    <h4 id="列挙体のメリットの一つに-dim-a-as-列挙体-と書いて列挙体のメンバを指定することを明示で">列挙体のメリットの一つに、 Dim a As 列挙体 と書いて、列挙体のメンバを指定することを明示で&hellip;</h4>
-<p><a href="%22noreply@blogger.com%22">匿名</a> - <!-- raw HTML omitted -->Apr 1, 2013<!-- raw HTML omitted --></p>
-<p>列挙体のメリットの一つに、<br>
-Dim a As 列挙体<br>
-と書いて、列挙体のメンバを指定することを明示できる点もありますよね。</p>
-<p>そういった使い方もできるようにするには、どうしたらいいんだろう。</p>
-<!-- raw HTML omitted -->
-<p>コメントありがとうございます。<br>
-これを書いたのは大分前なので、現在はVB.NETにネイティブなENUM使えるみたいなのでそちらを使う事をお勧めします。</p>
-<p><a href="http://msdn.microsoft.com/en-us/library/8h84wky1(v=vs.80).aspx">http://msdn.microsoft.com/en-us/library/8h84wky1(v=vs.80).aspx</a></p>
-<p>Dim a As 列挙体も出来ます。</p>
-<!-- raw HTML omitted -->
+    <p><strong>enum</strong>とか使っていると、文字列型列挙体が欲しくなってきます。</p>
+<p>VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。</p>
+<p>以下コードと解説</p>
+<p>コード</p>
+<hr>
+<p>`Public Structure sampleStructure<br>
+      Public Const hoge As String = &ldquo;hogehoge&rdquo;<br>
+      Public Const fuga As String = &ldquo;fugafuga&rdquo;<br>
+      Public Const foo As String = &ldquo;foofoo&rdquo;<br>
+      Public Const bar As String = &ldquo;barbar&rdquo;</p>
+<p>      &lsquo;構造体用インスタンスメンバをダミー実装<br>
+      Private dummy As String</p>
+<p>      &lsquo;構造体のReferenceEqualsを参照出来なくする。<br>
+      Private Shadows Function ReferenceEquals() As Object<br>
+          Return New Object<br>
+        End Function</p>
+<p>      &lsquo;構造体のEqualsを参照出来なくする。<br>
+      Private Shadows Function equals() As Object<br>
+          Return New Object<br>
+        End Function<br>
+  End Structure</p>
+<p>`</p>
+<hr>
+<p>解説</p>
+<p>ポイントはインスタンスメンバのdummy実装と、shadowsによる参照制限</p>
+<p>インスタンスメンバのdummy実装はもしかしたら何とかできるかもしれない。<br>
+とりあえずメンバ変数がConstのみだとコンパイラに怒られるので、<br>
+Private宣言でdummyを実装してみた。</p>
+<p>もちろん インスタンスメンバをPrivate宣言に変更し、<br>
+ReadOnly Property でゲッターメソッドのみを定義すれば</p>
+<p>dummy実装なんていらないんだろうけど。</p>
+<p>構造体自体の可読性を重視して廃止。</p>
+<p>次に構造体はequalsメソッドと、<code>ReferenceEqualsメソッドを実装している。   </code></p>
+<p>`これらがあると、この構造体を参照した時に両メソッドが参照されてしまう。</p>
+<p>`</p>
+<p><img src="http://docs.google.com/File?id=dhr8vrth_148hb6s47hr_b" alt=""></p>
+<p>それを防ぐためにShadowsで両メソッドをPrivateで上書きする。</p>
+<p>そうすると。候補から両メソッドが消える。</p>
+<p><img src="http://docs.google.com/File?id=dhr8vrth_149c7d2hggb_b" alt=""></p>
+<p>以上で解説終わり。</p>
 
   </div>
   
@@ -198,16 +262,16 @@ Dim a As 列挙体<br>
     <div class="pagination__buttons">
       
       <span class="button previous">
-        <a href="/posts/2008/12/27/%E6%97%A5%E8%A8%98%E6%9C%80%E8%BF%91%E3%81%AE%E8%BF%B7%E3%81%84%E3%81%94%E3%81%A8/">
+        <a href="/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/">
           <span class="button__icon">←</span>
-          <span class="button__text">[日記]最近の迷いごと</span>
+          <span class="button__text">[VB.NET]文字列型列挙体の実装</span>
         </a>
       </span>
       
       
       <span class="button next">
-        <a href="/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/">
-          <span class="button__text">[VB.NET]文字列型列挙体の実装</span>
+        <a href="/posts/2008/12/11/webserviceamazon%E3%83%97%E3%83%A9%E3%82%A4%E3%83%A0%E3%81%AB%E8%A6%81%E6%B3%A8%E6%84%8F/">
+          <span class="button__text">[WebService]Amazonプライムに要注意</span>
           <span class="button__icon">→</span>
         </a>
       </span>
