@@ -211,22 +211,10 @@
 VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。
 以下コードと解説
 コード
-`Public Structure sampleStructure
-Public Const hoge As String = “hogehoge”
-Public Const fuga As String = “fugafuga”
-Public Const foo As String = “foofoo”
-Public Const bar As String = “barbar”
- ‘構造体用インスタンスメンバをダミー実装
-Private dummy As String
- ‘構造体のReferenceEqualsを参照出来なくする。
-Private Shadows Function ReferenceEquals() As Object
-Return New Object
-End Function
- ‘構造体のEqualsを参照出来なくする。
-Private Shadows Function equals() As Object
-Return New Object
-End Function
-End Structure
+<code>Public Structure sampleStructure Public Const hoge As String = &amp;ldquo;hogehoge&amp;rdquo; Public Const fuga As String = &amp;ldquo;fugafuga&amp;rdquo; Public Const foo As String = &amp;ldquo;foofoo&amp;rdquo; Public Const bar As String = &amp;ldquo;barbar&amp;rdquo; &amp;lsquo;構造体用インスタンスメンバをダミー実装 Private dummy As String &amp;lsquo;構造体のReferenceEqualsを参照出来なくする。 Private Shadows Function ReferenceEquals() As Object Return New Object End Function &amp;lsquo;構造体のEqualsを参照出来なくする。 Private Shadows Function equals() As Object Return New Object End Function End Structure </code>
+解説
+ポイントはインスタンスメンバのdummy実装と、shadowsによる参照制限
+インスタンスメンバのdummy実装はもしかしたら何とかできるかもしれない。
       
       
     </div>

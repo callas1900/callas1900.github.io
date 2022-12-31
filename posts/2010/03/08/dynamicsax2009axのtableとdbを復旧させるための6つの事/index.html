@@ -9,27 +9,30 @@
 <meta name="description" content="DynamicsAXで開発をしていたり、
 AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。
 その場合にやるべき6つのことを書いておく。
- DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除  DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
+DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除 DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
 Compile AOTのルートで右クリックコンテキストメニューを出し、**Compile **を実行する。
 ここでエラーが出たものは基本的に修正したほうがよいが、X&#43;&#43;はインタプリタ言語なので現在エラーが出ている箇所以外のものは放置してもよい。
 Synchronize Data Dictionaryで右クリックコンテキストメニューを出し、Synchronize を実行する。
 これでAXとDBとの同期化される。
 Compile &amp;amp; Synchronize である程度のDBとのアンマッチ等のErrorやWaringは除去される。
 あなたがインフラ担当ならば、昼休みと帰る前にこの二点はやっておいて損はない。
-Index再作成   AOSサービス停止
-  Axapd.aoi ファイルを削除する。
+Index再作成 AOSサービス停止
+Axapd.aoi ファイルを削除する。
 (Axapd.aoiはデフォルトで C:\Program Files\Microsoft Dynamics AX\50\Application\Appl\DynamicsAx1 にある。)
-  AOSサービス再開（もしくはWindows再起動）
-  これで大抵のものは治るはず。
+AOSサービス再開（もしくはWindows再起動）
+これで大抵のものは治るはず。
 特にDBとAXのDataDictionaryのアンマッチ系はこれでほとんど治る。
 それでも駄目なら・・・
-クライアントキャッシュファイル削除   AXクライアントを終了
-  クライアントキャッシュファイル(.auc)を削除
+クライアントキャッシュファイル削除 AXクライアントを終了
+クライアントキャッシュファイル(.auc)を削除
 WindowsXPの場合:
 C:\Documents and Setting\\Local Settings\Application Data
 Windows2008の場合:
 C:\Users\\AppData\Local
-  Usage Data削除   AXクライアントを起動"/>
+Usage Data削除 AXクライアントを起動
+Tool &amp;gt; Options を起動
+Usage dataを押す
+General をタブで Reset を押す"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/" />
@@ -55,27 +58,30 @@ C:\Users\\AppData\Local
 <meta name="twitter:description" content="DynamicsAXで開発をしていたり、
 AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。
 その場合にやるべき6つのことを書いておく。
- DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除  DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
+DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除 DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
 Compile AOTのルートで右クリックコンテキストメニューを出し、**Compile **を実行する。
 ここでエラーが出たものは基本的に修正したほうがよいが、X&#43;&#43;はインタプリタ言語なので現在エラーが出ている箇所以外のものは放置してもよい。
 Synchronize Data Dictionaryで右クリックコンテキストメニューを出し、Synchronize を実行する。
 これでAXとDBとの同期化される。
 Compile &amp;amp; Synchronize である程度のDBとのアンマッチ等のErrorやWaringは除去される。
 あなたがインフラ担当ならば、昼休みと帰る前にこの二点はやっておいて損はない。
-Index再作成   AOSサービス停止
-  Axapd.aoi ファイルを削除する。
+Index再作成 AOSサービス停止
+Axapd.aoi ファイルを削除する。
 (Axapd.aoiはデフォルトで C:\Program Files\Microsoft Dynamics AX\50\Application\Appl\DynamicsAx1 にある。)
-  AOSサービス再開（もしくはWindows再起動）
-  これで大抵のものは治るはず。
+AOSサービス再開（もしくはWindows再起動）
+これで大抵のものは治るはず。
 特にDBとAXのDataDictionaryのアンマッチ系はこれでほとんど治る。
 それでも駄目なら・・・
-クライアントキャッシュファイル削除   AXクライアントを終了
-  クライアントキャッシュファイル(.auc)を削除
+クライアントキャッシュファイル削除 AXクライアントを終了
+クライアントキャッシュファイル(.auc)を削除
 WindowsXPの場合:
 C:\Documents and Setting\\Local Settings\Application Data
 Windows2008の場合:
 C:\Users\\AppData\Local
-  Usage Data削除   AXクライアントを起動" />
+Usage Data削除 AXクライアントを起動
+Tool &amp;gt; Options を起動
+Usage dataを押す
+General をタブで Reset を押す" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -87,27 +93,30 @@ C:\Users\\AppData\Local
 <meta property="og:description" content="DynamicsAXで開発をしていたり、
 AOTからDBをいじりまくってたりするとよくTable周りでエラーが出る。
 その場合にやるべき6つのことを書いておく。
- DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除  DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
+DynamicsAXにログインしている人たちを全員ログアウトさせる。 Compile Synchronize Index再作成 クライアントキャッシュファイル削除 Usage Data削除 DynamicsAXにログインしている人たちを全員ログアウトさせる。 これからやる作業は、やっている間にAXが操作されないほうがよいのでログアウトしてもらう。
 Compile AOTのルートで右クリックコンテキストメニューを出し、**Compile **を実行する。
 ここでエラーが出たものは基本的に修正したほうがよいが、X&#43;&#43;はインタプリタ言語なので現在エラーが出ている箇所以外のものは放置してもよい。
 Synchronize Data Dictionaryで右クリックコンテキストメニューを出し、Synchronize を実行する。
 これでAXとDBとの同期化される。
 Compile &amp;amp; Synchronize である程度のDBとのアンマッチ等のErrorやWaringは除去される。
 あなたがインフラ担当ならば、昼休みと帰る前にこの二点はやっておいて損はない。
-Index再作成   AOSサービス停止
-  Axapd.aoi ファイルを削除する。
+Index再作成 AOSサービス停止
+Axapd.aoi ファイルを削除する。
 (Axapd.aoiはデフォルトで C:\Program Files\Microsoft Dynamics AX\50\Application\Appl\DynamicsAx1 にある。)
-  AOSサービス再開（もしくはWindows再起動）
-  これで大抵のものは治るはず。
+AOSサービス再開（もしくはWindows再起動）
+これで大抵のものは治るはず。
 特にDBとAXのDataDictionaryのアンマッチ系はこれでほとんど治る。
 それでも駄目なら・・・
-クライアントキャッシュファイル削除   AXクライアントを終了
-  クライアントキャッシュファイル(.auc)を削除
+クライアントキャッシュファイル削除 AXクライアントを終了
+クライアントキャッシュファイル(.auc)を削除
 WindowsXPの場合:
 C:\Documents and Setting\\Local Settings\Application Data
 Windows2008の場合:
 C:\Users\\AppData\Local
-  Usage Data削除   AXクライアントを起動" />
+Usage Data削除 AXクライアントを起動
+Tool &amp;gt; Options を起動
+Usage dataを押す
+General をタブで Reset を押す" />
 <meta property="og:url" content="/posts/2010/03/08/dynamicsax2009ax%E3%81%AEtable%E3%81%A8db%E3%82%92%E5%BE%A9%E6%97%A7%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE6%E3%81%A4%E3%81%AE%E4%BA%8B/" />
 <meta property="og:site_name" content="[DynamicsAX2009]AXのTableとDBを復旧させるための6つの事" />
 <meta property="og:image" content="">

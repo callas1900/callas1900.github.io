@@ -18,13 +18,13 @@
 Weblogic92を使用し、
 JREにJRockitを使いIDEをEclipse3.2にした場合
 EclipseからANTを実行する場合のwlcompileタスクにおいて以下のエラーが起こった場合の対処
- BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:
+BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:
 The following error occurred while executing this line:C:\project\hogehoge\Src\foo\src\fooEar\build.xml:77:
 Could not create task or type of type: wlcompile.
 Ant could not find the task or a class this task relies upon.
 This is common and has a number of causes;
 the usual solutions are to read the manual pages then download andinstall needed JAR files, or fix the build file:
-- You have misspelt &amp;lsquo;wlcompile&amp;rsquo;.</description>
+- You have misspelt &amp;lsquo;wlcompile&amp;rsquo;. Fix: check your spelling.</description>
     </item>
     
     <item>
@@ -50,7 +50,7 @@ Eclipseをコアとし、
 残り３つのツールを組み合わせることで
 フリーのFlash作成ツールFAMEとなります。
 実際の環境構築において参考にしたサイト
- [技術系のシバチョがコラムを書く](http://d.hatena.ne.jp/shibacho/20051009 &amp;ldquo;技術系のシバチョがコラムを書く - &amp;ldquo;Getting Started With MTASC for Flash Development&amp;quot;の日本語訳&amp;rdquo;) 神原日記 - FAMEを始める  上記二記事を参考にやると、得に躓くことなく環境構築できました。
+[技術系のシバチョがコラムを書く](http://d.hatena.ne.jp/shibacho/20051009 &amp;ldquo;技術系のシバチョがコラムを書く - &amp;ldquo;Getting Started With MTASC for Flash Development&amp;quot;の日本語訳&amp;rdquo;) 神原日記 - FAMEを始める 上記二記事を参考にやると、得に躓くことなく環境構築できました。
 FAMEを触ってみる
 実際動かしてみた感想として、
 javaやEclipseでの開発に慣れた人なら使いやすいが、
@@ -74,7 +74,9 @@ FAMEは使えるか？
 デザイナーはscriptが苦手、 プログラマはグラフィックが苦手、 でも編集するのは同じflaファイル
 な状況から脱却し、
 それぞれをその道に特化した人が担当する事により
-素晴らしい作品が出来るかもしれません。</description>
+素晴らしい作品が出来るかもしれません。
+蛇足？
+今回紹介したFAMEですが、</description>
     </item>
     
     <item>
@@ -86,23 +88,22 @@ FAMEは使えるか？
       <description>Eclipse3.1.1 memo
 現在使用JSPプラグイン
 EclipseHtmlEditor Ver2.0.2
- インストール方法
-  必要ファイルのDL
+インストール方法
+必要ファイルのDL
 AmaterasProjecより
 tk.eclipse.plugin.htmleditor_2.0.2.zip
 AmaterasUML_1.2.1.zip
 GEFより
 GEF-runtime-3.1.1.zip
 をDL(上記バージョンでの動作は保障するが、バージョンが高ければいいといものではないことに注意。）
-  ファイルの解凍とセット
+ファイルの解凍とセット
 出てきたファイルの下層フォルダにあるものの中で
 plugins → 中身をeclipseのpluginsフォルダの下にコピー
 futures → 中身をeclipseのfuturesフォルダの下にコピー
-  以上でインストール完了。
+以上でインストール完了。
 関連付けは各々ですること。
 後、個人的感想だが、初期の色合いはちょっと派手すぎてEclipseに会わないと思う。
-自分で設定を変えたほうがいいと思う。
- </description>
+自分で設定を変えたほうがいいと思う。</description>
     </item>
     
   </channel>

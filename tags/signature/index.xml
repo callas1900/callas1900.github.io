@@ -16,7 +16,7 @@
       <guid>/posts/2013/11/01/jb_mr24.3%E3%81%A8kitkat4.4%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
- ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
+ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係） にあります。
 何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
 これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
 メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
@@ -24,16 +24,23 @@
 よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
 Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
 JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
-Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
- android.permission.BLUETOOTH_STACK
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem KitKat
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem 特に変更なし
+Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature] これはメーカー署名がないと使用出来ないもの
+android.permission.BLUETOOTH_STACK
 android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
 android.permission.INTERACT_ACROSS_USERS_FULL
-android.permission.GET_DETAILED_TASKS</description>
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
++ android.permission.MANAGE_ACTIVITY_STACKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.ACCESS_ALL_EXTERNAL_STORAGE
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS</description>
     </item>
     
     <item>
@@ -44,7 +51,7 @@ android.permission.GET_DETAILED_TASKS</description>
       <guid>/posts/2013/11/01/jb_mr14.2%E3%81%A8jb_mr24.3%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
- ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）  にあります。
+ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） にあります。
 何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
 これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
 メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
@@ -52,14 +59,22 @@ android.permission.GET_DETAILED_TASKS</description>
 よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
 Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
 JB MR1 と JB MR2 のプロテクションレベルの一覧比較 JB MR1
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  JB MR2
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更はありませんね。
-Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
- android.permission.BLUETOOTH_STACK
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem JB MR2
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem 特に変更はありませんね。
+Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature] これはメーカー署名がないと使用出来ないもの
+android.permission.BLUETOOTH_STACK
 android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
-android.permission.REMOTE_AUDIO_PLAYBACK</description>
+android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.INTERACT_ACROSS_USERS_FULL
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.ACCESS_ALL_EXTERNAL_STORAGE
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS</description>
     </item>
     
     <item>
@@ -68,7 +83,8 @@ android.permission.REMOTE_AUDIO_PLAYBACK</description>
       <pubDate>Wed, 12 Dec 2012 00:30:00 +0900</pubDate>
       
       <guid>/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
-      <description>大変勉強になりました。ありがとうございます(^-^)/ 匿名 - Feb 5, 2013大変勉強になりました。ありがとうございます(^-^)/</description>
+      <description>大変勉強になりました。ありがとうございます(^-^)/ 匿名 - Feb 5, 2013
+大変勉強になりました。ありがとうございます(^-^)/</description>
     </item>
     
     <item>
@@ -79,7 +95,7 @@ android.permission.REMOTE_AUDIO_PLAYBACK</description>
       <guid>/posts/2012/12/12/jb4.1%E3%81%A8jb_mr14.2%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>Android 4.2 (JELLY_BEAN_MR1) が出ましたので、恒例のsignatureがらみのPermission比較したいと思います。
 前回までのPermission比較は
- ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係）  にあります。
+ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） にあります。
 何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
 これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
 メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
@@ -87,14 +103,21 @@ android.permission.REMOTE_AUDIO_PLAYBACK</description>
 よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
 Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
 JB と JB MR1 のプロテクションレベルの一覧比較 JB
- dangerous signature|system normal signature signature|system|development signatureOrSystem  JB MR1
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  増えた？と思ったらパイプラインで区切られたフラグの順番が逆転していただけでした。
+dangerous signature|system normal signature signature|system|development signatureOrSystem JB MR1
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem 増えた？と思ったらパイプラインで区切られたフラグの順番が逆転していただけでした。
 これは signature|system と同一ですね。
 しかし signatureOrSystem の件といい、段々適当になってきてる気がする。
-Permission増減調査(JB(4.1) &amp;gt; JB MR1(4.2)) [signature]  これはメーカー署名がないと使用出来ないもの
- + android.permission.BLUETOOTH_STACK
+Permission増減調査(JB(4.1) &amp;gt; JB MR1(4.2)) [signature] これはメーカー署名がないと使用出来ないもの
++ android.permission.BLUETOOTH_STACK
 android.permission.ACCOUNT_MANAGER
-android.permission.HARDWARE_TEST</description>
+android.permission.HARDWARE_TEST
+android.permission.NET_ADMIN
+android.permission.REMOTE_AUDIO_PLAYBACK
++ android.permission.INTERACT_ACROSS_USERS_FULL
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY</description>
     </item>
     
     <item>
@@ -104,20 +127,20 @@ android.permission.HARDWARE_TEST</description>
       
       <guid>/posts/2012/08/13/jb%E3%81%A8ics%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/</guid>
       <description>以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
- 注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
- またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
+注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
+またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
 まず プロテクションレベルの表記が変わっている。
 以前は signatureOrSystem と書かれていた箇所が signature|system に変更。
 また謎の development も追加（詳細がドキュメントされていないので後日調査予定）
 まず ICS と ＪＢ のプロテクションレベルの一覧比較
 ICS
- dangerous signatureOrSystem normal signature  JB
- dangerous signature|system normal signature signature|system|development signatureOrSystem  JB に signatureOrSystem が混じっているのは誤表記にあらず。
+dangerous signatureOrSystem normal signature JB
+dangerous signature|system normal signature signature|system|development signatureOrSystem JB に signatureOrSystem が混じっているのは誤表記にあらず。
 一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。
 次それぞれのプロテクションレベル毎の比較
 JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。
-[signature]  赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
- android.permission.ACCOUNT_MANAGER
+[signature] 赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
+android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
@@ -127,7 +150,15 @@ android.permission.START_ANY_ACTIVITY
 android.permission.SET_SCREEN_COMPATIBILITY
 android.permission.FORCE_STOP_PACKAGES
 android.permission.SET_PREFERRED_APPLICATIONS
-android.permission.ASEC_ACCESS</description>
+android.permission.ASEC_ACCESS
+android.permission.ASEC_CREATE
+android.permission.ASEC_DESTROY
+android.permission.ASEC_MOUNT_UNMOUNT
+android.permission.ASEC_RENAME
+android.permission.DIAGNOSTIC
+android.permission.STATUS_BAR_SERVICE
+android.permission.FORCE_BACK
+android.permission.INTERNAL_SYSTEM_WINDOW</description>
     </item>
     
     <item>
@@ -139,10 +170,10 @@ android.permission.ASEC_ACCESS</description>
       <description>ICSのテストをしていると、前まで動いていたところでSecurityExceptionをはきました。
 端末不具合かソースが変わったのかを調べる為に
 公開されているICS(Android 4.0)とGingerbread(Android 2.3.3)のAndroidManifest.xmlを比較してみました。
- AndroidではAndroid自体をビルドする時に使用されている署名（所謂メーカー所有の署名）とその他の署名の間に格差があり、特定のAPIを叩く際に必要となるpermissionの値が、&amp;ldquo;signatureOrSystem&amp;rdquo; もしくは&amp;quot;signature&amp;quot;となっている時は、実行する為にこのメーカー署名が必要となります。
+AndroidではAndroid自体をビルドする時に使用されている署名（所謂メーカー所有の署名）とその他の署名の間に格差があり、特定のAPIを叩く際に必要となるpermissionの値が、&amp;ldquo;signatureOrSystem&amp;rdquo; もしくは&amp;quot;signature&amp;quot;となっている時は、実行する為にこのメーカー署名が必要となります。
 それらAPIを叩くためには、メーカーに依頼して出来たAPKに署名を入れてもらうか、
 rootを取る、もしくは自分でAndroidをビルドして実機に焼く等を行う必要があります。
- それぞれ、frameworks/base/core/res/AndroidManifest.xml
+それぞれ、frameworks/base/core/res/AndroidManifest.xml
 を比較し、ICSで増えた箇所を赤字＋太字で表示しました。
 ※ICSで減ったものはなかった。
 [signatureOrSystem]
@@ -200,7 +231,9 @@ android.permission.ASEC_ACCESS
 android.permission.ASEC_CREATE
 android.permission.ASEC_DESTROY
 android.permission.ASEC_MOUNT_UNMOUNT
-android.permission.ASEC_RENAME</description>
+android.permission.ASEC_RENAME
+android.permission.DIAGNOSTIC
+android.permission.STATUS_BAR_SERVICE</description>
     </item>
     
   </channel>

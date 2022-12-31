@@ -15,9 +15,11 @@
       
       <guid>/posts/2016/07/21/laravel-phpunit-with-clean-database./</guid>
       <description>Laravel + postgresSQLを使ったサイトで unit test を書いてたが、既存のデータベースを使うと、テストが意図しない挙動になることがあったので、汚れていないDBを使いたくなったので、調べてやってみたら、意外と詰まってしまったという話。
- 環境 sqlite in memory database を使う方法  config/database.php config/database.php phpunit.xml TestCase.php   Sqliteでエラーがでる場合の対処1  Driver not found ALTER TABLE SYNTAX ERROR   Sqliteでエラーがでる場合の対処2  環境  laravel 5.x PostgreSQL  sqlite in memory database を使う方法 config/database.php 環境変数で default 値を差し替えれるようにする
-&#39;default&#39; =&amp;gt; env(&#39;DB_DEFAULT&#39;, &#39;pgsql&#39;), config/database.php memory database の定義を作る
-&#39;sqlite_testing&#39; =&amp;gt; [ &#39;driver&#39; =&amp;gt; &#39;sqlite&#39;, &#39;database&#39; =&amp;gt; &#39;:memory:&#39;, &#39;prefix&#39; =&amp;gt; &#39;&#39;, ], phpunit.xml 環境変数追加。環境変数を与える方法は別に何でも良い。</description>
+環境 sqlite in memory database を使う方法 config/database.php config/database.php phpunit.xml TestCase.php Sqliteでエラーがでる場合の対処1 Driver not found ALTER TABLE SYNTAX ERROR Sqliteでエラーがでる場合の対処2 環境 laravel 5.x PostgreSQL sqlite in memory database を使う方法 config/database.php 環境変数で default 値を差し替えれるようにする
+&amp;#39;default&amp;#39; =&amp;gt; env(&amp;#39;DB_DEFAULT&amp;#39;, &amp;#39;pgsql&amp;#39;), config/database.php memory database の定義を作る
+&amp;#39;sqlite_testing&amp;#39; =&amp;gt; [ &amp;#39;driver&amp;#39; =&amp;gt; &amp;#39;sqlite&amp;#39;, &amp;#39;database&amp;#39; =&amp;gt; &amp;#39;:memory:&amp;#39;, &amp;#39;prefix&amp;#39; =&amp;gt; &amp;#39;&amp;#39;, ], phpunit.xml 環境変数追加。環境変数を与える方法は別に何でも良い。
+~~~~~~~~~~~~~ &amp;lt;env name=&amp;#34;DB_DEFAULT&amp;#34; value=&amp;#34;sqlite_testing&amp;#34;/&amp;gt; &amp;lt;/php&amp;gt; &amp;lt;/phpunit&amp;gt; TestCase.php 都度migrateをするようにする。
+public function setUp() { parent::setUp(); $this-&amp;gt;artisan(&amp;#39;migrate&amp;#39;); $this-&amp;gt;artisan(&amp;#39;db:seed&amp;#39;); } public function tearDown() { $this-&amp;gt;artisan(&amp;#39;migrate:reset&amp;#39;); } これで上手くいく人は上手くいく。</description>
     </item>
     
   </channel>

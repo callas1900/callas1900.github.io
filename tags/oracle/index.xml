@@ -15,7 +15,7 @@
       
       <guid>/posts/2007/12/06/oracle-10g-express-edition-%E3%81%A7%E3%83%81%E3%83%88%E5%9B%B0%E3%81%A3%E3%81%9F/</guid>
       <description>Oracle 10g Express Edition　は
- AL32UTF8 WE8MSWIN1252  のみのCHARACTER SETしか使用できない
+AL32UTF8 WE8MSWIN1252 のみのCHARACTER SETしか使用できない
 資料：
 Oracle® Database Express Edition
 10 Oracle Database XE Character and Language Configurations
@@ -80,10 +80,10 @@ OS : WindowsXP
 ここではFOOとしておく。
 これでとりあえずはスキーマ作成完了。
 次に他PCよりOracleに接続を試みる。
- まずはIPを固定 ついでにOracle Clientをインストール 次に
+まずはIPを固定 ついでにOracle Clientをインストール 次に
 「すべてのプログラム」→「Oracle - OraClient10g_home1」
 →「コンフィグレーションおよび移行ツール」
-→「Net Configuration Assistant」を選択  後は以下のとおり
+→「Net Configuration Assistant」を選択 後は以下のとおり
 ローカルネットワークサービス名構成を選択。
 追加を選択
 EXpressEditionはサービス名がデフォルトで定められており、
@@ -109,7 +109,7 @@ Oracle DataBase を入れているPCのファイヤーウォールの1521ポー�
 くそまずいお茶に顔をしかめつつOracleのHPを調べました。
 Oracle Silverに関して調べた結果
 Oracle Silverを取得するためには
- Oracle Bronze DBA 10g Oracle Bronze SQL基礎Ⅰ Oracle Silver DBA 10g  の３つを順不同で取得した場合、Silverの認可が下りるみたいだ。
+Oracle Bronze DBA 10g Oracle Bronze SQL基礎Ⅰ Oracle Silver DBA 10g の３つを順不同で取得した場合、Silverの認可が下りるみたいだ。
 む～ん・・３月末には取得したいと思っていたSilverだがちょっと無理そうだ。
 なので、Bronzeからきっちりたたき上げてとっていく計画を立てよう。
 ざっくり計画

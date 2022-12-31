@@ -14,9 +14,9 @@
 JSONクラスで落ちてしまう。
 結局手書きでやることにした。
 作業の流れとしては
- XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload  XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
+XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
 さて実際に以下に書いてみましょう。
-XMLデータ内容   ActionScript内容  //XMLインスタンス作成
+XMLデータ内容 ActionScript内容 //XMLインスタンス作成
 var my_xml :XML = new XML();
 // 改行などを無視
 my_xml.ignoreWhite = true;
@@ -27,10 +27,11 @@ if (success) {
 my_xml = this;
 // XMLエレメントの取得
 var my_xmlnode :XMLNode = my_xml.firstChild;
-var name :String = &amp;ldquo;&amp;quot;;
-var url :String = &amp;ldquo;&amp;quot;;
+var name :String = &amp;ldquo;&amp;rdquo;;
+var url :String = &amp;ldquo;&amp;rdquo;;
 var i :Number = 0;
-while ( my_xmlnode."/>
+while ( my_xmlnode.childNodes[i].hasChildNodes() ){
+name = my_xmlnode.childNodes[i].childNodes[0].childNodes;"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2007/03/14/flashfame%E7%92%B0%E5%A2%83%E3%81%A7xml%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF/" />
@@ -61,9 +62,9 @@ while ( my_xmlnode."/>
 JSONクラスで落ちてしまう。
 結局手書きでやることにした。
 作業の流れとしては
- XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload  XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
+XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
 さて実際に以下に書いてみましょう。
-XMLデータ内容   ActionScript内容  //XMLインスタンス作成
+XMLデータ内容 ActionScript内容 //XMLインスタンス作成
 var my_xml :XML = new XML();
 // 改行などを無視
 my_xml.ignoreWhite = true;
@@ -74,10 +75,11 @@ if (success) {
 my_xml = this;
 // XMLエレメントの取得
 var my_xmlnode :XMLNode = my_xml.firstChild;
-var name :String = &amp;ldquo;&amp;quot;;
-var url :String = &amp;ldquo;&amp;quot;;
+var name :String = &amp;ldquo;&amp;rdquo;;
+var url :String = &amp;ldquo;&amp;rdquo;;
 var i :Number = 0;
-while ( my_xmlnode." />
+while ( my_xmlnode.childNodes[i].hasChildNodes() ){
+name = my_xmlnode.childNodes[i].childNodes[0].childNodes;" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -94,9 +96,9 @@ while ( my_xmlnode." />
 JSONクラスで落ちてしまう。
 結局手書きでやることにした。
 作業の流れとしては
- XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload  XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
+XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
 さて実際に以下に書いてみましょう。
-XMLデータ内容   ActionScript内容  //XMLインスタンス作成
+XMLデータ内容 ActionScript内容 //XMLインスタンス作成
 var my_xml :XML = new XML();
 // 改行などを無視
 my_xml.ignoreWhite = true;
@@ -107,10 +109,11 @@ if (success) {
 my_xml = this;
 // XMLエレメントの取得
 var my_xmlnode :XMLNode = my_xml.firstChild;
-var name :String = &amp;ldquo;&amp;quot;;
-var url :String = &amp;ldquo;&amp;quot;;
+var name :String = &amp;ldquo;&amp;rdquo;;
+var url :String = &amp;ldquo;&amp;rdquo;;
 var i :Number = 0;
-while ( my_xmlnode." />
+while ( my_xmlnode.childNodes[i].hasChildNodes() ){
+name = my_xmlnode.childNodes[i].childNodes[0].childNodes;" />
 <meta property="og:url" content="/posts/2007/03/14/flashfame%E7%92%B0%E5%A2%83%E3%81%A7xml%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF/" />
 <meta property="og:site_name" content="[Flash]FAME環境でXML読み込み" />
 <meta property="og:image" content="">
@@ -273,8 +276,8 @@ if (success) {<br>
 my_xml = this;<br>
 // XMLエレメントの取得<br>
 var my_xmlnode :XMLNode = my_xml.firstChild;</p>
-<p>var name :String = &ldquo;&quot;;<br>
-var url :String = &ldquo;&quot;;<br>
+<p>var name :String = &ldquo;&rdquo;;<br>
+var url :String = &ldquo;&rdquo;;<br>
 var i :Number = 0;</p>
 <p>while ( my_xmlnode.childNodes[i].hasChildNodes() ){<br>
 name = my_xmlnode.childNodes[i].childNodes[0].childNodes;<br>

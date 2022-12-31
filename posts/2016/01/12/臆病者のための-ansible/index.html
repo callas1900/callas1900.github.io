@@ -6,7 +6,7 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="Target Links 臆病者のための確認コマンド  基本 確認 hosts 制限 hosts 確認 tasks 確認 最終   〆  Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
+<meta name="description" content="Target Links 臆病者のための確認コマンド 基本 確認 hosts 制限 hosts 確認 tasks 確認 最終 〆 Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
 全て手順書のように書いていればいいのだが、多数のRoleを使い高度に書かれたAnsible playbookを引き継ぎ、メンテまたは代わりに実行するのはとても怖い。
 playbook実行する前に何がどうなるのか確認しまくりたい。
 そんな自分のための初心者ガイド
@@ -20,7 +20,8 @@ http://docs.ansible.com/ansible/playbooks_best_practices.html
 確認 hosts ansible-playbook playbook.yml --list-hosts playbook は実行されません。
 playbookが実行される相手先をリストアップするだけです。
 host は hosts ファイルなどで定義された ansible のためのサーバー接続先設定のことです。
-制限 hosts ansible-playbook playbook.yml -l hoge --list-hosts -l の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 --list-hosts と組み合わせると捗ります。"/>
+制限 hosts ansible-playbook playbook.yml -l hoge --list-hosts -l の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 --list-hosts と組み合わせると捗ります。
+確認 tasks ansible-playbook playbook."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2016/01/12/%E8%87%86%E7%97%85%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-ansible/" />
@@ -43,7 +44,7 @@ host は hosts ファイルなどで定義された ansible のためのサー�
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="臆病者のための Ansible :: callas1900.net — A simple page of mine" />
-<meta name="twitter:description" content="Target Links 臆病者のための確認コマンド  基本 確認 hosts 制限 hosts 確認 tasks 確認 最終   〆  Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
+<meta name="twitter:description" content="Target Links 臆病者のための確認コマンド 基本 確認 hosts 制限 hosts 確認 tasks 確認 最終 〆 Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
 全て手順書のように書いていればいいのだが、多数のRoleを使い高度に書かれたAnsible playbookを引き継ぎ、メンテまたは代わりに実行するのはとても怖い。
 playbook実行する前に何がどうなるのか確認しまくりたい。
 そんな自分のための初心者ガイド
@@ -57,7 +58,8 @@ http://docs.ansible.com/ansible/playbooks_best_practices.html
 確認 hosts ansible-playbook playbook.yml --list-hosts playbook は実行されません。
 playbookが実行される相手先をリストアップするだけです。
 host は hosts ファイルなどで定義された ansible のためのサーバー接続先設定のことです。
-制限 hosts ansible-playbook playbook.yml -l hoge --list-hosts -l の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 --list-hosts と組み合わせると捗ります。" />
+制限 hosts ansible-playbook playbook.yml -l hoge --list-hosts -l の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 --list-hosts と組み合わせると捗ります。
+確認 tasks ansible-playbook playbook." />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -66,7 +68,7 @@ host は hosts ファイルなどで定義された ansible のためのサー�
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="臆病者のための Ansible :: callas1900.net — A simple page of mine">
-<meta property="og:description" content="Target Links 臆病者のための確認コマンド  基本 確認 hosts 制限 hosts 確認 tasks 確認 最終   〆  Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
+<meta property="og:description" content="Target Links 臆病者のための確認コマンド 基本 確認 hosts 制限 hosts 確認 tasks 確認 最終 〆 Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
 全て手順書のように書いていればいいのだが、多数のRoleを使い高度に書かれたAnsible playbookを引き継ぎ、メンテまたは代わりに実行するのはとても怖い。
 playbook実行する前に何がどうなるのか確認しまくりたい。
 そんな自分のための初心者ガイド
@@ -80,7 +82,8 @@ http://docs.ansible.com/ansible/playbooks_best_practices.html
 確認 hosts ansible-playbook playbook.yml --list-hosts playbook は実行されません。
 playbookが実行される相手先をリストアップするだけです。
 host は hosts ファイルなどで定義された ansible のためのサーバー接続先設定のことです。
-制限 hosts ansible-playbook playbook.yml -l hoge --list-hosts -l の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 --list-hosts と組み合わせると捗ります。" />
+制限 hosts ansible-playbook playbook.yml -l hoge --list-hosts -l の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 --list-hosts と組み合わせると捗ります。
+確認 tasks ansible-playbook playbook." />
 <meta property="og:url" content="/posts/2016/01/12/%E8%87%86%E7%97%85%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-ansible/" />
 <meta property="og:site_name" content="臆病者のための Ansible" />
 <meta property="og:image" content="">

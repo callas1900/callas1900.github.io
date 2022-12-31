@@ -13,14 +13,14 @@ Adminの権限が外れてしまう場合があります。
 その状態を修正しようにも「Adminは全ての権限を持っている、かつ、修正する必要はない」
 の要件が邪魔をして修正できません。
 その際の対処方法を提示します。
-Adminグループの権限を確認する方法   Administration &amp;gt; Ad,omostratopm Area の
+Adminグループの権限を確認する方法 Administration &amp;gt; Ad,omostratopm Area の
 Setupセクション User group permissions を起動。
-  **Admin **を選択している状態で **Permissions **タブを選択
-  全て、Full control になっていることを確認する。
-  Adminグループの権限を編集する方法   AOTから Forms &amp;gt; SysUserGroupSecurity.isAdminをEditする。
-  **return true;　**をコメントアウトする。
-  これで先程のUser group permissions 画面で編集出来るようになる。
-  ソース例
+**Admin **を選択している状態で **Permissions **タブを選択
+全て、Full control になっていることを確認する。
+Adminグループの権限を編集する方法 AOTから Forms &amp;gt; SysUserGroupSecurity.isAdminをEditする。
+**return true;　**をコメントアウトする。
+これで先程のUser group permissions 画面で編集出来るようになる。
+ソース例
 #admin boolean isAdmin() { if (userGroupInfo.Id == #AdminUserGroup &amp;amp;&amp;amp; (domainInfo.Id == #AdminDomain || !useDomains)) { //return true; } return false; } "/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
@@ -51,14 +51,14 @@ Adminの権限が外れてしまう場合があります。
 その状態を修正しようにも「Adminは全ての権限を持っている、かつ、修正する必要はない」
 の要件が邪魔をして修正できません。
 その際の対処方法を提示します。
-Adminグループの権限を確認する方法   Administration &amp;gt; Ad,omostratopm Area の
+Adminグループの権限を確認する方法 Administration &amp;gt; Ad,omostratopm Area の
 Setupセクション User group permissions を起動。
-  **Admin **を選択している状態で **Permissions **タブを選択
-  全て、Full control になっていることを確認する。
-  Adminグループの権限を編集する方法   AOTから Forms &amp;gt; SysUserGroupSecurity.isAdminをEditする。
-  **return true;　**をコメントアウトする。
-  これで先程のUser group permissions 画面で編集出来るようになる。
-  ソース例
+**Admin **を選択している状態で **Permissions **タブを選択
+全て、Full control になっていることを確認する。
+Adminグループの権限を編集する方法 AOTから Forms &amp;gt; SysUserGroupSecurity.isAdminをEditする。
+**return true;　**をコメントアウトする。
+これで先程のUser group permissions 画面で編集出来るようになる。
+ソース例
 #admin boolean isAdmin() { if (userGroupInfo.Id == #AdminUserGroup &amp;amp;&amp;amp; (domainInfo.Id == #AdminDomain || !useDomains)) { //return true; } return false; } " />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
@@ -75,14 +75,14 @@ Adminの権限が外れてしまう場合があります。
 その状態を修正しようにも「Adminは全ての権限を持っている、かつ、修正する必要はない」
 の要件が邪魔をして修正できません。
 その際の対処方法を提示します。
-Adminグループの権限を確認する方法   Administration &amp;gt; Ad,omostratopm Area の
+Adminグループの権限を確認する方法 Administration &amp;gt; Ad,omostratopm Area の
 Setupセクション User group permissions を起動。
-  **Admin **を選択している状態で **Permissions **タブを選択
-  全て、Full control になっていることを確認する。
-  Adminグループの権限を編集する方法   AOTから Forms &amp;gt; SysUserGroupSecurity.isAdminをEditする。
-  **return true;　**をコメントアウトする。
-  これで先程のUser group permissions 画面で編集出来るようになる。
-  ソース例
+**Admin **を選択している状態で **Permissions **タブを選択
+全て、Full control になっていることを確認する。
+Adminグループの権限を編集する方法 AOTから Forms &amp;gt; SysUserGroupSecurity.isAdminをEditする。
+**return true;　**をコメントアウトする。
+これで先程のUser group permissions 画面で編集出来るようになる。
+ソース例
 #admin boolean isAdmin() { if (userGroupInfo.Id == #AdminUserGroup &amp;amp;&amp;amp; (domainInfo.Id == #AdminDomain || !useDomains)) { //return true; } return false; } " />
 <meta property="og:url" content="/posts/2010/05/13/dynamicsax2009admin-%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E6%A8%A9%E9%99%90%E3%81%8C%E5%A4%96%E3%82%8C%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AE%E5%AF%BE%E5%87%A6%E6%96%B9%E6%B3%95/" />
 <meta property="og:site_name" content="[DynamicsAX2009]Admin グループの権限が外れた場合の対処方法" />
@@ -255,7 +255,6 @@ boolean isAdmin()
     }  
     return false;  
 }  
-
 </code></pre>
   </div>
   

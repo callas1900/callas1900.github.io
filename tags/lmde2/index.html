@@ -253,7 +253,7 @@
       
       
       LMDE2 に NVIDIA のグラフィックドライバを入れます。
-Inspect your graphic board Download a driver Installer Prepare Installation Installation  Inspect your graphic board terminalで
+Inspect your graphic board Download a driver Installer Prepare Installation Installation Inspect your graphic board terminalで
 lspci -vnn | grep VGA -A 12 Download a driver Installer NVIDIAの公式サイトからLinux X64用のDriver Installerを手に入れます。
 私の場合は以下から
 <a href="http://www.nvidia.com/download/driverResults.aspx/77525/en-us">http://www.nvidia.com/download/driverResults.aspx/77525/en-us</a>
@@ -267,6 +267,7 @@ sudo update-initramfs -u を実行します。
 Nouveau kernel driver を止めてくれとのエラーメッセージが表示されます。
 Installation 再度再起動し、recovery modeになり、CUIモードにログインします。
 X serviceを止めます。
+sudo service mdm stop インストールを実行します。
       
       
     </div>

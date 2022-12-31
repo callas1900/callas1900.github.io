@@ -7,20 +7,20 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
- 注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
- またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
+注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
+またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
 まず プロテクションレベルの表記が変わっている。
 以前は signatureOrSystem と書かれていた箇所が signature|system に変更。
 また謎の development も追加（詳細がドキュメントされていないので後日調査予定）
 まず ICS と ＪＢ のプロテクションレベルの一覧比較
 ICS
- dangerous signatureOrSystem normal signature  JB
- dangerous signature|system normal signature signature|system|development signatureOrSystem  JB に signatureOrSystem が混じっているのは誤表記にあらず。
+dangerous signatureOrSystem normal signature JB
+dangerous signature|system normal signature signature|system|development signatureOrSystem JB に signatureOrSystem が混じっているのは誤表記にあらず。
 一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。
 次それぞれのプロテクションレベル毎の比較
 JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。
-[signature]  赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
- android.permission.ACCOUNT_MANAGER
+[signature] 赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
+android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
@@ -30,7 +30,15 @@ android.permission.START_ANY_ACTIVITY
 android.permission.SET_SCREEN_COMPATIBILITY
 android.permission.FORCE_STOP_PACKAGES
 android.permission.SET_PREFERRED_APPLICATIONS
-android.permission.ASEC_ACCESS"/>
+android.permission.ASEC_ACCESS
+android.permission.ASEC_CREATE
+android.permission.ASEC_DESTROY
+android.permission.ASEC_MOUNT_UNMOUNT
+android.permission.ASEC_RENAME
+android.permission.DIAGNOSTIC
+android.permission.STATUS_BAR_SERVICE
+android.permission.FORCE_BACK
+android.permission.INTERNAL_SYSTEM_WINDOW"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2012/08/13/jb%E3%81%A8ics%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/" />
@@ -54,20 +62,20 @@ android.permission.ASEC_ACCESS"/>
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="JBとICSのPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine" />
 <meta name="twitter:description" content="以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
- 注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
- またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
+注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
+またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
 まず プロテクションレベルの表記が変わっている。
 以前は signatureOrSystem と書かれていた箇所が signature|system に変更。
 また謎の development も追加（詳細がドキュメントされていないので後日調査予定）
 まず ICS と ＪＢ のプロテクションレベルの一覧比較
 ICS
- dangerous signatureOrSystem normal signature  JB
- dangerous signature|system normal signature signature|system|development signatureOrSystem  JB に signatureOrSystem が混じっているのは誤表記にあらず。
+dangerous signatureOrSystem normal signature JB
+dangerous signature|system normal signature signature|system|development signatureOrSystem JB に signatureOrSystem が混じっているのは誤表記にあらず。
 一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。
 次それぞれのプロテクションレベル毎の比較
 JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。
-[signature]  赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
- android.permission.ACCOUNT_MANAGER
+[signature] 赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
+android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
@@ -77,7 +85,15 @@ android.permission.START_ANY_ACTIVITY
 android.permission.SET_SCREEN_COMPATIBILITY
 android.permission.FORCE_STOP_PACKAGES
 android.permission.SET_PREFERRED_APPLICATIONS
-android.permission.ASEC_ACCESS" />
+android.permission.ASEC_ACCESS
+android.permission.ASEC_CREATE
+android.permission.ASEC_DESTROY
+android.permission.ASEC_MOUNT_UNMOUNT
+android.permission.ASEC_RENAME
+android.permission.DIAGNOSTIC
+android.permission.STATUS_BAR_SERVICE
+android.permission.FORCE_BACK
+android.permission.INTERNAL_SYSTEM_WINDOW" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -87,20 +103,20 @@ android.permission.ASEC_ACCESS" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="JBとICSのPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine">
 <meta property="og:description" content="以前書いた、ICSとGingerbreadのPermission比較（メーカー署名関係）の続編。
- 注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
- またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
+注意：今回の記事は https://android.googlesource.com/platform/manifest/android-4.1.1_r4 を元に書いてます。
+またしてもJBで色々と Permission 関係が変わっているのでまとめてみた。
 まず プロテクションレベルの表記が変わっている。
 以前は signatureOrSystem と書かれていた箇所が signature|system に変更。
 また謎の development も追加（詳細がドキュメントされていないので後日調査予定）
 まず ICS と ＪＢ のプロテクションレベルの一覧比較
 ICS
- dangerous signatureOrSystem normal signature  JB
- dangerous signature|system normal signature signature|system|development signatureOrSystem  JB に signatureOrSystem が混じっているのは誤表記にあらず。
+dangerous signatureOrSystem normal signature JB
+dangerous signature|system normal signature signature|system|development signatureOrSystem JB に signatureOrSystem が混じっているのは誤表記にあらず。
 一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。
 次それぞれのプロテクションレベル毎の比較
 JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。
-[signature]  赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
- android.permission.ACCOUNT_MANAGER
+[signature] 赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
+android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
@@ -110,7 +126,15 @@ android.permission.START_ANY_ACTIVITY
 android.permission.SET_SCREEN_COMPATIBILITY
 android.permission.FORCE_STOP_PACKAGES
 android.permission.SET_PREFERRED_APPLICATIONS
-android.permission.ASEC_ACCESS" />
+android.permission.ASEC_ACCESS
+android.permission.ASEC_CREATE
+android.permission.ASEC_DESTROY
+android.permission.ASEC_MOUNT_UNMOUNT
+android.permission.ASEC_RENAME
+android.permission.DIAGNOSTIC
+android.permission.STATUS_BAR_SERVICE
+android.permission.FORCE_BACK
+android.permission.INTERNAL_SYSTEM_WINDOW" />
 <meta property="og:url" content="/posts/2012/08/13/jb%E3%81%A8ics%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/" />
 <meta property="og:site_name" content="JBとICSのPermission比較（メーカー署名関係）" />
 <meta property="og:image" content="">

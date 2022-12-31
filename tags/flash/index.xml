@@ -61,11 +61,14 @@ IDE4LASZLOのDL場所
 org.eclipse.emf.ecore.resource が無いとかいって怒られた。
 emf.ecoreをダウンロードしてインストール
 さて次こそインストール！
- 必須:フィーチャー&amp;quot;org.eclipse.emf.ocl(1.0.0)&amp;quot;、または互換。
- とまた怒られた。
+必須:フィーチャー&amp;quot;org.eclipse.emf.ocl(1.0.0)&amp;quot;、または互換。
+とまた怒られた。
 要するに、emf.olcのバージョン1.0.0が足りてねーっていうことだ
 エラーワードでググってみると、あるブログに以下プラグインを全部インストールすると解決したとあったのでぶちこむ。
- org.eclipse.emf.ocl org.eclipse.emf.query org.eclipse.emf.validation org.eclipse.emf.transaction  さーインストールだ。</description>
+org.eclipse.emf.ocl org.eclipse.emf.query org.eclipse.emf.validation org.eclipse.emf.transaction さーインストールだ。
+おう・・・・
+現在の構成にはエラーがあり、この操作は予測できない結果を引き起こす可能性があります。
+OCL 2.0 Binding for UML (1.</description>
     </item>
     
     <item>
@@ -96,16 +99,16 @@ System.capabilities.version;
 を使用すれば望みのものを得ることが出来るようだ。
 以下実際のコードを書いてみる。
 (FAME環境で作ったため、Macromediaと違うところがあります）
-versionManager.as  class versionManager {
+versionManager.as class versionManager {
 function versionManager (path){
-trace(Flashout.DEBUG + &amp;ldquo;trace()&amp;quot;);
+trace(Flashout.DEBUG + &amp;ldquo;trace()&amp;rdquo;);
 // _rootのDepth=1にMovieClipのインスタンスseedを作成
 path.createEmptyMovieClip(&amp;ldquo;seed&amp;rdquo;,1);
 //インスタンスseedをmcとする
 var mc :MovieClip = path.seed;
 //バージョン情報を取得
 var ver :String= System.capabilities.version;
-var major_ver = ver.split(&amp;rdquo; &amp;ldquo;)[1].split(&amp;rdquo;,&amp;quot;)[0];
+var major_ver = ver.split(&amp;quot; &amp;ldquo;)[1].split(&amp;rdquo;,&amp;quot;)[0];
 trace (&amp;ldquo;ver = &amp;quot; + ver);
 trace (&amp;ldquo;major_ver = &amp;quot; + major_ver);
 //今回パブリッシュ設定を７と８で分けたいので
@@ -126,9 +129,9 @@ if (major_ver &amp;gt; 7) {</description>
 JSONクラスで落ちてしまう。
 結局手書きでやることにした。
 作業の流れとしては
- XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload  XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
+XMLインスタンス作成 インスタンス.ignoreWhite プロパティをtrueに設定。 XMLインスタンのonLoadにファンクション設定。 XMLインスタンスに外部XMLをload XML.onLoad はLoadが実行され終了されて初めて動作するプロパティです。
 さて実際に以下に書いてみましょう。
-XMLデータ内容   ActionScript内容  //XMLインスタンス作成
+XMLデータ内容 ActionScript内容 //XMLインスタンス作成
 var my_xml :XML = new XML();
 // 改行などを無視
 my_xml.ignoreWhite = true;
@@ -139,10 +142,11 @@ if (success) {
 my_xml = this;
 // XMLエレメントの取得
 var my_xmlnode :XMLNode = my_xml.firstChild;
-var name :String = &amp;ldquo;&amp;quot;;
-var url :String = &amp;ldquo;&amp;quot;;
+var name :String = &amp;ldquo;&amp;rdquo;;
+var url :String = &amp;ldquo;&amp;rdquo;;
 var i :Number = 0;
-while ( my_xmlnode.</description>
+while ( my_xmlnode.childNodes[i].hasChildNodes() ){
+name = my_xmlnode.childNodes[i].childNodes[0].childNodes;</description>
     </item>
     
     <item>
@@ -230,7 +234,7 @@ Eclipseをコアとし、
 残り３つのツールを組み合わせることで
 フリーのFlash作成ツールFAMEとなります。
 実際の環境構築において参考にしたサイト
- [技術系のシバチョがコラムを書く](http://d.hatena.ne.jp/shibacho/20051009 &amp;ldquo;技術系のシバチョがコラムを書く - &amp;ldquo;Getting Started With MTASC for Flash Development&amp;quot;の日本語訳&amp;rdquo;) 神原日記 - FAMEを始める  上記二記事を参考にやると、得に躓くことなく環境構築できました。
+[技術系のシバチョがコラムを書く](http://d.hatena.ne.jp/shibacho/20051009 &amp;ldquo;技術系のシバチョがコラムを書く - &amp;ldquo;Getting Started With MTASC for Flash Development&amp;quot;の日本語訳&amp;rdquo;) 神原日記 - FAMEを始める 上記二記事を参考にやると、得に躓くことなく環境構築できました。
 FAMEを触ってみる
 実際動かしてみた感想として、
 javaやEclipseでの開発に慣れた人なら使いやすいが、
@@ -254,7 +258,9 @@ FAMEは使えるか？
 デザイナーはscriptが苦手、 プログラマはグラフィックが苦手、 でも編集するのは同じflaファイル
 な状況から脱却し、
 それぞれをその道に特化した人が担当する事により
-素晴らしい作品が出来るかもしれません。</description>
+素晴らしい作品が出来るかもしれません。
+蛇足？
+今回紹介したFAMEですが、</description>
     </item>
     
   </channel>

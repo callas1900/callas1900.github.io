@@ -184,15 +184,15 @@ msiファイルとバインド設定ファイルをエクスポートする
 msiファイルからBizTalkアプリをインストールする
 バインド設定をインポートする
 msiファイルを使った対象BizTalkアプリを削除する
-バインド設定を省いたアプリケーションのmsiファイルを作成する方法   アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。
-btstask listapp -a:<em><strong>BizApp1</strong></em> -r:<em><strong>BizApp1_Resource.xml</strong></em>   <em>**BizApp1_Resource.xml **を修正する。
+バインド設定を省いたアプリケーションのmsiファイルを作成する方法 アプリケーションネーム(ここではBizApp1とする）を指定し、リソースXMLファイルを作成する。
+btstask listapp -a:<em><strong>BizApp1</strong></em> -r:<em><strong>BizApp1_Resource.xml</strong></em> <em>**BizApp1_Resource.xml **を修正する。
 タグ以下の
 &lt;Resource Type=“System.BizTalk:BizTalkBinding”
 で始まるタグを削除する。
 _
 エクスポート実行
-btstask ExportApp -a:</em><strong>BizApp1</strong>_ -p:<em><strong>&lt;MsiFileName&gt;</strong></em> -r:<em><strong>BizApp1_Resource.xml</strong></em>   バインドファイルもエクスポート実行
-btstask ExportBindings -Destination:<strong><em>BindFile.xml</em></strong> -ApplicationName:<em><strong>BizApp1</strong></em>   バッチ例 msiファイルとバインド設定ファイルをエクスポートする @setlocal @echo off echo ################################## echo %DATE% %TIME% Running export.bat echo ################################## REM !
+btstask ExportApp -a:</em><strong>BizApp1</strong>_ -p:<em><strong>&lt;MsiFileName&gt;</strong></em> -r:<em><strong>BizApp1_Resource.xml</strong></em> バインドファイルもエクスポート実行
+btstask ExportBindings -Destination:<strong><em>BindFile.xml</em></strong> -ApplicationName:<em><strong>BizApp1</strong></em> バッチ例 msiファイルとバインド設定ファイルをエクスポートする @setlocal @echo off echo ################################## echo %DATE% %TIME% Running export.bat echo ################################## REM !!!!You edit this block!!!! call :SUB BizApp1 call :SUB BizApp2 REM !!!!You edit this block!!!! @endlocal goto :EOF :SUB set APP_NAME=%1 set MSI_NAME=&quot;%~dp0%1.msi&quot; set XML_NAME=&quot;%~dp0%1.
       
       
     </div>

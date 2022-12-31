@@ -18,17 +18,21 @@
 ライセンスを買って設定するなんてことありますよね。
 Windows 2008 Server でTSのライセンスが切れたので、設定方法を残しておきます。
 前提条件：TS License Serverのインストールを行うサーバーはDomain controllerであること。
-ライセンスサーバーのインストール   Server Managerを起動し、Rolesの中のTerminal Servicesを選択し、
+ライセンスサーバーのインストール Server Managerを起動し、Rolesの中のTerminal Servicesを選択し、
 右クリックメニューよりAdd Role Servicesを選択します。
-  TS Licensingにチェックを入れてNext
-  Configure Discovery Scope for TS Licensing画面が出てくるので
+TS Licensingにチェックを入れてNext
+Configure Discovery Scope for TS Licensing画面が出てくるので
 ターミナルサービスがライセンスサーバーを探す範囲を選択してNext
 (今回はThis Domain)
-  Confirm Installation Selections画面で、Installをクリックして完了。
-  ライセンスサーバーの設定   Start &amp;gt; Administrative Tools &amp;gt; Terminal Services &amp;gt; TS Licensing Manager を起動します。
-  対象とするサーバーの状態がNot Activated であることを確認する。
-  サーバーを選択し、Action &amp;gt; Activate Serverを選択。
-Activate Server Wizardが開始します。</description>
+Confirm Installation Selections画面で、Installをクリックして完了。
+ライセンスサーバーの設定 Start &amp;gt; Administrative Tools &amp;gt; Terminal Services &amp;gt; TS Licensing Manager を起動します。
+対象とするサーバーの状態がNot Activated であることを確認する。
+サーバーを選択し、Action &amp;gt; Activate Serverを選択。
+Activate Server Wizardが開始します。
+Connection Method画面は**Automatic connection(recommended)**を選択した状態でNext
+Company Information(Provide the requested company information)画面 には必要事項を入れてNext
+次画面のCompany Information(Enter this optional information)画面は空欄でNext
+Start Install Licenses Wizard Nowにチェックが入った状態でNext</description>
     </item>
     
   </channel>

@@ -7,8 +7,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="Android Performance Patterns Session にいい動画が上がっていたので、備忘録として中身を書き出しておく
- Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer  Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
-android { ... buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;), &#39;proguard-rules.pro&#39; } } } これらはアプリ内で使用していないリソースを除去してくれます。
+Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
+android { ... buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile(&amp;#39;proguard-android.txt&amp;#39;), &amp;#39;proguard-rules.pro&amp;#39; } } } これらはアプリ内で使用していないリソースを除去してくれます。
 Multi Resources Support Android がサポートしているリソースサイズを全て揃えるとそれだけで結構な量になるので、必要なものだけ使う。
 ldpi
 mdpi から自動で作られる
@@ -20,7 +20,8 @@ xxhdpi から自動で作られる
 xhdpi
 xxhdpi から自動で作られる
 xxhdpi
-xxxhdpi"/>
+xxxhdpi
+mdpi xxhdpi xxxhdpi のみ使用する"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2016/11/10/smaller-apks-android-%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Bapk%E3%82%92%E5%B0%8F%E3%81%95%E3%81%8F%E4%BF%9D%E3%81%A4%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/" />
@@ -44,8 +45,8 @@ xxxhdpi"/>
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Smaller APKs : Android におけるAPKを小さく保つためのテクニック :: callas1900.net — A simple page of mine" />
 <meta name="twitter:description" content="Android Performance Patterns Session にいい動画が上がっていたので、備忘録として中身を書き出しておく
- Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer  Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
-android { ... buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;), &#39;proguard-rules.pro&#39; } } } これらはアプリ内で使用していないリソースを除去してくれます。
+Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
+android { ... buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile(&amp;#39;proguard-android.txt&amp;#39;), &amp;#39;proguard-rules.pro&amp;#39; } } } これらはアプリ内で使用していないリソースを除去してくれます。
 Multi Resources Support Android がサポートしているリソースサイズを全て揃えるとそれだけで結構な量になるので、必要なものだけ使う。
 ldpi
 mdpi から自動で作られる
@@ -57,7 +58,8 @@ xxhdpi から自動で作られる
 xhdpi
 xxhdpi から自動で作られる
 xxhdpi
-xxxhdpi" />
+xxxhdpi
+mdpi xxhdpi xxxhdpi のみ使用する" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -67,8 +69,8 @@ xxxhdpi" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Smaller APKs : Android におけるAPKを小さく保つためのテクニック :: callas1900.net — A simple page of mine">
 <meta property="og:description" content="Android Performance Patterns Session にいい動画が上がっていたので、備忘録として中身を書き出しておく
- Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer  Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
-android { ... buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;), &#39;proguard-rules.pro&#39; } } } これらはアプリ内で使用していないリソースを除去してくれます。
+Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
+android { ... buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile(&amp;#39;proguard-android.txt&amp;#39;), &amp;#39;proguard-rules.pro&amp;#39; } } } これらはアプリ内で使用していないリソースを除去してくれます。
 Multi Resources Support Android がサポートしているリソースサイズを全て揃えるとそれだけで結構な量になるので、必要なものだけ使う。
 ldpi
 mdpi から自動で作られる
@@ -80,7 +82,8 @@ xxhdpi から自動で作られる
 xhdpi
 xxhdpi から自動で作られる
 xxhdpi
-xxxhdpi" />
+xxxhdpi
+mdpi xxhdpi xxxhdpi のみ使用する" />
 <meta property="og:url" content="/posts/2016/11/10/smaller-apks-android-%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Bapk%E3%82%92%E5%B0%8F%E3%81%95%E3%81%8F%E4%BF%9D%E3%81%A4%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/" />
 <meta property="og:site_name" content="Smaller APKs : Android におけるAPKを小さく保つためのテクニック" />
 <meta property="og:image" content="">
@@ -226,8 +229,8 @@ xxxhdpi" />
         release {  
             minifyEnabled true  
             shrinkResources true  
-            proguardFiles getDefaultProguardFile('proguard-android.txt'),  
-            'proguard-rules.pro'  
+            proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;),  
+            &#39;proguard-rules.pro&#39;  
         }  
     }  
 }

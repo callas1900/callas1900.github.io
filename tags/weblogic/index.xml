@@ -18,13 +18,13 @@
 Weblogic92を使用し、
 JREにJRockitを使いIDEをEclipse3.2にした場合
 EclipseからANTを実行する場合のwlcompileタスクにおいて以下のエラーが起こった場合の対処
- BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:
+BUILD FAILEDC:\project\hogehoge\Src\foo\src\build.xml:25:
 The following error occurred while executing this line:C:\project\hogehoge\Src\foo\src\fooEar\build.xml:77:
 Could not create task or type of type: wlcompile.
 Ant could not find the task or a class this task relies upon.
 This is common and has a number of causes;
 the usual solutions are to read the manual pages then download andinstall needed JAR files, or fix the build file:
-- You have misspelt &amp;lsquo;wlcompile&amp;rsquo;.</description>
+- You have misspelt &amp;lsquo;wlcompile&amp;rsquo;. Fix: check your spelling.</description>
     </item>
     
   </channel>

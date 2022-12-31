@@ -177,8 +177,8 @@
       
       
       Android Performance Patterns Session にいい動画が上がっていたので、備忘録として中身を書き出しておく
-Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer  Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
-android { &hellip; buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile(&lsquo;proguard-android.txt&rsquo;), &lsquo;proguard-rules.pro&rsquo; } } } これらはアプリ内で使用していないリソースを除去してくれます。
+Removing Unused Resources Multi Resources Support Vector Drawables Reuse Existing Resources Removing Unused Code Apk Analyzer Removing Unused Resources gradle file にて以下の minifyEnabled と shrinkResources をセットしておく。
+android { &hellip; buildTypes { release { minifyEnabled true shrinkResources true proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro' } } } これらはアプリ内で使用していないリソースを除去してくれます。
 Multi Resources Support Android がサポートしているリソースサイズを全て揃えるとそれだけで結構な量になるので、必要なものだけ使う。
 ldpi
 mdpi から自動で作られる
@@ -191,6 +191,7 @@ xhdpi
 xxhdpi から自動で作られる
 xxhdpi
 xxxhdpi
+mdpi xxhdpi xxxhdpi のみ使用する
       
       
     </div>
@@ -229,12 +230,13 @@ xxxhdpi
     <div class="post-content">
       
       
-      Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+      Occurrence -事象- Causes -原因- HID とは ? BLUETOOTH_PRIVILEGED とは? Summary -まとめ- HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？ Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
 5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
 エラー内容は以下のようになっている。
 java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
 Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
 Android 5.0.2 onwards don’t allow HID access through Bluetooth LE
+さらに、Android Issues に [BLE] Reading/writing char/descr of a HID service throws an exception があり、その中で
       
       
     </div>
@@ -277,9 +279,9 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE
     <div class="post-content">
       
       
-      Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
+      <p>Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
-ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
+ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係） にあります。
 何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
 これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
 メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
@@ -287,9 +289,9 @@ ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPe
 よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
 Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
 JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
-Permission増減調査(JB MR1(4.2) &gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem KitKat
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem 特に変更なし
+Permission増減調査(JB MR1(4.2) &gt; JB MR2(4.3)) [signature] これはメーカー署名がないと使用出来ないもの
 android.permission.BLUETOOTH_STACK
 android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
@@ -297,6 +299,16 @@ android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
 android.permission.INTERACT_ACROSS_USERS_FULL
 android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS</p>
+<ul>
+<li>android.permission.MANAGE_ACTIVITY_STACKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.ACCESS_ALL_EXTERNAL_STORAGE
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS</li>
+</ul>
+
       
       
     </div>
@@ -341,7 +353,7 @@ android.permission.GET_DETAILED_TASKS
       
       Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
-ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係）  にあります。
+ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） にあります。
 何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
 これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
 メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
@@ -349,14 +361,22 @@ ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPe
 よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
 Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
 JB MR1 と JB MR2 のプロテクションレベルの一覧比較 JB MR1
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  JB MR2
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更はありませんね。
-Permission増減調査(JB MR1(4.2) &gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem JB MR2
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem 特に変更はありませんね。
+Permission増減調査(JB MR1(4.2) &gt; JB MR2(4.3)) [signature] これはメーカー署名がないと使用出来ないもの
 android.permission.BLUETOOTH_STACK
 android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
+android.permission.INTERACT_ACROSS_USERS_FULL
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.ACCESS_ALL_EXTERNAL_STORAGE
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS
       
       
     </div>

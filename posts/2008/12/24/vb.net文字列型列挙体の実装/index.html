@@ -10,22 +10,26 @@
 VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。
 以下コードと解説
 コード
- `Public Structure sampleStructure
+`Public Structure sampleStructure
 Public Const hoge As String = &amp;ldquo;hogehoge&amp;rdquo;
 Public Const fuga As String = &amp;ldquo;fugafuga&amp;rdquo;
 Public Const foo As String = &amp;ldquo;foofoo&amp;rdquo;
 Public Const bar As String = &amp;ldquo;barbar&amp;rdquo;
- &amp;lsquo;構造体用インスタンスメンバをダミー実装
+&amp;lsquo;構造体用インスタンスメンバをダミー実装
 Private dummy As String
- &amp;lsquo;構造体のReferenceEqualsを参照出来なくする。
+&amp;lsquo;構造体のReferenceEqualsを参照出来なくする。
 Private Shadows Function ReferenceEquals() As Object
 Return New Object
 End Function
- &amp;lsquo;構造体のEqualsを参照出来なくする。
+&amp;lsquo;構造体のEqualsを参照出来なくする。
 Private Shadows Function equals() As Object
 Return New Object
 End Function
-End Structure"/>
+End Structure
+`
+解説
+ポイントはインスタンスメンバのdummy実装と、shadowsによる参照制限
+インスタンスメンバのdummy実装はもしかしたら何とかできるかもしれない。"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/" />
@@ -52,22 +56,26 @@ End Structure"/>
 VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。
 以下コードと解説
 コード
- `Public Structure sampleStructure
+`Public Structure sampleStructure
 Public Const hoge As String = &amp;ldquo;hogehoge&amp;rdquo;
 Public Const fuga As String = &amp;ldquo;fugafuga&amp;rdquo;
 Public Const foo As String = &amp;ldquo;foofoo&amp;rdquo;
 Public Const bar As String = &amp;ldquo;barbar&amp;rdquo;
- &amp;lsquo;構造体用インスタンスメンバをダミー実装
+&amp;lsquo;構造体用インスタンスメンバをダミー実装
 Private dummy As String
- &amp;lsquo;構造体のReferenceEqualsを参照出来なくする。
+&amp;lsquo;構造体のReferenceEqualsを参照出来なくする。
 Private Shadows Function ReferenceEquals() As Object
 Return New Object
 End Function
- &amp;lsquo;構造体のEqualsを参照出来なくする。
+&amp;lsquo;構造体のEqualsを参照出来なくする。
 Private Shadows Function equals() As Object
 Return New Object
 End Function
-End Structure" />
+End Structure
+`
+解説
+ポイントはインスタンスメンバのdummy実装と、shadowsによる参照制限
+インスタンスメンバのdummy実装はもしかしたら何とかできるかもしれない。" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -80,22 +88,26 @@ End Structure" />
 VB.NETはまだ初心者ですけど、ちょっと考え付いたのでメモ書き。
 以下コードと解説
 コード
- `Public Structure sampleStructure
+`Public Structure sampleStructure
 Public Const hoge As String = &amp;ldquo;hogehoge&amp;rdquo;
 Public Const fuga As String = &amp;ldquo;fugafuga&amp;rdquo;
 Public Const foo As String = &amp;ldquo;foofoo&amp;rdquo;
 Public Const bar As String = &amp;ldquo;barbar&amp;rdquo;
- &amp;lsquo;構造体用インスタンスメンバをダミー実装
+&amp;lsquo;構造体用インスタンスメンバをダミー実装
 Private dummy As String
- &amp;lsquo;構造体のReferenceEqualsを参照出来なくする。
+&amp;lsquo;構造体のReferenceEqualsを参照出来なくする。
 Private Shadows Function ReferenceEquals() As Object
 Return New Object
 End Function
- &amp;lsquo;構造体のEqualsを参照出来なくする。
+&amp;lsquo;構造体のEqualsを参照出来なくする。
 Private Shadows Function equals() As Object
 Return New Object
 End Function
-End Structure" />
+End Structure
+`
+解説
+ポイントはインスタンスメンバのdummy実装と、shadowsによる参照制限
+インスタンスメンバのdummy実装はもしかしたら何とかできるかもしれない。" />
 <meta property="og:url" content="/posts/2008/12/24/vb.net%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B%E5%88%97%E6%8C%99%E4%BD%93%E3%81%AE%E5%AE%9F%E8%A3%85/" />
 <meta property="og:site_name" content="[VB.NET]文字列型列挙体の実装" />
 <meta property="og:image" content="">

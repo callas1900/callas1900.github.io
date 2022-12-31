@@ -17,7 +17,7 @@
       <description>Docker registry を作って、別チームに任せて放置する Docker registry で image 管理をすると段々とゴミが溜まってきます。API(https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository)で削除できるのはTAGがついているimageだけなので、
 TAGが外れているimagesがどんどん残っていきます。
 エラーが起きる ずーっと管理せずに放置していると、ある日こんなエラーと出会います。
-HTTP code 500 while uploading metadata: &amp;quot;invalid character &#39;&amp;lt;&#39; looking for beginning of value&amp;quot; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
+HTTP code 500 while uploading metadata: &amp;#34;invalid character &amp;#39;&amp;lt;&amp;#39; looking for beginning of value&amp;#34; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
 不要なimageを削除する。 以下スクリプとが非常に有用です。
 jqのインストールが必須になります。
 kwk/remove-orphan-images.sh

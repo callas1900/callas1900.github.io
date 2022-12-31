@@ -16,10 +16,11 @@
       <guid>/posts/2010/02/11/dynamicsax2009x-%E5%AE%89%E5%85%A8%E3%81%AA%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E6%97%A5%E4%BB%98/</guid>
       <description>X++の小技を自分メモ用に紹介。
 X++に対してgoogle-code-prettifyがうまく動作するか不安だがやってみる。
- 安全なクラスキャスト システム日付  安全なクラスキャスト static pulic void main(Args \_args) { binaryIO b; textIO t; ; b = SysDictClass::as(t,classIdGet(b)); } ちなみにObjectを使用して安全でないクラスキャストもできる。
+安全なクラスキャスト システム日付 安全なクラスキャスト static pulic void main(Args \_args) { binaryIO b; textIO t; ; b = SysDictClass::as(t,classIdGet(b)); } ちなみにObjectを使用して安全でないクラスキャストもできる。
 static pulic void main(Args \_args) { binaryIO b; textIO t; Object o; ; o = t; b = o; } システム日付 utcDateTime型とDate型で取得
 void method1() { utcDateTime utc; Date d; ; utc = DateTimeUtil::applyTimeZoneOffset( DateTimeUtil::getSystemDateTime(), DateTimeUtil::getUserPreferredTimeZone() ); d = DateTimeUtil::date(utc); print utc; print d; } 実行結果
- 2010/12/12 12:12:12</description>
+2010/12/12 12:12:12
+2010/12/12</description>
     </item>
     
   </channel>

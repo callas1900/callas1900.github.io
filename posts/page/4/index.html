@@ -313,13 +313,13 @@
 docker をインストール後稼働していると、ディスクが足りなくなることがあります。
 いらないイメージを削ればいいのですが、イメージが削れない状況もあると思います。
 外部ディスクマウント後の容量食う /var/lib/docker の移動の仕方に関して記します。
-docker 停止 /var/lib/docker を移す 設定ファイル変更  redhat系の場合 debian系の場合 ubuntu 16 の場合   docker 再起動 &amp; 確認  docker 停止 sudo service docker stop /var/lib/docker を移す ディスク容量に余裕がある場所に /var/lib/docker を移す。(ここでは例として /mnt/extra/docker とする)
+docker 停止 /var/lib/docker を移す 設定ファイル変更 redhat系の場合 debian系の場合 ubuntu 16 の場合 docker 再起動 &amp; 確認 docker 停止 sudo service docker stop /var/lib/docker を移す ディスク容量に余裕がある場所に /var/lib/docker を移す。(ここでは例として /mnt/extra/docker とする)
 インストール直後ぐらいなら、mv で、
 安全にやりたいなら
 mkdir /mnt/extra/docker sudo rsync -aXS /var/lib/docker/. /mnt/extra/docker/ 設定ファイル変更 redhat系の場合 設定ファイル: /etc/sysconfig/docker
 (あれば追加で、なければ作成)
 echo other_args=&quot;-g /mnt/extra/docker&quot; &gt; /etc/sysconfig/docker debian系の場合 設定ファイル: /etc/default/docker</p>
-<h1 id="docker_optsquot-dns-8888--dns-8844quot-docker_optsquot-dns-8888--dns-8">DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4&quot; DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.</h1>
+<h1 id="docker_opts34-dns-8888--dns-884434-docker_opts34-dns-8888--dns-8844--g-mntextradocker34-と書かれていますが手前の-ubuntu-16-では動きませんでしたので">DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4&quot; DOCKER_OPTS=&quot;-dns 8.8.8.8 -dns 8.8.4.4 -g /mnt/extra/docker&quot; と書かれていますが、手前の ubuntu 16 では動きませんでしたので</h1>
 
       
       

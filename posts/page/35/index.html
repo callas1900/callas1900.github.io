@@ -294,16 +294,16 @@ System.capabilities.version;
 を使用すれば望みのものを得ることが出来るようだ。
 以下実際のコードを書いてみる。
 (FAME環境で作ったため、Macromediaと違うところがあります）
-versionManager.as  class versionManager {
+versionManager.as class versionManager {
 function versionManager (path){
-trace(Flashout.DEBUG + “trace()&quot;);
+trace(Flashout.DEBUG + “trace()”);
 // _rootのDepth=1にMovieClipのインスタンスseedを作成
 path.createEmptyMovieClip(“seed”,1);
 //インスタンスseedをmcとする
 var mc :MovieClip = path.seed;
 //バージョン情報を取得
 var ver :String= System.capabilities.version;
-var major_ver = ver.split(” “)[1].split(”,&quot;)[0];
+var major_ver = ver.split(&quot; “)[1].split(”,&quot;)[0];
 trace (“ver = &quot; + ver);
 trace (“major_ver = &quot; + major_ver);
 //今回パブリッシュ設定を７と８で分けたいので

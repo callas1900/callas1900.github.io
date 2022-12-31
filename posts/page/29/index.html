@@ -194,12 +194,20 @@ CVSには「CVS for NT」を仕様（Verは2.5.03）
 それをダブルクリック。
 【Repository Configuration】なるタブがあるのでそれを選択。
 【ADD】ボタンから新規作成
-Location　：　CVS管理したいフォルダをインストール Name　：　上記が入れば勝手にデフォルトが入力されるのでそれを採用 Description　：　適当    「適用」を押すと、initialize するか聞いてくるのでOK
+Location　：　CVS管理したいフォルダをインストール Name　：　上記が入れば勝手にデフォルトが入力されるのでそれを採用 Description　：　適当 「適用」を押すと、initialize するか聞いてくるのでOK
 この作業が終わると、Location先のフォルダに「CVSROOT」というフォルダが出来る。
 コマンドプロンプトを起動してパスワードを設定。
 C:\適当なディレクトリ&gt;cvs -d c:\hogehoge\hoge passwd -r Administrator -a user01
 Adding user user01
 New Password: [作成するユーザ(user01)のパスワードを入力]
+Verify Password: [作成するユーザ(user01)のパスワードを入力]
+[オプション説明]
+-d ： リポジトリルート
+-r ： Administrator権限を持っているWindowsUser名
+-a ： 作成するCVSのUser名
+c
+※社内開発とかでイントラネットなどでやる場合はパスなんてなくても困らないです。
+以上で終わり、後はEclipseから接続するなりなんなりと
       
       
     </div>
@@ -283,7 +291,10 @@ emf.ecoreをダウンロードしてインストール
 とまた怒られた。
 要するに、emf.olcのバージョン1.0.0が足りてねーっていうことだ
 エラーワードでググってみると、あるブログに以下プラグインを全部インストールすると解決したとあったのでぶちこむ。
-org.eclipse.emf.ocl org.eclipse.emf.query org.eclipse.emf.validation org.eclipse.emf.transaction  さーインストールだ。
+org.eclipse.emf.ocl org.eclipse.emf.query org.eclipse.emf.validation org.eclipse.emf.transaction さーインストールだ。
+おう・・・・
+現在の構成にはエラーがあり、この操作は予測できない結果を引き起こす可能性があります。
+OCL 2.0 Binding for UML (1.
       
       
     </div>
@@ -417,6 +428,11 @@ org.eclipse.emf.ocl org.eclipse.emf.query org.eclipse.emf.validation org.eclipse
 小数点以下切り上げに使用するべきじゃない。
 ふむ、小数点以下切り上げとしては確かに
 3000 / 990 = 3.03030･･･ ＝ 3 (小数点以下切捨て)
+と書くのもアリアリだ。
+う～ん、細かい話だが波風立てるほどのものでもないし、
+相手に合わせておくか・・・
+とここで、横で電話の様子を見ていた先輩が一言
+「多分、一般人の人には”≒”って何の事かわからんかもよ？」
       
       
     </div>

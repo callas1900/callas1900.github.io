@@ -274,7 +274,7 @@
       
       
       AIFの実行環境設定 AXのBasicメニューより以下を設定する。
-AIFの実行環境設定  Local endpoints設定 Transport adapters設定 Channels設定  File System Adapter BizTalk Adapter   Endpoints設定  Data policies設定 Endpoint有効化      Local endpoints設定 会社毎にLocal endpointsを設定する。
+AIFの実行環境設定 Local endpoints設定 Transport adapters設定 Channels設定 File System Adapter BizTalk Adapter Endpoints設定 Data policies設定 Endpoint有効化 Local endpoints設定 会社毎にLocal endpointsを設定する。
 Local endpointsはI/Oを許可した会社の別名と考えれられる。
 Newボタンを押し以下項目を設定する。
 Company セレクトボックスより設定したい会社名
@@ -296,6 +296,13 @@ File System Adapter Outboundを作成してから、Inbound作成すること
 そうしなければResponse channelの設定で少しつまる。
 Response channelの設定は、
 Inboundの場合は対応するOutboundを、
+Outboundの場合はブランク、
+Bothの場合は自信の設定を入力する。
+BizTalk Adapter DirectionがBothになることと、
+Response channelが自分自身になること、
+それからConfigureボタンでサーバー名称の設定をすることを忘れない。
+※他環境から設定をインポートする際にここの変更を忘れることが多い。
+Channel ID
       
       
     </div>

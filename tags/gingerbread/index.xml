@@ -17,10 +17,10 @@
       <description>ICSのテストをしていると、前まで動いていたところでSecurityExceptionをはきました。
 端末不具合かソースが変わったのかを調べる為に
 公開されているICS(Android 4.0)とGingerbread(Android 2.3.3)のAndroidManifest.xmlを比較してみました。
- AndroidではAndroid自体をビルドする時に使用されている署名（所謂メーカー所有の署名）とその他の署名の間に格差があり、特定のAPIを叩く際に必要となるpermissionの値が、&amp;ldquo;signatureOrSystem&amp;rdquo; もしくは&amp;quot;signature&amp;quot;となっている時は、実行する為にこのメーカー署名が必要となります。
+AndroidではAndroid自体をビルドする時に使用されている署名（所謂メーカー所有の署名）とその他の署名の間に格差があり、特定のAPIを叩く際に必要となるpermissionの値が、&amp;ldquo;signatureOrSystem&amp;rdquo; もしくは&amp;quot;signature&amp;quot;となっている時は、実行する為にこのメーカー署名が必要となります。
 それらAPIを叩くためには、メーカーに依頼して出来たAPKに署名を入れてもらうか、
 rootを取る、もしくは自分でAndroidをビルドして実機に焼く等を行う必要があります。
- それぞれ、frameworks/base/core/res/AndroidManifest.xml
+それぞれ、frameworks/base/core/res/AndroidManifest.xml
 を比較し、ICSで増えた箇所を赤字＋太字で表示しました。
 ※ICSで減ったものはなかった。
 [signatureOrSystem]
@@ -78,7 +78,9 @@ android.permission.ASEC_ACCESS
 android.permission.ASEC_CREATE
 android.permission.ASEC_DESTROY
 android.permission.ASEC_MOUNT_UNMOUNT
-android.permission.ASEC_RENAME</description>
+android.permission.ASEC_RENAME
+android.permission.DIAGNOSTIC
+android.permission.STATUS_BAR_SERVICE</description>
     </item>
     
   </channel>

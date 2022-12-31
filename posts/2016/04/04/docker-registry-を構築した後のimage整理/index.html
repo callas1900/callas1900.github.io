@@ -9,7 +9,7 @@
 <meta name="description" content="Docker registry を作って、別チームに任せて放置する Docker registry で image 管理をすると段々とゴミが溜まってきます。API(https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository)で削除できるのはTAGがついているimageだけなので、
 TAGが外れているimagesがどんどん残っていきます。
 エラーが起きる ずーっと管理せずに放置していると、ある日こんなエラーと出会います。
-HTTP code 500 while uploading metadata: &amp;quot;invalid character &#39;&amp;lt;&#39; looking for beginning of value&amp;quot; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
+HTTP code 500 while uploading metadata: &amp;#34;invalid character &amp;#39;&amp;lt;&amp;#39; looking for beginning of value&amp;#34; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
 不要なimageを削除する。 以下スクリプとが非常に有用です。
 jqのインストールが必須になります。
 kwk/remove-orphan-images.sh
@@ -41,7 +41,7 @@ parse error: Invalid numeric literal at line 144, column 114 これは直前に�
 <meta name="twitter:description" content="Docker registry を作って、別チームに任せて放置する Docker registry で image 管理をすると段々とゴミが溜まってきます。API(https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository)で削除できるのはTAGがついているimageだけなので、
 TAGが外れているimagesがどんどん残っていきます。
 エラーが起きる ずーっと管理せずに放置していると、ある日こんなエラーと出会います。
-HTTP code 500 while uploading metadata: &amp;quot;invalid character &#39;&amp;lt;&#39; looking for beginning of value&amp;quot; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
+HTTP code 500 while uploading metadata: &amp;#34;invalid character &amp;#39;&amp;lt;&amp;#39; looking for beginning of value&amp;#34; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
 不要なimageを削除する。 以下スクリプとが非常に有用です。
 jqのインストールが必須になります。
 kwk/remove-orphan-images.sh
@@ -59,7 +59,7 @@ parse error: Invalid numeric literal at line 144, column 114 これは直前に�
 <meta property="og:description" content="Docker registry を作って、別チームに任せて放置する Docker registry で image 管理をすると段々とゴミが溜まってきます。API(https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository)で削除できるのはTAGがついているimageだけなので、
 TAGが外れているimagesがどんどん残っていきます。
 エラーが起きる ずーっと管理せずに放置していると、ある日こんなエラーと出会います。
-HTTP code 500 while uploading metadata: &amp;quot;invalid character &#39;&amp;lt;&#39; looking for beginning of value&amp;quot; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
+HTTP code 500 while uploading metadata: &amp;#34;invalid character &amp;#39;&amp;lt;&amp;#39; looking for beginning of value&amp;#34; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
 不要なimageを削除する。 以下スクリプとが非常に有用です。
 jqのインストールが必須になります。
 kwk/remove-orphan-images.sh
@@ -205,7 +205,7 @@ parse error: Invalid numeric literal at line 144, column 114 これは直前に�
 TAGが外れているimagesがどんどん残っていきます。</p>
 <h2 id="エラーが起きる">エラーが起きる</h2>
 <p>ずーっと管理せずに放置していると、ある日こんなエラーと出会います。</p>
-<pre tabindex="0"><code>HTTP code 500 while uploading metadata: &quot;invalid character '&lt;' looking for beginning of value&quot;
+<pre tabindex="0"><code>HTTP code 500 while uploading metadata: &#34;invalid character &#39;&lt;&#39; looking for beginning of value&#34;
 </code></pre><p>これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。</p>
 <h2 id="不要なimageを削除する">不要なimageを削除する。</h2>
 <p>以下スクリプとが非常に有用です。<br>

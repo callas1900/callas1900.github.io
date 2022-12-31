@@ -185,17 +185,21 @@
 ライセンスを買って設定するなんてことありますよね。
 Windows 2008 Server でTSのライセンスが切れたので、設定方法を残しておきます。
 前提条件：TS License Serverのインストールを行うサーバーはDomain controllerであること。
-ライセンスサーバーのインストール   Server Managerを起動し、Rolesの中のTerminal Servicesを選択し、
+ライセンスサーバーのインストール Server Managerを起動し、Rolesの中のTerminal Servicesを選択し、
 右クリックメニューよりAdd Role Servicesを選択します。
 TS Licensingにチェックを入れてNext
 Configure Discovery Scope for TS Licensing画面が出てくるので
 ターミナルサービスがライセンスサーバーを探す範囲を選択してNext
 (今回はThis Domain)
 Confirm Installation Selections画面で、Installをクリックして完了。
-ライセンスサーバーの設定   Start &gt; Administrative Tools &gt; Terminal Services &gt; TS Licensing Manager を起動します。
+ライセンスサーバーの設定 Start &gt; Administrative Tools &gt; Terminal Services &gt; TS Licensing Manager を起動します。
 対象とするサーバーの状態がNot Activated であることを確認する。
 サーバーを選択し、Action &gt; Activate Serverを選択。
 Activate Server Wizardが開始します。
+Connection Method画面は**Automatic connection(recommended)**を選択した状態でNext
+Company Information(Provide the requested company information)画面 には必要事項を入れてNext
+次画面のCompany Information(Enter this optional information)画面は空欄でNext
+Start Install Licenses Wizard Nowにチェックが入った状態でNext
       
       
     </div>
@@ -241,7 +245,7 @@ Activate Server Wizardが開始します。
   
   <div class="post on-list">
     <h1 class="post-title">
-      <a href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その２</a></h1>
+      <a href="/posts/2010/07/08/javascriptvbscriptvbscript--javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その２</a></h1>
     <div class="post-meta">
       
     </div>
@@ -267,14 +271,14 @@ Activate Server Wizardが開始します。
     
     <div>
       <a class="read-more button"
-        href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/">Read more →</a>
+        href="/posts/2010/07/08/javascriptvbscriptvbscript--javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/">Read more →</a>
     </div>
     
   </div>
   
   <div class="post on-list">
     <h1 class="post-title">
-      <a href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その１</a></h1>
+      <a href="/posts/2010/07/08/javascriptvbscriptvbscript--javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その１</a></h1>
     <div class="post-meta">
       
     </div>
@@ -300,18 +304,18 @@ Activate Server Wizardが開始します。
 本当は HTML5 + JavaScript で作りたかったけど仕方ない。
 会社のみんなにChromeやFireFoxを強制的にインストールさせるのは面倒だからね。
 要件はある固定長インターフェースファイルを使ったテスト用に、
-テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。  この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
+テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。 この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
 ついでに皆標準的に入れてるブラウザはIE6。
 ファイル I/O　部位を VBScript に任し、
 他の挙動を JavaScript で制御するのが適当か？
 以下その場合の注意点
-VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)…】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。  これを画面の最下部に常に表記。
+VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要 メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)…】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。 これを画面の最下部に常に表記。
 で、まずはFile I/O部のVBScriptコード
 注意点は読み込んだ内容をJavaScriptに渡す場合、
 配列渡しはうまくいかなかったので、
 適当な区切り文字をはさんで渡し、JavaScript側でSpritしたことと、
 動的な配列が定義出来なかったのでReDimとPreserveを多様したこと
-書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&quot;Scripting.FileSystemObject&quot;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile.
+書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&quot;Scripting.FileSystemObject&quot;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile.Write(TXT &amp; vbcrlf) objFile.
       
       
     </div>
@@ -319,7 +323,7 @@ VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  
     
     <div>
       <a class="read-more button"
-        href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/">Read more →</a>
+        href="/posts/2010/07/08/javascriptvbscriptvbscript--javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/">Read more →</a>
     </div>
     
   </div>
@@ -368,7 +372,7 @@ VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  
 狼と香辛料 13 (電撃文庫 は 8-13)
 ホロとロレンスの話は苦い商売の話の上にあってこそ、その甘さが心地よいもの、ガムシロップ一気飲みはちときつい、次の長編では程よい甘さを期待する。ノーラの短編は小気味いい感じの短編。
 読了日：05月21日 著者：支倉 凍砂
-(講談社文庫)&ldquo;ヒトクイマジカル&lt;殺戮奇術の匂宮兄妹&gt; (講談社文庫)
+ヒトクイマジカル&lt;殺戮奇術の匂宮兄妹&gt; (講談社文庫)
 今回の話はネタバレをせずに感想を書くのが難しいね。青いのちょっと面倒。赤いの相変わらず良い。黄色いの切ない。バイト先の人しゃべり方結構好きだったよ。まぁ読め。
 読了日：05月16日 著者：西尾 維新
 サイコロジカル 下 (講談社文庫 に 32-5 西尾維新文庫)

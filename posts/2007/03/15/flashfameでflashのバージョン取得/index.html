@@ -28,16 +28,16 @@ System.capabilities.version;
 を使用すれば望みのものを得ることが出来るようだ。
 以下実際のコードを書いてみる。
 (FAME環境で作ったため、Macromediaと違うところがあります）
-versionManager.as  class versionManager {
+versionManager.as class versionManager {
 function versionManager (path){
-trace(Flashout.DEBUG &#43; &amp;ldquo;trace()&amp;quot;);
+trace(Flashout.DEBUG &#43; &amp;ldquo;trace()&amp;rdquo;);
 // _rootのDepth=1にMovieClipのインスタンスseedを作成
 path.createEmptyMovieClip(&amp;ldquo;seed&amp;rdquo;,1);
 //インスタンスseedをmcとする
 var mc :MovieClip = path.seed;
 //バージョン情報を取得
 var ver :String= System.capabilities.version;
-var major_ver = ver.split(&amp;rdquo; &amp;ldquo;)[1].split(&amp;rdquo;,&amp;quot;)[0];
+var major_ver = ver.split(&amp;quot; &amp;ldquo;)[1].split(&amp;rdquo;,&amp;quot;)[0];
 trace (&amp;ldquo;ver = &amp;quot; &#43; ver);
 trace (&amp;ldquo;major_ver = &amp;quot; &#43; major_ver);
 //今回パブリッシュ設定を７と８で分けたいので
@@ -86,16 +86,16 @@ System.capabilities.version;
 を使用すれば望みのものを得ることが出来るようだ。
 以下実際のコードを書いてみる。
 (FAME環境で作ったため、Macromediaと違うところがあります）
-versionManager.as  class versionManager {
+versionManager.as class versionManager {
 function versionManager (path){
-trace(Flashout.DEBUG &#43; &amp;ldquo;trace()&amp;quot;);
+trace(Flashout.DEBUG &#43; &amp;ldquo;trace()&amp;rdquo;);
 // _rootのDepth=1にMovieClipのインスタンスseedを作成
 path.createEmptyMovieClip(&amp;ldquo;seed&amp;rdquo;,1);
 //インスタンスseedをmcとする
 var mc :MovieClip = path.seed;
 //バージョン情報を取得
 var ver :String= System.capabilities.version;
-var major_ver = ver.split(&amp;rdquo; &amp;ldquo;)[1].split(&amp;rdquo;,&amp;quot;)[0];
+var major_ver = ver.split(&amp;quot; &amp;ldquo;)[1].split(&amp;rdquo;,&amp;quot;)[0];
 trace (&amp;ldquo;ver = &amp;quot; &#43; ver);
 trace (&amp;ldquo;major_ver = &amp;quot; &#43; major_ver);
 //今回パブリッシュ設定を７と８で分けたいので
@@ -130,16 +130,16 @@ System.capabilities.version;
 を使用すれば望みのものを得ることが出来るようだ。
 以下実際のコードを書いてみる。
 (FAME環境で作ったため、Macromediaと違うところがあります）
-versionManager.as  class versionManager {
+versionManager.as class versionManager {
 function versionManager (path){
-trace(Flashout.DEBUG &#43; &amp;ldquo;trace()&amp;quot;);
+trace(Flashout.DEBUG &#43; &amp;ldquo;trace()&amp;rdquo;);
 // _rootのDepth=1にMovieClipのインスタンスseedを作成
 path.createEmptyMovieClip(&amp;ldquo;seed&amp;rdquo;,1);
 //インスタンスseedをmcとする
 var mc :MovieClip = path.seed;
 //バージョン情報を取得
 var ver :String= System.capabilities.version;
-var major_ver = ver.split(&amp;rdquo; &amp;ldquo;)[1].split(&amp;rdquo;,&amp;quot;)[0];
+var major_ver = ver.split(&amp;quot; &amp;ldquo;)[1].split(&amp;rdquo;,&amp;quot;)[0];
 trace (&amp;ldquo;ver = &amp;quot; &#43; ver);
 trace (&amp;ldquo;major_ver = &amp;quot; &#43; major_ver);
 //今回パブリッシュ設定を７と８で分けたいので
@@ -298,14 +298,14 @@ System.capabilities.version;</p>
 <blockquote>
 <p>class versionManager {<br>
 function versionManager (path){<br>
-trace(Flashout.DEBUG + &ldquo;trace()&quot;);</p>
+trace(Flashout.DEBUG + &ldquo;trace()&rdquo;);</p>
 <p>// _rootのDepth=1にMovieClipのインスタンスseedを作成<br>
 path.createEmptyMovieClip(&ldquo;seed&rdquo;,1);</p>
 <p>//インスタンスseedをmcとする<br>
 var mc :MovieClip = path.seed;</p>
 <p>//バージョン情報を取得<br>
 var ver :String= System.capabilities.version;<br>
-var major_ver = ver.split(&rdquo; &ldquo;)[1].split(&rdquo;,&quot;)[0];<br>
+var major_ver = ver.split(&quot; &ldquo;)[1].split(&rdquo;,&quot;)[0];<br>
 trace (&ldquo;ver = &quot; + ver);<br>
 trace (&ldquo;major_ver = &quot; + major_ver);</p>
 <p>//今回パブリッシュ設定を７と８で分けたいので<br>

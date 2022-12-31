@@ -207,6 +207,9 @@ Newメニューを開いてUbuntuを選択し作るだけ（デフォルトで�
 UIの画面込みで説明したいけど、すぐUI構成変わりそうなので割愛。
 どこに作ればいいのかは料金表と睨めっこして決める
 料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux
+作成時に、SSH用の公開鍵を指定する箇所があるので指定する。 指定したusernameをメモっておく。 Createを押して暫く待つと出来てる。
+Ubuntuに繋げる sshの接続には以下コマンドを使用する。
+ssh -i myPrivateKey.key -p <a href="mailto:username@servicename.cloudapp.net">username@servicename.cloudapp.net</a>
       
       
     </div>

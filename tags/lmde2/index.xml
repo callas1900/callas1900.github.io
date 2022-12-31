@@ -54,7 +54,7 @@ Windows 10 アップグレード後、GRUB2 への影響 何もありません�
       
       <guid>/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/</guid>
       <description>LMDE2 に NVIDIA のグラフィックドライバを入れます。
- Inspect your graphic board Download a driver Installer Prepare Installation Installation  Inspect your graphic board terminalで
+Inspect your graphic board Download a driver Installer Prepare Installation Installation Inspect your graphic board terminalで
 lspci -vnn | grep VGA -A 12 Download a driver Installer NVIDIAの公式サイトからLinux X64用のDriver Installerを手に入れます。
 私の場合は以下から
 http://www.nvidia.com/download/driverResults.aspx/77525/en-us
@@ -67,7 +67,8 @@ sudo update-initramfs -u を実行します。
 これが実行されない場合
 Nouveau kernel driver を止めてくれとのエラーメッセージが表示されます。
 Installation 再度再起動し、recovery modeになり、CUIモードにログインします。
-X serviceを止めます。</description>
+X serviceを止めます。
+sudo service mdm stop インストールを実行します。</description>
     </item>
     
   </channel>

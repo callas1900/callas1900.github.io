@@ -6,12 +6,13 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+<meta name="description" content="Occurrence -事象- Causes -原因- HID とは ? BLUETOOTH_PRIVILEGED とは? Summary -まとめ- HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？ Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
 5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
 エラー内容は以下のようになっている。
 java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
 Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
-Android 5.0.2 onwards don’t allow HID access through Bluetooth LE"/>
+Android 5.0.2 onwards don’t allow HID access through Bluetooth LE
+さらに、Android Issues に [BLE] Reading/writing char/descr of a HID service throws an exception があり、その中で"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/" />
@@ -34,12 +35,13 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE"/>
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Android 5.0.2 以上でBLEが動かない :: callas1900.net — A simple page of mine" />
-<meta name="twitter:description" content="Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+<meta name="twitter:description" content="Occurrence -事象- Causes -原因- HID とは ? BLUETOOTH_PRIVILEGED とは? Summary -まとめ- HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？ Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
 5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
 エラー内容は以下のようになっている。
 java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
 Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
-Android 5.0.2 onwards don’t allow HID access through Bluetooth LE" />
+Android 5.0.2 onwards don’t allow HID access through Bluetooth LE
+さらに、Android Issues に [BLE] Reading/writing char/descr of a HID service throws an exception があり、その中で" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -48,12 +50,13 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE" />
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Android 5.0.2 以上でBLEが動かない :: callas1900.net — A simple page of mine">
-<meta property="og:description" content="Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+<meta property="og:description" content="Occurrence -事象- Causes -原因- HID とは ? BLUETOOTH_PRIVILEGED とは? Summary -まとめ- HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？ Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
 5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
 エラー内容は以下のようになっている。
 java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
 Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
-Android 5.0.2 onwards don’t allow HID access through Bluetooth LE" />
+Android 5.0.2 onwards don’t allow HID access through Bluetooth LE
+さらに、Android Issues に [BLE] Reading/writing char/descr of a HID service throws an exception があり、その中で" />
 <meta property="og:url" content="/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/" />
 <meta property="og:site_name" content="Android 5.0.2 以上でBLEが動かない" />
 <meta property="og:image" content="">

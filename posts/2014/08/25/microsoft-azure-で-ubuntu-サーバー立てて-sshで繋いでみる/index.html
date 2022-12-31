@@ -12,16 +12,16 @@ Windows上にsshを入れる（読み飛ばし可） ubuntuに繋げるために
 msygitをインストール。
 今後の事を考え、CUIベースのパッケージ管理ソフトが欲しい。
 chocolateyが流行っぽいのでchocolatey経由でmsygitをインストールする。
-  chocolatey installation
+chocolatey installation
 https://github.com/chocolatey/chocolatey/wiki/Installation
 作業はPowerShellでやった。成功するとcinstコマンドが認識される。
-  msysgitをインストールする
+msysgitをインストールする
 cinst msysgit でmsysgitをインストールこれでsshもopensslも使える。
-  それぞれのコマンドを打てば認識されているのがわかる。
+それぞれのコマンドを打てば認識されているのがわかる。
 もし認識されていないようだったらパスが通っていない可能性があるので通す。
-  SSHの鍵作成 適当に鍵を作ると、サーバー作成時に以下のエラーが出てサーバー作成に失敗する。
- The certificate is in an invalid format. X.509 standard format in a .cer or .pem file is supported.。
- 回避するには以下リンク先の手順通りに鍵を作成する必要がある。
+SSHの鍵作成 適当に鍵を作ると、サーバー作成時に以下のエラーが出てサーバー作成に失敗する。
+The certificate is in an invalid format. X.509 standard format in a .cer or .pem file is supported.。
+回避するには以下リンク先の手順通りに鍵を作成する必要がある。
 How to Use SSH with Linux on Azure
 http://azure.microsoft.com/ja-jp/documentation/articles/virtual-machines-linux-use-ssh-key/
 Get OpenSSL on Windowsのセクションに
@@ -32,7 +32,10 @@ Ubuntuサーバー作成 Azureにubuntuを立てる方法は
 Newメニューを開いてUbuntuを選択し作るだけ（デフォルトでは12系と14系が選べる）、
 UIの画面込みで説明したいけど、すぐUI構成変わりそうなので割愛。
 どこに作ればいいのかは料金表と睨めっこして決める
-料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux"/>
+料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux
+作成時に、SSH用の公開鍵を指定する箇所があるので指定する。 指定したusernameをメモっておく。 Createを押して暫く待つと出来てる。
+Ubuntuに繋げる sshの接続には以下コマンドを使用する。
+ssh -i myPrivateKey.key -p username@servicename.cloudapp.net"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2014/08/25/microsoft-azure-%E3%81%A7-ubuntu-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%AB%8B%E3%81%A6%E3%81%A6-ssh%E3%81%A7%E7%B9%8B%E3%81%84%E3%81%A7%E3%81%BF%E3%82%8B/" />
@@ -61,16 +64,16 @@ Windows上にsshを入れる（読み飛ばし可） ubuntuに繋げるために
 msygitをインストール。
 今後の事を考え、CUIベースのパッケージ管理ソフトが欲しい。
 chocolateyが流行っぽいのでchocolatey経由でmsygitをインストールする。
-  chocolatey installation
+chocolatey installation
 https://github.com/chocolatey/chocolatey/wiki/Installation
 作業はPowerShellでやった。成功するとcinstコマンドが認識される。
-  msysgitをインストールする
+msysgitをインストールする
 cinst msysgit でmsysgitをインストールこれでsshもopensslも使える。
-  それぞれのコマンドを打てば認識されているのがわかる。
+それぞれのコマンドを打てば認識されているのがわかる。
 もし認識されていないようだったらパスが通っていない可能性があるので通す。
-  SSHの鍵作成 適当に鍵を作ると、サーバー作成時に以下のエラーが出てサーバー作成に失敗する。
- The certificate is in an invalid format. X.509 standard format in a .cer or .pem file is supported.。
- 回避するには以下リンク先の手順通りに鍵を作成する必要がある。
+SSHの鍵作成 適当に鍵を作ると、サーバー作成時に以下のエラーが出てサーバー作成に失敗する。
+The certificate is in an invalid format. X.509 standard format in a .cer or .pem file is supported.。
+回避するには以下リンク先の手順通りに鍵を作成する必要がある。
 How to Use SSH with Linux on Azure
 http://azure.microsoft.com/ja-jp/documentation/articles/virtual-machines-linux-use-ssh-key/
 Get OpenSSL on Windowsのセクションに
@@ -81,7 +84,10 @@ Ubuntuサーバー作成 Azureにubuntuを立てる方法は
 Newメニューを開いてUbuntuを選択し作るだけ（デフォルトでは12系と14系が選べる）、
 UIの画面込みで説明したいけど、すぐUI構成変わりそうなので割愛。
 どこに作ればいいのかは料金表と睨めっこして決める
-料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux" />
+料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux
+作成時に、SSH用の公開鍵を指定する箇所があるので指定する。 指定したusernameをメモっておく。 Createを押して暫く待つと出来てる。
+Ubuntuに繋げる sshの接続には以下コマンドを使用する。
+ssh -i myPrivateKey.key -p username@servicename.cloudapp.net" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -96,16 +102,16 @@ Windows上にsshを入れる（読み飛ばし可） ubuntuに繋げるために
 msygitをインストール。
 今後の事を考え、CUIベースのパッケージ管理ソフトが欲しい。
 chocolateyが流行っぽいのでchocolatey経由でmsygitをインストールする。
-  chocolatey installation
+chocolatey installation
 https://github.com/chocolatey/chocolatey/wiki/Installation
 作業はPowerShellでやった。成功するとcinstコマンドが認識される。
-  msysgitをインストールする
+msysgitをインストールする
 cinst msysgit でmsysgitをインストールこれでsshもopensslも使える。
-  それぞれのコマンドを打てば認識されているのがわかる。
+それぞれのコマンドを打てば認識されているのがわかる。
 もし認識されていないようだったらパスが通っていない可能性があるので通す。
-  SSHの鍵作成 適当に鍵を作ると、サーバー作成時に以下のエラーが出てサーバー作成に失敗する。
- The certificate is in an invalid format. X.509 standard format in a .cer or .pem file is supported.。
- 回避するには以下リンク先の手順通りに鍵を作成する必要がある。
+SSHの鍵作成 適当に鍵を作ると、サーバー作成時に以下のエラーが出てサーバー作成に失敗する。
+The certificate is in an invalid format. X.509 standard format in a .cer or .pem file is supported.。
+回避するには以下リンク先の手順通りに鍵を作成する必要がある。
 How to Use SSH with Linux on Azure
 http://azure.microsoft.com/ja-jp/documentation/articles/virtual-machines-linux-use-ssh-key/
 Get OpenSSL on Windowsのセクションに
@@ -116,7 +122,10 @@ Ubuntuサーバー作成 Azureにubuntuを立てる方法は
 Newメニューを開いてUbuntuを選択し作るだけ（デフォルトでは12系と14系が選べる）、
 UIの画面込みで説明したいけど、すぐUI構成変わりそうなので割愛。
 どこに作ればいいのかは料金表と睨めっこして決める
-料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux" />
+料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux
+作成時に、SSH用の公開鍵を指定する箇所があるので指定する。 指定したusernameをメモっておく。 Createを押して暫く待つと出来てる。
+Ubuntuに繋げる sshの接続には以下コマンドを使用する。
+ssh -i myPrivateKey.key -p username@servicename.cloudapp.net" />
 <meta property="og:url" content="/posts/2014/08/25/microsoft-azure-%E3%81%A7-ubuntu-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%AB%8B%E3%81%A6%E3%81%A6-ssh%E3%81%A7%E7%B9%8B%E3%81%84%E3%81%A7%E3%81%BF%E3%82%8B/" />
 <meta property="og:site_name" content="Microsoft Azure で ubuntu サーバー立てて sshで繋いでみる" />
 <meta property="og:image" content="">

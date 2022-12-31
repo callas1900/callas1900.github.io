@@ -17,7 +17,7 @@
       <description>Docker registry を作って、別チームに任せて放置する Docker registry で image 管理をすると段々とゴミが溜まってきます。API(https://docs.docker.com/v1.6/reference/api/registry_api/#delete-a-repository)で削除できるのはTAGがついているimageだけなので、
 TAGが外れているimagesがどんどん残っていきます。
 エラーが起きる ずーっと管理せずに放置していると、ある日こんなエラーと出会います。
-HTTP code 500 while uploading metadata: &amp;quot;invalid character &#39;&amp;lt;&#39; looking for beginning of value&amp;quot; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
+HTTP code 500 while uploading metadata: &amp;#34;invalid character &amp;#39;&amp;lt;&amp;#39; looking for beginning of value&amp;#34; これは、message push しようとしたり、する必要があるかをregistryに確認したところ、正常なjsonレスポンスではなく、htmlのエラーページが帰ってきたため起きたエラーです。
 不要なimageを削除する。 以下スクリプとが非常に有用です。
 jqのインストールが必須になります。
 kwk/remove-orphan-images.sh
@@ -54,12 +54,13 @@ Windows 10 アップグレード後、GRUB2 への影響 何もありません�
       <pubDate>Wed, 03 Feb 2016 22:48:00 +0900</pubDate>
       
       <guid>/posts/2016/02/03/android-5.0.2-%E4%BB%A5%E4%B8%8A%E3%81%A7ble%E3%81%8C%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%84/</guid>
-      <description>Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+      <description>Occurrence -事象- Causes -原因- HID とは ? BLUETOOTH_PRIVILEGED とは? Summary -まとめ- HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？ Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
 5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
 エラー内容は以下のようになっている。
 java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
 Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
-Android 5.0.2 onwards don’t allow HID access through Bluetooth LE</description>
+Android 5.0.2 onwards don’t allow HID access through Bluetooth LE
+さらに、Android Issues に [BLE] Reading/writing char/descr of a HID service throws an exception があり、その中で</description>
     </item>
     
     <item>
@@ -69,7 +70,7 @@ Android 5.0.2 onwards don’t allow HID access through Bluetooth LE</description
       
       <guid>/posts/2016/01/14/lmde2%E3%81%AEnvidia-driver%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B/</guid>
       <description>LMDE2 に NVIDIA のグラフィックドライバを入れます。
- Inspect your graphic board Download a driver Installer Prepare Installation Installation  Inspect your graphic board terminalで
+Inspect your graphic board Download a driver Installer Prepare Installation Installation Inspect your graphic board terminalで
 lspci -vnn | grep VGA -A 12 Download a driver Installer NVIDIAの公式サイトからLinux X64用のDriver Installerを手に入れます。
 私の場合は以下から
 http://www.nvidia.com/download/driverResults.aspx/77525/en-us
@@ -82,7 +83,8 @@ sudo update-initramfs -u を実行します。
 これが実行されない場合
 Nouveau kernel driver を止めてくれとのエラーメッセージが表示されます。
 Installation 再度再起動し、recovery modeになり、CUIモードにログインします。
-X serviceを止めます。</description>
+X serviceを止めます。
+sudo service mdm stop インストールを実行します。</description>
     </item>
     
     <item>
@@ -91,7 +93,7 @@ X serviceを止めます。</description>
       <pubDate>Tue, 12 Jan 2016 01:06:00 +0900</pubDate>
       
       <guid>/posts/2016/01/12/%E8%87%86%E7%97%85%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE-ansible/</guid>
-      <description>Target Links 臆病者のための確認コマンド  基本 確認 hosts 制限 hosts 確認 tasks 確認 最終   〆  Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
+      <description>Target Links 臆病者のための確認コマンド 基本 確認 hosts 制限 hosts 確認 tasks 確認 最終 〆 Target Ansible を使ってみてその便利さに驚愕するとともに、他人が作ったPlaybookを引き継ぐ怖さも知る。
 全て手順書のように書いていればいいのだが、多数のRoleを使い高度に書かれたAnsible playbookを引き継ぎ、メンテまたは代わりに実行するのはとても怖い。
 playbook実行する前に何がどうなるのか確認しまくりたい。
 そんな自分のための初心者ガイド
@@ -105,7 +107,8 @@ http://docs.ansible.com/ansible/playbooks_best_practices.html
 確認 hosts ansible-playbook playbook.yml --list-hosts playbook は実行されません。
 playbookが実行される相手先をリストアップするだけです。
 host は hosts ファイルなどで定義された ansible のためのサーバー接続先設定のことです。
-制限 hosts ansible-playbook playbook.yml -l hoge --list-hosts -l の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 --list-hosts と組み合わせると捗ります。</description>
+制限 hosts ansible-playbook playbook.yml -l hoge --list-hosts -l の後に host 名もしくは hostgroup 名を入力すれば playbook の接続先を制限することができます。 --list-hosts と組み合わせると捗ります。
+確認 tasks ansible-playbook playbook.</description>
     </item>
     
   </channel>

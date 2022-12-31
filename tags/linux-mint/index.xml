@@ -15,9 +15,9 @@
       
       <guid>/posts/2020/02/09/linux-mint-re-setup-after-clean-installation/</guid>
       <description>linux mint の調子がおかしくなったので、クリーンインストールし直しました。 ついでにその時の手順を今後のために書き留めておきます。
-1. Install essentail applications  brave browser dropbox  2. Change keyboard settings activate japanese input  open input method install Japanese input method select fcitx logout then login  change keymaps open keyboard in the cinnamon menu.
- capslock to ctrl  open fcitx option in the cinnamon menu.
- left bottom ctrl to input method changer  3. Make symbolic links I stored lots of configuration file in Dropbox.</description>
+1. Install essentail applications brave browser dropbox 2. Change keyboard settings activate japanese input open input method install Japanese input method select fcitx logout then login change keymaps open keyboard in the cinnamon menu.
+capslock to ctrl open fcitx option in the cinnamon menu.
+left bottom ctrl to input method changer 3. Make symbolic links I stored lots of configuration file in Dropbox. After finising sync of Dropbox, I can make symbolic lincs from files in Dropbox.</description>
     </item>
     
   </channel>

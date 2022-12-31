@@ -272,7 +272,7 @@
     <div class="post-content">
       
       
-      ちょちょいとした計算ツールを使用するのにJavaScriptは便利だ。
+      <p>ちょちょいとした計算ツールを使用するのにJavaScriptは便利だ。
 だが問題がある、IEとFirefoxでは同一のスクリプトが動いたり動かなかったりすることがある。
 今回はtbodyタグに関する話。
 計算結果を表形式で表したい時にHTMLのtableタグを使用する。
@@ -284,8 +284,9 @@ function main(){
 //HTML上のtbodyを取得
 var tb = document.getElementById(“tableBody”);
 //書き込む内容を作成
-var tbHTML = ‘1hoge’
- + ‘2hogehoge';
+var tbHTML = ‘1hoge’</p>
+<ul>
+<li>‘2hogehoge’;
 tb.innerHTML = tbHTML;
 }
 上記コードはFireFoxやChromeだと動くのだが、
@@ -301,11 +302,14 @@ function main(){
 //HTML上のtbodyを取得
 var tb = document.getElementById(“tableBody”);
 //DOMオブジェクトを作成
-var tr = document.createElement(‘tr’);
- var td1 = document.createElement(‘td’);
- var td2 = document.createElement(‘td’);
- //作成したオブジェクトを組み合わせてtbodyの中を作成
- for(var i = 1; i &lt; 3; i++){
+var tr = document.createElement(’tr’);
+var td1 = document.createElement(’td’);
+var td2 = document.createElement(’td’);
+//作成したオブジェクトを組み合わせてtbodyの中を作成
+for(var i = 1; i &lt; 3; i++){
+td1.innerHTML = i;</li>
+</ul>
+
       
       
     </div>

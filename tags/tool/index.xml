@@ -17,24 +17,32 @@
       <description>インストール環境
 サーバーサイド・クライアントサイド共に　WindowsXP
 CVSには「CVS for NT」を仕様（Verは2.5.03）
-  下記にてDL（右端にある）
+下記にてDL（右端にある）
 [CVS
 ](http://www.march-hare.com/cvspro/prods.asp?lang=JP &amp;ldquo;CVS&amp;rdquo;)
-  実行後ウィザード内で
+実行後ウィザード内で
 【Select Components】の画面で【Server Components】にチェックを入れる
 他はデフォルトインストール
 （考えるの面倒だったらFullインストールすればOK)
-  環境変数「Path」にCVS for NT のインストールディレクトリが追加されていることを確認
-  コントロールパネルの中に「CVS NT Server」なるものが出来上がっているので、
+環境変数「Path」にCVS for NT のインストールディレクトリが追加されていることを確認
+コントロールパネルの中に「CVS NT Server」なるものが出来上がっているので、
 それをダブルクリック。
-  【Repository Configuration】なるタブがあるのでそれを選択。
+【Repository Configuration】なるタブがあるのでそれを選択。
 【ADD】ボタンから新規作成
- Location　：　CVS管理したいフォルダをインストール Name　：　上記が入れば勝手にデフォルトが入力されるのでそれを採用 Description　：　適当    「適用」を押すと、initialize するか聞いてくるのでOK
+Location　：　CVS管理したいフォルダをインストール Name　：　上記が入れば勝手にデフォルトが入力されるのでそれを採用 Description　：　適当 「適用」を押すと、initialize するか聞いてくるのでOK
 この作業が終わると、Location先のフォルダに「CVSROOT」というフォルダが出来る。
-  コマンドプロンプトを起動してパスワードを設定。
- C:\適当なディレクトリ&amp;gt;cvs -d c:\hogehoge\hoge passwd -r Administrator -a user01
+コマンドプロンプトを起動してパスワードを設定。
+C:\適当なディレクトリ&amp;gt;cvs -d c:\hogehoge\hoge passwd -r Administrator -a user01
 Adding user user01
-New Password: [作成するユーザ(user01)のパスワードを入力]</description>
+New Password: [作成するユーザ(user01)のパスワードを入力]
+Verify Password: [作成するユーザ(user01)のパスワードを入力]
+[オプション説明]
+-d ： リポジトリルート
+-r ： Administrator権限を持っているWindowsUser名
+-a ： 作成するCVSのUser名
+c
+※社内開発とかでイントラネットなどでやる場合はパスなんてなくても困らないです。
+以上で終わり、後はEclipseから接続するなりなんなりと</description>
     </item>
     
   </channel>

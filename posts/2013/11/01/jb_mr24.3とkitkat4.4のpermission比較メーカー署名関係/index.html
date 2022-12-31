@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
- ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
+ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係） にあります。
 何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
 これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
 メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
@@ -16,16 +16,23 @@
 よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
 Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
 JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
-Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
- android.permission.BLUETOOTH_STACK
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem KitKat
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem 特に変更なし
+Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature] これはメーカー署名がないと使用出来ないもの
+android.permission.BLUETOOTH_STACK
 android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
 android.permission.INTERACT_ACROSS_USERS_FULL
-android.permission.GET_DETAILED_TASKS"/>
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+&#43; android.permission.MANAGE_ACTIVITY_STACKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.ACCESS_ALL_EXTERNAL_STORAGE
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2013/11/01/jb_mr24.3%E3%81%A8kitkat4.4%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/" />
@@ -50,7 +57,7 @@ android.permission.GET_DETAILED_TASKS"/>
 <meta name="twitter:title" content="JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine" />
 <meta name="twitter:description" content="Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
- ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
+ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係） にあります。
 何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
 これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
 メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
@@ -58,16 +65,23 @@ android.permission.GET_DETAILED_TASKS"/>
 よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
 Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
 JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
-Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
- android.permission.BLUETOOTH_STACK
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem KitKat
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem 特に変更なし
+Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature] これはメーカー署名がないと使用出来ないもの
+android.permission.BLUETOOTH_STACK
 android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
 android.permission.INTERACT_ACROSS_USERS_FULL
-android.permission.GET_DETAILED_TASKS" />
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+&#43; android.permission.MANAGE_ACTIVITY_STACKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.ACCESS_ALL_EXTERNAL_STORAGE
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS" />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -78,7 +92,7 @@ android.permission.GET_DETAILED_TASKS" />
 <meta property="og:title" content="JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係） :: callas1900.net — A simple page of mine">
 <meta property="og:description" content="Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
- ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
+ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係） にあります。
 何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
 これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
 メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
@@ -86,16 +100,23 @@ android.permission.GET_DETAILED_TASKS" />
 よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
 Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
 JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
- dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
-Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
- android.permission.BLUETOOTH_STACK
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem KitKat
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem 特に変更なし
+Permission増減調査(JB MR1(4.2) &amp;gt; JB MR2(4.3)) [signature] これはメーカー署名がないと使用出来ないもの
+android.permission.BLUETOOTH_STACK
 android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
 android.permission.INTERACT_ACROSS_USERS_FULL
-android.permission.GET_DETAILED_TASKS" />
+android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS
+&#43; android.permission.MANAGE_ACTIVITY_STACKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.ACCESS_ALL_EXTERNAL_STORAGE
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS" />
 <meta property="og:url" content="/posts/2013/11/01/jb_mr24.3%E3%81%A8kitkat4.4%E3%81%AEpermission%E6%AF%94%E8%BC%83%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%BD%B2%E5%90%8D%E9%96%A2%E4%BF%82/" />
 <meta property="og:site_name" content="JB_MR2(4.3)とKitKat(4.4)のPermission比較（メーカー署名関係）" />
 <meta property="og:image" content="">

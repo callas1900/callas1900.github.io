@@ -7,9 +7,9 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="linux mint の調子がおかしくなったので、クリーンインストールし直しました。 ついでにその時の手順を今後のために書き留めておきます。
-1. Install essentail applications  brave browser dropbox  2. Change keyboard settings activate japanese input  open input method install Japanese input method select fcitx logout then login  change keymaps open keyboard in the cinnamon menu.
- capslock to ctrl  open fcitx option in the cinnamon menu.
- left bottom ctrl to input method changer  3. Make symbolic links I stored lots of configuration file in Dropbox."/>
+1. Install essentail applications brave browser dropbox 2. Change keyboard settings activate japanese input open input method install Japanese input method select fcitx logout then login change keymaps open keyboard in the cinnamon menu.
+capslock to ctrl open fcitx option in the cinnamon menu.
+left bottom ctrl to input method changer 3. Make symbolic links I stored lots of configuration file in Dropbox. After finising sync of Dropbox, I can make symbolic lincs from files in Dropbox."/>
 <meta name="keywords" content=", "/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/posts/2020/02/09/linux-mint-re-setup-after-clean-installation/" />
@@ -33,9 +33,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="linux mint re-setup after clean installation :: callas1900.net — A simple page of mine" />
 <meta name="twitter:description" content="linux mint の調子がおかしくなったので、クリーンインストールし直しました。 ついでにその時の手順を今後のために書き留めておきます。
-1. Install essentail applications  brave browser dropbox  2. Change keyboard settings activate japanese input  open input method install Japanese input method select fcitx logout then login  change keymaps open keyboard in the cinnamon menu.
- capslock to ctrl  open fcitx option in the cinnamon menu.
- left bottom ctrl to input method changer  3. Make symbolic links I stored lots of configuration file in Dropbox." />
+1. Install essentail applications brave browser dropbox 2. Change keyboard settings activate japanese input open input method install Japanese input method select fcitx logout then login change keymaps open keyboard in the cinnamon menu.
+capslock to ctrl open fcitx option in the cinnamon menu.
+left bottom ctrl to input method changer 3. Make symbolic links I stored lots of configuration file in Dropbox. After finising sync of Dropbox, I can make symbolic lincs from files in Dropbox." />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -45,9 +45,9 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="linux mint re-setup after clean installation :: callas1900.net — A simple page of mine">
 <meta property="og:description" content="linux mint の調子がおかしくなったので、クリーンインストールし直しました。 ついでにその時の手順を今後のために書き留めておきます。
-1. Install essentail applications  brave browser dropbox  2. Change keyboard settings activate japanese input  open input method install Japanese input method select fcitx logout then login  change keymaps open keyboard in the cinnamon menu.
- capslock to ctrl  open fcitx option in the cinnamon menu.
- left bottom ctrl to input method changer  3. Make symbolic links I stored lots of configuration file in Dropbox." />
+1. Install essentail applications brave browser dropbox 2. Change keyboard settings activate japanese input open input method install Japanese input method select fcitx logout then login change keymaps open keyboard in the cinnamon menu.
+capslock to ctrl open fcitx option in the cinnamon menu.
+left bottom ctrl to input method changer 3. Make symbolic links I stored lots of configuration file in Dropbox. After finising sync of Dropbox, I can make symbolic lincs from files in Dropbox." />
 <meta property="og:url" content="/posts/2020/02/09/linux-mint-re-setup-after-clean-installation/" />
 <meta property="og:site_name" content="linux mint re-setup after clean installation" />
 <meta property="og:image" content="">
@@ -203,38 +203,38 @@
 <h1 id="3-make-symbolic-links">3. Make symbolic links</h1>
 <p>I stored lots of configuration file in Dropbox.
 After finising sync of Dropbox, I can make symbolic lincs from files in Dropbox.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd <span style="color:#75715e">#back to home directory for just in case.</span>
-$ ln -s ~/Dropbox/develop/.vimrc .
-$ ln -s ~/Dropbox/develop/.vim .
-$ ln -s ~/Dropbox/develop/.tmux.conf .
-$ ln -s ~/Dropbox/env/linux/.bashrc .
-$ ln -s ~/Dropbox/env/linux/.bash_aliases .
-$ ln -s ~/Dropbox/env/.gitconfig .
-</code></pre></div><h1 id="4-set-up-ssh-things">4. Set-up ssh things</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cd <span style="color:#75715e">#back to home directory for just in case.</span>
+</span></span><span style="display:flex;"><span>$ ln -s ~/Dropbox/develop/.vimrc .
+</span></span><span style="display:flex;"><span>$ ln -s ~/Dropbox/develop/.vim .
+</span></span><span style="display:flex;"><span>$ ln -s ~/Dropbox/develop/.tmux.conf .
+</span></span><span style="display:flex;"><span>$ ln -s ~/Dropbox/env/linux/.bashrc .
+</span></span><span style="display:flex;"><span>$ ln -s ~/Dropbox/env/linux/.bash_aliases .
+</span></span><span style="display:flex;"><span>$ ln -s ~/Dropbox/env/.gitconfig .
+</span></span></code></pre></div><h1 id="4-set-up-ssh-things">4. Set-up ssh things</h1>
 <p>I&rsquo;m using Dropbox to store ssh keys with encfs.<br>
 encfs encrypts my directory which includes the keys, I can get the keys by using encfs.</p>
 <h2 id="get-keys">get keys</h2>
 <p>install encfs.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install encfs
-</code></pre></div><p>creat directories as mount points.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo mkdir -p /mnt/encfs/ssh_keys
-$ sudo mkdir -p /mnt/encfs/pgp
-$ sudo chmod <span style="color:#ae81ff">777</span> /mnt/encfs/ssh_keys
-$ sudo chmod <span style="color:#ae81ff">777</span> /mnt/encfs/pgp
-</code></pre></div><p>mount encrypted directory by my function in .bash_alias.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ecnfs_mount
-</code></pre></div><p>copy keys if needed.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cp /mnt/encfs/ssh_keys/razer_blade/id_rsa* .
-</code></pre></div><p><strong>! Don&rsquo;t forget to change key&rsquo;s permission to 600!</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo apt install encfs
+</span></span></code></pre></div><p>creat directories as mount points.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo mkdir -p /mnt/encfs/ssh_keys
+</span></span><span style="display:flex;"><span>$ sudo mkdir -p /mnt/encfs/pgp
+</span></span><span style="display:flex;"><span>$ sudo chmod <span style="color:#ae81ff">777</span> /mnt/encfs/ssh_keys
+</span></span><span style="display:flex;"><span>$ sudo chmod <span style="color:#ae81ff">777</span> /mnt/encfs/pgp
+</span></span></code></pre></div><p>mount encrypted directory by my function in .bash_alias.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ecnfs_mount
+</span></span></code></pre></div><p>copy keys if needed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cp /mnt/encfs/ssh_keys/razer_blade/id_rsa* .
+</span></span></code></pre></div><p><strong>! Don&rsquo;t forget to change key&rsquo;s permission to 600!</strong></p>
 <h2 id="config">config</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ln -s ~/Dropbox/env/ssh_config/razer_blade_ssh_config config
-</code></pre></div><h1 id="5-install-basic-apps">5. Install basic apps</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install git silversearch-ag thefuck
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ln -s ~/Dropbox/env/ssh_config/razer_blade_ssh_config config
+</span></span></code></pre></div><h1 id="5-install-basic-apps">5. Install basic apps</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo apt install git silversearch-ag thefuck
+</span></span></code></pre></div><ul>
 <li><a href="https://docs.brew.sh/Homebrew-on-Linux">install linux brew</a></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ brew install z fzf
-</code></pre></div><h1 id="6-install-fonts">6. Install Fonts</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ brew install z fzf
+</span></span></code></pre></div><h1 id="6-install-fonts">6. Install Fonts</h1>
 <h2 id="for-terminal">for terminal</h2>
 <ul>
 <li><a href="https://github.com/adobe-fonts/source-code-pro/releases">Source Code Pro</a></li>

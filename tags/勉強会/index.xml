@@ -14,7 +14,7 @@
       <pubDate>Fri, 22 Jan 2016 15:29:00 +0900</pubDate>
       
       <guid>/posts/2016/01/22/scrum-gathering-tokyo-2016/</guid>
-      <description>Scrum Gathering って何？  どんな内容？   Day 0 Day 1  Opening Talk Keynote Sessions Open Jam   Day 2  Opening Talk Keynote Sessions   得た教訓 参考  Regional Scrum Gathering Tokyo に行ってきました。
+      <description>Scrum Gathering って何？ どんな内容？ Day 0 Day 1 Opening Talk Keynote Sessions Open Jam Day 2 Opening Talk Keynote Sessions 得た教訓 参考 Regional Scrum Gathering Tokyo に行ってきました。
 Scrum Gathering って何？ 正式名称は
 [Regional|Global] Scrum Gathering (場所)
 になります。
@@ -27,7 +27,10 @@ Scrum （参照 スクラムガイド.pdf）を実践している人たちが集
 Day 0 前夜に基調講演をする Bas さんや Ken さんを交えて飲み会しましょうというのがあったので、ほぼ飛び入りで参加してきました。
 今年はEary Birdがあまり売れず、正規の値段でビシバシチケットがはけたからか知らないけど、飲み代は向こう持ちでした。ラッキー。
 Kenさんとても気さくな方で写真も一緒に撮らせてもらいました。
-Day 1 東京に久しぶりの大雪、色々な場所で電車がとまるとまる。</description>
+Day 1 東京に久しぶりの大雪、色々な場所で電車がとまるとまる。
+まさにエクストリーム出勤。
+仕事だったら家に帰ってたけど、仕事じゃないから仕方ない！
+Opening Talk Scrum Alliance CEO の Pete Deemer さんがお話し。</description>
     </item>
     
     <item>
@@ -64,7 +67,7 @@ Perl &amp;amp; Web Server 今回のLTの中で一番面白かったかな。
 その昔HP作成をした人は、
 Perl+CGI / PHP って単語を良く目にしたはず。
 で、大体の人は
- Perl=昔＆遅い PHP=新しい＆速い  みたいなイメージを持ってたと思う。
+Perl=昔＆遅い PHP=新しい＆速い みたいなイメージを持ってたと思う。
 あいやまたれい！
 Perlが遅いわけじゃないよCGIっていう仕組みが遅いんだよ！
 PHPが速いのはApachにネイティブに組み込まれているからだよ！
@@ -73,7 +76,7 @@ mod_PerlっていうApachに組み込まれたタイプのPerlならPHPとそん
 むしろPHPよりPerl+CGIのがいんじゃね！
 と勢いのあるセッション。
 終わった後、Perlに対する熱い思いが残りました。
- 後、使ってるプレゼン資料が良かった。
+後、使ってるプレゼン資料が良かった。
 全体に対する進捗が見た目にわかり、あとどれ位で終わるかが分かるプレゼンってのは見てる側が楽だね。
 資料：
 http://dl.dropbox.com/u/224433/qpstudy-1/index.html#1
@@ -82,7 +85,9 @@ ITIL ITサービスマネージメントのベストプラクティスらしい�
 そういや応用情報処理試験にもなんか出てたね。
 また機会があれば調べよう。
 Agile まさかインフラエンジニアの勉強会でAgileって単語を聞くとは！
-リリース物がないからアレな感じもするけど、</description>
+リリース物がないからアレな感じもするけど、
+要するにチームビルドに朝会などのAgileプラクティスを使っていこうよってこと。
+WEB+DB PRESS って雑誌があるみたいだ。</description>
     </item>
     
   </channel>

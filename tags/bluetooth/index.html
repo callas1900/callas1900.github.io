@@ -182,12 +182,13 @@
     <div class="post-content">
       
       
-      Occurrence -事象- Causes -原因-  HID とは ? BLUETOOTH_PRIVILEGED とは?   Summary -まとめ-  HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？    Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
+      Occurrence -事象- Causes -原因- HID とは ? BLUETOOTH_PRIVILEGED とは? Summary -まとめ- HID を使ってるかの判断 禁止された Characteristic UUID なぜ禁止されたのか？ Occurrence -事象- 機材とAndroid を BLE (Bluetooth low energy) で繋ごうとしたところ、Android 5.0.2以上の端末で Security Exception が発生した。
 5.0.1 や 4.2 などは問題ないが、5.1や6.0で発生する。
 エラー内容は以下のようになっている。
 java.lang.SecurityException: Need BLUETOOTH_PRIVILEGED permission: Neither user 99999 nor current process has android.permission.BLUETOOTH_PRIVILEGED. 発生箇所は BluetoothGatt#setCharacteristicNotification
 Causes -原因- StackOverflow にほぼ発生事例そのままの報告がある、
 Android 5.0.2 onwards don’t allow HID access through Bluetooth LE
+さらに、Android Issues に [BLE] Reading/writing char/descr of a HID service throws an exception があり、その中で
       
       
     </div>

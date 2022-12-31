@@ -190,12 +190,12 @@
 また謎の development も追加（詳細がドキュメントされていないので後日調査予定）
 まず ICS と ＪＢ のプロテクションレベルの一覧比較
 ICS
-dangerous signatureOrSystem normal signature  JB
-dangerous signature|system normal signature signature|system|development signatureOrSystem  JB に signatureOrSystem が混じっているのは誤表記にあらず。
+dangerous signatureOrSystem normal signature JB
+dangerous signature|system normal signature signature|system|development signatureOrSystem JB に signatureOrSystem が混じっているのは誤表記にあらず。
 一個だけ何故か（恐らくミスだと思うけど） signatureOrSystem が混ざっている。
 次それぞれのプロテクションレベル毎の比較
 JB 方式の書き方だと今回はまとめにくいので、ICS方式で signature と signatureOrSystemでまとめてみる。
-[signature]  赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
+[signature] 赤字は追加分、新規追加のみ signatureOrSystem からの格上げなし
 android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
 android.permission.NET_ADMIN
@@ -207,6 +207,14 @@ android.permission.SET_SCREEN_COMPATIBILITY
 android.permission.FORCE_STOP_PACKAGES
 android.permission.SET_PREFERRED_APPLICATIONS
 android.permission.ASEC_ACCESS
+android.permission.ASEC_CREATE
+android.permission.ASEC_DESTROY
+android.permission.ASEC_MOUNT_UNMOUNT
+android.permission.ASEC_RENAME
+android.permission.DIAGNOSTIC
+android.permission.STATUS_BAR_SERVICE
+android.permission.FORCE_BACK
+android.permission.INTERNAL_SYSTEM_WINDOW
       
       
     </div>
@@ -310,6 +318,8 @@ android.permission.ASEC_CREATE
 android.permission.ASEC_DESTROY
 android.permission.ASEC_MOUNT_UNMOUNT
 android.permission.ASEC_RENAME
+android.permission.DIAGNOSTIC
+android.permission.STATUS_BAR_SERVICE
       
       
     </div>

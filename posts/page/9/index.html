@@ -210,6 +210,9 @@ Newメニューを開いてUbuntuを選択し作るだけ（デフォルトで�
 UIの画面込みで説明したいけど、すぐUI構成変わりそうなので割愛。
 どこに作ればいいのかは料金表と睨めっこして決める
 料金詳細：http://azure.microsoft.com/ja-jp/pricing/details/virtual-machines/#linux
+作成時に、SSH用の公開鍵を指定する箇所があるので指定する。 指定したusernameをメモっておく。 Createを押して暫く待つと出来てる。
+Ubuntuに繋げる sshの接続には以下コマンドを使用する。
+ssh -i myPrivateKey.key -p <a href="mailto:username@servicename.cloudapp.net">username@servicename.cloudapp.net</a>
       
       
     </div>
@@ -345,9 +348,9 @@ UIの画面込みで説明したいけど、すぐUI構成変わりそうなの�
     <div class="post-content">
       
       
-      Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
+      <p>Android 4.3 (JELLY_BEAN_MR2) が出て結構時間がたちました、恒例のsignatureがらみのPermission比較やらなきゃーと思って放置してたら4.4(Kitkat)が出ちゃったので慌てて更新します。
 前回までのPermission比較は
-ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係）  にあります。
+ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPermission比較（メーカー署名関係） JB(4.1)とJB_MR1(4.2)のPermission比較（メーカー署名関係） JB_MR1(4.2)とJB_MR2(4.3)のPermission比較（メーカー署名関係） にあります。
 何調べてるの？ 本記事は署名関係の Android Permission に注目してバージョン間の差分を比較しています。
 これらの Permission が要求されるAPIに関してはOSビルド時の署名が必要になります。
 メーカー端末であれば販売メーカーに依頼を出して署名をしてもらう必要がありますが、
@@ -355,9 +358,9 @@ ICSとGingerbreadのPermission比較（メーカー署名関係） JBとICSのPe
 よって3rdパーティアプリを作成する場合これらの Permission を要求されるAPIは使用不可能になります。
 Androidはバージョンアップを重ねる毎にこれら Permission の締め付けがきつくなってるのでバージョンアップ毎にチェックしています。
 JB MR2 と KitKatのプロテクションレベルの一覧比較 JB MR2
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  KitKat
-dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem  特に変更なし
-Permission増減調査(JB MR1(4.2) &gt; JB MR2(4.3)) [signature]  これはメーカー署名がないと使用出来ないもの
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem KitKat
+dangerous signature|system normal signature signature|system|development system|signature signatureOrSystem 特に変更なし
+Permission増減調査(JB MR1(4.2) &gt; JB MR2(4.3)) [signature] これはメーカー署名がないと使用出来ないもの
 android.permission.BLUETOOTH_STACK
 android.permission.ACCOUNT_MANAGER
 android.permission.HARDWARE_TEST
@@ -365,6 +368,16 @@ android.permission.NET_ADMIN
 android.permission.REMOTE_AUDIO_PLAYBACK
 android.permission.INTERACT_ACROSS_USERS_FULL
 android.permission.GET_DETAILED_TASKS
+android.permission.REMOVE_TASKS</p>
+<ul>
+<li>android.permission.MANAGE_ACTIVITY_STACKS
+android.permission.START_ANY_ACTIVITY
+android.permission.SET_SCREEN_COMPATIBILITY
+android.permission.ACCESS_ALL_EXTERNAL_STORAGE
+android.permission.FORCE_STOP_PACKAGES
+android.permission.SET_PREFERRED_APPLICATIONS</li>
+</ul>
+
       
       
     </div>

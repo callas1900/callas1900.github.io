@@ -12,21 +12,21 @@
 本当は HTML5 &#43; JavaScript で作りたかったけど仕方ない。
 会社のみんなにChromeやFireFoxを強制的にインストールさせるのは面倒だからね。
 要件はある固定長インターフェースファイルを使ったテスト用に、
- テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。  この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
+テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。 この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
 ついでに皆標準的に入れてるブラウザはIE6。
 ファイル I/O　部位を VBScript に任し、
 他の挙動を JavaScript で制御するのが適当か？
 以下その場合の注意点
-VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)&amp;hellip;】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。  これを画面の最下部に常に表記。
+VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要 メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)&amp;hellip;】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。 これを画面の最下部に常に表記。
 で、まずはFile I/O部のVBScriptコード
 注意点は読み込んだ内容をJavaScriptに渡す場合、
 配列渡しはうまくいかなかったので、
 適当な区切り文字をはさんで渡し、JavaScript側でSpritしたことと、
 動的な配列が定義出来なかったのでReDimとPreserveを多様したこと
-書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile."/>
+書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&amp;#34;Scripting.FileSystemObject&amp;#34;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile.Write(TXT &amp;amp; vbcrlf) objFile."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/" />
+<link rel="canonical" href="/posts/2010/07/08/javascriptvbscriptvbscript--javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/" />
 
 
 <link rel="stylesheet" href="/assets/style.css">
@@ -52,18 +52,18 @@ VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  
 本当は HTML5 &#43; JavaScript で作りたかったけど仕方ない。
 会社のみんなにChromeやFireFoxを強制的にインストールさせるのは面倒だからね。
 要件はある固定長インターフェースファイルを使ったテスト用に、
- テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。  この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
+テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。 この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
 ついでに皆標準的に入れてるブラウザはIE6。
 ファイル I/O　部位を VBScript に任し、
 他の挙動を JavaScript で制御するのが適当か？
 以下その場合の注意点
-VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)&amp;hellip;】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。  これを画面の最下部に常に表記。
+VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要 メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)&amp;hellip;】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。 これを画面の最下部に常に表記。
 で、まずはFile I/O部のVBScriptコード
 注意点は読み込んだ内容をJavaScriptに渡す場合、
 配列渡しはうまくいかなかったので、
 適当な区切り文字をはさんで渡し、JavaScript側でSpritしたことと、
 動的な配列が定義出来なかったのでReDimとPreserveを多様したこと
-書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile." />
+書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&amp;#34;Scripting.FileSystemObject&amp;#34;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile.Write(TXT &amp;amp; vbcrlf) objFile." />
 <meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
@@ -78,19 +78,19 @@ VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  
 本当は HTML5 &#43; JavaScript で作りたかったけど仕方ない。
 会社のみんなにChromeやFireFoxを強制的にインストールさせるのは面倒だからね。
 要件はある固定長インターフェースファイルを使ったテスト用に、
- テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。  この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
+テキストファイルを別のフォーマットに変えてくれ。(ファイルI/O) 要件は流動的に変わる。インクリメンタルにイテレーティブに。 実装工数はインフラの空き時間を使って。 この用件ならhttpアクセスで画面はHTMLインターフェースでやるのが適当かなと思った。
 ついでに皆標準的に入れてるブラウザはIE6。
 ファイル I/O　部位を VBScript に任し、
 他の挙動を JavaScript で制御するのが適当か？
 以下その場合の注意点
-VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)&amp;hellip;】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。  これを画面の最下部に常に表記。
+VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要 メニューバーの【ツール(T)】より【インターネットオプション】を起動します。 【セキュリティ】タブを選択し、【レベルのカスタマイズ(C)&amp;hellip;】ボタンをクリックします。 【スクリプトを実行しても安全だとマークされている ActiveXコントロールのスクリプト実行】を有効にします。 これを画面の最下部に常に表記。
 で、まずはFile I/O部のVBScriptコード
 注意点は読み込んだ内容をJavaScriptに渡す場合、
 配列渡しはうまくいかなかったので、
 適当な区切り文字をはさんで渡し、JavaScript側でSpritしたことと、
 動的な配列が定義出来なかったのでReDimとPreserveを多様したこと
-書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&amp;quot;Scripting.FileSystemObject&amp;quot;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile." />
-<meta property="og:url" content="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/" />
+書き込み Function FileOutput(FULLPATH,TXT) Dim objFSO, objFile Set objFSO = CreateObject(&amp;#34;Scripting.FileSystemObject&amp;#34;) If Err.Number = 0 Then Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True) If Err.Number = 0 Then objFile.Write(TXT &amp;amp; vbcrlf) objFile." />
+<meta property="og:url" content="/posts/2010/07/08/javascriptvbscriptvbscript--javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/" />
 <meta property="og:site_name" content="[JavaScript][VBScript]VBScript &#43; Javascriptで簡単プロジェクト内ツール。その１" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -197,7 +197,7 @@ VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  
     
 <div class="post">
   <h1 class="post-title">
-    <a href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その１</a></h1>
+    <a href="/posts/2010/07/08/javascriptvbscriptvbscript--javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%91/">[JavaScript][VBScript]VBScript + Javascriptで簡単プロジェクト内ツール。その１</a></h1>
   <div class="post-meta">
       
     <span class="post-date">
@@ -253,25 +253,24 @@ VBScript のファイルI/Oを有効化するにはIE6の設定変更が必要  
 Dim objFSO, objFile  
   
   
-Set objFSO = CreateObject(&quot;Scripting.FileSystemObject&quot;)  
+Set objFSO = CreateObject(&#34;Scripting.FileSystemObject&#34;)  
 If Err.Number = 0 Then  
     Set objFile = objFSO.OpenTextFile(FULLPATH, 8, True)  
     If Err.Number = 0 Then  
         objFile.Write(TXT &amp; vbcrlf)  
         objFile.Close  
     Else  
-        WScript.Echo &quot;file open error: &quot; &amp; Err.Description  
+        WScript.Echo &#34;file open error: &#34; &amp; Err.Description  
     End If  
 Else  
-    WScript.Echo &quot;error: &quot; &amp; Err.Description  
+    WScript.Echo &#34;error: &#34; &amp; Err.Description  
 End If  
   
 Set objFile = Nothing  
 Set objFSO = Nothing  
 End function  
-
 </code></pre><h4 id="読み込み">読み込み</h4>
-<pre tabindex="0"><code>''指定されたパスのファイルを読み取りJavaScriptに渡す。  
+<pre tabindex="0"><code>&#39;&#39;指定されたパスのファイルを読み取りJavaScriptに渡す。  
 Function FileInput(FULLPATH)  
 Dim objFSO, objFile  
 Dim cnt,max  
@@ -280,7 +279,7 @@ Dim ret
 Dim Arr()  
 ReDim Arr(10)  
   
-Set objFSO = CreateObject(&quot;Scripting.FileSystemObject&quot;)  
+Set objFSO = CreateObject(&#34;Scripting.FileSystemObject&#34;)  
 If Err.Number = 0 Then  
     Set objFile = objFSO.OpenTextFile(FULLPATH, 1, false)  
     If Err.Number = 0 Then  
@@ -291,24 +290,24 @@ If Err.Number = 0 Then
                 Arr(cnt) = objFile.ReadLine  
                 cnt = cnt + 1  
   
-                ''cntが配列の配列数に達した時、定義し直して１０配列数を増やす。  
+                &#39;&#39;cntが配列の配列数に達した時、定義し直して１０配列数を増やす。  
                 if cnt = max then  
                     max = max + 10  
-                    ''Preserveを入れると配列の中身を壊さずに再定義出来る。  
+                    &#39;&#39;Preserveを入れると配列の中身を壊さずに再定義出来る。  
                     ReDim Preserve Arr(max)  
                 End if  
             Wend  
         objFile.Close  
     Else  
-        WScript.Echo &quot;file open error: &quot; &amp; Err.Description  
+        WScript.Echo &#34;file open error: &#34; &amp; Err.Description  
     End If  
 Else  
-    WScript.Echo &quot;error: &quot; &amp; Err.Description  
+    WScript.Echo &#34;error: &#34; &amp; Err.Description  
 End If  
   
-''区切り文字を使って配列を連結する。  
+&#39;&#39;区切り文字を使って配列を連結する。  
 For Each buf in Arr  
-    ret = ret &amp; buf &amp; &quot;区切&quot;  
+    ret = ret &amp; buf &amp; &#34;区切&#34;  
 Next  
   
 Set objFile = Nothing  
@@ -317,7 +316,6 @@ Set objFSO = Nothing
 FileInput = ret  
   
 End function  
-
 </code></pre>
   </div>
   
@@ -330,7 +328,7 @@ End function
     <div class="pagination__buttons">
       
       <span class="button previous">
-        <a href="/posts/2010/07/08/javascriptvbscriptvbscript-javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/">
+        <a href="/posts/2010/07/08/javascriptvbscriptvbscript--javascript%E3%81%A7%E7%B0%A1%E5%8D%98%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E5%86%85%E3%83%84%E3%83%BC%E3%83%AB%E3%81%9D%E3%81%AE%EF%BC%92/">
           <span class="button__icon">←</span>
           <span class="button__text">[JavaScript][VBScript]VBScript &#43; Javascriptで簡単プロジェクト内ツール。その２</span>
         </a>

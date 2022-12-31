@@ -30,9 +30,9 @@ Google Tasksはネットワーク対応のTaskリスト。
 Googleには多いが、いまいちなアプリも多い。
 私の中でその代表格がGoogle Desktop。
 不満点列挙
- 自動アップデートがない。 アップデートの告知アラートがこない。 ローカルに検索したいファイルが少ない。
+自動アップデートがない。 アップデートの告知アラートがこない。 ローカルに検索したいファイルが少ない。
 （今の仕事場ではローカル環境に
-ファイルを持たない共有サービスを使用）  最初は仕事で使う文書の検索にいいかと思っていたが、
+ファイルを持たない共有サービスを使用） 最初は仕事で使う文書の検索にいいかと思っていたが、
 思ったような効果は得られなかった。
 あまりにも使わなくなったので、
 アンインストールしてしまうとしたところで、
@@ -44,14 +44,14 @@ Googleデスクトップで使用出来るのだ。**
 iGoogleで使うことは、Googleデスクトップのサイトで謳っている。
 逆も出来るんじゃないかと、やってみたところ出来た。
 やり方はこうだ。
-  iGoogleで使いたい機能をインストール。
-  インストールされた機能のxmlURLを調べる。
+iGoogleで使いたい機能をインストール。
+インストールされた機能のxmlURLを調べる。
 （私はFireFoxでやると調べやすかった。
 [右クリック]-[選択した部分のソース･･･]）
-  調べたURLをコピーし、デスクトップの
+調べたURLをコピーし、デスクトップの
 ガジェット検索窓にペースト
-  ガジェットが検索されるのでインストール。
-  私は
+ガジェットが検索されるのでインストール。
+私は
 &amp;ldquo;http://www.google.com/ig/modules/tasks.xml&amp;quot;
 をインストールしてデスクトップで
 Google Tasksを使用している。
@@ -78,20 +78,19 @@ IEのCookieを許可していなければ、
 Google Chrome TIPS
 職場にGoogle Chromeがインストールできない人用
 条件
-  Google　Chromeインストーラーが吐き出すエラーコードが「0x80072EFD」
-  IEではインターネットが閲覧出来る。
-  IEではプロキシーの設定をするよう職場から言われている。
-  上記に該当する人はコマンドプロンプトを立ち上げ
- proxycfg 
-（WinHTTPプロキシ設定を出力）
- と打ち込んで下さい。
+Google　Chromeインストーラーが吐き出すエラーコードが「0x80072EFD」
+IEではインターネットが閲覧出来る。
+IEではプロキシーの設定をするよう職場から言われている。
+上記に該当する人はコマンドプロンプトを立ち上げ
+proxycfg （WinHTTPプロキシ設定を出力）
+と打ち込んで下さい。
 そこに何もプロキシ設定がない人は次へ、
 プロキシ設定がされている人は
 この記事じゃGoogleChromeがインストール出来ない問題を解決できない可能性が高い。
 プロキシ設定が書いてなかった人は
- proxycfg -u
+proxycfg -u
 （WinHTTPプロキシ設定をIEからインポートする）
- これでWinHTTPプロキシにプロキシ設定が入りました。
+これでWinHTTPプロキシにプロキシ設定が入りました。
 GoogleChromeインストーラーを再度立ち上げてみてください。
 インストールが出来るはずです。</description>
     </item>
@@ -112,17 +111,17 @@ Chrome?
 え・・・またブラウザ増えるのか・・・やだなぁ
 両方の感想がポっとでた。
 とりあえず、インストールして触ってみて気になった点をいくつか
-  プロキシ設定などはIEと共有している。
-  GoogleツールバーをインストールしようとするとFireFox2と判断され、出来ない
+プロキシ設定などはIEと共有している。
+GoogleツールバーをインストールしようとするとFireFox2と判断され、出来ない
 （FireFox2のダウンロードを促される）
-  開発／管理の下にJavaScriptデバッガとコンソールが標準実装されている。
+開発／管理の下にJavaScriptデバッガとコンソールが標準実装されている。
 (もし使い勝手がよければFireFox3 + FireBugに変わる
 JavaScript開発のディファクトスタンダートにとって代わるかもしれない。
-  JavaScriptエンジンはV8（Google独自エンジン）
-  GoogleGearsの設定がデフォルトで入っている。
-  シークレットモードがある（ブラウザに履歴などを残さずにブラウジングすることが出来る）
-  JavaScriptエンジンが滅茶苦茶早い。
-  個人的に気になったのは、JavaScript関係とシークレットモードかな
+JavaScriptエンジンはV8（Google独自エンジン）
+GoogleGearsの設定がデフォルトで入っている。
+シークレットモードがある（ブラウザに履歴などを残さずにブラウジングすることが出来る）
+JavaScriptエンジンが滅茶苦茶早い。
+個人的に気になったのは、JavaScript関係とシークレットモードかな
 他にも色々機能はあるみたいだけど、
 とりあえずこんなもの。
 Chrome用Googleツールバーが出来るまでは、とりあえず乗り換える気はないかな。
@@ -152,7 +151,23 @@ LAMPだと基本全ブラウザ対応、
 現在prototype.jsなどで書かれている
 IEとFireFox両方対応のJavaScript（※1）があるのだけど、
 それをV8エンジンは理解してくれると思う。
-理由としては</description>
+理由としては
+FireFoxとGoogleが今まで仲良くしていたこと。
+FireFoxはW3C準拠であること、
+Geekの集団GoogleがW3Cに準拠しないわけないこと
+よってFireFoxで動くものはV8エンジンでも動く・・・と思う。（※2）
+少なくとも動くようには動いていくはずだ、現行動かないとしてもバグリストに追記されるはず。
+HTML解釈スタイルシートに関して、
+こちらもFireFoxと同じようになると・・・信じたいが、
+FireFoxにMozira独自のプロパティがあったりするのが少し怖い。
+※1
+テーブル要素操作などでIEとFireFoxで微妙な差異があるのだが、
+prototype.jsはうまい具合に両方で動くものを書いている。
+※2
+IEだとActivXを使ってローカルファイルにアクセスすることが出来る。
+FireFoxだと別のファイルストリームにアクセスする必要がある。
+そんなわけで、全てのJavaScriptがChromeで動くわけではないが、
+ほぼ全てといってもいいのではないだろうか。</description>
     </item>
     
     <item>
@@ -195,11 +210,11 @@ FireFoxでGoogleToolBarを使用し、
 使用するパソコンが一つだけって人にはあまり関係ないかもしれないが
 （そのＰＣを一生使うのならば）
 私がいじる可能性のあるパソコンは結構数が多く。
- 出向先の会社ＰＣ 本社のＰＣ 自宅のデスクトップ 自宅のノート 彼女の家のデスクトップ  各ＰＣでする作業内容は様々ではあるが、
+出向先の会社ＰＣ 本社のＰＣ 自宅のデスクトップ 自宅のノート 彼女の家のデスクトップ 各ＰＣでする作業内容は様々ではあるが、
 この何個もＰＣを渡り歩く状態で困ることがある。
 別ＰＣでやっていた作業の引継ぎである。
 さて、ここで役に立ってくるのがGoogleアカウント関係である。
- Gmail Blogger Google Docs &amp;amp; Spreadsheets Google Notebook Google Calendar Google Toolbar &amp;hellip;etc  メール環境、ブログ環境、Excel &amp;amp; Word 、参照付き簡易ノート、スケジュール帳
+Gmail Blogger Google Docs &amp;amp; Spreadsheets Google Notebook Google Calendar Google Toolbar &amp;hellip;etc メール環境、ブログ環境、Excel &amp;amp; Word 、参照付き簡易ノート、スケジュール帳
 そしてツールバーによるブックマーク管理。
 （ん～Google様様
 で今回の話がブックマーク管理に関することなんだけど、
@@ -220,9 +235,14 @@ GoogleBookMarksのＤＢをツールバーが読むことで
 足ることを知らぬ私は、さらなる機能を求めていた。
 それはGoogleBookMarksの階層表現なんだけど、
 普通のブラウザについてるブックマーク機能だと当然のごとく階層表現機能がある
- 階層表現例）
+階層表現例）
 root ├hoge1 │ ├bar1 │ ├bar2 │ └bar3 └hoge2 └bar4
- そのあって当たり前の機能がGoogleBookMarkにはない！</description>
+そのあって当たり前の機能がGoogleBookMarkにはない！
+ブックマークの数が少なければどーという事はなかったのだが、
+日に日に増えていくブックマークとラベルが情報の整理を阻害していく。
+ラベルのみのタグ的な管理ではスッキリしないのだ。
+そんなある日、
+ふとFireFoxのAddOn（拡張機能）にならあるんじゃないか？</description>
     </item>
     
     <item>
@@ -268,7 +288,7 @@ GoogleToolBarの便利さに負けて
 IEを使い続けてきた踏み絵時代ももう終わり！
 ToolBarのブックマーク機能さいこーーーーーーーー！！！
 う～感動で涙が・・・
- 追記 昨日は家に帰ってからずっとSkype me!状態にしていましたが、
+追記 昨日は家に帰ってからずっとSkype me!状態にしていましたが、
 特に誰からもコンタクトはありませんでした。
 ま、そんなすぐにはかかってこないかな～？
 今日もSkype me!状態で待機してみることにする。</description>
@@ -288,16 +308,16 @@ ToolBarのブックマーク機能さいこーーーーーーーー！！！
 その中身は興味深い。
 この現象は重要なアップデートとかの前に起こることが多いのだけど、
 これを疑似体験できる方法がある。
- Googleのパーソナライズドホームページ検索画面の右端に、「表示設定」という項目がある。
+Googleのパーソナライズドホームページ検索画面の右端に、「表示設定」という項目がある。
 これで表示言語の設定を「英語」にするだけでOK
- 変更を完了したら早速「more」を押してみよう。
+変更を完了したら早速「more」を押してみよう。
 現在の日本語版とは比べ物にならない数のサービスに驚くに違いない。
 （驚かなくても驚いたふりぐらいはして下さい。）
 特にぶっとんでるのは
 Book Search
 amazonで本を探すみたいな感覚なのかな？と思って試しに検索してみたが、ぜんぜん違う。
- [&amp;ldquo;Noel&amp;quot;検索結果](http://books.google.com/books?q=Noel &amp;ldquo;&amp;ldquo;Noel&amp;quot;検索結果&amp;rdquo;)  ↓
- [&amp;ldquo;Halfway House&amp;quot;を選択](http://books.google.com/books?vid=ISBN0871139340&amp;amp;id=VT5W9B7N0B0C&amp;amp;pg=PP1&amp;amp;lpg=PP1&amp;amp;ots=myIxKmhr5-&amp;amp;dq=Noel&amp;amp;sig=HvZJJMYfgQNiW3jg0K1FUFHKRKs &amp;ldquo;&amp;ldquo;Halfway House&amp;quot;を選択&amp;rdquo;)  すごいね、本をそのままコピーしてる内容を読めるし、
+[&amp;ldquo;Noel&amp;quot;検索結果](http://books.google.com/books?q=Noel &amp;ldquo;&amp;ldquo;Noel&amp;quot;検索結果&amp;rdquo;) ↓
+[&amp;ldquo;Halfway House&amp;quot;を選択](http://books.google.com/books?vid=ISBN0871139340&amp;amp;id=VT5W9B7N0B0C&amp;amp;pg=PP1&amp;amp;lpg=PP1&amp;amp;ots=myIxKmhr5-&amp;amp;dq=Noel&amp;amp;sig=HvZJJMYfgQNiW3jg0K1FUFHKRKs &amp;ldquo;&amp;ldquo;Halfway House&amp;quot;を選択&amp;rdquo;) すごいね、本をそのままコピーしてる内容を読めるし、
 本の中の一文に検索言語がヒットするときちんとハイライトしてくれてる。
 （&amp;ldquo;Halfway House&amp;rdquo; Page2 参照）
 いつの日か、図書館に通わず、Googleで検索して図書を得る日が来るのでしょうか・・？
@@ -306,7 +326,7 @@ amazonで本を探すみたいな感覚なのかな？と思って試しに検�
 まだまだ登録されてる蔵書が英語版ばかりで日本にはなじみがないのかな・・・と思たが、
 ふと「日本」で検索をかける。
 ・・・
- [&amp;ldquo;日本&amp;quot;検索結果](http://books.google.com/books?q=%E6%97%A5%E6%9C%AC&amp;amp;as_brr=0 &amp;ldquo;&amp;ldquo;日本&amp;quot;検索結果&amp;rdquo;)  対応してますね・・・
+[&amp;ldquo;日本&amp;quot;検索結果](http://books.google.com/books?q=%E6%97%A5%E6%9C%AC&amp;amp;as_brr=0 &amp;ldquo;&amp;ldquo;日本&amp;quot;検索結果&amp;rdquo;) 対応してますね・・・
 英語にあまり抵抗がないなら、Googleの表示設定は英語にするといいかもしれません。
 ただし、検索結果が英語優先になるので、
 いつもGoogle検索からHPに飛んでる人はちょっと戸惑うかもしれませんが・・・</description>
@@ -318,7 +338,8 @@ amazonで本を探すみたいな感覚なのかな？と思って試しに検�
       <pubDate>Wed, 26 Apr 2006 21:09:00 +0900</pubDate>
       
       <guid>/posts/2006/04/26/google%E3%81%A8ie%E3%81%A8%E3%81%AE%E7%9B%B8%E6%80%A7%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6/</guid>
-      <description>オメ～！兄者～ 妹。 - Apr 4, 2006オメ～！兄者～</description>
+      <description>オメ～！兄者～ 妹。 - Apr 4, 2006
+オメ～！兄者～</description>
     </item>
     
     <item>
