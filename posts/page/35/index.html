@@ -161,6 +161,37 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2007/04/17/%E3%83%96%E3%83%AD%E3%82%B0%E3%83%AA%E3%83%8F%E3%83%93%E3%83%AA/">ブログリハビリ</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/worklog/">WorkLog</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2007/04/17/%E3%83%96%E3%83%AD%E3%82%B0%E3%83%AA%E3%83%8F%E3%83%93%E3%83%AA/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2007/03/28/fps%E3%81%A8%E3%83%9D%E3%83%BC%E3%83%88%E9%96%8B%E6%94%BE/">FPSとポート開放</a></h1>
     <div class="post-meta">
       
@@ -279,74 +310,6 @@
     <div>
       <a class="read-more button"
         href="/posts/2007/03/19/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC%E3%81%AF%E3%81%84%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E4%BC%91%E6%97%A5%E3%82%92%E9%81%8E%E3%81%94%E3%81%99%E3%81%B9%E3%81%8D%E3%81%8B/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2007/03/15/flashfame%E3%81%A7flash%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%8F%96%E5%BE%97/">[Flash]FAMEでFlashのバージョン取得</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/flash/">Flash</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      会社で作ったFlashがFlash7で動かないとのこと、
-そりゃそうだ、Flash8で作ってるんだから。
-会社曰く、現在インスコされているFlashPlayerの初期は7だからそれに合わせろ。
-ふーん・・・7がデフォでインスコされているとは知らなかった。
-で、パブリッシュの書き出しで7にすれば対応できますよっとメールを送ったところ。
-対応できたが、一部ドロップシャドウが消失
-ナンデスト？
-どうやらドロップシャドウではなくシャドウ部位に使用していたグラデがFlash7だと存在しないようだ。
-（それぐらい事前に調べとけってか？ハイ、その通りですスイマセン）
-で、出来上がったものを見たが、
-やはりグラデが全部消えてるとちょっと嫌な感じだ。
-う～ん・・・そういや昔javaScriptにhttpヘッダの中読んで
-ブラウザのバージョンをGETする方法とかを見た気がする。
-ActionScriptで、FlashPlayerのバージョンをGETできないものだろうか？ さらにそのバージョン毎に違うswfファイルを見せること出来ないか？
-つまりFlashPlayer8以上を使用している人には8以上のバブリッシュ設定のものを
-7を使用している人には7用のswfをそれぞれ提供できないか？
-（今回最低バージョンは7としている、理由はActionScript2.0が提供されるのは7以降なので）
-調べた結果
-System.capabilities.version;
-を使用すれば望みのものを得ることが出来るようだ。
-以下実際のコードを書いてみる。
-(FAME環境で作ったため、Macromediaと違うところがあります）
-versionManager.as class versionManager {
-function versionManager (path){
-trace(Flashout.DEBUG + “trace()”);
-// _rootのDepth=1にMovieClipのインスタンスseedを作成
-path.createEmptyMovieClip(“seed”,1);
-//インスタンスseedをmcとする
-var mc :MovieClip = path.seed;
-//バージョン情報を取得
-var ver :String= System.capabilities.version;
-var major_ver = ver.split(&quot; “)[1].split(”,&quot;)[0];
-trace (“ver = &quot; + ver);
-trace (“major_ver = &quot; + major_ver);
-//今回パブリッシュ設定を７と８で分けたいので
-if (major_ver &gt; 7) {
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2007/03/15/flashfame%E3%81%A7flash%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%8F%96%E5%BE%97/">Read more →</a>
     </div>
     
   </div>

@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
-    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
+    <loc>/posts/2022/12/31/20221231/</loc>
+    <lastmod>2022-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/coaching/</loc>
-    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2022-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
+    <lastmod>2022-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%A4%A7%E6%99%A6%E6%97%A5/</loc>
+    <lastmod>2022-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/%E6%97%A5%E8%A8%98/</loc>
+    <lastmod>2022-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/coaching/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/orsc/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2022/12/30/orscc/</loc>
-    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/impro/</loc>
@@ -33,12 +42,6 @@
     <lastmod>2022-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2021/12/31/oomisoka/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/%E5%A4%A7%E6%99%A6%E6%97%A5/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/%E6%97%A5%E8%A8%98/</loc>
     <lastmod>2021-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/advent-calendar/</loc>
