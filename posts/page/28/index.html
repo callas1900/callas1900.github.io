@@ -161,6 +161,105 @@
   
   <div class="post on-list">
     <h1 class="post-title">
+      <a href="/posts/2008/09/03/googlegoogle-chrome%E3%81%A8v8%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3/">[Google]Google ChromeとV8エンジン</a></h1>
+    <div class="post-meta">
+      
+    </div>
+
+    
+    <span class="post-tags">
+      
+      #<a href="/tags/google/">Google</a>&nbsp;
+      
+    </span>
+    
+
+    
+
+    <div class="post-content">
+      
+      
+      いつもどおりiGoogleでNEWS記事を確認しようとすると
+変なリンクがGoogleのトップページに貼ってあることに気づいた。
+Chrome?
+検索BOXに投げ込み調べてみると、
+新しくGoogleが開発したWebブラウザだそうだ。
+おお、そんなものまで作ったのか！
+と
+え・・・またブラウザ増えるのか・・・やだなぁ
+両方の感想がポっとでた。
+とりあえず、インストールして触ってみて気になった点をいくつか
+プロキシ設定などはIEと共有している。
+GoogleツールバーをインストールしようとするとFireFox2と判断され、出来ない
+（FireFox2のダウンロードを促される）
+開発／管理の下にJavaScriptデバッガとコンソールが標準実装されている。
+(もし使い勝手がよければFireFox3 + FireBugに変わる
+JavaScript開発のディファクトスタンダートにとって代わるかもしれない。
+JavaScriptエンジンはV8（Google独自エンジン）
+GoogleGearsの設定がデフォルトで入っている。
+シークレットモードがある（ブラウザに履歴などを残さずにブラウジングすることが出来る）
+JavaScriptエンジンが滅茶苦茶早い。
+個人的に気になったのは、JavaScript関係とシークレットモードかな
+他にも色々機能はあるみたいだけど、
+とりあえずこんなもの。
+Chrome用Googleツールバーが出来るまでは、とりあえず乗り換える気はないかな。
+あ、でもGoogleNoteBookやRSSリーダー使うときは使うかも。
+とりあえずjavaScriptはべらぼうに早い。
+画像のDLが重いようなAjaxアプリでは体感出来ないが、
+処理に時間がかかるようなアプリ（GoogleDocsのスプレッドシート編集など）をしていると結構体感出来る。
+JavaScriptが早いという証左に以下サイトがある。
+Google ChromeのJavaScriptエンジンV8の性能評価
+参照すると、爆速がうたい文句のFireFox3.0より9倍近く早い。
+（といっても既存のネット上のAjaxアプリが軒並み早くなるわけじゃない。
+DL速度＋JavaScript処理速度＝ユーザーが感じるAjax処理速度なのだから）
+とここまでがそこそこ肯定的意見。
+以下否定的
+またブラウザが増える！（Web屋としての叫び）
+最近の仕事はWeb屋じゃないから、多少他人事になってしまうけど。
+LAMPだと基本全ブラウザ対応、
+交渉次第でIE6～IE7とFireFox2.0とFireFox3.0対応が標準となる
+イントラのStruts系フレームワークの業務アプリだとIEしばりもしくはIE7までしばり
+イントラ系はまだいい、契約時に使用ブラウザを決定してしまえばいいんだから、
+ただECサイトとかだと、顧客としては全ブラウザに対応してくれというし、
+こちらもしてあげたい。
+描画エンジンもJavaScriptエンジンも既存のものと違うとなると
+怖いところはある。
+ただjavaScriptエンジン（V8）に関しては、
+今のままでいけるのではないだろうか。
+現在prototype.jsなどで書かれている
+IEとFireFox両方対応のJavaScript（※1）があるのだけど、
+それをV8エンジンは理解してくれると思う。
+理由としては
+FireFoxとGoogleが今まで仲良くしていたこと。
+FireFoxはW3C準拠であること、
+Geekの集団GoogleがW3Cに準拠しないわけないこと
+よってFireFoxで動くものはV8エンジンでも動く・・・と思う。（※2）
+少なくとも動くようには動いていくはずだ、現行動かないとしてもバグリストに追記されるはず。
+HTML解釈スタイルシートに関して、
+こちらもFireFoxと同じようになると・・・信じたいが、
+FireFoxにMozira独自のプロパティがあったりするのが少し怖い。
+※1
+テーブル要素操作などでIEとFireFoxで微妙な差異があるのだが、
+prototype.jsはうまい具合に両方で動くものを書いている。
+※2
+IEだとActivXを使ってローカルファイルにアクセスすることが出来る。
+FireFoxだと別のファイルストリームにアクセスする必要がある。
+そんなわけで、全てのJavaScriptがChromeで動くわけではないが、
+ほぼ全てといってもいいのではないだろうか。
+      
+      
+    </div>
+
+    
+    <div>
+      <a class="read-more button"
+        href="/posts/2008/09/03/googlegoogle-chrome%E3%81%A8v8%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3/">Read more →</a>
+    </div>
+    
+  </div>
+  
+  <div class="post on-list">
+    <h1 class="post-title">
       <a href="/posts/2008/06/23/firefox%E7%88%86%E9%80%9Ffirefox3/">[FireFox]爆速FireFox3</a></h1>
     <div class="post-meta">
       
@@ -279,37 +378,6 @@
     <div>
       <a class="read-more button"
         href="/posts/2008/06/05/%E6%97%A5%E8%A8%98%E6%A2%85%E9%85%92%E4%BD%9C%E6%88%90/">Read more →</a>
-    </div>
-    
-  </div>
-  
-  <div class="post on-list">
-    <h1 class="post-title">
-      <a href="/posts/2008/05/20/macbootcamp%E7%B5%82%E7%84%89%E3%81%AE%E6%97%A5/">[Mac]BootCamp終焉の日</a></h1>
-    <div class="post-meta">
-      
-    </div>
-
-    
-    <span class="post-tags">
-      
-      #<a href="/tags/mac/">Mac</a>&nbsp;
-      
-    </span>
-    
-
-    
-
-    <div class="post-content">
-      
-      
-      
-    </div>
-
-    
-    <div>
-      <a class="read-more button"
-        href="/posts/2008/05/20/macbootcamp%E7%B5%82%E7%84%89%E3%81%AE%E6%97%A5/">Read more →</a>
     </div>
     
   </div>
